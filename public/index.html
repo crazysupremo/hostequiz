@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b120d">
+<title>HosteQuiz</title>
+<meta name="description" content="Quiz en directo de hostelería: cafés, bebidas, montaje de mesas y servicio. Entra con el PIN y juega desde el móvil.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap"><div class="col" id="app"></div></div>
+<script src="/common.js"></script>
+<script>
+const app = document.getElementById("app");
+const params = new URLSearchParams(location.search);
+let me = store.get("hq-player"); // { pin, id, name }
+let es = null;
+let qTimer = null;
+
+// ---------- pantalla de inicio ----------
+function home(err = "", pinPrefill = "") {
+  closeStream();
+  const pin = pinPrefill || params.get("pin") || "";
+  const name = store.get("hq-name") || "";
+  app.innerHTML = `
+    <div class="top">${LOGO}</div>
+    <div class="home-hero">
+      <div class="stack" style="gap:16px">
+        <div class="shapes">${SHAPES.map((s, i) => `<span style="color:var(--c${i})">${s}</span>`).join("")}</div>
+        <h1>El quiz de la barra, la sala y la cocina.</h1>
+        <p class="lead">Cafés, bebidas, copas, montaje de mesas y servicio. Una pantalla hace las preguntas y todos responden desde el móvil.</p>
+        <div class="row">
+          <a class="btn ghost" href="/host.html">Crear una partida</a>
+          <a class="btn ghost" href="/practica.html">Practicar solo</a>
+        </div>
+      </div>
+      <form class="card" id="join" autocomplete="off">
+        <h3>Entrar en una partida</h3>
+        <label class="label" for="pin">PIN del juego</label>
+        <input class="pin" id="pin" inputmode="numeric" maxlength="6" placeholder="000000" value="${esc(pin)}">
+        <label class="label" for="nm">Tu nombre</label>
+        <input id="nm" maxlength="16" placeholder="Ej.: Renato" value="${esc(name)}" autocomplete="nickname">
+        <p class="error" id="err">${esc(err)}</p>
+        <button class="btn" type="submit">Entrar</button>
+      </form>
+    </div>
+    <p class="foot">HosteQuiz · preguntas de hostelería en español</p>`;
+  const f = document.getElementById("join");
+  (pin ? document.getElementById("nm") : document.getElementById("pin")).focus();
+  f.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = f.querySelector("button");
+    btn.disabled = true;
+    const pinV = document.getElementById("pin").value.replace(/\D/g, "");
+    const nameV = document.getElementById("nm").value;
+    try {
+      const r = await api("/api/join", { pin: pinV, name: nameV });
+      me = { pin: pinV, id: r.id, name: r.name };
+      store.set("hq-player", me);
+      store.set("hq-name", r.name);
+      connect();
+    } catch (ex) {
+      document.getElementById("err").textContent = ex.message;
+      btn.disabled = false;
+    }
+  });
+}
+
+// ---------- conexión del jugador ----------
+function closeStream() { if (es) { es.close(); es = null; } clearInterval(qTimer); }
+
+function connect() {
+  closeStream();
+  screen(`<div class="full"><h2>Conectando…</h2></div>`);
+  es = stream({ pin: me.pin, role: "player", id: me.id }, {
+    lobby: () => screen(`
+      <div class="full">
+        <p class="label">Ya estás dentro</p>
+        <h1>${esc(me.name)}</h1>
+        <p class="muted">Busca tu nombre en la pantalla. El juego empieza enseguida.</p>
+      </div>`),
+    question: showQuestion,
+    result: showResult,
+    wait: (d) => screen(`<div class="full"><h2>${esc(d.text)}</h2></div>`),
+    podium: showPodium,
+    kicked: () => leave("El presentador te ha sacado de la partida."),
+    gone: () => leave("Ya no estás en esta partida. Vuelve a entrar con el PIN.", true),
+    closed: () => leave("La partida ha terminado."),
+  });
+}
+
+function screen(html) {
+  clearInterval(qTimer);
+  app.innerHTML = `<div class="top">${LOGO}<span class="pill">${esc(me?.name || "")}</span></div>${html}`;
+}
+
+function leave(msg, keepPin) {
+  const pin = keepPin && me ? me.pin : "";
+  store.del("hq-player");
+  me = null;
+  closeStream();
+  home(msg, pin);
+}
+
+function showQuestion(d) {
+  if (d.answered) return screen(`<div class="full"><h2>Respuesta enviada</h2><p class="muted">Espera a que se acabe el tiempo.</p></div>`);
+  const end = Date.now() + d.left;
+  const two = d.a.length === 2;
+  screen(`
+    <div class="qhead"><span class="pill">${d.idx + 1} / ${d.total}</span><span class="pill" id="left">${Math.ceil(d.left / 1000)} s</span></div>
+    <div class="timebar"><i id="bar" style="transform:scaleX(${d.left / (d.time * 1000)})"></i></div>
+    <p class="question" style="font-size:clamp(20px,5.6vw,30px);padding:4px 0">${esc(d.q)}</p>
+    <div class="pad ${two ? "two" : ""}">
+      ${d.a.map((t, i) => `<button class="ans a${colorIdx(i, d.vf)}" data-i="${i}">${SHAPES[colorIdx(i, d.vf)]}<span class="tx">${esc(t)}</span></button>`).join("")}
+    </div>`);
+  qTimer = setInterval(() => {
+    const ms = Math.max(0, end - Date.now());
+    const l = document.getElementById("left"), b = document.getElementById("bar");
+    if (l) l.textContent = Math.ceil(ms / 1000) + " s";
+    if (b) b.style.transform = `scaleX(${ms / (d.time * 1000)})`;
+    if (!ms) clearInterval(qTimer);
+  }, 200);
+  app.querySelectorAll("[data-i]").forEach((b) =>
+    b.addEventListener("click", async () => {
+      app.querySelectorAll("[data-i]").forEach((x) => (x.disabled = true, x.classList.toggle("dim", x !== b)));
+      try {
+        await api("/api/answer", { pin: me.pin, id: me.id, choice: +b.dataset.i });
+        const ci = colorIdx(+b.dataset.i, d.vf);
+        screen(`<div class="full"><div class="ans a${ci}" style="width:120px;height:120px;justify-content:center">${SHAPES[ci]}</div><h2>Respuesta enviada</h2><p class="muted">¿Habrás acertado?</p></div>`);
+      } catch (ex) {
+        screen(`<div class="full"><h2>${esc(ex.message)}</h2></div>`);
+      }
+    })
+  );
+}
+
+function showResult(d) {
+  const cls = !d.answered ? "none" : d.correct ? "ok" : "bad";
+  const title = !d.answered ? "Sin respuesta" : d.correct ? "¡Correcto!" : "Incorrecto";
+  screen(`
+    <div class="full">
+      <div class="result ${cls}">
+        <div class="big">${title}</div>
+        ${d.correct ? `<div class="pts">+${d.pts}</div>` : d.okText ? `<p>La correcta era: <b>${esc(d.okText)}</b></p>` : ""}
+        ${d.streak > 1 ? `<p>Racha de ${d.streak} aciertos</p>` : ""}
+      </div>
+      <h2>${d.score ?? 0} puntos</h2>
+      ${d.rank ? `<p class="muted">Vas ${d.rank}º de ${d.total}</p>` : ""}
+    </div>`);
+}
+
+function showPodium(d) {
+  const msg = d.rank === 1 ? "¡Has ganado!" : d.rank <= 3 ? "¡Estás en el podio!" : "¡Bien jugado!";
+  screen(`
+    <div class="full">
+      <p class="label">Fin de la partida</p>
+      <h1>${msg}</h1>
+      <h2>Puesto ${d.rank}º de ${d.total}</h2>
+      <p class="muted">${d.score} puntos</p>
+      <ol class="board" style="width:100%;max-width:420px;margin-top:10px">${d.top.map((r) => `<li><span class="nm">${esc(r.name)}</span><span>${r.score}</span></li>`).join("")}</ol>
+      <button class="btn" id="again">Volver al inicio</button>
+    </div>`);
+  document.getElementById("again").addEventListener("click", () => leave(""));
+}
+
+// Si ya estaba en una partida (por ejemplo, el móvil se bloqueó), vuelve a ella
+if (me && (!params.get("pin") || params.get("pin") === me.pin)) connect();
+else home();
+</script>
+</body>
+</html>

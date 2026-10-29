@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b120d">
+<title>HosteQuiz · Presentador</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+</head>
+<body>
+<div class="wrap"><div class="col" id="app"></div></div>
+<script src="/common.js"></script>
+<script>
+const app = document.getElementById("app");
+let game = store.get("hq-host", sessionStorage); // { pin, key }
+let es = null, tick = null, players = [];
+let cats = [];
+const chosen = new Set();
+
+const act = (action, extra) => api("/api/host/action", { pin: game.pin, key: game.key, action, ...extra }).catch((e) => alert(e.message));
+const header = (right = "") => `<div class="top">${LOGO}${right}</div>`;
+const endBtn = `<button class="btn ghost small" id="end">Terminar partida</button>`;
+function wireEnd() {
+  const b = document.getElementById("end");
+  if (!b) return;
+  b.addEventListener("click", () => {
+    if (b.dataset.sure) { act("end"); finish(); }
+    else { b.dataset.sure = "1"; b.textContent = "¿Seguro? Pulsa otra vez"; setTimeout(() => { b.textContent = "Terminar partida"; delete b.dataset.sure; }, 3000); }
+  });
+}
+function render(html) { clearInterval(tick); app.innerHTML = html; wireEnd(); }
+
+// ---------- 1. Configurar ----------
+async function setup(err = "") {
+  if (!cats.length) {
+    try { cats = await (await fetch("/api/categorias")).json(); } catch (e) { cats = []; }
+    cats.forEach((c) => chosen.add(c.id));
+  }
+  render(`
+    ${header()}
+    <h1>Nueva partida</h1>
+    <div class="card">
+      <div class="row" style="justify-content:space-between"><h3>Temas</h3><button class="btn ghost small" id="all">Todos / ninguno</button></div>
+      <div class="chips">${cats.map((c) => `<button class="chip" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}">${esc(c.nombre)} <span class="n">${c.total}</span></button>`).join("")}</div>
+      <p class="muted small" id="avail"></p>
+    </div>
+    <div class="row" style="align-items:stretch">
+      <div class="card" style="flex:1;min-width:220px">
+        <label class="label" for="n">Número de preguntas</label>
+        <select id="n">${[5, 10, 15, 20, 30, 40].map((n) => `<option ${n === 10 ? "selected" : ""}>${n}</option>`).join("")}</select>
+      </div>
+      <div class="card" style="flex:1;min-width:220px">
+        <label class="label" for="t">Tiempo por pregunta</label>
+        <select id="t"><option value="10">10 segundos</option><option value="20" selected>20 segundos</option><option value="30">30 segundos</option><option value="60">60 segundos</option></select>
+      </div>
+    </div>
+    <p class="error">${esc(err)}</p>
+    <div class="row end"><button class="btn" id="go">Crear partida</button></div>`);
+
+  const upd = () => {
+    const total = cats.filter((c) => chosen.has(c.id)).reduce((s, c) => s + c.total, 0);
+    document.getElementById("avail").textContent = total ? `${total} preguntas disponibles en los temas elegidos.` : "Elige al menos un tema.";
+    document.getElementById("go").disabled = !total;
+  };
+  app.querySelectorAll("[data-c]").forEach((b) => b.addEventListener("click", () => {
+    const id = b.dataset.c;
+    chosen.has(id) ? chosen.delete(id) : chosen.add(id);
+    b.setAttribute("aria-pressed", chosen.has(id));
+    upd();
+  }));
+  document.getElementById("all").addEventListener("click", () => {
+    const allOn = chosen.size === cats.length;
+    cats.forEach((c) => (allOn ? chosen.delete(c.id) : chosen.add(c.id)));
+    app.querySelectorAll("[data-c]").forEach((b) => b.setAttribute("aria-pressed", chosen.has(b.dataset.c)));
+    upd();
+  });
+  document.getElementById("go").addEventListener("click", async (e) => {
+    e.target.disabled = true;
+    try {
+      const r = await api("/api/host/create", { cats: [...chosen], n: +document.getElementById("n").value, time: +document.getElementById("t").value });
+      game = { pin: r.pin, key: r.hostKey };
+      store.set("hq-host", game, sessionStorage);
+      connect();
+    } catch (ex) { setup(ex.message); }
+  });
+  upd();
+}
+
+// ---------- 2. Conexión ----------
+function connect() {
+  if (es) es.close();
+  render(`${header()}<div class="full"><h2>Conectando…</h2></div>`);
+  es = stream({ pin: game.pin, role: "host", key: game.key }, {
+    hello: (d) => { game.total = d.total; if (d.state === "lobby") lobby(); },
+    players: (list) => { players = list; if (document.getElementById("plist")) drawPlayers(); },
+    question: showQuestion,
+    answered: (d) => { const el = document.getElementById("ansc"); if (el) el.textContent = `${d.answered} / ${d.players} respuestas`; },
+    reveal: showReveal,
+    board: showBoard,
+    podium: showPodium,
+    closed: () => { finish(); setup("La partida se cerró."); },
+  });
+}
+function finish() { if (es) es.close(); es = null; store.del("hq-host", sessionStorage); game = null; }
+
+// ---------- 3. Sala de espera ----------
+function lobby() {
+  const url = `${location.origin}/?pin=${game.pin}`;
+  let qr = "";
+  try { const q = qrcode(0, "M"); q.addData(url); q.make(); qr = q.createSvgTag({ margin: 0, scalable: true }); } catch (e) {}
+  render(`
+    ${header(endBtn)}
+    <div class="card lobby">
+      <div class="stack">
+        <p class="label">Entra en <b style="color:var(--crema);letter-spacing:0;text-transform:none;font-size:18px">${esc(location.host)}</b> con el PIN</p>
+        <div class="pinbox" style="text-align:left"><div class="pin">${game.pin.replace(/(\d{3})(\d{3})/, "$1 $2")}</div></div>
+        <p class="muted">${game.total} preguntas · o escanea el código con la cámara del móvil</p>
+      </div>
+      ${qr ? `<div class="qr">${qr}</div>` : ""}
+    </div>
+    <div class="row" style="justify-content:space-between"><h2 id="pcount">Jugadores</h2><button class="btn" id="start" disabled>Empezar</button></div>
+    <div class="players" id="plist"></div>`);
+  document.getElementById("start").addEventListener("click", () => act("start"));
+  drawPlayers();
+}
+function drawPlayers() {
+  const el = document.getElementById("plist");
+  document.getElementById("pcount").textContent = `${players.length} ${players.length === 1 ? "jugador" : "jugadores"}`;
+  document.getElementById("start").disabled = !players.length;
+  el.innerHTML = players.length
+    ? players.map((p) => `<span class="player ${p.online ? "" : "off"}">${esc(p.name)}<button title="Sacar a ${esc(p.name)}" aria-label="Sacar a ${esc(p.name)}" data-k="${p.id}">✕</button></span>`).join("")
+    : `<p class="muted">Esperando al primer jugador…</p>`;
+  el.querySelectorAll("[data-k]").forEach((b) => b.addEventListener("click", () => act("kick", { id: b.dataset.k })));
+}
+
+// ---------- 4. Pregunta ----------
+function tiles(d, counts, ok) {
+  return `<div class="answers">${d.a.map((t, i) => {
+    const ci = colorIdx(i, d.vf);
+    const cls = ok === undefined ? "" : i === ok ? "right" : "dim";
+    return `<div class="ans a${ci} ${cls}">${SHAPES[ci]}<span class="tx">${esc(t)}</span>${counts ? `<span class="cnt">${counts[i]}</span>` : ""}${ok === i ? '<span class="tick">✓</span>' : ""}</div>`;
+  }).join("")}</div>`;
+}
+function showQuestion(d) {
+  const end = Date.now() + d.left;
+  render(`
+    ${header(endBtn)}
+    <div class="qhead">
+      <span class="pill">Pregunta ${d.idx + 1} de ${d.total} · ${esc(d.cat)}</span>
+      <span class="pill" id="ansc">${d.answered || 0} / ${d.players} respuestas</span>
+    </div>
+    <div class="row" style="justify-content:center;gap:24px;flex-wrap:nowrap">
+      <div class="timer" id="tm">${Math.ceil(d.left / 1000)}</div>
+      <p class="question" style="flex:1">${esc(d.q)}</p>
+    </div>
+    ${tiles(d)}
+    <div class="row end"><button class="btn ghost" id="skip">Ver respuesta ya</button></div>`);
+  document.getElementById("skip").addEventListener("click", () => act("skip"));
+  tick = setInterval(() => {
+    const s = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+    const el = document.getElementById("tm");
+    if (el) el.textContent = s;
+    if (!s) clearInterval(tick);
+  }, 200);
+}
+
+// ---------- 5. Respuesta correcta ----------
+function showReveal(d) {
+  render(`
+    ${header(endBtn)}
+    <div class="qhead"><span class="pill">Pregunta ${d.idx + 1} de ${d.total} · ${esc(d.cat)}</span><span class="pill">${d.answeredCount} / ${d.players} respondieron</span></div>
+    <p class="question">${esc(d.q)}</p>
+    ${tiles(d, d.counts, d.ok)}
+    <div class="row end"><button class="btn" id="next">Clasificación</button></div>`);
+  document.getElementById("next").addEventListener("click", () => act("next"));
+}
+
+// ---------- 6. Clasificación ----------
+function showBoard(d) {
+  const last = d.idx + 1 >= d.total;
+  render(`
+    ${header(endBtn)}
+    <h1 style="text-align:center">Clasificación</h1>
+    <ol class="board" style="max-width:640px;width:100%;margin:0 auto">${d.top.map((r) => `<li><span class="nm">${esc(r.name)}</span><span>${r.score}</span></li>`).join("") || "<p class='muted'>Nadie ha jugado.</p>"}</ol>
+    <div class="row end"><button class="btn" id="next">${last ? "Ver el podio" : "Siguiente pregunta"}</button></div>`);
+  document.getElementById("next").addEventListener("click", () => act("next"));
+}
+
+// ---------- 7. Podio ----------
+function showPodium(d) {
+  const [a, b, c] = d.top;
+  const step = (r, n) => r ? `<div class="step p${n}"><div class="nm">${esc(r.name)}</div><div class="pts">${r.score} pts</div><div class="blk">${n}</div></div>` : `<div></div>`;
+  render(`
+    ${header()}
+    <h1 style="text-align:center">¡Enhorabuena!</h1>
+    <div class="podium">${step(b, 2)}${step(a, 1)}${step(c, 3)}</div>
+    ${d.top.length > 3 ? `<ol class="board" start="4" style="max-width:640px;width:100%;margin:0 auto;counter-reset:pos 3">${d.top.slice(3).map((r) => `<li><span class="nm">${esc(r.name)}</span><span>${r.score}</span></li>`).join("")}</ol>` : ""}
+    <div class="row" style="justify-content:center"><button class="btn" id="new">Nueva partida</button></div>`);
+  document.getElementById("new").addEventListener("click", () => { act("end"); finish(); setup(); });
+}
+
+if (game) connect(); else setup();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "hostequiz",
+  "version": "1.0.0",
+  "description": "Quiz en directo de hostelería (estilo Kahoot). Sin dependencias: solo Node.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {}
+}
