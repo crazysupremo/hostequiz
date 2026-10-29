@@ -6,6 +6,3 @@ services:
     buildCommand: "echo sin dependencias"
     startCommand: node server.js
     healthCheckPath: /health
-    envVars:
-      - key: ANTHROPIC_API_KEY   # clave de la IA (opcional). Se pega en Render → Environment
-        sync: false

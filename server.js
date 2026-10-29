@@ -13,8 +13,11 @@ const MAX_PLAYERS = 100;
 // Ilustraciones disponibles (public/img)
 const IMAGES = fs.readdirSync(path.join(PUBLIC, "img")).filter((f) => f.endsWith(".svg")).map((f) => "/img/" + f).sort();
 
-// IA: se activa poniendo ANTHROPIC_API_KEY en las variables de entorno (Render → Environment)
+// IA (opcional). Sin clave, la web usa el modo gratis: copiar el pedido y pegarlo en ChatGPT/Gemini/Claude.
+// Con GEMINI_API_KEY (Google AI Studio, tiene plan gratis) o ANTHROPIC_API_KEY, el botón "Generar" funciona directo.
 const AI = {
+  gemini: process.env.GEMINI_API_KEY || "",
+  geminiModel: process.env.GEMINI_MODEL || "gemini-2.5-flash",
   key: process.env.ANTHROPIC_API_KEY || "",
   model: process.env.AI_MODEL || "claude-haiku-5-5",
   url: (process.env.ANTHROPIC_BASE_URL || "https://api.anthropic.com") + "/v1/messages",
@@ -328,7 +331,7 @@ const api = {
 
 // ---------- IA: ideas de preguntas ----------
 async function generateWithAI(body, ip) {
-  if (!AI.key) return [503, { error: "La IA no está activada en este servidor. El administrador tiene que añadir la clave ANTHROPIC_API_KEY." }];
+  if (!AI.key && !AI.gemini) return [503, { error: "La IA no está activada en este servidor. El administrador tiene que añadir la clave ANTHROPIC_API_KEY." }];
   const tema = String(body.tema || "").trim().slice(0, 300);
   if (tema.length < 3) return [400, { error: "Escribe de qué tema quieres las preguntas." }];
   const n = Math.min(Math.max(parseInt(body.n) || 5, 1), 15);
@@ -356,18 +359,38 @@ async function generateWithAI(body, ip) {
     (body.trampa ? "\nIncluye algunas preguntas con trampa (que parezcan fáciles pero tengan truco)." : "");
 
   try {
-    const r = await fetch(AI.url, {
-      method: "POST",
-      headers: { "content-type": "application/json", "x-api-key": AI.key, "anthropic-version": "2023-06-01" },
-      body: JSON.stringify({ model: AI.model, max_tokens: 4000, system, messages: [{ role: "user", content: prompt }] }),
-      signal: AbortSignal.timeout(60000),
-    });
-    const data = await r.json().catch(() => ({}));
-    if (!r.ok) {
-      console.error("IA error", r.status, data?.error?.message);
-      return [502, { error: "La IA no ha respondido bien. Prueba otra vez en un momento." }];
+    let text = "";
+    if (AI.key) {
+      const r = await fetch(AI.url, {
+        method: "POST",
+        headers: { "content-type": "application/json", "x-api-key": AI.key, "anthropic-version": "2023-06-01" },
+        body: JSON.stringify({ model: AI.model, max_tokens: 4000, system, messages: [{ role: "user", content: prompt }] }),
+        signal: AbortSignal.timeout(60000),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        console.error("IA error", r.status, data?.error?.message);
+        return [502, { error: "La IA no ha respondido bien. Prueba otra vez o usa el modo gratis." }];
+      }
+      text = (data.content || []).map((c) => c.text || "").join("");
+    } else {
+      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${AI.geminiModel}:generateContent`, {
+        method: "POST",
+        headers: { "content-type": "application/json", "x-goog-api-key": AI.gemini },
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: system }] },
+          contents: [{ role: "user", parts: [{ text: prompt }] }],
+          generationConfig: { responseMimeType: "application/json", maxOutputTokens: 4000 },
+        }),
+        signal: AbortSignal.timeout(60000),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok) {
+        console.error("Gemini error", r.status, data?.error?.message);
+        return [502, { error: r.status === 429 ? "La IA gratuita ha llegado a su límite. Usa el modo gratis (copiar y pegar)." : "La IA no ha respondido bien. Prueba otra vez o usa el modo gratis." }];
+      }
+      text = (data.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("");
     }
-    const text = (data.content || []).map((c) => c.text || "").join("");
     const match = text.match(/\{[\s\S]*\}/);
     const parsed = match ? JSON.parse(match[0]) : null;
     const nivelN = { "fácil": 1, medio: 2, "difícil": 3 }[nivel];
@@ -467,7 +490,7 @@ const server = http.createServer(async (req, res) => {
     }
     if (req.method === "GET" && url.pathname === "/api/preguntas") return json(res, 200, BANK);
     if (req.method === "GET" && url.pathname === "/api/imagenes") return json(res, 200, IMAGES);
-    if (req.method === "GET" && url.pathname === "/api/ia/estado") return json(res, 200, { activa: !!AI.key });
+    if (req.method === "GET" && url.pathname === "/api/ia/estado") return json(res, 200, { activa: !!(AI.key || AI.gemini) });
     if (req.method === "POST" && url.pathname === "/api/ia") {
       const ip = String(req.headers["x-forwarded-for"] || req.socket.remoteAddress || "").split(",")[0].trim();
       const [code, data] = await generateWithAI(await readBody(req), ip);

@@ -35,6 +35,10 @@
   .toast { position: fixed; left: 50%; bottom: max(20px, env(safe-area-inset-bottom)); transform: translateX(-50%); background: var(--crema); color: var(--bg); padding: 12px 20px; border-radius: 999px; font-weight: 700; z-index: 20; }
   .spinner { width: 18px; height: 18px; border: 3px solid rgba(42,20,7,.3); border-top-color: #2a1407; border-radius: 50%; animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
+  .free { border-top: 1px solid var(--line); padding-top: 14px; }
+  .step { display: flex; gap: 12px; align-items: flex-start; }
+  .sn { flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--caramel); color: #2a1407; display: grid; place-items: center; font-family: var(--display); font-weight: 800; }
+  .linkish { background: none; color: var(--caramel); text-decoration: underline; padding: 0; text-align: left; font-size: 15px; }
   .savebar { position: sticky; bottom: 0; padding: 12px 0 max(12px, env(safe-area-inset-bottom)); background: linear-gradient(transparent, var(--bg) 30%); }
 </style>
 </head>
@@ -112,7 +116,7 @@ function drawEditor() {
     </div>
 
     <div class="card ai">
-      <div class="row" style="justify-content:space-between"><h3>Pedir ideas a la IA</h3>${aiOn ? "" : '<span class="pill small">No activada</span>'}</div>
+      <h3>Pedir ideas a la IA</h3>
       <label class="label" for="tema">¿Sobre qué quieres preguntas?</label>
       <textarea id="tema" maxlength="300" placeholder="Ej.: cafés con alcohol: carajillo, irlandés, jamaicano…"></textarea>
       <div class="ideas">${IDEAS.map((i) => `<button type="button" data-idea="${esc(i)}">${esc(i)}</button>`).join("")}</div>
@@ -121,9 +125,32 @@ function drawEditor() {
         <select id="ainv" style="width:auto"><option value="fácil">Fácil</option><option value="medio">Medio</option><option value="difícil">Difícil</option></select>
         <label class="ok-radio" style="font-size:15px"><input type="checkbox" id="trampa"> Con trampas</label>
       </div>
+      ${aiOn ? `<div class="row"><button class="btn" id="gen">Generar preguntas</button></div>` : ""}
+
+      <div class="stack free" id="free" ${aiOn ? "hidden" : ""}>
+        <p class="label">${aiOn ? "O gratis con tu IA" : "Gratis con tu IA favorita"}</p>
+        <div class="step"><span class="sn">1</span><div class="stack" style="gap:8px;min-width:0;flex:1">
+          <span>Copia el pedido:</span>
+          <div class="row"><button class="btn small" id="copy">Copiar pedido</button></div>
+          <textarea id="prompt" readonly hidden style="font-size:13px;min-height:90px;width:100%;box-sizing:border-box"></textarea>
+        </div></div>
+        <div class="step"><span class="sn">2</span><div class="stack" style="gap:8px;min-width:0;flex:1">
+          <span>Pégalo en una IA gratis y envíalo:</span>
+          <div class="row">
+            <a class="btn ghost small" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT</a>
+            <a class="btn ghost small" href="https://gemini.google.com/" target="_blank" rel="noopener">Gemini</a>
+            <a class="btn ghost small" href="https://claude.ai/" target="_blank" rel="noopener">Claude</a>
+          </div>
+        </div></div>
+        <div class="step"><span class="sn">3</span><div class="stack" style="gap:8px;min-width:0;flex:1">
+          <span>Copia toda la respuesta y pégala aquí:</span>
+          <textarea id="resp" style="width:100%;box-sizing:border-box" placeholder='Pega aquí la respuesta (empieza por {"preguntas": …)'></textarea>
+          <div class="row"><button class="btn small" id="imp">Añadir preguntas</button></div>
+        </div></div>
+      </div>
+      ${aiOn ? `<button class="linkish" id="showfree">¿Prefieres hacerlo gratis con tu propia IA?</button>` : ""}
       <p class="error" id="aierr"></p>
-      <div class="row"><button class="btn" id="gen" ${aiOn ? "" : "disabled"}>Generar preguntas</button>
-      <span class="muted small">La IA puede equivocarse: revisa las respuestas antes de guardar.</span></div>
+      <span class="muted small">La IA puede equivocarse: revisa las respuestas antes de guardar.</span>
     </div>
 
     <div class="stack" id="items"></div>
@@ -136,7 +163,10 @@ function drawEditor() {
   document.getElementById("add").addEventListener("click", () => { quiz.items.push(toEditor({})); drawItems(); document.querySelector("#items .qcard:last-child textarea").focus(); });
   document.getElementById("save").addEventListener("click", save);
   app.querySelectorAll("[data-idea]").forEach((b) => b.addEventListener("click", () => (document.getElementById("tema").value = b.dataset.idea)));
-  document.getElementById("gen").addEventListener("click", generate);
+  document.getElementById("gen")?.addEventListener("click", generate);
+  document.getElementById("showfree")?.addEventListener("click", (e) => { document.getElementById("free").hidden = false; e.target.hidden = true; });
+  document.getElementById("copy").addEventListener("click", copyPrompt);
+  document.getElementById("imp").addEventListener("click", importAnswer);
 }
 
 function drawItems() {
@@ -183,24 +213,82 @@ async function generate() {
   btn.disabled = true;
   btn.innerHTML = '<span class="spinner"></span> Pensando…';
   try {
-    const r = await api("/api/ia", {
-      tema: document.getElementById("tema").value,
-      n: +document.getElementById("ain").value,
-      nivel: document.getElementById("ainv").value,
-      trampa: document.getElementById("trampa").checked,
-    });
-    // Quita las preguntas vacías antes de añadir las nuevas
-    quiz.items = quiz.items.filter((it) => it.q.trim() || it.a.some((x) => x.trim()));
-    quiz.items.push(...r.preguntas.map(toEditor));
-    if (!quiz.title.trim()) { quiz.title = document.getElementById("tema").value.slice(0, 40); document.getElementById("title").value = quiz.title; }
-    drawItems();
-    toast(`${r.preguntas.length} preguntas añadidas. Revísalas.`);
-    document.querySelectorAll("#items .qcard")[quiz.items.length - r.preguntas.length]?.scrollIntoView({ behavior: "smooth", block: "start" });
+    const r = await api("/api/ia", opts());
+    addItems(r.preguntas.map(toEditor));
   } catch (ex) {
     err.textContent = ex.message;
   }
   btn.disabled = false;
   btn.textContent = "Generar preguntas";
+}
+
+// ---------- Modo gratis: el usuario usa su propia IA ----------
+function opts() {
+  return {
+    tema: document.getElementById("tema").value.trim(),
+    n: +document.getElementById("ain").value,
+    nivel: document.getElementById("ainv").value,
+    trampa: document.getElementById("trampa").checked,
+  };
+}
+
+function buildPrompt(o) {
+  return [
+    "Eres profesor de un curso de hostelería en España (cafetería, bar, sala y cocina).",
+    `Escribe ${o.n} preguntas de quiz tipo test, en español de España, sobre este tema: ${o.tema}.`,
+    `Nivel: ${o.nivel}.` + (o.trampa ? " Incluye algunas preguntas con trampa (que parezcan fáciles pero tengan truco)." : ""),
+    "Cada pregunta tiene 4 respuestas: SOLO una es correcta y las otras 3 son incorrectas pero creíbles.",
+    "Pregunta de máximo 110 caracteres; cada respuesta de máximo 60. Usa datos correctos y habituales en la hostelería española.",
+    "La respuesta correcta va SIEMPRE la primera de la lista \"a\".",
+    "Si alguna de estas ilustraciones encaja de verdad con la pregunta, pon su ruta en \"img\"; si no, null:",
+    IMAGES.join(", "),
+    "",
+    "Responde SOLO con este JSON, sin nada más:",
+    '{"preguntas":[{"q":"pregunta","a":["correcta","incorrecta 1","incorrecta 2","incorrecta 3"],"img":null}]}',
+  ].join("\n");
+}
+
+async function copyPrompt() {
+  const err = document.getElementById("aierr");
+  err.textContent = "";
+  const o = opts();
+  if (o.tema.length < 3) { err.textContent = "Primero escribe de qué tema quieres las preguntas."; document.getElementById("tema").focus(); return; }
+  const text = buildPrompt(o);
+  const box = document.getElementById("prompt");
+  box.value = text; box.hidden = false;
+  try { await navigator.clipboard.writeText(text); toast("Pedido copiado. Ahora pégalo en la IA."); }
+  catch (e) { box.focus(); box.select(); toast("Selecciona el texto y cópialo."); }
+}
+
+function importAnswer() {
+  const err = document.getElementById("aierr");
+  err.textContent = "";
+  const raw = document.getElementById("resp").value;
+  const start = raw.indexOf("{"), end = raw.lastIndexOf("}");
+  let data = null;
+  try { data = JSON.parse(raw.slice(start, end + 1)); } catch (e) {}
+  const list = Array.isArray(data?.preguntas) ? data.preguntas : Array.isArray(data) ? data : null;
+  if (!list) { err.textContent = "No entiendo esa respuesta. Copia TODO lo que escribió la IA (debe empezar por {\"preguntas\")."; return; }
+  const nivelN = { "fácil": 1, medio: 2, "difícil": 3 }[opts().nivel] || 1;
+  const nuevas = list.map((p) => {
+    const q = String(p?.q || "").trim().slice(0, 200);
+    const a = (Array.isArray(p?.a) ? p.a : []).map((x) => String(x ?? "").trim().slice(0, 90)).filter(Boolean).slice(0, 4);
+    if (!q || a.length < 2 || new Set(a.map((x) => x.toLowerCase())).size !== a.length) return null;
+    return toEditor({ q, a, img: IMAGES.includes(p.img) ? p.img : "", n: nivelN });
+  }).filter(Boolean);
+  if (!nuevas.length) { err.textContent = "La respuesta no tiene preguntas válidas. Pide a la IA que lo intente otra vez."; return; }
+  addItems(nuevas);
+  document.getElementById("resp").value = "";
+}
+
+// Añade preguntas al editor (quita antes las vacías)
+function addItems(nuevas) {
+  quiz.items = quiz.items.filter((it) => it.q.trim() || it.a.some((x) => x.trim()));
+  quiz.items.push(...nuevas);
+  if (!quiz.title.trim()) { quiz.title = opts().tema.slice(0, 40); document.getElementById("title").value = quiz.title; }
+  drawItems();
+  toast(`${nuevas.length} preguntas añadidas. Revísalas.`);
+  document.querySelectorAll("#items .qcard")[quiz.items.length - nuevas.length]?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function save() {
