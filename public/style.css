@@ -100,6 +100,17 @@ input.pin { font-family: var(--display); font-weight: 800; font-size: 30px; lett
 .pill { background: var(--bg-2); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-weight: 700; font-size: 15px; white-space: nowrap; }
 .question { font-family: var(--display); font-weight: 800; font-size: clamp(26px, 4.4vw, 50px); line-height: 1.1; text-align: center; text-wrap: balance; padding: 12px 0; }
 
+/* Etiqueta de nivel */
+.lvl { font-weight: 800; letter-spacing: 0; text-transform: none; }
+.lvl-Fácil { color: #6fd39a; }
+.lvl-Medio { color: #f2c35a; }
+.lvl-Difícil { color: #ff8f80; }
+
+/* Imagen de la pregunta */
+.qimg { display: flex; justify-content: center; }
+.qimg img { height: clamp(150px, 30vh, 300px); width: auto; max-width: 100%; background: var(--bg-2); border: 1px solid var(--line); border-radius: 18px; padding: 10px 24px; }
+.qimg.small img { height: clamp(110px, 22vh, 190px); padding: 6px 16px; }
+
 /* Clasificación */
 .board { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; counter-reset: pos; }
 .board li { display: flex; align-items: center; gap: 14px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; font-weight: 700; font-size: 20px; font-variant-numeric: tabular-nums; }

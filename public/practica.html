@@ -17,6 +17,9 @@
 const app = document.getElementById("app");
 let BANK = null, deck = [], pos = 0, hits = 0, misses = [];
 const chosen = new Set();
+const chosenLv = new Set(); // vacío = todos
+const LV = { 1: "Fácil", 2: "Medio", 3: "Difícil" };
+const lvOk = (p) => !chosenLv.size || !p.n || chosenLv.has(p.n);
 
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 function prep(p) {
@@ -27,12 +30,22 @@ function prep(p) {
 
 async function start() {
   BANK = await (await fetch("/api/preguntas")).json();
-  Object.keys(BANK.categorias).forEach((c) => chosen.add(c));
+  // Mis quizzes (creados en este aparato) se añaden como temas extra
+  for (const q of store.get("hq-quizzes") || []) {
+    BANK.categorias["mi-" + q.id] = "★ " + q.title;
+    BANK.preguntas.push(...q.preguntas.map((p) => ({ ...p, c: "mi-" + q.id })));
+  }
+  const only = new URLSearchParams(location.search).get("quiz");
+  if (only && BANK.categorias["mi-" + only]) {
+    chosen.add("mi-" + only);
+    return run(shuffle(BANK.preguntas.filter((p) => p.c === "mi-" + only)));
+  }
+  Object.keys(BANK.categorias).filter((c) => !c.startsWith("mi-")).forEach((c) => chosen.add(c));
   pick();
 }
 
 function pick() {
-  const count = (id) => BANK.preguntas.filter((p) => p.c === id).length;
+  const count = (id) => BANK.preguntas.filter((p) => p.c === id && lvOk(p)).length;
   app.innerHTML = `
     <div class="top">${LOGO}</div>
     <h1>Practicar solo</h1>
@@ -41,14 +54,26 @@ function pick() {
       <h3>¿Qué quieres repasar?</h3>
       <div class="chips">${Object.entries(BANK.categorias).map(([id, n]) => `<button class="chip" data-c="${id}" aria-pressed="${chosen.has(id)}">${esc(n)} <span class="n">${count(id)}</span></button>`).join("")}</div>
     </div>
-    <div class="row end"><button class="btn" id="go">Empezar</button></div>`;
+    <div class="card">
+      <h3>Nivel</h3>
+      <div class="chips"><button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">Todos</button>${[1, 2, 3].map((n) => `<button class="chip" data-lv="${n}" aria-pressed="${chosenLv.has(n)}">${LV[n]}</button>`).join("")}</div>
+    </div>
+    <div class="row" style="justify-content:space-between"><a class="btn ghost" href="/crear.html">Crear mi quiz con IA</a><button class="btn" id="go" ${chosen.size ? "" : "disabled"}>Empezar</button></div>`;
   app.querySelectorAll("[data-c]").forEach((b) => b.addEventListener("click", () => {
     chosen.has(b.dataset.c) ? chosen.delete(b.dataset.c) : chosen.add(b.dataset.c);
     b.setAttribute("aria-pressed", chosen.has(b.dataset.c));
     document.getElementById("go").disabled = !chosen.size;
   }));
+  app.querySelectorAll("[data-lv]").forEach((b) => b.addEventListener("click", () => {
+    const n = +b.dataset.lv;
+    if (!n) chosenLv.clear(); else chosenLv.has(n) ? chosenLv.delete(n) : chosenLv.add(n);
+    if (chosenLv.size === 3) chosenLv.clear();
+    pick();
+  }));
   document.getElementById("go").addEventListener("click", () => {
-    run(shuffle(BANK.preguntas.filter((p) => chosen.has(p.c))));
+    const list = BANK.preguntas.filter((p) => chosen.has(p.c) && lvOk(p));
+    if (!list.length) { document.getElementById("go").textContent = "No hay preguntas con ese nivel"; return; }
+    run(shuffle(list));
   });
 }
 
@@ -63,8 +88,9 @@ function ask() {
   app.innerHTML = `
     <div class="top">${LOGO}<span class="pill" id="prog">${pos + 1} / ${deck.length} · ${hits} aciertos</span></div>
     <div class="timebar"><i style="transform:scaleX(${pos / deck.length})"></i></div>
-    <p class="label" style="text-align:center">${esc(BANK.categorias[q.c])}</p>
+    <p class="label" style="text-align:center">${esc(BANK.categorias[q.c])}${q.n ? ` · <span class="lvl lvl-${LV[q.n]}">${LV[q.n]}</span>` : ""}</p>
     <p class="question" style="font-size:clamp(22px,5vw,36px)">${esc(q.q)}</p>
+    ${pic(q)}
     <div class="answers">${q.opts.map((t, i) => { const ci = colorIdx(i, q.isVf); return `<button class="ans a${ci}" data-i="${i}">${SHAPES[ci]}<span class="tx">${esc(t)}</span></button>`; }).join("")}</div>
     <div id="fb" class="stack"></div>`;
   app.querySelectorAll("[data-i]").forEach((b) => b.addEventListener("click", () => answer(+b.dataset.i)));

@@ -36,6 +36,7 @@ function home(err = "", pinPrefill = "") {
         <div class="row">
           <a class="btn ghost" href="/host.html">Crear una partida</a>
           <a class="btn ghost" href="/practica.html">Practicar solo</a>
+          <a class="btn ghost" href="/crear.html">Crear quiz con IA</a>
         </div>
       </div>
       <form class="card" id="join" autocomplete="off">
@@ -111,9 +112,10 @@ function showQuestion(d) {
   const end = Date.now() + d.left;
   const two = d.a.length === 2;
   screen(`
-    <div class="qhead"><span class="pill">${d.idx + 1} / ${d.total}</span><span class="pill" id="left">${Math.ceil(d.left / 1000)} s</span></div>
+    <div class="qhead"><span class="pill">${d.idx + 1} / ${d.total}${d.nivel ? ` · <span class="lvl lvl-${esc(d.nivel)}">${esc(d.nivel)}</span>` : ""}</span><span class="pill" id="left">${Math.ceil(d.left / 1000)} s</span></div>
     <div class="timebar"><i id="bar" style="transform:scaleX(${d.left / (d.time * 1000)})"></i></div>
     <p class="question" style="font-size:clamp(20px,5.6vw,30px);padding:4px 0">${esc(d.q)}</p>
+    ${pic(d, "small")}
     <div class="pad ${two ? "two" : ""}">
       ${d.a.map((t, i) => `<button class="ans a${colorIdx(i, d.vf)}" data-i="${i}">${SHAPES[colorIdx(i, d.vf)]}<span class="tx">${esc(t)}</span></button>`).join("")}
     </div>`);

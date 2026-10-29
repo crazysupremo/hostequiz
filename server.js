@@ -10,6 +10,19 @@ const PORT = process.env.PORT || 3000;
 const PUBLIC = path.join(__dirname, "public");
 const MAX_PLAYERS = 100;
 
+// Ilustraciones disponibles (public/img)
+const IMAGES = fs.readdirSync(path.join(PUBLIC, "img")).filter((f) => f.endsWith(".svg")).map((f) => "/img/" + f).sort();
+
+// IA: se activa poniendo ANTHROPIC_API_KEY en las variables de entorno (Render → Environment)
+const AI = {
+  key: process.env.ANTHROPIC_API_KEY || "",
+  model: process.env.AI_MODEL || "claude-haiku-5-5",
+  url: (process.env.ANTHROPIC_BASE_URL || "https://api.anthropic.com") + "/v1/messages",
+  perHour: parseInt(process.env.AI_LIMIT_PER_HOUR) || 15, // peticiones por persona y hora
+};
+const aiUse = new Map(); // ip -> [marcas de tiempo]
+const NIVELES = { 1: "Fácil", 2: "Medio", 3: "Difícil" };
+
 const MIME = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -43,9 +56,26 @@ function newPin() {
 
 // Pregunta del banco -> pregunta de partida (respuestas mezcladas)
 function toGameQuestion(p) {
-  if (typeof p.vf === "boolean") return { c: p.c, q: p.q, a: ["Verdadero", "Falso"], ok: p.vf ? 0 : 1, vf: true };
+  const img = p.img || null;
+  const cat = p.cat || BANK.categorias[p.c] || "";
+  const nivel = NIVELES[p.n] || "";
+  if (typeof p.vf === "boolean") return { cat, nivel, q: p.q, img, a: ["Verdadero", "Falso"], ok: p.vf ? 0 : 1, vf: true };
   const order = shuffle(p.a.map((_, i) => i));
-  return { c: p.c, q: p.q, a: order.map((i) => p.a[i]), ok: order.indexOf(0), vf: false };
+  return { cat, nivel, q: p.q, img, a: order.map((i) => p.a[i]), ok: order.indexOf(0), vf: false };
+}
+
+// Limpia una pregunta que viene de fuera (quiz propio o IA). Formato: { q, a: [correcta, ...incorrectas], img? }
+function cleanQuestion(p, cat) {
+  if (!p || typeof p.q !== "string") return null;
+  const q = p.q.trim().slice(0, 200);
+  const img = IMAGES.includes(p.img) ? p.img : undefined;
+  const n = [1, 2, 3].includes(+p.n) ? +p.n : undefined;
+  if (!q) return null;
+  if (typeof p.vf === "boolean") return { q, vf: p.vf, img, cat, n };
+  if (!Array.isArray(p.a)) return null;
+  const a = p.a.map((x) => String(x ?? "").trim().slice(0, 90)).filter(Boolean).slice(0, 4);
+  if (a.length < 2 || new Set(a.map((x) => x.toLowerCase())).size !== a.length) return null;
+  return { q, a, img, cat, n };
 }
 
 const cleanName = (s) => String(s || "").replace(/\s+/g, " ").trim().slice(0, 16);
@@ -63,8 +93,10 @@ function publicQuestion(game) {
   return {
     idx: game.idx,
     total: game.questions.length,
-    cat: BANK.categorias[q.c] || "",
+    cat: q.cat,
+    nivel: q.nivel,
     q: q.q,
+    img: q.img,
     a: q.a,
     vf: q.vf,
     time: game.time,
@@ -198,10 +230,19 @@ const api = {
   // El presentador crea la partida
   "POST /api/host/create": async (body) => {
     const cats = Array.isArray(body.cats) ? body.cats.filter((c) => BANK.categorias[c]) : [];
-    if (!cats.length) return [400, { error: "Elige al menos una categoría." }];
-    const n = Math.min(Math.max(parseInt(body.n) || 10, 3), 60);
+    // Quizzes propios (creados por el usuario, guardados en su móvil u ordenador)
+    const custom = (Array.isArray(body.custom) ? body.custom.slice(0, 10) : []).flatMap((quiz) => {
+      const title = String(quiz?.title || "Mi quiz").trim().slice(0, 40) || "Mi quiz";
+      return (Array.isArray(quiz?.preguntas) ? quiz.preguntas.slice(0, 100) : []).map((p) => cleanQuestion(p, title)).filter(Boolean);
+    });
+    if (!cats.length && !custom.length) return [400, { error: "Elige al menos un tema o uno de tus quizzes." }];
+    const n = Math.min(Math.max(parseInt(body.n) || 10, 1), 100);
     const time = [10, 20, 30, 60].includes(+body.time) ? +body.time : 20;
-    const pool = BANK.preguntas.filter((p) => cats.includes(p.c));
+    // Niveles elegidos (vacío = todos). Las preguntas propias sin nivel entran siempre.
+    const niveles = (Array.isArray(body.niveles) ? body.niveles : []).map(Number).filter((n) => NIVELES[n]);
+    const okLevel = (p) => !niveles.length || !p.n || niveles.includes(p.n);
+    const pool = BANK.preguntas.filter((p) => cats.includes(p.c)).concat(custom).filter(okLevel);
+    if (!pool.length) return [400, { error: "No hay preguntas con esos temas y niveles. Elige otro nivel." }];
     const game = {
       pin: newPin(),
       hostKey: token(12),
@@ -285,6 +326,61 @@ const api = {
   },
 };
 
+// ---------- IA: ideas de preguntas ----------
+async function generateWithAI(body, ip) {
+  if (!AI.key) return [503, { error: "La IA no está activada en este servidor. El administrador tiene que añadir la clave ANTHROPIC_API_KEY." }];
+  const tema = String(body.tema || "").trim().slice(0, 300);
+  if (tema.length < 3) return [400, { error: "Escribe de qué tema quieres las preguntas." }];
+  const n = Math.min(Math.max(parseInt(body.n) || 5, 1), 15);
+  const nivel = ["fácil", "medio", "difícil"].includes(body.nivel) ? body.nivel : "fácil";
+
+  // Límite de uso por persona
+  const now = Date.now();
+  const uses = (aiUse.get(ip) || []).filter((t) => now - t < 60 * 60 * 1000);
+  if (uses.length >= AI.perHour) return [429, { error: "Has pedido muchas preguntas seguidas. Espera un rato y vuelve a probar." }];
+  uses.push(now);
+  aiUse.set(ip, uses);
+
+  const system = [
+    "Eres profesor de un curso de hostelería en España (cafetería, bar, sala y cocina).",
+    "Escribes preguntas de quiz tipo test en español de España, claras y cortas, para alumnos que están aprendiendo.",
+    "Cada pregunta tiene 4 respuestas: SOLO una es correcta y las otras 3 son incorrectas pero creíbles.",
+    "La pregunta tiene como máximo 110 caracteres y cada respuesta como máximo 60.",
+    "Usa datos correctos y habituales en la hostelería española. Si un dato depende del local, no lo preguntes.",
+    "Responde SOLO con JSON válido, sin texto antes ni después, con esta forma:",
+    '{"preguntas":[{"q":"pregunta","a":["respuesta correcta","incorrecta 1","incorrecta 2","incorrecta 3"],"img":null}]}',
+    "La respuesta correcta va SIEMPRE la primera en la lista \"a\".",
+    "Si una de estas ilustraciones encaja de verdad con la pregunta, pon su ruta en \"img\"; si no, null: " + IMAGES.join(", "),
+  ].join("\n");
+  const prompt = `Tema: ${tema}\nNúmero de preguntas: ${n}\nNivel: ${nivel}` +
+    (body.trampa ? "\nIncluye algunas preguntas con trampa (que parezcan fáciles pero tengan truco)." : "");
+
+  try {
+    const r = await fetch(AI.url, {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-api-key": AI.key, "anthropic-version": "2023-06-01" },
+      body: JSON.stringify({ model: AI.model, max_tokens: 4000, system, messages: [{ role: "user", content: prompt }] }),
+      signal: AbortSignal.timeout(60000),
+    });
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok) {
+      console.error("IA error", r.status, data?.error?.message);
+      return [502, { error: "La IA no ha respondido bien. Prueba otra vez en un momento." }];
+    }
+    const text = (data.content || []).map((c) => c.text || "").join("");
+    const match = text.match(/\{[\s\S]*\}/);
+    const parsed = match ? JSON.parse(match[0]) : null;
+    const nivelN = { "fácil": 1, medio: 2, "difícil": 3 }[nivel];
+    const preguntas = (parsed?.preguntas || []).map((p) => cleanQuestion({ ...p, n: nivelN })).filter(Boolean).slice(0, n)
+      .map(({ cat, ...p }) => p);
+    if (!preguntas.length) return [502, { error: "La IA no ha devuelto preguntas válidas. Prueba a escribir el tema de otra forma." }];
+    return [200, { preguntas }];
+  } catch (e) {
+    console.error("IA fallo", e.message);
+    return [502, { error: "No se ha podido hablar con la IA. Prueba otra vez." }];
+  }
+}
+
 // Conexión en tiempo real
 function openStream(req, res, url) {
   const game = games.get(url.searchParams.get("pin") || "");
@@ -366,9 +462,17 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/api/categorias") {
       return json(res, 200, Object.entries(BANK.categorias).map(([id, nombre]) => ({
         id, nombre, total: BANK.preguntas.filter((p) => p.c === id).length,
+        porNivel: [1, 2, 3].map((n) => BANK.preguntas.filter((p) => p.c === id && p.n === n).length),
       })));
     }
     if (req.method === "GET" && url.pathname === "/api/preguntas") return json(res, 200, BANK);
+    if (req.method === "GET" && url.pathname === "/api/imagenes") return json(res, 200, IMAGES);
+    if (req.method === "GET" && url.pathname === "/api/ia/estado") return json(res, 200, { activa: !!AI.key });
+    if (req.method === "POST" && url.pathname === "/api/ia") {
+      const ip = String(req.headers["x-forwarded-for"] || req.socket.remoteAddress || "").split(",")[0].trim();
+      const [code, data] = await generateWithAI(await readBody(req), ip);
+      return json(res, code, data);
+    }
     const handler = api[`${req.method} ${url.pathname}`];
     if (handler) {
       const [code, data] = await handler(await readBody(req));

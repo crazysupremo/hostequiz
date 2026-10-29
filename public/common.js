@@ -39,3 +39,6 @@ const store = {
 
 const CUP = '<svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12h18v7a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8z" fill="#e39b45"/><path d="M23 14h2.5a3.5 3.5 0 0 1 0 7H23" fill="none" stroke="#e39b45" stroke-width="2.4"/><path d="M11 3c-1.5 2 1.5 3 0 6M16 3c-1.5 2 1.5 3 0 6" fill="none" stroke="#f4e7d4" stroke-width="2" stroke-linecap="round"/></svg>';
 const LOGO = `<a class="logo" href="/">${CUP}<span>Hoste<b>Quiz</b></span></a>`;
+
+// Imagen de la pregunta (si tiene)
+const pic = (d, size = "") => (d.img ? `<div class="qimg ${size}"><img src="${esc(d.img)}" alt=""></div>` : "");

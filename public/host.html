@@ -20,6 +20,11 @@ let game = store.get("hq-host", sessionStorage); // { pin, key }
 let es = null, tick = null, players = [];
 let cats = [];
 const chosen = new Set();
+const mine = store.get("hq-quizzes") || []; // quizzes creados en este aparato
+const chosenMine = new Set();
+const chosenLv = new Set(); // vacío = todos los niveles
+const LV = { 1: "Fácil", 2: "Medio", 3: "Difícil" };
+const startQuiz = new URLSearchParams(location.search).get("quiz");
 
 const act = (action, extra) => api("/api/host/action", { pin: game.pin, key: game.key, action, ...extra }).catch((e) => alert(e.message));
 const header = (right = "") => `<div class="top">${LOGO}${right}</div>`;
@@ -38,7 +43,8 @@ function render(html) { clearInterval(tick); app.innerHTML = html; wireEnd(); }
 async function setup(err = "") {
   if (!cats.length) {
     try { cats = await (await fetch("/api/categorias")).json(); } catch (e) { cats = []; }
-    cats.forEach((c) => chosen.add(c.id));
+    if (startQuiz && mine.some((q) => q.id === startQuiz)) chosenMine.add(startQuiz);
+    else cats.forEach((c) => chosen.add(c.id));
   }
   render(`
     ${header()}
@@ -46,12 +52,20 @@ async function setup(err = "") {
     <div class="card">
       <div class="row" style="justify-content:space-between"><h3>Temas</h3><button class="btn ghost small" id="all">Todos / ninguno</button></div>
       <div class="chips">${cats.map((c) => `<button class="chip" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}">${esc(c.nombre)} <span class="n">${c.total}</span></button>`).join("")}</div>
-      <p class="muted small" id="avail"></p>
     </div>
+    ${mine.length ? `<div class="card">
+      <div class="row" style="justify-content:space-between"><h3>Mis quizzes</h3><a class="btn ghost small" href="/crear.html">Crear otro</a></div>
+      <div class="chips">${mine.map((q) => `<button class="chip" data-m="${q.id}" aria-pressed="${chosenMine.has(q.id)}">${esc(q.title)} <span class="n">${q.preguntas.length}</span></button>`).join("")}</div>
+    </div>` : `<p class="muted small">¿Quieres tus propias preguntas? <a href="/crear.html" style="color:var(--caramel)">Crea un quiz con ayuda de la IA</a>.</p>`}
+    <div class="card">
+      <h3>Nivel</h3>
+      <div class="chips" id="lv"></div>
+    </div>
+    <p class="muted small" id="avail"></p>
     <div class="row" style="align-items:stretch">
       <div class="card" style="flex:1;min-width:220px">
         <label class="label" for="n">Número de preguntas</label>
-        <select id="n">${[5, 10, 15, 20, 30, 40].map((n) => `<option ${n === 10 ? "selected" : ""}>${n}</option>`).join("")}</select>
+        <select id="n">${[5, 10, 15, 20, 30, 40].map((n) => `<option value="${n}" ${n === 10 && !chosenMine.size ? "selected" : ""}>${n}</option>`).join("")}<option value="100" ${chosenMine.size ? "selected" : ""}>Todas</option></select>
       </div>
       <div class="card" style="flex:1;min-width:220px">
         <label class="label" for="t">Tiempo por pregunta</label>
@@ -61,15 +75,35 @@ async function setup(err = "") {
     <p class="error">${esc(err)}</p>
     <div class="row end"><button class="btn" id="go">Crear partida</button></div>`);
 
+  const drawLv = () => {
+    document.getElementById("lv").innerHTML =
+      `<button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">Todos</button>` +
+      [1, 2, 3].map((n) => `<button class="chip" data-lv="${n}" aria-pressed="${chosenLv.has(n)}">${LV[n]}</button>`).join("");
+    app.querySelectorAll("[data-lv]").forEach((b) => b.addEventListener("click", () => {
+      const n = +b.dataset.lv;
+      if (!n) chosenLv.clear(); else chosenLv.has(n) ? chosenLv.delete(n) : chosenLv.add(n);
+      if (chosenLv.size === 3) chosenLv.clear();
+      drawLv(); upd();
+    }));
+  };
+  const lvOk = (n) => !chosenLv.size || !n || chosenLv.has(n);
   const upd = () => {
-    const total = cats.filter((c) => chosen.has(c.id)).reduce((s, c) => s + c.total, 0);
-    document.getElementById("avail").textContent = total ? `${total} preguntas disponibles en los temas elegidos.` : "Elige al menos un tema.";
+    const total = cats.filter((c) => chosen.has(c.id)).reduce((s, c) => s + (chosenLv.size ? [1, 2, 3].filter((n) => chosenLv.has(n)).reduce((t, n) => t + c.porNivel[n - 1], 0) : c.total), 0)
+      + mine.filter((q) => chosenMine.has(q.id)).reduce((s, q) => s + q.preguntas.filter((p) => lvOk(p.n)).length, 0);
+    document.getElementById("avail").textContent = total ? `${total} preguntas disponibles en lo que has elegido.` : "Elige al menos un tema o un quiz tuyo.";
     document.getElementById("go").disabled = !total;
   };
+  drawLv();
   app.querySelectorAll("[data-c]").forEach((b) => b.addEventListener("click", () => {
     const id = b.dataset.c;
     chosen.has(id) ? chosen.delete(id) : chosen.add(id);
     b.setAttribute("aria-pressed", chosen.has(id));
+    upd();
+  }));
+  app.querySelectorAll("[data-m]").forEach((b) => b.addEventListener("click", () => {
+    const id = b.dataset.m;
+    chosenMine.has(id) ? chosenMine.delete(id) : chosenMine.add(id);
+    b.setAttribute("aria-pressed", chosenMine.has(id));
     upd();
   }));
   document.getElementById("all").addEventListener("click", () => {
@@ -81,7 +115,7 @@ async function setup(err = "") {
   document.getElementById("go").addEventListener("click", async (e) => {
     e.target.disabled = true;
     try {
-      const r = await api("/api/host/create", { cats: [...chosen], n: +document.getElementById("n").value, time: +document.getElementById("t").value });
+      const r = await api("/api/host/create", { cats: [...chosen], custom: mine.filter((q) => chosenMine.has(q.id)), niveles: [...chosenLv], n: +document.getElementById("n").value, time: +document.getElementById("t").value });
       game = { pin: r.pin, key: r.hostKey };
       store.set("hq-host", game, sessionStorage);
       connect();
@@ -150,13 +184,14 @@ function showQuestion(d) {
   render(`
     ${header(endBtn)}
     <div class="qhead">
-      <span class="pill">Pregunta ${d.idx + 1} de ${d.total} · ${esc(d.cat)}</span>
+      <span class="pill">Pregunta ${d.idx + 1} de ${d.total} · ${esc(d.cat)}${d.nivel ? ` · <span class="lvl lvl-${esc(d.nivel)}">${esc(d.nivel)}</span>` : ""}</span>
       <span class="pill" id="ansc">${d.answered || 0} / ${d.players} respuestas</span>
     </div>
     <div class="row" style="justify-content:center;gap:24px;flex-wrap:nowrap">
       <div class="timer" id="tm">${Math.ceil(d.left / 1000)}</div>
       <p class="question" style="flex:1">${esc(d.q)}</p>
     </div>
+    ${pic(d)}
     ${tiles(d)}
     <div class="row end"><button class="btn ghost" id="skip">Ver respuesta ya</button></div>`);
   document.getElementById("skip").addEventListener("click", () => act("skip"));
@@ -174,6 +209,7 @@ function showReveal(d) {
     ${header(endBtn)}
     <div class="qhead"><span class="pill">Pregunta ${d.idx + 1} de ${d.total} · ${esc(d.cat)}</span><span class="pill">${d.answeredCount} / ${d.players} respondieron</span></div>
     <p class="question">${esc(d.q)}</p>
+    ${pic(d)}
     ${tiles(d, d.counts, d.ok)}
     <div class="row end"><button class="btn" id="next">Clasificación</button></div>`);
   document.getElementById("next").addEventListener("click", () => act("next"));

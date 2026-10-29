@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b120d">
+<title>HosteQuiz · Crear quiz</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="/style.css">
+<style>
+  .qcard { gap: 12px; }
+  .qcard .num { font-family: var(--display); font-weight: 800; color: var(--caramel); }
+  .qcard textarea { font: inherit; font-size: 18px; width: 100%; min-height: 64px; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--bg); color: var(--crema); resize: vertical; }
+  .opt { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: center; }
+  .opt input[type="text"] { font-size: 17px; padding: 10px 12px; border-left-width: 8px; }
+  .opt:nth-child(1) input[type="text"] { border-left-color: var(--c0); }
+  .opt:nth-child(2) input[type="text"] { border-left-color: var(--c1); }
+  .opt:nth-child(3) input[type="text"] { border-left-color: var(--c2); }
+  .opt:nth-child(4) input[type="text"] { border-left-color: var(--c3); }
+  .ok-radio { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); cursor: pointer; white-space: nowrap; }
+  .ok-radio input { width: 22px; height: 22px; accent-color: var(--ok); }
+  .imgrow { display: grid; grid-template-columns: 1fr 72px; gap: 10px; align-items: center; }
+  .imgrow select { font-size: 16px; padding: 10px; }
+  .thumb { width: 72px; height: 72px; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); display: grid; place-items: center; }
+  .thumb img { max-height: 64px; }
+  .ai { background: linear-gradient(160deg, #3a2618, var(--bg-2)); border-color: #6b4a33; }
+  .ai textarea { font: inherit; font-size: 18px; width: 100%; min-height: 70px; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--bg); color: var(--crema); resize: vertical; }
+  .ideas { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ideas button { background: transparent; border: 1px dashed var(--line); color: var(--muted); border-radius: 999px; padding: 5px 12px; font-size: 14px; }
+  .myq { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 12px 0; border-top: 1px solid var(--line); }
+  .myq:first-of-type { border-top: 0; }
+  .myq .t { flex: 1; min-width: 160px; font-weight: 700; }
+  .toast { position: fixed; left: 50%; bottom: max(20px, env(safe-area-inset-bottom)); transform: translateX(-50%); background: var(--crema); color: var(--bg); padding: 12px 20px; border-radius: 999px; font-weight: 700; z-index: 20; }
+  .spinner { width: 18px; height: 18px; border: 3px solid rgba(42,20,7,.3); border-top-color: #2a1407; border-radius: 50%; animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .savebar { position: sticky; bottom: 0; padding: 12px 0 max(12px, env(safe-area-inset-bottom)); background: linear-gradient(transparent, var(--bg) 30%); }
+</style>
+</head>
+<body>
+<div class="wrap"><div class="col" id="app" style="max-width:820px"></div></div>
+<div class="toast" id="toast" hidden></div>
+<script src="/common.js"></script>
+<script>
+const app = document.getElementById("app");
+const IDEAS = ["Cafés con alcohol", "Servicio del vino", "Cócteles clásicos", "Tipos de cerveza", "Atención al cliente", "Alérgenos", "Tapas españolas", "Cubiertos y su uso"];
+let IMAGES = [];
+let aiOn = false;
+let quiz = null; // el que se está editando
+
+const loadQuizzes = () => store.get("hq-quizzes") || [];
+const saveQuizzes = (list) => store.set("hq-quizzes", list);
+const imgName = (p) => p.replace("/img/", "").replace(".svg", "").replace(/-/g, " ");
+
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.hidden = false;
+  clearTimeout(t._h); t._h = setTimeout(() => (t.hidden = true), 2600);
+}
+
+// ---------- Lista de mis quizzes ----------
+function list() {
+  const qs = loadQuizzes();
+  app.innerHTML = `
+    <div class="top">${LOGO}</div>
+    <h1>Crea tu propio quiz</h1>
+    <p class="muted">Escribe tus preguntas o pide ideas a la IA. Después puedes jugarlo con tus compañeros o practicarlo solo.</p>
+    <div class="row"><button class="btn" id="new">Nuevo quiz</button></div>
+    <div class="card">
+      <h3>Mis quizzes</h3>
+      ${qs.length ? qs.map((q) => `
+        <div class="myq">
+          <span class="t">${esc(q.title)} <span class="muted small">· ${q.preguntas.length} preguntas</span></span>
+          <a class="btn small" href="/host.html?quiz=${q.id}">Jugar</a>
+          <a class="btn ghost small" href="/practica.html?quiz=${q.id}">Practicar</a>
+          <button class="btn ghost small" data-edit="${q.id}">Editar</button>
+          <button class="btn ghost small" data-del="${q.id}">Borrar</button>
+        </div>`).join("") : `<p class="muted">Todavía no has creado ninguno. Se guardan en este móvil u ordenador.</p>`}
+    </div>`;
+  document.getElementById("new").addEventListener("click", () => edit({ id: Date.now().toString(36), title: "", preguntas: [] }));
+  app.querySelectorAll("[data-edit]").forEach((b) => b.addEventListener("click", () => edit(structuredClone(loadQuizzes().find((q) => q.id === b.dataset.edit)))));
+  app.querySelectorAll("[data-del]").forEach((b) => b.addEventListener("click", () => {
+    if (!b.dataset.sure) { b.dataset.sure = 1; b.textContent = "¿Seguro?"; return; }
+    saveQuizzes(loadQuizzes().filter((q) => q.id !== b.dataset.del));
+    toast("Quiz borrado");
+    list();
+  }));
+}
+
+// ---------- Editor ----------
+// En el editor cada pregunta es { q, a: [4 textos], ok: índice correcto, img }
+function toEditor(p) {
+  const a = (p.a || []).slice(0, 4);
+  while (a.length < 4) a.push("");
+  return { q: p.q || "", a, ok: 0, img: p.img || "", n: [1, 2, 3].includes(+p.n) ? +p.n : 1 };
+}
+
+function edit(q) {
+  quiz = { id: q.id, title: q.title, items: q.preguntas.map(toEditor) };
+  if (!quiz.items.length) quiz.items.push(toEditor({}));
+  drawEditor();
+}
+
+function drawEditor() {
+  app.innerHTML = `
+    <div class="top">${LOGO}<button class="btn ghost small" id="back">Mis quizzes</button></div>
+    <h1>${quiz.title ? esc(quiz.title) : "Nuevo quiz"}</h1>
+    <div class="card">
+      <label class="label" for="title">Nombre del quiz</label>
+      <input id="title" maxlength="40" placeholder="Ej.: Cafés del bar" value="${esc(quiz.title)}">
+    </div>
+
+    <div class="card ai">
+      <div class="row" style="justify-content:space-between"><h3>Pedir ideas a la IA</h3>${aiOn ? "" : '<span class="pill small">No activada</span>'}</div>
+      <label class="label" for="tema">¿Sobre qué quieres preguntas?</label>
+      <textarea id="tema" maxlength="300" placeholder="Ej.: cafés con alcohol: carajillo, irlandés, jamaicano…"></textarea>
+      <div class="ideas">${IDEAS.map((i) => `<button type="button" data-idea="${esc(i)}">${esc(i)}</button>`).join("")}</div>
+      <div class="row">
+        <select id="ain" style="width:auto">${[3, 5, 10, 15].map((n) => `<option ${n === 5 ? "selected" : ""} value="${n}">${n} preguntas</option>`).join("")}</select>
+        <select id="ainv" style="width:auto"><option value="fácil">Fácil</option><option value="medio">Medio</option><option value="difícil">Difícil</option></select>
+        <label class="ok-radio" style="font-size:15px"><input type="checkbox" id="trampa"> Con trampas</label>
+      </div>
+      <p class="error" id="aierr"></p>
+      <div class="row"><button class="btn" id="gen" ${aiOn ? "" : "disabled"}>Generar preguntas</button>
+      <span class="muted small">La IA puede equivocarse: revisa las respuestas antes de guardar.</span></div>
+    </div>
+
+    <div class="stack" id="items"></div>
+    <div class="row"><button class="btn ghost" id="add">+ Añadir pregunta a mano</button></div>
+    <div class="savebar"><p class="error" id="saveerr"></p><div class="row end"><button class="btn" id="save">Guardar quiz</button></div></div>`;
+
+  drawItems();
+  document.getElementById("back").addEventListener("click", list);
+  document.getElementById("title").addEventListener("input", (e) => (quiz.title = e.target.value));
+  document.getElementById("add").addEventListener("click", () => { quiz.items.push(toEditor({})); drawItems(); document.querySelector("#items .qcard:last-child textarea").focus(); });
+  document.getElementById("save").addEventListener("click", save);
+  app.querySelectorAll("[data-idea]").forEach((b) => b.addEventListener("click", () => (document.getElementById("tema").value = b.dataset.idea)));
+  document.getElementById("gen").addEventListener("click", generate);
+}
+
+function drawItems() {
+  const box = document.getElementById("items");
+  box.innerHTML = quiz.items.map((it, n) => `
+    <div class="card qcard" data-n="${n}">
+      <div class="row" style="justify-content:space-between"><span class="num">Pregunta ${n + 1}</span><button class="btn ghost small" data-rm="${n}">Quitar</button></div>
+      <textarea data-f="q" maxlength="200" placeholder="Escribe la pregunta">${esc(it.q)}</textarea>
+      <div class="stack" style="gap:8px">
+        ${it.a.map((t, i) => `
+          <div class="opt">
+            <label class="ok-radio"><input type="radio" name="ok${n}" value="${i}" ${it.ok === i ? "checked" : ""}> Correcta</label>
+            <input type="text" data-a="${i}" maxlength="90" placeholder="${i < 2 ? "Respuesta" : "Respuesta (opcional)"}" value="${esc(t)}">
+          </div>`).join("")}
+      </div>
+      <div class="row">
+        <label class="label" for="lv${n}" style="margin:0">Nivel</label>
+        <select id="lv${n}" data-f="n" style="width:auto;font-size:16px;padding:8px 12px">${[[1, "Fácil"], [2, "Medio"], [3, "Difícil"]].map(([v, t]) => `<option value="${v}" ${it.n === v ? "selected" : ""}>${t}</option>`).join("")}</select>
+      </div>
+      <div class="imgrow">
+        <select data-f="img"><option value="">Sin imagen</option>${IMAGES.map((p) => `<option value="${p}" ${it.img === p ? "selected" : ""}>${esc(imgName(p))}</option>`).join("")}</select>
+        <div class="thumb">${it.img ? `<img src="${it.img}" alt="">` : ""}</div>
+      </div>
+    </div>`).join("");
+
+  box.querySelectorAll(".qcard").forEach((card) => {
+    const it = quiz.items[+card.dataset.n];
+    card.querySelector("[data-f='q']").addEventListener("input", (e) => (it.q = e.target.value));
+    card.querySelectorAll("[data-a]").forEach((inp) => inp.addEventListener("input", (e) => (it.a[+inp.dataset.a] = e.target.value)));
+    card.querySelectorAll("input[type=radio]").forEach((r) => r.addEventListener("change", () => (it.ok = +r.value)));
+    card.querySelector("[data-f='n']").addEventListener("change", (e) => (it.n = +e.target.value));
+    card.querySelector("[data-f='img']").addEventListener("change", (e) => {
+      it.img = e.target.value;
+      card.querySelector(".thumb").innerHTML = it.img ? `<img src="${it.img}" alt="">` : "";
+    });
+    card.querySelector("[data-rm]").addEventListener("click", () => { quiz.items.splice(+card.dataset.n, 1); drawItems(); });
+  });
+}
+
+async function generate() {
+  const btn = document.getElementById("gen");
+  const err = document.getElementById("aierr");
+  err.textContent = "";
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Pensando…';
+  try {
+    const r = await api("/api/ia", {
+      tema: document.getElementById("tema").value,
+      n: +document.getElementById("ain").value,
+      nivel: document.getElementById("ainv").value,
+      trampa: document.getElementById("trampa").checked,
+    });
+    // Quita las preguntas vacías antes de añadir las nuevas
+    quiz.items = quiz.items.filter((it) => it.q.trim() || it.a.some((x) => x.trim()));
+    quiz.items.push(...r.preguntas.map(toEditor));
+    if (!quiz.title.trim()) { quiz.title = document.getElementById("tema").value.slice(0, 40); document.getElementById("title").value = quiz.title; }
+    drawItems();
+    toast(`${r.preguntas.length} preguntas añadidas. Revísalas.`);
+    document.querySelectorAll("#items .qcard")[quiz.items.length - r.preguntas.length]?.scrollIntoView({ behavior: "smooth", block: "start" });
+  } catch (ex) {
+    err.textContent = ex.message;
+  }
+  btn.disabled = false;
+  btn.textContent = "Generar preguntas";
+}
+
+function save() {
+  const err = document.getElementById("saveerr");
+  const title = quiz.title.trim();
+  if (!title) { err.textContent = "Ponle un nombre al quiz."; document.getElementById("title").focus(); return; }
+  const preguntas = [];
+  for (let i = 0; i < quiz.items.length; i++) {
+    const it = quiz.items[i];
+    const q = it.q.trim();
+    const correct = (it.a[it.ok] || "").trim();
+    const wrong = it.a.filter((_, k) => k !== it.ok).map((x) => x.trim()).filter(Boolean);
+    if (!q && !correct && !wrong.length) continue; // vacía: se ignora
+    if (!q) { err.textContent = `Falta el texto de la pregunta ${i + 1}.`; return; }
+    if (!correct) { err.textContent = `En la pregunta ${i + 1}, la respuesta marcada como correcta está vacía.`; return; }
+    if (!wrong.length) { err.textContent = `La pregunta ${i + 1} necesita al menos una respuesta incorrecta.`; return; }
+    const a = [correct, ...wrong]; // la correcta siempre la primera
+    if (new Set(a.map((x) => x.toLowerCase())).size !== a.length) { err.textContent = `La pregunta ${i + 1} tiene respuestas repetidas.`; return; }
+    preguntas.push(it.img ? { q, a, n: it.n, img: it.img } : { q, a, n: it.n });
+  }
+  if (!preguntas.length) { err.textContent = "Añade al menos una pregunta."; return; }
+  const all = loadQuizzes().filter((x) => x.id !== quiz.id);
+  all.unshift({ id: quiz.id, title, preguntas });
+  saveQuizzes(all);
+  toast("Quiz guardado");
+  list();
+}
+
+(async () => {
+  try { IMAGES = await (await fetch("/api/imagenes")).json(); } catch (e) {}
+  try { aiOn = (await (await fetch("/api/ia/estado")).json()).activa; } catch (e) {}
+  list();
+})();
+</script>
+</body>
+</html>
