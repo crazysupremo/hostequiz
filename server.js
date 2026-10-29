@@ -13,16 +13,20 @@ const MAX_PLAYERS = 100;
 // Ilustraciones disponibles (public/img)
 const IMAGES = fs.readdirSync(path.join(PUBLIC, "img")).filter((f) => f.endsWith(".svg")).map((f) => "/img/" + f).sort();
 
-// IA (opcional). Sin clave, la web usa el modo gratis: copiar el pedido y pegarlo en ChatGPT/Gemini/Claude.
-// Con GEMINI_API_KEY (Google AI Studio, tiene plan gratis) o ANTHROPIC_API_KEY, el botón "Generar" funciona directo.
+// IA integrada. Se activa poniendo al menos UNA clave en Render → Environment.
+// Orden: Groq (gratis) → Gemini → Anthropic. Si una falla o llega al límite, se prueba la siguiente.
 const AI = {
+  groq: process.env.GROQ_API_KEY || "",
+  groqModels: (process.env.GROQ_MODEL || "llama-3.3-70b-versatile,openai/gpt-oss-120b").split(",").map((x) => x.trim()).filter(Boolean),
+  groqUrl: (process.env.GROQ_BASE_URL || "https://api.groq.com") + "/openai/v1/chat/completions",
   gemini: process.env.GEMINI_API_KEY || "",
-  geminiModel: process.env.GEMINI_MODEL || "gemini-2.5-flash",
+  geminiModel: process.env.GEMINI_MODEL || "gemini-flash-latest",
   key: process.env.ANTHROPIC_API_KEY || "",
   model: process.env.AI_MODEL || "claude-haiku-5-5",
   url: (process.env.ANTHROPIC_BASE_URL || "https://api.anthropic.com") + "/v1/messages",
   perHour: parseInt(process.env.AI_LIMIT_PER_HOUR) || 15, // peticiones por persona y hora
 };
+const aiReady = () => !!(AI.groq || AI.gemini || AI.key);
 const aiUse = new Map(); // ip -> [marcas de tiempo]
 const NIVELES = { 1: "Fácil", 2: "Medio", 3: "Difícil" };
 
@@ -331,7 +335,7 @@ const api = {
 
 // ---------- IA: ideas de preguntas ----------
 async function generateWithAI(body, ip) {
-  if (!AI.key && !AI.gemini) return [503, { error: "La IA no está activada en este servidor. El administrador tiene que añadir la clave ANTHROPIC_API_KEY." }];
+  if (!aiReady()) return [503, { error: "La IA no está activada en este servidor. El administrador tiene que añadir la clave GROQ_API_KEY." }];
   const tema = String(body.tema || "").trim().slice(0, 300);
   if (tema.length < 3) return [400, { error: "Escribe de qué tema quieres las preguntas." }];
   const n = Math.min(Math.max(parseInt(body.n) || 5, 1), 15);
@@ -358,50 +362,69 @@ async function generateWithAI(body, ip) {
   const prompt = `Tema: ${tema}\nNúmero de preguntas: ${n}\nNivel: ${nivel}` +
     (body.trampa ? "\nIncluye algunas preguntas con trampa (que parezcan fáciles pero tengan truco)." : "");
 
-  try {
-    let text = "";
-    if (AI.key) {
-      const r = await fetch(AI.url, {
-        method: "POST",
-        headers: { "content-type": "application/json", "x-api-key": AI.key, "anthropic-version": "2023-06-01" },
-        body: JSON.stringify({ model: AI.model, max_tokens: 4000, system, messages: [{ role: "user", content: prompt }] }),
-        signal: AbortSignal.timeout(60000),
-      });
-      const data = await r.json().catch(() => ({}));
-      if (!r.ok) {
-        console.error("IA error", r.status, data?.error?.message);
-        return [502, { error: "La IA no ha respondido bien. Prueba otra vez o usa el modo gratis." }];
-      }
-      text = (data.content || []).map((c) => c.text || "").join("");
-    } else {
-      const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${AI.geminiModel}:generateContent`, {
-        method: "POST",
-        headers: { "content-type": "application/json", "x-goog-api-key": AI.gemini },
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: system }] },
-          contents: [{ role: "user", parts: [{ text: prompt }] }],
-          generationConfig: { responseMimeType: "application/json", maxOutputTokens: 4000 },
-        }),
-        signal: AbortSignal.timeout(60000),
-      });
-      const data = await r.json().catch(() => ({}));
-      if (!r.ok) {
-        console.error("Gemini error", r.status, data?.error?.message);
-        return [502, { error: r.status === 429 ? "La IA gratuita ha llegado a su límite. Usa el modo gratis (copiar y pegar)." : "La IA no ha respondido bien. Prueba otra vez o usa el modo gratis." }];
-      }
-      text = (data.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("");
+  const nivelN = { "fácil": 1, medio: 2, "difícil": 3 }[nivel];
+  const providers = [];
+  for (const m of AI.groqModels) if (AI.groq) providers.push(["Groq " + m, () => askGroq(m, system, prompt)]);
+  if (AI.gemini) providers.push(["Gemini", () => askGemini(system, prompt)]);
+  if (AI.key) providers.push(["Anthropic", () => askAnthropic(system, prompt)]);
+
+  let limited = false;
+  for (const [name, ask] of providers) {
+    try {
+      const text = await ask();
+      const match = text.match(/\{[\s\S]*\}/);
+      const parsed = match ? JSON.parse(match[0]) : null;
+      const preguntas = (parsed?.preguntas || []).map((p) => cleanQuestion({ ...p, n: nivelN })).filter(Boolean).slice(0, n)
+        .map(({ cat, ...p }) => p);
+      if (preguntas.length) return [200, { preguntas, ia: name.split(" ")[0] }];
+      console.error(name, "sin preguntas válidas");
+    } catch (e) {
+      if (e.status === 429) limited = true;
+      console.error(name, "falló:", e.status || "", e.message);
     }
-    const match = text.match(/\{[\s\S]*\}/);
-    const parsed = match ? JSON.parse(match[0]) : null;
-    const nivelN = { "fácil": 1, medio: 2, "difícil": 3 }[nivel];
-    const preguntas = (parsed?.preguntas || []).map((p) => cleanQuestion({ ...p, n: nivelN })).filter(Boolean).slice(0, n)
-      .map(({ cat, ...p }) => p);
-    if (!preguntas.length) return [502, { error: "La IA no ha devuelto preguntas válidas. Prueba a escribir el tema de otra forma." }];
-    return [200, { preguntas }];
-  } catch (e) {
-    console.error("IA fallo", e.message);
-    return [502, { error: "No se ha podido hablar con la IA. Prueba otra vez." }];
   }
+  return [502, { error: limited
+    ? "La IA gratuita ha llegado a su límite por ahora. Prueba dentro de unos minutos."
+    : "La IA no ha respondido bien. Prueba otra vez o escribe el tema de otra forma." }];
+}
+
+// ---------- llamadas a cada IA ----------
+async function postJSON(url, headers, body) {
+  const r = await fetch(url, { method: "POST", headers: { "content-type": "application/json", ...headers }, body: JSON.stringify(body), signal: AbortSignal.timeout(45000) });
+  const data = await r.json().catch(() => ({}));
+  if (!r.ok) {
+    const err = new Error(data?.error?.message || "HTTP " + r.status);
+    err.status = r.status;
+    throw err;
+  }
+  return data;
+}
+
+async function askGroq(model, system, prompt) {
+  const data = await postJSON(AI.groqUrl, { authorization: "Bearer " + AI.groq }, {
+    model,
+    temperature: 0.5,
+    max_tokens: 4000,
+    response_format: { type: "json_object" },
+    messages: [{ role: "system", content: system }, { role: "user", content: prompt }],
+  });
+  return data.choices?.[0]?.message?.content || "";
+}
+
+async function askGemini(system, prompt) {
+  const data = await postJSON(`https://generativelanguage.googleapis.com/v1beta/models/${AI.geminiModel}:generateContent`, { "x-goog-api-key": AI.gemini }, {
+    systemInstruction: { parts: [{ text: system }] },
+    contents: [{ role: "user", parts: [{ text: prompt }] }],
+    generationConfig: { responseMimeType: "application/json", maxOutputTokens: 4000 },
+  });
+  return (data.candidates?.[0]?.content?.parts || []).map((p) => p.text || "").join("");
+}
+
+async function askAnthropic(system, prompt) {
+  const data = await postJSON(AI.url, { "x-api-key": AI.key, "anthropic-version": "2023-06-01" }, {
+    model: AI.model, max_tokens: 4000, system, messages: [{ role: "user", content: prompt }],
+  });
+  return (data.content || []).map((c) => c.text || "").join("");
 }
 
 // Conexión en tiempo real
@@ -490,7 +513,7 @@ const server = http.createServer(async (req, res) => {
     }
     if (req.method === "GET" && url.pathname === "/api/preguntas") return json(res, 200, BANK);
     if (req.method === "GET" && url.pathname === "/api/imagenes") return json(res, 200, IMAGES);
-    if (req.method === "GET" && url.pathname === "/api/ia/estado") return json(res, 200, { activa: !!(AI.key || AI.gemini) });
+    if (req.method === "GET" && url.pathname === "/api/ia/estado") return json(res, 200, { activa: aiReady() });
     if (req.method === "POST" && url.pathname === "/api/ia") {
       const ip = String(req.headers["x-forwarded-for"] || req.socket.remoteAddress || "").split(",")[0].trim();
       const [code, data] = await generateWithAI(await readBody(req), ip);

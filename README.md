@@ -36,13 +36,17 @@ Para verdadeiro/falso use `"vf": true` ou `"vf": false`.
 
 ## IA para criar perguntas
 
-**Grátis, sem configurar nada:** em "Crear quiz con IA", a pessoa escreve o tema, toca em
-**Copiar pedido**, cola no ChatGPT / Gemini / Claude (versões grátis), copia a resposta e cola
-de volta no app. As perguntas entram sozinhas no quiz.
+A IA fica integrada no app: a pessoa escreve o tema e toca em **Generar preguntas**.
 
-**Opcional – botão "Generar" direto:** no Render → Environment, adicione UMA destas chaves:
-- `GEMINI_API_KEY` – chave do Google AI Studio (aistudio.google.com), que costuma ter plano grátis com limites.
-- `ANTHROPIC_API_KEY` – chave da Anthropic (paga por uso).
+Para ativar, no Render → o seu serviço → **Environment** → **Add Environment Variable**:
+- `GROQ_API_KEY` = chave grátis de https://console.groq.com (sem cartão). **Recomendada.**
+- `GEMINI_API_KEY` = (opcional) chave do Google AI Studio. Atenção: as regras do Google só
+  permitem o plano **pago** em apps usados por pessoas na União Europeia.
+
+O app tenta por esta ordem: Groq (2 modelos) → Gemini → Anthropic. Se uma IA falhar ou chegar
+ao limite, passa sozinho para a seguinte.
+
+Sem nenhuma chave, o app mostra o modo manual (copiar o pedido e colar no ChatGPT/Gemini/Claude).
 
 Cada pessoa pode pedir no máximo 15 gerações por hora (variável `AI_LIMIT_PER_HOUR`).
 Os quizzes criados ficam guardados no telemóvel/computador de quem os criou.
