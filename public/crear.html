@@ -7,7 +7,7 @@
 <title>HosteQuiz · Crear quiz</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Cairo:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
 <link rel="stylesheet" href="/style.css">
 <style>
   .qcard { gap: 12px; }
@@ -83,7 +83,7 @@ function list() {
           <button class="btn ghost small" data-edit="${q.id}">${t("edit")}</button>
           <button class="btn ghost small" data-del="${q.id}">${t("del")}</button>
         </div>`).join("") : `<p class="muted">${t("noneYet")}</p>`}
-    </div></div>`;
+    </div>${newsLink()}</div>`;
   document.getElementById("new").addEventListener("click", () => edit({ id: Date.now().toString(36), title: "", preguntas: [] }));
   app.querySelectorAll("[data-edit]").forEach((b) => b.addEventListener("click", () => edit(structuredClone(loadQuizzes().find((q) => q.id === b.dataset.edit)))));
   app.querySelectorAll("[data-del]").forEach((b) => b.addEventListener("click", () => {
@@ -235,7 +235,7 @@ async function generate() {
 
 // ---------- Modo gratis: el usuario usa su propia IA ----------
 function buildPrompt(o) {
-  const idioma = { es: "español de España", pt: "português", en: "English", ar: "árabe marroquí (dariya) con letras árabes" }[o.lang] || "español de España";
+  const idioma = { es: "español de España", pt: "português", en: "English" }[o.lang] || "español de España";
   return [
     "Eres profesor de un curso de hostelería en España (cafetería, bar, sala y cocina).",
     `Escribe ${o.n} preguntas de quiz tipo test, en ${idioma}, sobre este tema: ${o.tema}.`,

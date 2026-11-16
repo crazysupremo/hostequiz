@@ -7,10 +7,10 @@ const crypto = require("crypto");
 
 const BANK = require("./data/preguntas.json");
 // Traducciones de las preguntas: { idioma: { id: [pregunta, resp1, resp2, ...] } }
-const LANGS = ["es", "pt", "en", "ar"];
+const LANGS = ["es", "pt", "en"];
 const TR = {};
 for (const l of LANGS.slice(1)) { try { TR[l] = require(`./data/i18n/${l}.json`); } catch (e) { TR[l] = {}; } }
-const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"], ar: ["صحيح", "غلط"] };
+const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"] };
 const PORT = process.env.PORT || 3000;
 const PUBLIC = path.join(__dirname, "public");
 const MAX_PLAYERS = 100;
@@ -110,19 +110,20 @@ function ranking(game) {
 
 const playerList = (game) => [...game.players.values()].map((p) => ({ id: p.id, name: p.name, online: p.streams.size > 0 }));
 
+const qPayload = (q) => ({ c: q.c, cat: q.cat, n: q.n, tr: q.tr, q: q.q, img: q.img, a: q.a, vf: q.vf });
+const okTr = (q) => Object.fromEntries(Object.entries(q.tr).map(([l, t]) => [l, t.a[q.ok]]));
+function points(game, p, correct, ms) {
+  if (!correct) { p.streak = 0; return 0; }
+  p.streak++;
+  return Math.round(1000 * (1 - ms / (game.time * 1000) / 2)) + Math.min(p.streak - 1, 5) * 100; // rapidez + racha
+}
+
 function publicQuestion(game) {
   const q = game.questions[game.idx];
   return {
     idx: game.idx,
     total: game.questions.length,
-    c: q.c,
-    cat: q.cat,
-    n: q.n,
-    tr: q.tr,
-    q: q.q,
-    img: q.img,
-    a: q.a,
-    vf: q.vf,
+    ...qPayload(q),
     time: game.time,
     intro: Math.max(0, game.qStart - Date.now()), // cuenta atrás 3-2-1 antes de poder responder
     left: Math.min(game.time * 1000, Math.max(0, game.time * 1000 - (Date.now() - game.qStart))),
@@ -162,11 +163,7 @@ function reveal(game) {
     let pts = 0;
     if (ans) {
       counts[ans.choice]++;
-      if (ans.choice === q.ok) {
-        p.streak++;
-        pts = Math.round(1000 * (1 - ans.ms / (game.time * 1000) / 2)); // más rápido = más puntos
-        pts += Math.min(p.streak - 1, 5) * 100; // bonus por racha
-      } else p.streak = 0;
+      pts = points(game, p, ans.choice === q.ok, ans.ms);
     } else p.streak = 0;
     p.score += pts;
     p.last = { answered: !!ans, correct: !!ans && ans.choice === q.ok, pts };
@@ -177,9 +174,86 @@ function reveal(game) {
   toHost(game, "reveal", game.lastReveal);
   for (const r of rank) {
     const p = game.players.get(r.id);
-    p.lastResult = { ...p.last, score: p.score, rank: r.rank, streak: p.streak, okText: q.a[q.ok], okTr: Object.fromEntries(Object.entries(q.tr).map(([l, t]) => [l, t.a[q.ok]])), total: rank.length };
+    p.lastResult = { ...p.last, score: p.score, rank: r.rank, streak: p.streak, okText: q.a[q.ok], okTr: okTr(q), total: rank.length };
     toPlayer(p, "result", p.lastResult);
   }
+}
+
+// ---------- MODO INDIVIDUAL: cada jugador con sus propias preguntas ----------
+// Reparte el banco para que dos jugadores tengan las menos preguntas en común posibles.
+function assignDeck(game, p) {
+  const n = Math.min(game.n, game.pool.length);
+  const deck = [];
+  for (let k = 0; k < n; k++) deck.push(game.pool[(game.cursor + k) % game.pool.length]);
+  game.cursor = (game.cursor + n) % game.pool.length;
+  p.deck = shuffle(deck).map(toGameQuestion); // orden y respuestas propias de cada jugador
+  p.i = 0; p.done = false; p.correct = 0; p.waiting = false;
+}
+
+function raceData(game) {
+  return ranking(game).map((r) => {
+    const p = game.players.get(r.id);
+    return { ...r, i: p.i || 0, total: p.deck?.length || game.n, done: !!p.done, correct: p.correct || 0, online: p.streams.size > 0 };
+  });
+}
+const sendRace = (game) => toHost(game, "race", { list: raceData(game), total: game.n });
+
+function soloQuestionData(game, p) {
+  const q = p.deck[p.i];
+  return {
+    mode: "solo", idx: p.i, total: p.deck.length, ...qPayload(q), time: game.time,
+    intro: Math.max(0, p.qStart - Date.now()),
+    left: Math.min(game.time * 1000, Math.max(0, game.time * 1000 - (Date.now() - p.qStart))),
+    answered: false,
+  };
+}
+
+function soloAsk(game, p, intro) {
+  clearTimeout(p.timer);
+  p.waiting = false;
+  p.qStart = Date.now() + intro;
+  toPlayer(p, "question", soloQuestionData(game, p));
+  p.timer = setTimeout(() => soloAnswer(game, p, null), intro + game.time * 1000 + 500);
+}
+
+function soloAnswer(game, p, choice) {
+  if (game.state !== "running" || p.done || p.waiting) return;
+  clearTimeout(p.timer);
+  const q = p.deck[p.i];
+  const answered = choice !== null;
+  const correct = answered && choice === q.ok;
+  const ms = Math.max(0, Math.min(game.time * 1000, Date.now() - p.qStart));
+  const pts = answered ? points(game, p, correct, ms) : ((p.streak = 0), 0);
+  p.score += pts;
+  if (correct) p.correct++;
+  p.i++;
+  p.waiting = true;
+  const rank = ranking(game);
+  p.lastResult = {
+    solo: true, answered, correct, pts, score: p.score, streak: p.streak, okText: q.a[q.ok], okTr: okTr(q),
+    rank: rank.find((r) => r.id === p.id)?.rank, total: rank.length, idx: p.i, of: p.deck.length,
+  };
+  toPlayer(p, "result", p.lastResult);
+  sendRace(game);
+  p.timer = setTimeout(() => {
+    if (game.state !== "running") return;
+    if (p.i < p.deck.length) return soloAsk(game, p, 0);
+    p.done = true; p.waiting = false;
+    toPlayer(p, "finished", finishedData(game, p));
+    sendRace(game);
+    if ([...game.players.values()].every((x) => x.done || !x.streams.size)) setTimeout(() => game.state === "running" && endGame(game), 1500);
+  }, 2200);
+}
+
+function finishedData(game, p) {
+  const rank = ranking(game);
+  return { score: p.score, correct: p.correct, of: p.deck.length, rank: rank.find((r) => r.id === p.id)?.rank, total: rank.length };
+}
+
+function soloStart(game) {
+  game.state = "running";
+  game.players.forEach((p) => { assignDeck(game, p); soloAsk(game, p, INTRO_MS); });
+  sendRace(game);
 }
 
 function boardData(game) {
@@ -209,6 +283,7 @@ function podiumPlayer(game, p) {
 
 function endGame(game) {
   clearTimeout(game.timer);
+  game.players.forEach((p) => clearTimeout(p.timer));
   game.state = "end";
   toHost(game, "podium", podiumHost(game));
   game.players.forEach((p) => toPlayer(p, "podium", podiumPlayer(game, p)));
@@ -216,6 +291,7 @@ function endGame(game) {
 
 function closeGame(game) {
   clearTimeout(game.timer);
+  game.players.forEach((p) => clearTimeout(p.timer));
   clearTimeout(game.hostGoneTimer);
   toHost(game, "closed", {});
   toAllPlayers(game, "closed", {});
@@ -226,8 +302,9 @@ function closeGame(game) {
 
 // Lo que ve alguien que se (re)conecta
 function hostSnapshot(game, res) {
-  send(res, "hello", { pin: game.pin, total: game.questions.length, time: game.time, state: game.state });
+  send(res, "hello", { pin: game.pin, total: game.n, time: game.time, state: game.state, mode: game.mode });
   send(res, "players", playerList(game));
+  if (game.state === "running") send(res, "race", { list: raceData(game), total: game.n });
   if (game.state === "question") send(res, "question", { ...publicQuestion(game), answered: game.answers.size, players: game.players.size });
   if (game.state === "reveal") send(res, "reveal", game.lastReveal);
   if (game.state === "board") send(res, "board", boardData(game));
@@ -237,6 +314,11 @@ function hostSnapshot(game, res) {
 function playerSnapshot(game, p, res) {
   send(res, "hello", { name: p.name, score: p.score, state: game.state });
   if (game.state === "lobby") send(res, "lobby", { name: p.name });
+  if (game.state === "running") {
+    if (p.done) send(res, "finished", finishedData(game, p));
+    else if (p.waiting) send(res, "result", p.lastResult);
+    else if (p.deck) send(res, "question", soloQuestionData(game, p));
+  }
   if (game.state === "question") send(res, "question", { ...publicQuestion(game), answered: game.answers.has(p.id) });
   if (game.state === "reveal") send(res, "result", p.lastResult || { answered: false, correct: false, pts: 0, score: p.score });
   if (game.state === "board") send(res, "wait", { text: "Mira la clasificación en la pantalla" });
@@ -274,10 +356,15 @@ const api = {
     const okLevel = (p) => !niveles.length || !p.n || niveles.includes(p.n);
     const pool = BANK.preguntas.filter((p) => cats.includes(p.c)).concat(custom).filter(okLevel);
     if (!pool.length) return [400, { error: "No hay preguntas con esos temas y niveles. Elige otro nivel." }];
+    const mode = body.mode === "clasico" ? "clasico" : "solo";
     const game = {
       pin: newPin(),
       hostKey: token(12),
-      questions: shuffle(pool).slice(0, n).map(toGameQuestion),
+      mode,
+      n: Math.min(n, pool.length),
+      pool: shuffle(pool),  // modo individual: se reparte entre los jugadores
+      cursor: 0,
+      questions: mode === "clasico" ? shuffle(pool).slice(0, n).map(toGameQuestion) : [],
       time,
       players: new Map(),
       hostStreams: new Set(),
@@ -289,7 +376,7 @@ const api = {
       hostGoneTimer: null,
     };
     games.set(game.pin, game);
-    return [200, { pin: game.pin, hostKey: game.hostKey, total: game.questions.length, time }];
+    return [200, { pin: game.pin, hostKey: game.hostKey, total: game.n, time, mode }];
   },
 
   // Botones del presentador
@@ -298,7 +385,10 @@ const api = {
     if (!game || game.hostKey !== body.key) return [404, { error: "La partida ya no existe." }];
     switch (body.action) {
       case "start":
-        if (game.state === "lobby" && game.players.size) { game.idx = 0; startQuestion(game); }
+        if (game.state === "lobby" && game.players.size) {
+          if (game.mode === "solo") soloStart(game);
+          else { game.idx = 0; startQuestion(game); }
+        }
         break;
       case "skip":
         reveal(game);
@@ -312,10 +402,13 @@ const api = {
         break;
       case "kick": {
         const p = game.players.get(body.id);
-        if (p) { toPlayer(p, "kicked", {}); p.streams.forEach((r) => r.end()); game.players.delete(p.id); }
+        if (p) { clearTimeout(p.timer); toPlayer(p, "kicked", {}); p.streams.forEach((r) => r.end()); game.players.delete(p.id); }
         toHost(game, "players", playerList(game));
         break;
       }
+      case "finish": // modo individual: cortar y ver el podio
+        if (game.state === "running") endGame(game);
+        break;
       case "end":
         closeGame(game);
         break;
@@ -337,6 +430,7 @@ const api = {
     const p = { id: token(10), name: nm, score: 0, streak: 0, streams: new Set(), last: null, lastResult: null, goneTimer: null };
     game.players.set(p.id, p);
     toHost(game, "players", playerList(game));
+    if (game.state === "running") { assignDeck(game, p); setTimeout(() => game.state === "running" && soloAsk(game, p, INTRO_MS), 800); sendRace(game); }
     return [200, { id: p.id, name: nm }];
   },
 
@@ -344,6 +438,14 @@ const api = {
     const game = games.get(String(body.pin));
     const p = game?.players.get(body.id);
     if (!p) return [404, { error: "No estás en esta partida." }];
+    if (game.mode === "solo") {
+      if (game.state !== "running" || p.done || p.waiting || !p.deck) return [409, { error: "Se acabó el tiempo." }];
+      const c = parseInt(body.choice);
+      if (!(c >= 0 && c < p.deck[p.i].a.length)) return [400, { error: "Respuesta no válida." }];
+      if (Date.now() < p.qStart - 300) return [409, { error: "Se acabó el tiempo." }];
+      soloAnswer(game, p, c);
+      return [200, { ok: true }];
+    }
     if (game.state !== "question") return [409, { error: "Se acabó el tiempo." }];
     if (game.answers.has(p.id)) return [200, { ok: true }];
     const q = game.questions[game.idx];
@@ -365,7 +467,7 @@ async function generateWithAI(body, ip) {
   if (tema.length < 3) return [400, { error: "Escribe de qué tema quieres las preguntas." }];
   const n = Math.min(Math.max(parseInt(body.n) || 5, 1), 15);
   const nivel = ["fácil", "medio", "difícil"].includes(body.nivel) ? body.nivel : "fácil";
-  const idioma = { es: "español de España", pt: "português", en: "English", ar: "árabe marroquí (dariya) con letras árabes" }[body.lang] || "español de España";
+  const idioma = { es: "español de España", pt: "português", en: "English" }[body.lang] || "español de España";
 
   // Límite de uso por persona
   const now = Date.now();

@@ -1,0 +1,175 @@
+@cliente
+2|Una mesa de cuatro pide la cuenta "separada". ¿Qué haces? || Preguntas qué ha tomado cada uno y haces cuentas por persona | Divides el total entre cuatro sin preguntar | Les dices que no se puede | Cobras todo a quien la pidió
+Uma mesa de quatro pede a conta "separada". O que fazes? || Perguntas o que cada um consumiu e fazes contas por pessoa | Divides o total por quatro sem perguntar | Dizes que não é possível | Cobras tudo a quem pediu
+A table of four asks for "separate bills". What do you do? || Ask what each person had and split by person | Divide the total by four without asking | Say it isn't possible | Charge it all to whoever asked
+
+2|Un cliente habitual pide "lo de siempre" y tú eres nuevo. ¿Qué haces? || Le dices con amabilidad que eres nuevo y le preguntas qué toma | Le traes un café con leche, que es lo más pedido | Le dices que no sabes y te vas | Esperas a que lo pida otro compañero
+Um cliente habitual pede "o costume" e tu és novo. O que fazes? || Dizes com simpatia que és novo e perguntas o que toma | Trazes um café com leite, que é o mais pedido | Dizes que não sabes e vais embora | Esperas que outro colega o atenda
+A regular asks for "the usual" and you're new. What do you do? || Kindly say you're new and ask what they have | Bring a white coffee, the most popular order | Say you don't know and walk off | Wait for a colleague to serve them
+
+2|Se te cae una copa y se rompe cerca de una mesa. ¿Qué haces primero? || Avisas a los clientes, que nadie se mueva, y recoges los cristales con escoba | Lo recoges con las manos rápido | Lo dejas para el final del servicio | Lo tapas con una servilleta
+Cai-te um copo e parte-se perto de uma mesa. O que fazes primeiro? || Avisas os clientes para não se mexerem e apanhas os vidros com vassoura | Apanhas com as mãos depressa | Deixas para o fim do serviço | Tapas com um guardanapo
+You drop a glass and it shatters near a table. What do you do first? || Warn the guests not to move and sweep up the glass | Pick it up quickly by hand | Leave it until the end of service | Cover it with a napkin
+
+3|Un cliente pide un plato y la cocina dice que está agotado. ¿Qué haces? || Se lo dices enseguida y le propones una alternativa parecida | Esperas a que pregunte por qué tarda | Le traes otro plato sin avisar | Le dices que lo traerás más tarde
+Um cliente pede um prato e a cozinha diz que está esgotado. O que fazes? || Dizes logo e propões uma alternativa parecida | Esperas que pergunte porque demora | Trazes outro prato sem avisar | Dizes que o trazes mais tarde
+A guest orders a dish and the kitchen says it's sold out. What do you do? || Tell them straight away and suggest a similar alternative | Wait until they ask why it's taking so long | Bring another dish without telling them | Say you'll bring it later
+
+2|Un cliente se queja de que el plato tarda mucho. ¿Qué haces? || Te disculpas, preguntas en cocina y le das un tiempo real | Le dices que no es culpa tuya | Le dices "ya sale" aunque no lo sepas | Le ignoras para no molestar a cocina
+Um cliente queixa-se de que o prato demora muito. O que fazes? || Pedes desculpa, perguntas na cozinha e dás um tempo real | Dizes que a culpa não é tua | Dizes "já sai" mesmo sem saber | Ignoras para não incomodar a cozinha
+A guest complains their food is taking too long. What do you do? || Apologise, check with the kitchen and give a real time | Say it's not your fault | Say "it's coming" without knowing | Ignore it so as not to bother the kitchen
+
+2|Un cliente vegano pregunta por un plato. ¿Qué debes comprobar? || Que no lleve carne, pescado, huevo, lácteos ni miel | Solo que no lleve carne | Solo que no lleve gluten | Que no lleve verduras
+Um cliente vegano pergunta por um prato. O que deves confirmar? || Que não leve carne, peixe, ovo, lacticínios nem mel | Só que não leve carne | Só que não leve glúten | Que não leve legumes
+A vegan guest asks about a dish. What must you check? || No meat, fish, egg, dairy or honey | Only that it has no meat | Only that it's gluten-free | That it has no vegetables
+
+3|¿Qué diferencia hay entre un cliente vegetariano y uno vegano? || El vegetariano puede tomar huevo y lácteos; el vegano no | El vegano puede comer pescado | Son lo mismo | El vegetariano no come verdura
+Qual é a diferença entre um cliente vegetariano e um vegano? || O vegetariano pode comer ovo e lacticínios; o vegano não | O vegano pode comer peixe | São o mesmo | O vegetariano não come legumes
+What's the difference between a vegetarian and a vegan guest? || Vegetarians may eat eggs and dairy; vegans don't | Vegans can eat fish | They're the same | Vegetarians don't eat vegetables
+
+2|Un cliente pide la carta en inglés y no hay. ¿Qué haces? || Le explicas los platos con calma, con gestos o con ayuda del móvil | Le dices que no hay y te vas | Le traes lo más caro | Le das la carta en español sin más
+Um cliente pede a carta em inglês e não há. O que fazes? || Explicas os pratos com calma, com gestos ou com o telemóvel | Dizes que não há e vais embora | Trazes o mais caro | Dás a carta em espanhol e pronto
+A guest asks for an English menu and there isn't one. What do you do? || Explain the dishes calmly, with gestures or a phone | Say there isn't one and leave | Bring the most expensive dish | Just hand over the Spanish menu
+
+@servicio
+2|Una mesa pide vino tinto y pescado. ¿Qué haces? || Sirves lo que piden; si preguntan, puedes sugerir un blanco | Les dices que no se puede | Les traes blanco sin decir nada | Les cobras el cambio de copa
+Uma mesa pede vinho tinto e peixe. O que fazes? || Serves o que pedem; se perguntarem, podes sugerir um branco | Dizes que não se pode | Trazes branco sem dizer nada | Cobras a troca de copo
+A table orders red wine with fish. What do you do? || Serve what they ordered; if asked, suggest a white | Tell them it's not allowed | Bring white without telling them | Charge them for a glass change
+
+2|¿Qué haces con la copa si el cliente pide otro vino distinto? || Pones una copa limpia | Sirves el nuevo en la misma copa | Le pides que se termine la copa antes | Le das un vaso
+O que fazes ao copo se o cliente pede outro vinho diferente? || Pões um copo limpo | Serves o novo no mesmo copo | Pedes que acabe o copo primeiro | Dás-lhe um copo de água
+What do you do about the glass when a guest orders a different wine? || Bring a clean glass | Pour the new wine into the same glass | Ask them to finish the glass first | Give them a tumbler
+
+2|Al tomar nota a una mesa grande, ¿cómo evitas confundir los platos? || Usas números de posición para cada comensal | Lo memorizas todo | Preguntas al servir "¿de quién es esto?" | Lo apunta cada cliente
+Ao anotar uma mesa grande, como evitas trocar os pratos? || Usas números de posição para cada comensal | Memorizas tudo | Perguntas ao servir "de quem é isto?" | Cada cliente escreve o seu
+Taking an order from a large table, how do you avoid mixing up dishes? || Use seat numbers for each guest | Memorise everything | Ask "whose is this?" when serving | Have each guest write their own
+
+3|¿Por qué no se deben "subastar" los platos ("¿quién lleva la merluza?") al servir? || Porque queda poco profesional: el camarero debe saber de quién es cada plato | Porque se enfría la comida | Porque lo prohíbe la ley | Porque molesta a cocina
+Porque não se deve "leiloar" os pratos ("quem é a pescada?") ao servir? || Porque é pouco profissional: o empregado deve saber de quem é cada prato | Porque a comida arrefece | Porque a lei proíbe | Porque incomoda a cozinha
+Why shouldn't you "auction" plates ("who's having the hake?")? || It's unprofessional: the waiter should know whose dish is whose | The food gets cold | It's illegal | It annoys the kitchen
+
+2|¿Qué se hace con el pan si el cliente lo deja sobre el mantel? || Nada: es correcto si no hay plato de pan | Se le pide que lo ponga en el plato | Se retira al momento | Se cambia el mantel
+O que se faz com o pão se o cliente o deixa na toalha? || Nada: é correto se não houver prato de pão | Pede-se para pôr no prato | Retira-se logo | Troca-se a toalha
+What do you do if a guest puts bread on the tablecloth? || Nothing: that's fine if there's no bread plate | Ask them to use a plate | Remove it at once | Change the tablecloth
+
+3|¿Cuál es el orden habitual de una comida completa? || Aperitivo, entrantes, primero, segundo, postre, café y licor | Café, postre, primero y segundo | Primero, aperitivo, postre y segundo | Entrantes, postre, segundo y café
+Qual é a ordem habitual de uma refeição completa? || Aperitivo, entradas, primeiro, segundo, sobremesa, café e licor | Café, sobremesa, primeiro e segundo | Primeiro, aperitivo, sobremesa e segundo | Entradas, sobremesa, segundo e café
+What is the usual order of a full meal? || Aperitif, starters, first, main, dessert, coffee and liqueur | Coffee, dessert, first and main | First, aperitif, dessert and main | Starters, dessert, main and coffee
+
+2|¿Qué incluye normalmente el menú del día en España? || Primero, segundo, postre o café, pan y bebida | Solo un plato y agua | Un plato, café y licor | Tapas variadas sin bebida
+O que inclui normalmente o menu do dia em Espanha? || Primeiro, segundo, sobremesa ou café, pão e bebida | Só um prato e água | Um prato, café e licor | Tapas variadas sem bebida
+What does a Spanish "menú del día" usually include? || Starter, main, dessert or coffee, bread and a drink | Just one dish and water | One dish, coffee and liqueur | Mixed tapas, no drink
+
+@bebidas
+2|Un cliente pide "un agua". ¿Qué le preguntas? || Si la quiere con o sin gas, y fría o natural | Nada, le traes agua del grifo | Si la quiere con limón y azúcar | Si la quiere caliente
+Um cliente pede "uma água". O que perguntas? || Se a quer com ou sem gás, e fresca ou natural | Nada, trazes água da torneira | Se a quer com limão e açúcar | Se a quer quente
+A guest asks for "a water". What do you ask? || Still or sparkling, chilled or room temperature | Nothing, bring tap water | Whether they want lemon and sugar | Whether they want it hot
+
+2|¿Cómo se abre un refresco en la mesa? || Se abre delante del cliente y se sirve en el vaso con hielo | Se abre en barra y se sirve ya mezclado | Se deja cerrado para que lo abra él | Se agita antes de abrir
+Como se abre um refrigerante na mesa? || Abre-se diante do cliente e serve-se no copo com gelo | Abre-se no balcão e serve-se já misturado | Deixa-se fechado para ele abrir | Agita-se antes de abrir
+How is a soft drink opened at the table? || Opened in front of the guest and poured over ice | Opened at the bar and served pre-poured | Left closed for them to open | Shaken before opening
+
+3|Un cliente pide un gin tonic "de una marca concreta". ¿Qué haces? || Le enseñas la botella al servir para que vea la marca | Usas la ginebra de la casa | Le dices que todas son iguales | Le cobras la de la casa
+Um cliente pede um gin tónico "de uma marca concreta". O que fazes? || Mostras a garrafa ao servir para ver a marca | Usas o gin da casa | Dizes que são todos iguais | Cobras o da casa
+A guest asks for a gin and tonic with a specific brand. What do you do? || Show the bottle as you pour so they see the brand | Use the house gin | Say they're all the same | Charge for the house gin
+
+2|vf=1|Un refresco se abre delante del cliente.
+Um refrigerante abre-se diante do cliente.
+A soft drink is opened in front of the guest.
+
+@cristaleria
+2|¿Por qué se sirve el cava en copa de flauta? || Para conservar mejor las burbujas | Porque cabe más | Para que se caliente antes | Porque es más barata
+Porque se serve o cava em flute? || Para conservar melhor as bolhas | Porque leva mais | Para aquecer mais depressa | Porque é mais barato
+Why is cava served in a flute? || To keep the bubbles longer | It holds more | So it warms up faster | Because it's cheaper
+
+3|¿Por qué la copa de tinto suele ser más ancha que la de blanco? || Para airear el vino y concentrar sus aromas | Para que quepa más hielo | Para que se enfríe | Para diferenciarlas por el color
+Porque o copo de tinto costuma ser mais largo do que o de branco? || Para arejar o vinho e concentrar os aromas | Para levar mais gelo | Para arrefecer | Para as distinguir pela cor
+Why is a red wine glass usually wider than a white wine glass? || To aerate the wine and gather its aromas | To fit more ice | To keep it cool | To tell them apart by colour
+
+2|¿Cómo se revisa una copa antes de ponerla en la mesa? || Mirándola a contraluz para ver manchas o marcas | Oliéndola | Soplando dentro | No hace falta si sale del lavavajillas
+Como se verifica um copo antes de o pôr na mesa? || Olhando-o contra a luz para ver manchas ou marcas | Cheirando-o | Soprando lá dentro | Não é preciso se sair da máquina
+How do you check a glass before putting it on the table? || Hold it up to the light for marks or smears | Smell it | Blow inside it | No need if it's from the dishwasher
+
+2|¿Cómo se secan y abrillantan las copas? || Con un paño limpio que no suelte pelusa, con vapor | Con papel de cocina | Con el paño de las mesas | Al aire, sin repasar
+Como se secam e dão brilho aos copos? || Com um pano limpo que não largue pelo, com vapor | Com papel de cozinha | Com o pano das mesas | Ao ar, sem repassar
+How are glasses dried and polished? || With a clean lint-free cloth, using steam | With kitchen paper | With the table cloth | Air-dried, not polished
+
+3|¿Qué es la "copa de cata" (ISO)? || Copa estándar para catar vinos | Copa de cóctel grande | Vaso de chupito | Copa de coñac
+O que é o "copo de prova" (ISO)? || Copo padrão para provar vinhos | Taça de cocktail grande | Copo de shot | Copo de conhaque
+What is an ISO tasting glass? || A standard glass for wine tasting | A large cocktail glass | A shot glass | A brandy glass
+
+2|vf=0|La copa de flauta hace que el cava pierda antes las burbujas.
+O flute faz com que o cava perca as bolhas mais depressa.
+A flute makes cava lose its bubbles faster.
+
+@cafes
+2|Un cliente pide "un cortado de leche fría". ¿Qué haces? || Espresso con un chorrito de leche fría del tiempo | Un café con hielo | Un café con leche frío | Leche fría con un poco de café
+Um cliente pede "um cortado de leite frio". O que fazes? || Espresso com um pouco de leite frio | Um café com gelo | Um café com leite frio | Leite frio com um pouco de café
+A guest asks for "a cortado with cold milk". What do you make? || An espresso with a splash of cold milk | An iced coffee | A cold white coffee | Cold milk with a little coffee
+
+2|Un cliente pide "un café con leche, leche templada". ¿Qué significa? || La leche menos caliente que lo normal | Leche fría | Leche hirviendo | Leche con mucha espuma
+Um cliente pede "café com leite, leite morno". O que significa? || O leite menos quente do que o normal | Leite frio | Leite a ferver | Leite com muita espuma
+A guest asks for white coffee "with lukewarm milk". What does that mean? || Milk less hot than usual | Cold milk | Boiling milk | Milk with lots of foam
+
+@cocina
+2|¿Qué es un "pintxo" en el País Vasco? || Una tapa elaborada, a menudo sobre pan y con palillo | Un postre | Un tipo de vino | Un guiso de pescado
+O que é um "pintxo" no País Basco? || Uma tapa elaborada, muitas vezes sobre pão e com palito | Uma sobremesa | Um tipo de vinho | Um guisado de peixe
+What is a "pintxo" in the Basque Country? || An elaborate tapa, often on bread with a cocktail stick | A dessert | A type of wine | A fish stew
+
+2|¿Qué es el "pescaíto frito"? || Pescado pequeño enharinado y frito, típico de Andalucía | Pescado al horno | Pescado crudo marinado | Pescado en salsa verde
+O que é o "pescaíto frito"? || Peixe pequeno enfarinhado e frito, típico da Andaluzia | Peixe no forno | Peixe cru marinado | Peixe em molho verde
+What is "pescaíto frito"? || Small floured fried fish, typical of Andalusia | Baked fish | Raw marinated fish | Fish in green sauce
+
+2|¿Qué es el "gazpachuelo"? || Sopa caliente de pescado con mayonesa, típica de Málaga | Gazpacho más espeso | Gazpacho con fruta | Salmorejo con atún
+O que é o "gazpachuelo"? || Sopa quente de peixe com maionese, típica de Málaga | Gaspacho mais espesso | Gaspacho com fruta | Salmorejo com atum
+What is gazpachuelo? || A hot fish soup with mayonnaise from Málaga | A thicker gazpacho | Gazpacho with fruit | Salmorejo with tuna
+
+3|¿Qué es la "pipirrana"? || Ensalada de tomate, pimiento, cebolla y pepino picados | Guiso de patatas | Sopa de ajo | Un postre de almendra
+O que é a "pipirrana"? || Salada de tomate, pimento, cebola e pepino picados | Guisado de batata | Sopa de alho | Uma sobremesa de amêndoa
+What is pipirrana? || A salad of chopped tomato, pepper, onion and cucumber | A potato stew | Garlic soup | An almond dessert
+
+3|¿Qué es el "pil-pil"? || Salsa de ajo y aceite emulsionada con la gelatina del bacalao | Salsa de tomate picante | Caldo de marisco | Mayonesa de limón
+O que é o "pil-pil"? || Molho de alho e azeite emulsionado com a gelatina do bacalhau | Molho de tomate picante | Caldo de marisco | Maionese de limão
+What is pil-pil? || Garlic and oil sauce emulsified with the cod's gelatine | Spicy tomato sauce | Seafood stock | Lemon mayonnaise
+
+2|¿Qué son las "migas"? || Pan del día anterior frito con ajo y acompañado | Croquetas pequeñas | Restos de pescado | Galletas saladas
+O que são as "migas"? || Pão do dia anterior frito com alho e acompanhado | Croquetes pequenos | Restos de peixe | Bolachas salgadas
+What are "migas"? || Day-old bread fried with garlic and served with sides | Small croquettes | Fish scraps | Savoury crackers
+
+1|vf=0|La tortilla española lleva harina.
+A tortilha espanhola leva farinha.
+Spanish omelette contains flour.
+
+@higiene
+2|¿Cada cuánto se deben controlar y apuntar las temperaturas de las cámaras? || Cada día, en el registro | Una vez al mes | Solo si hay una inspección | Nunca, tienen termostato
+De quanto em quanto tempo se controlam e registam as temperaturas das câmaras? || Todos os dias, no registo | Uma vez por mês | Só se houver inspeção | Nunca, têm termóstato
+How often should cold room temperatures be checked and recorded? || Every day, in the log | Once a month | Only during an inspection | Never, they have a thermostat
+
+2|¿Dónde se debe lavar las manos el personal de cocina? || En un lavamanos de accionamiento no manual | En el fregadero de verduras | En la pila de lavar platos | En el baño de clientes
+Onde deve o pessoal de cozinha lavar as mãos? || Num lavatório de acionamento não manual | No lava-legumes | No lava-loiça | Na casa de banho dos clientes
+Where should kitchen staff wash their hands? || At a hands-free hand-wash basin | In the vegetable sink | In the dishwashing sink | In the guest toilets
+
+3|Una salsa con huevo crudo casera, ¿cómo se debe tratar? || Usar ovoproducto pasteurizado o consumirla enseguida en frío | Dejarla todo el día en la barra | Guardarla una semana | Recalentarla al día siguiente
+Um molho caseiro com ovo cru, como se deve tratar? || Usar ovo pasteurizado ou consumir logo, em frio | Deixá-lo o dia todo no balcão | Guardá-lo uma semana | Reaquecê-lo no dia seguinte
+How should a homemade sauce with raw egg be handled? || Use pasteurised egg or serve it straight away, chilled | Leave it on the counter all day | Keep it for a week | Reheat it the next day
+
+2|vf=1|El pescado para crudo (sushi, boquerones en vinagre) debe congelarse antes para eliminar el anisakis.
+O peixe para comer cru (sushi, boquerones em vinagre) deve ser congelado antes para eliminar o anisakis.
+Fish to be eaten raw (sushi, pickled anchovies) must be frozen first to kill anisakis.
+
+@vocabulario
+2|¿Qué es el "turno partido"? || Trabajar mañana y noche con un descanso largo en medio | Trabajar dos días seguidos | Medio turno | Turno de noche
+O que é o "turno partido"? || Trabalhar de manhã e à noite com uma pausa longa no meio | Trabalhar dois dias seguidos | Meio turno | Turno da noite
+What is a "split shift"? || Working morning and evening with a long break between | Working two days straight | A half shift | A night shift
+
+2|¿Qué significa "cerrar caja"? || Contar el dinero y cuadrar las ventas del día | Cerrar la puerta del local | Apagar la cafetera | Guardar las cajas de bebidas
+O que significa "fechar a caixa"? || Contar o dinheiro e conferir as vendas do dia | Fechar a porta do local | Desligar a máquina de café | Arrumar as grades de bebidas
+What does "cerrar caja" mean? || Counting the cash and balancing the day's sales | Locking the door | Turning off the coffee machine | Putting away drinks crates
+
+3|¿Qué es el "stock" mínimo? || La cantidad mínima de un producto antes de volver a pedir | El precio más bajo | El producto más vendido | Lo que sobra al cerrar
+O que é o "stock" mínimo? || A quantidade mínima de um produto antes de voltar a encomendar | O preço mais baixo | O produto mais vendido | O que sobra ao fechar
+What is minimum stock? || The lowest amount of a product before reordering | The lowest price | The best-selling item | What's left at closing
+
+2|¿Qué es un "albarán"? || El documento que acompaña la mercancía al entregarla | La factura del cliente | La carta de postres | El contrato de trabajo
+O que é uma "guia de remessa" (albarán)? || O documento que acompanha a mercadoria na entrega | A fatura do cliente | A carta de sobremesas | O contrato de trabalho
+What is an "albarán"? || The delivery note that comes with goods | The guest's bill | The dessert menu | The employment contract

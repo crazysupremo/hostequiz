@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1b120d">
 <title>HosteQuiz</title>
-<meta name="description" content="Quiz en directo de hostelería: cafés, bebidas, montaje de mesas y servicio. En español, português, English y الدارجة.">
+<meta name="description" content="Quiz en directo de hostelería: cafés, bebidas, montaje de mesas y servicio. En español, português e English.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Cairo:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -60,7 +60,7 @@ function home(err = "", pinPrefill = "") {
         <button class="btn big" type="submit">${t("enter")}</button>
       </form>
     </div>
-    <p class="foot">${t("foot")}</p></div>`;
+    <p class="foot">${t("foot")}</p>${newsLink()}</div>`;
   const f = document.getElementById("join");
   if (!keep.pin) (pin ? document.getElementById("nm") : document.getElementById("pin")).focus();
   f.addEventListener("submit", async (e) => {
@@ -98,6 +98,7 @@ function connect() {
     result: (d) => show(showResult, d),
     wait: () => show(showWait, {}),
     podium: (d) => show(showPodium, d),
+    finished: (d) => show(showFinished, d),
     kicked: () => leave("kicked"),
     gone: () => leave("gone", true),
     closed: () => leave("closed"),
@@ -207,11 +208,24 @@ function showResult(d, redraw) {
       </div>
       <div class="bigscore" id="sc">${redraw ? lastScore : prev}</div>
       <p class="muted">${t("points")}${d.rank ? " · " + t("youAre", { r: d.rank, t: d.total }) : ""}</p>
+      ${d.solo && d.idx < d.of ? `<p class="label" style="margin-top:6px">${t("nextComing")}</p>` : ""}
     </div>`);
   if (!redraw) {
     countUp(document.getElementById("sc"), lastScore);
     if (d.correct) { Sound.good(); buzz([40, 40, 80]); confetti(0.5); } else { Sound.bad(); buzz(200); }
   }
+}
+
+function showFinished(d, redraw) {
+  lastScore = d.score;
+  screen(`
+    <div class="full">
+      <p class="label">${t("hitsOf", { a: d.correct, b: d.of })}</p>
+      <h1>${t("doneTitle")}</h1>
+      <div class="bigscore">${d.score}</div><p class="muted">${t("points")}${d.rank ? " · " + t("youAre", { r: d.rank, t: d.total }) : ""}</p>
+      <p class="muted" style="margin-top:10px">${t("waitOthers")}</p>
+    </div>`);
+  if (!redraw) { Sound.good(); confetti(0.6); }
 }
 
 function showPodium(d, redraw) {

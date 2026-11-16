@@ -1,0 +1,226 @@
+@higiene
+2|¿Cuál de estos NO es uno de los 14 alérgenos obligatorios? || Tomate | Sulfitos | Altramuces | Mostaza
+Qual destes NÃO é um dos 14 alergénios obrigatórios? || Tomate | Sulfitos | Tremoço | Mostarda
+Which of these is NOT one of the 14 mandatory allergens? || Tomato | Sulphites | Lupin | Mustard
+
+3|¿Cuál de estos SÍ es uno de los 14 alérgenos obligatorios? || Apio | Patata | Arroz | Pimiento
+Qual destes É um dos 14 alergénios obrigatórios? || Aipo | Batata | Arroz | Pimento
+Which of these IS one of the 14 mandatory allergens? || Celery | Potato | Rice | Pepper
+
+3|¿Qué alérgeno hay que indicar casi siempre en el vino? || Sulfitos | Gluten | Soja | Mostaza
+Que alergénio se tem de indicar quase sempre no vinho? || Sulfitos | Glúten | Soja | Mostarda
+Which allergen almost always has to be declared for wine? || Sulphites | Gluten | Soy | Mustard
+
+2|¿Qué alérgenos lleva normalmente una bechamel? || Leche y gluten | Solo huevo | Frutos secos | Ninguno
+Que alergénios leva normalmente um bechamel? || Leite e glúten | Só ovo | Frutos secos | Nenhum
+Which allergens does béchamel usually contain? || Milk and gluten | Only egg | Nuts | None
+
+2|¿Cuál de estos cereales NO tiene gluten? || Arroz | Cebada | Centeno | Espelta
+Qual destes cereais NÃO tem glúten? || Arroz | Cevada | Centeio | Espelta
+Which of these grains has NO gluten? || Rice | Barley | Rye | Spelt
+
+2|¿Por qué no se fríe una ración sin gluten en el mismo aceite que las croquetas? || Por contaminación cruzada con gluten | Porque sale más grasienta | Porque el aceite se quema antes | No hay problema en hacerlo
+Porque não se frita uma dose sem glúten no mesmo óleo dos croquetes? || Por contaminação cruzada com glúten | Porque fica mais gordurosa | Porque o óleo queima mais cedo | Não há problema em fazê-lo
+Why isn't gluten-free food fried in the same oil as croquettes? || Cross-contamination with gluten | It comes out greasier | The oil burns faster | There's no problem doing it
+
+2|¿Cuál es la "zona de peligro" de temperatura donde más crecen las bacterias? || Entre 5 y 65 °C | Por debajo de 0 °C | Por encima de 100 °C | Entre -18 y 0 °C
+Qual é a "zona de perigo" de temperatura onde mais crescem as bactérias? || Entre 5 e 65 °C | Abaixo de 0 °C | Acima de 100 °C | Entre -18 e 0 °C
+What is the temperature "danger zone" where bacteria grow fastest? || Between 5 and 65 °C | Below 0 °C | Above 100 °C | Between -18 and 0 °C
+
+2|¿Cuál es la forma correcta de descongelar carne? || En la nevera, con tiempo | En la encimera toda la noche | En agua caliente | Al sol en la terraza
+Qual é a forma correta de descongelar carne? || No frigorífico, com tempo | Na bancada toda a noite | Em água quente | Ao sol na esplanada
+What is the correct way to thaw meat? || In the fridge, allowing time | On the counter overnight | In hot water | In the sun on the terrace
+
+3|¿Qué es el APPCC? || Sistema de Análisis de Peligros y Puntos de Control Críticos | La asociación de cocineros de España | El carnet de manipulador | Un tipo de horno
+O que é o HACCP (APPCC)? || Sistema de Análise de Perigos e Pontos Críticos de Controlo | A associação de cozinheiros de Espanha | O cartão de manipulador | Um tipo de forno
+What is HACCP (APPCC in Spanish)? || Hazard Analysis and Critical Control Points system | The Spanish chefs' association | The food handler card | A type of oven
+
+3|Según el código de colores, ¿qué tabla se usa para carne cruda? || Roja | Verde | Azul | Blanca
+Segundo o código de cores, que tábua se usa para carne crua? || Vermelha | Verde | Azul | Branca
+In the colour code, which chopping board is for raw meat? || Red | Green | Blue | White
+
+3|Según el código de colores, ¿qué tabla se usa para pescado crudo? || Azul | Roja | Amarilla | Verde
+Segundo o código de cores, que tábua se usa para peixe cru? || Azul | Vermelha | Amarela | Verde
+In the colour code, which chopping board is for raw fish? || Blue | Red | Yellow | Green
+
+3|Según el código de colores, ¿qué tabla se usa para frutas y verduras? || Verde | Azul | Roja | Marrón
+Segundo o código de cores, que tábua se usa para fruta e legumes? || Verde | Azul | Vermelha | Castanha
+In the colour code, which chopping board is for fruit and vegetables? || Green | Blue | Red | Brown
+
+2|En la cámara, ¿dónde se coloca la carne cruda? || Abajo, por debajo de lo cocinado | Arriba de todo | Junto a los postres | En la misma bandeja que la verdura
+Na câmara, onde se coloca a carne crua? || Em baixo, abaixo do cozinhado | Em cima de tudo | Junto às sobremesas | No mesmo tabuleiro dos legumes
+In the cold room, where is raw meat stored? || At the bottom, below cooked food | On the top shelf | Next to desserts | On the same tray as vegetables
+
+3|¿A qué temperatura mínima debe llegar el centro de un plato recalentado? || Unos 70–75 °C | Unos 45 °C | Unos 55 °C | Unos 35 °C
+A que temperatura mínima deve chegar o centro de um prato reaquecido? || Uns 70–75 °C | Uns 45 °C | Uns 55 °C | Uns 35 °C
+What minimum core temperature must reheated food reach? || About 70–75 °C | About 45 °C | About 55 °C | About 35 °C
+
+2|¿Qué debe llevar la etiqueta de una preparación guardada en cámara? || Nombre, fecha de elaboración y de caducidad | Solo el precio | Solo el nombre del cocinero | Nada si está tapada
+O que deve ter a etiqueta de uma preparação guardada na câmara? || Nome, data de preparação e de validade | Só o preço | Só o nome do cozinheiro | Nada se estiver tapada
+What should the label on a stored preparation show? || Name, preparation date and use-by date | Only the price | Only the cook's name | Nothing if it's covered
+
+3|¿Para qué sirve el abatidor? || Para enfriar muy rápido los alimentos cocinados | Para batir claras | Para mantener caliente la comida | Para lavar la vajilla
+Para que serve o abatedor? || Para arrefecer muito rápido os alimentos cozinhados | Para bater claras | Para manter a comida quente | Para lavar a loiça
+What is a blast chiller used for? || Rapidly cooling cooked food | Whisking egg whites | Keeping food hot | Washing dishes
+
+3|¿En qué orden se limpia una superficie de trabajo? || Detergente, aclarado y después desinfectante | Desinfectante y después detergente | Solo lejía pura | Solo agua caliente
+Por que ordem se limpa uma superfície de trabalho? || Detergente, enxaguamento e depois desinfetante | Desinfetante e depois detergente | Só lixívia pura | Só água quente
+In what order is a work surface cleaned? || Detergent, rinse, then disinfectant | Disinfectant, then detergent | Neat bleach only | Hot water only
+
+2|Un compañero tiene un corte en la mano. ¿Qué debe hacer para trabajar? || Taparlo con un apósito impermeable de color y usar guante | Seguir sin taparlo | Lavarlo con lejía | Usar solo un guante, sin apósito
+Um colega tem um corte na mão. O que deve fazer para trabalhar? || Tapá-lo com um penso impermeável de cor e usar luva | Continuar sem o tapar | Lavá-lo com lixívia | Usar só luva, sem penso
+A colleague has a cut on their hand. What should they do to keep working? || Cover it with a coloured waterproof plaster and wear a glove | Carry on uncovered | Wash it with bleach | Just wear a glove, no plaster
+
+1|Un cliente dice que es alérgico al marisco. ¿Qué haces? || Avisas a cocina y compruebas los alérgenos de cada plato | Le dices que aparte las gambas | Le recomiendas el plato del día sin mirar | Nada, lo pone en la carta
+Um cliente diz que é alérgico a marisco. O que fazes? || Avisas a cozinha e confirmas os alergénios de cada prato | Dizes para afastar os camarões | Recomendas o prato do dia sem ver | Nada, está na carta
+A guest says they're allergic to shellfish. What do you do? || Tell the kitchen and check each dish's allergens | Tell them to push the prawns aside | Recommend the dish of the day without checking | Nothing, it's on the menu
+
+1|vf=0|Se pueden llevar anillos y pulseras al manipular alimentos.
+Pode-se usar anéis e pulseiras ao manipular alimentos.
+You can wear rings and bracelets when handling food.
+
+2|vf=0|El arroz contiene gluten.
+O arroz contém glúten.
+Rice contains gluten.
+
+3|vf=1|Los sulfitos son uno de los 14 alérgenos de declaración obligatoria.
+Os sulfitos são um dos 14 alergénios de declaração obrigatória.
+Sulphites are one of the 14 allergens that must be declared.
+
+2|vf=0|Descongelar carne en la encimera durante la noche es seguro.
+Descongelar carne na bancada durante a noite é seguro.
+Thawing meat on the counter overnight is safe.
+
+@cliente
+1|Llega un cliente y todas las mesas están ocupadas. ¿Qué haces? || Le saludas, le dices el tiempo de espera y le ofreces esperar en barra | Le ignoras hasta que haya mesa | Le dices que vuelva otro día | Le sientas en una mesa reservada
+Chega um cliente e todas as mesas estão ocupadas. O que fazes? || Cumprimentas, dizes o tempo de espera e ofereces esperar ao balcão | Ignoras até haver mesa | Dizes para voltar noutro dia | Sentas numa mesa reservada
+A guest arrives and every table is full. What do you do? || Greet them, give the wait time and offer the bar while they wait | Ignore them until a table frees up | Tell them to come back another day | Seat them at a reserved table
+
+1|Un cliente entra mientras atiendes otra mesa. ¿Qué haces? || Le saludas con un gesto o un "enseguida estoy con usted" | Terminas y luego le miras | Haces como que no le ves | Le dices que espere fuera
+Um cliente entra enquanto atendes outra mesa. O que fazes? || Cumprimentas com um gesto ou "já estou consigo" | Terminas e só depois olhas | Finges que não o vês | Dizes para esperar lá fora
+A guest walks in while you're serving another table. What do you do? || Acknowledge them with a nod or "I'll be right with you" | Finish first, then look up | Pretend not to see them | Ask them to wait outside
+
+1|Un cliente dice que su plato está frío. ¿Qué haces? || Te disculpas, lo retiras y pides a cocina que lo rehaga | Le dices que se come así | Lo calientas en el micro sin decir nada | Le ofreces más pan
+Um cliente diz que o prato está frio. O que fazes? || Pedes desculpa, retiras e pedes à cozinha para refazer | Dizes que se come assim | Aqueces no micro sem dizer nada | Ofereces mais pão
+A guest says their dish is cold. What do you do? || Apologise, take it away and ask the kitchen to redo it | Say it's meant to be eaten like that | Microwave it without saying anything | Offer more bread
+
+2|¿Qué es la "venta sugerida"? || Recomendar productos que completan el pedido del cliente | Obligar al cliente a pedir más | Cobrar productos no pedidos | Hacer descuentos sin permiso
+O que é a "venda sugerida"? || Recomendar produtos que completam o pedido do cliente | Obrigar o cliente a pedir mais | Cobrar produtos não pedidos | Fazer descontos sem autorização
+What is suggestive selling? || Recommending items that complement the guest's order | Forcing the guest to order more | Charging for items not ordered | Giving unauthorised discounts
+
+2|Un cliente pregunta por un plato que no conoces bien. ¿Qué haces? || Le dices que lo consultas en cocina y vuelves con la respuesta | Le dices lo que imaginas | Le dices que no se sabe | Le recomiendas otro sin contestar
+Um cliente pergunta por um prato que não conheces bem. O que fazes? || Dizes que vais confirmar na cozinha e voltas com a resposta | Dizes o que imaginas | Dizes que ninguém sabe | Recomendas outro sem responder
+A guest asks about a dish you don't know well. What do you do? || Say you'll check with the kitchen and come back | Tell them what you imagine | Say nobody knows | Suggest another dish without answering
+
+2|Un cliente ha bebido de más y pide otra copa. ¿Qué haces? || Le ofreces agua o algo sin alcohol y avisas al encargado | Le sirves una doble para que se calme | Le echas del local a gritos | Le sirves y no dices nada
+Um cliente bebeu demais e pede outro copo. O que fazes? || Ofereces água ou algo sem álcool e avisas o gerente | Serves um duplo para acalmar | Expulsas aos gritos | Serves e não dizes nada
+A guest has had too much and orders another drink. What do you do? || Offer water or a soft drink and tell the manager | Serve a double to calm them down | Shout at them to leave | Serve them and say nothing
+
+1|¿Qué datos se toman en una reserva? || Nombre, teléfono, día, hora y número de personas | Solo el nombre | Nombre y DNI | Solo la hora
+Que dados se pedem numa reserva? || Nome, telefone, dia, hora e número de pessoas | Só o nome | Nome e documento de identidade | Só a hora
+What details do you take for a booking? || Name, phone, date, time and number of guests | Just the name | Name and ID number | Just the time
+
+2|¿Qué es un "no-show"? || Un cliente que reserva y no se presenta | Un plato fuera de carta | Un camarero que no viene a trabajar | Una mesa sin propina
+O que é um "no-show"? || Um cliente que reserva e não aparece | Um prato fora da carta | Um empregado que falta | Uma mesa sem gorjeta
+What is a no-show? || A guest who books and doesn't turn up | An off-menu dish | A waiter who misses a shift | A table that didn't tip
+
+2|¿Qué es la hoja de reclamaciones? || Un documento oficial que el cliente puede pedir para quejarse | La carta de vinos | La factura detallada | El parte de incidencias de cocina
+O que é o livro de reclamações? || Um documento oficial que o cliente pode pedir para reclamar | A carta de vinhos | A fatura detalhada | O registo de incidentes da cozinha
+What is the "hoja de reclamaciones"? || An official complaint form the guest can request | The wine list | The itemised bill | The kitchen incident log
+
+2|Un cliente pide la hoja de reclamaciones. ¿Qué haces? || Se la das: el local está obligado a tenerla | Le dices que no hay | Le pides que vuelva mañana | Le ofreces una consumición para que no la rellene
+Um cliente pede o livro de reclamações. O que fazes? || Entregas: o local é obrigado a tê-lo | Dizes que não há | Pedes para voltar amanhã | Ofereces uma bebida para não reclamar
+A guest asks for the complaint form. What do you do? || Give it to them: the venue must have one | Say there isn't one | Ask them to come back tomorrow | Offer a free drink so they don't fill it in
+
+2|¿Cómo es la propina en España? || Voluntaria: la decide el cliente | Obligatoria del 10 % | Obligatoria del 15 % | Se incluye siempre en la cuenta
+Como é a gorjeta em Espanha? || Voluntária: decide o cliente | Obrigatória de 10 % | Obrigatória de 15 % | Inclui-se sempre na conta
+How does tipping work in Spain? || It's voluntary: the guest decides | A compulsory 10 % | A compulsory 15 % | Always included in the bill
+
+1|¿Cuándo se pregunta si todo está bien? || A los pocos minutos de servir el plato | Al traer la cuenta | Antes de que llegue la comida | Nunca, molesta
+Quando se pergunta se está tudo bem? || Poucos minutos depois de servir o prato | Ao trazer a conta | Antes de chegar a comida | Nunca, incomoda
+When do you check that everything is fine? || A few minutes after serving the dish | When bringing the bill | Before the food arrives | Never, it's annoying
+
+2|Un cliente quiere pagar con tarjeta. ¿Qué haces? || Llevas el datáfono a la mesa | Te llevas la tarjeta a la barra y le pides el PIN | Le pides que te diga el PIN en voz alta | Le dices que solo efectivo
+Um cliente quer pagar com cartão. O que fazes? || Levas o terminal à mesa | Levas o cartão ao balcão e pedes o PIN | Pedes que diga o PIN em voz alta | Dizes que só aceitam dinheiro
+A guest wants to pay by card. What do you do? || Bring the card machine to the table | Take the card to the bar and ask for the PIN | Ask them to say their PIN out loud | Say it's cash only
+
+2|Un cliente se va sin pagar. ¿Qué haces? || Avisas al encargado | Le persigues por la calle | Lo pagas tú sin decir nada | Lo cobras en la cuenta de otra mesa
+Um cliente sai sem pagar. O que fazes? || Avisas o gerente | Persegues pela rua | Pagas tu sem dizer nada | Cobras na conta de outra mesa
+A guest leaves without paying. What do you do? || Tell the manager | Chase them down the street | Pay it yourself and say nothing | Add it to another table's bill
+
+2|Un cliente con discapacidad visual llega a la mesa. ¿Qué haces? || Le lees o describes la carta y le indicas dónde está cada cosa | Le hablas más alto | Hablas solo con su acompañante | Le traes el plato del día sin preguntar
+Um cliente com deficiência visual chega à mesa. O que fazes? || Lês ou descreves a carta e indicas onde está cada coisa | Falas mais alto | Falas só com o acompanhante | Trazes o prato do dia sem perguntar
+A visually impaired guest is seated. What do you do? || Read or describe the menu and explain where things are | Speak louder | Talk only to their companion | Bring the dish of the day without asking
+
+1|vf=0|En España la propina es obligatoria.
+Em Espanha a gorjeta é obrigatória.
+Tipping is compulsory in Spain.
+
+2|vf=1|Los bares y restaurantes deben tener hojas de reclamaciones.
+Os bares e restaurantes têm de ter livro de reclamações.
+Bars and restaurants must have complaint forms available.
+
+@vocabulario
+2|¿Qué es el "pase"? || La zona donde cocina deja los platos listos para sala | La entrada del personal | El turno de tarde | El carro de los postres
+O que é o "passe"? || A zona onde a cozinha deixa os pratos prontos para a sala | A entrada do pessoal | O turno da tarde | O carrinho das sobremesas
+What is the "pase" (pass)? || Where the kitchen puts finished dishes for the floor | The staff entrance | The evening shift | The dessert trolley
+
+2|¿Qué significa "¡oído cocina!"? || Que la orden se ha recibido y entendido | Que hay demasiado ruido | Que se apaga el fuego | Que ha llegado un cliente
+O que significa "¡oído cocina!"? || Que a ordem foi recebida e entendida | Que há demasiado barulho | Que se apaga o lume | Que chegou um cliente
+What does "¡oído cocina!" mean? || The order has been heard and understood | It's too noisy | Turn off the heat | A guest has arrived
+
+3|¿Qué es una "partida" en cocina? || Una sección con su tarea: fríos, carnes, pastelería… | Un juego entre turnos | La hora de salida | Una olla grande
+O que é uma "partida" na cozinha? || Uma secção com a sua tarefa: frios, carnes, pastelaria… | Um jogo entre turnos | A hora de saída | Uma panela grande
+What is a "partida" in a kitchen? || A section with its own job: cold, meat, pastry… | A game between shifts | Clocking-off time | A large pot
+
+3|¿Qué es el "cuarto frío"? || La partida de platos fríos, ensaladas y entrantes | La cámara de congelados | El almacén de bebidas | La sala de descanso
+O que é a "copa fria" (cuarto frío)? || A secção de pratos frios, saladas e entradas | A câmara de congelados | O armazém de bebidas | A sala de descanso
+What is the "cuarto frío"? || The cold section: salads, cold starters | The freezer room | The drinks store | The break room
+
+3|¿Qué es el economato? || El almacén de productos no perecederos | La caja registradora | La oficina del dueño | El comedor del personal
+O que é o economato? || O armazém de produtos não perecíveis | A caixa registadora | O escritório do dono | O refeitório do pessoal
+What is the "economato"? || The dry goods storeroom | The till | The owner's office | The staff canteen
+
+2|¿Qué es un plato "fuera de carta"? || Una sugerencia especial que no está en la carta | Un plato agotado | Un plato que no se puede pedir | Un postre gratis
+O que é um prato "fora da carta"? || Uma sugestão especial que não está na carta | Um prato esgotado | Um prato que não se pode pedir | Uma sobremesa grátis
+What is an "off-menu" dish? || A special that isn't on the printed menu | A sold-out dish | A dish you can't order | A free dessert
+
+2|¿Qué es la "rotación de mesas"? || Las veces que se ocupa una mesa en un servicio | Girar las mesas para limpiar | Cambiar los manteles | Mover mesas a la terraza
+O que é a "rotação de mesas"? || As vezes que uma mesa é ocupada num serviço | Rodar as mesas para limpar | Trocar as toalhas | Levar mesas para a esplanada
+What is "table turnover"? || How many times a table is used in one service | Turning tables to clean them | Changing tablecloths | Moving tables to the terrace
+
+3|¿Qué es el "ticket medio"? || Lo que gasta de media cada cliente | El papel de la cuenta | El precio del menú del día | La propina media
+O que é o "ticket médio"? || O que cada cliente gasta em média | O papel da conta | O preço do menu do dia | A gorjeta média
+What is the "average ticket"? || What each guest spends on average | The paper bill | The set menu price | The average tip
+
+3|¿Qué es un escandallo? || El cálculo del coste de un plato | Una salsa espesa | Una queja de un cliente | El cuadrante de turnos
+O que é uma ficha técnica de custo (escandallo)? || O cálculo do custo de um prato | Um molho espesso | Uma queixa de um cliente | A escala de turnos
+What is an "escandallo"? || A dish costing sheet | A thick sauce | A guest complaint | The staff rota
+
+3|¿Qué es la merma? || El producto que se pierde al limpiarlo, cortarlo o cocinarlo | Un postre andaluz | Un pescado de roca | Un plus de sueldo
+O que é a quebra (merma)? || O produto que se perde ao limpar, cortar ou cozinhar | Uma sobremesa andaluza | Um peixe de rocha | Um extra de salário
+What is "merma"? || Product lost when cleaning, trimming or cooking | An Andalusian dessert | A rock fish | A pay bonus
+
+2|¿Qué es un "extra" en hostelería? || Un trabajador contratado para un evento o servicio concreto | Una tapa gratis | Un plato fuera de carta | Una propina grande
+O que é um "extra" em hotelaria? || Um trabalhador contratado para um evento ou serviço concreto | Uma tapa grátis | Um prato fora da carta | Uma gorjeta grande
+What is an "extra" in hospitality? || Staff hired for a specific event or service | A free tapa | An off-menu dish | A big tip
+
+3|¿Quién es el "jefe de partida"? || El responsable de una sección de la cocina | El dueño del restaurante | El jefe de sala | El encargado de compras
+Quem é o "chefe de partida"? || O responsável por uma secção da cozinha | O dono do restaurante | O chefe de sala | O responsável de compras
+Who is the "jefe de partida" (chef de partie)? || The person in charge of one kitchen section | The restaurant owner | The head of the dining room | The purchasing manager
+
+3|¿Qué es un "commis" en sala? || Un ayudante de camarero | El jefe de rango | El sumiller | El maître
+O que é um "commis" na sala? || Um ajudante de empregado de mesa | O chefe de fila | O escanção | O maître
+What is a commis waiter? || An assistant waiter | The station head waiter | The sommelier | The maître
+
+3|¿Quién es el "jefe de rango"? || El camarero responsable de un grupo de mesas | El cocinero jefe | El dueño | El encargado de barra
+Quem é o "chefe de fila" (jefe de rango)? || O empregado responsável por um grupo de mesas | O cozinheiro chefe | O dono | O responsável do bar
+Who is the "jefe de rango"? || The waiter in charge of a group of tables | The head cook | The owner | The bar manager
+
+2|¿Qué es el "rango" de un camarero? || El grupo de mesas que le toca atender | Su categoría en la nómina | Su uniforme | Su horario
+O que é a "fila" (rango) de um empregado? || O grupo de mesas que tem de atender | A sua categoria no recibo | O seu uniforme | O seu horário
+What is a waiter's "rango" (station)? || The group of tables they serve | Their pay grade | Their uniform | Their schedule
+
+1|vf=1|"¡Marchando!" quiere decir que el pedido se empieza a preparar ya.
+"¡Marchando!" quer dizer que o pedido começa a ser preparado já.
+"¡Marchando!" means the order is being prepared right away.

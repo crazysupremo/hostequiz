@@ -7,7 +7,7 @@
 <title>HosteQuiz · Practicar</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Cairo:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 <script>
 const app = document.getElementById("app");
 const DATA_URL = window.HQ_DATA_URL || "/api/preguntas";
-const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"], ar: ["صحيح", "غلط"] };
+const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"] };
 let BANK = null, deck = [], pos = 0, hits = 0, misses = [], answeredNow = null, streak = 0;
 let view = "pick";
 const chosen = new Set();
@@ -72,7 +72,7 @@ function pick() {
       <h3>${t("level")}</h3>
       <div class="chips"><button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">${t("all")}</button>${[1, 2, 3].map((n) => `<button class="chip" data-lv="${n}" aria-pressed="${chosenLv.has(n)}"><span class="lvl lvl-${n}">●</span> ${t("lv" + n)}</button>`).join("")}</div>
     </div>
-    <div class="row" style="justify-content:space-between"><a class="btn ghost" href="/crear.html">${t("createMine")}</a><button class="btn big" id="go" ${chosen.size ? "" : "disabled"}>${t("start")}</button></div></div>`;
+    <div class="row" style="justify-content:space-between"><a class="btn ghost" href="/crear.html">${t("createMine")}</a><button class="btn big" id="go" ${chosen.size ? "" : "disabled"}>${t("start")}</button></div>${newsLink()}</div>`;
   app.querySelectorAll("[data-c]").forEach((b) => b.addEventListener("click", () => {
     chosen.has(b.dataset.c) ? chosen.delete(b.dataset.c) : chosen.add(b.dataset.c);
     b.setAttribute("aria-pressed", chosen.has(b.dataset.c));

@@ -1,0 +1,227 @@
+# Revisión de preguntas: BORRAR id  |  o  id con 3 líneas (es / pt / en) de respuestas nuevas, la correcta primero
+BORRAR p036 p058 p111 p115
+
+p012
+Canela en polvo | Cacao en polvo | Nuez moscada | Azúcar glas
+Canela em pó | Cacau em pó | Noz-moscada | Açúcar de confeiteiro
+Ground cinnamon | Cocoa powder | Nutmeg | Icing sugar
+
+p024
+Purgarlo y limpiarlo con un paño húmedo | Limpiarlo solo al cerrar | Purgarlo sin limpiarlo | Limpiarlo con el paño de las mesas
+Purgá-lo e limpá-lo com um pano húmido | Limpá-lo só ao fechar | Purgá-lo sem o limpar | Limpá-lo com o pano das mesas
+Purge it and wipe it with a damp cloth | Clean it only at closing time | Purge it without wiping it | Wipe it with the table cloth
+
+p026
+Unos 60–65 °C, sin hervir | Unos 80–85 °C | Hasta que hierva (100 °C) | Unos 35–40 °C
+Uns 60–65 °C, sem ferver | Uns 80–85 °C | Até ferver (100 °C) | Uns 35–40 °C
+About 60–65 °C, without boiling | About 80–85 °C | Until it boils (100 °C) | About 35–40 °C
+
+p027
+La dosis de café molido para un café | La cantidad de agua de un café | Un café doble | El tiempo de extracción
+A dose de café moído para um café | A quantidade de água de um café | Um café duplo | O tempo de extração
+The dose of ground coffee for one coffee | The amount of water for one coffee | A double coffee | The extraction time
+
+p042
+Rodaja de limón o de naranja | Aceituna | Hoja de hierbabuena | Corteza de lima y sal
+Rodela de limão ou de laranja | Azeitona | Folha de hortelã | Casca de lima e sal
+A slice of lemon or orange | An olive | A mint leaf | Lime peel and salt
+
+p045
+2 o 3 hielos, rodaja de naranja y aceituna | 3 o 4 hielos y corteza de limón | Solo hielo | Nada, se sirve del tiempo
+2 ou 3 gelos, rodela de laranja e azeitona | 3 ou 4 gelos e casca de limão | Só gelo | Nada, serve-se à temperatura ambiente
+2 or 3 ice cubes, an orange slice and an olive | 3 or 4 ice cubes and lemon peel | Just ice | Nothing, served at room temperature
+
+p047
+En copa o jarra | En copa de vino | En vaso bajo | En copa de balón
+Em taça ou caneca | Em taça de vinho | Em copo baixo | Em copo balão
+A glass (copa) or a mug | A wine glass | A short glass | A balloon glass
+
+p049
+Corteza de limón o de naranja | Aceituna | Guinda | Sal en el borde
+Casca de limão ou de laranja | Azeitona | Cereja | Sal na borda
+Lemon or orange peel | An olive | A cocktail cherry | Salt on the rim
+
+p061
+Cava | Vino tinto | Cerveza | Licor
+Cava | Vinho tinto | Cerveja | Licor
+Cava | Red wine | Beer | Liqueur
+
+p066
+Vaso bajo, copa de licor o vaso de tubo | Copa de vino | Copa de cóctel | Jarra de cerveza
+Copo baixo, taça de licor ou copo alto | Taça de vinho | Taça de coquetel | Caneca de cerveja
+Short glass, liqueur glass or tall glass | Wine glass | Cocktail glass | Beer mug
+
+p067
+Copa de vino o vaso bajo | Vaso de chupito | Copa de cóctel | Copa de balón con tónica
+Taça de vinho ou copo baixo | Copo de shot | Taça de coquetel | Copo balão com tónica
+Wine glass or short glass | Shot glass | Cocktail glass | Balloon glass with tonic
+
+p069
+Copa de vino, vaso bajo o vaso de tubo | Copa de cóctel | Vaso de chupito | Jarra de cerveza
+Taça de vinho, copo baixo ou copo alto | Taça de coquetel | Copo de shot | Caneca de cerveja
+Wine glass, short glass or tall glass | Cocktail glass | Shot glass | Beer mug
+
+p078
+Derecha | Izquierda | Encima del plato, en horizontal | A la izquierda, junto al pan
+Direita | Esquerda | Por cima do prato, na horizontal | À esquerda, junto ao pão
+Right | Left | Above the plate, lying across | On the left, next to the bread
+
+p079
+Izquierda | Derecha | Encima del plato, en horizontal | A la derecha, junto a la cuchara
+Esquerda | Direita | Por cima do prato, na horizontal | À direita, junto à colher
+Left | Right | Above the plate, lying across | On the right, next to the spoon
+
+p080
+Derecha | Izquierda | Encima del plato, en horizontal | A la izquierda, fuera de los tenedores
+Direita | Esquerda | Por cima do prato, na horizontal | À esquerda, por fora dos garfos
+Right | Left | Above the plate, lying across | On the left, outside the forks
+
+p081
+Derecha | Izquierda | Encima del plato, en horizontal | Solo se trae con el postre
+Direita | Esquerda | Por cima do prato, na horizontal | Só se traz com a sobremesa
+Right | Left | Above the plate, lying across | Only brought with dessert
+
+p082
+Izquierda | Derecha | Encima del plato, en horizontal | A la derecha, junto a la pala
+Esquerda | Direita | Por cima do prato, na horizontal | À direita, junto à faca de peixe
+Left | Right | Above the plate, lying across | On the right, next to the fish knife
+
+p085
+En el centro, entre los cubiertos | Dentro de la copa | Sobre el plato de pan | Debajo de los cubiertos de la derecha
+No centro, entre os talheres | Dentro da taça | Sobre o prato do pão | Debaixo dos talheres da direita
+In the centre, between the cutlery | Inside the glass | On the bread plate | Under the cutlery on the right
+
+p086
+Preparar todo antes de empezar el servicio | Limpiar la sala al cerrar | Montar solo las copas | Emplatar el primer plato
+Preparar tudo antes de começar o serviço | Limpar a sala ao fechar | Montar só as taças | Empratar o primeiro prato
+Getting everything ready before service starts | Cleaning the room at closing time | Setting out only the glasses | Plating the first course
+
+p087
+La tela gruesa que va debajo del mantel | El mantel pequeño de encima | La servilleta grande | El protector de la mesa auxiliar
+O tecido grosso que vai debaixo da toalha | A toalha pequena de cima | O guardanapo grande | O protetor da mesa auxiliar
+The thick cloth under the tablecloth | The small top cloth | The large napkin | The side-table cover
+
+p088
+El mueble de apoyo del camarero en la sala | La mesa del maître para las reservas | El armario de la cocina | El carrito de los postres
+O móvel de apoio do empregado na sala | A mesa do maître para as reservas | O armário da cozinha | O carrinho das sobremesas
+The waiter's support unit in the dining room | The maître's booking desk | The kitchen cupboard | The dessert trolley
+
+p094
+Se enseña la etiqueta al cliente | Se sirve una copa al camarero | Se mete siempre en hielo | Se agita para airearlo
+Mostra-se o rótulo ao cliente | Serve-se um copo ao empregado | Põe-se sempre em gelo | Agita-se para o arejar
+Show the label to the customer | Pour a glass for the waiter | Always put it on ice | Shake it to aerate it
+
+p095
+La persona que lo ha pedido | El camarero | La persona de más edad | El anfitrión siempre, aunque no lo haya pedido
+A pessoa que o pediu | O empregado | A pessoa mais velha | O anfitrião sempre, mesmo sem o ter pedido
+The person who ordered it | The waiter | The oldest person | Always the host, even if they didn't order it
+
+p097
+Cuando el cliente la pide | Al servir el postre | Al servir el café | Antes del postre, para adelantar
+Quando o cliente a pede | Ao servir a sobremesa | Ao servir o café | Antes da sobremesa, para adiantar
+When the customer asks for it | When serving dessert | When serving coffee | Before dessert, to save time
+
+p098
+Por el tallo o la base | Por el borde | Por el cuerpo de la copa | Da igual, con la mano limpia
+Pela haste ou pela base | Pela borda | Pelo corpo da taça | Tanto faz, com a mão limpa
+By the stem or the base | By the rim | By the bowl of the glass | It doesn't matter, with a clean hand
+
+p100
+Con la izquierda, para servir con la derecha | Con la derecha, para servir con la izquierda | Con las dos manos | Da igual, con la que esté libre
+Com a esquerda, para servir com a direita | Com a direita, para servir com a esquerda | Com as duas mãos | Tanto faz, com a que estiver livre
+The left, so you serve with the right | The right, so you serve with the left | Both hands | Whichever hand is free
+
+p103
+Con el vaso del yogur | Con una báscula en gramos | Con una taza de café | Con una cuchara sopera
+Com o copo do iogurte | Com uma balança em gramas | Com uma chávena de café | Com uma colher de sopa
+The yogurt pot | Kitchen scales in grams | A coffee cup | A soup spoon
+
+p108
+Precalentarlo | Ponerlo en modo grill | Encenderlo al meter el bizcocho | Dejarlo abierto para que entre aire
+Pré-aquecê-lo | Pô-lo em modo grill | Ligá-lo ao pôr o bolo | Deixá-lo aberto para entrar ar
+Preheat it | Switch it to grill mode | Turn it on as you put the cake in | Leave it open to let air in
+
+p110
+La yema | La clara montada | El huevo entero batido | Huevo cocido picado
+A gema | A clara batida em castelo | O ovo inteiro batido | Ovo cozido picado
+The yolk | Whipped egg white | The whole beaten egg | Chopped boiled egg
+
+p112
+Un plato de verdura | Una carne | Un pescado | Un arroz
+Um prato de legumes | Uma carne | Um peixe | Um arroz
+A vegetable dish | A meat dish | A fish dish | A rice dish
+
+p120
+Miro la carta de alérgenos o pregunto en cocina | Le digo que lo pida sin pan | Le recomiendo otro plato sin preguntar | Le digo que poco gluten no hace daño
+Vejo a carta de alergénios ou pergunto na cozinha | Digo-lhe para pedir sem pão | Recomendo outro prato sem perguntar | Digo-lhe que pouco glúten não faz mal
+Check the allergen chart or ask the kitchen | Tell them to order it without bread | Recommend another dish without checking | Say a little gluten won't hurt
+
+p121
+El que entró antes | El más nuevo | El que caduca más tarde | El que está delante
+O que entrou antes | O mais novo | O que tem validade mais longa | O que está à frente
+The one that came in first | The newest | The one that expires latest | The one at the front
+
+p122
+Antes de tocar alimentos y después del baño, la basura o el dinero | Solo al empezar el turno | Solo si se ven sucias | Solo antes de servir postres
+Antes de tocar em alimentos e depois da casa de banho, do lixo ou do dinheiro | Só no início do turno | Só se estiverem sujas | Só antes de servir sobremesas
+Before touching food and after the toilet, rubbish or money | Only at the start of the shift | Only when they look dirty | Only before serving desserts
+
+p123
+Pasar bacterias de un alimento crudo a uno cocinado | Cocinar dos platos a la vez | Mezclar dos salsas | Congelar y descongelar dos veces
+Passar bactérias de um alimento cru para um cozinhado | Cozinhar dois pratos ao mesmo tempo | Misturar dois molhos | Congelar e descongelar duas vezes
+Passing bacteria from raw food to cooked food | Cooking two dishes at once | Mixing two sauces | Freezing and thawing twice
+
+p126
+El mostrador donde se sirven las bebidas | La zona de cocina caliente | El almacén de bebidas | La mesa del maître
+O balcão onde se servem as bebidas | A zona de cozinha quente | O armazém de bebidas | A mesa do maître
+The counter where drinks are served | The hot kitchen area | The drinks storeroom | The maître's desk
+
+p127
+La zona de apoyo entre cocina y sala | La bodega | La cámara frigorífica | La oficina del encargado
+A zona de apoio entre a cozinha e a sala | A adega | A câmara frigorífica | O escritório do gerente
+The support area between kitchen and dining room | The wine cellar | The cold room | The manager's office
+
+p128
+Colocar la comida en el plato antes de servir | Recoger los platos sucios | Poner los platos en la mesa | Calentar los platos
+Pôr a comida no prato antes de servir | Recolher os pratos sujos | Pôr os pratos na mesa | Aquecer os pratos
+Placing food on the plate before serving | Clearing dirty plates | Laying the plates on the table | Warming the plates
+
+p129
+El jefe de sala | El jefe de cocina | El sumiller | El encargado de barra
+O chefe de sala | O chefe de cozinha | O escanção | O responsável do bar
+The head of the dining room | The head chef | The sommelier | The bar manager
+
+p130
+El experto en vinos | El jefe de cocina | El encargado de barra | El jefe de sala
+O especialista em vinhos | O chefe de cozinha | O responsável do bar | O chefe de sala
+The wine expert | The head chef | The bar manager | The head of the dining room
+
+p132
+Empezar a preparar el siguiente plato de la mesa 5 | Que la mesa 5 ya se ha ido | Que la mesa 5 quiere la cuenta | Que la mesa 5 ha cancelado
+Começar a preparar o próximo prato da mesa 5 | Que a mesa 5 já foi embora | Que a mesa 5 quer a conta | Que a mesa 5 cancelou
+Start preparing table 5's next course | Table 5 has already left | Table 5 wants the bill | Table 5 has cancelled
+
+p133
+Una mesa guardada para un cliente a una hora | Un pedido para llevar | Una mesa que paga por adelantado | Una mesa en la terraza
+Uma mesa guardada para um cliente a uma hora | Um pedido para levar | Uma mesa que paga antecipadamente | Uma mesa na esplanada
+A table kept for a customer at a set time | A takeaway order | A table that pays in advance | A table on the terrace
+
+p165
+No debe llevar hielo | Le falta limón | Debería ir en copa de vino | No tiene nada mal
+Não deve levar gelo | Falta-lhe limão | Devia ir numa taça de vinho | Não tem nada errado
+It shouldn't have ice | It needs lemon | It should be in a wine glass | Nothing is wrong
+
+p166
+Sí, en jarra y sin hielo | No, le falta hielo | No, va en copa de vino | No, debería ir en vaso bajo
+Sim, em caneca e sem gelo | Não, falta-lhe gelo | Não, vai em taça de vinho | Não, devia ir em copo baixo
+Yes, in a mug and without ice | No, it needs ice | No, it goes in a wine glass | No, it should be in a short glass
+
+p169
+8–10 °C | 16–18 °C | 2–4 °C | 20–22 °C
+8–10 °C | 16–18 °C | 2–4 °C | 20–22 °C
+8–10 °C | 16–18 °C | 2–4 °C | 20–22 °C
+
+p170
+Cava | Cerveza | Vino tinto | Vermut
+Cava | Cerveja | Vinho tinto | Vermute
+Cava | Beer | Red wine | Vermouth

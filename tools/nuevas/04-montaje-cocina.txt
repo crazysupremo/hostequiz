@@ -1,0 +1,181 @@
+@montaje
+1|¿En qué orden se usan los cubiertos? || De fuera hacia dentro | De dentro hacia fuera | Primero los de postre | Primero los de la izquierda
+Em que ordem se usam os talheres? || De fora para dentro | De dentro para fora | Primeiro os de sobremesa | Primeiro os da esquerda
+In what order is cutlery used? || From the outside in | From the inside out | Dessert cutlery first | Left-hand ones first
+
+2|¿Hacia dónde mira el filo del cuchillo en la mesa? || Hacia el plato | Hacia fuera del plato | Hacia arriba | Hacia el borde de la mesa
+Para onde fica virado o fio da faca na mesa? || Para o prato | Para fora do prato | Para cima | Para a borda da mesa
+Which way does the knife blade face on the table? || Towards the plate | Away from the plate | Upwards | Towards the table edge
+
+2|¿Dónde se colocan los cubiertos de postre en el montaje? || Arriba del plato, en horizontal | A la derecha, por fuera | A la izquierda, por fuera | Debajo del plato
+Onde se colocam os talheres de sobremesa na montagem? || Por cima do prato, na horizontal | À direita, por fora | À esquerda, por fora | Debaixo do prato
+Where does dessert cutlery go in a place setting? || Above the plate, lying across | On the right, outside | On the left, outside | Under the plate
+
+2|¿Dónde va la copa de agua? || Arriba a la derecha, sobre la punta del cuchillo | A la izquierda, sobre el tenedor | Encima del plato de pan | En el centro de la mesa
+Onde fica o copo de água? || Em cima à direita, sobre a ponta da faca | À esquerda, sobre o garfo | Em cima do prato do pão | No centro da mesa
+Where does the water glass go? || Top right, above the knife tip | On the left, above the fork | On the bread plate | In the middle of the table
+
+3|Con copa de agua, de tinto y de blanco, ¿cuál suele ser la más grande? || La de agua | La de vino blanco | La de vino tinto | Todas son iguales
+Com copo de água, de tinto e de branco, qual costuma ser o maior? || O de água | O de vinho branco | O de vinho tinto | São todos iguais
+With water, red and white wine glasses, which is usually the largest? || The water glass | The white wine glass | The red wine glass | They're all the same
+
+3|¿Dónde se coloca el cuchillo de mantequilla? || Sobre el plato de pan | Junto al cuchillo trinchero | Arriba del plato, en horizontal | A la izquierda del tenedor
+Onde se coloca a faca de manteiga? || Sobre o prato do pão | Junto à faca de carne | Por cima do prato, na horizontal | À esquerda do garfo
+Where is the butter knife placed? || On the bread plate | Next to the dinner knife | Above the plate, lying across | To the left of the fork
+
+2|¿A qué distancia del borde de la mesa se ponen platos y cubiertos? || Unos 2 cm, dos dedos | Unos 15 cm | Justo en el borde, sobresaliendo | En el centro de la mesa
+A que distância da borda da mesa se põem pratos e talheres? || Uns 2 cm, dois dedos | Uns 15 cm | Mesmo na borda, a sair | No centro da mesa
+How far from the table edge are plates and cutlery placed? || About 2 cm, two fingers | About 15 cm | Right on the edge, sticking out | In the middle of the table
+
+2|¿Qué es el bajoplato? || Plato grande decorativo que va debajo del plato | El plato de postre | El plato de pan | La bandeja de servicio
+O que é o marcador (sousplat)? || Prato grande decorativo que fica debaixo do prato | O prato de sobremesa | O prato do pão | A bandeja de serviço
+What is a charger plate? || A large decorative plate under the dinner plate | The dessert plate | The bread plate | The serving tray
+
+2|¿Para qué sirve el salvamanteles? || Para proteger el mantel de fuentes y ollas calientes | Para tapar manchas | Para poner la servilleta | Para el plato de pan
+Para que serve o base de tachos? || Para proteger a toalha de travessas e panelas quentes | Para tapar nódoas | Para pôr o guardanapo | Para o prato do pão
+What is a trivet for? || Protecting the tablecloth from hot dishes and pots | Covering stains | Holding the napkin | The bread plate
+
+2|El cubre (cubremantel) se coloca… || Encima del mantel, para protegerlo y decorar | Debajo del muletón | En lugar de las servilletas | Solo en la terraza
+O cobre-mesa coloca-se… || Em cima da toalha, para a proteger e decorar | Debaixo do molton | Em vez dos guardanapos | Só na esplanada
+The top cloth goes… || On top of the tablecloth, to protect and decorate it | Under the silence cloth | Instead of napkins | Only on the terrace
+
+1|vf=1|Los cubiertos se usan de fuera hacia dentro.
+Os talheres usam-se de fora para dentro.
+Cutlery is used from the outside in.
+
+2|vf=0|El filo del cuchillo mira hacia fuera del plato.
+O fio da faca fica virado para fora do prato.
+The knife blade faces away from the plate.
+
+3|vf=1|La copa de agua suele ser la más grande de las copas.
+O copo de água costuma ser o maior dos copos.
+The water glass is usually the largest glass.
+
+@cocina
+2|¿Qué diferencia al salmorejo del gazpacho? || Es más espeso, lleva pan y se sirve con huevo y jamón | Se sirve caliente | Lleva leche y nata | No lleva tomate
+O que distingue o salmorejo do gaspacho? || É mais espesso, leva pão e serve-se com ovo e presunto | Serve-se quente | Leva leite e natas | Não leva tomate
+What makes salmorejo different from gazpacho? || Thicker, made with bread, topped with egg and ham | It's served hot | It has milk and cream | It has no tomato
+
+2|¿De qué ciudad es típico el salmorejo? || Córdoba | Valencia | Bilbao | Santiago de Compostela
+De que cidade é típico o salmorejo? || Córdova | Valência | Bilbau | Santiago de Compostela
+Which city is salmorejo typical of? || Córdoba | Valencia | Bilbao | Santiago de Compostela
+
+2|¿Qué lleva la paella valenciana tradicional? || Pollo, conejo, judía verde y garrofó | Gambas, mejillones y calamar | Chorizo y pimiento | Tinta de calamar y sepia
+O que leva a paella valenciana tradicional? || Frango, coelho, feijão-verde e garrofó | Camarão, mexilhão e lula | Chouriço e pimento | Tinta de lula e choco
+What goes in traditional Valencian paella? || Chicken, rabbit, green beans and butter beans | Prawns, mussels and squid | Chorizo and peppers | Squid ink and cuttlefish
+
+2|¿Qué es el socarrat? || La capa de arroz tostado del fondo de la paella | Un tipo de arroz | Un postre valenciano | La salsa de la paella
+O que é o socarrat? || A camada de arroz tostado no fundo da paella | Um tipo de arroz | Uma sobremesa valenciana | O molho da paella
+What is socarrat? || The toasted rice crust at the bottom of a paella | A rice variety | A Valencian dessert | Paella sauce
+
+1|¿Qué le da el color al arroz negro? || La tinta de calamar o sepia | Aceitunas negras | Café | Pimienta negra
+O que dá a cor ao arroz negro? || A tinta de lula ou choco | Azeitonas pretas | Café | Pimenta preta
+What makes black rice black? || Squid or cuttlefish ink | Black olives | Coffee | Black pepper
+
+1|¿Qué es el pulpo a la gallega? || Pulpo cocido con pimentón, sal gruesa y aceite | Pulpo rebozado y frito | Pulpo guisado con tomate | Pulpo crudo con limón
+O que é o polvo à galega? || Polvo cozido com colorau, sal grosso e azeite | Polvo panado e frito | Polvo estufado com tomate | Polvo cru com limão
+What is pulpo a la gallega? || Boiled octopus with paprika, coarse salt and olive oil | Battered fried octopus | Octopus stewed in tomato | Raw octopus with lemon
+
+2|¿Qué es la fabada asturiana? || Guiso de fabes con chorizo, morcilla y lacón | Guiso de garbanzos con carne | Sopa de pescado | Ensalada de alubias
+O que é a fabada asturiana? || Guisado de favas brancas com chouriço, morcela e lacão | Guisado de grão com carne | Sopa de peixe | Salada de feijão
+What is fabada asturiana? || A bean stew with chorizo, black pudding and ham | A chickpea and meat stew | A fish soup | A bean salad
+
+2|¿Cómo se sirve tradicionalmente el cocido madrileño? || En vuelcos: primero la sopa, luego garbanzos y verduras, después las carnes | Todo mezclado en un plato | Frío, como ensalada | Con arroz
+Como se serve tradicionalmente o cozido madrileno? || Por partes: primeiro a sopa, depois grão e legumes, depois as carnes | Tudo misturado num prato | Frio, como salada | Com arroz
+How is cocido madrileño traditionally served? || In stages: soup first, then chickpeas and veg, then the meats | All mixed on one plate | Cold, as a salad | With rice
+
+2|¿Cómo se corta el jamón para servirlo? || En lonchas muy finas y pequeñas, con algo de grasa | En tacos gruesos | En lonchas gruesas sin grasa | Picado fino
+Como se corta o presunto para servir? || Em fatias muito finas e pequenas, com alguma gordura | Em cubos grossos | Em fatias grossas sem gordura | Picado fino
+How is cured ham cut for serving? || In very thin small slices, with some fat | In thick cubes | In thick slices without fat | Finely chopped
+
+2|¿A qué temperatura se sirve el jamón ibérico? || A temperatura ambiente, unos 20–25 °C | Recién sacado de la nevera | Templado al horno | Muy frío para que no sude
+A que temperatura se serve o presunto ibérico? || À temperatura ambiente, uns 20–25 °C | Acabado de sair do frigorífico | Morno no forno | Muito frio para não suar
+At what temperature is Iberian ham served? || Room temperature, about 20–25 °C | Straight from the fridge | Warmed in the oven | Very cold so it doesn't sweat
+
+2|¿Qué es el jamón ibérico de bellota? || De cerdo ibérico que come bellotas en montanera | De cerdo blanco de cebo | Jamón cocido de pavo | Jamón con denominación de Galicia
+O que é o presunto ibérico de bolota? || De porco ibérico que come bolota em montanheira | De porco branco de engorda | Fiambre de peru | Presunto com denominação da Galiza
+What is Iberian acorn-fed ham (bellota)? || From Iberian pigs fed on acorns in the dehesa | From white farm pigs | Cooked turkey ham | A Galician ham
+
+2|¿Qué es el queso manchego? || Queso de oveja de La Mancha | Queso de vaca de Galicia | Queso de cabra de Canarias | Queso azul de Asturias
+O que é o queijo manchego? || Queijo de ovelha de La Mancha | Queijo de vaca da Galiza | Queijo de cabra das Canárias | Queijo azul das Astúrias
+What is Manchego cheese? || Sheep's milk cheese from La Mancha | Cow's milk cheese from Galicia | Goat's cheese from the Canaries | Blue cheese from Asturias
+
+2|¿Qué queso es azul y asturiano? || Cabrales | Idiazábal | Tetilla | Mahón
+Que queijo é azul e asturiano? || Cabrales | Idiazábal | Tetilla | Mahón
+Which cheese is blue and from Asturias? || Cabrales | Idiazábal | Tetilla | Mahón
+
+2|¿Qué es la leche frita? || Crema espesa de leche, rebozada y frita | Leche hervida con canela | Un batido de vainilla | Queso fresco frito
+O que é o leite frito? || Creme espesso de leite, panado e frito | Leite fervido com canela | Um batido de baunilha | Queijo fresco frito
+What is "leche frita"? || Thick milk custard, coated and fried | Boiled milk with cinnamon | A vanilla milkshake | Fried fresh cheese
+
+1|¿Qué es la crema catalana? || Crema con azúcar quemado por encima | Flan con caramelo líquido | Natillas con galleta | Arroz con leche
+O que é o creme catalão? || Creme com açúcar queimado por cima | Pudim com caramelo líquido | Leite-creme com bolacha | Arroz-doce
+What is crema catalana? || Custard with a burnt sugar top | Flan with runny caramel | Custard with a biscuit | Rice pudding
+
+2|¿Qué es "pochar" una verdura? || Cocinarla a fuego lento en aceite sin que se dore | Freírla fuerte hasta dorarla | Hervirla en agua con sal | Asarla al horno
+O que é "refogar lentamente" (pochar) um legume? || Cozinhá-lo em lume brando em azeite sem alourar | Fritá-lo forte até alourar | Cozê-lo em água com sal | Assá-lo no forno
+What does "pochar" a vegetable mean? || Cooking it gently in oil without browning | Frying it hard until golden | Boiling it in salted water | Roasting it
+
+3|¿Qué es "blanquear" una verdura? || Cocerla brevemente y enfriarla en agua con hielo | Pelarla y lavarla | Cocerla hasta que esté blanda | Freírla sin que coja color
+O que é "branquear" um legume? || Cozê-lo brevemente e arrefecê-lo em água com gelo | Descascá-lo e lavá-lo | Cozê-lo até ficar mole | Fritá-lo sem ganhar cor
+What does "blanching" a vegetable mean? || Briefly boiling it, then chilling it in iced water | Peeling and washing it | Boiling it until soft | Frying it without colour
+
+2|¿Qué es "emulsionar"? || Unir dos líquidos que no se mezclan, como aceite y agua | Hervir a fuego fuerte | Cortar en dados | Congelar rápido
+O que é "emulsionar"? || Juntar dois líquidos que não se misturam, como azeite e água | Ferver em lume forte | Cortar em cubos | Congelar rápido
+What does "emulsify" mean? || Combining two liquids that don't mix, like oil and water | Boiling hard | Dicing | Quick freezing
+
+1|¿Qué es la bechamel? || Salsa de leche, mantequilla y harina | Salsa de tomate y cebolla | Mayonesa con ajo | Caldo de carne espesado
+O que é o bechamel? || Molho de leite, manteiga e farinha | Molho de tomate e cebola | Maionese com alho | Caldo de carne engrossado
+What is béchamel? || A sauce of milk, butter and flour | A tomato and onion sauce | Garlic mayonnaise | Thickened meat stock
+
+2|¿Qué es un "fondo" en cocina? || Caldo concentrado de huesos y verduras | El fondo de la sartén | La salsa del postre | El último plato del menú
+O que é um "fundo" na cozinha? || Caldo concentrado de ossos e legumes | O fundo da frigideira | O molho da sobremesa | O último prato do menu
+What is a "fondo" in cooking? || A concentrated stock of bones and vegetables | The bottom of the pan | A dessert sauce | The last course
+
+2|¿Qué corte es la juliana? || Tiras finas y largas | Dados muy pequeños | Rodajas gruesas | Láminas muy finas
+Que corte é a juliana? || Tiras finas e compridas | Cubos muito pequenos | Rodelas grossas | Lâminas muito finas
+What is a julienne cut? || Thin, long strips | Very small dice | Thick rounds | Very thin slices
+
+3|¿Qué corte es la brunoise? || Dados muy pequeños | Tiras finas y largas | Rodajas | Bastones gruesos
+Que corte é a brunoise? || Cubos muito pequenos | Tiras finas e compridas | Rodelas | Bastões grossos
+What is a brunoise cut? || Very small dice | Thin, long strips | Rounds | Thick batons
+
+2|¿Qué es un plato "a la romana"? || Pasado por harina y huevo y frito | Pasado por huevo y pan rallado | Hecho a la plancha | Guisado con tomate
+O que é um prato "à romana"? || Passado por farinha e ovo e frito | Passado por ovo e pão ralado | Feito na chapa | Estufado com tomate
+What is a dish "a la romana"? || Dipped in flour and egg, then fried | Coated in egg and breadcrumbs | Griddled | Stewed in tomato
+
+2|¿Qué es "empanar"? || Pasar por huevo y pan rallado antes de freír | Pasar solo por harina | Meter dentro de una empanada | Cocinar al horno sin grasa
+O que é "panar"? || Passar por ovo e pão ralado antes de fritar | Passar só por farinha | Pôr dentro de uma empada | Cozinhar no forno sem gordura
+What is "empanar"? || Coating in egg and breadcrumbs before frying | Dusting with flour only | Putting inside a pie | Baking without fat
+
+2|¿Qué es un escabeche? || Conserva con aceite, vinagre, laurel y especias | Salsa dulce de tomate | Una fritura de pescado | Un caldo de marisco
+O que é um escabeche? || Conserva com azeite, vinagre, louro e especiarias | Molho doce de tomate | Uma fritura de peixe | Um caldo de marisco
+What is escabeche? || A preserve of oil, vinegar, bay and spices | A sweet tomato sauce | Fried fish | A seafood stock
+
+1|¿Qué significa que la pasta está "al dente"? || Cocida pero firme al morder | Muy blanda | Cruda por dentro | Frita después de cocer
+O que significa a massa estar "al dente"? || Cozida mas firme ao morder | Muito mole | Crua por dentro | Frita depois de cozida
+What does "al dente" pasta mean? || Cooked but firm to the bite | Very soft | Raw inside | Fried after boiling
+
+1|¿Qué es una ración? || Plato más grande que la tapa, para compartir | Una tapa muy pequeña | El primer plato del menú | Un postre individual
+O que é uma "ración"? || Prato maior do que a tapa, para partilhar | Uma tapa muito pequena | O primeiro prato do menu | Uma sobremesa individual
+What is a "ración"? || A sharing plate larger than a tapa | A very small tapa | The first course | An individual dessert
+
+2|¿Qué son las patatas bravas? || Patatas fritas con salsa picante | Patatas cocidas con mayonesa | Puré de patata con queso | Patatas asadas con romero
+O que são as batatas bravas? || Batatas fritas com molho picante | Batatas cozidas com maionese | Puré de batata com queijo | Batatas assadas com alecrim
+What are patatas bravas? || Fried potatoes with a spicy sauce | Boiled potatoes with mayo | Mashed potato with cheese | Roast potatoes with rosemary
+
+1|vf=1|El gazpacho se sirve frío.
+O gaspacho serve-se frio.
+Gazpacho is served cold.
+
+2|vf=0|El salmorejo es típico de Galicia.
+O salmorejo é típico da Galiza.
+Salmorejo comes from Galicia.
+
+3|vf=0|La brunoise es un corte en tiras largas.
+A brunoise é um corte em tiras compridas.
+Brunoise is a cut into long strips.
+
+2|vf=0|La paella valenciana tradicional lleva marisco.
+A paella valenciana tradicional leva marisco.
+Traditional Valencian paella contains seafood.

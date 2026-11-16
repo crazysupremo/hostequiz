@@ -1,0 +1,225 @@
+@cocteleria
+1|¿Qué lleva un mojito? || Ron blanco, lima, azúcar, hierbabuena y soda | Ginebra, tónica, lima y pepino | Tequila, lima y sal | Vodka, menta y tónica
+O que leva um mojito? || Rum branco, lima, açúcar, hortelã e soda | Gin, tónica, lima e pepino | Tequila, lima e sal | Vodka, hortelã e tónica
+What goes in a mojito? || White rum, lime, sugar, mint and soda | Gin, tonic, lime and cucumber | Tequila, lime and salt | Vodka, mint and tonic
+
+2|¿Qué lleva una margarita? || Tequila, triple seco y zumo de lima | Tequila, ron y limón | Vodka, triple seco y naranja | Tequila, tónica y pomelo
+O que leva uma margarita? || Tequila, triple sec e sumo de lima | Tequila, rum e limão | Vodka, triple sec e laranja | Tequila, tónica e toranja
+What goes in a margarita? || Tequila, triple sec and lime juice | Tequila, rum and lemon | Vodka, triple sec and orange | Tequila, tonic and grapefruit
+
+2|¿Qué lleva un daiquiri clásico? || Ron, zumo de lima y azúcar | Ron, piña y coco | Ron, menta y soda | Ron, cola y limón
+O que leva um daiquiri clássico? || Rum, sumo de lima e açúcar | Rum, ananás e coco | Rum, hortelã e soda | Rum, cola e limão
+What goes in a classic daiquiri? || Rum, lime juice and sugar | Rum, pineapple and coconut | Rum, mint and soda | Rum, cola and lemon
+
+1|¿Qué lleva una piña colada? || Ron, crema de coco y zumo de piña | Vodka, piña y lima | Ron, mango y naranja | Tequila, coco y lima
+O que leva uma piña colada? || Rum, creme de coco e sumo de ananás | Vodka, ananás e lima | Rum, manga e laranja | Tequila, coco e lima
+What goes in a piña colada? || Rum, cream of coconut and pineapple juice | Vodka, pineapple and lime | Rum, mango and orange | Tequila, coconut and lime
+
+2|¿Qué lleva un Bloody Mary? || Vodka, zumo de tomate y especias | Ginebra, zumo de tomate y tónica | Vodka, arándanos y lima | Tequila, tomate y cerveza
+O que leva um Bloody Mary? || Vodka, sumo de tomate e especiarias | Gin, sumo de tomate e tónica | Vodka, arando e lima | Tequila, tomate e cerveja
+What goes in a Bloody Mary? || Vodka, tomato juice and spices | Gin, tomato juice and tonic | Vodka, cranberry and lime | Tequila, tomato and beer
+
+3|¿Qué lleva un Negroni? || Ginebra, vermut rojo y Campari a partes iguales | Vodka, vermut blanco y Aperol | Ginebra, tónica y Campari | Ron, vermut y bitter
+O que leva um Negroni? || Gin, vermute tinto e Campari em partes iguais | Vodka, vermute branco e Aperol | Gin, tónica e Campari | Rum, vermute e bitter
+What goes in a Negroni? || Equal parts gin, red vermouth and Campari | Vodka, white vermouth and Aperol | Gin, tonic and Campari | Rum, vermouth and bitters
+
+2|¿Qué lleva un Aperol Spritz? || Aperol, prosecco o cava y un toque de soda | Aperol y tónica | Aperol, vermut y cerveza | Aperol, zumo de naranja y vodka
+O que leva um Aperol Spritz? || Aperol, prosecco ou cava e um toque de soda | Aperol e tónica | Aperol, vermute e cerveja | Aperol, sumo de laranja e vodka
+What goes in an Aperol Spritz? || Aperol, prosecco or cava and a splash of soda | Aperol and tonic | Aperol, vermouth and beer | Aperol, orange juice and vodka
+
+3|¿Qué lleva un Dry Martini? || Ginebra y vermut seco | Vermut rojo y soda | Vodka y zumo de manzana | Ginebra y tónica
+O que leva um Dry Martini? || Gin e vermute seco | Vermute tinto e soda | Vodka e sumo de maçã | Gin e tónica
+What goes in a Dry Martini? || Gin and dry vermouth | Red vermouth and soda | Vodka and apple juice | Gin and tonic
+
+3|¿Qué lleva un Moscow Mule? || Vodka, ginger beer y lima | Vodka, tónica y limón | Ron, ginger ale y menta | Ginebra, cerveza y lima
+O que leva um Moscow Mule? || Vodka, ginger beer e lima | Vodka, tónica e limão | Rum, ginger ale e hortelã | Gin, cerveja e lima
+What goes in a Moscow Mule? || Vodka, ginger beer and lime | Vodka, tonic and lemon | Rum, ginger ale and mint | Gin, beer and lime
+
+3|¿Qué lleva un Cosmopolitan? || Vodka, triple seco, arándano y lima | Ron, coco y piña | Ginebra, granadina y limón | Tequila, naranja y granadina
+O que leva um Cosmopolitan? || Vodka, triple sec, arando e lima | Rum, coco e ananás | Gin, groselha e limão | Tequila, laranja e groselha
+What goes in a Cosmopolitan? || Vodka, triple sec, cranberry and lime | Rum, coconut and pineapple | Gin, grenadine and lemon | Tequila, orange and grenadine
+
+2|¿Qué lleva una caipiriña? || Cachaça, lima y azúcar | Ron, lima y hierbabuena | Vodka, lima y azúcar | Tequila, lima y sal
+O que leva uma caipirinha? || Cachaça, lima e açúcar | Rum, lima e hortelã | Vodka, lima e açúcar | Tequila, lima e sal
+What goes in a caipirinha? || Cachaça, lime and sugar | Rum, lime and mint | Vodka, lime and sugar | Tequila, lime and salt
+
+2|¿Qué es un "destornillador" (screwdriver)? || Vodka con zumo de naranja | Ron con zumo de naranja | Ginebra con zumo de limón | Vodka con refresco de cola
+O que é um "screwdriver"? || Vodka com sumo de laranja | Rum com sumo de laranja | Gin com sumo de limão | Vodka com cola
+What is a screwdriver? || Vodka with orange juice | Rum with orange juice | Gin with lemon juice | Vodka with cola
+
+2|¿Para qué sirve el "jigger"? || Para medir las cantidades de alcohol | Para colar el hielo | Para machacar la hierbabuena | Para mezclar en vaso alto
+Para que serve o "jigger"? || Para medir as quantidades de álcool | Para coar o gelo | Para esmagar a hortelã | Para mexer em copo alto
+What is a jigger used for? || Measuring spirits | Straining ice | Muddling mint | Stirring in a tall glass
+
+3|¿Para qué sirve el colador hawthorne? || Para retener el hielo al servir un cóctel agitado | Para colar zumo de naranja | Para picar hielo | Para medir el azúcar
+Para que serve o coador hawthorne? || Para reter o gelo ao servir um cocktail agitado | Para coar sumo de laranja | Para picar gelo | Para medir o açúcar
+What is a Hawthorne strainer used for? || Holding back ice when pouring a shaken cocktail | Straining orange juice | Crushing ice | Measuring sugar
+
+2|¿Qué técnica se usa con la hierbabuena del mojito? || Majar suavemente, sin romperla del todo | Triturarla en batidora | Hervirla | Flambearla
+Que técnica se usa com a hortelã do mojito? || Esmagar suavemente, sem a desfazer | Triturá-la na varinha | Fervê-la | Flambeá-la
+What technique is used with the mint in a mojito? || Gentle muddling, without shredding it | Blending it | Boiling it | Flambéing it
+
+3|¿Cuándo se agita un cóctel en coctelera en lugar de removerlo en vaso? || Cuando lleva zumos, nata o huevo | Cuando solo lleva destilados | Cuando lleva gas | Siempre se remueve
+Quando se agita um cocktail no shaker em vez de mexer no copo? || Quando leva sumos, natas ou ovo | Quando só leva destilados | Quando leva gás | Mexe-se sempre
+When do you shake a cocktail instead of stirring it? || When it has juice, cream or egg | When it's only spirits | When it has soda | It's always stirred
+
+2|¿Por qué no se agita un cóctel con soda o tónica? || Porque pierde el gas | Porque se calienta | Porque cambia de color | Porque se corta
+Porque não se agita um cocktail com soda ou tónica? || Porque perde o gás | Porque aquece | Porque muda de cor | Porque talha
+Why shouldn't you shake a drink with soda or tonic? || It loses its fizz | It warms up | It changes colour | It curdles
+
+2|¿Qué es "escarchar" una copa? || Poner sal o azúcar en el borde | Enfriarla en el congelador | Llenarla de hielo picado | Decorarla con una rodaja
+O que é "crustar" um copo? || Pôr sal ou açúcar na borda | Arrefecê-lo no congelador | Enchê-lo de gelo picado | Decorá-lo com uma rodela
+What is "rimming" a glass? || Putting salt or sugar on the rim | Chilling it in the freezer | Filling it with crushed ice | Garnishing it with a slice
+
+2|¿Qué destilado se aromatiza con bayas de enebro? || Ginebra | Vodka | Ron | Tequila
+Que destilado é aromatizado com bagas de zimbro? || Gin | Vodka | Rum | Tequila
+Which spirit is flavoured with juniper berries? || Gin | Vodka | Rum | Tequila
+
+2|¿De qué planta se hace el tequila? || Agave azul | Caña de azúcar | Maíz | Cactus nopal
+De que planta se faz a tequila? || Agave azul | Cana-de-açúcar | Milho | Cato nopal
+Which plant is tequila made from? || Blue agave | Sugar cane | Corn | Prickly pear cactus
+
+2|¿De qué se hace el whisky escocés de malta? || Cebada malteada | Uva | Caña de azúcar | Patata
+De que se faz o whisky escocês de malte? || Cevada maltada | Uva | Cana-de-açúcar | Batata
+What is Scotch malt whisky made from? || Malted barley | Grapes | Sugar cane | Potatoes
+
+3|¿Qué es el brandy de Jerez? || Destilado de vino envejecido en botas de roble | Licor de café | Ron añejo andaluz | Ginebra con uva
+O que é o brandy de Jerez? || Destilado de vinho envelhecido em barris de carvalho | Licor de café | Rum velho andaluz | Gin com uva
+What is Brandy de Jerez? || A wine spirit aged in oak casks | A coffee liqueur | An aged Andalusian rum | Grape-flavoured gin
+
+2|¿Qué es el pacharán? || Licor de endrinas macerado en anís | Licor de café | Aguardiente de manzana | Vino dulce de uva pasa
+O que é o pacharán? || Licor de abrunhos macerados em anis | Licor de café | Aguardente de maçã | Vinho doce de passas
+What is pacharán? || Sloe berries steeped in anise liqueur | A coffee liqueur | An apple brandy | A sweet raisin wine
+
+2|¿Qué es el orujo? || Aguardiente destilado de los restos de la uva | Licor de naranja | Cerveza artesanal gallega | Vino blanco joven
+O que é o orujo? || Aguardente destilada dos restos da uva (bagaço) | Licor de laranja | Cerveja artesanal galega | Vinho branco jovem
+What is orujo? || A spirit distilled from grape pomace | An orange liqueur | A Galician craft beer | A young white wine
+
+3|¿Qué es una queimada? || Orujo quemado con azúcar, café y piel de limón | Vino caliente con canela | Sidra caliente con miel | Café con hielo y licor
+O que é uma queimada? || Aguardente queimada com açúcar, café e casca de limão | Vinho quente com canela | Sidra quente com mel | Café com gelo e licor
+What is a queimada? || Flaming orujo with sugar, coffee and lemon peel | Hot wine with cinnamon | Hot cider with honey | Iced coffee with liqueur
+
+3|¿Cuántos centilitros lleva más o menos una medida de alcohol en un combinado en España? || Unos 5 cl | Unos 2 cl | Unos 12 cl | Unos 20 cl
+Quantos centilitros leva mais ou menos uma dose de álcool num combinado em Espanha? || Uns 5 cl | Uns 2 cl | Uns 12 cl | Uns 20 cl
+Roughly how many centilitres is a spirit measure in a Spanish mixed drink? || About 5 cl | About 2 cl | About 12 cl | About 20 cl
+
+2|¿Por qué se usan cubitos grandes y duros en un gin tonic? || Se derriten más despacio y aguan menos | Enfrían menos y no cambian el sabor | Porque ocupan menos | Para que tenga más gas
+Porque se usam cubos grandes e duros num gin tónico? || Derretem mais devagar e aguam menos | Arrefecem menos e não mudam o sabor | Porque ocupam menos | Para ter mais gás
+Why use large, hard ice cubes in a gin and tonic? || They melt slower and dilute less | They chill less and keep the flavour | They take up less room | To add more fizz
+
+2|¿Cómo se sirve la tónica en un buen gin tonic? || Despacio, por la cuchara o por la pared de la copa | De golpe, desde arriba | Agitándola antes | Mezclándola con el hielo en la coctelera
+Como se serve a tónica num bom gin tónico? || Devagar, pela colher ou pela parede do copo | De uma vez, do alto | Agitando-a antes | Misturando com o gelo no shaker
+How should tonic be poured in a good G&T? || Slowly, down a bar spoon or the side of the glass | All at once, from high up | After shaking it | Shaken with the ice in the shaker
+
+1|¿Qué es un "mocktail"? || Un cóctel sin alcohol | Un cóctel con doble de alcohol | Un chupito de licor | Un vino con gas
+O que é um "mocktail"? || Um cocktail sem álcool | Um cocktail com álcool a dobrar | Um shot de licor | Um vinho com gás
+What is a mocktail? || A non-alcoholic cocktail | A double-strength cocktail | A shot of liqueur | A sparkling wine
+
+1|vf=1|El ron se elabora a partir de la caña de azúcar.
+O rum é feito a partir da cana-de-açúcar.
+Rum is made from sugar cane.
+
+3|vf=0|El Negroni lleva vodka.
+O Negroni leva vodka.
+A Negroni contains vodka.
+
+2|vf=0|La margarita clásica se sirve con el borde escarchado de azúcar.
+A margarita clássica serve-se com a borda com açúcar.
+A classic margarita has a sugar rim.
+
+@servicio
+3|¿Qué es el servicio a la francesa? || El camarero presenta la fuente y el cliente se sirve | El plato sale emplatado de cocina | El camarero sirve desde la fuente con pinzas | Se termina el plato en un carrito
+O que é o serviço à francesa? || O empregado apresenta a travessa e o cliente serve-se | O prato sai empratado da cozinha | O empregado serve da travessa com pinça | Termina-se o prato num carrinho
+What is French service? || The waiter presents the platter and guests serve themselves | The dish comes plated from the kitchen | The waiter serves from the platter with tongs | The dish is finished on a trolley
+
+3|¿Qué es el servicio a la rusa (o al gueridón)? || Se trincha o termina el plato en una mesa auxiliar junto al cliente | El cliente se sirve de la fuente | Todo sale emplatado | Se sirve en barra
+O que é o serviço à russa (ou de guéridon)? || Trincha-se ou termina-se o prato numa mesa auxiliar junto ao cliente | O cliente serve-se da travessa | Tudo sai empratado | Serve-se ao balcão
+What is Russian (guéridon) service? || The dish is carved or finished on a side table by the guest | Guests serve themselves from the platter | Everything comes plated | It's served at the bar
+
+2|¿Qué es el servicio emplatado (a la americana)? || El plato sale ya servido desde cocina | El cliente se sirve | Se sirve desde una fuente | Se cocina en la mesa
+O que é o serviço empratado (à americana)? || O prato sai já servido da cozinha | O cliente serve-se | Serve-se de uma travessa | Cozinha-se na mesa
+What is plated (American) service? || The dish leaves the kitchen already plated | Guests serve themselves | It's served from a platter | It's cooked at the table
+
+3|¿Qué es un gueridón? || Mesa auxiliar con ruedas para trabajar junto al cliente | Un tipo de copa de coñac | El mantel de encima | Una bandeja redonda
+O que é um guéridon? || Mesa auxiliar com rodas para trabalhar junto ao cliente | Um tipo de copo de conhaque | A toalha de cima | Uma bandeja redonda
+What is a guéridon? || A wheeled side table used beside the guest | A type of brandy glass | The top cloth | A round tray
+
+2|¿En qué sentido se recorre la mesa al servir? || En el sentido de las agujas del reloj | En sentido contrario a las agujas | Del más joven al mayor | Empezando por el anfitrión
+Em que sentido se percorre a mesa ao servir? || No sentido dos ponteiros do relógio | No sentido contrário | Do mais novo ao mais velho | Começando pelo anfitrião
+In which direction do you move around the table when serving? || Clockwise | Anticlockwise | From youngest to oldest | Starting with the host
+
+2|¿A quién se sirve el último en una mesa? || Al anfitrión (quien invita) | Al invitado de honor | A la persona mayor | A quien está junto a la puerta
+A quem se serve por último numa mesa? || Ao anfitrião (quem convida) | Ao convidado de honra | À pessoa mais velha | A quem está junto à porta
+Who is served last at a table? || The host (who is paying) | The guest of honour | The oldest person | Whoever sits by the door
+
+2|¿Cuándo se retiran los platos de un plato principal? || Cuando todos los comensales han terminado | En cuanto uno termina | Al traer el postre | Cuando el cliente lo pide
+Quando se retiram os pratos de um prato principal? || Quando todos os comensais terminaram | Assim que um termina | Ao trazer a sobremesa | Quando o cliente pede
+When are main-course plates cleared? || When everyone at the table has finished | As soon as one person finishes | When dessert arrives | When the customer asks
+
+2|¿Cómo indica el cliente que ha terminado de comer? || Cubiertos juntos y en paralelo sobre el plato | Cubiertos cruzados en el plato | Cubiertos fuera del plato | Servilleta encima de la silla
+Como indica o cliente que terminou de comer? || Talheres juntos e paralelos no prato | Talheres cruzados no prato | Talheres fora do prato | Guardanapo em cima da cadeira
+How does a guest show they have finished eating? || Cutlery together and parallel on the plate | Cutlery crossed on the plate | Cutlery off the plate | Napkin on the chair
+
+3|¿Cómo deja el cliente los cubiertos para indicar "estoy en pausa"? || Separados en forma de V o cruzados sobre el plato | Juntos y en paralelo | Encima de la servilleta | En la copa
+Como deixa o cliente os talheres para indicar "estou em pausa"? || Separados em V ou cruzados no prato | Juntos e paralelos | Em cima do guardanapo | No copo
+How does a guest leave cutlery to signal "I'm still eating"? || Apart in a V or crossed on the plate | Together and parallel | On the napkin | In the glass
+
+3|¿Qué indica una servilleta dejada sobre la silla? || Que el cliente va a volver | Que ha terminado y se va | Que quiere la cuenta | Que no le ha gustado
+O que indica um guardanapo deixado na cadeira? || Que o cliente vai voltar | Que terminou e vai embora | Que quer a conta | Que não gostou
+What does a napkin left on the chair mean? || The guest is coming back | They've finished and are leaving | They want the bill | They didn't like the food
+
+2|¿Cuándo se rellena el agua de un cliente? || Cuando el vaso está por debajo de la mitad, sin que lo pida | Solo cuando lo pide | Cuando está totalmente vacío | Solo al servir el postre
+Quando se enche a água de um cliente? || Quando o copo está abaixo de metade, sem ele pedir | Só quando pede | Quando está completamente vazio | Só ao servir a sobremesa
+When do you top up a guest's water? || When the glass is below half, without being asked | Only when asked | When it's completely empty | Only with dessert
+
+1|Antes del postre, ¿cómo se quitan las migas del mantel? || Con un recogemigas o cepillo sobre un plato | Soplando | Con la mano hacia el suelo | Se dejan
+Antes da sobremesa, como se tiram as migalhas da toalha? || Com um apanha-migalhas ou escova para um prato | Soprando | Com a mão para o chão | Deixam-se
+Before dessert, how are crumbs removed from the tablecloth? || With a crumber or brush onto a plate | By blowing | Sweeping them to the floor by hand | They're left
+
+2|¿Cómo se lleva una bandeja con varias bebidas? || Lo más pesado en el centro y cerca del cuerpo | Lo más pesado en el borde exterior | Con el brazo estirado | Con la mano derecha y apoyada en la cadera
+Como se leva uma bandeja com várias bebidas? || O mais pesado ao centro e perto do corpo | O mais pesado na borda de fora | Com o braço esticado | Com a mão direita apoiada na anca
+How do you carry a tray with several drinks? || Heaviest items in the centre, close to your body | Heaviest items on the outer edge | With your arm stretched out | Right hand, resting on your hip
+
+2|¿Qué es una carne "al punto"? || Hecha por fuera y rosada en el centro | Muy hecha, sin nada rosa | Casi cruda por dentro | Tostada por fuera y fría por dentro
+O que é uma carne "ao ponto"? || Passada por fora e rosada no centro | Bem passada, sem nada rosado | Quase crua por dentro | Tostada por fora e fria por dentro
+What is meat cooked "al punto"? || Seared outside and pink in the centre | Well done, no pink | Almost raw inside | Charred outside, cold inside
+
+2|Ordena los puntos de la carne de menos a más hecha: || Vuelta y vuelta, poco hecha, al punto, muy hecha | Poco hecha, vuelta y vuelta, al punto, muy hecha | Al punto, poco hecha, muy hecha, vuelta y vuelta | Vuelta y vuelta, al punto, poco hecha, muy hecha
+Ordena os pontos da carne do menos para o mais passado: || Selada (vuelta y vuelta), mal passada, ao ponto, bem passada | Mal passada, selada, ao ponto, bem passada | Ao ponto, mal passada, bem passada, selada | Selada, ao ponto, mal passada, bem passada
+Order the steak doneness levels from least to most cooked: || Blue, rare, medium, well done | Rare, blue, medium, well done | Medium, rare, well done, blue | Blue, medium, rare, well done
+
+3|¿Qué se pone en la mesa con un marisco que se come con las manos? || Un lavadedos con agua templada y limón | Una copa de cava | Un cuchillo de mantequilla | Una cuchara sopera
+O que se põe na mesa com marisco que se come à mão? || Uma taça lava-dedos com água morna e limão | Uma taça de cava | Uma faca de manteiga | Uma colher de sopa
+What do you bring for shellfish eaten with the hands? || A finger bowl with warm water and lemon | A glass of cava | A butter knife | A soup spoon
+
+2|¿Cómo se presenta la cuenta? || En una carpeta o platillo, a la persona que la pidió | Leída en voz alta | Abierta en el centro de la mesa | Al cliente que esté más cerca
+Como se apresenta a conta? || Numa capa ou pires, à pessoa que a pediu | Lida em voz alta | Aberta no centro da mesa | Ao cliente mais próximo
+How is the bill presented? || In a folder or on a small tray, to whoever asked | Read out loud | Open in the middle of the table | To the nearest guest
+
+2|En un banquete, ¿qué mesa se sirve primero? || La presidencial | La más cercana a la cocina | La más grande | La del fondo
+Num banquete, que mesa se serve primeiro? || A presidencial | A mais perto da cozinha | A maior | A do fundo
+At a banquet, which table is served first? || The top table | The one nearest the kitchen | The biggest one | The one at the back
+
+3|¿Cómo se cambia un cenicero sucio en la mesa? || Se tapa con uno limpio, se retiran los dos y se deja el limpio | Se vacía encima de la mesa | Se retira sin poner otro | Se limpia con la servilleta del cliente
+Como se troca um cinzeiro sujo na mesa? || Tapa-se com um limpo, retiram-se os dois e deixa-se o limpo | Esvazia-se em cima da mesa | Retira-se sem pôr outro | Limpa-se com o guardanapo do cliente
+How do you change a dirty ashtray at the table? || Cap it with a clean one, lift both and put the clean one back | Empty it on the table | Remove it without replacing it | Wipe it with the guest's napkin
+
+1|Al servir un plato, ¿qué se dice? || El nombre del plato | El precio del plato | Nada | Quién lo ha cocinado
+Ao servir um prato, o que se diz? || O nome do prato | O preço do prato | Nada | Quem o cozinhou
+What do you say when serving a dish? || The name of the dish | Its price | Nothing | Who cooked it
+
+2|¿Qué se repone en el aparador antes de abrir? || Cubiertos, servilletas, platos de pan y vinagreras | Productos de limpieza | La ropa de cambio | El cambio de la caja
+O que se repõe no aparador antes de abrir? || Talheres, guardanapos, pratos de pão e galheteiros | Produtos de limpeza | A roupa de muda | O troco da caixa
+What do you restock at the side station before opening? || Cutlery, napkins, bread plates and cruets | Cleaning products | Spare clothes | The till float
+
+1|vf=1|En la mesa se sirve en el sentido de las agujas del reloj.
+Na mesa serve-se no sentido dos ponteiros do relógio.
+Guests are served moving clockwise around the table.
+
+3|vf=1|En el servicio a la francesa el cliente se sirve él mismo de la fuente.
+No serviço à francesa o cliente serve-se ele próprio da travessa.
+In French service, guests serve themselves from the platter.
+
+2|vf=0|Se pueden retirar los platos en cuanto el primer cliente termina, aunque los demás sigan comiendo.
+Podem-se retirar os pratos assim que o primeiro cliente termina, mesmo que os outros continuem a comer.
+You can clear plates as soon as the first guest finishes, even if others are still eating.

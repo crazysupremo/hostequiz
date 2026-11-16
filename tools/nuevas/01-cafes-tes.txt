@@ -1,0 +1,173 @@
+@cafes
+2|¿Cuántos gramos de café molido lleva aproximadamente un espresso sencillo? || 7–9 g | 3–4 g | 14–16 g | 20 g
+Quantos gramas de café moído leva aproximadamente um espresso simples? || 7–9 g | 3–4 g | 14–16 g | 20 g
+Roughly how many grams of ground coffee go into a single espresso? || 7–9 g | 3–4 g | 14–16 g | 20 g
+
+2|¿Cuánto dura aproximadamente la extracción de un buen espresso? || 25–30 segundos | 8–10 segundos | 45–50 segundos | Más de 1 minuto
+Quanto tempo dura aproximadamente a extração de um bom espresso? || 25–30 segundos | 8–10 segundos | 45–50 segundos | Mais de 1 minuto
+Roughly how long does a good espresso extraction take? || 25–30 seconds | 8–10 seconds | 45–50 seconds | Over 1 minute
+
+3|El espresso sale muy rápido, claro y aguado. ¿Qué ajustas primero? || Moler más fino | Moler más grueso | Poner menos café | Prensar más flojo
+O espresso sai muito rápido, claro e aguado. O que ajustas primeiro? || Moer mais fino | Moer mais grosso | Pôr menos café | Calcar com menos força
+The espresso runs fast, pale and watery. What do you adjust first? || Grind finer | Grind coarser | Use less coffee | Tamp more lightly
+
+3|El espresso sale muy lento, casi gota a gota, y amargo. ¿Qué ajustas? || Moler más grueso | Moler más fino | Poner más café | Prensar más fuerte
+O espresso sai muito lento, quase gota a gota, e amargo. O que ajustas? || Moer mais grosso | Moer mais fino | Pôr mais café | Calcar com mais força
+The espresso drips out very slowly and tastes bitter. What do you adjust? || Grind coarser | Grind finer | Use more coffee | Tamp harder
+
+3|¿A qué presión trabaja normalmente una cafetera espresso? || Unos 9 bares | Unos 2 bares | Unos 4 bares | Unos 20 bares
+A que pressão trabalha normalmente uma máquina de espresso? || Uns 9 bar | Uns 2 bar | Uns 4 bar | Uns 20 bar
+At what pressure does an espresso machine normally work? || About 9 bar | About 2 bar | About 4 bar | About 20 bar
+
+3|Una crema muy clara que desaparece enseguida suele indicar… || Café subextraído (poco café o molienda gruesa) | Café sobreextraído | Leche demasiado caliente | Café recién tostado
+Uma crema muito clara que desaparece logo costuma indicar… || Café subextraído (pouco café ou moagem grossa) | Café sobre-extraído | Leite demasiado quente | Café acabado de torrar
+A very pale crema that disappears quickly usually means… || Under-extracted coffee (too little or too coarse) | Over-extracted coffee | Milk that is too hot | Freshly roasted coffee
+
+2|¿Por qué se ponen las tazas encima de la cafetera? || Para que estén calientes y el café no se enfríe | Para que se sequen después de lavarlas | Para tenerlas a mano y nada más | Para desinfectarlas con el calor
+Porque se põem as chávenas em cima da máquina? || Para estarem quentes e o café não arrefecer | Para secarem depois de lavadas | Só para estarem à mão | Para as desinfetar com o calor
+Why are cups kept on top of the coffee machine? || To keep them warm so the coffee doesn't cool | To dry them after washing | Just to have them handy | To disinfect them with the heat
+
+3|¿Por qué se purga el grupo antes de colocar el portafiltro? || Para limpiar restos y estabilizar la temperatura | Para enfriar el café | Para ahorrar café | Para que salga más crema de leche
+Porque se purga o grupo antes de pôr o porta-filtro? || Para limpar restos e estabilizar a temperatura | Para arrefecer o café | Para poupar café | Para sair mais espuma de leite
+Why do you flush the group head before locking in the portafilter? || To clear old grounds and stabilise the temperature | To cool the coffee | To save coffee | To get more milk foam
+
+2|¿Qué es el "tamper" o prensador? || La herramienta para compactar el café en el filtro | La jarra para la leche | La palanca del vaporizador | El cajón de los posos
+O que é o "tamper" ou calcador? || A ferramenta para compactar o café no filtro | O jarro do leite | A alavanca do vaporizador | A gaveta das borras
+What is a tamper? || The tool used to compact coffee in the filter | The milk jug | The steam wand lever | The knock box
+
+3|¿Qué es el "lavado ciego" (backflush) de la cafetera? || Limpiar el grupo con un filtro ciego y detergente | Lavar las tazas a mano | Pasar agua por el vaporizador | Vaciar el depósito de posos
+O que é a "lavagem cega" (backflush) da máquina? || Limpar o grupo com um filtro cego e detergente | Lavar as chávenas à mão | Passar água pelo vaporizador | Esvaziar a gaveta das borras
+What is backflushing an espresso machine? || Cleaning the group head with a blind filter and detergent | Washing the cups by hand | Running water through the steam wand | Emptying the knock box
+
+2|¿Qué leche hace una espuma más cremosa y estable para un capuchino? || Leche entera fría | Leche desnatada caliente | Leche condensada | Leche ya vaporizada antes
+Que leite faz uma espuma mais cremosa e estável para um cappuccino? || Leite gordo frio | Leite magro quente | Leite condensado | Leite já vaporizado antes
+Which milk gives the creamiest, most stable foam for a cappuccino? || Cold whole milk | Hot skimmed milk | Condensed milk | Milk that was already steamed
+
+2|¿Qué es la "microespuma"? || Espuma fina y brillante, sin burbujas grandes | Espuma muy alta y seca | Leche caliente sin espuma | Nata montada con azúcar
+O que é a "microespuma"? || Espuma fina e brilhante, sem bolhas grandes | Espuma muito alta e seca | Leite quente sem espuma | Natas batidas com açúcar
+What is "microfoam"? || Fine, glossy foam with no big bubbles | Very tall, dry foam | Hot milk without foam | Sweetened whipped cream
+
+3|Al empezar a vaporizar la leche, ¿dónde se coloca la punta del vaporizador? || Justo bajo la superficie de la leche | En el fondo de la jarra | Por encima de la leche | Pegada a la pared, fuera de la leche
+Ao começar a vaporizar o leite, onde se põe a ponta do vaporizador? || Logo abaixo da superfície do leite | No fundo do jarro | Por cima do leite | Encostada à parede, fora do leite
+When you start steaming milk, where do you place the steam wand tip? || Just below the surface of the milk | At the bottom of the jug | Above the milk | Against the side, out of the milk
+
+2|¿Por qué no se debe volver a vaporizar leche que ya se calentó? || Pierde sabor y textura y sabe a quemado | Se corta siempre al instante | Se convierte en nata | Porque gasta más electricidad
+Porque não se deve voltar a vaporizar leite que já foi aquecido? || Perde sabor e textura e sabe a queimado | Talha sempre na hora | Transforma-se em natas | Porque gasta mais eletricidade
+Why shouldn't you re-steam milk that was already heated? || It loses flavour and texture and tastes scorched | It always curdles instantly | It turns into cream | Because it uses more electricity
+
+2|¿Qué es el café torrefacto? || Café tostado con azúcar | Café tostado muy claro | Café sin cafeína | Café molido extrafino
+O que é o café torrefacto? || Café torrado com açúcar | Café de torra muito clara | Café sem cafeína | Café moído extrafino
+What is "torrefacto" coffee? || Coffee roasted with sugar | Very lightly roasted coffee | Decaffeinated coffee | Extra-fine ground coffee
+
+3|En España, ¿qué es un café "mezcla"? || Café natural mezclado con torrefacto | Arábica con robusta | Café con achicoria | Café con leche en polvo
+Em Espanha, o que é um café "mezcla"? || Café natural misturado com torrefacto | Arábica com robusta | Café com chicória | Café com leite em pó
+In Spain, what is "mezcla" coffee? || Natural roast mixed with torrefacto | Arabica with robusta | Coffee with chicory | Coffee with milk powder
+
+3|¿Qué diferencia a la robusta de la arábica? || Tiene más cafeína y es más amarga | Tiene menos cafeína y es más suave | Es la misma planta con otro nombre | Solo sirve para descafeinado
+O que distingue a robusta da arábica? || Tem mais cafeína e é mais amarga | Tem menos cafeína e é mais suave | É a mesma planta com outro nome | Só serve para descafeinado
+What makes robusta different from arabica? || More caffeine and more bitter | Less caffeine and milder | Same plant, different name | Only used for decaf
+
+2|¿Cómo se conserva el café en grano para que no pierda aroma? || Cerrado, en sitio fresco, seco y sin luz | Abierto en la nevera | En la tolva toda la semana | Junto a la cafetera para que esté templado
+Como se conserva o café em grão para não perder aroma? || Fechado, em local fresco, seco e sem luz | Aberto no frigorífico | Na tremonha a semana toda | Junto à máquina para estar morno
+How do you store coffee beans so they keep their aroma? || Sealed, somewhere cool, dry and dark | Open in the fridge | In the hopper all week | Next to the machine to keep warm
+
+2|Un cliente pide "un descafeinado de sobre". ¿Qué le llevas? || Leche o agua caliente con el sobre aparte | Un descafeinado de máquina | Un café solo y un sobre de azúcar | El sobre ya disuelto en la taza
+Um cliente pede "um descafeinado de saqueta". O que lhe levas? || Leite ou água quente com a saqueta à parte | Um descafeinado de máquina | Um café simples e açúcar | A saqueta já dissolvida na chávena
+A customer asks for "decaf from a sachet". What do you bring? || Hot milk or water with the sachet on the side | A machine-made decaf | An espresso and a sugar sachet | The sachet already stirred in
+
+3|¿Qué es un café asiático (típico de Cartagena)? || Café con leche condensada, coñac y Licor 43 | Café con hielo y limón | Café con canela y miel | Café con helado y nata
+O que é um café asiático (típico de Cartagena)? || Café com leite condensado, conhaque e Licor 43 | Café com gelo e limão | Café com canela e mel | Café com gelado e natas
+What is a "café asiático" (from Cartagena)? || Coffee with condensed milk, brandy and Licor 43 | Iced coffee with lemon | Coffee with cinnamon and honey | Coffee with ice cream and cream
+
+3|En Valencia, ¿qué es un "café del tiempo"? || Café solo con un vaso de hielo y una rodaja de limón | Café con leche templada | Café del día anterior | Café con canela
+Em Valência, o que é um "café del tiempo"? || Café simples com um copo de gelo e uma rodela de limão | Café com leite morno | Café do dia anterior | Café com canela
+In Valencia, what is a "café del tiempo"? || Espresso with a glass of ice and a lemon slice | Lukewarm white coffee | Yesterday's coffee | Coffee with cinnamon
+
+2|¿Qué es un macchiato italiano? || Un espresso "manchado" con un poco de espuma | Leche con un poco de café | Café con helado | Café con licor de avellana
+O que é um macchiato italiano? || Um espresso "manchado" com um pouco de espuma | Leite com um pouco de café | Café com gelado | Café com licor de avelã
+What is an Italian macchiato? || An espresso "stained" with a little milk foam | Milk with a little coffee | Coffee with ice cream | Coffee with hazelnut liqueur
+
+2|¿Cuál es la proporción clásica de un capuchino? || 1/3 café, 1/3 leche, 1/3 espuma | Mitad café y mitad espuma | 1/4 café y 3/4 leche sin espuma | 2/3 café y 1/3 nata
+Qual é a proporção clássica de um cappuccino? || 1/3 café, 1/3 leite, 1/3 espuma | Metade café, metade espuma | 1/4 café e 3/4 leite sem espuma | 2/3 café e 1/3 natas
+What is the classic cappuccino ratio? || 1/3 coffee, 1/3 milk, 1/3 foam | Half coffee, half foam | 1/4 coffee, 3/4 milk, no foam | 2/3 coffee, 1/3 cream
+
+3|¿Qué es un "flat white"? || Espresso doble con leche texturizada fina y poca espuma | Café solo con agua fría | Capuchino con mucha espuma seca | Café con nata montada
+O que é um "flat white"? || Espresso duplo com leite texturizado fino e pouca espuma | Café simples com água fria | Cappuccino com muita espuma seca | Café com natas batidas
+What is a flat white? || Double espresso with silky milk and thin foam | Espresso with cold water | Cappuccino with lots of dry foam | Coffee with whipped cream
+
+2|¿Qué es un café frappé? || Café frío batido con hielo hasta hacer espuma | Café flambeado con licor | Café con leche muy caliente | Café con leche condensada caliente
+O que é um café frappé? || Café frio batido com gelo até fazer espuma | Café flambeado com licor | Café com leite muito quente | Café com leite condensado quente
+What is a frappé coffee? || Cold coffee shaken with ice until frothy | Coffee flambéed with liqueur | Very hot white coffee | Hot coffee with condensed milk
+
+2|¿Qué agua conviene usar en la cafetera? || Agua filtrada o descalcificada | Agua con mucha cal | Agua con gas | Agua caliente del grifo
+Que água convém usar na máquina de café? || Água filtrada ou descalcificada | Água com muito calcário | Água com gás | Água quente da torneira
+What water should go into a coffee machine? || Filtered or softened water | Very hard water | Sparkling water | Hot tap water
+
+2|Al servir un café en mesa, ¿hacia dónde va el asa de la taza? || Hacia la derecha del cliente, con la cucharilla detrás | Hacia la izquierda del cliente | Hacia el centro de la mesa | Hacia el camarero
+Ao servir um café na mesa, para onde fica a asa da chávena? || Para a direita do cliente, com a colher atrás | Para a esquerda do cliente | Para o centro da mesa | Para o empregado
+When serving coffee at the table, where does the cup handle point? || To the customer's right, spoon behind it | To the customer's left | Towards the centre of the table | Towards the waiter
+
+2|¿Qué es un café doble? || Dos cargas de café, normalmente en taza grande | Un café con el doble de leche | Dos tazas de café solo | Un café con dos azúcares
+O que é um café duplo? || Duas doses de café, normalmente em chávena grande | Um café com o dobro do leite | Duas chávenas de café simples | Um café com dois açúcares
+What is a "café doble"? || Two shots of coffee, usually in a large cup | A coffee with double milk | Two cups of espresso | A coffee with two sugars
+
+2|vf=1|El café torrefacto se tuesta con azúcar.
+O café torrefacto é torrado com açúcar.
+Torrefacto coffee is roasted with sugar.
+
+2|vf=0|Se puede volver a vaporizar leche ya calentada sin que cambie nada.
+Pode-se voltar a vaporizar leite já aquecido sem mudar nada.
+You can re-steam already heated milk and nothing changes.
+
+3|vf=1|La robusta tiene más cafeína que la arábica.
+A robusta tem mais cafeína do que a arábica.
+Robusta has more caffeine than arabica.
+
+@tes
+2|¿A qué temperatura se prepara el té verde? || 70–80 °C | 100 °C, hirviendo | 50 °C | 90–95 °C
+A que temperatura se prepara o chá verde? || 70–80 °C | 100 °C, a ferver | 50 °C | 90–95 °C
+At what temperature should green tea be brewed? || 70–80 °C | 100 °C, boiling | 50 °C | 90–95 °C
+
+2|¿Cuánto tiempo se infusiona normalmente un té negro? || 3–5 minutos | 30 segundos | 10–12 minutos | 20 minutos
+Quanto tempo se infunde normalmente um chá preto? || 3–5 minutos | 30 segundos | 10–12 minutos | 20 minutos
+How long is black tea usually steeped? || 3–5 minutes | 30 seconds | 10–12 minutes | 20 minutes
+
+1|¿Qué le pasa a un té negro que infusiona demasiado tiempo? || Se vuelve amargo y astringente | Se vuelve más dulce | Pierde todo el color | No cambia nada
+O que acontece a um chá preto que fica tempo demais em infusão? || Fica amargo e adstringente | Fica mais doce | Perde toda a cor | Não muda nada
+What happens to black tea that steeps too long? || It turns bitter and astringent | It gets sweeter | It loses all its colour | Nothing changes
+
+2|¿Cuál de estas NO es una infusión de hierbas? || Té negro | Manzanilla | Poleo menta | Tila
+Qual destas NÃO é uma infusão de ervas? || Chá preto | Camomila | Poejo | Tília
+Which of these is NOT a herbal infusion? || Black tea | Camomile | Pennyroyal mint | Lime blossom
+
+1|Un cliente pide algo para relajarse antes de dormir. ¿Qué le recomiendas? || Una tila | Un té verde | Un té negro | Un café descafeinado
+Um cliente pede algo para relaxar antes de dormir. O que recomendas? || Uma tília | Um chá verde | Um chá preto | Um café descafeinado
+A customer wants something relaxing before bed. What do you suggest? || Lime blossom tea | Green tea | Black tea | Decaf coffee
+
+2|¿Qué es un té chai? || Té negro con especias y leche | Té verde con limón | Infusión de jengibre sin té | Té frío con melocotón
+O que é um chá chai? || Chá preto com especiarias e leite | Chá verde com limão | Infusão de gengibre sem chá | Chá frio de pêssego
+What is chai tea? || Black tea with spices and milk | Green tea with lemon | Ginger infusion without tea | Iced peach tea
+
+3|¿Qué es el rooibos? || Una infusión sudafricana sin teína | Un té verde japonés | Un té negro ahumado | Un café verde
+O que é o rooibos? || Uma infusão sul-africana sem teína | Um chá verde japonês | Um chá preto fumado | Um café verde
+What is rooibos? || A caffeine-free South African infusion | A Japanese green tea | A smoked black tea | A green coffee
+
+2|¿Qué es el matcha? || Té verde molido en polvo | Té negro ahumado | Una infusión de flores | Un café de Japón
+O que é o matcha? || Chá verde moído em pó | Chá preto fumado | Uma infusão de flores | Um café do Japão
+What is matcha? || Powdered green tea | Smoked black tea | A flower infusion | A Japanese coffee
+
+1|¿Con qué se acompaña tradicionalmente el chocolate a la taza? || Churros o porras | Tostada con tomate | Cruasán a la plancha | Magdalenas saladas
+Com que se acompanha tradicionalmente o chocolate quente espanhol? || Churros ou porras | Torrada com tomate | Croissant na chapa | Queques salgados
+What traditionally goes with Spanish hot chocolate? || Churros or porras | Toast with tomato | A grilled croissant | Savoury muffins
+
+2|¿Qué diferencia hay entre churros y porras? || Las porras son más gruesas y esponjosas | Las porras llevan relleno de chocolate | Los churros son salados | Las porras se hacen al horno
+Qual é a diferença entre churros e porras? || As porras são mais grossas e fofas | As porras têm recheio de chocolate | Os churros são salgados | As porras fazem-se no forno
+What's the difference between churros and porras? || Porras are thicker and fluffier | Porras are filled with chocolate | Churros are savoury | Porras are baked
+
+2|vf=0|El té verde se prepara con agua hirviendo.
+O chá verde prepara-se com água a ferver.
+Green tea is brewed with boiling water.
+
+2|vf=1|La manzanilla no tiene teína.
+A camomila não tem teína.
+Camomile has no caffeine.

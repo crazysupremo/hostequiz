@@ -1,0 +1,213 @@
+@bebidas
+2|¿Qué es un "tercio"? || Botellín de cerveza de 33 cl | Un tercio de jarra de barril | Botella de cerveza de 1 litro | Una caña pequeña de 10 cl
+O que é um "tercio"? || Garrafa de cerveja de 33 cl | Um terço de caneca de pressão | Garrafa de cerveja de 1 litro | Uma caña pequena de 10 cl
+What is a "tercio"? || A 33 cl bottle of beer | A third of a draught mug | A 1-litre bottle of beer | A small 10 cl caña
+
+2|¿Qué es un "quinto"? || Botellín de cerveza de 20 cl | Botella de 50 cl | Una caña doble | Un vaso de vino pequeño
+O que é um "quinto"? || Garrafa pequena de cerveja de 20 cl | Garrafa de 50 cl | Uma caña dupla | Um copo de vinho pequeno
+What is a "quinto"? || A 20 cl bottle of beer | A 50 cl bottle | A double caña | A small glass of wine
+
+2|¿Cuánta espuma lleva una caña bien tirada? || Unos dos dedos | Ninguna | Media caña | Solo una línea fina
+Quanta espuma leva uma caña bem tirada? || Uns dois dedos | Nenhuma | Meia caña | Só uma linha fina
+How much head should a well-poured caña have? || About two fingers | None | Half the glass | Just a thin line
+
+2|Al empezar a tirar una cerveza, ¿cómo se pone el vaso? || Inclinado unos 45 grados | Recto desde el principio | Tocando el grifo con el borde | Dentro de la cerveza del grifo
+Ao começar a tirar uma cerveja, como se põe o copo? || Inclinado uns 45 graus | Direito desde o início | A tocar na torneira com a borda | Mergulhado na cerveja da torneira
+When you start pouring a draught beer, how do you hold the glass? || Tilted at about 45 degrees | Upright from the start | Touching the tap with the rim | Dipped into the tap's beer
+
+3|¿Por qué se enjuaga el vaso con agua fría antes de tirar la cerveza? || Para enfriarlo, limpiar restos y que la espuma salga mejor | Para quitarle el gas a la cerveza | Para que pese más | Porque lo exige la ley
+Porque se passa o copo por água fria antes de tirar a cerveja? || Para o arrefecer, tirar restos e a espuma sair melhor | Para tirar o gás à cerveja | Para pesar mais | Porque a lei obriga
+Why is the glass rinsed with cold water before pouring beer? || To chill it, remove residue and get a better head | To take the fizz out of the beer | To make it heavier | Because the law requires it
+
+3|¿Qué es una cerveza tipo lager? || Cerveza de baja fermentación, rubia y ligera | Cerveza negra muy tostada | Cerveza de trigo turbia | Cerveza sin alcohol
+O que é uma cerveja tipo lager? || Cerveja de baixa fermentação, loura e leve | Cerveja preta muito torrada | Cerveja de trigo turva | Cerveja sem álcool
+What is a lager? || A bottom-fermented, pale, light beer | A very roasted dark beer | A cloudy wheat beer | An alcohol-free beer
+
+2|¿Qué es una cerveza de trigo (weizen)? || Cerveza hecha con trigo, turbia y afrutada | Cerveza con zumo de limón | Cerveza negra fuerte | Cerveza sin gluten
+O que é uma cerveja de trigo (weizen)? || Cerveja feita com trigo, turva e frutada | Cerveja com sumo de limão | Cerveja preta forte | Cerveja sem glúten
+What is a wheat beer (weizen)? || A beer brewed with wheat, cloudy and fruity | Beer with lemon juice | A strong dark beer | A gluten-free beer
+
+1|¿Qué es la sidra? || Bebida fermentada de manzana | Vino de pera | Cerveza de trigo | Licor de anís
+O que é a sidra? || Bebida fermentada de maçã | Vinho de pera | Cerveja de trigo | Licor de anis
+What is cider (sidra)? || A fermented apple drink | Pear wine | Wheat beer | Anise liqueur
+
+2|¿Cómo se sirve la sidra natural asturiana? || Escanciada desde lo alto, poca cantidad cada vez | En jarra con hielo | En copa de balón con tónica | Templada en taza
+Como se serve a sidra natural asturiana? || Vertida do alto, pouca quantidade de cada vez | Em caneca com gelo | Em copo balão com tónica | Morna em chávena
+How is natural Asturian cider served? || Poured from high above, a little at a time | In a mug with ice | In a balloon glass with tonic | Warm in a cup
+
+2|¿Qué es la tónica? || Refresco con gas y quinina, algo amargo | Agua con gas sin sabor | Refresco de limón dulce | Agua mineral sin gas
+O que é a tónica? || Refrigerante com gás e quinino, um pouco amargo | Água com gás sem sabor | Refrigerante de limão doce | Água mineral sem gás
+What is tonic water? || A fizzy, slightly bitter drink with quinine | Plain sparkling water | A sweet lemon soda | Still mineral water
+
+2|¿Cuándo se sirve un zumo de naranja natural? || Recién exprimido, al momento | Exprimido por la mañana para todo el día | Del día anterior, bien frío | Calentado un poco
+Quando se serve um sumo de laranja natural? || Acabado de espremer, na hora | Espremido de manhã para o dia todo | Do dia anterior, bem frio | Aquecido um pouco
+When should fresh orange juice be served? || Freshly squeezed, straight away | Squeezed in the morning for the whole day | From the day before, well chilled | Slightly warmed
+
+2|¿Qué es la horchata valenciana? || Bebida fría de chufa | Leche caliente con canela | Zumo de almendra caliente | Licor de arroz
+O que é a horchata valenciana? || Bebida fria de chufa (junça) | Leite quente com canela | Sumo de amêndoa quente | Licor de arroz
+What is Valencian horchata? || A cold drink made from tiger nuts | Hot milk with cinnamon | Hot almond juice | Rice liqueur
+
+3|¿Qué es el "agua de Valencia"? || Cava con zumo de naranja, ginebra y vodka | Agua con limón y azúcar | Horchata con hielo | Zumo de naranja con agua con gas
+O que é a "agua de Valencia"? || Cava com sumo de laranja, gin e vodka | Água com limão e açúcar | Horchata com gelo | Sumo de laranja com água com gás
+What is "Agua de Valencia"? || Cava with orange juice, gin and vodka | Water with lemon and sugar | Horchata over ice | Orange juice with sparkling water
+
+3|¿Qué es un rebujito? || Vino manzanilla con refresco de lima-limón | Cerveza con limón | Vino tinto con gaseosa | Ron con refresco de cola
+O que é um rebujito? || Vinho manzanilla com refrigerante de lima-limão | Cerveja com limão | Vinho tinto com gasosa | Rum com cola
+What is a rebujito? || Manzanilla sherry with lemon-lime soda | Beer with lemon | Red wine with lemonade | Rum and cola
+
+2|¿Qué es un kalimotxo (calimocho)? || Vino tinto con refresco de cola | Cerveza con refresco de cola | Vino blanco con gaseosa | Sidra con limón
+O que é um kalimotxo (calimocho)? || Vinho tinto com cola | Cerveja com cola | Vinho branco com gasosa | Sidra com limão
+What is a kalimotxo? || Red wine with cola | Beer with cola | White wine with lemonade | Cider with lemon
+
+1|¿Qué es la sangría? || Vino tinto con fruta, azúcar y algo de licor o refresco | Cerveza con fruta | Cava con zumo de naranja | Mosto con hielo
+O que é a sangria? || Vinho tinto com fruta, açúcar e algum licor ou refrigerante | Cerveja com fruta | Cava com sumo de laranja | Mosto com gelo
+What is sangria? || Red wine with fruit, sugar and some liqueur or soda | Beer with fruit | Cava with orange juice | Grape juice with ice
+
+1|Un cliente va a conducir y quiere "una cerveza". ¿Qué le puedes ofrecer? || Una cerveza 0,0 | Una cerveza sin gluten | Una clara | Una cerveza de trigo
+Um cliente vai conduzir e quer "uma cerveja". O que lhe podes oferecer? || Uma cerveja 0,0 | Uma cerveja sem glúten | Uma clara | Uma cerveja de trigo
+A customer is driving and wants "a beer". What can you offer? || A 0.0 beer | A gluten-free beer | A shandy (clara) | A wheat beer
+
+2|vf=1|Un tercio es una botella de cerveza de 33 cl.
+Um tercio é uma garrafa de cerveja de 33 cl.
+A "tercio" is a 33 cl bottle of beer.
+
+2|vf=0|El kalimotxo lleva vino blanco.
+O kalimotxo leva vinho branco.
+Kalimotxo is made with white wine.
+
+2|vf=0|Una cerveza "sin gluten" es lo mismo que una cerveza sin alcohol.
+Uma cerveja "sem glúten" é o mesmo que uma cerveja sem álcool.
+A "gluten-free" beer is the same as an alcohol-free beer.
+
+@vinos
+3|En España, ¿qué es un vino tinto "crianza"? || Mínimo 2 años de envejecimiento, al menos 6 meses en barrica | Vino del año sin barrica | Mínimo 5 años, 18 meses en barrica | Vino dulce de postre
+Em Espanha, o que é um vinho tinto "crianza"? || Mínimo 2 anos de envelhecimento, pelo menos 6 meses em barrica | Vinho do ano sem barrica | Mínimo 5 anos, 18 meses em barrica | Vinho doce de sobremesa
+In Spain, what is a red "crianza" wine? || At least 2 years' ageing, 6 months or more in oak | A young wine with no oak | At least 5 years, 18 months in oak | A sweet dessert wine
+
+3|¿Qué es un vino tinto "reserva"? || Mínimo 3 años de envejecimiento, al menos 1 en barrica | 6 meses en barrica en total | Vino joven del año | Vino con 10 años en botella
+O que é um vinho tinto "reserva"? || Mínimo 3 anos de envelhecimento, pelo menos 1 em barrica | 6 meses em barrica no total | Vinho jovem do ano | Vinho com 10 anos em garrafa
+What is a red "reserva" wine? || At least 3 years' ageing, 1 or more in oak | 6 months in oak in total | A young wine of the year | A wine with 10 years in bottle
+
+3|¿Qué es un "gran reserva" tinto? || Mínimo 5 años, al menos 18 meses en barrica | Mínimo 3 años, 1 en barrica | Mínimo 2 años, 6 meses en barrica | Cualquier vino caro
+O que é um tinto "gran reserva"? || Mínimo 5 anos, pelo menos 18 meses em barrica | Mínimo 3 anos, 1 em barrica | Mínimo 2 anos, 6 meses em barrica | Qualquer vinho caro
+What is a red "gran reserva"? || At least 5 years, 18 months or more in oak | At least 3 years, 1 in oak | At least 2 years, 6 months in oak | Any expensive wine
+
+2|¿Qué es un vino "joven"? || Vino con poca o ninguna barrica, para beber pronto | Vino con más de 10 años | Vino dulce | Vino con burbujas
+O que é um vinho "jovem"? || Vinho com pouca ou nenhuma barrica, para beber cedo | Vinho com mais de 10 anos | Vinho doce | Vinho com bolhas
+What is a "joven" (young) wine? || Little or no oak, meant to drink soon | Over 10 years old | A sweet wine | A sparkling wine
+
+2|¿Qué significa D.O. en una botella de vino? || Denominación de Origen: zona de producción protegida | Un tipo de uva | Que es un vino dulce | Que es de una sola bodega
+O que significa D.O. numa garrafa de vinho? || Denominação de Origem: zona de produção protegida | Um tipo de uva | Que é um vinho doce | Que é de uma só adega
+What does D.O. mean on a wine bottle? || Designation of Origin: a protected wine region | A grape variety | That it is sweet | That it's from a single winery
+
+2|¿Qué uva tinta es la más típica de Rioja y Ribera del Duero? || Tempranillo | Garnacha | Monastrell | Mencía
+Que uva tinta é mais típica da Rioja e da Ribera del Duero? || Tempranillo | Garnacha | Monastrell | Mencía
+Which red grape is most typical of Rioja and Ribera del Duero? || Tempranillo | Garnacha | Monastrell | Mencía
+
+2|¿Qué uva blanca es la típica de Rías Baixas? || Albariño | Verdejo | Macabeo | Airén
+Que uva branca é típica das Rías Baixas? || Alvarinho (Albariño) | Verdejo | Macabeo | Airén
+Which white grape is typical of Rías Baixas? || Albariño | Verdejo | Macabeo | Airén
+
+2|¿Qué uva blanca es la típica de Rueda? || Verdejo | Albariño | Godello | Pedro Ximénez
+Que uva branca é típica de Rueda? || Verdejo | Alvarinho | Godello | Pedro Ximénez
+Which white grape is typical of Rueda? || Verdejo | Albariño | Godello | Pedro Ximénez
+
+2|¿Dónde se elabora la mayor parte del cava? || Cataluña (Penedès) | La Rioja | Galicia | Andalucía
+Onde se produz a maior parte do cava? || Catalunha (Penedès) | La Rioja | Galiza | Andaluzia
+Where is most cava produced? || Catalonia (Penedès) | La Rioja | Galicia | Andalusia
+
+3|¿Cómo se hace la segunda fermentación del cava? || En la propia botella (método tradicional) | En grandes depósitos | Añadiendo gas carbónico | En barricas de roble abiertas
+Como se faz a segunda fermentação do cava? || Na própria garrafa (método tradicional) | Em grandes depósitos | Adicionando gás carbónico | Em barricas de carvalho abertas
+How does cava undergo its second fermentation? || In the bottle itself (traditional method) | In large tanks | By adding carbon dioxide | In open oak barrels
+
+2|¿Qué significa "brut" en un cava? || Que es seco, con poco azúcar | Que es muy dulce | Que es rosado | Que no tiene burbujas
+O que significa "brut" num cava? || Que é seco, com pouco açúcar | Que é muito doce | Que é rosado | Que não tem bolhas
+What does "brut" mean on a cava? || It's dry, with little sugar | It's very sweet | It's rosé | It has no bubbles
+
+3|¿Cuál de estos cavas es el más dulce? || Semiseco | Brut nature | Extra brut | Brut
+Qual destes cavas é o mais doce? || Meio-seco (semiseco) | Brut nature | Extra brut | Brut
+Which of these cavas is the sweetest? || Semi-seco | Brut nature | Extra brut | Brut
+
+3|¿Qué es un fino de Jerez? || Vino blanco muy seco con crianza bajo velo de flor | Vino tinto dulce | Un espumoso andaluz | Un brandy suave
+O que é um fino de Jerez? || Vinho branco muito seco envelhecido sob véu de flor | Vinho tinto doce | Um espumante andaluz | Um brandy suave
+What is a fino sherry? || A very dry white wine aged under a layer of flor yeast | A sweet red wine | An Andalusian sparkling wine | A mild brandy
+
+3|¿Qué es un Pedro Ximénez (PX)? || Vino dulce, muy oscuro y denso | Vino blanco muy seco | Cava rosado | Tinto joven
+O que é um Pedro Ximénez (PX)? || Vinho doce, muito escuro e denso | Vinho branco muito seco | Cava rosado | Tinto jovem
+What is Pedro Ximénez (PX)? || A sweet, very dark, dense wine | A very dry white wine | A rosé cava | A young red
+
+2|¿A qué temperatura se sirve el cava? || 6–8 °C | 12–14 °C | 16–18 °C | 0–2 °C
+A que temperatura se serve o cava? || 6–8 °C | 12–14 °C | 16–18 °C | 0–2 °C
+At what temperature is cava served? || 6–8 °C | 12–14 °C | 16–18 °C | 0–2 °C
+
+3|¿A qué temperatura se sirve un tinto joven? || 12–14 °C | 6–8 °C | 18–20 °C | 22–24 °C
+A que temperatura se serve um tinto jovem? || 12–14 °C | 6–8 °C | 18–20 °C | 22–24 °C
+At what temperature is a young red wine served? || 12–14 °C | 6–8 °C | 18–20 °C | 22–24 °C
+
+2|¿A qué temperatura se sirve un vino rosado? || 8–10 °C | 16–18 °C | 2–4 °C | 20–22 °C
+A que temperatura se serve um vinho rosé? || 8–10 °C | 16–18 °C | 2–4 °C | 20–22 °C
+At what temperature is rosé wine served? || 8–10 °C | 16–18 °C | 2–4 °C | 20–22 °C
+
+2|¿Para qué se decanta un vino? || Para airearlo o separarlo de los posos | Para enfriarlo rápido | Para quitarle alcohol | Para que tenga más color
+Para que se decanta um vinho? || Para o arejar ou separar dos depósitos | Para o arrefecer rápido | Para lhe tirar álcool | Para ter mais cor
+Why is a wine decanted? || To aerate it or separate it from sediment | To chill it fast | To remove alcohol | To give it more colour
+
+3|¿Qué vinos se suelen decantar? || Tintos viejos o muy estructurados | Cavas y espumosos | Blancos jóvenes | Rosados afrutados
+Que vinhos se costumam decantar? || Tintos velhos ou muito estruturados | Cavas e espumantes | Brancos jovens | Rosés frutados
+Which wines are usually decanted? || Old or very full-bodied reds | Cavas and sparkling wines | Young whites | Fruity rosés
+
+2|¿Hasta dónde se llena normalmente una copa de vino? || Hasta un tercio, más o menos | Hasta el borde | Hasta tres cuartos | Solo un dedo
+Até onde se enche normalmente um copo de vinho? || Até um terço, mais ou menos | Até à borda | Até três quartos | Só um dedo
+How full is a wine glass usually poured? || About a third | To the brim | Three-quarters | Just one finger
+
+2|Al terminar de servir el vino, ¿cómo se evita que gotee? || Girando un poco la botella al levantarla | Golpeando la botella contra la copa | Levantándola muy rápido | Soplando el cuello
+Ao acabar de servir o vinho, como se evita que pingue? || Rodando um pouco a garrafa ao levantá-la | Batendo a garrafa no copo | Levantando-a muito depressa | Soprando o gargalo
+How do you stop wine dripping after pouring? || Twist the bottle slightly as you lift it | Tap the bottle on the glass | Lift it very fast | Blow on the neck
+
+3|¿Por dónde se corta la cápsula de una botella de vino? || Por debajo del anillo del cuello | Justo en la mitad de la botella | No se corta: se arranca entera | Por encima del corcho, en la tapa
+Por onde se corta a cápsula de uma garrafa de vinho? || Por baixo do anel do gargalo | A meio da garrafa | Não se corta: arranca-se inteira | Por cima da rolha, no topo
+Where do you cut the foil capsule on a wine bottle? || Below the lip of the neck | Halfway down the bottle | You don't, you pull it all off | On top, above the cork
+
+2|Al probar el vino, el cliente dice que huele a corcho mojado. ¿Qué haces? || Retiras la botella y traes otra | Le dices que es normal en vinos caros | Le pones hielo | Lo decantas y lo sirves igual
+Ao provar o vinho, o cliente diz que cheira a rolha molhada. O que fazes? || Retiras a garrafa e trazes outra | Dizes que é normal nos vinhos caros | Pões-lhe gelo | Decantas e serves na mesma
+When tasting, the customer says the wine smells of wet cork. What do you do? || Take the bottle away and bring another | Say it's normal in expensive wines | Add ice | Decant it and serve it anyway
+
+2|¿Qué vino se suele recomendar con un pescado blanco a la plancha? || Un blanco seco | Un tinto gran reserva | Un Pedro Ximénez | Un vermut rojo
+Que vinho se costuma recomendar com peixe branco grelhado? || Um branco seco | Um tinto gran reserva | Um Pedro Ximénez | Um vermute tinto
+Which wine is usually recommended with grilled white fish? || A dry white | A gran reserva red | A Pedro Ximénez | A red vermouth
+
+3|¿Qué vino marida clásicamente con un queso azul? || Un vino dulce | Un blanco joven muy ácido | Un rosado ligero | Un cava brut nature
+Que vinho combina classicamente com um queijo azul? || Um vinho doce | Um branco jovem muito ácido | Um rosé leve | Um cava brut nature
+Which wine is a classic match for blue cheese? || A sweet wine | A very acidic young white | A light rosé | A brut nature cava
+
+3|¿Qué es un vino "de aguja"? || Vino con un ligero gas natural | Vino muy viejo | Vino sin alcohol | Vino con especias
+O que é um vinho "de agulha"? || Vinho com um leve gás natural | Vinho muito velho | Vinho sem álcool | Vinho com especiarias
+What is a "vino de aguja"? || A wine with a slight natural fizz | A very old wine | An alcohol-free wine | A spiced wine
+
+2|¿Cómo se guardan las botellas con tapón de corcho? || Tumbadas, en sitio fresco y oscuro | De pie, cerca de la cocina | De pie, al sol | En el congelador
+Como se guardam as garrafas com rolha de cortiça? || Deitadas, em local fresco e escuro | De pé, perto da cozinha | De pé, ao sol | No congelador
+How are bottles with natural corks stored? || Lying down, somewhere cool and dark | Upright, near the kitchen | Upright, in the sun | In the freezer
+
+2|¿Cómo se mantiene frío un vino blanco abierto en la mesa? || En una cubitera con agua y hielo | Con hielo dentro de la copa | En el congelador entre copa y copa | No hace falta
+Como se mantém frio um vinho branco aberto na mesa? || Num balde com água e gelo | Com gelo dentro do copo | No congelador entre copos | Não é preciso
+How do you keep an open white wine cold at the table? || In an ice bucket with water and ice | With ice in the glass | In the freezer between pours | It isn't necessary
+
+1|¿Qué es el "maridaje"? || Combinar comida y bebida para que se complementen | Mezclar dos vinos | Brindar en una boda | Servir vino caliente
+O que é a "harmonização"? || Combinar comida e bebida para se complementarem | Misturar dois vinhos | Brindar num casamento | Servir vinho quente
+What is food and wine pairing? || Matching food and drink so they complement each other | Mixing two wines | Toasting at a wedding | Serving warm wine
+
+2|vf=1|El cava se sirve más frío que un vino tinto.
+O cava serve-se mais frio do que um vinho tinto.
+Cava is served colder than red wine.
+
+2|vf=0|Las botellas con corcho natural se guardan de pie.
+As garrafas com rolha natural guardam-se de pé.
+Bottles with natural corks are stored upright.
+
+2|vf=0|El albariño es una uva tinta.
+O alvarinho é uma uva tinta.
+Albariño is a red grape.
+
+3|vf=0|Un "crianza" siempre tiene más años que un "reserva".
+Um "crianza" tem sempre mais anos do que um "reserva".
+A "crianza" is always older than a "reserva".

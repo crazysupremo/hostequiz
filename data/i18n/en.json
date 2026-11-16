@@ -79,8 +79,8 @@
 "p012": [
 "What is sprinkled on top of a quemadillo?",
 "Ground cinnamon",
-"Pepper",
-"Salt",
+"Cocoa powder",
+"Nutmeg",
 "Icing sugar"
 ],
 "p013": [
@@ -163,9 +163,9 @@
 "p024": [
 "What do you do with the steam wand after every use?",
 "Purge it and wipe it with a damp cloth",
-"Leave it until closing time",
-"Put it in cold water",
-"Nothing"
+"Clean it only at closing time",
+"Purge it without wiping it",
+"Wipe it with the table cloth"
 ],
 "p025": [
 "How should the milk be before you foam it?",
@@ -177,16 +177,16 @@
 "p026": [
 "Roughly what temperature do you heat milk to for foam?",
 "About 60–65 °C, without boiling",
+"About 80–85 °C",
 "Until it boils (100 °C)",
-"30 °C",
-"It doesn't matter"
+"About 35–40 °C"
 ],
 "p027": [
 "What is \"una carga\" (a shot) of coffee?",
 "The dose of ground coffee for one coffee",
-"A large cup",
-"A sugar sachet",
-"A glass of milk"
+"The amount of water for one coffee",
+"A double coffee",
+"The extraction time"
 ],
 "p028": [
 "A cortado has more milk than a café con leche."
@@ -228,13 +228,6 @@
 "Tea with whisky",
 "Tea with cold water"
 ],
-"p036": [
-"What goes in a Cola Cao (hot chocolate)?",
-"Hot milk and a sachet of Cola Cao",
-"Water and coffee",
-"Cold milk and coffee",
-"Hot water and a tea bag"
-],
 "p037": [
 "What is a Cola Cao served in?",
 "Large service or a glass",
@@ -266,8 +259,8 @@
 "Apart from ice, what goes in a soft drink?",
 "A slice of lemon or orange",
 "An olive",
-"Cinnamon",
-"Cream"
+"A mint leaf",
+"Lime peel and salt"
 ],
 "p043": [
 "Do bottled juices and milkshakes get ice?",
@@ -286,9 +279,9 @@
 "p045": [
 "What goes in a mosto (grape juice)?",
 "2 or 3 ice cubes, an orange slice and an olive",
-"Cream",
-"Cinnamon",
-"Milk"
+"3 or 4 ice cubes and lemon peel",
+"Just ice",
+"Nothing, served at room temperature"
 ],
 "p046": [
 "How many ice cubes go in a liqueur?",
@@ -300,9 +293,9 @@
 "p047": [
 "What is beer served in?",
 "A glass (copa) or a mug",
-"A shot glass",
-"A cup",
-"A cocktail glass"
+"A wine glass",
+"A short glass",
+"A balloon glass"
 ],
 "p048": [
 "How many ice cubes go in a mixed drink (combinado)?",
@@ -315,8 +308,8 @@
 "What goes in a mixed drink (combinado)?",
 "Lemon or orange peel",
 "An olive",
-"Cinnamon",
-"Cream"
+"A cocktail cherry",
+"Salt on the rim"
 ],
 "p050": [
 "What temperature is red wine usually served at?",
@@ -362,13 +355,6 @@
 "p057": [
 "Mixed drinks get more ice than liqueurs."
 ],
-"p058": [
-"Which glass is a shot (chupito) served in?",
-"Shot glass",
-"Tall glass (tubo)",
-"Balloon glass",
-"Jug"
-],
 "p059": [
 "What is served in a soft-drink glass?",
 "Coca-Cola, lemon soda or juice",
@@ -386,9 +372,9 @@
 "p061": [
 "What is served in a champagne coupe?",
 "Cava",
+"Red wine",
 "Beer",
-"Coffee",
-"Water"
+"Liqueur"
 ],
 "p062": [
 "What does a champagne flute look like?",
@@ -421,16 +407,16 @@
 "p066": [
 "What can a liqueur be served in?",
 "Short glass, liqueur glass or tall glass",
-"Large cup",
-"Beer mug",
-"Teapot"
+"Wine glass",
+"Cocktail glass",
+"Beer mug"
 ],
 "p067": [
 "What is vermouth served in?",
 "Wine glass or short glass",
 "Shot glass",
-"Jug",
-"Cup"
+"Cocktail glass",
+"Balloon glass with tonic"
 ],
 "p068": [
 "What is a bottled juice served in?",
@@ -442,7 +428,7 @@
 "p069": [
 "What is mosto served in?",
 "Wine glass, short glass or tall glass",
-"Cup",
+"Cocktail glass",
 "Shot glass",
 "Beer mug"
 ],
@@ -498,36 +484,36 @@
 "Which side does the dinner knife go?",
 "Right",
 "Left",
-"Above the plate",
-"On the plate"
+"Above the plate, lying across",
+"On the left, next to the bread"
 ],
 "p079": [
 "Which side does the dinner fork go?",
 "Left",
 "Right",
-"Above the plate",
-"In the plate"
+"Above the plate, lying across",
+"On the right, next to the spoon"
 ],
 "p080": [
 "Which side does the soup spoon go?",
 "Right",
 "Left",
-"Above the plate",
-"Next to the bread"
+"Above the plate, lying across",
+"On the left, outside the forks"
 ],
 "p081": [
 "Which side does the fish knife go?",
 "Right",
 "Left",
-"Above the plate",
-"It isn't laid"
+"Above the plate, lying across",
+"Only brought with dessert"
 ],
 "p082": [
 "Which side does the fish fork go?",
 "Left",
 "Right",
-"Above the plate",
-"In the plate"
+"Above the plate, lying across",
+"On the right, next to the fish knife"
 ],
 "p083": [
 "Dessert cutlery: which one goes on the left?",
@@ -546,30 +532,30 @@
 "p085": [
 "In the set menu set-up, where does the napkin go?",
 "In the centre, between the cutlery",
-"In the glass",
-"Under the tablecloth",
-"On the chair"
+"Inside the glass",
+"On the bread plate",
+"Under the cutlery on the right"
 ],
 "p086": [
 "What is mise en place?",
 "Getting everything ready before service starts",
-"The dessert of the day",
-"A kind of coffee",
-"The customer's bill"
+"Cleaning the room at closing time",
+"Setting out only the glasses",
+"Plating the first course"
 ],
 "p087": [
 "What is the silence cloth (muletón)?",
 "The thick cloth under the tablecloth",
-"A kind of glass",
-"A small napkin",
-"A fish knife"
+"The small top cloth",
+"The large napkin",
+"The side-table cover"
 ],
 "p088": [
 "What is a side station (aparador)?",
 "The waiter's support unit in the dining room",
-"A kind of knife",
-"An oven",
-"A glass"
+"The maître's booking desk",
+"The kitchen cupboard",
+"The dessert trolley"
 ],
 "p089": [
 "The chairs are set before the plates."
@@ -601,16 +587,16 @@
 "p094": [
 "Before opening a bottle of wine, what do you do?",
 "Show the label to the customer",
-"Shake it well",
-"Warm it up",
-"Pour for everyone straight away"
+"Pour a glass for the waiter",
+"Always put it on ice",
+"Shake it to aerate it"
 ],
 "p095": [
 "Who tastes the wine first?",
 "The person who ordered it",
 "The waiter",
-"The cook",
-"The youngest at the table"
+"The oldest person",
+"Always the host, even if they didn't order it"
 ],
 "p096": [
 "What is the \"comanda\"?",
@@ -622,16 +608,16 @@
 "p097": [
 "When do you bring the bill to the table?",
 "When the customer asks for it",
-"With the first course",
-"Before they sit down",
-"Never"
+"When serving dessert",
+"When serving coffee",
+"Before dessert, to save time"
 ],
 "p098": [
 "How do you hold a wine glass?",
 "By the stem or the base",
 "By the rim",
-"With your fingers inside",
-"From the top"
+"By the bowl of the glass",
+"It doesn't matter, with a clean hand"
 ],
 "p099": [
 "Before serving dessert, what do you clear from the table?",
@@ -643,9 +629,9 @@
 "p100": [
 "Which hand do you carry the tray with?",
 "The left, so you serve with the right",
-"Always the right",
-"Both, over your head",
-"Resting on your shoulder"
+"The right, so you serve with the left",
+"Both hands",
+"Whichever hand is free"
 ],
 "p101": [
 "You can serve the main course while the customer is still eating the starter."
@@ -660,8 +646,8 @@
 "p103": [
 "Yogurt cake: what do you measure the ingredients with?",
 "The yogurt pot",
-"A large cup",
-"A bucket",
+"Kitchen scales in grams",
+"A coffee cup",
 "A soup spoon"
 ],
 "p104": [
@@ -695,9 +681,9 @@
 "p108": [
 "What do you do with the oven before putting the cake in?",
 "Preheat it",
-"Turn it off",
-"Leave it open",
-"Fill it with water"
+"Switch it to grill mode",
+"Turn it on as you put the cake in",
+"Leave it open to let air in"
 ],
 "p109": [
 "Macaroni carbonara (5–6 people): how much pasta?",
@@ -709,23 +695,16 @@
 "p110": [
 "Carbonara: which part of the egg is used?",
 "The yolk",
-"Only the white",
-"The shell",
-"The whole boiled egg"
-],
-"p111": [
-"Carbonara: what can you use instead of bacon?",
-"Mushrooms",
-"Chocolate",
-"Strawberries",
-"Tuna"
+"Whipped egg white",
+"The whole beaten egg",
+"Chopped boiled egg"
 ],
 "p112": [
 "Set menu: what is ALWAYS among the starters?",
 "A vegetable dish",
-"A dessert",
-"A fish",
-"A coffee"
+"A meat dish",
+"A fish dish",
+"A rice dish"
 ],
 "p113": [
 "Which of these is a starter (primer plato)?",
@@ -740,13 +719,6 @@
 "House salad",
 "Green beans",
 "Macaroni bolognese"
-],
-"p115": [
-"What desserts are on the set menu?",
-"Seasonal fruit and house ice cream",
-"Carajillo and quemadillo",
-"Paella",
-"Bread with tomato"
 ],
 "p116": [
 "Macaroni bolognese is a main course."
@@ -775,30 +747,30 @@
 "p120": [
 "A customer asks if a dish has gluten. What do you do?",
 "Check the allergen chart or ask the kitchen",
-"Say it has nothing",
-"Make it up",
-"Say you don't know and walk away"
+"Tell them to order it without bread",
+"Recommend another dish without checking",
+"Say a little gluten won't hurt"
 ],
 "p121": [
 "In the cold room, which product is used first?",
 "The one that came in first",
 "The newest",
-"The biggest",
-"The closest one"
+"The one that expires latest",
+"The one at the front"
 ],
 "p122": [
 "When must you wash your hands?",
 "Before touching food and after the toilet, rubbish or money",
-"Only at the end of the day",
-"Never if you wear gloves",
-"Once a week"
+"Only at the start of the shift",
+"Only when they look dirty",
+"Only before serving desserts"
 ],
 "p123": [
 "What is cross-contamination?",
 "Passing bacteria from raw food to cooked food",
-"Mixing two wines",
-"A type of service",
-"Running across the kitchen"
+"Cooking two dishes at once",
+"Mixing two sauces",
+"Freezing and thawing twice"
 ],
 "p124": [
 "Where are cleaning products kept?",
@@ -813,37 +785,37 @@
 "p126": [
 "What is \"la barra\"?",
 "The counter where drinks are served",
-"A dessert",
-"A glass",
-"The kitchen"
+"The hot kitchen area",
+"The drinks storeroom",
+"The maître's desk"
 ],
 "p127": [
 "What is the \"office\"?",
 "The support area between kitchen and dining room",
-"The boss's office",
-"A kind of coffee",
-"The staff toilet"
+"The wine cellar",
+"The cold room",
+"The manager's office"
 ],
 "p128": [
 "What does \"emplatar\" mean?",
 "Placing food on the plate before serving",
-"Washing the plates",
-"Breaking a plate",
-"Asking for the bill"
+"Clearing dirty plates",
+"Laying the plates on the table",
+"Warming the plates"
 ],
 "p129": [
 "Who is the maître?",
 "The head of the dining room",
-"The cook",
-"The dishwasher",
-"The customer"
+"The head chef",
+"The sommelier",
+"The bar manager"
 ],
 "p130": [
 "Who is the sommelier (sumiller)?",
 "The wine expert",
 "The head chef",
-"The one who makes desserts",
-"The doorman"
+"The bar manager",
+"The head of the dining room"
 ],
 "p131": [
 "Who runs the kitchen?",
@@ -855,16 +827,16 @@
 "p132": [
 "In the kitchen, what does \"¡marcha la mesa 5!\" mean?",
 "Start preparing table 5's next course",
-"Throw out table 5's customers",
-"Charge table 5",
-"Clean table 5"
+"Table 5 has already left",
+"Table 5 wants the bill",
+"Table 5 has cancelled"
 ],
 "p133": [
 "What is a booking (reserva)?",
 "A table kept for a customer at a set time",
-"A kind of cutlery",
-"Leftover food",
-"The storeroom"
+"A takeaway order",
+"A table that pays in advance",
+"A table on the terrace"
 ],
 "p134": [
 "What is this glass called?",
@@ -1087,7 +1059,7 @@
 "What is WRONG with this beer?",
 "It shouldn't have ice",
 "It needs lemon",
-"It should be in a cup",
+"It should be in a wine glass",
 "Nothing is wrong"
 ],
 "p166": [
@@ -1095,7 +1067,7 @@
 "Yes, in a mug and without ice",
 "No, it needs ice",
 "No, it goes in a wine glass",
-"No, it needs an olive"
+"No, it should be in a short glass"
 ],
 "p167": [
 "What is this?",
@@ -1115,15 +1087,15 @@
 "What temperature is this wine served at?",
 "8–10 °C",
 "16–18 °C",
-"25 °C",
-"Hot"
+"2–4 °C",
+"20–22 °C"
 ],
 "p170": [
 "What is served here?",
 "Cava",
 "Beer",
 "Red wine",
-"Coffee"
+"Vermouth"
 ],
 "p171": [
 "What is marked in orange?",
@@ -1180,5 +1152,1926 @@
 "The silence cloth",
 "The tablecloth",
 "The trivet"
+],
+"n001": [
+"Roughly how many grams of ground coffee go into a single espresso?",
+"7–9 g",
+"3–4 g",
+"14–16 g",
+"20 g"
+],
+"n002": [
+"Roughly how long does a good espresso extraction take?",
+"25–30 seconds",
+"8–10 seconds",
+"45–50 seconds",
+"Over 1 minute"
+],
+"n003": [
+"The espresso runs fast, pale and watery. What do you adjust first?",
+"Grind finer",
+"Grind coarser",
+"Use less coffee",
+"Tamp more lightly"
+],
+"n004": [
+"The espresso drips out very slowly and tastes bitter. What do you adjust?",
+"Grind coarser",
+"Grind finer",
+"Use more coffee",
+"Tamp harder"
+],
+"n005": [
+"At what pressure does an espresso machine normally work?",
+"About 9 bar",
+"About 2 bar",
+"About 4 bar",
+"About 20 bar"
+],
+"n006": [
+"A very pale crema that disappears quickly usually means…",
+"Under-extracted coffee (too little or too coarse)",
+"Over-extracted coffee",
+"Milk that is too hot",
+"Freshly roasted coffee"
+],
+"n007": [
+"Why are cups kept on top of the coffee machine?",
+"To keep them warm so the coffee doesn't cool",
+"To dry them after washing",
+"Just to have them handy",
+"To disinfect them with the heat"
+],
+"n008": [
+"Why do you flush the group head before locking in the portafilter?",
+"To clear old grounds and stabilise the temperature",
+"To cool the coffee",
+"To save coffee",
+"To get more milk foam"
+],
+"n009": [
+"What is a tamper?",
+"The tool used to compact coffee in the filter",
+"The milk jug",
+"The steam wand lever",
+"The knock box"
+],
+"n010": [
+"What is backflushing an espresso machine?",
+"Cleaning the group head with a blind filter and detergent",
+"Washing the cups by hand",
+"Running water through the steam wand",
+"Emptying the knock box"
+],
+"n011": [
+"Which milk gives the creamiest, most stable foam for a cappuccino?",
+"Cold whole milk",
+"Hot skimmed milk",
+"Condensed milk",
+"Milk that was already steamed"
+],
+"n012": [
+"What is \"microfoam\"?",
+"Fine, glossy foam with no big bubbles",
+"Very tall, dry foam",
+"Hot milk without foam",
+"Sweetened whipped cream"
+],
+"n013": [
+"When you start steaming milk, where do you place the steam wand tip?",
+"Just below the surface of the milk",
+"At the bottom of the jug",
+"Above the milk",
+"Against the side, out of the milk"
+],
+"n014": [
+"Why shouldn't you re-steam milk that was already heated?",
+"It loses flavour and texture and tastes scorched",
+"It always curdles instantly",
+"It turns into cream",
+"Because it uses more electricity"
+],
+"n015": [
+"What is \"torrefacto\" coffee?",
+"Coffee roasted with sugar",
+"Very lightly roasted coffee",
+"Decaffeinated coffee",
+"Extra-fine ground coffee"
+],
+"n016": [
+"In Spain, what is \"mezcla\" coffee?",
+"Natural roast mixed with torrefacto",
+"Arabica with robusta",
+"Coffee with chicory",
+"Coffee with milk powder"
+],
+"n017": [
+"What makes robusta different from arabica?",
+"More caffeine and more bitter",
+"Less caffeine and milder",
+"Same plant, different name",
+"Only used for decaf"
+],
+"n018": [
+"How do you store coffee beans so they keep their aroma?",
+"Sealed, somewhere cool, dry and dark",
+"Open in the fridge",
+"In the hopper all week",
+"Next to the machine to keep warm"
+],
+"n019": [
+"A customer asks for \"decaf from a sachet\". What do you bring?",
+"Hot milk or water with the sachet on the side",
+"A machine-made decaf",
+"An espresso and a sugar sachet",
+"The sachet already stirred in"
+],
+"n020": [
+"What is a \"café asiático\" (from Cartagena)?",
+"Coffee with condensed milk, brandy and Licor 43",
+"Iced coffee with lemon",
+"Coffee with cinnamon and honey",
+"Coffee with ice cream and cream"
+],
+"n021": [
+"In Valencia, what is a \"café del tiempo\"?",
+"Espresso with a glass of ice and a lemon slice",
+"Lukewarm white coffee",
+"Yesterday's coffee",
+"Coffee with cinnamon"
+],
+"n022": [
+"What is an Italian macchiato?",
+"An espresso \"stained\" with a little milk foam",
+"Milk with a little coffee",
+"Coffee with ice cream",
+"Coffee with hazelnut liqueur"
+],
+"n023": [
+"What is the classic cappuccino ratio?",
+"1/3 coffee, 1/3 milk, 1/3 foam",
+"Half coffee, half foam",
+"1/4 coffee, 3/4 milk, no foam",
+"2/3 coffee, 1/3 cream"
+],
+"n024": [
+"What is a flat white?",
+"Double espresso with silky milk and thin foam",
+"Espresso with cold water",
+"Cappuccino with lots of dry foam",
+"Coffee with whipped cream"
+],
+"n025": [
+"What is a frappé coffee?",
+"Cold coffee shaken with ice until frothy",
+"Coffee flambéed with liqueur",
+"Very hot white coffee",
+"Hot coffee with condensed milk"
+],
+"n026": [
+"What water should go into a coffee machine?",
+"Filtered or softened water",
+"Very hard water",
+"Sparkling water",
+"Hot tap water"
+],
+"n027": [
+"When serving coffee at the table, where does the cup handle point?",
+"To the customer's right, spoon behind it",
+"To the customer's left",
+"Towards the centre of the table",
+"Towards the waiter"
+],
+"n028": [
+"What is a \"café doble\"?",
+"Two shots of coffee, usually in a large cup",
+"A coffee with double milk",
+"Two cups of espresso",
+"A coffee with two sugars"
+],
+"n029": [
+"Torrefacto coffee is roasted with sugar."
+],
+"n030": [
+"You can re-steam already heated milk and nothing changes."
+],
+"n031": [
+"Robusta has more caffeine than arabica."
+],
+"n032": [
+"At what temperature should green tea be brewed?",
+"70–80 °C",
+"100 °C, boiling",
+"50 °C",
+"90–95 °C"
+],
+"n033": [
+"How long is black tea usually steeped?",
+"3–5 minutes",
+"30 seconds",
+"10–12 minutes",
+"20 minutes"
+],
+"n034": [
+"What happens to black tea that steeps too long?",
+"It turns bitter and astringent",
+"It gets sweeter",
+"It loses all its colour",
+"Nothing changes"
+],
+"n035": [
+"Which of these is NOT a herbal infusion?",
+"Black tea",
+"Camomile",
+"Pennyroyal mint",
+"Lime blossom"
+],
+"n036": [
+"A customer wants something relaxing before bed. What do you suggest?",
+"Lime blossom tea",
+"Green tea",
+"Black tea",
+"Decaf coffee"
+],
+"n037": [
+"What is chai tea?",
+"Black tea with spices and milk",
+"Green tea with lemon",
+"Ginger infusion without tea",
+"Iced peach tea"
+],
+"n038": [
+"What is rooibos?",
+"A caffeine-free South African infusion",
+"A Japanese green tea",
+"A smoked black tea",
+"A green coffee"
+],
+"n039": [
+"What is matcha?",
+"Powdered green tea",
+"Smoked black tea",
+"A flower infusion",
+"A Japanese coffee"
+],
+"n040": [
+"What traditionally goes with Spanish hot chocolate?",
+"Churros or porras",
+"Toast with tomato",
+"A grilled croissant",
+"Savoury muffins"
+],
+"n041": [
+"What's the difference between churros and porras?",
+"Porras are thicker and fluffier",
+"Porras are filled with chocolate",
+"Churros are savoury",
+"Porras are baked"
+],
+"n042": [
+"Green tea is brewed with boiling water."
+],
+"n043": [
+"Camomile has no caffeine."
+],
+"n044": [
+"What is a \"tercio\"?",
+"A 33 cl bottle of beer",
+"A third of a draught mug",
+"A 1-litre bottle of beer",
+"A small 10 cl caña"
+],
+"n045": [
+"What is a \"quinto\"?",
+"A 20 cl bottle of beer",
+"A 50 cl bottle",
+"A double caña",
+"A small glass of wine"
+],
+"n046": [
+"How much head should a well-poured caña have?",
+"About two fingers",
+"None",
+"Half the glass",
+"Just a thin line"
+],
+"n047": [
+"When you start pouring a draught beer, how do you hold the glass?",
+"Tilted at about 45 degrees",
+"Upright from the start",
+"Touching the tap with the rim",
+"Dipped into the tap's beer"
+],
+"n048": [
+"Why is the glass rinsed with cold water before pouring beer?",
+"To chill it, remove residue and get a better head",
+"To take the fizz out of the beer",
+"To make it heavier",
+"Because the law requires it"
+],
+"n049": [
+"What is a lager?",
+"A bottom-fermented, pale, light beer",
+"A very roasted dark beer",
+"A cloudy wheat beer",
+"An alcohol-free beer"
+],
+"n050": [
+"What is a wheat beer (weizen)?",
+"A beer brewed with wheat, cloudy and fruity",
+"Beer with lemon juice",
+"A strong dark beer",
+"A gluten-free beer"
+],
+"n051": [
+"What is cider (sidra)?",
+"A fermented apple drink",
+"Pear wine",
+"Wheat beer",
+"Anise liqueur"
+],
+"n052": [
+"How is natural Asturian cider served?",
+"Poured from high above, a little at a time",
+"In a mug with ice",
+"In a balloon glass with tonic",
+"Warm in a cup"
+],
+"n053": [
+"What is tonic water?",
+"A fizzy, slightly bitter drink with quinine",
+"Plain sparkling water",
+"A sweet lemon soda",
+"Still mineral water"
+],
+"n054": [
+"When should fresh orange juice be served?",
+"Freshly squeezed, straight away",
+"Squeezed in the morning for the whole day",
+"From the day before, well chilled",
+"Slightly warmed"
+],
+"n055": [
+"What is Valencian horchata?",
+"A cold drink made from tiger nuts",
+"Hot milk with cinnamon",
+"Hot almond juice",
+"Rice liqueur"
+],
+"n056": [
+"What is \"Agua de Valencia\"?",
+"Cava with orange juice, gin and vodka",
+"Water with lemon and sugar",
+"Horchata over ice",
+"Orange juice with sparkling water"
+],
+"n057": [
+"What is a rebujito?",
+"Manzanilla sherry with lemon-lime soda",
+"Beer with lemon",
+"Red wine with lemonade",
+"Rum and cola"
+],
+"n058": [
+"What is a kalimotxo?",
+"Red wine with cola",
+"Beer with cola",
+"White wine with lemonade",
+"Cider with lemon"
+],
+"n059": [
+"What is sangria?",
+"Red wine with fruit, sugar and some liqueur or soda",
+"Beer with fruit",
+"Cava with orange juice",
+"Grape juice with ice"
+],
+"n060": [
+"A customer is driving and wants \"a beer\". What can you offer?",
+"A 0.0 beer",
+"A gluten-free beer",
+"A shandy (clara)",
+"A wheat beer"
+],
+"n061": [
+"A \"tercio\" is a 33 cl bottle of beer."
+],
+"n062": [
+"Kalimotxo is made with white wine."
+],
+"n063": [
+"A \"gluten-free\" beer is the same as an alcohol-free beer."
+],
+"n064": [
+"In Spain, what is a red \"crianza\" wine?",
+"At least 2 years' ageing, 6 months or more in oak",
+"A young wine with no oak",
+"At least 5 years, 18 months in oak",
+"A sweet dessert wine"
+],
+"n065": [
+"What is a red \"reserva\" wine?",
+"At least 3 years' ageing, 1 or more in oak",
+"6 months in oak in total",
+"A young wine of the year",
+"A wine with 10 years in bottle"
+],
+"n066": [
+"What is a red \"gran reserva\"?",
+"At least 5 years, 18 months or more in oak",
+"At least 3 years, 1 in oak",
+"At least 2 years, 6 months in oak",
+"Any expensive wine"
+],
+"n067": [
+"What is a \"joven\" (young) wine?",
+"Little or no oak, meant to drink soon",
+"Over 10 years old",
+"A sweet wine",
+"A sparkling wine"
+],
+"n068": [
+"What does D.O. mean on a wine bottle?",
+"Designation of Origin: a protected wine region",
+"A grape variety",
+"That it is sweet",
+"That it's from a single winery"
+],
+"n069": [
+"Which red grape is most typical of Rioja and Ribera del Duero?",
+"Tempranillo",
+"Garnacha",
+"Monastrell",
+"Mencía"
+],
+"n070": [
+"Which white grape is typical of Rías Baixas?",
+"Albariño",
+"Verdejo",
+"Macabeo",
+"Airén"
+],
+"n071": [
+"Which white grape is typical of Rueda?",
+"Verdejo",
+"Albariño",
+"Godello",
+"Pedro Ximénez"
+],
+"n072": [
+"Where is most cava produced?",
+"Catalonia (Penedès)",
+"La Rioja",
+"Galicia",
+"Andalusia"
+],
+"n073": [
+"How does cava undergo its second fermentation?",
+"In the bottle itself (traditional method)",
+"In large tanks",
+"By adding carbon dioxide",
+"In open oak barrels"
+],
+"n074": [
+"What does \"brut\" mean on a cava?",
+"It's dry, with little sugar",
+"It's very sweet",
+"It's rosé",
+"It has no bubbles"
+],
+"n075": [
+"Which of these cavas is the sweetest?",
+"Semi-seco",
+"Brut nature",
+"Extra brut",
+"Brut"
+],
+"n076": [
+"What is a fino sherry?",
+"A very dry white wine aged under a layer of flor yeast",
+"A sweet red wine",
+"An Andalusian sparkling wine",
+"A mild brandy"
+],
+"n077": [
+"What is Pedro Ximénez (PX)?",
+"A sweet, very dark, dense wine",
+"A very dry white wine",
+"A rosé cava",
+"A young red"
+],
+"n078": [
+"At what temperature is cava served?",
+"6–8 °C",
+"12–14 °C",
+"16–18 °C",
+"0–2 °C"
+],
+"n079": [
+"At what temperature is a young red wine served?",
+"12–14 °C",
+"6–8 °C",
+"18–20 °C",
+"22–24 °C"
+],
+"n080": [
+"At what temperature is rosé wine served?",
+"8–10 °C",
+"16–18 °C",
+"2–4 °C",
+"20–22 °C"
+],
+"n081": [
+"Why is a wine decanted?",
+"To aerate it or separate it from sediment",
+"To chill it fast",
+"To remove alcohol",
+"To give it more colour"
+],
+"n082": [
+"Which wines are usually decanted?",
+"Old or very full-bodied reds",
+"Cavas and sparkling wines",
+"Young whites",
+"Fruity rosés"
+],
+"n083": [
+"How full is a wine glass usually poured?",
+"About a third",
+"To the brim",
+"Three-quarters",
+"Just one finger"
+],
+"n084": [
+"How do you stop wine dripping after pouring?",
+"Twist the bottle slightly as you lift it",
+"Tap the bottle on the glass",
+"Lift it very fast",
+"Blow on the neck"
+],
+"n085": [
+"Where do you cut the foil capsule on a wine bottle?",
+"Below the lip of the neck",
+"Halfway down the bottle",
+"You don't, you pull it all off",
+"On top, above the cork"
+],
+"n086": [
+"When tasting, the customer says the wine smells of wet cork. What do you do?",
+"Take the bottle away and bring another",
+"Say it's normal in expensive wines",
+"Add ice",
+"Decant it and serve it anyway"
+],
+"n087": [
+"Which wine is usually recommended with grilled white fish?",
+"A dry white",
+"A gran reserva red",
+"A Pedro Ximénez",
+"A red vermouth"
+],
+"n088": [
+"Which wine is a classic match for blue cheese?",
+"A sweet wine",
+"A very acidic young white",
+"A light rosé",
+"A brut nature cava"
+],
+"n089": [
+"What is a \"vino de aguja\"?",
+"A wine with a slight natural fizz",
+"A very old wine",
+"An alcohol-free wine",
+"A spiced wine"
+],
+"n090": [
+"How are bottles with natural corks stored?",
+"Lying down, somewhere cool and dark",
+"Upright, near the kitchen",
+"Upright, in the sun",
+"In the freezer"
+],
+"n091": [
+"How do you keep an open white wine cold at the table?",
+"In an ice bucket with water and ice",
+"With ice in the glass",
+"In the freezer between pours",
+"It isn't necessary"
+],
+"n092": [
+"What is food and wine pairing?",
+"Matching food and drink so they complement each other",
+"Mixing two wines",
+"Toasting at a wedding",
+"Serving warm wine"
+],
+"n093": [
+"Cava is served colder than red wine."
+],
+"n094": [
+"Bottles with natural corks are stored upright."
+],
+"n095": [
+"Albariño is a red grape."
+],
+"n096": [
+"A \"crianza\" is always older than a \"reserva\"."
+],
+"n097": [
+"What goes in a mojito?",
+"White rum, lime, sugar, mint and soda",
+"Gin, tonic, lime and cucumber",
+"Tequila, lime and salt",
+"Vodka, mint and tonic"
+],
+"n098": [
+"What goes in a margarita?",
+"Tequila, triple sec and lime juice",
+"Tequila, rum and lemon",
+"Vodka, triple sec and orange",
+"Tequila, tonic and grapefruit"
+],
+"n099": [
+"What goes in a classic daiquiri?",
+"Rum, lime juice and sugar",
+"Rum, pineapple and coconut",
+"Rum, mint and soda",
+"Rum, cola and lemon"
+],
+"n100": [
+"What goes in a piña colada?",
+"Rum, cream of coconut and pineapple juice",
+"Vodka, pineapple and lime",
+"Rum, mango and orange",
+"Tequila, coconut and lime"
+],
+"n101": [
+"What goes in a Bloody Mary?",
+"Vodka, tomato juice and spices",
+"Gin, tomato juice and tonic",
+"Vodka, cranberry and lime",
+"Tequila, tomato and beer"
+],
+"n102": [
+"What goes in a Negroni?",
+"Equal parts gin, red vermouth and Campari",
+"Vodka, white vermouth and Aperol",
+"Gin, tonic and Campari",
+"Rum, vermouth and bitters"
+],
+"n103": [
+"What goes in an Aperol Spritz?",
+"Aperol, prosecco or cava and a splash of soda",
+"Aperol and tonic",
+"Aperol, vermouth and beer",
+"Aperol, orange juice and vodka"
+],
+"n104": [
+"What goes in a Dry Martini?",
+"Gin and dry vermouth",
+"Red vermouth and soda",
+"Vodka and apple juice",
+"Gin and tonic"
+],
+"n105": [
+"What goes in a Moscow Mule?",
+"Vodka, ginger beer and lime",
+"Vodka, tonic and lemon",
+"Rum, ginger ale and mint",
+"Gin, beer and lime"
+],
+"n106": [
+"What goes in a Cosmopolitan?",
+"Vodka, triple sec, cranberry and lime",
+"Rum, coconut and pineapple",
+"Gin, grenadine and lemon",
+"Tequila, orange and grenadine"
+],
+"n107": [
+"What goes in a caipirinha?",
+"Cachaça, lime and sugar",
+"Rum, lime and mint",
+"Vodka, lime and sugar",
+"Tequila, lime and salt"
+],
+"n108": [
+"What is a screwdriver?",
+"Vodka with orange juice",
+"Rum with orange juice",
+"Gin with lemon juice",
+"Vodka with cola"
+],
+"n109": [
+"What is a jigger used for?",
+"Measuring spirits",
+"Straining ice",
+"Muddling mint",
+"Stirring in a tall glass"
+],
+"n110": [
+"What is a Hawthorne strainer used for?",
+"Holding back ice when pouring a shaken cocktail",
+"Straining orange juice",
+"Crushing ice",
+"Measuring sugar"
+],
+"n111": [
+"What technique is used with the mint in a mojito?",
+"Gentle muddling, without shredding it",
+"Blending it",
+"Boiling it",
+"Flambéing it"
+],
+"n112": [
+"When do you shake a cocktail instead of stirring it?",
+"When it has juice, cream or egg",
+"When it's only spirits",
+"When it has soda",
+"It's always stirred"
+],
+"n113": [
+"Why shouldn't you shake a drink with soda or tonic?",
+"It loses its fizz",
+"It warms up",
+"It changes colour",
+"It curdles"
+],
+"n114": [
+"What is \"rimming\" a glass?",
+"Putting salt or sugar on the rim",
+"Chilling it in the freezer",
+"Filling it with crushed ice",
+"Garnishing it with a slice"
+],
+"n115": [
+"Which spirit is flavoured with juniper berries?",
+"Gin",
+"Vodka",
+"Rum",
+"Tequila"
+],
+"n116": [
+"Which plant is tequila made from?",
+"Blue agave",
+"Sugar cane",
+"Corn",
+"Prickly pear cactus"
+],
+"n117": [
+"What is Scotch malt whisky made from?",
+"Malted barley",
+"Grapes",
+"Sugar cane",
+"Potatoes"
+],
+"n118": [
+"What is Brandy de Jerez?",
+"A wine spirit aged in oak casks",
+"A coffee liqueur",
+"An aged Andalusian rum",
+"Grape-flavoured gin"
+],
+"n119": [
+"What is pacharán?",
+"Sloe berries steeped in anise liqueur",
+"A coffee liqueur",
+"An apple brandy",
+"A sweet raisin wine"
+],
+"n120": [
+"What is orujo?",
+"A spirit distilled from grape pomace",
+"An orange liqueur",
+"A Galician craft beer",
+"A young white wine"
+],
+"n121": [
+"What is a queimada?",
+"Flaming orujo with sugar, coffee and lemon peel",
+"Hot wine with cinnamon",
+"Hot cider with honey",
+"Iced coffee with liqueur"
+],
+"n122": [
+"Roughly how many centilitres is a spirit measure in a Spanish mixed drink?",
+"About 5 cl",
+"About 2 cl",
+"About 12 cl",
+"About 20 cl"
+],
+"n123": [
+"Why use large, hard ice cubes in a gin and tonic?",
+"They melt slower and dilute less",
+"They chill less and keep the flavour",
+"They take up less room",
+"To add more fizz"
+],
+"n124": [
+"How should tonic be poured in a good G&T?",
+"Slowly, down a bar spoon or the side of the glass",
+"All at once, from high up",
+"After shaking it",
+"Shaken with the ice in the shaker"
+],
+"n125": [
+"What is a mocktail?",
+"A non-alcoholic cocktail",
+"A double-strength cocktail",
+"A shot of liqueur",
+"A sparkling wine"
+],
+"n126": [
+"Rum is made from sugar cane."
+],
+"n127": [
+"A Negroni contains vodka."
+],
+"n128": [
+"A classic margarita has a sugar rim."
+],
+"n129": [
+"What is French service?",
+"The waiter presents the platter and guests serve themselves",
+"The dish comes plated from the kitchen",
+"The waiter serves from the platter with tongs",
+"The dish is finished on a trolley"
+],
+"n130": [
+"What is Russian (guéridon) service?",
+"The dish is carved or finished on a side table by the guest",
+"Guests serve themselves from the platter",
+"Everything comes plated",
+"It's served at the bar"
+],
+"n131": [
+"What is plated (American) service?",
+"The dish leaves the kitchen already plated",
+"Guests serve themselves",
+"It's served from a platter",
+"It's cooked at the table"
+],
+"n132": [
+"What is a guéridon?",
+"A wheeled side table used beside the guest",
+"A type of brandy glass",
+"The top cloth",
+"A round tray"
+],
+"n133": [
+"In which direction do you move around the table when serving?",
+"Clockwise",
+"Anticlockwise",
+"From youngest to oldest",
+"Starting with the host"
+],
+"n134": [
+"Who is served last at a table?",
+"The host (who is paying)",
+"The guest of honour",
+"The oldest person",
+"Whoever sits by the door"
+],
+"n135": [
+"When are main-course plates cleared?",
+"When everyone at the table has finished",
+"As soon as one person finishes",
+"When dessert arrives",
+"When the customer asks"
+],
+"n136": [
+"How does a guest show they have finished eating?",
+"Cutlery together and parallel on the plate",
+"Cutlery crossed on the plate",
+"Cutlery off the plate",
+"Napkin on the chair"
+],
+"n137": [
+"How does a guest leave cutlery to signal \"I'm still eating\"?",
+"Apart in a V or crossed on the plate",
+"Together and parallel",
+"On the napkin",
+"In the glass"
+],
+"n138": [
+"What does a napkin left on the chair mean?",
+"The guest is coming back",
+"They've finished and are leaving",
+"They want the bill",
+"They didn't like the food"
+],
+"n139": [
+"When do you top up a guest's water?",
+"When the glass is below half, without being asked",
+"Only when asked",
+"When it's completely empty",
+"Only with dessert"
+],
+"n140": [
+"Before dessert, how are crumbs removed from the tablecloth?",
+"With a crumber or brush onto a plate",
+"By blowing",
+"Sweeping them to the floor by hand",
+"They're left"
+],
+"n141": [
+"How do you carry a tray with several drinks?",
+"Heaviest items in the centre, close to your body",
+"Heaviest items on the outer edge",
+"With your arm stretched out",
+"Right hand, resting on your hip"
+],
+"n142": [
+"What is meat cooked \"al punto\"?",
+"Seared outside and pink in the centre",
+"Well done, no pink",
+"Almost raw inside",
+"Charred outside, cold inside"
+],
+"n143": [
+"Order the steak doneness levels from least to most cooked:",
+"Blue, rare, medium, well done",
+"Rare, blue, medium, well done",
+"Medium, rare, well done, blue",
+"Blue, medium, rare, well done"
+],
+"n144": [
+"What do you bring for shellfish eaten with the hands?",
+"A finger bowl with warm water and lemon",
+"A glass of cava",
+"A butter knife",
+"A soup spoon"
+],
+"n145": [
+"How is the bill presented?",
+"In a folder or on a small tray, to whoever asked",
+"Read out loud",
+"Open in the middle of the table",
+"To the nearest guest"
+],
+"n146": [
+"At a banquet, which table is served first?",
+"The top table",
+"The one nearest the kitchen",
+"The biggest one",
+"The one at the back"
+],
+"n147": [
+"How do you change a dirty ashtray at the table?",
+"Cap it with a clean one, lift both and put the clean one back",
+"Empty it on the table",
+"Remove it without replacing it",
+"Wipe it with the guest's napkin"
+],
+"n148": [
+"What do you say when serving a dish?",
+"The name of the dish",
+"Its price",
+"Nothing",
+"Who cooked it"
+],
+"n149": [
+"What do you restock at the side station before opening?",
+"Cutlery, napkins, bread plates and cruets",
+"Cleaning products",
+"Spare clothes",
+"The till float"
+],
+"n150": [
+"Guests are served moving clockwise around the table."
+],
+"n151": [
+"In French service, guests serve themselves from the platter."
+],
+"n152": [
+"You can clear plates as soon as the first guest finishes, even if others are still eating."
+],
+"n153": [
+"In what order is cutlery used?",
+"From the outside in",
+"From the inside out",
+"Dessert cutlery first",
+"Left-hand ones first"
+],
+"n154": [
+"Which way does the knife blade face on the table?",
+"Towards the plate",
+"Away from the plate",
+"Upwards",
+"Towards the table edge"
+],
+"n155": [
+"Where does dessert cutlery go in a place setting?",
+"Above the plate, lying across",
+"On the right, outside",
+"On the left, outside",
+"Under the plate"
+],
+"n156": [
+"Where does the water glass go?",
+"Top right, above the knife tip",
+"On the left, above the fork",
+"On the bread plate",
+"In the middle of the table"
+],
+"n157": [
+"With water, red and white wine glasses, which is usually the largest?",
+"The water glass",
+"The white wine glass",
+"The red wine glass",
+"They're all the same"
+],
+"n158": [
+"Where is the butter knife placed?",
+"On the bread plate",
+"Next to the dinner knife",
+"Above the plate, lying across",
+"To the left of the fork"
+],
+"n159": [
+"How far from the table edge are plates and cutlery placed?",
+"About 2 cm, two fingers",
+"About 15 cm",
+"Right on the edge, sticking out",
+"In the middle of the table"
+],
+"n160": [
+"What is a charger plate?",
+"A large decorative plate under the dinner plate",
+"The dessert plate",
+"The bread plate",
+"The serving tray"
+],
+"n161": [
+"What is a trivet for?",
+"Protecting the tablecloth from hot dishes and pots",
+"Covering stains",
+"Holding the napkin",
+"The bread plate"
+],
+"n162": [
+"The top cloth goes…",
+"On top of the tablecloth, to protect and decorate it",
+"Under the silence cloth",
+"Instead of napkins",
+"Only on the terrace"
+],
+"n163": [
+"Cutlery is used from the outside in."
+],
+"n164": [
+"The knife blade faces away from the plate."
+],
+"n165": [
+"The water glass is usually the largest glass."
+],
+"n166": [
+"What makes salmorejo different from gazpacho?",
+"Thicker, made with bread, topped with egg and ham",
+"It's served hot",
+"It has milk and cream",
+"It has no tomato"
+],
+"n167": [
+"Which city is salmorejo typical of?",
+"Córdoba",
+"Valencia",
+"Bilbao",
+"Santiago de Compostela"
+],
+"n168": [
+"What goes in traditional Valencian paella?",
+"Chicken, rabbit, green beans and butter beans",
+"Prawns, mussels and squid",
+"Chorizo and peppers",
+"Squid ink and cuttlefish"
+],
+"n169": [
+"What is socarrat?",
+"The toasted rice crust at the bottom of a paella",
+"A rice variety",
+"A Valencian dessert",
+"Paella sauce"
+],
+"n170": [
+"What makes black rice black?",
+"Squid or cuttlefish ink",
+"Black olives",
+"Coffee",
+"Black pepper"
+],
+"n171": [
+"What is pulpo a la gallega?",
+"Boiled octopus with paprika, coarse salt and olive oil",
+"Battered fried octopus",
+"Octopus stewed in tomato",
+"Raw octopus with lemon"
+],
+"n172": [
+"What is fabada asturiana?",
+"A bean stew with chorizo, black pudding and ham",
+"A chickpea and meat stew",
+"A fish soup",
+"A bean salad"
+],
+"n173": [
+"How is cocido madrileño traditionally served?",
+"In stages: soup first, then chickpeas and veg, then the meats",
+"All mixed on one plate",
+"Cold, as a salad",
+"With rice"
+],
+"n174": [
+"How is cured ham cut for serving?",
+"In very thin small slices, with some fat",
+"In thick cubes",
+"In thick slices without fat",
+"Finely chopped"
+],
+"n175": [
+"At what temperature is Iberian ham served?",
+"Room temperature, about 20–25 °C",
+"Straight from the fridge",
+"Warmed in the oven",
+"Very cold so it doesn't sweat"
+],
+"n176": [
+"What is Iberian acorn-fed ham (bellota)?",
+"From Iberian pigs fed on acorns in the dehesa",
+"From white farm pigs",
+"Cooked turkey ham",
+"A Galician ham"
+],
+"n177": [
+"What is Manchego cheese?",
+"Sheep's milk cheese from La Mancha",
+"Cow's milk cheese from Galicia",
+"Goat's cheese from the Canaries",
+"Blue cheese from Asturias"
+],
+"n178": [
+"Which cheese is blue and from Asturias?",
+"Cabrales",
+"Idiazábal",
+"Tetilla",
+"Mahón"
+],
+"n179": [
+"What is \"leche frita\"?",
+"Thick milk custard, coated and fried",
+"Boiled milk with cinnamon",
+"A vanilla milkshake",
+"Fried fresh cheese"
+],
+"n180": [
+"What is crema catalana?",
+"Custard with a burnt sugar top",
+"Flan with runny caramel",
+"Custard with a biscuit",
+"Rice pudding"
+],
+"n181": [
+"What does \"pochar\" a vegetable mean?",
+"Cooking it gently in oil without browning",
+"Frying it hard until golden",
+"Boiling it in salted water",
+"Roasting it"
+],
+"n182": [
+"What does \"blanching\" a vegetable mean?",
+"Briefly boiling it, then chilling it in iced water",
+"Peeling and washing it",
+"Boiling it until soft",
+"Frying it without colour"
+],
+"n183": [
+"What does \"emulsify\" mean?",
+"Combining two liquids that don't mix, like oil and water",
+"Boiling hard",
+"Dicing",
+"Quick freezing"
+],
+"n184": [
+"What is béchamel?",
+"A sauce of milk, butter and flour",
+"A tomato and onion sauce",
+"Garlic mayonnaise",
+"Thickened meat stock"
+],
+"n185": [
+"What is a \"fondo\" in cooking?",
+"A concentrated stock of bones and vegetables",
+"The bottom of the pan",
+"A dessert sauce",
+"The last course"
+],
+"n186": [
+"What is a julienne cut?",
+"Thin, long strips",
+"Very small dice",
+"Thick rounds",
+"Very thin slices"
+],
+"n187": [
+"What is a brunoise cut?",
+"Very small dice",
+"Thin, long strips",
+"Rounds",
+"Thick batons"
+],
+"n188": [
+"What is a dish \"a la romana\"?",
+"Dipped in flour and egg, then fried",
+"Coated in egg and breadcrumbs",
+"Griddled",
+"Stewed in tomato"
+],
+"n189": [
+"What is \"empanar\"?",
+"Coating in egg and breadcrumbs before frying",
+"Dusting with flour only",
+"Putting inside a pie",
+"Baking without fat"
+],
+"n190": [
+"What is escabeche?",
+"A preserve of oil, vinegar, bay and spices",
+"A sweet tomato sauce",
+"Fried fish",
+"A seafood stock"
+],
+"n191": [
+"What does \"al dente\" pasta mean?",
+"Cooked but firm to the bite",
+"Very soft",
+"Raw inside",
+"Fried after boiling"
+],
+"n192": [
+"What is a \"ración\"?",
+"A sharing plate larger than a tapa",
+"A very small tapa",
+"The first course",
+"An individual dessert"
+],
+"n193": [
+"What are patatas bravas?",
+"Fried potatoes with a spicy sauce",
+"Boiled potatoes with mayo",
+"Mashed potato with cheese",
+"Roast potatoes with rosemary"
+],
+"n194": [
+"Gazpacho is served cold."
+],
+"n195": [
+"Salmorejo comes from Galicia."
+],
+"n196": [
+"Brunoise is a cut into long strips."
+],
+"n197": [
+"Traditional Valencian paella contains seafood."
+],
+"n198": [
+"Which of these is NOT one of the 14 mandatory allergens?",
+"Tomato",
+"Sulphites",
+"Lupin",
+"Mustard"
+],
+"n199": [
+"Which of these IS one of the 14 mandatory allergens?",
+"Celery",
+"Potato",
+"Rice",
+"Pepper"
+],
+"n200": [
+"Which allergen almost always has to be declared for wine?",
+"Sulphites",
+"Gluten",
+"Soy",
+"Mustard"
+],
+"n201": [
+"Which allergens does béchamel usually contain?",
+"Milk and gluten",
+"Only egg",
+"Nuts",
+"None"
+],
+"n202": [
+"Which of these grains has NO gluten?",
+"Rice",
+"Barley",
+"Rye",
+"Spelt"
+],
+"n203": [
+"Why isn't gluten-free food fried in the same oil as croquettes?",
+"Cross-contamination with gluten",
+"It comes out greasier",
+"The oil burns faster",
+"There's no problem doing it"
+],
+"n204": [
+"What is the temperature \"danger zone\" where bacteria grow fastest?",
+"Between 5 and 65 °C",
+"Below 0 °C",
+"Above 100 °C",
+"Between -18 and 0 °C"
+],
+"n205": [
+"What is the correct way to thaw meat?",
+"In the fridge, allowing time",
+"On the counter overnight",
+"In hot water",
+"In the sun on the terrace"
+],
+"n206": [
+"What is HACCP (APPCC in Spanish)?",
+"Hazard Analysis and Critical Control Points system",
+"The Spanish chefs' association",
+"The food handler card",
+"A type of oven"
+],
+"n207": [
+"In the colour code, which chopping board is for raw meat?",
+"Red",
+"Green",
+"Blue",
+"White"
+],
+"n208": [
+"In the colour code, which chopping board is for raw fish?",
+"Blue",
+"Red",
+"Yellow",
+"Green"
+],
+"n209": [
+"In the colour code, which chopping board is for fruit and vegetables?",
+"Green",
+"Blue",
+"Red",
+"Brown"
+],
+"n210": [
+"In the cold room, where is raw meat stored?",
+"At the bottom, below cooked food",
+"On the top shelf",
+"Next to desserts",
+"On the same tray as vegetables"
+],
+"n211": [
+"What minimum core temperature must reheated food reach?",
+"About 70–75 °C",
+"About 45 °C",
+"About 55 °C",
+"About 35 °C"
+],
+"n212": [
+"What should the label on a stored preparation show?",
+"Name, preparation date and use-by date",
+"Only the price",
+"Only the cook's name",
+"Nothing if it's covered"
+],
+"n213": [
+"What is a blast chiller used for?",
+"Rapidly cooling cooked food",
+"Whisking egg whites",
+"Keeping food hot",
+"Washing dishes"
+],
+"n214": [
+"In what order is a work surface cleaned?",
+"Detergent, rinse, then disinfectant",
+"Disinfectant, then detergent",
+"Neat bleach only",
+"Hot water only"
+],
+"n215": [
+"A colleague has a cut on their hand. What should they do to keep working?",
+"Cover it with a coloured waterproof plaster and wear a glove",
+"Carry on uncovered",
+"Wash it with bleach",
+"Just wear a glove, no plaster"
+],
+"n216": [
+"A guest says they're allergic to shellfish. What do you do?",
+"Tell the kitchen and check each dish's allergens",
+"Tell them to push the prawns aside",
+"Recommend the dish of the day without checking",
+"Nothing, it's on the menu"
+],
+"n217": [
+"You can wear rings and bracelets when handling food."
+],
+"n218": [
+"Rice contains gluten."
+],
+"n219": [
+"Sulphites are one of the 14 allergens that must be declared."
+],
+"n220": [
+"Thawing meat on the counter overnight is safe."
+],
+"n221": [
+"A guest arrives and every table is full. What do you do?",
+"Greet them, give the wait time and offer the bar while they wait",
+"Ignore them until a table frees up",
+"Tell them to come back another day",
+"Seat them at a reserved table"
+],
+"n222": [
+"A guest walks in while you're serving another table. What do you do?",
+"Acknowledge them with a nod or \"I'll be right with you\"",
+"Finish first, then look up",
+"Pretend not to see them",
+"Ask them to wait outside"
+],
+"n223": [
+"A guest says their dish is cold. What do you do?",
+"Apologise, take it away and ask the kitchen to redo it",
+"Say it's meant to be eaten like that",
+"Microwave it without saying anything",
+"Offer more bread"
+],
+"n224": [
+"What is suggestive selling?",
+"Recommending items that complement the guest's order",
+"Forcing the guest to order more",
+"Charging for items not ordered",
+"Giving unauthorised discounts"
+],
+"n225": [
+"A guest asks about a dish you don't know well. What do you do?",
+"Say you'll check with the kitchen and come back",
+"Tell them what you imagine",
+"Say nobody knows",
+"Suggest another dish without answering"
+],
+"n226": [
+"A guest has had too much and orders another drink. What do you do?",
+"Offer water or a soft drink and tell the manager",
+"Serve a double to calm them down",
+"Shout at them to leave",
+"Serve them and say nothing"
+],
+"n227": [
+"What details do you take for a booking?",
+"Name, phone, date, time and number of guests",
+"Just the name",
+"Name and ID number",
+"Just the time"
+],
+"n228": [
+"What is a no-show?",
+"A guest who books and doesn't turn up",
+"An off-menu dish",
+"A waiter who misses a shift",
+"A table that didn't tip"
+],
+"n229": [
+"What is the \"hoja de reclamaciones\"?",
+"An official complaint form the guest can request",
+"The wine list",
+"The itemised bill",
+"The kitchen incident log"
+],
+"n230": [
+"A guest asks for the complaint form. What do you do?",
+"Give it to them: the venue must have one",
+"Say there isn't one",
+"Ask them to come back tomorrow",
+"Offer a free drink so they don't fill it in"
+],
+"n231": [
+"How does tipping work in Spain?",
+"It's voluntary: the guest decides",
+"A compulsory 10 %",
+"A compulsory 15 %",
+"Always included in the bill"
+],
+"n232": [
+"When do you check that everything is fine?",
+"A few minutes after serving the dish",
+"When bringing the bill",
+"Before the food arrives",
+"Never, it's annoying"
+],
+"n233": [
+"A guest wants to pay by card. What do you do?",
+"Bring the card machine to the table",
+"Take the card to the bar and ask for the PIN",
+"Ask them to say their PIN out loud",
+"Say it's cash only"
+],
+"n234": [
+"A guest leaves without paying. What do you do?",
+"Tell the manager",
+"Chase them down the street",
+"Pay it yourself and say nothing",
+"Add it to another table's bill"
+],
+"n235": [
+"A visually impaired guest is seated. What do you do?",
+"Read or describe the menu and explain where things are",
+"Speak louder",
+"Talk only to their companion",
+"Bring the dish of the day without asking"
+],
+"n236": [
+"Tipping is compulsory in Spain."
+],
+"n237": [
+"Bars and restaurants must have complaint forms available."
+],
+"n238": [
+"What is the \"pase\" (pass)?",
+"Where the kitchen puts finished dishes for the floor",
+"The staff entrance",
+"The evening shift",
+"The dessert trolley"
+],
+"n239": [
+"What does \"¡oído cocina!\" mean?",
+"The order has been heard and understood",
+"It's too noisy",
+"Turn off the heat",
+"A guest has arrived"
+],
+"n240": [
+"What is a \"partida\" in a kitchen?",
+"A section with its own job: cold, meat, pastry…",
+"A game between shifts",
+"Clocking-off time",
+"A large pot"
+],
+"n241": [
+"What is the \"cuarto frío\"?",
+"The cold section: salads, cold starters",
+"The freezer room",
+"The drinks store",
+"The break room"
+],
+"n242": [
+"What is the \"economato\"?",
+"The dry goods storeroom",
+"The till",
+"The owner's office",
+"The staff canteen"
+],
+"n243": [
+"What is an \"off-menu\" dish?",
+"A special that isn't on the printed menu",
+"A sold-out dish",
+"A dish you can't order",
+"A free dessert"
+],
+"n244": [
+"What is \"table turnover\"?",
+"How many times a table is used in one service",
+"Turning tables to clean them",
+"Changing tablecloths",
+"Moving tables to the terrace"
+],
+"n245": [
+"What is the \"average ticket\"?",
+"What each guest spends on average",
+"The paper bill",
+"The set menu price",
+"The average tip"
+],
+"n246": [
+"What is an \"escandallo\"?",
+"A dish costing sheet",
+"A thick sauce",
+"A guest complaint",
+"The staff rota"
+],
+"n247": [
+"What is \"merma\"?",
+"Product lost when cleaning, trimming or cooking",
+"An Andalusian dessert",
+"A rock fish",
+"A pay bonus"
+],
+"n248": [
+"What is an \"extra\" in hospitality?",
+"Staff hired for a specific event or service",
+"A free tapa",
+"An off-menu dish",
+"A big tip"
+],
+"n249": [
+"Who is the \"jefe de partida\" (chef de partie)?",
+"The person in charge of one kitchen section",
+"The restaurant owner",
+"The head of the dining room",
+"The purchasing manager"
+],
+"n250": [
+"What is a commis waiter?",
+"An assistant waiter",
+"The station head waiter",
+"The sommelier",
+"The maître"
+],
+"n251": [
+"Who is the \"jefe de rango\"?",
+"The waiter in charge of a group of tables",
+"The head cook",
+"The owner",
+"The bar manager"
+],
+"n252": [
+"What is a waiter's \"rango\" (station)?",
+"The group of tables they serve",
+"Their pay grade",
+"Their uniform",
+"Their schedule"
+],
+"n253": [
+"\"¡Marchando!\" means the order is being prepared right away."
+],
+"n254": [
+"A table of four asks for \"separate bills\". What do you do?",
+"Ask what each person had and split by person",
+"Divide the total by four without asking",
+"Say it isn't possible",
+"Charge it all to whoever asked"
+],
+"n255": [
+"A regular asks for \"the usual\" and you're new. What do you do?",
+"Kindly say you're new and ask what they have",
+"Bring a white coffee, the most popular order",
+"Say you don't know and walk off",
+"Wait for a colleague to serve them"
+],
+"n256": [
+"You drop a glass and it shatters near a table. What do you do first?",
+"Warn the guests not to move and sweep up the glass",
+"Pick it up quickly by hand",
+"Leave it until the end of service",
+"Cover it with a napkin"
+],
+"n257": [
+"A guest orders a dish and the kitchen says it's sold out. What do you do?",
+"Tell them straight away and suggest a similar alternative",
+"Wait until they ask why it's taking so long",
+"Bring another dish without telling them",
+"Say you'll bring it later"
+],
+"n258": [
+"A guest complains their food is taking too long. What do you do?",
+"Apologise, check with the kitchen and give a real time",
+"Say it's not your fault",
+"Say \"it's coming\" without knowing",
+"Ignore it so as not to bother the kitchen"
+],
+"n259": [
+"A vegan guest asks about a dish. What must you check?",
+"No meat, fish, egg, dairy or honey",
+"Only that it has no meat",
+"Only that it's gluten-free",
+"That it has no vegetables"
+],
+"n260": [
+"What's the difference between a vegetarian and a vegan guest?",
+"Vegetarians may eat eggs and dairy; vegans don't",
+"Vegans can eat fish",
+"They're the same",
+"Vegetarians don't eat vegetables"
+],
+"n261": [
+"A guest asks for an English menu and there isn't one. What do you do?",
+"Explain the dishes calmly, with gestures or a phone",
+"Say there isn't one and leave",
+"Bring the most expensive dish",
+"Just hand over the Spanish menu"
+],
+"n262": [
+"A table orders red wine with fish. What do you do?",
+"Serve what they ordered; if asked, suggest a white",
+"Tell them it's not allowed",
+"Bring white without telling them",
+"Charge them for a glass change"
+],
+"n263": [
+"What do you do about the glass when a guest orders a different wine?",
+"Bring a clean glass",
+"Pour the new wine into the same glass",
+"Ask them to finish the glass first",
+"Give them a tumbler"
+],
+"n264": [
+"Taking an order from a large table, how do you avoid mixing up dishes?",
+"Use seat numbers for each guest",
+"Memorise everything",
+"Ask \"whose is this?\" when serving",
+"Have each guest write their own"
+],
+"n265": [
+"Why shouldn't you \"auction\" plates (\"who's having the hake?\")?",
+"It's unprofessional: the waiter should know whose dish is whose",
+"The food gets cold",
+"It's illegal",
+"It annoys the kitchen"
+],
+"n266": [
+"What do you do if a guest puts bread on the tablecloth?",
+"Nothing: that's fine if there's no bread plate",
+"Ask them to use a plate",
+"Remove it at once",
+"Change the tablecloth"
+],
+"n267": [
+"What is the usual order of a full meal?",
+"Aperitif, starters, first, main, dessert, coffee and liqueur",
+"Coffee, dessert, first and main",
+"First, aperitif, dessert and main",
+"Starters, dessert, main and coffee"
+],
+"n268": [
+"What does a Spanish \"menú del día\" usually include?",
+"Starter, main, dessert or coffee, bread and a drink",
+"Just one dish and water",
+"One dish, coffee and liqueur",
+"Mixed tapas, no drink"
+],
+"n269": [
+"A guest asks for \"a water\". What do you ask?",
+"Still or sparkling, chilled or room temperature",
+"Nothing, bring tap water",
+"Whether they want lemon and sugar",
+"Whether they want it hot"
+],
+"n270": [
+"How is a soft drink opened at the table?",
+"Opened in front of the guest and poured over ice",
+"Opened at the bar and served pre-poured",
+"Left closed for them to open",
+"Shaken before opening"
+],
+"n271": [
+"A guest asks for a gin and tonic with a specific brand. What do you do?",
+"Show the bottle as you pour so they see the brand",
+"Use the house gin",
+"Say they're all the same",
+"Charge for the house gin"
+],
+"n272": [
+"A soft drink is opened in front of the guest."
+],
+"n273": [
+"Why is cava served in a flute?",
+"To keep the bubbles longer",
+"It holds more",
+"So it warms up faster",
+"Because it's cheaper"
+],
+"n274": [
+"Why is a red wine glass usually wider than a white wine glass?",
+"To aerate the wine and gather its aromas",
+"To fit more ice",
+"To keep it cool",
+"To tell them apart by colour"
+],
+"n275": [
+"How do you check a glass before putting it on the table?",
+"Hold it up to the light for marks or smears",
+"Smell it",
+"Blow inside it",
+"No need if it's from the dishwasher"
+],
+"n276": [
+"How are glasses dried and polished?",
+"With a clean lint-free cloth, using steam",
+"With kitchen paper",
+"With the table cloth",
+"Air-dried, not polished"
+],
+"n277": [
+"What is an ISO tasting glass?",
+"A standard glass for wine tasting",
+"A large cocktail glass",
+"A shot glass",
+"A brandy glass"
+],
+"n278": [
+"A flute makes cava lose its bubbles faster."
+],
+"n279": [
+"A guest asks for \"a cortado with cold milk\". What do you make?",
+"An espresso with a splash of cold milk",
+"An iced coffee",
+"A cold white coffee",
+"Cold milk with a little coffee"
+],
+"n280": [
+"A guest asks for white coffee \"with lukewarm milk\". What does that mean?",
+"Milk less hot than usual",
+"Cold milk",
+"Boiling milk",
+"Milk with lots of foam"
+],
+"n281": [
+"What is a \"pintxo\" in the Basque Country?",
+"An elaborate tapa, often on bread with a cocktail stick",
+"A dessert",
+"A type of wine",
+"A fish stew"
+],
+"n282": [
+"What is \"pescaíto frito\"?",
+"Small floured fried fish, typical of Andalusia",
+"Baked fish",
+"Raw marinated fish",
+"Fish in green sauce"
+],
+"n283": [
+"What is gazpachuelo?",
+"A hot fish soup with mayonnaise from Málaga",
+"A thicker gazpacho",
+"Gazpacho with fruit",
+"Salmorejo with tuna"
+],
+"n284": [
+"What is pipirrana?",
+"A salad of chopped tomato, pepper, onion and cucumber",
+"A potato stew",
+"Garlic soup",
+"An almond dessert"
+],
+"n285": [
+"What is pil-pil?",
+"Garlic and oil sauce emulsified with the cod's gelatine",
+"Spicy tomato sauce",
+"Seafood stock",
+"Lemon mayonnaise"
+],
+"n286": [
+"What are \"migas\"?",
+"Day-old bread fried with garlic and served with sides",
+"Small croquettes",
+"Fish scraps",
+"Savoury crackers"
+],
+"n287": [
+"Spanish omelette contains flour."
+],
+"n288": [
+"How often should cold room temperatures be checked and recorded?",
+"Every day, in the log",
+"Once a month",
+"Only during an inspection",
+"Never, they have a thermostat"
+],
+"n289": [
+"Where should kitchen staff wash their hands?",
+"At a hands-free hand-wash basin",
+"In the vegetable sink",
+"In the dishwashing sink",
+"In the guest toilets"
+],
+"n290": [
+"How should a homemade sauce with raw egg be handled?",
+"Use pasteurised egg or serve it straight away, chilled",
+"Leave it on the counter all day",
+"Keep it for a week",
+"Reheat it the next day"
+],
+"n291": [
+"Fish to be eaten raw (sushi, pickled anchovies) must be frozen first to kill anisakis."
+],
+"n292": [
+"What is a \"split shift\"?",
+"Working morning and evening with a long break between",
+"Working two days straight",
+"A half shift",
+"A night shift"
+],
+"n293": [
+"What does \"cerrar caja\" mean?",
+"Counting the cash and balancing the day's sales",
+"Locking the door",
+"Turning off the coffee machine",
+"Putting away drinks crates"
+],
+"n294": [
+"What is minimum stock?",
+"The lowest amount of a product before reordering",
+"The lowest price",
+"The best-selling item",
+"What's left at closing"
+],
+"n295": [
+"What is an \"albarán\"?",
+"The delivery note that comes with goods",
+"The guest's bill",
+"The dessert menu",
+"The employment contract"
 ]
 }

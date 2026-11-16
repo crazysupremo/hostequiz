@@ -7,7 +7,7 @@
 <title>HosteQuiz · Presentador</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Cairo:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
 <link rel="stylesheet" href="/style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 </head>
@@ -25,7 +25,7 @@ const chosen = new Set();
 const mine = store.get("hq-quizzes") || []; // quizzes creados en este aparato
 const chosenMine = new Set();
 const chosenLv = new Set(); // vacío = todos los niveles
-const opts = { n: null, t: 20 };
+const opts = { n: null, t: 20, mode: "solo" };
 const startQuiz = new URLSearchParams(location.search).get("quiz");
 onLangChange = () => current && current.fn(current.d, true);
 
@@ -46,6 +46,8 @@ function render(html) {
   wireEnd();
 }
 function show(fn, d) { current = { fn, d }; fn(d, false); }
+const ICON_PHONES = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="5" width="8" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="3" width="8" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>';
+const ICON_SCREEN = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 const qLabel = (d) => `${t("question")} <bdi>${d.idx + 1}</bdi> ${t("of")} <bdi>${d.total}</bdi>${d.c || d.cat ? " · " + esc(catName(d.c, d.cat)) : ""}${d.n ? " · " + lvTag(d.n) : ""}`;
 
 // ---------- 1. Configurar ----------
@@ -68,10 +70,17 @@ async function setup(err = "") {
       <div class="row" style="justify-content:space-between"><h3>${t("myQuizzes")}</h3><a class="btn ghost small" href="/crear.html">${t("createOther")}</a></div>
       <div class="chips">${mine.map((q) => `<button class="chip" data-m="${q.id}" aria-pressed="${chosenMine.has(q.id)}">★ ${esc(q.title)} <span class="n">${q.preguntas.length}</span></button>`).join("")}</div>
     </div>` : `<p class="muted small">${t("wantOwn")} <a href="/crear.html" style="color:var(--caramel)">${t("wantOwnLink")}</a>.</p>`}
+    <div class="card">
+      <h3>${t("modeTitle")}</h3>
+      <div class="modepick">
+        ${[["solo", "modeSolo", "modeSoloDesc", ICON_PHONES], ["clasico", "modeSame", "modeSameDesc", ICON_SCREEN]].map(([v, a, b, ic]) => `
+          <button type="button" class="modeopt" data-mode="${v}" aria-pressed="${opts.mode === v}">${ic}<span><b>${t(a)}</b><small>${t(b)}</small></span></button>`).join("")}
+      </div>
+    </div>
     <div class="card"><h3>${t("level")}</h3><div class="chips" id="lv"></div></div>
     <div class="row" style="align-items:stretch">
       <div class="card" style="flex:1;min-width:220px">
-        <label class="label" for="n">${t("nQuestions")}</label>
+        <label class="label" for="n">${opts.mode === "solo" ? t("perPlayer", { n: "" }).trim() : t("nQuestions")}</label>
         <select id="n">${[5, 10, 15, 20, 30, 40].map((n) => `<option value="${n}" ${n === opts.n ? "selected" : ""}>${n}</option>`).join("")}<option value="100" ${opts.n === 100 ? "selected" : ""}>${t("allQ")}</option></select>
       </div>
       <div class="card" style="flex:1;min-width:220px">
@@ -81,7 +90,9 @@ async function setup(err = "") {
     </div>
     <p class="muted small" id="avail"></p>
     <p class="error">${esc(err ? t(err) : "")}</p>
-    <div class="row end"><button class="btn big" id="go">${t("createBtn")}</button></div>`);
+    <div class="row end"><button class="btn big" id="go">${t("createBtn")}</button></div>
+    ${newsLink()}`);
+  app.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => { opts.mode = b.dataset.mode; setup(err); }));
 
   document.getElementById("n").addEventListener("change", (e) => (opts.n = +e.target.value));
   document.getElementById("t").addEventListener("change", (e) => (opts.t = +e.target.value));
@@ -126,8 +137,8 @@ async function setup(err = "") {
     e.currentTarget.disabled = true;
     Sound.unlock();
     try {
-      const r = await api("/api/host/create", { cats: [...chosen], custom: mine.filter((q) => chosenMine.has(q.id)), niveles: [...chosenLv], n: opts.n, time: opts.t });
-      game = { pin: r.pin, key: r.hostKey };
+      const r = await api("/api/host/create", { cats: [...chosen], custom: mine.filter((q) => chosenMine.has(q.id)), niveles: [...chosenLv], n: opts.n, time: opts.t, mode: opts.mode });
+      game = { pin: r.pin, key: r.hostKey, mode: r.mode };
       store.set("hq-host", game, sessionStorage);
       connect();
     } catch (ex) { setup(ex.message); }
@@ -140,7 +151,8 @@ function connect() {
   if (es) es.close();
   render(`${header()}<div class="full"><h2 class="waitdots">${t("connecting")}</h2></div>`);
   es = stream({ pin: game.pin, role: "host", key: game.key }, {
-    hello: (d) => { game.total = d.total; if (d.state === "lobby") show(lobby, {}); },
+    hello: (d) => { game.total = d.total; game.mode = d.mode; if (d.state === "lobby") show(lobby, {}); },
+    race: (d) => { if (current?.fn === showRace) { current.d = d; drawRace(d); } else show(showRace, d); },
     players: (list) => {
       if (list.length > players.length && current?.fn === lobby) Sound.join();
       players = list;
@@ -171,13 +183,15 @@ function lobby() {
       <div class="stack">
         <p class="label">${t("joinAt")} <b style="color:var(--crema);letter-spacing:0;text-transform:none;font-size:18px" dir="ltr">${esc(location.host)}</b> ${t("withPin")}</p>
         <div class="pinbox"><div class="pin">${game.pin.replace(/(\d{3})(\d{3})/, "$1 $2")}</div></div>
-        <p class="muted">${t("qCount", { n: game.total })} · ${t("scanQR")}</p>
+        <p class="muted">${game.mode === "solo" ? t("perPlayer", { n: game.total }) : t("qCount", { n: game.total })} · ${t("scanQR")}</p>
+        ${game.mode === "solo" ? `<p class="muted small">${ICON_PHONES} ${t("modeSoloDesc")}</p>` : ""}
         <p class="muted small">${GLOBE} ${t("langHint")}</p>
       </div>
       ${qr ? `<div class="qr">${qr}</div>` : ""}
     </div>
     <div class="row" style="justify-content:space-between"><h2 id="pcount">${t("players")}</h2><button class="btn big" id="start" disabled>${t("start")}</button></div>
-    <div class="players" id="plist"></div>`);
+    <div class="players" id="plist"></div>
+    ${newsLink()}`);
   document.getElementById("start").addEventListener("click", () => { Sound.unlock(); act("start"); });
   drawPlayers();
 }
@@ -189,6 +203,34 @@ function drawPlayers() {
     ? players.map((p) => `<span class="player ${p.online ? "" : "off"}">${esc(p.name)}<button title="${esc(t("kick", { n: p.name }))}" aria-label="${esc(t("kick", { n: p.name }))}" data-k="${p.id}">✕</button></span>`).join("")
     : `<p class="muted waitdots">${t("waitingFirst")}</p>`;
   el.querySelectorAll("[data-k]").forEach((b) => b.addEventListener("click", () => act("kick", { id: b.dataset.k })));
+}
+
+// ---------- Carrera en directo (modo individual) ----------
+function showRace(d, redraw) {
+  render(`
+    ${header()}
+    <div class="row" style="justify-content:space-between"><h1>${t("race")}</h1><span class="pill">${t("perPlayer", { n: d.total })}</span></div>
+    <ol class="race" id="race"></ol>
+    <div class="row end"><button class="btn big" id="finish">${t("finishBtn")}</button></div>`);
+  document.getElementById("finish").addEventListener("click", () => act("finish"));
+  drawRace(d);
+}
+let lastRaceRanks = {};
+function drawRace(d) {
+  const el = document.getElementById("race");
+  if (!el) return;
+  const max = Math.max(1, ...d.list.map((r) => r.score));
+  el.innerHTML = d.list.map((r) => {
+    const mv = (lastRaceRanks[r.id] || r.rank) - r.rank;
+    return `<li class="${r.done ? "done" : ""} ${r.online ? "" : "off"}">
+      <span class="pos">${r.rank}</span>
+      <span class="who"><b>${esc(r.name)}</b><span class="prog"><i style="width:${(r.i / Math.max(1, r.total)) * 100}%"></i></span><small>${r.done ? "✓ " + t("finished") : `${r.i} / ${r.total}`} · ${t("hitsOf", { a: r.correct, b: r.i })}</small></span>
+      ${mv > 0 ? '<span class="mv up">▲</span>' : mv < 0 ? '<span class="mv down">▼</span>' : '<span class="mv"></span>'}
+      <span class="sc">${r.score}</span>
+      <span class="bar" style="width:${(r.score / max) * 100}%"></span>
+    </li>`;
+  }).join("") || `<p class="muted">${t("nobody")}</p>`;
+  lastRaceRanks = Object.fromEntries(d.list.map((r) => [r.id, r.rank]));
 }
 
 // ---------- 4. Pregunta ----------

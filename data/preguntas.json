@@ -3,9 +3,12 @@
   "cafes": "Cafés",
   "tes": "Tés, infusiones y cacao",
   "bebidas": "Bebidas y su servicio",
+  "vinos": "Vinos y bodega",
+  "cocteleria": "Coctelería y destilados",
   "cristaleria": "Vasos y copas",
   "montaje": "Montaje y mise en place",
   "servicio": "Servicio en sala",
+  "cliente": "Atención al cliente",
   "cocina": "Cocina y menú del día",
   "higiene": "Higiene y seguridad",
   "vocabulario": "Vocabulario de hostelería"
@@ -150,8 +153,8 @@
    "q": "¿Qué se espolvorea por encima del quemadillo?",
    "a": [
     "Canela en polvo",
-    "Pimienta",
-    "Sal",
+    "Cacao en polvo",
+    "Nuez moscada",
     "Azúcar glas"
    ],
    "n": 3
@@ -294,9 +297,9 @@
    "q": "¿Qué se hace con el vaporizador después de cada uso?",
    "a": [
     "Purgarlo y limpiarlo con un paño húmedo",
-    "Dejarlo así hasta el cierre",
-    "Meterlo en agua fría",
-    "Nada"
+    "Limpiarlo solo al cerrar",
+    "Purgarlo sin limpiarlo",
+    "Limpiarlo con el paño de las mesas"
    ],
    "n": 3
   },
@@ -318,9 +321,9 @@
    "q": "¿A qué temperatura más o menos se calienta la leche para la espuma?",
    "a": [
     "Unos 60–65 °C, sin hervir",
+    "Unos 80–85 °C",
     "Hasta que hierva (100 °C)",
-    "30 °C",
-    "Da igual"
+    "Unos 35–40 °C"
    ],
    "n": 3
   },
@@ -330,9 +333,9 @@
    "q": "¿Qué es «una carga» de café?",
    "a": [
     "La dosis de café molido para un café",
-    "Una taza grande",
-    "Un sobre de azúcar",
-    "Un vaso de leche"
+    "La cantidad de agua de un café",
+    "Un café doble",
+    "El tiempo de extracción"
    ],
    "n": 2
   },
@@ -413,18 +416,6 @@
    "n": 3
   },
   {
-   "id": "p036",
-   "c": "tes",
-   "q": "¿Qué lleva un Cola Cao?",
-   "a": [
-    "Leche caliente y un sobre de Cola Cao",
-    "Agua y café",
-    "Leche fría y café",
-    "Agua caliente y bolsita de té"
-   ],
-   "n": 1
-  },
-  {
    "id": "p037",
    "c": "tes",
    "q": "¿En qué se sirve el Cola Cao?",
@@ -481,8 +472,8 @@
    "a": [
     "Rodaja de limón o de naranja",
     "Aceituna",
-    "Canela",
-    "Nata"
+    "Hoja de hierbabuena",
+    "Corteza de lima y sal"
    ],
    "n": 1
   },
@@ -516,9 +507,9 @@
    "q": "¿Qué lleva el mosto?",
    "a": [
     "2 o 3 hielos, rodaja de naranja y aceituna",
-    "Nata",
-    "Canela",
-    "Leche"
+    "3 o 4 hielos y corteza de limón",
+    "Solo hielo",
+    "Nada, se sirve del tiempo"
    ],
    "n": 3
   },
@@ -540,9 +531,9 @@
    "q": "¿En qué se sirve la cerveza?",
    "a": [
     "En copa o jarra",
-    "En vaso de chupito",
-    "En taza",
-    "En copa de cóctel"
+    "En copa de vino",
+    "En vaso bajo",
+    "En copa de balón"
    ],
    "n": 1
   },
@@ -565,8 +556,8 @@
    "a": [
     "Corteza de limón o de naranja",
     "Aceituna",
-    "Canela",
-    "Nata"
+    "Guinda",
+    "Sal en el borde"
    ],
    "n": 2
   },
@@ -652,18 +643,6 @@
    "n": 1
   },
   {
-   "id": "p058",
-   "c": "cristaleria",
-   "q": "¿En qué vaso se sirve un chupito?",
-   "a": [
-    "Vaso de chupito",
-    "Vaso de tubo",
-    "Copa de balón",
-    "Jarra"
-   ],
-   "n": 1
-  },
-  {
    "id": "p059",
    "c": "cristaleria",
    "q": "¿Qué se sirve en el vaso de refresco?",
@@ -693,9 +672,9 @@
    "q": "¿Qué se sirve en la copa de champán plana?",
    "a": [
     "Cava",
+    "Vino tinto",
     "Cerveza",
-    "Café",
-    "Agua"
+    "Licor"
    ],
    "n": 3
   },
@@ -753,9 +732,9 @@
    "q": "¿En qué se puede servir un licor?",
    "a": [
     "Vaso bajo, copa de licor o vaso de tubo",
-    "Taza grande",
-    "Jarra de cerveza",
-    "Tetera"
+    "Copa de vino",
+    "Copa de cóctel",
+    "Jarra de cerveza"
    ],
    "n": 3
   },
@@ -766,8 +745,8 @@
    "a": [
     "Copa de vino o vaso bajo",
     "Vaso de chupito",
-    "Jarra",
-    "Taza"
+    "Copa de cóctel",
+    "Copa de balón con tónica"
    ],
    "n": 3
   },
@@ -789,7 +768,7 @@
    "q": "¿En qué se sirve el mosto?",
    "a": [
     "Copa de vino, vaso bajo o vaso de tubo",
-    "Taza",
+    "Copa de cóctel",
     "Vaso de chupito",
     "Jarra de cerveza"
    ],
@@ -888,8 +867,8 @@
    "a": [
     "Derecha",
     "Izquierda",
-    "Arriba del plato",
-    "Encima del plato"
+    "Encima del plato, en horizontal",
+    "A la izquierda, junto al pan"
    ],
    "n": 2
   },
@@ -900,8 +879,8 @@
    "a": [
     "Izquierda",
     "Derecha",
-    "Arriba del plato",
-    "Dentro del plato"
+    "Encima del plato, en horizontal",
+    "A la derecha, junto a la cuchara"
    ],
    "n": 1
   },
@@ -912,8 +891,8 @@
    "a": [
     "Derecha",
     "Izquierda",
-    "Arriba del plato",
-    "Al lado del pan"
+    "Encima del plato, en horizontal",
+    "A la izquierda, fuera de los tenedores"
    ],
    "n": 1
   },
@@ -924,8 +903,8 @@
    "a": [
     "Derecha",
     "Izquierda",
-    "Arriba del plato",
-    "No se pone"
+    "Encima del plato, en horizontal",
+    "Solo se trae con el postre"
    ],
    "n": 3
   },
@@ -936,8 +915,8 @@
    "a": [
     "Izquierda",
     "Derecha",
-    "Arriba del plato",
-    "Dentro del plato"
+    "Encima del plato, en horizontal",
+    "A la derecha, junto a la pala"
    ],
    "n": 2
   },
@@ -972,8 +951,8 @@
    "a": [
     "En el centro, entre los cubiertos",
     "Dentro de la copa",
-    "Debajo del mantel",
-    "En la silla"
+    "Sobre el plato de pan",
+    "Debajo de los cubiertos de la derecha"
    ],
    "n": 3
   },
@@ -983,9 +962,9 @@
    "q": "¿Qué es la mise en place?",
    "a": [
     "Preparar todo antes de empezar el servicio",
-    "El postre del día",
-    "Un tipo de café",
-    "La cuenta del cliente"
+    "Limpiar la sala al cerrar",
+    "Montar solo las copas",
+    "Emplatar el primer plato"
    ],
    "n": 2
   },
@@ -995,9 +974,9 @@
    "q": "¿Qué es el muletón?",
    "a": [
     "La tela gruesa que va debajo del mantel",
-    "Un tipo de copa",
-    "Una servilleta pequeña",
-    "Un cubierto de pescado"
+    "El mantel pequeño de encima",
+    "La servilleta grande",
+    "El protector de la mesa auxiliar"
    ],
    "n": 3
   },
@@ -1007,9 +986,9 @@
    "q": "¿Qué es un aparador?",
    "a": [
     "El mueble de apoyo del camarero en la sala",
-    "Un tipo de cuchillo",
-    "Un horno",
-    "Una copa"
+    "La mesa del maître para las reservas",
+    "El armario de la cocina",
+    "El carrito de los postres"
    ],
    "n": 3
   },
@@ -1069,9 +1048,9 @@
    "q": "Antes de abrir una botella de vino, ¿qué se hace?",
    "a": [
     "Se enseña la etiqueta al cliente",
-    "Se agita bien",
-    "Se calienta",
-    "Se sirve a todos directamente"
+    "Se sirve una copa al camarero",
+    "Se mete siempre en hielo",
+    "Se agita para airearlo"
    ],
    "n": 2
   },
@@ -1082,8 +1061,8 @@
    "a": [
     "La persona que lo ha pedido",
     "El camarero",
-    "El cocinero",
-    "El más joven de la mesa"
+    "La persona de más edad",
+    "El anfitrión siempre, aunque no lo haya pedido"
    ],
    "n": 2
   },
@@ -1105,9 +1084,9 @@
    "q": "¿Cuándo se lleva la cuenta a la mesa?",
    "a": [
     "Cuando el cliente la pide",
-    "Con el primer plato",
-    "Antes de que se sienten",
-    "Nunca"
+    "Al servir el postre",
+    "Al servir el café",
+    "Antes del postre, para adelantar"
    ],
    "n": 1
   },
@@ -1118,8 +1097,8 @@
    "a": [
     "Por el tallo o la base",
     "Por el borde",
-    "Con los dedos por dentro",
-    "Por arriba"
+    "Por el cuerpo de la copa",
+    "Da igual, con la mano limpia"
    ],
    "n": 2
   },
@@ -1141,9 +1120,9 @@
    "q": "¿Con qué mano se lleva la bandeja?",
    "a": [
     "Con la izquierda, para servir con la derecha",
-    "Con la derecha siempre",
-    "Con las dos encima de la cabeza",
-    "Apoyada en el hombro"
+    "Con la derecha, para servir con la izquierda",
+    "Con las dos manos",
+    "Da igual, con la que esté libre"
    ],
    "n": 3
   },
@@ -1172,8 +1151,8 @@
    "q": "Bizcocho de yogur: ¿con qué se miden los ingredientes?",
    "a": [
     "Con el vaso del yogur",
-    "Con una taza grande",
-    "Con un cubo",
+    "Con una báscula en gramos",
+    "Con una taza de café",
     "Con una cuchara sopera"
    ],
    "n": 2
@@ -1232,9 +1211,9 @@
    "q": "¿Qué se hace con el horno antes de meter el bizcocho?",
    "a": [
     "Precalentarlo",
-    "Apagarlo",
-    "Dejarlo abierto",
-    "Llenarlo de agua"
+    "Ponerlo en modo grill",
+    "Encenderlo al meter el bizcocho",
+    "Dejarlo abierto para que entre aire"
    ],
    "n": 2
   },
@@ -1256,21 +1235,9 @@
    "q": "Carbonara: ¿qué parte del huevo se usa?",
    "a": [
     "La yema",
-    "Solo la clara",
-    "La cáscara",
-    "El huevo cocido entero"
-   ],
-   "n": 2
-  },
-  {
-   "id": "p111",
-   "c": "cocina",
-   "q": "Carbonara: ¿qué se puede usar en vez de bacon?",
-   "a": [
-    "Champiñones",
-    "Chocolate",
-    "Fresas",
-    "Atún"
+    "La clara montada",
+    "El huevo entero batido",
+    "Huevo cocido picado"
    ],
    "n": 2
   },
@@ -1280,9 +1247,9 @@
    "q": "Menú del día: ¿qué hay SIEMPRE en los primeros platos?",
    "a": [
     "Un plato de verdura",
-    "Un postre",
+    "Una carne",
     "Un pescado",
-    "Un café"
+    "Un arroz"
    ],
    "n": 2
   },
@@ -1307,18 +1274,6 @@
     "Ensalada de la casa",
     "Alubia verde",
     "Macarrones a la boloñesa"
-   ],
-   "n": 1
-  },
-  {
-   "id": "p115",
-   "c": "cocina",
-   "q": "¿Qué postres hay en el menú del día?",
-   "a": [
-    "Fruta del tiempo y helado de la casa",
-    "Carajillo y quemadillo",
-    "Paella",
-    "Pan con tomate"
    ],
    "n": 1
   },
@@ -1371,9 +1326,9 @@
    "q": "Un cliente pregunta si un plato tiene gluten. ¿Qué haces?",
    "a": [
     "Miro la carta de alérgenos o pregunto en cocina",
-    "Le digo que no tiene nada",
-    "Me lo invento",
-    "Le digo que no lo sé y me voy"
+    "Le digo que lo pida sin pan",
+    "Le recomiendo otro plato sin preguntar",
+    "Le digo que poco gluten no hace daño"
    ],
    "n": 2
   },
@@ -1384,8 +1339,8 @@
    "a": [
     "El que entró antes",
     "El más nuevo",
-    "El más grande",
-    "El que está más cerca"
+    "El que caduca más tarde",
+    "El que está delante"
    ],
    "n": 2
   },
@@ -1395,9 +1350,9 @@
    "q": "¿Cuándo hay que lavarse las manos?",
    "a": [
     "Antes de tocar alimentos y después del baño, la basura o el dinero",
-    "Solo al final del día",
-    "Nunca si llevas guantes",
-    "Una vez por semana"
+    "Solo al empezar el turno",
+    "Solo si se ven sucias",
+    "Solo antes de servir postres"
    ],
    "n": 1
   },
@@ -1407,9 +1362,9 @@
    "q": "¿Qué es la contaminación cruzada?",
    "a": [
     "Pasar bacterias de un alimento crudo a uno cocinado",
-    "Mezclar dos vinos",
-    "Un tipo de servicio",
-    "Cruzar la cocina corriendo"
+    "Cocinar dos platos a la vez",
+    "Mezclar dos salsas",
+    "Congelar y descongelar dos veces"
    ],
    "n": 3
   },
@@ -1438,9 +1393,9 @@
    "q": "¿Qué es la barra?",
    "a": [
     "El mostrador donde se sirven las bebidas",
-    "Un postre",
-    "Una copa",
-    "La cocina"
+    "La zona de cocina caliente",
+    "El almacén de bebidas",
+    "La mesa del maître"
    ],
    "n": 1
   },
@@ -1450,9 +1405,9 @@
    "q": "¿Qué es el office?",
    "a": [
     "La zona de apoyo entre cocina y sala",
-    "La oficina del jefe",
-    "Un tipo de café",
-    "El baño del personal"
+    "La bodega",
+    "La cámara frigorífica",
+    "La oficina del encargado"
    ],
    "n": 3
   },
@@ -1462,9 +1417,9 @@
    "q": "¿Qué significa emplatar?",
    "a": [
     "Colocar la comida en el plato antes de servir",
-    "Lavar los platos",
-    "Romper un plato",
-    "Pedir la cuenta"
+    "Recoger los platos sucios",
+    "Poner los platos en la mesa",
+    "Calentar los platos"
    ],
    "n": 1
   },
@@ -1474,9 +1429,9 @@
    "q": "¿Quién es el maître?",
    "a": [
     "El jefe de sala",
-    "El cocinero",
-    "El friegaplatos",
-    "El cliente"
+    "El jefe de cocina",
+    "El sumiller",
+    "El encargado de barra"
    ],
    "n": 2
   },
@@ -1487,8 +1442,8 @@
    "a": [
     "El experto en vinos",
     "El jefe de cocina",
-    "El que hace los postres",
-    "El portero"
+    "El encargado de barra",
+    "El jefe de sala"
    ],
    "n": 2
   },
@@ -1510,9 +1465,9 @@
    "q": "En cocina, ¿qué significa «¡marcha la mesa 5!»?",
    "a": [
     "Empezar a preparar el siguiente plato de la mesa 5",
-    "Echar a los clientes de la mesa 5",
-    "Cobrar la mesa 5",
-    "Limpiar la mesa 5"
+    "Que la mesa 5 ya se ha ido",
+    "Que la mesa 5 quiere la cuenta",
+    "Que la mesa 5 ha cancelado"
    ],
    "n": 3
   },
@@ -1522,9 +1477,9 @@
    "q": "¿Qué es una reserva?",
    "a": [
     "Una mesa guardada para un cliente a una hora",
-    "Un tipo de cubierto",
-    "La comida que sobra",
-    "El almacén"
+    "Un pedido para llevar",
+    "Una mesa que paga por adelantado",
+    "Una mesa en la terraza"
    ],
    "n": 1
   },
@@ -1939,7 +1894,7 @@
    "a": [
     "No debe llevar hielo",
     "Le falta limón",
-    "Debería ir en taza",
+    "Debería ir en copa de vino",
     "No tiene nada mal"
    ],
    "n": 1
@@ -1953,7 +1908,7 @@
     "Sí, en jarra y sin hielo",
     "No, le falta hielo",
     "No, va en copa de vino",
-    "No, le falta aceituna"
+    "No, debería ir en vaso bajo"
    ],
    "n": 1
   },
@@ -1991,8 +1946,8 @@
    "a": [
     "8–10 °C",
     "16–18 °C",
-    "25 °C",
-    "Caliente"
+    "2–4 °C",
+    "20–22 °C"
    ],
    "n": 2
   },
@@ -2005,7 +1960,7 @@
     "Cava",
     "Cerveza",
     "Vino tinto",
-    "Café"
+    "Vermut"
    ],
    "n": 1
   },
@@ -2112,6 +2067,3366 @@
     "El salvamanteles"
    ],
    "n": 3
+  },
+  {
+   "id": "n001",
+   "c": "cafes",
+   "q": "¿Cuántos gramos de café molido lleva aproximadamente un espresso sencillo?",
+   "n": 2,
+   "a": [
+    "7–9 g",
+    "3–4 g",
+    "14–16 g",
+    "20 g"
+   ]
+  },
+  {
+   "id": "n002",
+   "c": "cafes",
+   "q": "¿Cuánto dura aproximadamente la extracción de un buen espresso?",
+   "n": 2,
+   "a": [
+    "25–30 segundos",
+    "8–10 segundos",
+    "45–50 segundos",
+    "Más de 1 minuto"
+   ]
+  },
+  {
+   "id": "n003",
+   "c": "cafes",
+   "q": "El espresso sale muy rápido, claro y aguado. ¿Qué ajustas primero?",
+   "n": 3,
+   "a": [
+    "Moler más fino",
+    "Moler más grueso",
+    "Poner menos café",
+    "Prensar más flojo"
+   ]
+  },
+  {
+   "id": "n004",
+   "c": "cafes",
+   "q": "El espresso sale muy lento, casi gota a gota, y amargo. ¿Qué ajustas?",
+   "n": 3,
+   "a": [
+    "Moler más grueso",
+    "Moler más fino",
+    "Poner más café",
+    "Prensar más fuerte"
+   ]
+  },
+  {
+   "id": "n005",
+   "c": "cafes",
+   "q": "¿A qué presión trabaja normalmente una cafetera espresso?",
+   "n": 3,
+   "a": [
+    "Unos 9 bares",
+    "Unos 2 bares",
+    "Unos 4 bares",
+    "Unos 20 bares"
+   ]
+  },
+  {
+   "id": "n006",
+   "c": "cafes",
+   "q": "Una crema muy clara que desaparece enseguida suele indicar…",
+   "n": 3,
+   "a": [
+    "Café subextraído (poco café o molienda gruesa)",
+    "Café sobreextraído",
+    "Leche demasiado caliente",
+    "Café recién tostado"
+   ]
+  },
+  {
+   "id": "n007",
+   "c": "cafes",
+   "q": "¿Por qué se ponen las tazas encima de la cafetera?",
+   "n": 2,
+   "a": [
+    "Para que estén calientes y el café no se enfríe",
+    "Para que se sequen después de lavarlas",
+    "Para tenerlas a mano y nada más",
+    "Para desinfectarlas con el calor"
+   ]
+  },
+  {
+   "id": "n008",
+   "c": "cafes",
+   "q": "¿Por qué se purga el grupo antes de colocar el portafiltro?",
+   "n": 3,
+   "a": [
+    "Para limpiar restos y estabilizar la temperatura",
+    "Para enfriar el café",
+    "Para ahorrar café",
+    "Para que salga más crema de leche"
+   ]
+  },
+  {
+   "id": "n009",
+   "c": "cafes",
+   "q": "¿Qué es el \"tamper\" o prensador?",
+   "n": 2,
+   "a": [
+    "La herramienta para compactar el café en el filtro",
+    "La jarra para la leche",
+    "La palanca del vaporizador",
+    "El cajón de los posos"
+   ]
+  },
+  {
+   "id": "n010",
+   "c": "cafes",
+   "q": "¿Qué es el \"lavado ciego\" (backflush) de la cafetera?",
+   "n": 3,
+   "a": [
+    "Limpiar el grupo con un filtro ciego y detergente",
+    "Lavar las tazas a mano",
+    "Pasar agua por el vaporizador",
+    "Vaciar el depósito de posos"
+   ]
+  },
+  {
+   "id": "n011",
+   "c": "cafes",
+   "q": "¿Qué leche hace una espuma más cremosa y estable para un capuchino?",
+   "n": 2,
+   "a": [
+    "Leche entera fría",
+    "Leche desnatada caliente",
+    "Leche condensada",
+    "Leche ya vaporizada antes"
+   ]
+  },
+  {
+   "id": "n012",
+   "c": "cafes",
+   "q": "¿Qué es la \"microespuma\"?",
+   "n": 2,
+   "a": [
+    "Espuma fina y brillante, sin burbujas grandes",
+    "Espuma muy alta y seca",
+    "Leche caliente sin espuma",
+    "Nata montada con azúcar"
+   ]
+  },
+  {
+   "id": "n013",
+   "c": "cafes",
+   "q": "Al empezar a vaporizar la leche, ¿dónde se coloca la punta del vaporizador?",
+   "n": 3,
+   "a": [
+    "Justo bajo la superficie de la leche",
+    "En el fondo de la jarra",
+    "Por encima de la leche",
+    "Pegada a la pared, fuera de la leche"
+   ]
+  },
+  {
+   "id": "n014",
+   "c": "cafes",
+   "q": "¿Por qué no se debe volver a vaporizar leche que ya se calentó?",
+   "n": 2,
+   "a": [
+    "Pierde sabor y textura y sabe a quemado",
+    "Se corta siempre al instante",
+    "Se convierte en nata",
+    "Porque gasta más electricidad"
+   ]
+  },
+  {
+   "id": "n015",
+   "c": "cafes",
+   "q": "¿Qué es el café torrefacto?",
+   "n": 2,
+   "a": [
+    "Café tostado con azúcar",
+    "Café tostado muy claro",
+    "Café sin cafeína",
+    "Café molido extrafino"
+   ]
+  },
+  {
+   "id": "n016",
+   "c": "cafes",
+   "q": "En España, ¿qué es un café \"mezcla\"?",
+   "n": 3,
+   "a": [
+    "Café natural mezclado con torrefacto",
+    "Arábica con robusta",
+    "Café con achicoria",
+    "Café con leche en polvo"
+   ]
+  },
+  {
+   "id": "n017",
+   "c": "cafes",
+   "q": "¿Qué diferencia a la robusta de la arábica?",
+   "n": 3,
+   "a": [
+    "Tiene más cafeína y es más amarga",
+    "Tiene menos cafeína y es más suave",
+    "Es la misma planta con otro nombre",
+    "Solo sirve para descafeinado"
+   ]
+  },
+  {
+   "id": "n018",
+   "c": "cafes",
+   "q": "¿Cómo se conserva el café en grano para que no pierda aroma?",
+   "n": 2,
+   "a": [
+    "Cerrado, en sitio fresco, seco y sin luz",
+    "Abierto en la nevera",
+    "En la tolva toda la semana",
+    "Junto a la cafetera para que esté templado"
+   ]
+  },
+  {
+   "id": "n019",
+   "c": "cafes",
+   "q": "Un cliente pide \"un descafeinado de sobre\". ¿Qué le llevas?",
+   "n": 2,
+   "a": [
+    "Leche o agua caliente con el sobre aparte",
+    "Un descafeinado de máquina",
+    "Un café solo y un sobre de azúcar",
+    "El sobre ya disuelto en la taza"
+   ]
+  },
+  {
+   "id": "n020",
+   "c": "cafes",
+   "q": "¿Qué es un café asiático (típico de Cartagena)?",
+   "n": 3,
+   "a": [
+    "Café con leche condensada, coñac y Licor 43",
+    "Café con hielo y limón",
+    "Café con canela y miel",
+    "Café con helado y nata"
+   ]
+  },
+  {
+   "id": "n021",
+   "c": "cafes",
+   "q": "En Valencia, ¿qué es un \"café del tiempo\"?",
+   "n": 3,
+   "a": [
+    "Café solo con un vaso de hielo y una rodaja de limón",
+    "Café con leche templada",
+    "Café del día anterior",
+    "Café con canela"
+   ]
+  },
+  {
+   "id": "n022",
+   "c": "cafes",
+   "q": "¿Qué es un macchiato italiano?",
+   "n": 2,
+   "a": [
+    "Un espresso \"manchado\" con un poco de espuma",
+    "Leche con un poco de café",
+    "Café con helado",
+    "Café con licor de avellana"
+   ]
+  },
+  {
+   "id": "n023",
+   "c": "cafes",
+   "q": "¿Cuál es la proporción clásica de un capuchino?",
+   "n": 2,
+   "a": [
+    "1/3 café, 1/3 leche, 1/3 espuma",
+    "Mitad café y mitad espuma",
+    "1/4 café y 3/4 leche sin espuma",
+    "2/3 café y 1/3 nata"
+   ]
+  },
+  {
+   "id": "n024",
+   "c": "cafes",
+   "q": "¿Qué es un \"flat white\"?",
+   "n": 3,
+   "a": [
+    "Espresso doble con leche texturizada fina y poca espuma",
+    "Café solo con agua fría",
+    "Capuchino con mucha espuma seca",
+    "Café con nata montada"
+   ]
+  },
+  {
+   "id": "n025",
+   "c": "cafes",
+   "q": "¿Qué es un café frappé?",
+   "n": 2,
+   "a": [
+    "Café frío batido con hielo hasta hacer espuma",
+    "Café flambeado con licor",
+    "Café con leche muy caliente",
+    "Café con leche condensada caliente"
+   ]
+  },
+  {
+   "id": "n026",
+   "c": "cafes",
+   "q": "¿Qué agua conviene usar en la cafetera?",
+   "n": 2,
+   "a": [
+    "Agua filtrada o descalcificada",
+    "Agua con mucha cal",
+    "Agua con gas",
+    "Agua caliente del grifo"
+   ]
+  },
+  {
+   "id": "n027",
+   "c": "cafes",
+   "q": "Al servir un café en mesa, ¿hacia dónde va el asa de la taza?",
+   "n": 2,
+   "a": [
+    "Hacia la derecha del cliente, con la cucharilla detrás",
+    "Hacia la izquierda del cliente",
+    "Hacia el centro de la mesa",
+    "Hacia el camarero"
+   ]
+  },
+  {
+   "id": "n028",
+   "c": "cafes",
+   "q": "¿Qué es un café doble?",
+   "n": 2,
+   "a": [
+    "Dos cargas de café, normalmente en taza grande",
+    "Un café con el doble de leche",
+    "Dos tazas de café solo",
+    "Un café con dos azúcares"
+   ]
+  },
+  {
+   "id": "n029",
+   "c": "cafes",
+   "q": "El café torrefacto se tuesta con azúcar.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n030",
+   "c": "cafes",
+   "q": "Se puede volver a vaporizar leche ya calentada sin que cambie nada.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n031",
+   "c": "cafes",
+   "q": "La robusta tiene más cafeína que la arábica.",
+   "n": 3,
+   "vf": true
+  },
+  {
+   "id": "n032",
+   "c": "tes",
+   "q": "¿A qué temperatura se prepara el té verde?",
+   "n": 2,
+   "a": [
+    "70–80 °C",
+    "100 °C, hirviendo",
+    "50 °C",
+    "90–95 °C"
+   ]
+  },
+  {
+   "id": "n033",
+   "c": "tes",
+   "q": "¿Cuánto tiempo se infusiona normalmente un té negro?",
+   "n": 2,
+   "a": [
+    "3–5 minutos",
+    "30 segundos",
+    "10–12 minutos",
+    "20 minutos"
+   ]
+  },
+  {
+   "id": "n034",
+   "c": "tes",
+   "q": "¿Qué le pasa a un té negro que infusiona demasiado tiempo?",
+   "n": 1,
+   "a": [
+    "Se vuelve amargo y astringente",
+    "Se vuelve más dulce",
+    "Pierde todo el color",
+    "No cambia nada"
+   ]
+  },
+  {
+   "id": "n035",
+   "c": "tes",
+   "q": "¿Cuál de estas NO es una infusión de hierbas?",
+   "n": 2,
+   "a": [
+    "Té negro",
+    "Manzanilla",
+    "Poleo menta",
+    "Tila"
+   ]
+  },
+  {
+   "id": "n036",
+   "c": "tes",
+   "q": "Un cliente pide algo para relajarse antes de dormir. ¿Qué le recomiendas?",
+   "n": 1,
+   "a": [
+    "Una tila",
+    "Un té verde",
+    "Un té negro",
+    "Un café descafeinado"
+   ]
+  },
+  {
+   "id": "n037",
+   "c": "tes",
+   "q": "¿Qué es un té chai?",
+   "n": 2,
+   "a": [
+    "Té negro con especias y leche",
+    "Té verde con limón",
+    "Infusión de jengibre sin té",
+    "Té frío con melocotón"
+   ]
+  },
+  {
+   "id": "n038",
+   "c": "tes",
+   "q": "¿Qué es el rooibos?",
+   "n": 3,
+   "a": [
+    "Una infusión sudafricana sin teína",
+    "Un té verde japonés",
+    "Un té negro ahumado",
+    "Un café verde"
+   ]
+  },
+  {
+   "id": "n039",
+   "c": "tes",
+   "q": "¿Qué es el matcha?",
+   "n": 2,
+   "a": [
+    "Té verde molido en polvo",
+    "Té negro ahumado",
+    "Una infusión de flores",
+    "Un café de Japón"
+   ]
+  },
+  {
+   "id": "n040",
+   "c": "tes",
+   "q": "¿Con qué se acompaña tradicionalmente el chocolate a la taza?",
+   "n": 1,
+   "a": [
+    "Churros o porras",
+    "Tostada con tomate",
+    "Cruasán a la plancha",
+    "Magdalenas saladas"
+   ]
+  },
+  {
+   "id": "n041",
+   "c": "tes",
+   "q": "¿Qué diferencia hay entre churros y porras?",
+   "n": 2,
+   "a": [
+    "Las porras son más gruesas y esponjosas",
+    "Las porras llevan relleno de chocolate",
+    "Los churros son salados",
+    "Las porras se hacen al horno"
+   ]
+  },
+  {
+   "id": "n042",
+   "c": "tes",
+   "q": "El té verde se prepara con agua hirviendo.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n043",
+   "c": "tes",
+   "q": "La manzanilla no tiene teína.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n044",
+   "c": "bebidas",
+   "q": "¿Qué es un \"tercio\"?",
+   "n": 2,
+   "a": [
+    "Botellín de cerveza de 33 cl",
+    "Un tercio de jarra de barril",
+    "Botella de cerveza de 1 litro",
+    "Una caña pequeña de 10 cl"
+   ]
+  },
+  {
+   "id": "n045",
+   "c": "bebidas",
+   "q": "¿Qué es un \"quinto\"?",
+   "n": 2,
+   "a": [
+    "Botellín de cerveza de 20 cl",
+    "Botella de 50 cl",
+    "Una caña doble",
+    "Un vaso de vino pequeño"
+   ]
+  },
+  {
+   "id": "n046",
+   "c": "bebidas",
+   "q": "¿Cuánta espuma lleva una caña bien tirada?",
+   "n": 2,
+   "a": [
+    "Unos dos dedos",
+    "Ninguna",
+    "Media caña",
+    "Solo una línea fina"
+   ]
+  },
+  {
+   "id": "n047",
+   "c": "bebidas",
+   "q": "Al empezar a tirar una cerveza, ¿cómo se pone el vaso?",
+   "n": 2,
+   "a": [
+    "Inclinado unos 45 grados",
+    "Recto desde el principio",
+    "Tocando el grifo con el borde",
+    "Dentro de la cerveza del grifo"
+   ]
+  },
+  {
+   "id": "n048",
+   "c": "bebidas",
+   "q": "¿Por qué se enjuaga el vaso con agua fría antes de tirar la cerveza?",
+   "n": 3,
+   "a": [
+    "Para enfriarlo, limpiar restos y que la espuma salga mejor",
+    "Para quitarle el gas a la cerveza",
+    "Para que pese más",
+    "Porque lo exige la ley"
+   ]
+  },
+  {
+   "id": "n049",
+   "c": "bebidas",
+   "q": "¿Qué es una cerveza tipo lager?",
+   "n": 3,
+   "a": [
+    "Cerveza de baja fermentación, rubia y ligera",
+    "Cerveza negra muy tostada",
+    "Cerveza de trigo turbia",
+    "Cerveza sin alcohol"
+   ]
+  },
+  {
+   "id": "n050",
+   "c": "bebidas",
+   "q": "¿Qué es una cerveza de trigo (weizen)?",
+   "n": 2,
+   "a": [
+    "Cerveza hecha con trigo, turbia y afrutada",
+    "Cerveza con zumo de limón",
+    "Cerveza negra fuerte",
+    "Cerveza sin gluten"
+   ]
+  },
+  {
+   "id": "n051",
+   "c": "bebidas",
+   "q": "¿Qué es la sidra?",
+   "n": 1,
+   "a": [
+    "Bebida fermentada de manzana",
+    "Vino de pera",
+    "Cerveza de trigo",
+    "Licor de anís"
+   ]
+  },
+  {
+   "id": "n052",
+   "c": "bebidas",
+   "q": "¿Cómo se sirve la sidra natural asturiana?",
+   "n": 2,
+   "a": [
+    "Escanciada desde lo alto, poca cantidad cada vez",
+    "En jarra con hielo",
+    "En copa de balón con tónica",
+    "Templada en taza"
+   ]
+  },
+  {
+   "id": "n053",
+   "c": "bebidas",
+   "q": "¿Qué es la tónica?",
+   "n": 2,
+   "a": [
+    "Refresco con gas y quinina, algo amargo",
+    "Agua con gas sin sabor",
+    "Refresco de limón dulce",
+    "Agua mineral sin gas"
+   ]
+  },
+  {
+   "id": "n054",
+   "c": "bebidas",
+   "q": "¿Cuándo se sirve un zumo de naranja natural?",
+   "n": 2,
+   "a": [
+    "Recién exprimido, al momento",
+    "Exprimido por la mañana para todo el día",
+    "Del día anterior, bien frío",
+    "Calentado un poco"
+   ]
+  },
+  {
+   "id": "n055",
+   "c": "bebidas",
+   "q": "¿Qué es la horchata valenciana?",
+   "n": 2,
+   "a": [
+    "Bebida fría de chufa",
+    "Leche caliente con canela",
+    "Zumo de almendra caliente",
+    "Licor de arroz"
+   ]
+  },
+  {
+   "id": "n056",
+   "c": "bebidas",
+   "q": "¿Qué es el \"agua de Valencia\"?",
+   "n": 3,
+   "a": [
+    "Cava con zumo de naranja, ginebra y vodka",
+    "Agua con limón y azúcar",
+    "Horchata con hielo",
+    "Zumo de naranja con agua con gas"
+   ]
+  },
+  {
+   "id": "n057",
+   "c": "bebidas",
+   "q": "¿Qué es un rebujito?",
+   "n": 3,
+   "a": [
+    "Vino manzanilla con refresco de lima-limón",
+    "Cerveza con limón",
+    "Vino tinto con gaseosa",
+    "Ron con refresco de cola"
+   ]
+  },
+  {
+   "id": "n058",
+   "c": "bebidas",
+   "q": "¿Qué es un kalimotxo (calimocho)?",
+   "n": 2,
+   "a": [
+    "Vino tinto con refresco de cola",
+    "Cerveza con refresco de cola",
+    "Vino blanco con gaseosa",
+    "Sidra con limón"
+   ]
+  },
+  {
+   "id": "n059",
+   "c": "bebidas",
+   "q": "¿Qué es la sangría?",
+   "n": 1,
+   "a": [
+    "Vino tinto con fruta, azúcar y algo de licor o refresco",
+    "Cerveza con fruta",
+    "Cava con zumo de naranja",
+    "Mosto con hielo"
+   ]
+  },
+  {
+   "id": "n060",
+   "c": "bebidas",
+   "q": "Un cliente va a conducir y quiere \"una cerveza\". ¿Qué le puedes ofrecer?",
+   "n": 1,
+   "a": [
+    "Una cerveza 0,0",
+    "Una cerveza sin gluten",
+    "Una clara",
+    "Una cerveza de trigo"
+   ]
+  },
+  {
+   "id": "n061",
+   "c": "bebidas",
+   "q": "Un tercio es una botella de cerveza de 33 cl.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n062",
+   "c": "bebidas",
+   "q": "El kalimotxo lleva vino blanco.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n063",
+   "c": "bebidas",
+   "q": "Una cerveza \"sin gluten\" es lo mismo que una cerveza sin alcohol.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n064",
+   "c": "vinos",
+   "q": "En España, ¿qué es un vino tinto \"crianza\"?",
+   "n": 3,
+   "a": [
+    "Mínimo 2 años de envejecimiento, al menos 6 meses en barrica",
+    "Vino del año sin barrica",
+    "Mínimo 5 años, 18 meses en barrica",
+    "Vino dulce de postre"
+   ]
+  },
+  {
+   "id": "n065",
+   "c": "vinos",
+   "q": "¿Qué es un vino tinto \"reserva\"?",
+   "n": 3,
+   "a": [
+    "Mínimo 3 años de envejecimiento, al menos 1 en barrica",
+    "6 meses en barrica en total",
+    "Vino joven del año",
+    "Vino con 10 años en botella"
+   ]
+  },
+  {
+   "id": "n066",
+   "c": "vinos",
+   "q": "¿Qué es un \"gran reserva\" tinto?",
+   "n": 3,
+   "a": [
+    "Mínimo 5 años, al menos 18 meses en barrica",
+    "Mínimo 3 años, 1 en barrica",
+    "Mínimo 2 años, 6 meses en barrica",
+    "Cualquier vino caro"
+   ]
+  },
+  {
+   "id": "n067",
+   "c": "vinos",
+   "q": "¿Qué es un vino \"joven\"?",
+   "n": 2,
+   "a": [
+    "Vino con poca o ninguna barrica, para beber pronto",
+    "Vino con más de 10 años",
+    "Vino dulce",
+    "Vino con burbujas"
+   ]
+  },
+  {
+   "id": "n068",
+   "c": "vinos",
+   "q": "¿Qué significa D.O. en una botella de vino?",
+   "n": 2,
+   "a": [
+    "Denominación de Origen: zona de producción protegida",
+    "Un tipo de uva",
+    "Que es un vino dulce",
+    "Que es de una sola bodega"
+   ]
+  },
+  {
+   "id": "n069",
+   "c": "vinos",
+   "q": "¿Qué uva tinta es la más típica de Rioja y Ribera del Duero?",
+   "n": 2,
+   "a": [
+    "Tempranillo",
+    "Garnacha",
+    "Monastrell",
+    "Mencía"
+   ]
+  },
+  {
+   "id": "n070",
+   "c": "vinos",
+   "q": "¿Qué uva blanca es la típica de Rías Baixas?",
+   "n": 2,
+   "a": [
+    "Albariño",
+    "Verdejo",
+    "Macabeo",
+    "Airén"
+   ]
+  },
+  {
+   "id": "n071",
+   "c": "vinos",
+   "q": "¿Qué uva blanca es la típica de Rueda?",
+   "n": 2,
+   "a": [
+    "Verdejo",
+    "Albariño",
+    "Godello",
+    "Pedro Ximénez"
+   ]
+  },
+  {
+   "id": "n072",
+   "c": "vinos",
+   "q": "¿Dónde se elabora la mayor parte del cava?",
+   "n": 2,
+   "a": [
+    "Cataluña (Penedès)",
+    "La Rioja",
+    "Galicia",
+    "Andalucía"
+   ]
+  },
+  {
+   "id": "n073",
+   "c": "vinos",
+   "q": "¿Cómo se hace la segunda fermentación del cava?",
+   "n": 3,
+   "a": [
+    "En la propia botella (método tradicional)",
+    "En grandes depósitos",
+    "Añadiendo gas carbónico",
+    "En barricas de roble abiertas"
+   ]
+  },
+  {
+   "id": "n074",
+   "c": "vinos",
+   "q": "¿Qué significa \"brut\" en un cava?",
+   "n": 2,
+   "a": [
+    "Que es seco, con poco azúcar",
+    "Que es muy dulce",
+    "Que es rosado",
+    "Que no tiene burbujas"
+   ]
+  },
+  {
+   "id": "n075",
+   "c": "vinos",
+   "q": "¿Cuál de estos cavas es el más dulce?",
+   "n": 3,
+   "a": [
+    "Semiseco",
+    "Brut nature",
+    "Extra brut",
+    "Brut"
+   ]
+  },
+  {
+   "id": "n076",
+   "c": "vinos",
+   "q": "¿Qué es un fino de Jerez?",
+   "n": 3,
+   "a": [
+    "Vino blanco muy seco con crianza bajo velo de flor",
+    "Vino tinto dulce",
+    "Un espumoso andaluz",
+    "Un brandy suave"
+   ]
+  },
+  {
+   "id": "n077",
+   "c": "vinos",
+   "q": "¿Qué es un Pedro Ximénez (PX)?",
+   "n": 3,
+   "a": [
+    "Vino dulce, muy oscuro y denso",
+    "Vino blanco muy seco",
+    "Cava rosado",
+    "Tinto joven"
+   ]
+  },
+  {
+   "id": "n078",
+   "c": "vinos",
+   "q": "¿A qué temperatura se sirve el cava?",
+   "n": 2,
+   "a": [
+    "6–8 °C",
+    "12–14 °C",
+    "16–18 °C",
+    "0–2 °C"
+   ]
+  },
+  {
+   "id": "n079",
+   "c": "vinos",
+   "q": "¿A qué temperatura se sirve un tinto joven?",
+   "n": 3,
+   "a": [
+    "12–14 °C",
+    "6–8 °C",
+    "18–20 °C",
+    "22–24 °C"
+   ]
+  },
+  {
+   "id": "n080",
+   "c": "vinos",
+   "q": "¿A qué temperatura se sirve un vino rosado?",
+   "n": 2,
+   "a": [
+    "8–10 °C",
+    "16–18 °C",
+    "2–4 °C",
+    "20–22 °C"
+   ]
+  },
+  {
+   "id": "n081",
+   "c": "vinos",
+   "q": "¿Para qué se decanta un vino?",
+   "n": 2,
+   "a": [
+    "Para airearlo o separarlo de los posos",
+    "Para enfriarlo rápido",
+    "Para quitarle alcohol",
+    "Para que tenga más color"
+   ]
+  },
+  {
+   "id": "n082",
+   "c": "vinos",
+   "q": "¿Qué vinos se suelen decantar?",
+   "n": 3,
+   "a": [
+    "Tintos viejos o muy estructurados",
+    "Cavas y espumosos",
+    "Blancos jóvenes",
+    "Rosados afrutados"
+   ]
+  },
+  {
+   "id": "n083",
+   "c": "vinos",
+   "q": "¿Hasta dónde se llena normalmente una copa de vino?",
+   "n": 2,
+   "a": [
+    "Hasta un tercio, más o menos",
+    "Hasta el borde",
+    "Hasta tres cuartos",
+    "Solo un dedo"
+   ]
+  },
+  {
+   "id": "n084",
+   "c": "vinos",
+   "q": "Al terminar de servir el vino, ¿cómo se evita que gotee?",
+   "n": 2,
+   "a": [
+    "Girando un poco la botella al levantarla",
+    "Golpeando la botella contra la copa",
+    "Levantándola muy rápido",
+    "Soplando el cuello"
+   ]
+  },
+  {
+   "id": "n085",
+   "c": "vinos",
+   "q": "¿Por dónde se corta la cápsula de una botella de vino?",
+   "n": 3,
+   "a": [
+    "Por debajo del anillo del cuello",
+    "Justo en la mitad de la botella",
+    "No se corta: se arranca entera",
+    "Por encima del corcho, en la tapa"
+   ]
+  },
+  {
+   "id": "n086",
+   "c": "vinos",
+   "q": "Al probar el vino, el cliente dice que huele a corcho mojado. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Retiras la botella y traes otra",
+    "Le dices que es normal en vinos caros",
+    "Le pones hielo",
+    "Lo decantas y lo sirves igual"
+   ]
+  },
+  {
+   "id": "n087",
+   "c": "vinos",
+   "q": "¿Qué vino se suele recomendar con un pescado blanco a la plancha?",
+   "n": 2,
+   "a": [
+    "Un blanco seco",
+    "Un tinto gran reserva",
+    "Un Pedro Ximénez",
+    "Un vermut rojo"
+   ]
+  },
+  {
+   "id": "n088",
+   "c": "vinos",
+   "q": "¿Qué vino marida clásicamente con un queso azul?",
+   "n": 3,
+   "a": [
+    "Un vino dulce",
+    "Un blanco joven muy ácido",
+    "Un rosado ligero",
+    "Un cava brut nature"
+   ]
+  },
+  {
+   "id": "n089",
+   "c": "vinos",
+   "q": "¿Qué es un vino \"de aguja\"?",
+   "n": 3,
+   "a": [
+    "Vino con un ligero gas natural",
+    "Vino muy viejo",
+    "Vino sin alcohol",
+    "Vino con especias"
+   ]
+  },
+  {
+   "id": "n090",
+   "c": "vinos",
+   "q": "¿Cómo se guardan las botellas con tapón de corcho?",
+   "n": 2,
+   "a": [
+    "Tumbadas, en sitio fresco y oscuro",
+    "De pie, cerca de la cocina",
+    "De pie, al sol",
+    "En el congelador"
+   ]
+  },
+  {
+   "id": "n091",
+   "c": "vinos",
+   "q": "¿Cómo se mantiene frío un vino blanco abierto en la mesa?",
+   "n": 2,
+   "a": [
+    "En una cubitera con agua y hielo",
+    "Con hielo dentro de la copa",
+    "En el congelador entre copa y copa",
+    "No hace falta"
+   ]
+  },
+  {
+   "id": "n092",
+   "c": "vinos",
+   "q": "¿Qué es el \"maridaje\"?",
+   "n": 1,
+   "a": [
+    "Combinar comida y bebida para que se complementen",
+    "Mezclar dos vinos",
+    "Brindar en una boda",
+    "Servir vino caliente"
+   ]
+  },
+  {
+   "id": "n093",
+   "c": "vinos",
+   "q": "El cava se sirve más frío que un vino tinto.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n094",
+   "c": "vinos",
+   "q": "Las botellas con corcho natural se guardan de pie.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n095",
+   "c": "vinos",
+   "q": "El albariño es una uva tinta.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n096",
+   "c": "vinos",
+   "q": "Un \"crianza\" siempre tiene más años que un \"reserva\".",
+   "n": 3,
+   "vf": false
+  },
+  {
+   "id": "n097",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un mojito?",
+   "n": 1,
+   "a": [
+    "Ron blanco, lima, azúcar, hierbabuena y soda",
+    "Ginebra, tónica, lima y pepino",
+    "Tequila, lima y sal",
+    "Vodka, menta y tónica"
+   ]
+  },
+  {
+   "id": "n098",
+   "c": "cocteleria",
+   "q": "¿Qué lleva una margarita?",
+   "n": 2,
+   "a": [
+    "Tequila, triple seco y zumo de lima",
+    "Tequila, ron y limón",
+    "Vodka, triple seco y naranja",
+    "Tequila, tónica y pomelo"
+   ]
+  },
+  {
+   "id": "n099",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un daiquiri clásico?",
+   "n": 2,
+   "a": [
+    "Ron, zumo de lima y azúcar",
+    "Ron, piña y coco",
+    "Ron, menta y soda",
+    "Ron, cola y limón"
+   ]
+  },
+  {
+   "id": "n100",
+   "c": "cocteleria",
+   "q": "¿Qué lleva una piña colada?",
+   "n": 1,
+   "a": [
+    "Ron, crema de coco y zumo de piña",
+    "Vodka, piña y lima",
+    "Ron, mango y naranja",
+    "Tequila, coco y lima"
+   ]
+  },
+  {
+   "id": "n101",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un Bloody Mary?",
+   "n": 2,
+   "a": [
+    "Vodka, zumo de tomate y especias",
+    "Ginebra, zumo de tomate y tónica",
+    "Vodka, arándanos y lima",
+    "Tequila, tomate y cerveza"
+   ]
+  },
+  {
+   "id": "n102",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un Negroni?",
+   "n": 3,
+   "a": [
+    "Ginebra, vermut rojo y Campari a partes iguales",
+    "Vodka, vermut blanco y Aperol",
+    "Ginebra, tónica y Campari",
+    "Ron, vermut y bitter"
+   ]
+  },
+  {
+   "id": "n103",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un Aperol Spritz?",
+   "n": 2,
+   "a": [
+    "Aperol, prosecco o cava y un toque de soda",
+    "Aperol y tónica",
+    "Aperol, vermut y cerveza",
+    "Aperol, zumo de naranja y vodka"
+   ]
+  },
+  {
+   "id": "n104",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un Dry Martini?",
+   "n": 3,
+   "a": [
+    "Ginebra y vermut seco",
+    "Vermut rojo y soda",
+    "Vodka y zumo de manzana",
+    "Ginebra y tónica"
+   ]
+  },
+  {
+   "id": "n105",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un Moscow Mule?",
+   "n": 3,
+   "a": [
+    "Vodka, ginger beer y lima",
+    "Vodka, tónica y limón",
+    "Ron, ginger ale y menta",
+    "Ginebra, cerveza y lima"
+   ]
+  },
+  {
+   "id": "n106",
+   "c": "cocteleria",
+   "q": "¿Qué lleva un Cosmopolitan?",
+   "n": 3,
+   "a": [
+    "Vodka, triple seco, arándano y lima",
+    "Ron, coco y piña",
+    "Ginebra, granadina y limón",
+    "Tequila, naranja y granadina"
+   ]
+  },
+  {
+   "id": "n107",
+   "c": "cocteleria",
+   "q": "¿Qué lleva una caipiriña?",
+   "n": 2,
+   "a": [
+    "Cachaça, lima y azúcar",
+    "Ron, lima y hierbabuena",
+    "Vodka, lima y azúcar",
+    "Tequila, lima y sal"
+   ]
+  },
+  {
+   "id": "n108",
+   "c": "cocteleria",
+   "q": "¿Qué es un \"destornillador\" (screwdriver)?",
+   "n": 2,
+   "a": [
+    "Vodka con zumo de naranja",
+    "Ron con zumo de naranja",
+    "Ginebra con zumo de limón",
+    "Vodka con refresco de cola"
+   ]
+  },
+  {
+   "id": "n109",
+   "c": "cocteleria",
+   "q": "¿Para qué sirve el \"jigger\"?",
+   "n": 2,
+   "a": [
+    "Para medir las cantidades de alcohol",
+    "Para colar el hielo",
+    "Para machacar la hierbabuena",
+    "Para mezclar en vaso alto"
+   ]
+  },
+  {
+   "id": "n110",
+   "c": "cocteleria",
+   "q": "¿Para qué sirve el colador hawthorne?",
+   "n": 3,
+   "a": [
+    "Para retener el hielo al servir un cóctel agitado",
+    "Para colar zumo de naranja",
+    "Para picar hielo",
+    "Para medir el azúcar"
+   ]
+  },
+  {
+   "id": "n111",
+   "c": "cocteleria",
+   "q": "¿Qué técnica se usa con la hierbabuena del mojito?",
+   "n": 2,
+   "a": [
+    "Majar suavemente, sin romperla del todo",
+    "Triturarla en batidora",
+    "Hervirla",
+    "Flambearla"
+   ]
+  },
+  {
+   "id": "n112",
+   "c": "cocteleria",
+   "q": "¿Cuándo se agita un cóctel en coctelera en lugar de removerlo en vaso?",
+   "n": 3,
+   "a": [
+    "Cuando lleva zumos, nata o huevo",
+    "Cuando solo lleva destilados",
+    "Cuando lleva gas",
+    "Siempre se remueve"
+   ]
+  },
+  {
+   "id": "n113",
+   "c": "cocteleria",
+   "q": "¿Por qué no se agita un cóctel con soda o tónica?",
+   "n": 2,
+   "a": [
+    "Porque pierde el gas",
+    "Porque se calienta",
+    "Porque cambia de color",
+    "Porque se corta"
+   ]
+  },
+  {
+   "id": "n114",
+   "c": "cocteleria",
+   "q": "¿Qué es \"escarchar\" una copa?",
+   "n": 2,
+   "a": [
+    "Poner sal o azúcar en el borde",
+    "Enfriarla en el congelador",
+    "Llenarla de hielo picado",
+    "Decorarla con una rodaja"
+   ]
+  },
+  {
+   "id": "n115",
+   "c": "cocteleria",
+   "q": "¿Qué destilado se aromatiza con bayas de enebro?",
+   "n": 2,
+   "a": [
+    "Ginebra",
+    "Vodka",
+    "Ron",
+    "Tequila"
+   ]
+  },
+  {
+   "id": "n116",
+   "c": "cocteleria",
+   "q": "¿De qué planta se hace el tequila?",
+   "n": 2,
+   "a": [
+    "Agave azul",
+    "Caña de azúcar",
+    "Maíz",
+    "Cactus nopal"
+   ]
+  },
+  {
+   "id": "n117",
+   "c": "cocteleria",
+   "q": "¿De qué se hace el whisky escocés de malta?",
+   "n": 2,
+   "a": [
+    "Cebada malteada",
+    "Uva",
+    "Caña de azúcar",
+    "Patata"
+   ]
+  },
+  {
+   "id": "n118",
+   "c": "cocteleria",
+   "q": "¿Qué es el brandy de Jerez?",
+   "n": 3,
+   "a": [
+    "Destilado de vino envejecido en botas de roble",
+    "Licor de café",
+    "Ron añejo andaluz",
+    "Ginebra con uva"
+   ]
+  },
+  {
+   "id": "n119",
+   "c": "cocteleria",
+   "q": "¿Qué es el pacharán?",
+   "n": 2,
+   "a": [
+    "Licor de endrinas macerado en anís",
+    "Licor de café",
+    "Aguardiente de manzana",
+    "Vino dulce de uva pasa"
+   ]
+  },
+  {
+   "id": "n120",
+   "c": "cocteleria",
+   "q": "¿Qué es el orujo?",
+   "n": 2,
+   "a": [
+    "Aguardiente destilado de los restos de la uva",
+    "Licor de naranja",
+    "Cerveza artesanal gallega",
+    "Vino blanco joven"
+   ]
+  },
+  {
+   "id": "n121",
+   "c": "cocteleria",
+   "q": "¿Qué es una queimada?",
+   "n": 3,
+   "a": [
+    "Orujo quemado con azúcar, café y piel de limón",
+    "Vino caliente con canela",
+    "Sidra caliente con miel",
+    "Café con hielo y licor"
+   ]
+  },
+  {
+   "id": "n122",
+   "c": "cocteleria",
+   "q": "¿Cuántos centilitros lleva más o menos una medida de alcohol en un combinado en España?",
+   "n": 3,
+   "a": [
+    "Unos 5 cl",
+    "Unos 2 cl",
+    "Unos 12 cl",
+    "Unos 20 cl"
+   ]
+  },
+  {
+   "id": "n123",
+   "c": "cocteleria",
+   "q": "¿Por qué se usan cubitos grandes y duros en un gin tonic?",
+   "n": 2,
+   "a": [
+    "Se derriten más despacio y aguan menos",
+    "Enfrían menos y no cambian el sabor",
+    "Porque ocupan menos",
+    "Para que tenga más gas"
+   ]
+  },
+  {
+   "id": "n124",
+   "c": "cocteleria",
+   "q": "¿Cómo se sirve la tónica en un buen gin tonic?",
+   "n": 2,
+   "a": [
+    "Despacio, por la cuchara o por la pared de la copa",
+    "De golpe, desde arriba",
+    "Agitándola antes",
+    "Mezclándola con el hielo en la coctelera"
+   ]
+  },
+  {
+   "id": "n125",
+   "c": "cocteleria",
+   "q": "¿Qué es un \"mocktail\"?",
+   "n": 1,
+   "a": [
+    "Un cóctel sin alcohol",
+    "Un cóctel con doble de alcohol",
+    "Un chupito de licor",
+    "Un vino con gas"
+   ]
+  },
+  {
+   "id": "n126",
+   "c": "cocteleria",
+   "q": "El ron se elabora a partir de la caña de azúcar.",
+   "n": 1,
+   "vf": true
+  },
+  {
+   "id": "n127",
+   "c": "cocteleria",
+   "q": "El Negroni lleva vodka.",
+   "n": 3,
+   "vf": false
+  },
+  {
+   "id": "n128",
+   "c": "cocteleria",
+   "q": "La margarita clásica se sirve con el borde escarchado de azúcar.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n129",
+   "c": "servicio",
+   "q": "¿Qué es el servicio a la francesa?",
+   "n": 3,
+   "a": [
+    "El camarero presenta la fuente y el cliente se sirve",
+    "El plato sale emplatado de cocina",
+    "El camarero sirve desde la fuente con pinzas",
+    "Se termina el plato en un carrito"
+   ]
+  },
+  {
+   "id": "n130",
+   "c": "servicio",
+   "q": "¿Qué es el servicio a la rusa (o al gueridón)?",
+   "n": 3,
+   "a": [
+    "Se trincha o termina el plato en una mesa auxiliar junto al cliente",
+    "El cliente se sirve de la fuente",
+    "Todo sale emplatado",
+    "Se sirve en barra"
+   ]
+  },
+  {
+   "id": "n131",
+   "c": "servicio",
+   "q": "¿Qué es el servicio emplatado (a la americana)?",
+   "n": 2,
+   "a": [
+    "El plato sale ya servido desde cocina",
+    "El cliente se sirve",
+    "Se sirve desde una fuente",
+    "Se cocina en la mesa"
+   ]
+  },
+  {
+   "id": "n132",
+   "c": "servicio",
+   "q": "¿Qué es un gueridón?",
+   "n": 3,
+   "a": [
+    "Mesa auxiliar con ruedas para trabajar junto al cliente",
+    "Un tipo de copa de coñac",
+    "El mantel de encima",
+    "Una bandeja redonda"
+   ]
+  },
+  {
+   "id": "n133",
+   "c": "servicio",
+   "q": "¿En qué sentido se recorre la mesa al servir?",
+   "n": 2,
+   "a": [
+    "En el sentido de las agujas del reloj",
+    "En sentido contrario a las agujas",
+    "Del más joven al mayor",
+    "Empezando por el anfitrión"
+   ]
+  },
+  {
+   "id": "n134",
+   "c": "servicio",
+   "q": "¿A quién se sirve el último en una mesa?",
+   "n": 2,
+   "a": [
+    "Al anfitrión (quien invita)",
+    "Al invitado de honor",
+    "A la persona mayor",
+    "A quien está junto a la puerta"
+   ]
+  },
+  {
+   "id": "n135",
+   "c": "servicio",
+   "q": "¿Cuándo se retiran los platos de un plato principal?",
+   "n": 2,
+   "a": [
+    "Cuando todos los comensales han terminado",
+    "En cuanto uno termina",
+    "Al traer el postre",
+    "Cuando el cliente lo pide"
+   ]
+  },
+  {
+   "id": "n136",
+   "c": "servicio",
+   "q": "¿Cómo indica el cliente que ha terminado de comer?",
+   "n": 2,
+   "a": [
+    "Cubiertos juntos y en paralelo sobre el plato",
+    "Cubiertos cruzados en el plato",
+    "Cubiertos fuera del plato",
+    "Servilleta encima de la silla"
+   ]
+  },
+  {
+   "id": "n137",
+   "c": "servicio",
+   "q": "¿Cómo deja el cliente los cubiertos para indicar \"estoy en pausa\"?",
+   "n": 3,
+   "a": [
+    "Separados en forma de V o cruzados sobre el plato",
+    "Juntos y en paralelo",
+    "Encima de la servilleta",
+    "En la copa"
+   ]
+  },
+  {
+   "id": "n138",
+   "c": "servicio",
+   "q": "¿Qué indica una servilleta dejada sobre la silla?",
+   "n": 3,
+   "a": [
+    "Que el cliente va a volver",
+    "Que ha terminado y se va",
+    "Que quiere la cuenta",
+    "Que no le ha gustado"
+   ]
+  },
+  {
+   "id": "n139",
+   "c": "servicio",
+   "q": "¿Cuándo se rellena el agua de un cliente?",
+   "n": 2,
+   "a": [
+    "Cuando el vaso está por debajo de la mitad, sin que lo pida",
+    "Solo cuando lo pide",
+    "Cuando está totalmente vacío",
+    "Solo al servir el postre"
+   ]
+  },
+  {
+   "id": "n140",
+   "c": "servicio",
+   "q": "Antes del postre, ¿cómo se quitan las migas del mantel?",
+   "n": 1,
+   "a": [
+    "Con un recogemigas o cepillo sobre un plato",
+    "Soplando",
+    "Con la mano hacia el suelo",
+    "Se dejan"
+   ]
+  },
+  {
+   "id": "n141",
+   "c": "servicio",
+   "q": "¿Cómo se lleva una bandeja con varias bebidas?",
+   "n": 2,
+   "a": [
+    "Lo más pesado en el centro y cerca del cuerpo",
+    "Lo más pesado en el borde exterior",
+    "Con el brazo estirado",
+    "Con la mano derecha y apoyada en la cadera"
+   ]
+  },
+  {
+   "id": "n142",
+   "c": "servicio",
+   "q": "¿Qué es una carne \"al punto\"?",
+   "n": 2,
+   "a": [
+    "Hecha por fuera y rosada en el centro",
+    "Muy hecha, sin nada rosa",
+    "Casi cruda por dentro",
+    "Tostada por fuera y fría por dentro"
+   ]
+  },
+  {
+   "id": "n143",
+   "c": "servicio",
+   "q": "Ordena los puntos de la carne de menos a más hecha:",
+   "n": 2,
+   "a": [
+    "Vuelta y vuelta, poco hecha, al punto, muy hecha",
+    "Poco hecha, vuelta y vuelta, al punto, muy hecha",
+    "Al punto, poco hecha, muy hecha, vuelta y vuelta",
+    "Vuelta y vuelta, al punto, poco hecha, muy hecha"
+   ]
+  },
+  {
+   "id": "n144",
+   "c": "servicio",
+   "q": "¿Qué se pone en la mesa con un marisco que se come con las manos?",
+   "n": 3,
+   "a": [
+    "Un lavadedos con agua templada y limón",
+    "Una copa de cava",
+    "Un cuchillo de mantequilla",
+    "Una cuchara sopera"
+   ]
+  },
+  {
+   "id": "n145",
+   "c": "servicio",
+   "q": "¿Cómo se presenta la cuenta?",
+   "n": 2,
+   "a": [
+    "En una carpeta o platillo, a la persona que la pidió",
+    "Leída en voz alta",
+    "Abierta en el centro de la mesa",
+    "Al cliente que esté más cerca"
+   ]
+  },
+  {
+   "id": "n146",
+   "c": "servicio",
+   "q": "En un banquete, ¿qué mesa se sirve primero?",
+   "n": 2,
+   "a": [
+    "La presidencial",
+    "La más cercana a la cocina",
+    "La más grande",
+    "La del fondo"
+   ]
+  },
+  {
+   "id": "n147",
+   "c": "servicio",
+   "q": "¿Cómo se cambia un cenicero sucio en la mesa?",
+   "n": 3,
+   "a": [
+    "Se tapa con uno limpio, se retiran los dos y se deja el limpio",
+    "Se vacía encima de la mesa",
+    "Se retira sin poner otro",
+    "Se limpia con la servilleta del cliente"
+   ]
+  },
+  {
+   "id": "n148",
+   "c": "servicio",
+   "q": "Al servir un plato, ¿qué se dice?",
+   "n": 1,
+   "a": [
+    "El nombre del plato",
+    "El precio del plato",
+    "Nada",
+    "Quién lo ha cocinado"
+   ]
+  },
+  {
+   "id": "n149",
+   "c": "servicio",
+   "q": "¿Qué se repone en el aparador antes de abrir?",
+   "n": 2,
+   "a": [
+    "Cubiertos, servilletas, platos de pan y vinagreras",
+    "Productos de limpieza",
+    "La ropa de cambio",
+    "El cambio de la caja"
+   ]
+  },
+  {
+   "id": "n150",
+   "c": "servicio",
+   "q": "En la mesa se sirve en el sentido de las agujas del reloj.",
+   "n": 1,
+   "vf": true
+  },
+  {
+   "id": "n151",
+   "c": "servicio",
+   "q": "En el servicio a la francesa el cliente se sirve él mismo de la fuente.",
+   "n": 3,
+   "vf": true
+  },
+  {
+   "id": "n152",
+   "c": "servicio",
+   "q": "Se pueden retirar los platos en cuanto el primer cliente termina, aunque los demás sigan comiendo.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n153",
+   "c": "montaje",
+   "q": "¿En qué orden se usan los cubiertos?",
+   "n": 1,
+   "a": [
+    "De fuera hacia dentro",
+    "De dentro hacia fuera",
+    "Primero los de postre",
+    "Primero los de la izquierda"
+   ]
+  },
+  {
+   "id": "n154",
+   "c": "montaje",
+   "q": "¿Hacia dónde mira el filo del cuchillo en la mesa?",
+   "n": 2,
+   "a": [
+    "Hacia el plato",
+    "Hacia fuera del plato",
+    "Hacia arriba",
+    "Hacia el borde de la mesa"
+   ]
+  },
+  {
+   "id": "n155",
+   "c": "montaje",
+   "q": "¿Dónde se colocan los cubiertos de postre en el montaje?",
+   "n": 2,
+   "a": [
+    "Arriba del plato, en horizontal",
+    "A la derecha, por fuera",
+    "A la izquierda, por fuera",
+    "Debajo del plato"
+   ]
+  },
+  {
+   "id": "n156",
+   "c": "montaje",
+   "q": "¿Dónde va la copa de agua?",
+   "n": 2,
+   "a": [
+    "Arriba a la derecha, sobre la punta del cuchillo",
+    "A la izquierda, sobre el tenedor",
+    "Encima del plato de pan",
+    "En el centro de la mesa"
+   ]
+  },
+  {
+   "id": "n157",
+   "c": "montaje",
+   "q": "Con copa de agua, de tinto y de blanco, ¿cuál suele ser la más grande?",
+   "n": 3,
+   "a": [
+    "La de agua",
+    "La de vino blanco",
+    "La de vino tinto",
+    "Todas son iguales"
+   ]
+  },
+  {
+   "id": "n158",
+   "c": "montaje",
+   "q": "¿Dónde se coloca el cuchillo de mantequilla?",
+   "n": 3,
+   "a": [
+    "Sobre el plato de pan",
+    "Junto al cuchillo trinchero",
+    "Arriba del plato, en horizontal",
+    "A la izquierda del tenedor"
+   ]
+  },
+  {
+   "id": "n159",
+   "c": "montaje",
+   "q": "¿A qué distancia del borde de la mesa se ponen platos y cubiertos?",
+   "n": 2,
+   "a": [
+    "Unos 2 cm, dos dedos",
+    "Unos 15 cm",
+    "Justo en el borde, sobresaliendo",
+    "En el centro de la mesa"
+   ]
+  },
+  {
+   "id": "n160",
+   "c": "montaje",
+   "q": "¿Qué es el bajoplato?",
+   "n": 2,
+   "a": [
+    "Plato grande decorativo que va debajo del plato",
+    "El plato de postre",
+    "El plato de pan",
+    "La bandeja de servicio"
+   ]
+  },
+  {
+   "id": "n161",
+   "c": "montaje",
+   "q": "¿Para qué sirve el salvamanteles?",
+   "n": 2,
+   "a": [
+    "Para proteger el mantel de fuentes y ollas calientes",
+    "Para tapar manchas",
+    "Para poner la servilleta",
+    "Para el plato de pan"
+   ]
+  },
+  {
+   "id": "n162",
+   "c": "montaje",
+   "q": "El cubre (cubremantel) se coloca…",
+   "n": 2,
+   "a": [
+    "Encima del mantel, para protegerlo y decorar",
+    "Debajo del muletón",
+    "En lugar de las servilletas",
+    "Solo en la terraza"
+   ]
+  },
+  {
+   "id": "n163",
+   "c": "montaje",
+   "q": "Los cubiertos se usan de fuera hacia dentro.",
+   "n": 1,
+   "vf": true
+  },
+  {
+   "id": "n164",
+   "c": "montaje",
+   "q": "El filo del cuchillo mira hacia fuera del plato.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n165",
+   "c": "montaje",
+   "q": "La copa de agua suele ser la más grande de las copas.",
+   "n": 3,
+   "vf": true
+  },
+  {
+   "id": "n166",
+   "c": "cocina",
+   "q": "¿Qué diferencia al salmorejo del gazpacho?",
+   "n": 2,
+   "a": [
+    "Es más espeso, lleva pan y se sirve con huevo y jamón",
+    "Se sirve caliente",
+    "Lleva leche y nata",
+    "No lleva tomate"
+   ]
+  },
+  {
+   "id": "n167",
+   "c": "cocina",
+   "q": "¿De qué ciudad es típico el salmorejo?",
+   "n": 2,
+   "a": [
+    "Córdoba",
+    "Valencia",
+    "Bilbao",
+    "Santiago de Compostela"
+   ]
+  },
+  {
+   "id": "n168",
+   "c": "cocina",
+   "q": "¿Qué lleva la paella valenciana tradicional?",
+   "n": 2,
+   "a": [
+    "Pollo, conejo, judía verde y garrofó",
+    "Gambas, mejillones y calamar",
+    "Chorizo y pimiento",
+    "Tinta de calamar y sepia"
+   ]
+  },
+  {
+   "id": "n169",
+   "c": "cocina",
+   "q": "¿Qué es el socarrat?",
+   "n": 2,
+   "a": [
+    "La capa de arroz tostado del fondo de la paella",
+    "Un tipo de arroz",
+    "Un postre valenciano",
+    "La salsa de la paella"
+   ]
+  },
+  {
+   "id": "n170",
+   "c": "cocina",
+   "q": "¿Qué le da el color al arroz negro?",
+   "n": 1,
+   "a": [
+    "La tinta de calamar o sepia",
+    "Aceitunas negras",
+    "Café",
+    "Pimienta negra"
+   ]
+  },
+  {
+   "id": "n171",
+   "c": "cocina",
+   "q": "¿Qué es el pulpo a la gallega?",
+   "n": 1,
+   "a": [
+    "Pulpo cocido con pimentón, sal gruesa y aceite",
+    "Pulpo rebozado y frito",
+    "Pulpo guisado con tomate",
+    "Pulpo crudo con limón"
+   ]
+  },
+  {
+   "id": "n172",
+   "c": "cocina",
+   "q": "¿Qué es la fabada asturiana?",
+   "n": 2,
+   "a": [
+    "Guiso de fabes con chorizo, morcilla y lacón",
+    "Guiso de garbanzos con carne",
+    "Sopa de pescado",
+    "Ensalada de alubias"
+   ]
+  },
+  {
+   "id": "n173",
+   "c": "cocina",
+   "q": "¿Cómo se sirve tradicionalmente el cocido madrileño?",
+   "n": 2,
+   "a": [
+    "En vuelcos: primero la sopa, luego garbanzos y verduras, después las carnes",
+    "Todo mezclado en un plato",
+    "Frío, como ensalada",
+    "Con arroz"
+   ]
+  },
+  {
+   "id": "n174",
+   "c": "cocina",
+   "q": "¿Cómo se corta el jamón para servirlo?",
+   "n": 2,
+   "a": [
+    "En lonchas muy finas y pequeñas, con algo de grasa",
+    "En tacos gruesos",
+    "En lonchas gruesas sin grasa",
+    "Picado fino"
+   ]
+  },
+  {
+   "id": "n175",
+   "c": "cocina",
+   "q": "¿A qué temperatura se sirve el jamón ibérico?",
+   "n": 2,
+   "a": [
+    "A temperatura ambiente, unos 20–25 °C",
+    "Recién sacado de la nevera",
+    "Templado al horno",
+    "Muy frío para que no sude"
+   ]
+  },
+  {
+   "id": "n176",
+   "c": "cocina",
+   "q": "¿Qué es el jamón ibérico de bellota?",
+   "n": 2,
+   "a": [
+    "De cerdo ibérico que come bellotas en montanera",
+    "De cerdo blanco de cebo",
+    "Jamón cocido de pavo",
+    "Jamón con denominación de Galicia"
+   ]
+  },
+  {
+   "id": "n177",
+   "c": "cocina",
+   "q": "¿Qué es el queso manchego?",
+   "n": 2,
+   "a": [
+    "Queso de oveja de La Mancha",
+    "Queso de vaca de Galicia",
+    "Queso de cabra de Canarias",
+    "Queso azul de Asturias"
+   ]
+  },
+  {
+   "id": "n178",
+   "c": "cocina",
+   "q": "¿Qué queso es azul y asturiano?",
+   "n": 2,
+   "a": [
+    "Cabrales",
+    "Idiazábal",
+    "Tetilla",
+    "Mahón"
+   ]
+  },
+  {
+   "id": "n179",
+   "c": "cocina",
+   "q": "¿Qué es la leche frita?",
+   "n": 2,
+   "a": [
+    "Crema espesa de leche, rebozada y frita",
+    "Leche hervida con canela",
+    "Un batido de vainilla",
+    "Queso fresco frito"
+   ]
+  },
+  {
+   "id": "n180",
+   "c": "cocina",
+   "q": "¿Qué es la crema catalana?",
+   "n": 1,
+   "a": [
+    "Crema con azúcar quemado por encima",
+    "Flan con caramelo líquido",
+    "Natillas con galleta",
+    "Arroz con leche"
+   ]
+  },
+  {
+   "id": "n181",
+   "c": "cocina",
+   "q": "¿Qué es \"pochar\" una verdura?",
+   "n": 2,
+   "a": [
+    "Cocinarla a fuego lento en aceite sin que se dore",
+    "Freírla fuerte hasta dorarla",
+    "Hervirla en agua con sal",
+    "Asarla al horno"
+   ]
+  },
+  {
+   "id": "n182",
+   "c": "cocina",
+   "q": "¿Qué es \"blanquear\" una verdura?",
+   "n": 3,
+   "a": [
+    "Cocerla brevemente y enfriarla en agua con hielo",
+    "Pelarla y lavarla",
+    "Cocerla hasta que esté blanda",
+    "Freírla sin que coja color"
+   ]
+  },
+  {
+   "id": "n183",
+   "c": "cocina",
+   "q": "¿Qué es \"emulsionar\"?",
+   "n": 2,
+   "a": [
+    "Unir dos líquidos que no se mezclan, como aceite y agua",
+    "Hervir a fuego fuerte",
+    "Cortar en dados",
+    "Congelar rápido"
+   ]
+  },
+  {
+   "id": "n184",
+   "c": "cocina",
+   "q": "¿Qué es la bechamel?",
+   "n": 1,
+   "a": [
+    "Salsa de leche, mantequilla y harina",
+    "Salsa de tomate y cebolla",
+    "Mayonesa con ajo",
+    "Caldo de carne espesado"
+   ]
+  },
+  {
+   "id": "n185",
+   "c": "cocina",
+   "q": "¿Qué es un \"fondo\" en cocina?",
+   "n": 2,
+   "a": [
+    "Caldo concentrado de huesos y verduras",
+    "El fondo de la sartén",
+    "La salsa del postre",
+    "El último plato del menú"
+   ]
+  },
+  {
+   "id": "n186",
+   "c": "cocina",
+   "q": "¿Qué corte es la juliana?",
+   "n": 2,
+   "a": [
+    "Tiras finas y largas",
+    "Dados muy pequeños",
+    "Rodajas gruesas",
+    "Láminas muy finas"
+   ]
+  },
+  {
+   "id": "n187",
+   "c": "cocina",
+   "q": "¿Qué corte es la brunoise?",
+   "n": 3,
+   "a": [
+    "Dados muy pequeños",
+    "Tiras finas y largas",
+    "Rodajas",
+    "Bastones gruesos"
+   ]
+  },
+  {
+   "id": "n188",
+   "c": "cocina",
+   "q": "¿Qué es un plato \"a la romana\"?",
+   "n": 2,
+   "a": [
+    "Pasado por harina y huevo y frito",
+    "Pasado por huevo y pan rallado",
+    "Hecho a la plancha",
+    "Guisado con tomate"
+   ]
+  },
+  {
+   "id": "n189",
+   "c": "cocina",
+   "q": "¿Qué es \"empanar\"?",
+   "n": 2,
+   "a": [
+    "Pasar por huevo y pan rallado antes de freír",
+    "Pasar solo por harina",
+    "Meter dentro de una empanada",
+    "Cocinar al horno sin grasa"
+   ]
+  },
+  {
+   "id": "n190",
+   "c": "cocina",
+   "q": "¿Qué es un escabeche?",
+   "n": 2,
+   "a": [
+    "Conserva con aceite, vinagre, laurel y especias",
+    "Salsa dulce de tomate",
+    "Una fritura de pescado",
+    "Un caldo de marisco"
+   ]
+  },
+  {
+   "id": "n191",
+   "c": "cocina",
+   "q": "¿Qué significa que la pasta está \"al dente\"?",
+   "n": 1,
+   "a": [
+    "Cocida pero firme al morder",
+    "Muy blanda",
+    "Cruda por dentro",
+    "Frita después de cocer"
+   ]
+  },
+  {
+   "id": "n192",
+   "c": "cocina",
+   "q": "¿Qué es una ración?",
+   "n": 1,
+   "a": [
+    "Plato más grande que la tapa, para compartir",
+    "Una tapa muy pequeña",
+    "El primer plato del menú",
+    "Un postre individual"
+   ]
+  },
+  {
+   "id": "n193",
+   "c": "cocina",
+   "q": "¿Qué son las patatas bravas?",
+   "n": 2,
+   "a": [
+    "Patatas fritas con salsa picante",
+    "Patatas cocidas con mayonesa",
+    "Puré de patata con queso",
+    "Patatas asadas con romero"
+   ]
+  },
+  {
+   "id": "n194",
+   "c": "cocina",
+   "q": "El gazpacho se sirve frío.",
+   "n": 1,
+   "vf": true
+  },
+  {
+   "id": "n195",
+   "c": "cocina",
+   "q": "El salmorejo es típico de Galicia.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n196",
+   "c": "cocina",
+   "q": "La brunoise es un corte en tiras largas.",
+   "n": 3,
+   "vf": false
+  },
+  {
+   "id": "n197",
+   "c": "cocina",
+   "q": "La paella valenciana tradicional lleva marisco.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n198",
+   "c": "higiene",
+   "q": "¿Cuál de estos NO es uno de los 14 alérgenos obligatorios?",
+   "n": 2,
+   "a": [
+    "Tomate",
+    "Sulfitos",
+    "Altramuces",
+    "Mostaza"
+   ]
+  },
+  {
+   "id": "n199",
+   "c": "higiene",
+   "q": "¿Cuál de estos SÍ es uno de los 14 alérgenos obligatorios?",
+   "n": 3,
+   "a": [
+    "Apio",
+    "Patata",
+    "Arroz",
+    "Pimiento"
+   ]
+  },
+  {
+   "id": "n200",
+   "c": "higiene",
+   "q": "¿Qué alérgeno hay que indicar casi siempre en el vino?",
+   "n": 3,
+   "a": [
+    "Sulfitos",
+    "Gluten",
+    "Soja",
+    "Mostaza"
+   ]
+  },
+  {
+   "id": "n201",
+   "c": "higiene",
+   "q": "¿Qué alérgenos lleva normalmente una bechamel?",
+   "n": 2,
+   "a": [
+    "Leche y gluten",
+    "Solo huevo",
+    "Frutos secos",
+    "Ninguno"
+   ]
+  },
+  {
+   "id": "n202",
+   "c": "higiene",
+   "q": "¿Cuál de estos cereales NO tiene gluten?",
+   "n": 2,
+   "a": [
+    "Arroz",
+    "Cebada",
+    "Centeno",
+    "Espelta"
+   ]
+  },
+  {
+   "id": "n203",
+   "c": "higiene",
+   "q": "¿Por qué no se fríe una ración sin gluten en el mismo aceite que las croquetas?",
+   "n": 2,
+   "a": [
+    "Por contaminación cruzada con gluten",
+    "Porque sale más grasienta",
+    "Porque el aceite se quema antes",
+    "No hay problema en hacerlo"
+   ]
+  },
+  {
+   "id": "n204",
+   "c": "higiene",
+   "q": "¿Cuál es la \"zona de peligro\" de temperatura donde más crecen las bacterias?",
+   "n": 2,
+   "a": [
+    "Entre 5 y 65 °C",
+    "Por debajo de 0 °C",
+    "Por encima de 100 °C",
+    "Entre -18 y 0 °C"
+   ]
+  },
+  {
+   "id": "n205",
+   "c": "higiene",
+   "q": "¿Cuál es la forma correcta de descongelar carne?",
+   "n": 2,
+   "a": [
+    "En la nevera, con tiempo",
+    "En la encimera toda la noche",
+    "En agua caliente",
+    "Al sol en la terraza"
+   ]
+  },
+  {
+   "id": "n206",
+   "c": "higiene",
+   "q": "¿Qué es el APPCC?",
+   "n": 3,
+   "a": [
+    "Sistema de Análisis de Peligros y Puntos de Control Críticos",
+    "La asociación de cocineros de España",
+    "El carnet de manipulador",
+    "Un tipo de horno"
+   ]
+  },
+  {
+   "id": "n207",
+   "c": "higiene",
+   "q": "Según el código de colores, ¿qué tabla se usa para carne cruda?",
+   "n": 3,
+   "a": [
+    "Roja",
+    "Verde",
+    "Azul",
+    "Blanca"
+   ]
+  },
+  {
+   "id": "n208",
+   "c": "higiene",
+   "q": "Según el código de colores, ¿qué tabla se usa para pescado crudo?",
+   "n": 3,
+   "a": [
+    "Azul",
+    "Roja",
+    "Amarilla",
+    "Verde"
+   ]
+  },
+  {
+   "id": "n209",
+   "c": "higiene",
+   "q": "Según el código de colores, ¿qué tabla se usa para frutas y verduras?",
+   "n": 3,
+   "a": [
+    "Verde",
+    "Azul",
+    "Roja",
+    "Marrón"
+   ]
+  },
+  {
+   "id": "n210",
+   "c": "higiene",
+   "q": "En la cámara, ¿dónde se coloca la carne cruda?",
+   "n": 2,
+   "a": [
+    "Abajo, por debajo de lo cocinado",
+    "Arriba de todo",
+    "Junto a los postres",
+    "En la misma bandeja que la verdura"
+   ]
+  },
+  {
+   "id": "n211",
+   "c": "higiene",
+   "q": "¿A qué temperatura mínima debe llegar el centro de un plato recalentado?",
+   "n": 3,
+   "a": [
+    "Unos 70–75 °C",
+    "Unos 45 °C",
+    "Unos 55 °C",
+    "Unos 35 °C"
+   ]
+  },
+  {
+   "id": "n212",
+   "c": "higiene",
+   "q": "¿Qué debe llevar la etiqueta de una preparación guardada en cámara?",
+   "n": 2,
+   "a": [
+    "Nombre, fecha de elaboración y de caducidad",
+    "Solo el precio",
+    "Solo el nombre del cocinero",
+    "Nada si está tapada"
+   ]
+  },
+  {
+   "id": "n213",
+   "c": "higiene",
+   "q": "¿Para qué sirve el abatidor?",
+   "n": 3,
+   "a": [
+    "Para enfriar muy rápido los alimentos cocinados",
+    "Para batir claras",
+    "Para mantener caliente la comida",
+    "Para lavar la vajilla"
+   ]
+  },
+  {
+   "id": "n214",
+   "c": "higiene",
+   "q": "¿En qué orden se limpia una superficie de trabajo?",
+   "n": 3,
+   "a": [
+    "Detergente, aclarado y después desinfectante",
+    "Desinfectante y después detergente",
+    "Solo lejía pura",
+    "Solo agua caliente"
+   ]
+  },
+  {
+   "id": "n215",
+   "c": "higiene",
+   "q": "Un compañero tiene un corte en la mano. ¿Qué debe hacer para trabajar?",
+   "n": 2,
+   "a": [
+    "Taparlo con un apósito impermeable de color y usar guante",
+    "Seguir sin taparlo",
+    "Lavarlo con lejía",
+    "Usar solo un guante, sin apósito"
+   ]
+  },
+  {
+   "id": "n216",
+   "c": "higiene",
+   "q": "Un cliente dice que es alérgico al marisco. ¿Qué haces?",
+   "n": 1,
+   "a": [
+    "Avisas a cocina y compruebas los alérgenos de cada plato",
+    "Le dices que aparte las gambas",
+    "Le recomiendas el plato del día sin mirar",
+    "Nada, lo pone en la carta"
+   ]
+  },
+  {
+   "id": "n217",
+   "c": "higiene",
+   "q": "Se pueden llevar anillos y pulseras al manipular alimentos.",
+   "n": 1,
+   "vf": false
+  },
+  {
+   "id": "n218",
+   "c": "higiene",
+   "q": "El arroz contiene gluten.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n219",
+   "c": "higiene",
+   "q": "Los sulfitos son uno de los 14 alérgenos de declaración obligatoria.",
+   "n": 3,
+   "vf": true
+  },
+  {
+   "id": "n220",
+   "c": "higiene",
+   "q": "Descongelar carne en la encimera durante la noche es seguro.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n221",
+   "c": "cliente",
+   "q": "Llega un cliente y todas las mesas están ocupadas. ¿Qué haces?",
+   "n": 1,
+   "a": [
+    "Le saludas, le dices el tiempo de espera y le ofreces esperar en barra",
+    "Le ignoras hasta que haya mesa",
+    "Le dices que vuelva otro día",
+    "Le sientas en una mesa reservada"
+   ]
+  },
+  {
+   "id": "n222",
+   "c": "cliente",
+   "q": "Un cliente entra mientras atiendes otra mesa. ¿Qué haces?",
+   "n": 1,
+   "a": [
+    "Le saludas con un gesto o un \"enseguida estoy con usted\"",
+    "Terminas y luego le miras",
+    "Haces como que no le ves",
+    "Le dices que espere fuera"
+   ]
+  },
+  {
+   "id": "n223",
+   "c": "cliente",
+   "q": "Un cliente dice que su plato está frío. ¿Qué haces?",
+   "n": 1,
+   "a": [
+    "Te disculpas, lo retiras y pides a cocina que lo rehaga",
+    "Le dices que se come así",
+    "Lo calientas en el micro sin decir nada",
+    "Le ofreces más pan"
+   ]
+  },
+  {
+   "id": "n224",
+   "c": "cliente",
+   "q": "¿Qué es la \"venta sugerida\"?",
+   "n": 2,
+   "a": [
+    "Recomendar productos que completan el pedido del cliente",
+    "Obligar al cliente a pedir más",
+    "Cobrar productos no pedidos",
+    "Hacer descuentos sin permiso"
+   ]
+  },
+  {
+   "id": "n225",
+   "c": "cliente",
+   "q": "Un cliente pregunta por un plato que no conoces bien. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Le dices que lo consultas en cocina y vuelves con la respuesta",
+    "Le dices lo que imaginas",
+    "Le dices que no se sabe",
+    "Le recomiendas otro sin contestar"
+   ]
+  },
+  {
+   "id": "n226",
+   "c": "cliente",
+   "q": "Un cliente ha bebido de más y pide otra copa. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Le ofreces agua o algo sin alcohol y avisas al encargado",
+    "Le sirves una doble para que se calme",
+    "Le echas del local a gritos",
+    "Le sirves y no dices nada"
+   ]
+  },
+  {
+   "id": "n227",
+   "c": "cliente",
+   "q": "¿Qué datos se toman en una reserva?",
+   "n": 1,
+   "a": [
+    "Nombre, teléfono, día, hora y número de personas",
+    "Solo el nombre",
+    "Nombre y DNI",
+    "Solo la hora"
+   ]
+  },
+  {
+   "id": "n228",
+   "c": "cliente",
+   "q": "¿Qué es un \"no-show\"?",
+   "n": 2,
+   "a": [
+    "Un cliente que reserva y no se presenta",
+    "Un plato fuera de carta",
+    "Un camarero que no viene a trabajar",
+    "Una mesa sin propina"
+   ]
+  },
+  {
+   "id": "n229",
+   "c": "cliente",
+   "q": "¿Qué es la hoja de reclamaciones?",
+   "n": 2,
+   "a": [
+    "Un documento oficial que el cliente puede pedir para quejarse",
+    "La carta de vinos",
+    "La factura detallada",
+    "El parte de incidencias de cocina"
+   ]
+  },
+  {
+   "id": "n230",
+   "c": "cliente",
+   "q": "Un cliente pide la hoja de reclamaciones. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Se la das: el local está obligado a tenerla",
+    "Le dices que no hay",
+    "Le pides que vuelva mañana",
+    "Le ofreces una consumición para que no la rellene"
+   ]
+  },
+  {
+   "id": "n231",
+   "c": "cliente",
+   "q": "¿Cómo es la propina en España?",
+   "n": 2,
+   "a": [
+    "Voluntaria: la decide el cliente",
+    "Obligatoria del 10 %",
+    "Obligatoria del 15 %",
+    "Se incluye siempre en la cuenta"
+   ]
+  },
+  {
+   "id": "n232",
+   "c": "cliente",
+   "q": "¿Cuándo se pregunta si todo está bien?",
+   "n": 1,
+   "a": [
+    "A los pocos minutos de servir el plato",
+    "Al traer la cuenta",
+    "Antes de que llegue la comida",
+    "Nunca, molesta"
+   ]
+  },
+  {
+   "id": "n233",
+   "c": "cliente",
+   "q": "Un cliente quiere pagar con tarjeta. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Llevas el datáfono a la mesa",
+    "Te llevas la tarjeta a la barra y le pides el PIN",
+    "Le pides que te diga el PIN en voz alta",
+    "Le dices que solo efectivo"
+   ]
+  },
+  {
+   "id": "n234",
+   "c": "cliente",
+   "q": "Un cliente se va sin pagar. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Avisas al encargado",
+    "Le persigues por la calle",
+    "Lo pagas tú sin decir nada",
+    "Lo cobras en la cuenta de otra mesa"
+   ]
+  },
+  {
+   "id": "n235",
+   "c": "cliente",
+   "q": "Un cliente con discapacidad visual llega a la mesa. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Le lees o describes la carta y le indicas dónde está cada cosa",
+    "Le hablas más alto",
+    "Hablas solo con su acompañante",
+    "Le traes el plato del día sin preguntar"
+   ]
+  },
+  {
+   "id": "n236",
+   "c": "cliente",
+   "q": "En España la propina es obligatoria.",
+   "n": 1,
+   "vf": false
+  },
+  {
+   "id": "n237",
+   "c": "cliente",
+   "q": "Los bares y restaurantes deben tener hojas de reclamaciones.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n238",
+   "c": "vocabulario",
+   "q": "¿Qué es el \"pase\"?",
+   "n": 2,
+   "a": [
+    "La zona donde cocina deja los platos listos para sala",
+    "La entrada del personal",
+    "El turno de tarde",
+    "El carro de los postres"
+   ]
+  },
+  {
+   "id": "n239",
+   "c": "vocabulario",
+   "q": "¿Qué significa \"¡oído cocina!\"?",
+   "n": 2,
+   "a": [
+    "Que la orden se ha recibido y entendido",
+    "Que hay demasiado ruido",
+    "Que se apaga el fuego",
+    "Que ha llegado un cliente"
+   ]
+  },
+  {
+   "id": "n240",
+   "c": "vocabulario",
+   "q": "¿Qué es una \"partida\" en cocina?",
+   "n": 3,
+   "a": [
+    "Una sección con su tarea: fríos, carnes, pastelería…",
+    "Un juego entre turnos",
+    "La hora de salida",
+    "Una olla grande"
+   ]
+  },
+  {
+   "id": "n241",
+   "c": "vocabulario",
+   "q": "¿Qué es el \"cuarto frío\"?",
+   "n": 3,
+   "a": [
+    "La partida de platos fríos, ensaladas y entrantes",
+    "La cámara de congelados",
+    "El almacén de bebidas",
+    "La sala de descanso"
+   ]
+  },
+  {
+   "id": "n242",
+   "c": "vocabulario",
+   "q": "¿Qué es el economato?",
+   "n": 3,
+   "a": [
+    "El almacén de productos no perecederos",
+    "La caja registradora",
+    "La oficina del dueño",
+    "El comedor del personal"
+   ]
+  },
+  {
+   "id": "n243",
+   "c": "vocabulario",
+   "q": "¿Qué es un plato \"fuera de carta\"?",
+   "n": 2,
+   "a": [
+    "Una sugerencia especial que no está en la carta",
+    "Un plato agotado",
+    "Un plato que no se puede pedir",
+    "Un postre gratis"
+   ]
+  },
+  {
+   "id": "n244",
+   "c": "vocabulario",
+   "q": "¿Qué es la \"rotación de mesas\"?",
+   "n": 2,
+   "a": [
+    "Las veces que se ocupa una mesa en un servicio",
+    "Girar las mesas para limpiar",
+    "Cambiar los manteles",
+    "Mover mesas a la terraza"
+   ]
+  },
+  {
+   "id": "n245",
+   "c": "vocabulario",
+   "q": "¿Qué es el \"ticket medio\"?",
+   "n": 3,
+   "a": [
+    "Lo que gasta de media cada cliente",
+    "El papel de la cuenta",
+    "El precio del menú del día",
+    "La propina media"
+   ]
+  },
+  {
+   "id": "n246",
+   "c": "vocabulario",
+   "q": "¿Qué es un escandallo?",
+   "n": 3,
+   "a": [
+    "El cálculo del coste de un plato",
+    "Una salsa espesa",
+    "Una queja de un cliente",
+    "El cuadrante de turnos"
+   ]
+  },
+  {
+   "id": "n247",
+   "c": "vocabulario",
+   "q": "¿Qué es la merma?",
+   "n": 3,
+   "a": [
+    "El producto que se pierde al limpiarlo, cortarlo o cocinarlo",
+    "Un postre andaluz",
+    "Un pescado de roca",
+    "Un plus de sueldo"
+   ]
+  },
+  {
+   "id": "n248",
+   "c": "vocabulario",
+   "q": "¿Qué es un \"extra\" en hostelería?",
+   "n": 2,
+   "a": [
+    "Un trabajador contratado para un evento o servicio concreto",
+    "Una tapa gratis",
+    "Un plato fuera de carta",
+    "Una propina grande"
+   ]
+  },
+  {
+   "id": "n249",
+   "c": "vocabulario",
+   "q": "¿Quién es el \"jefe de partida\"?",
+   "n": 3,
+   "a": [
+    "El responsable de una sección de la cocina",
+    "El dueño del restaurante",
+    "El jefe de sala",
+    "El encargado de compras"
+   ]
+  },
+  {
+   "id": "n250",
+   "c": "vocabulario",
+   "q": "¿Qué es un \"commis\" en sala?",
+   "n": 3,
+   "a": [
+    "Un ayudante de camarero",
+    "El jefe de rango",
+    "El sumiller",
+    "El maître"
+   ]
+  },
+  {
+   "id": "n251",
+   "c": "vocabulario",
+   "q": "¿Quién es el \"jefe de rango\"?",
+   "n": 3,
+   "a": [
+    "El camarero responsable de un grupo de mesas",
+    "El cocinero jefe",
+    "El dueño",
+    "El encargado de barra"
+   ]
+  },
+  {
+   "id": "n252",
+   "c": "vocabulario",
+   "q": "¿Qué es el \"rango\" de un camarero?",
+   "n": 2,
+   "a": [
+    "El grupo de mesas que le toca atender",
+    "Su categoría en la nómina",
+    "Su uniforme",
+    "Su horario"
+   ]
+  },
+  {
+   "id": "n253",
+   "c": "vocabulario",
+   "q": "\"¡Marchando!\" quiere decir que el pedido se empieza a preparar ya.",
+   "n": 1,
+   "vf": true
+  },
+  {
+   "id": "n254",
+   "c": "cliente",
+   "q": "Una mesa de cuatro pide la cuenta \"separada\". ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Preguntas qué ha tomado cada uno y haces cuentas por persona",
+    "Divides el total entre cuatro sin preguntar",
+    "Les dices que no se puede",
+    "Cobras todo a quien la pidió"
+   ]
+  },
+  {
+   "id": "n255",
+   "c": "cliente",
+   "q": "Un cliente habitual pide \"lo de siempre\" y tú eres nuevo. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Le dices con amabilidad que eres nuevo y le preguntas qué toma",
+    "Le traes un café con leche, que es lo más pedido",
+    "Le dices que no sabes y te vas",
+    "Esperas a que lo pida otro compañero"
+   ]
+  },
+  {
+   "id": "n256",
+   "c": "cliente",
+   "q": "Se te cae una copa y se rompe cerca de una mesa. ¿Qué haces primero?",
+   "n": 2,
+   "a": [
+    "Avisas a los clientes, que nadie se mueva, y recoges los cristales con escoba",
+    "Lo recoges con las manos rápido",
+    "Lo dejas para el final del servicio",
+    "Lo tapas con una servilleta"
+   ]
+  },
+  {
+   "id": "n257",
+   "c": "cliente",
+   "q": "Un cliente pide un plato y la cocina dice que está agotado. ¿Qué haces?",
+   "n": 3,
+   "a": [
+    "Se lo dices enseguida y le propones una alternativa parecida",
+    "Esperas a que pregunte por qué tarda",
+    "Le traes otro plato sin avisar",
+    "Le dices que lo traerás más tarde"
+   ]
+  },
+  {
+   "id": "n258",
+   "c": "cliente",
+   "q": "Un cliente se queja de que el plato tarda mucho. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Te disculpas, preguntas en cocina y le das un tiempo real",
+    "Le dices que no es culpa tuya",
+    "Le dices \"ya sale\" aunque no lo sepas",
+    "Le ignoras para no molestar a cocina"
+   ]
+  },
+  {
+   "id": "n259",
+   "c": "cliente",
+   "q": "Un cliente vegano pregunta por un plato. ¿Qué debes comprobar?",
+   "n": 2,
+   "a": [
+    "Que no lleve carne, pescado, huevo, lácteos ni miel",
+    "Solo que no lleve carne",
+    "Solo que no lleve gluten",
+    "Que no lleve verduras"
+   ]
+  },
+  {
+   "id": "n260",
+   "c": "cliente",
+   "q": "¿Qué diferencia hay entre un cliente vegetariano y uno vegano?",
+   "n": 3,
+   "a": [
+    "El vegetariano puede tomar huevo y lácteos; el vegano no",
+    "El vegano puede comer pescado",
+    "Son lo mismo",
+    "El vegetariano no come verdura"
+   ]
+  },
+  {
+   "id": "n261",
+   "c": "cliente",
+   "q": "Un cliente pide la carta en inglés y no hay. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Le explicas los platos con calma, con gestos o con ayuda del móvil",
+    "Le dices que no hay y te vas",
+    "Le traes lo más caro",
+    "Le das la carta en español sin más"
+   ]
+  },
+  {
+   "id": "n262",
+   "c": "servicio",
+   "q": "Una mesa pide vino tinto y pescado. ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Sirves lo que piden; si preguntan, puedes sugerir un blanco",
+    "Les dices que no se puede",
+    "Les traes blanco sin decir nada",
+    "Les cobras el cambio de copa"
+   ]
+  },
+  {
+   "id": "n263",
+   "c": "servicio",
+   "q": "¿Qué haces con la copa si el cliente pide otro vino distinto?",
+   "n": 2,
+   "a": [
+    "Pones una copa limpia",
+    "Sirves el nuevo en la misma copa",
+    "Le pides que se termine la copa antes",
+    "Le das un vaso"
+   ]
+  },
+  {
+   "id": "n264",
+   "c": "servicio",
+   "q": "Al tomar nota a una mesa grande, ¿cómo evitas confundir los platos?",
+   "n": 2,
+   "a": [
+    "Usas números de posición para cada comensal",
+    "Lo memorizas todo",
+    "Preguntas al servir \"¿de quién es esto?\"",
+    "Lo apunta cada cliente"
+   ]
+  },
+  {
+   "id": "n265",
+   "c": "servicio",
+   "q": "¿Por qué no se deben \"subastar\" los platos (\"¿quién lleva la merluza?\") al servir?",
+   "n": 3,
+   "a": [
+    "Porque queda poco profesional: el camarero debe saber de quién es cada plato",
+    "Porque se enfría la comida",
+    "Porque lo prohíbe la ley",
+    "Porque molesta a cocina"
+   ]
+  },
+  {
+   "id": "n266",
+   "c": "servicio",
+   "q": "¿Qué se hace con el pan si el cliente lo deja sobre el mantel?",
+   "n": 2,
+   "a": [
+    "Nada: es correcto si no hay plato de pan",
+    "Se le pide que lo ponga en el plato",
+    "Se retira al momento",
+    "Se cambia el mantel"
+   ]
+  },
+  {
+   "id": "n267",
+   "c": "servicio",
+   "q": "¿Cuál es el orden habitual de una comida completa?",
+   "n": 3,
+   "a": [
+    "Aperitivo, entrantes, primero, segundo, postre, café y licor",
+    "Café, postre, primero y segundo",
+    "Primero, aperitivo, postre y segundo",
+    "Entrantes, postre, segundo y café"
+   ]
+  },
+  {
+   "id": "n268",
+   "c": "servicio",
+   "q": "¿Qué incluye normalmente el menú del día en España?",
+   "n": 2,
+   "a": [
+    "Primero, segundo, postre o café, pan y bebida",
+    "Solo un plato y agua",
+    "Un plato, café y licor",
+    "Tapas variadas sin bebida"
+   ]
+  },
+  {
+   "id": "n269",
+   "c": "bebidas",
+   "q": "Un cliente pide \"un agua\". ¿Qué le preguntas?",
+   "n": 2,
+   "a": [
+    "Si la quiere con o sin gas, y fría o natural",
+    "Nada, le traes agua del grifo",
+    "Si la quiere con limón y azúcar",
+    "Si la quiere caliente"
+   ]
+  },
+  {
+   "id": "n270",
+   "c": "bebidas",
+   "q": "¿Cómo se abre un refresco en la mesa?",
+   "n": 2,
+   "a": [
+    "Se abre delante del cliente y se sirve en el vaso con hielo",
+    "Se abre en barra y se sirve ya mezclado",
+    "Se deja cerrado para que lo abra él",
+    "Se agita antes de abrir"
+   ]
+  },
+  {
+   "id": "n271",
+   "c": "bebidas",
+   "q": "Un cliente pide un gin tonic \"de una marca concreta\". ¿Qué haces?",
+   "n": 3,
+   "a": [
+    "Le enseñas la botella al servir para que vea la marca",
+    "Usas la ginebra de la casa",
+    "Le dices que todas son iguales",
+    "Le cobras la de la casa"
+   ]
+  },
+  {
+   "id": "n272",
+   "c": "bebidas",
+   "q": "Un refresco se abre delante del cliente.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n273",
+   "c": "cristaleria",
+   "q": "¿Por qué se sirve el cava en copa de flauta?",
+   "n": 2,
+   "a": [
+    "Para conservar mejor las burbujas",
+    "Porque cabe más",
+    "Para que se caliente antes",
+    "Porque es más barata"
+   ]
+  },
+  {
+   "id": "n274",
+   "c": "cristaleria",
+   "q": "¿Por qué la copa de tinto suele ser más ancha que la de blanco?",
+   "n": 3,
+   "a": [
+    "Para airear el vino y concentrar sus aromas",
+    "Para que quepa más hielo",
+    "Para que se enfríe",
+    "Para diferenciarlas por el color"
+   ]
+  },
+  {
+   "id": "n275",
+   "c": "cristaleria",
+   "q": "¿Cómo se revisa una copa antes de ponerla en la mesa?",
+   "n": 2,
+   "a": [
+    "Mirándola a contraluz para ver manchas o marcas",
+    "Oliéndola",
+    "Soplando dentro",
+    "No hace falta si sale del lavavajillas"
+   ]
+  },
+  {
+   "id": "n276",
+   "c": "cristaleria",
+   "q": "¿Cómo se secan y abrillantan las copas?",
+   "n": 2,
+   "a": [
+    "Con un paño limpio que no suelte pelusa, con vapor",
+    "Con papel de cocina",
+    "Con el paño de las mesas",
+    "Al aire, sin repasar"
+   ]
+  },
+  {
+   "id": "n277",
+   "c": "cristaleria",
+   "q": "¿Qué es la \"copa de cata\" (ISO)?",
+   "n": 3,
+   "a": [
+    "Copa estándar para catar vinos",
+    "Copa de cóctel grande",
+    "Vaso de chupito",
+    "Copa de coñac"
+   ]
+  },
+  {
+   "id": "n278",
+   "c": "cristaleria",
+   "q": "La copa de flauta hace que el cava pierda antes las burbujas.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n279",
+   "c": "cafes",
+   "q": "Un cliente pide \"un cortado de leche fría\". ¿Qué haces?",
+   "n": 2,
+   "a": [
+    "Espresso con un chorrito de leche fría del tiempo",
+    "Un café con hielo",
+    "Un café con leche frío",
+    "Leche fría con un poco de café"
+   ]
+  },
+  {
+   "id": "n280",
+   "c": "cafes",
+   "q": "Un cliente pide \"un café con leche, leche templada\". ¿Qué significa?",
+   "n": 2,
+   "a": [
+    "La leche menos caliente que lo normal",
+    "Leche fría",
+    "Leche hirviendo",
+    "Leche con mucha espuma"
+   ]
+  },
+  {
+   "id": "n281",
+   "c": "cocina",
+   "q": "¿Qué es un \"pintxo\" en el País Vasco?",
+   "n": 2,
+   "a": [
+    "Una tapa elaborada, a menudo sobre pan y con palillo",
+    "Un postre",
+    "Un tipo de vino",
+    "Un guiso de pescado"
+   ]
+  },
+  {
+   "id": "n282",
+   "c": "cocina",
+   "q": "¿Qué es el \"pescaíto frito\"?",
+   "n": 2,
+   "a": [
+    "Pescado pequeño enharinado y frito, típico de Andalucía",
+    "Pescado al horno",
+    "Pescado crudo marinado",
+    "Pescado en salsa verde"
+   ]
+  },
+  {
+   "id": "n283",
+   "c": "cocina",
+   "q": "¿Qué es el \"gazpachuelo\"?",
+   "n": 2,
+   "a": [
+    "Sopa caliente de pescado con mayonesa, típica de Málaga",
+    "Gazpacho más espeso",
+    "Gazpacho con fruta",
+    "Salmorejo con atún"
+   ]
+  },
+  {
+   "id": "n284",
+   "c": "cocina",
+   "q": "¿Qué es la \"pipirrana\"?",
+   "n": 3,
+   "a": [
+    "Ensalada de tomate, pimiento, cebolla y pepino picados",
+    "Guiso de patatas",
+    "Sopa de ajo",
+    "Un postre de almendra"
+   ]
+  },
+  {
+   "id": "n285",
+   "c": "cocina",
+   "q": "¿Qué es el \"pil-pil\"?",
+   "n": 3,
+   "a": [
+    "Salsa de ajo y aceite emulsionada con la gelatina del bacalao",
+    "Salsa de tomate picante",
+    "Caldo de marisco",
+    "Mayonesa de limón"
+   ]
+  },
+  {
+   "id": "n286",
+   "c": "cocina",
+   "q": "¿Qué son las \"migas\"?",
+   "n": 2,
+   "a": [
+    "Pan del día anterior frito con ajo y acompañado",
+    "Croquetas pequeñas",
+    "Restos de pescado",
+    "Galletas saladas"
+   ]
+  },
+  {
+   "id": "n287",
+   "c": "cocina",
+   "q": "La tortilla española lleva harina.",
+   "n": 1,
+   "vf": false
+  },
+  {
+   "id": "n288",
+   "c": "higiene",
+   "q": "¿Cada cuánto se deben controlar y apuntar las temperaturas de las cámaras?",
+   "n": 2,
+   "a": [
+    "Cada día, en el registro",
+    "Una vez al mes",
+    "Solo si hay una inspección",
+    "Nunca, tienen termostato"
+   ]
+  },
+  {
+   "id": "n289",
+   "c": "higiene",
+   "q": "¿Dónde se debe lavar las manos el personal de cocina?",
+   "n": 2,
+   "a": [
+    "En un lavamanos de accionamiento no manual",
+    "En el fregadero de verduras",
+    "En la pila de lavar platos",
+    "En el baño de clientes"
+   ]
+  },
+  {
+   "id": "n290",
+   "c": "higiene",
+   "q": "Una salsa con huevo crudo casera, ¿cómo se debe tratar?",
+   "n": 3,
+   "a": [
+    "Usar ovoproducto pasteurizado o consumirla enseguida en frío",
+    "Dejarla todo el día en la barra",
+    "Guardarla una semana",
+    "Recalentarla al día siguiente"
+   ]
+  },
+  {
+   "id": "n291",
+   "c": "higiene",
+   "q": "El pescado para crudo (sushi, boquerones en vinagre) debe congelarse antes para eliminar el anisakis.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n292",
+   "c": "vocabulario",
+   "q": "¿Qué es el \"turno partido\"?",
+   "n": 2,
+   "a": [
+    "Trabajar mañana y noche con un descanso largo en medio",
+    "Trabajar dos días seguidos",
+    "Medio turno",
+    "Turno de noche"
+   ]
+  },
+  {
+   "id": "n293",
+   "c": "vocabulario",
+   "q": "¿Qué significa \"cerrar caja\"?",
+   "n": 2,
+   "a": [
+    "Contar el dinero y cuadrar las ventas del día",
+    "Cerrar la puerta del local",
+    "Apagar la cafetera",
+    "Guardar las cajas de bebidas"
+   ]
+  },
+  {
+   "id": "n294",
+   "c": "vocabulario",
+   "q": "¿Qué es el \"stock\" mínimo?",
+   "n": 3,
+   "a": [
+    "La cantidad mínima de un producto antes de volver a pedir",
+    "El precio más bajo",
+    "El producto más vendido",
+    "Lo que sobra al cerrar"
+   ]
+  },
+  {
+   "id": "n295",
+   "c": "vocabulario",
+   "q": "¿Qué es un \"albarán\"?",
+   "n": 2,
+   "a": [
+    "El documento que acompaña la mercancía al entregarla",
+    "La factura del cliente",
+    "La carta de postres",
+    "El contrato de trabajo"
+   ]
   }
  ],
  "niveles": {
