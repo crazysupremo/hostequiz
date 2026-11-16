@@ -5,6 +5,10 @@ const LANG_NAMES = { es: "Español", pt: "Português", en: "English" };
 
 const I18N = {
   es: {
+    courseHost: "Hostelería", courseHostDesc: "Cafés, bebidas, sala y cocina", courseEso: "Graduado en ESO", courseEsoDesc: "Prueba libre para mayores de 18 · Castilla y León",
+    esoTagline: "Prepara el Graduado en ESO.", esoLead: "Matemáticas, ciencias, lengua, inglés y sociales, con preguntas basadas en las pruebas libres de Castilla y León. Cada uno a su ritmo.",
+    timeAuto: "Automático según la materia", autoHint: "Matemáticas {m} · Ciencias {c} · Lengua y Sociales {l} · Inglés {i} por pregunta", minutes: "{n} min",
+    esoNote: "Preguntas tipo test basadas en las pruebas libres de Castilla y León (2025-2026). La prueba real tiene preguntas abiertas.",
     modeTitle: "Modo de juego", modeSolo: "Cada alumno, preguntas diferentes", modeSoloDesc: "Cada uno responde en su móvil a su ritmo. Nadie tiene la misma pregunta que su compañero.",
     modeSame: "Todos la misma pregunta", modeSameDesc: "Las preguntas salen en esta pantalla, como en Kahoot.",
     perPlayer: "{n} preguntas por alumno", race: "Carrera en directo", finishBtn: "Terminar y ver el podio", finished: "terminado",
@@ -54,10 +58,14 @@ const I18N = {
     errQCorrect: "En la pregunta {n}, la respuesta marcada como correcta está vacía.", errQWrong: "La pregunta {n} necesita al menos una respuesta incorrecta.",
     errQDup: "La pregunta {n} tiene respuestas repetidas.", errAddOne: "Añade al menos una pregunta.", saved: "Quiz guardado", backList: "Mis quizzes",
     ideas: ["Cafés con alcohol", "Servicio del vino", "Cócteles clásicos", "Tipos de cerveza", "Atención al cliente", "Alérgenos", "Tapas españolas", "Cubiertos y su uso"],
-    cats: { cafes: "Cafés", tes: "Tés, infusiones y cacao", bebidas: "Bebidas y su servicio", vinos: "Vinos y bodega", cocteleria: "Coctelería y destilados", cliente: "Atención al cliente", cristaleria: "Vasos y copas", montaje: "Montaje y mise en place", servicio: "Servicio en sala", cocina: "Cocina y menú del día", higiene: "Higiene y seguridad", vocabulario: "Vocabulario de hostelería" },
+    cats: { cafes: "Cafés", tes: "Tés, infusiones y cacao", bebidas: "Bebidas y su servicio", vinos: "Vinos y bodega", cocteleria: "Coctelería y destilados", cliente: "Atención al cliente", matematicas: "Matemáticas", ciencias: "Ciencias y Tecnología", lengua: "Lengua castellana y literatura", ingles: "Inglés", social: "Ámbito social", cristaleria: "Vasos y copas", montaje: "Montaje y mise en place", servicio: "Servicio en sala", cocina: "Cocina y menú del día", higiene: "Higiene y seguridad", vocabulario: "Vocabulario de hostelería" },
     errors: {},
   },
   pt: {
+    courseHost: "Hotelaria", courseHostDesc: "Cafés, bebidas, sala e cozinha", courseEso: "Graduado em ESO", courseEsoDesc: "Prova livre para maiores de 18 · Castilla y León",
+    esoTagline: "Prepara o Graduado em ESO.", esoLead: "Matemática, ciências, língua, inglês e sociais, com perguntas baseadas nas provas livres de Castilla y León. Cada um ao seu ritmo.",
+    timeAuto: "Automático conforme a matéria", autoHint: "Matemática {m} · Ciências {c} · Língua e Sociais {l} · Inglês {i} por pergunta", minutes: "{n} min",
+    esoNote: "Perguntas de escolha múltipla baseadas nas provas livres de Castilla y León (2025-2026). A prova real tem perguntas abertas.",
     modeTitle: "Modo de jogo", modeSolo: "Cada aluno, perguntas diferentes", modeSoloDesc: "Cada um responde no telemóvel ao seu ritmo. Ninguém tem a mesma pergunta do colega.",
     modeSame: "Todos a mesma pergunta", modeSameDesc: "As perguntas aparecem neste ecrã, como no Kahoot.",
     perPlayer: "{n} perguntas por aluno", race: "Corrida ao vivo", finishBtn: "Terminar e ver o pódio", finished: "terminou",
@@ -107,7 +115,7 @@ const I18N = {
     errQCorrect: "Na pergunta {n}, a resposta marcada como certa está vazia.", errQWrong: "A pergunta {n} precisa de pelo menos uma resposta errada.",
     errQDup: "A pergunta {n} tem respostas repetidas.", errAddOne: "Adiciona pelo menos uma pergunta.", saved: "Quiz guardado", backList: "Os meus quizzes",
     ideas: ["Cafés com álcool", "Serviço do vinho", "Cocktails clássicos", "Tipos de cerveja", "Atendimento ao cliente", "Alergénios", "Tapas espanholas", "Talheres e o seu uso"],
-    cats: { cafes: "Cafés", tes: "Chás, infusões e cacau", bebidas: "Bebidas e o seu serviço", vinos: "Vinhos e adega", cocteleria: "Coquetelaria e destilados", cliente: "Atendimento ao cliente", cristaleria: "Copos e taças", montaje: "Montagem e mise en place", servicio: "Serviço de sala", cocina: "Cozinha e menu do dia", higiene: "Higiene e segurança", vocabulario: "Vocabulário de hotelaria" },
+    cats: { cafes: "Cafés", tes: "Chás, infusões e cacau", bebidas: "Bebidas e o seu serviço", vinos: "Vinhos e adega", cocteleria: "Coquetelaria e destilados", cliente: "Atendimento ao cliente", matematicas: "Matemática", ciencias: "Ciências e Tecnologia", lengua: "Língua espanhola e literatura", ingles: "Inglês", social: "Âmbito social", cristaleria: "Copos e taças", montaje: "Montagem e mise en place", servicio: "Serviço de sala", cocina: "Cozinha e menu do dia", higiene: "Higiene e segurança", vocabulario: "Vocabulário de hotelaria" },
     errors: {
       "Elige al menos un tema o uno de tus quizzes.": "Escolhe pelo menos um tema ou um quiz teu.",
       "No hay preguntas con esos temas y niveles. Elige otro nivel.": "Não há perguntas com esses temas e níveis. Escolhe outro nível.",
@@ -123,6 +131,10 @@ const I18N = {
     },
   },
   en: {
+    courseHost: "Hospitality", courseHostDesc: "Coffee, drinks, floor and kitchen", courseEso: "ESO diploma", courseEsoDesc: "Open exam for over-18s · Castilla y León",
+    esoTagline: "Prepare for the ESO diploma.", esoLead: "Maths, science, Spanish, English and social studies, with questions based on the Castilla y León open exams. Everyone at their own pace.",
+    timeAuto: "Automatic by subject", autoHint: "Maths {m} · Science {c} · Spanish and Social {l} · English {i} per question", minutes: "{n} min",
+    esoNote: "Multiple-choice questions based on the Castilla y León open exams (2025-2026). The real exam has open questions.",
     modeTitle: "Game mode", modeSolo: "Different questions for each student", modeSoloDesc: "Everyone answers on their phone at their own pace. No two students get the same question.",
     modeSame: "Everyone gets the same question", modeSameDesc: "Questions appear on this screen, like Kahoot.",
     perPlayer: "{n} questions per student", race: "Live race", finishBtn: "Finish and see the podium", finished: "finished",
@@ -172,7 +184,7 @@ const I18N = {
     errQCorrect: "In question {n}, the answer marked as correct is empty.", errQWrong: "Question {n} needs at least one wrong answer.",
     errQDup: "Question {n} has repeated answers.", errAddOne: "Add at least one question.", saved: "Quiz saved", backList: "My quizzes",
     ideas: ["Coffees with alcohol", "Wine service", "Classic cocktails", "Types of beer", "Customer service", "Allergens", "Spanish tapas", "Cutlery and its use"],
-    cats: { cafes: "Coffees", tes: "Teas, infusions and cocoa", bebidas: "Drinks and how to serve them", vinos: "Wine and cellar", cocteleria: "Cocktails and spirits", cliente: "Customer service", cristaleria: "Glassware", montaje: "Table setting and mise en place", servicio: "Floor service", cocina: "Kitchen and set menu", higiene: "Hygiene and safety", vocabulario: "Hospitality vocabulary" },
+    cats: { cafes: "Coffees", tes: "Teas, infusions and cocoa", bebidas: "Drinks and how to serve them", vinos: "Wine and cellar", cocteleria: "Cocktails and spirits", cliente: "Customer service", matematicas: "Maths", ciencias: "Science and Technology", lengua: "Spanish language and literature", ingles: "English", social: "Social studies", cristaleria: "Glassware", montaje: "Table setting and mise en place", servicio: "Floor service", cocina: "Kitchen and set menu", higiene: "Hygiene and safety", vocabulario: "Hospitality vocabulary" },
     errors: {
       "Elige al menos un tema o uno de tus quizzes.": "Choose at least one topic or one of your quizzes.",
       "No hay preguntas con esos temas y niveles. Elige otro nivel.": "No questions with those topics and levels. Choose another level.",
@@ -355,20 +367,21 @@ const lvTag = (n) => (n ? `<span class="lvl lvl-${n}">${esc(lvName(n))}</span>` 
 // Anillo de tiempo (SVG)
 function ring(id, total, size = 92) {
   const r = 40, c = 2 * Math.PI * r;
-  return `<div class="ring" style="width:${size}px;height:${size}px"><svg viewBox="0 0 92 92"><circle cx="46" cy="46" r="${r}" class="ring-bg"/><circle cx="46" cy="46" r="${r}" class="ring-fg" id="${id}-arc" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="0"/></svg><span id="${id}">${total}</span></div>`;
+  return `<div class="ring ${total >= 100 ? "long" : ""}" style="width:${size}px;height:${size}px"><svg viewBox="0 0 92 92"><circle cx="46" cy="46" r="${r}" class="ring-bg"/><circle cx="46" cy="46" r="${r}" class="ring-fg" id="${id}-arc" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="0"/></svg><span id="${id}">${fmtClock(total)}</span></div>`;
 }
 function setRing(id, msLeft, totalMs) {
   const arc = document.getElementById(id + "-arc"), num = document.getElementById(id);
   if (!arc || !num) return;
   const c = 2 * Math.PI * 40;
   arc.style.strokeDashoffset = (c * (1 - msLeft / totalMs)).toFixed(1);
-  num.textContent = Math.ceil(msLeft / 1000);
+  num.textContent = fmtClock(msLeft / 1000);
   arc.classList.toggle("low", msLeft <= 5000);
 }
 
 // ============ NOVEDADES (aviso pequeño en el pie) ============
-const APP_VERSION = "3.1";
+const APP_VERSION = "4";
 const CHANGELOG = [
+  { v: "4", date: "16/11/2026", es: ["Nueva sección: Graduado en ESO (Castilla y León) con 270 preguntas de matemáticas, ciencias, lengua, inglés y sociales.", "Cada materia tiene su tiempo por pregunta: Matemáticas 3 minutos."], pt: ["Nova secção: Graduado em ESO (Castilla y León) com 270 perguntas de matemática, ciências, língua, inglês e sociais.", "Cada matéria tem o seu tempo por pergunta: Matemática 3 minutos."], en: ["New section: ESO diploma (Castilla y León) with 270 questions in maths, science, Spanish, English and social studies.", "Each subject has its own time per question: Maths gets 3 minutes."] },
   { v: "3.1", date: "16/11/2026", es: ["Ahora puedes escribir el número de preguntas que quieras (de 1 a 100), por ejemplo 30 por alumno."], pt: ["Agora podes escrever o número de perguntas que quiseres (de 1 a 100), por exemplo 30 por aluno."], en: ["You can now type any number of questions (1 to 100), for example 30 per student."] },
   { v: "3", date: "16/11/2026", es: [
       "Nuevo modo: cada alumno recibe preguntas diferentes en su móvil, a su ritmo.",
@@ -402,3 +415,22 @@ function openNews() {
   box.addEventListener("click", (e) => { if (e.target === box) box.remove(); });
   document.body.appendChild(box);
 }
+
+// ============ CURSO: Hostelería o Graduado en ESO ============
+const COURSES = ["hosteleria", "eso"];
+let CURSO = (() => {
+  const u = new URLSearchParams(location.search).get("curso");
+  if (COURSES.includes(u)) return u;
+  try { const s = localStorage.getItem("hq-curso"); if (COURSES.includes(s)) return s; } catch (e) {}
+  return "hosteleria";
+})();
+function setCurso(c) { if (!COURSES.includes(c)) return; CURSO = c; try { localStorage.setItem("hq-curso", c); } catch (e) {} }
+const withCurso = (path) => `${path}?curso=${CURSO}`;
+// Tiempo legible: 45 s, 1:30, 3 min
+function fmtTime(sec) {
+  sec = Math.max(0, Math.ceil(sec));
+  if (sec < 60) return sec + " s";
+  const m = Math.floor(sec / 60), r = sec % 60;
+  return r ? `${m}:${String(r).padStart(2, "0")}` : t("minutes", { n: m });
+}
+const fmtClock = (sec) => { sec = Math.max(0, Math.ceil(sec)); return sec < 100 ? String(sec) : `${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, "0")}`; };

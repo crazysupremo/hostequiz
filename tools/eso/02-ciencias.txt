@@ -1,0 +1,46 @@
+@ciencias
+2|¿Qué son los pliegues? || Deformaciones de rocas que se doblan sin romperse (comportamiento plástico) | Roturas de rocas con desplazamiento de bloques | Roturas de rocas sin desplazamiento | El punto de la superficie sobre el foco de un terremoto
+2|¿Qué es una falla? || Una rotura de las rocas con desplazamiento de los bloques | Una rotura sin desplazamiento | Un pliegue muy grande | El origen de un terremoto bajo tierra
+2|¿Qué es una diaclasa? || Una rotura de las rocas sin desplazamiento de los bloques | Una rotura con desplazamiento | Una roca doblada | Una grieta del suelo causada por la sequía
+2|¿Qué es el epicentro de un terremoto? || El punto de la superficie situado justo encima del hipocentro | El punto del interior donde se origina | La zona donde más tiempo dura | La placa que se mueve
+2|¿Qué es el hipocentro? || El punto del interior de la Tierra donde se origina el terremoto | El punto de la superficie encima del foco | La onda más fuerte | El volcán más cercano
+2|Un tsunami se origina a 300 km de la costa y tarda 0,4 h en llegar. ¿Cuál es su velocidad? || 750 km/h | 120 km/h | 75 km/h | 1.200 km/h
+3|¿Cuántos m/s son 750 km/h? || Unos 208 m/s | 2.700 m/s | 75 m/s | 12,5 m/s
+3|Si ese tsunami empieza a las 10:00 y tarda 0,4 h, ¿a qué hora llega a la costa? || A las 10:24 | A las 10:40 | A las 10:04 | A las 11:00
+1|¿Qué enfermedad está relacionada con un consumo excesivo de azúcar? || Diabetes tipo 2 | Anemia | Gripe | Asma
+2|¿Por qué se dice que el azúcar aporta "calorías vacías"? || Aporta energía pero casi ningún otro nutriente | No aporta energía | Solo aporta proteínas | Se elimina sin digerir
+3|Un refresco tiene 10,6 g de azúcar por cada 100 mL. ¿Cuál es su concentración en g/L? || 106 g/L | 10,6 g/L | 1,06 g/L | 1.060 g/L
+3|Ese refresco (10,6 g de azúcar/100 mL), en una lata de 330 mL, ¿cuánto azúcar tiene? || Unos 35 g | 10,6 g | 3,5 g | 106 g
+3|El refresco tiene 42 kcal por 100 mL. ¿Cuántas kcal tiene una lata de 330 mL? || Unas 139 kcal | 42 kcal | 420 kcal | 13,9 kcal
+2|¿Qué cavidad del corazón envía la sangre a todo el cuerpo por la arteria aorta? || El ventrículo izquierdo | El ventrículo derecho | La aurícula derecha | La aurícula izquierda
+3|¿Qué sangre lleva la arteria pulmonar? || Sangre pobre en oxígeno, del corazón a los pulmones | Sangre rica en oxígeno, de los pulmones al corazón | Sangre rica en oxígeno, al cuerpo | Sangre del cuerpo al corazón
+3|¿Qué llevan las venas pulmonares? || Sangre rica en oxígeno, de los pulmones a la aurícula izquierda | Sangre pobre en oxígeno, a los pulmones | Sangre del cuerpo a la aurícula derecha | Linfa
+2|¿Para qué sirven las válvulas del corazón? || Para que la sangre no retroceda | Para producir glóbulos rojos | Para filtrar la sangre | Para oxigenar la sangre
+2|¿Por qué vasos llega al corazón la sangre que vuelve del cuerpo? || Por las venas cavas | Por la aorta | Por las venas pulmonares | Por la arteria pulmonar
+1|¿Cuál es la unidad de energía en el Sistema Internacional? || El julio (J) | El vatio (W) | El newton (N) | El pascal (Pa)
+3|¿A cuántos julios equivale 1 kWh? || 3,6 · 10⁶ J | 1.000 J | 3.600 J | 3,6 · 10³ J
+2|¿Qué es la convección? || Transmisión de calor por el movimiento de un fluido (líquido o gas) | Transmisión de calor por contacto en un sólido | Transmisión de calor por ondas, sin medio | Cambio de líquido a gas
+2|¿De qué depende la energía cinética de un cuerpo? || De su masa y de su velocidad | De su altura | De su temperatura | De su volumen
+3|¿Qué energía cinética tiene un cuerpo de 2 kg a 3 m/s? (Ec = ½·m·v²) || 9 J | 6 J | 18 J | 3 J
+3|¿Qué energía potencial tiene un cuerpo de 10 kg a 5 m de altura? (g = 9,8 m/s²) || 490 J | 50 J | 98 J | 4,9 J
+2|¿Qué es una reacción exotérmica? || La que desprende energía (calor) | La que absorbe energía | La que no cambia la energía | La que solo ocurre con luz
+2|¿Qué hace un alternador? || Transforma energía mecánica en eléctrica | Transforma energía eléctrica en mecánica | Transforma energía química en eléctrica | Almacena energía eléctrica
+3|La masa molar del agua es 18 g/mol. ¿Cuántas moléculas hay en 180 g? (Nₐ = 6,022·10²³) || 6,022 · 10²⁴ | 6,022 · 10²³ | 1,08 · 10²⁶ | 10
+3|El agua de mar tiene una densidad de 1,025 g/cm³. ¿Qué volumen ocupan 3 kg? || Unos 2,93 L | 3,075 L | 3 L | 0,34 L
+2|¿Qué diferencia hay entre evaporación y ebullición? || La evaporación ocurre en la superficie a cualquier temperatura; la ebullición, en todo el líquido a una temperatura fija | Son lo mismo | La ebullición ocurre a cualquier temperatura | La evaporación solo ocurre a 100 °C
+2|¿Por qué el vertido de agua caliente a un río perjudica a los peces? || El agua caliente tiene menos oxígeno disuelto | El agua caliente tiene más sal | El agua caliente es más densa | Los peces no ven en agua caliente
+1|¿En qué orgánulo se hace la fotosíntesis? || En el cloroplasto | En la mitocondria | En el núcleo | En el ribosoma
+2|¿En qué orgánulo se obtiene energía mediante la respiración celular? || En la mitocondria | En el cloroplasto | En la vacuola | En la pared celular
+2|Un aparato de 23 Ω se conecta a 230 V. ¿Qué intensidad circula? (V = I · R) || 10 A | 5.290 A | 0,1 A | 253 A
+2|Un aparato funciona a 230 V con 2 A. ¿Qué potencia tiene? (P = V · I) || 460 W | 115 W | 232 W | 4,6 W
+1|¿Cuál de estas fuentes de energía es renovable? || La eólica | El carbón | El gas natural | El petróleo
+1|En una cadena alimentaria, ¿quiénes son los productores? || Las plantas y algas | Los herbívoros | Los carnívoros | Los descomponedores
+1|¿Qué estado de la materia no tiene ni forma ni volumen propios? || Gaseoso | Líquido | Sólido | Ninguno
+2|¿Cuál de estas es una mezcla heterogénea? || Agua con aceite | Agua con sal disuelta | El aire | Agua con azúcar disuelto
+2|¿Qué indica el número atómico de un elemento? || El número de protones | El número de neutrones | La masa del átomo | El número de moléculas
+2|¿Qué nutrientes son la principal fuente de energía rápida? || Los hidratos de carbono | Las proteínas | Las vitaminas | Los minerales
+2|¿Cuál es la función principal de las proteínas? || Formar y reparar tejidos | Dar energía inmediata | Regular la temperatura | Transportar oxígeno solas
+2|¿Por qué se mueven las placas tectónicas? || Por las corrientes de convección del manto | Por el viento | Por las mareas | Por la rotación de la Luna
+2|vf=0|Las arterias siempre llevan sangre rica en oxígeno.
+2|vf=1|El agua hierve a 100 °C a nivel del mar.
+3|vf=0|La evaporación solo ocurre cuando el agua llega a 100 °C.

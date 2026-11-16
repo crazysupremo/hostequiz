@@ -25,7 +25,8 @@ const chosen = new Set();
 const mine = store.get("hq-quizzes") || []; // quizzes creados en este aparato
 const chosenMine = new Set();
 const chosenLv = new Set(); // vacío = todos los niveles
-const opts = { n: null, t: 20, mode: "solo" };
+const ESO = CURSO === "eso";
+const opts = { n: null, t: ESO ? "auto" : 20, mode: "solo" };
 const startQuiz = new URLSearchParams(location.search).get("quiz");
 onLangChange = () => current && current.fn(current.d, true);
 
@@ -50,23 +51,27 @@ const ICON_PHONES = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden
 const ICON_SCREEN = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 const qLabel = (d) => `${t("question")} <bdi>${d.idx + 1}</bdi> ${t("of")} <bdi>${d.total}</bdi>${d.c || d.cat ? " · " + esc(catName(d.c, d.cat)) : ""}${d.n ? " · " + lvTag(d.n) : ""}`;
 
+const autoHint = () => {
+  const tm = (id) => fmtTime((cats.find((c) => c.id === id) || {}).tiempo || 60);
+  return t("autoHint", { m: tm("matematicas"), c: tm("ciencias"), l: tm("lengua"), i: tm("ingles") });
+};
 // ---------- 1. Configurar ----------
 async function setup(err = "") {
   if (!cats.length) {
-    try { cats = await (await fetch("/api/categorias")).json(); } catch (e) { cats = []; }
-    if (startQuiz && mine.some((q) => q.id === startQuiz)) chosenMine.add(startQuiz);
+    try { cats = await (await fetch(withCurso("/api/categorias"))).json(); } catch (e) { cats = []; }
+    if (!ESO && startQuiz && mine.some((q) => q.id === startQuiz)) chosenMine.add(startQuiz);
     else cats.forEach((c) => chosen.add(c.id));
   }
   current = { fn: (d) => setup(d.err), d: { err } };
   if (opts.n === null) opts.n = chosenMine.size ? 100 : 10;
   render(`
     ${header(false)}
-    <h1>${t("newGame")}</h1>
+    <h1>${t("newGame")} <span class="coursetag">${t(ESO ? "courseEso" : "courseHost")}</span></h1>
     <div class="card">
       <div class="row" style="justify-content:space-between"><h3>${t("topics")}</h3><button class="btn ghost small" id="all">${t("allNone")}</button></div>
       <div class="chips">${cats.map((c) => `<button class="chip" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}">${esc(catName(c.id, c.nombre))} <span class="n">${c.total}</span></button>`).join("")}</div>
     </div>
-    ${mine.length ? `<div class="card">
+    ${ESO ? "" : mine.length ? `<div class="card">
       <div class="row" style="justify-content:space-between"><h3>${t("myQuizzes")}</h3><a class="btn ghost small" href="/crear.html">${t("createOther")}</a></div>
       <div class="chips">${mine.map((q) => `<button class="chip" data-m="${q.id}" aria-pressed="${chosenMine.has(q.id)}">★ ${esc(q.title)} <span class="n">${q.preguntas.length}</span></button>`).join("")}</div>
     </div>` : `<p class="muted small">${t("wantOwn")} <a href="/crear.html" style="color:var(--caramel)">${t("wantOwnLink")}</a>.</p>`}
@@ -90,7 +95,8 @@ async function setup(err = "") {
       </div>
       <div class="card" style="flex:1;min-width:220px">
         <label class="label" for="t">${t("timePerQ")}</label>
-        <select id="t">${[10, 20, 30, 60].map((n) => `<option value="${n}" ${n === opts.t ? "selected" : ""}>${t("seconds", { n })}</option>`).join("")}</select>
+        <select id="t">${ESO ? `<option value="auto" ${opts.t === "auto" ? "selected" : ""}>${t("timeAuto")}</option>` : ""}${(ESO ? [60, 120, 180, 300] : [10, 20, 30, 60]).map((n) => `<option value="${n}" ${n === opts.t ? "selected" : ""}>${fmtTime(n)}</option>`).join("")}</select>
+        ${ESO && opts.t === "auto" ? `<p class="muted small" style="margin:8px 0 0">${autoHint()}</p>` : ""}
       </div>
     </div>
     <p class="muted small" id="avail"></p>
@@ -110,7 +116,7 @@ async function setup(err = "") {
   nInput.addEventListener("change", () => setN(nInput.value));
   app.querySelectorAll("[data-step]").forEach((b) => b.addEventListener("click", () => setN(opts.n + +b.dataset.step)));
   app.querySelectorAll("[data-n]").forEach((b) => b.addEventListener("click", () => setN(+b.dataset.n)));
-  document.getElementById("t").addEventListener("change", (e) => (opts.t = +e.target.value));
+  document.getElementById("t").addEventListener("change", (e) => { opts.t = e.target.value === "auto" ? "auto" : +e.target.value; if (ESO) setup(err); });
   const drawLv = () => {
     document.getElementById("lv").innerHTML =
       `<button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">${t("all")}</button>` +
@@ -152,7 +158,7 @@ async function setup(err = "") {
     e.currentTarget.disabled = true;
     Sound.unlock();
     try {
-      const r = await api("/api/host/create", { cats: [...chosen], custom: mine.filter((q) => chosenMine.has(q.id)), niveles: [...chosenLv], n: opts.n, time: opts.t, mode: opts.mode });
+      const r = await api("/api/host/create", { cats: [...chosen], custom: mine.filter((q) => chosenMine.has(q.id)), niveles: [...chosenLv], n: opts.n, time: opts.t, mode: opts.mode, curso: CURSO });
       game = { pin: r.pin, key: r.hostKey, mode: r.mode };
       store.set("hq-host", game, sessionStorage);
       connect();

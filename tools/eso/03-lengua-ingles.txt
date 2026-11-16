@@ -1,0 +1,91 @@
+@lengua
+1|Una noticia sobre un hallazgo en Atapuerca es un texto… || Informativo (periodístico) | Argumentativo | Literario | Instructivo
+2|¿Cuál de estos es un género periodístico de opinión? || El editorial | La noticia | El reportaje | La entrevista
+2|¿Qué estructura tiene una noticia? || Titular, entradilla y cuerpo (pirámide invertida) | Introducción, nudo y desenlace | Tesis, argumentos y conclusión | Saludo, cuerpo y despedida
+2|En una noticia, ¿para qué se usan normalmente las comillas? || Para citar las palabras exactas de alguien | Para indicar el título del periódico | Para marcar las faltas | Para separar párrafos
+2|¿Qué función del lenguaje predomina en una noticia? || Referencial o representativa | Poética | Apelativa | Fática
+3|¿Qué es una sigla? || Palabra formada por las iniciales de otras palabras, como ONU | Palabra formada por dos palabras, como sacacorchos | Palabra con prefijo, como deshacer | Palabra tomada de otra lengua
+3|"Paleolítico" (del griego palaio, antiguo, y lithos, piedra) es una palabra… || Compuesta | Derivada | Simple | Sigla
+2|"Deshacer" es una palabra… || Derivada, con prefijo | Compuesta | Simple | Sigla
+2|En "la especie humana", ¿qué categoría es "humana"? || Adjetivo | Sustantivo | Adverbio | Determinante
+2|En "la antigüedad de los restos", ¿qué categoría es "antigüedad"? || Sustantivo | Adjetivo | Adverbio | Verbo
+2|En "esos restos", ¿qué es "esos"? || Determinante demostrativo | Pronombre personal | Artículo | Adverbio
+1|En "ahora sabemos más", ¿qué es "ahora"? || Adverbio de tiempo | Adjetivo | Sustantivo | Preposición
+2|En "muchas especies", ¿qué es "muchas"? || Determinante indefinido | Adjetivo calificativo | Pronombre personal | Adverbio de cantidad
+2|¿Cuál es el pretérito perfecto simple de "encontrar" (ellos)? || Encontraron | Han encontrado | Encontraban | Encontrarán
+3|"Hayan descubierto" es… || Pretérito perfecto de subjuntivo | Presente de subjuntivo | Pretérito perfecto compuesto de indicativo | Pretérito pluscuamperfecto
+2|¿Cuál es el presente de subjuntivo de "tener" (él)? || Tenga | Tiene | Tuviera | Tendrá
+2|¿Cuál de estas es una perífrasis de obligación? || Tengo que estudiar | Voy a estudiar | Estoy estudiando | Acabo de estudiar
+3|"Acabo de llegar" es una perífrasis que indica… || Una acción que ha terminado hace muy poco | Obligación | Una acción futura | Una acción que se repite
+2|En "Los investigadores encontraron un cráneo", ¿cuál es el sujeto? || Los investigadores | Un cráneo | Encontraron | No tiene sujeto
+2|En "Los investigadores encontraron un cráneo", ¿qué función tiene "un cráneo"? || Complemento directo | Sujeto | Complemento indirecto | Atributo
+3|En "Le di el libro a María", ¿qué función tiene "a María"? || Complemento indirecto | Complemento directo | Sujeto | Complemento circunstancial
+3|"María es muy simpática" tiene un predicado… || Nominal (con atributo) | Verbal | Sin verbo | Impersonal
+2|En "Juan corre por el parque", ¿qué es "por el parque"? || Complemento circunstancial de lugar | Complemento directo | Sujeto | Atributo
+3|¿Cuál de estas oraciones es impersonal? || Llueve mucho en Galicia | Juan come pan | Los niños juegan | Mi madre trabaja
+1|¿Qué palabra está bien escrita? || Árbol | Arbol | Cancíon | Examén
+2|¿Cuál de estas palabras es esdrújula? || Música | Canción | Mesa | Reloj
+2|¿Qué frase está bien escrita? || He hecho los deberes | He echo los deberes | E hecho los deberes | He hechó los deberes
+2|¿Qué frase está bien escrita? || Vamos a ver la película | Vamos haber la película | Vamos a haber la película | Bamos a ver la película
+1|¿Cuál es un sinónimo de "rápido"? || Veloz | Lento | Pesado | Tranquilo
+1|¿Cuál es un antónimo de "escaso"? || Abundante | Poco | Raro | Insuficiente
+2|¿Qué saludo es adecuado en un correo formal de reclamación? || Estimados señores: | ¡Hola, chicos! | Querido amigo: | ¿Qué tal?
+2|En un correo de reclamación por una reserva mal hecha, ¿qué no puede faltar? || Los datos de la reserva, el problema y lo que pides (reembolso o cambio) | Solo tu nombre | Una queja sin datos | Un chiste para suavizar
+1|¿Quién escribió "Don Quijote de la Mancha"? || Miguel de Cervantes | Lope de Vega | Federico García Lorca | Antonio Machado
+2|¿Quién escribió "La casa de Bernarda Alba"? || Federico García Lorca | Miguel de Unamuno | Gustavo Adolfo Bécquer | Benito Pérez Galdós
+2|¿Quién escribió "Campos de Castilla"? || Antonio Machado | Federico García Lorca | Rosalía de Castro | Juan Ramón Jiménez
+2|¿Quién escribió "Cien años de soledad"? || Gabriel García Márquez | Pablo Neruda | Mario Vargas Llosa | Julio Cortázar
+2|¿Quién escribió el "Cantar de mio Cid"? || Es anónimo | Miguel de Cervantes | Gonzalo de Berceo | Jorge Manrique
+2|¿Quién escribió las "Rimas"? || Gustavo Adolfo Bécquer | Antonio Machado | José Zorrilla | Garcilaso de la Vega
+3|¿Quién escribió "La Celestina"? || Fernando de Rojas | Lope de Vega | Francisco de Quevedo | Calderón de la Barca
+3|¿Quién escribió los "Episodios nacionales", novelas históricas? || Benito Pérez Galdós | Leopoldo Alas "Clarín" | Pío Baroja | Camilo José Cela
+2|¿Quién escribió "Veinte poemas de amor y una canción desesperada"? || Pablo Neruda | Gabriel García Márquez | Rubén Darío | Octavio Paz
+3|¿A qué generación pertenece Federico García Lorca? || Generación del 27 | Generación del 98 | Romanticismo | Siglo de Oro
+3|¿A qué generación pertenece Antonio Machado? || Generación del 98 | Generación del 27 | Barroco | Realismo
+3|"El Lazarillo de Tormes" es una novela… || Picaresca | Pastoril | De caballerías | Histórica
+2|"Tus ojos son como dos luceros" es un ejemplo de… || Comparación o símil | Metáfora | Hipérbole | Personificación
+2|"El viento susurraba entre los árboles" es un ejemplo de… || Personificación | Comparación | Hipérbole | Anáfora
+2|vf=1|En un correo formal se evita el lenguaje coloquial.
+2|vf=0|"Hayan descubierto" es presente de subjuntivo.
+
+@ingles
+1|She ___ to work every day. || goes | is going | go | going
+1|Look! It ___ now. || is raining | rains | rain | raining
+2|Negative of "They could swim": || They couldn't swim. | They didn't could swim. | They could not to swim. | They don't could swim.
+2|Question of "He had a car": || Did he have a car? | Had he a car? | Does he had a car? | Did he had a car?
+1|Past simple of "go": || went | goed | gone | going
+2|Negative of "She was reading": || She wasn't reading. | She didn't reading. | She weren't reading. | She not was reading.
+2|Question of "They were sleeping": || Were they sleeping? | Did they sleeping? | Was they sleeping? | Do they were sleeping?
+2|I don't want ___ to eat, thanks. || anything | something | nothing | everything
+2|___ is perfect. Everyone makes mistakes. || Nobody | Anybody | Somebody | Everybody
+2|I can't find my keys ___. || anywhere | nowhere | somewhere | everywhere
+2|There's ___ at the door. Can you open it? || somebody | anybody | nobody | everywhere
+2|Comparative of "pretty": || prettier | more pretty | prettyer | the prettiest
+2|Superlative of "beautiful": || the most beautiful | the beautifulest | more beautiful | the more beautiful
+1|My brother is ___ me. || taller than | more tall than | tallest than | as taller
+2|Superlative of "good": || the best | the goodest | better | the most good
+2|Comparative of "bad": || worse | badder | worst | more bad
+2|Superlative of "silly": || the silliest | the most silly | sillier | the sillyest
+1|"How often do you go to the gym?" — "___ a week." || Twice | Two | Second | Double
+2|Which sentence is correct? || She is always late. | She always is late. | Always is she late. | She late is always.
+2|Which sentence is correct? || He usually plays football on Saturdays. | He plays usually football on Saturdays. | Usually he football plays on Saturdays. | He plays football usually Saturdays on.
+1|"Do you play handball?" — "Yes, ___." || I do | I play | I does | I am
+1|"Does she watch the news?" — "No, ___." || she doesn't | she don't | she isn't | she not
+2|Which is a polite way to ask for permission? || Could I open the window, please? | Open the window! | Can open I the window? | I could open the window?
+1|The best answer to "Thank you very much!" is… || You're welcome. | Thank you too. | Yes, please. | Excuse me.
+2|"Sorry, could you ___ that, please? I didn't understand." || repeat | repeating | repeated | to repeat
+2|"___ does the shop open?" — "At 9 o'clock." || When | Where | Why | Who
+2|"I ___ a new phone. Mine is broken." || need | needs | am needing | needing
+2|"Second-hand" clothes are… || clothes that somebody used before | very expensive clothes | new clothes | clothes for children
+2|What does "waste" mean? || things that are thrown away | money you save | clean water | a type of shop
+2|An electric car is charged at a… || charging point | petrol station | car wash | bus stop
+2|I ___ chocolate very much. || like | am liking | likes | liking
+1|There ___ two apples on the table. || are | is | be | am
+2|This is ___ book. (the book of Maria) || Maria's | Marias | Maria | of Maria
+2|Past simple of "buy": || bought | buyed | brought | buy
+3|I ___ TV when the phone rang. || was watching | watched | am watching | watch
+2|I was born ___ 1990. || in | on | at | to
+2|My birthday is ___ 29th October. || on | in | at | to
+1|She ___ speak three languages. || can | cans | can to | is can
+2|vf=1|"Went" is the past simple of "go".
+2|vf=0|We use the present continuous for habits, like "I am going to work every day".

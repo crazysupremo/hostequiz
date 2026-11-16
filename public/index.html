@@ -28,6 +28,8 @@ const ICON_OK = '<svg class="icon" viewBox="0 0 84 84"><circle cx="42" cy="42" r
 const ICON_BAD = '<svg class="icon" viewBox="0 0 84 84"><circle cx="42" cy="42" r="40" fill="rgba(0,0,0,.18)"/><path d="M28 28l28 28M56 28L28 56" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/></svg>';
 const ICON_GAME = '<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
 const ICON_BOOK = '<svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z M4 5v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>';
+const ICON_CUP2 = '<svg viewBox="0 0 24 24"><path d="M4 9h13v5a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6z" fill="currentColor"/><path d="M17 10.5h1.5a2.5 2.5 0 0 1 0 5H17" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>';
+const ICON_CAP = '<svg viewBox="0 0 24 24"><path d="M12 4 1.5 9 12 14l10.5-5z" fill="currentColor"/><path d="M6 11.5v4.2c0 1.5 2.7 3.3 6 3.3s6-1.8 6-3.3v-4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M21 9v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 const ICON_SPARK = '<svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z" fill="currentColor"/></svg>';
 
 // ---------- pantalla de inicio ----------
@@ -39,16 +41,21 @@ function home(err = "", pinPrefill = "") {
   const keep = { pin: document.getElementById("pin")?.value, nm: document.getElementById("nm")?.value };
   app.innerHTML = `<div class="screen">
     ${topbar()}
+    <div class="courses" role="group">
+      <button type="button" class="course" data-curso="hosteleria" aria-pressed="${CURSO === "hosteleria"}"><span class="ico" style="background:var(--caramel);color:#2a1407">${ICON_CUP2}</span><span><b>${t("courseHost")}</b><small>${t("courseHostDesc")}</small></span></button>
+      <button type="button" class="course" data-curso="eso" aria-pressed="${CURSO === "eso"}"><span class="ico" style="background:var(--c1);color:#fff">${ICON_CAP}</span><span><b>${t("courseEso")}</b><small>${t("courseEsoDesc")}</small></span></button>
+    </div>
     <div class="home-hero">
       <div class="stack" style="gap:18px">
         <div class="shapes">${SHAPES.map((s, i) => `<span style="color:var(--c${i})">${s}</span>`).join("")}</div>
-        <h1>${t("tagline")}</h1>
-        <p class="lead">${t("lead")}</p>
+        <h1>${CURSO === "eso" ? t("esoTagline") : t("tagline")}</h1>
+        <p class="lead">${CURSO === "eso" ? t("esoLead") : t("lead")}</p>
         <div class="modes">
-          <a class="mode" href="/host.html"><span class="ico" style="background:var(--c1)">${ICON_GAME}</span>${t("createGame")}</a>
-          <a class="mode" href="/practica.html"><span class="ico" style="background:var(--c3)">${ICON_BOOK}</span>${t("practice")}</a>
-          <a class="mode" href="/crear.html"><span class="ico" style="background:var(--c2);color:#2a1a00">${ICON_SPARK}</span>${t("createAI")}</a>
+          <a class="mode" href="${withCurso("/host.html")}"><span class="ico" style="background:var(--c1)">${ICON_GAME}</span>${t("createGame")}</a>
+          <a class="mode" href="${withCurso("/practica.html")}"><span class="ico" style="background:var(--c3)">${ICON_BOOK}</span>${t("practice")}</a>
+          ${CURSO === "eso" ? "" : `<a class="mode" href="/crear.html"><span class="ico" style="background:var(--c2);color:#2a1a00">${ICON_SPARK}</span>${t("createAI")}</a>`}
         </div>
+        ${CURSO === "eso" ? `<p class="muted small">${t("esoNote")}</p>` : ""}
       </div>
       <form class="card" id="join" autocomplete="off">
         <h3>${t("joinTitle")}</h3>
@@ -61,6 +68,7 @@ function home(err = "", pinPrefill = "") {
       </form>
     </div>
     <p class="foot">${t("foot")}</p>${newsLink()}</div>`;
+  app.querySelectorAll("[data-curso]").forEach((b) => b.addEventListener("click", () => { setCurso(b.dataset.curso); home(err, pinPrefill); }));
   const f = document.getElementById("join");
   if (!keep.pin) (pin ? document.getElementById("nm") : document.getElementById("pin")).focus();
   f.addEventListener("submit", async (e) => {
@@ -144,7 +152,7 @@ function showQuestion(d, redraw) {
   const two = d.a.length === 2;
   const total = d.time * 1000;
   screen(`
-    <div class="qhead"><span class="pill"><bdi dir="ltr">${d.idx + 1} / ${d.total}</bdi>${d.n ? " · " + lvTag(d.n) : ""}</span><span class="pill" id="left" dir="ltr">${Math.ceil(Math.min(total, qState.end - Date.now()) / 1000)} s</span></div>
+    <div class="qhead"><span class="pill"><bdi dir="ltr">${d.idx + 1} / ${d.total}</bdi>${d.n ? " · " + lvTag(d.n) : ""}</span><span class="pill" id="left" dir="ltr">${fmtTime(Math.min(total, qState.end - Date.now()) / 1000)}</span></div>
     <div class="timebar"><i id="bar"></i></div>
     <p class="question" style="font-size:clamp(20px,5.6vw,30px);padding:2px 0">${esc(L.q)}</p>
     ${pic(d, "small")}
@@ -168,7 +176,7 @@ function showQuestion(d, redraw) {
     }
     const ms = Math.max(0, Math.min(total, qState.end - now));
     const l = document.getElementById("left"), b = document.getElementById("bar");
-    if (l) l.textContent = Math.ceil(ms / 1000) + " s";
+    if (l) l.textContent = fmtTime(ms / 1000);
     if (b) { b.style.transform = `scaleX(${ms / total})`; b.classList.toggle("low", ms <= 5000); }
     if (!ms && !introOn) clearInterval(timer);
   };

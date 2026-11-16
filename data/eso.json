@@ -1,0 +1,3200 @@
+{
+ "curso": "eso",
+ "categorias": {
+  "matematicas": "Matemáticas",
+  "ciencias": "Ciencias y Tecnología",
+  "lengua": "Lengua castellana y literatura",
+  "ingles": "Inglés",
+  "social": "Ámbito social"
+ },
+ "tiempos": {
+  "matematicas": 180,
+  "ciencias": 90,
+  "lengua": 60,
+  "ingles": 45,
+  "social": 60
+ },
+ "niveles": {
+  "1": "Fácil",
+  "2": "Medio",
+  "3": "Difícil"
+ },
+ "nota": "Preguntas basadas en las pruebas libres de Graduado en ESO para mayores de 18 años de la Junta de Castilla y León (2025-2026). La PRIMERA respuesta es la correcta.",
+ "preguntas": [
+  {
+   "id": "e001",
+   "c": "matematicas",
+   "q": "Dados A(x) = 4x² − 5x + 1 y B(x) = −3x² + 2x + 5, ¿cuánto es A(x) + B(x)?",
+   "n": 2,
+   "a": [
+    "x² − 3x + 6",
+    "7x² − 7x − 4",
+    "x² − 7x + 6",
+    "x² − 3x − 4"
+   ]
+  },
+  {
+   "id": "e002",
+   "c": "matematicas",
+   "q": "Dados A(x) = 4x² − 5x + 1 y B(x) = −3x² + 2x + 5, ¿cuánto es A(x) − B(x)?",
+   "n": 2,
+   "a": [
+    "7x² − 7x − 4",
+    "x² − 3x + 6",
+    "7x² − 3x − 4",
+    "7x² − 7x + 6"
+   ]
+  },
+  {
+   "id": "e003",
+   "c": "matematicas",
+   "q": "Si el volumen total es V(x) = x² − 3x + 6, ¿cuánto vale V(4)?",
+   "n": 2,
+   "a": [
+    "10",
+    "34",
+    "6",
+    "16"
+   ]
+  },
+  {
+   "id": "e004",
+   "c": "matematicas",
+   "q": "¿Cuánto es (4x² − 5x + 1) · (x + 3)?",
+   "n": 3,
+   "a": [
+    "4x³ + 7x² − 14x + 3",
+    "4x³ − 5x² + x + 3",
+    "4x³ + 7x² + 14x + 3",
+    "4x² + 7x − 14"
+   ]
+  },
+  {
+   "id": "e005",
+   "c": "matematicas",
+   "q": "¿Cuánto es (x + 3) · (x − 2)?",
+   "n": 2,
+   "a": [
+    "x² + x − 6",
+    "x² − x − 6",
+    "x² + 5x − 6",
+    "x² + x + 6"
+   ]
+  },
+  {
+   "id": "e006",
+   "c": "matematicas",
+   "q": "¿Cuánto es 2x · (3x − 4)?",
+   "n": 1,
+   "a": [
+    "6x² − 8x",
+    "5x² − 8x",
+    "6x² − 4",
+    "6x − 8x"
+   ]
+  },
+  {
+   "id": "e007",
+   "c": "matematicas",
+   "q": "Si P(x) = x³ − 2x + 1, ¿cuánto vale P(−2)?",
+   "n": 2,
+   "a": [
+    "−3",
+    "5",
+    "−11",
+    "13"
+   ]
+  },
+  {
+   "id": "e008",
+   "c": "matematicas",
+   "q": "¿Qué grado tiene el polinomio 5x⁴ − 3x² + 7?",
+   "n": 1,
+   "a": [
+    "4",
+    "2",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "e009",
+   "c": "matematicas",
+   "q": "¿Cuál es el desarrollo de (x + 5)²?",
+   "n": 2,
+   "a": [
+    "x² + 10x + 25",
+    "x² + 25",
+    "x² + 5x + 25",
+    "x² + 10x + 10"
+   ]
+  },
+  {
+   "id": "e010",
+   "c": "matematicas",
+   "q": "¿Cuál es el desarrollo de (x − 3)(x + 3)?",
+   "n": 2,
+   "a": [
+    "x² − 9",
+    "x² + 9",
+    "x² − 6x − 9",
+    "x² − 3"
+   ]
+  },
+  {
+   "id": "e011",
+   "c": "matematicas",
+   "q": "¿Cuál es el desarrollo de (2x − 1)²?",
+   "n": 3,
+   "a": [
+    "4x² − 4x + 1",
+    "4x² + 1",
+    "4x² − 2x + 1",
+    "2x² − 4x + 1"
+   ]
+  },
+  {
+   "id": "e012",
+   "c": "matematicas",
+   "q": "Resuelve: 3x + 7 = 22",
+   "n": 1,
+   "a": [
+    "x = 5",
+    "x = 29/3",
+    "x = 15",
+    "x = 3"
+   ]
+  },
+  {
+   "id": "e013",
+   "c": "matematicas",
+   "q": "Resuelve: 2(x − 4) = x + 6",
+   "n": 2,
+   "a": [
+    "x = 14",
+    "x = 2",
+    "x = 10",
+    "x = −2"
+   ]
+  },
+  {
+   "id": "e014",
+   "c": "matematicas",
+   "q": "Resuelve: x/3 + 2 = 6",
+   "n": 2,
+   "a": [
+    "x = 12",
+    "x = 24",
+    "x = 4/3",
+    "x = 2"
+   ]
+  },
+  {
+   "id": "e015",
+   "c": "matematicas",
+   "q": "Resuelve: (x + 1)/2 − (x − 2)/3 = 2",
+   "n": 3,
+   "a": [
+    "x = 5",
+    "x = 7",
+    "x = 1",
+    "x = 11"
+   ]
+  },
+  {
+   "id": "e016",
+   "c": "matematicas",
+   "q": "Resuelve: x² − 5x + 6 = 0",
+   "n": 2,
+   "a": [
+    "x = 2 y x = 3",
+    "x = −2 y x = −3",
+    "x = 1 y x = 6",
+    "x = −1 y x = 6"
+   ]
+  },
+  {
+   "id": "e017",
+   "c": "matematicas",
+   "q": "Resuelve: x² − 16 = 0",
+   "n": 2,
+   "a": [
+    "x = 4 y x = −4",
+    "Solo x = 4",
+    "x = 8 y x = −8",
+    "x = 16"
+   ]
+  },
+  {
+   "id": "e018",
+   "c": "matematicas",
+   "q": "Resuelve: x² + 2x − 15 = 0",
+   "n": 3,
+   "a": [
+    "x = 3 y x = −5",
+    "x = −3 y x = 5",
+    "x = 5 y x = 3",
+    "x = 15 y x = −1"
+   ]
+  },
+  {
+   "id": "e019",
+   "c": "matematicas",
+   "q": "Resuelve: 2x² − 8x = 0",
+   "n": 3,
+   "a": [
+    "x = 0 y x = 4",
+    "x = 4",
+    "x = 0 y x = −4",
+    "x = 2 y x = −2"
+   ]
+  },
+  {
+   "id": "e020",
+   "c": "matematicas",
+   "q": "Resuelve el sistema: x + y = 10 ; x − y = 4",
+   "n": 2,
+   "a": [
+    "x = 7, y = 3",
+    "x = 6, y = 4",
+    "x = 3, y = 7",
+    "x = 8, y = 2"
+   ]
+  },
+  {
+   "id": "e021",
+   "c": "matematicas",
+   "q": "Resuelve el sistema: 2x + y = 11 ; x − y = 1",
+   "n": 3,
+   "a": [
+    "x = 4, y = 3",
+    "x = 5, y = 1",
+    "x = 3, y = 5",
+    "x = 6, y = −1"
+   ]
+  },
+  {
+   "id": "e022",
+   "c": "matematicas",
+   "q": "En un circuito, las intensidades cumplen x + y = 9 y 2x = y. ¿Cuánto valen?",
+   "n": 3,
+   "a": [
+    "x = 3 A, y = 6 A",
+    "x = 6 A, y = 3 A",
+    "x = 4,5 A, y = 4,5 A",
+    "x = 2 A, y = 7 A"
+   ]
+  },
+  {
+   "id": "e023",
+   "c": "matematicas",
+   "q": "Un burro lleva un barril y un caballo un fardo. Juntos pesan 80 kg y el barril pesa 20 kg más que el fardo. ¿Cuánto pesa cada uno?",
+   "n": 3,
+   "a": [
+    "Barril 50 kg, fardo 30 kg",
+    "Barril 60 kg, fardo 20 kg",
+    "Barril 40 kg, fardo 40 kg",
+    "Barril 55 kg, fardo 25 kg"
+   ]
+  },
+  {
+   "id": "e024",
+   "c": "matematicas",
+   "q": "Una madre tiene el triple de edad que su hijo y entre los dos suman 48 años. ¿Qué edades tienen?",
+   "n": 3,
+   "a": [
+    "Hijo 12, madre 36",
+    "Hijo 16, madre 32",
+    "Hijo 12, madre 48",
+    "Hijo 10, madre 30"
+   ]
+  },
+  {
+   "id": "e025",
+   "c": "matematicas",
+   "q": "3 camisetas y 2 pantalones cuestan 85 €. Cada camiseta vale 15 €. ¿Cuánto vale cada pantalón?",
+   "n": 3,
+   "a": [
+    "20 €",
+    "25 €",
+    "17,50 €",
+    "40 €"
+   ]
+  },
+  {
+   "id": "e026",
+   "c": "matematicas",
+   "q": "Alicia acierta 14 de 20 flechas y Rubén 18 de 26. ¿Quién tiene mejor puntería?",
+   "n": 2,
+   "a": [
+    "Alicia (70 % frente a unos 69,2 %)",
+    "Rubén (69,2 % frente a 70 %)",
+    "Los dos igual",
+    "Rubén, porque acierta más flechas"
+   ]
+  },
+  {
+   "id": "e027",
+   "c": "matematicas",
+   "q": "¿Cuánto es el 25 % de 80?",
+   "n": 1,
+   "a": [
+    "20",
+    "25",
+    "32",
+    "60"
+   ]
+  },
+  {
+   "id": "e028",
+   "c": "matematicas",
+   "q": "Una chaqueta cuesta 60 € y tiene un 15 % de descuento. ¿Cuánto pagas?",
+   "n": 2,
+   "a": [
+    "51 €",
+    "45 €",
+    "9 €",
+    "54 €"
+   ]
+  },
+  {
+   "id": "e029",
+   "c": "matematicas",
+   "q": "Un producto cuesta 100 € sin IVA. Con un IVA del 21 %, ¿cuánto cuesta?",
+   "n": 2,
+   "a": [
+    "121 €",
+    "79 €",
+    "102,10 €",
+    "112 €"
+   ]
+  },
+  {
+   "id": "e030",
+   "c": "matematicas",
+   "q": "Un precio sube de 200 € a 250 €. ¿Qué porcentaje ha subido?",
+   "n": 3,
+   "a": [
+    "25 %",
+    "50 %",
+    "20 %",
+    "125 %"
+   ]
+  },
+  {
+   "id": "e031",
+   "c": "matematicas",
+   "q": "Tras subir un 10 % y después bajar un 10 %, un precio de 100 € queda en…",
+   "n": 3,
+   "a": [
+    "99 €",
+    "100 €",
+    "101 €",
+    "90 €"
+   ]
+  },
+  {
+   "id": "e032",
+   "c": "matematicas",
+   "q": "3 kg de manzanas cuestan 4,50 €. ¿Cuánto cuestan 5 kg?",
+   "n": 2,
+   "a": [
+    "7,50 €",
+    "6 €",
+    "9 €",
+    "7 €"
+   ]
+  },
+  {
+   "id": "e033",
+   "c": "matematicas",
+   "q": "4 obreros tardan 6 días en hacer una obra. ¿Cuánto tardarán 8 obreros al mismo ritmo?",
+   "n": 3,
+   "a": [
+    "3 días",
+    "12 días",
+    "6 días",
+    "2 días"
+   ]
+  },
+  {
+   "id": "e034",
+   "c": "matematicas",
+   "q": "Un capital de 1.000 € al 3 % de interés simple anual durante 2 años genera…",
+   "n": 3,
+   "a": [
+    "60 € de intereses",
+    "30 € de intereses",
+    "600 € de intereses",
+    "1.060 € de intereses"
+   ]
+  },
+  {
+   "id": "e035",
+   "c": "matematicas",
+   "q": "En un mapa a escala 1:50.000, dos pueblos están a 4 cm. ¿Qué distancia real hay?",
+   "n": 3,
+   "a": [
+    "2 km",
+    "20 km",
+    "200 m",
+    "0,2 km"
+   ]
+  },
+  {
+   "id": "e036",
+   "c": "matematicas",
+   "q": "Un estanque circular tiene 10 m de diámetro. ¿Cuál es su área? (π ≈ 3,14)",
+   "n": 2,
+   "a": [
+    "78,5 m²",
+    "314 m²",
+    "31,4 m²",
+    "15,7 m²"
+   ]
+  },
+  {
+   "id": "e037",
+   "c": "matematicas",
+   "q": "¿Cuál es la longitud de una circunferencia de 10 m de diámetro? (π ≈ 3,14)",
+   "n": 2,
+   "a": [
+    "31,4 m",
+    "78,5 m",
+    "15,7 m",
+    "62,8 m"
+   ]
+  },
+  {
+   "id": "e038",
+   "c": "matematicas",
+   "q": "Un camino rectangular mide 12 m de largo y 3 m de ancho. ¿Cuál es su área?",
+   "n": 1,
+   "a": [
+    "36 m²",
+    "30 m²",
+    "15 m²",
+    "18 m²"
+   ]
+  },
+  {
+   "id": "e039",
+   "c": "matematicas",
+   "q": "Un césped triangular tiene 9 m de base y 6 m de altura. ¿Cuál es su área?",
+   "n": 2,
+   "a": [
+    "27 m²",
+    "54 m²",
+    "15 m²",
+    "13,5 m²"
+   ]
+  },
+  {
+   "id": "e040",
+   "c": "matematicas",
+   "q": "Una plaza tiene un estanque circular (10 m de diámetro), un camino de 12 × 3 m y un césped triangular (base 9 m, altura 6 m). Área total aproximada:",
+   "n": 3,
+   "a": [
+    "141,5 m²",
+    "168,5 m²",
+    "105,5 m²",
+    "114,5 m²"
+   ]
+  },
+  {
+   "id": "e041",
+   "c": "matematicas",
+   "q": "¿Cuál es el perímetro de un rectángulo de 12 m por 3 m?",
+   "n": 2,
+   "a": [
+    "30 m",
+    "36 m",
+    "15 m",
+    "24 m"
+   ]
+  },
+  {
+   "id": "e042",
+   "c": "matematicas",
+   "q": "Un triángulo rectángulo tiene catetos de 6 cm y 8 cm. ¿Cuánto mide la hipotenusa?",
+   "n": 2,
+   "a": [
+    "10 cm",
+    "14 cm",
+    "7 cm",
+    "48 cm"
+   ]
+  },
+  {
+   "id": "e043",
+   "c": "matematicas",
+   "q": "La hipotenusa de un triángulo rectángulo mide 13 cm y un cateto 5 cm. ¿Cuánto mide el otro cateto?",
+   "n": 3,
+   "a": [
+    "12 cm",
+    "8 cm",
+    "18 cm",
+    "9 cm"
+   ]
+  },
+  {
+   "id": "e044",
+   "c": "matematicas",
+   "q": "¿Cuál es el volumen de un cubo de 3 cm de arista?",
+   "n": 1,
+   "a": [
+    "27 cm³",
+    "9 cm³",
+    "18 cm³",
+    "54 cm³"
+   ]
+  },
+  {
+   "id": "e045",
+   "c": "matematicas",
+   "q": "¿Cuál es el volumen de un cilindro de radio 2 cm y altura 5 cm? (π ≈ 3,14)",
+   "n": 3,
+   "a": [
+    "62,8 cm³",
+    "31,4 cm³",
+    "125,6 cm³",
+    "20 cm³"
+   ]
+  },
+  {
+   "id": "e046",
+   "c": "matematicas",
+   "q": "¿Cuántos litros caben en 1 m³?",
+   "n": 2,
+   "a": [
+    "1.000 L",
+    "100 L",
+    "10 L",
+    "10.000 L"
+   ]
+  },
+  {
+   "id": "e047",
+   "c": "matematicas",
+   "q": "¿Cuántos metros son 2,5 km?",
+   "n": 1,
+   "a": [
+    "2.500 m",
+    "250 m",
+    "25.000 m",
+    "25 m"
+   ]
+  },
+  {
+   "id": "e048",
+   "c": "matematicas",
+   "q": "¿Cuántos minutos son 3 h 15 min?",
+   "n": 2,
+   "a": [
+    "195 min",
+    "315 min",
+    "180 min",
+    "165 min"
+   ]
+  },
+  {
+   "id": "e049",
+   "c": "matematicas",
+   "q": "¿Cuántos m/s son 90 km/h?",
+   "n": 2,
+   "a": [
+    "25 m/s",
+    "90 m/s",
+    "324 m/s",
+    "2,5 m/s"
+   ]
+  },
+  {
+   "id": "e050",
+   "c": "matematicas",
+   "q": "Ventas de pan en una semana (kg): 50, 45, 52, 50, 48, 51, 50. ¿Cuál es la media?",
+   "n": 2,
+   "a": [
+    "Unos 49,4 kg",
+    "50 kg",
+    "48 kg",
+    "52 kg"
+   ]
+  },
+  {
+   "id": "e051",
+   "c": "matematicas",
+   "q": "Ventas de pan (kg): 50, 45, 52, 50, 48, 51, 50. ¿Cuál es la moda?",
+   "n": 1,
+   "a": [
+    "50 kg",
+    "49,4 kg",
+    "52 kg",
+    "45 kg"
+   ]
+  },
+  {
+   "id": "e052",
+   "c": "matematicas",
+   "q": "Ventas de pan (kg): 50, 45, 52, 50, 48, 51, 50. ¿Cuál es la mediana?",
+   "n": 2,
+   "a": [
+    "50 kg",
+    "49,4 kg",
+    "48 kg",
+    "51 kg"
+   ]
+  },
+  {
+   "id": "e053",
+   "c": "matematicas",
+   "q": "Datos: 50, 45, 52, 50, 48, 51, 50. ¿Cuál es el rango (recorrido)?",
+   "n": 2,
+   "a": [
+    "7",
+    "5",
+    "50",
+    "97"
+   ]
+  },
+  {
+   "id": "e054",
+   "c": "matematicas",
+   "q": "Al tirar un dado, ¿qué probabilidad hay de sacar un 6?",
+   "n": 1,
+   "a": [
+    "1/6",
+    "1/2",
+    "1/3",
+    "6"
+   ]
+  },
+  {
+   "id": "e055",
+   "c": "matematicas",
+   "q": "En una bolsa hay 3 bolas rojas y 5 azules. ¿Qué probabilidad hay de sacar una roja?",
+   "n": 2,
+   "a": [
+    "3/8",
+    "3/5",
+    "5/8",
+    "1/3"
+   ]
+  },
+  {
+   "id": "e056",
+   "c": "matematicas",
+   "q": "Al tirar un dado, ¿qué probabilidad hay de sacar un número par?",
+   "n": 2,
+   "a": [
+    "1/2",
+    "1/3",
+    "1/6",
+    "2/3"
+   ]
+  },
+  {
+   "id": "e057",
+   "c": "matematicas",
+   "q": "Al lanzar dos monedas, ¿qué probabilidad hay de sacar dos caras?",
+   "n": 3,
+   "a": [
+    "1/4",
+    "1/2",
+    "1/3",
+    "2/4"
+   ]
+  },
+  {
+   "id": "e058",
+   "c": "matematicas",
+   "q": "¿Cuánto es 2/3 + 1/4?",
+   "n": 2,
+   "a": [
+    "11/12",
+    "3/7",
+    "2/12",
+    "3/12"
+   ]
+  },
+  {
+   "id": "e059",
+   "c": "matematicas",
+   "q": "¿Cuánto es 3/5 de 40?",
+   "n": 2,
+   "a": [
+    "24",
+    "15",
+    "8",
+    "30"
+   ]
+  },
+  {
+   "id": "e060",
+   "c": "matematicas",
+   "q": "¿Cuánto es (3/4) : (1/2)?",
+   "n": 2,
+   "a": [
+    "3/2",
+    "3/8",
+    "2/3",
+    "4/6"
+   ]
+  },
+  {
+   "id": "e061",
+   "c": "matematicas",
+   "q": "¿Cuánto es 2³ · 2⁴?",
+   "n": 2,
+   "a": [
+    "2⁷",
+    "2¹²",
+    "4⁷",
+    "2¹"
+   ]
+  },
+  {
+   "id": "e062",
+   "c": "matematicas",
+   "q": "¿Cuánto es √144?",
+   "n": 1,
+   "a": [
+    "12",
+    "14",
+    "72",
+    "16"
+   ]
+  },
+  {
+   "id": "e063",
+   "c": "matematicas",
+   "q": "¿Cómo se escribe 45.000.000 en notación científica?",
+   "n": 2,
+   "a": [
+    "4,5 · 10⁷",
+    "4,5 · 10⁶",
+    "45 · 10⁷",
+    "4,5 · 10⁸"
+   ]
+  },
+  {
+   "id": "e064",
+   "c": "matematicas",
+   "q": "¿Cómo se escribe 0,0003 en notación científica?",
+   "n": 3,
+   "a": [
+    "3 · 10⁻⁴",
+    "3 · 10⁴",
+    "3 · 10⁻³",
+    "0,3 · 10⁻²"
+   ]
+  },
+  {
+   "id": "e065",
+   "c": "matematicas",
+   "q": "¿Cuánto es (−3)²?",
+   "n": 2,
+   "a": [
+    "9",
+    "−9",
+    "6",
+    "−6"
+   ]
+  },
+  {
+   "id": "e066",
+   "c": "matematicas",
+   "q": "¿Cuánto es −3²? (sin paréntesis)",
+   "n": 3,
+   "a": [
+    "−9",
+    "9",
+    "−6",
+    "6"
+   ]
+  },
+  {
+   "id": "e067",
+   "c": "matematicas",
+   "q": "¿Cuánto es 5 + 3 · 4?",
+   "n": 2,
+   "a": [
+    "17",
+    "32",
+    "23",
+    "60"
+   ]
+  },
+  {
+   "id": "e068",
+   "c": "matematicas",
+   "q": "¿Cuánto es 20 − 8 : 2 + 3?",
+   "n": 3,
+   "a": [
+    "19",
+    "9",
+    "7,5",
+    "13"
+   ]
+  },
+  {
+   "id": "e069",
+   "c": "matematicas",
+   "q": "¿Cuál es la pendiente de la recta y = 3x − 2?",
+   "n": 2,
+   "a": [
+    "3",
+    "−2",
+    "2/3",
+    "−3"
+   ]
+  },
+  {
+   "id": "e070",
+   "c": "matematicas",
+   "q": "¿Dónde corta la recta y = 2x + 5 al eje Y?",
+   "n": 2,
+   "a": [
+    "En (0, 5)",
+    "En (5, 0)",
+    "En (0, 2)",
+    "En (2, 5)"
+   ]
+  },
+  {
+   "id": "e071",
+   "c": "matematicas",
+   "q": "¿Qué recta pasa por los puntos (0, 1) y (2, 5)?",
+   "n": 3,
+   "a": [
+    "y = 2x + 1",
+    "y = x + 1",
+    "y = 2x + 5",
+    "y = 4x + 1"
+   ]
+  },
+  {
+   "id": "e072",
+   "c": "matematicas",
+   "q": "¿Cuál es el mínimo común múltiplo de 12 y 18?",
+   "n": 2,
+   "a": [
+    "36",
+    "6",
+    "216",
+    "72"
+   ]
+  },
+  {
+   "id": "e073",
+   "c": "matematicas",
+   "q": "¿Cuál es el máximo común divisor de 12 y 18?",
+   "n": 2,
+   "a": [
+    "6",
+    "36",
+    "3",
+    "2"
+   ]
+  },
+  {
+   "id": "e074",
+   "c": "matematicas",
+   "q": "¿Cuánto suman los ángulos interiores de un triángulo?",
+   "n": 1,
+   "a": [
+    "180°",
+    "360°",
+    "90°",
+    "270°"
+   ]
+  },
+  {
+   "id": "e075",
+   "c": "matematicas",
+   "q": "¿Cuánto suman los ángulos interiores de un cuadrilátero?",
+   "n": 2,
+   "a": [
+    "360°",
+    "180°",
+    "540°",
+    "270°"
+   ]
+  },
+  {
+   "id": "e076",
+   "c": "matematicas",
+   "q": "Un coche gasta 6 L cada 100 km. ¿Cuántos litros gasta en 350 km?",
+   "n": 3,
+   "a": [
+    "21 L",
+    "18 L",
+    "35 L",
+    "6 L"
+   ]
+  },
+  {
+   "id": "e077",
+   "c": "matematicas",
+   "q": "(a + b)² es igual a a² + b².",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "e078",
+   "c": "matematicas",
+   "q": "Una ecuación de segundo grado puede no tener soluciones reales.",
+   "n": 3,
+   "vf": true
+  },
+  {
+   "id": "e079",
+   "c": "ciencias",
+   "q": "¿Qué son los pliegues?",
+   "n": 2,
+   "a": [
+    "Deformaciones de rocas que se doblan sin romperse (comportamiento plástico)",
+    "Roturas de rocas con desplazamiento de bloques",
+    "Roturas de rocas sin desplazamiento",
+    "El punto de la superficie sobre el foco de un terremoto"
+   ]
+  },
+  {
+   "id": "e080",
+   "c": "ciencias",
+   "q": "¿Qué es una falla?",
+   "n": 2,
+   "a": [
+    "Una rotura de las rocas con desplazamiento de los bloques",
+    "Una rotura sin desplazamiento",
+    "Un pliegue muy grande",
+    "El origen de un terremoto bajo tierra"
+   ]
+  },
+  {
+   "id": "e081",
+   "c": "ciencias",
+   "q": "¿Qué es una diaclasa?",
+   "n": 2,
+   "a": [
+    "Una rotura de las rocas sin desplazamiento de los bloques",
+    "Una rotura con desplazamiento",
+    "Una roca doblada",
+    "Una grieta del suelo causada por la sequía"
+   ]
+  },
+  {
+   "id": "e082",
+   "c": "ciencias",
+   "q": "¿Qué es el epicentro de un terremoto?",
+   "n": 2,
+   "a": [
+    "El punto de la superficie situado justo encima del hipocentro",
+    "El punto del interior donde se origina",
+    "La zona donde más tiempo dura",
+    "La placa que se mueve"
+   ]
+  },
+  {
+   "id": "e083",
+   "c": "ciencias",
+   "q": "¿Qué es el hipocentro?",
+   "n": 2,
+   "a": [
+    "El punto del interior de la Tierra donde se origina el terremoto",
+    "El punto de la superficie encima del foco",
+    "La onda más fuerte",
+    "El volcán más cercano"
+   ]
+  },
+  {
+   "id": "e084",
+   "c": "ciencias",
+   "q": "Un tsunami se origina a 300 km de la costa y tarda 0,4 h en llegar. ¿Cuál es su velocidad?",
+   "n": 2,
+   "a": [
+    "750 km/h",
+    "120 km/h",
+    "75 km/h",
+    "1.200 km/h"
+   ]
+  },
+  {
+   "id": "e085",
+   "c": "ciencias",
+   "q": "¿Cuántos m/s son 750 km/h?",
+   "n": 3,
+   "a": [
+    "Unos 208 m/s",
+    "2.700 m/s",
+    "75 m/s",
+    "12,5 m/s"
+   ]
+  },
+  {
+   "id": "e086",
+   "c": "ciencias",
+   "q": "Si ese tsunami empieza a las 10:00 y tarda 0,4 h, ¿a qué hora llega a la costa?",
+   "n": 3,
+   "a": [
+    "A las 10:24",
+    "A las 10:40",
+    "A las 10:04",
+    "A las 11:00"
+   ]
+  },
+  {
+   "id": "e087",
+   "c": "ciencias",
+   "q": "¿Qué enfermedad está relacionada con un consumo excesivo de azúcar?",
+   "n": 1,
+   "a": [
+    "Diabetes tipo 2",
+    "Anemia",
+    "Gripe",
+    "Asma"
+   ]
+  },
+  {
+   "id": "e088",
+   "c": "ciencias",
+   "q": "¿Por qué se dice que el azúcar aporta \"calorías vacías\"?",
+   "n": 2,
+   "a": [
+    "Aporta energía pero casi ningún otro nutriente",
+    "No aporta energía",
+    "Solo aporta proteínas",
+    "Se elimina sin digerir"
+   ]
+  },
+  {
+   "id": "e089",
+   "c": "ciencias",
+   "q": "Un refresco tiene 10,6 g de azúcar por cada 100 mL. ¿Cuál es su concentración en g/L?",
+   "n": 3,
+   "a": [
+    "106 g/L",
+    "10,6 g/L",
+    "1,06 g/L",
+    "1.060 g/L"
+   ]
+  },
+  {
+   "id": "e090",
+   "c": "ciencias",
+   "q": "Ese refresco (10,6 g de azúcar/100 mL), en una lata de 330 mL, ¿cuánto azúcar tiene?",
+   "n": 3,
+   "a": [
+    "Unos 35 g",
+    "10,6 g",
+    "3,5 g",
+    "106 g"
+   ]
+  },
+  {
+   "id": "e091",
+   "c": "ciencias",
+   "q": "El refresco tiene 42 kcal por 100 mL. ¿Cuántas kcal tiene una lata de 330 mL?",
+   "n": 3,
+   "a": [
+    "Unas 139 kcal",
+    "42 kcal",
+    "420 kcal",
+    "13,9 kcal"
+   ]
+  },
+  {
+   "id": "e092",
+   "c": "ciencias",
+   "q": "¿Qué cavidad del corazón envía la sangre a todo el cuerpo por la arteria aorta?",
+   "n": 2,
+   "a": [
+    "El ventrículo izquierdo",
+    "El ventrículo derecho",
+    "La aurícula derecha",
+    "La aurícula izquierda"
+   ]
+  },
+  {
+   "id": "e093",
+   "c": "ciencias",
+   "q": "¿Qué sangre lleva la arteria pulmonar?",
+   "n": 3,
+   "a": [
+    "Sangre pobre en oxígeno, del corazón a los pulmones",
+    "Sangre rica en oxígeno, de los pulmones al corazón",
+    "Sangre rica en oxígeno, al cuerpo",
+    "Sangre del cuerpo al corazón"
+   ]
+  },
+  {
+   "id": "e094",
+   "c": "ciencias",
+   "q": "¿Qué llevan las venas pulmonares?",
+   "n": 3,
+   "a": [
+    "Sangre rica en oxígeno, de los pulmones a la aurícula izquierda",
+    "Sangre pobre en oxígeno, a los pulmones",
+    "Sangre del cuerpo a la aurícula derecha",
+    "Linfa"
+   ]
+  },
+  {
+   "id": "e095",
+   "c": "ciencias",
+   "q": "¿Para qué sirven las válvulas del corazón?",
+   "n": 2,
+   "a": [
+    "Para que la sangre no retroceda",
+    "Para producir glóbulos rojos",
+    "Para filtrar la sangre",
+    "Para oxigenar la sangre"
+   ]
+  },
+  {
+   "id": "e096",
+   "c": "ciencias",
+   "q": "¿Por qué vasos llega al corazón la sangre que vuelve del cuerpo?",
+   "n": 2,
+   "a": [
+    "Por las venas cavas",
+    "Por la aorta",
+    "Por las venas pulmonares",
+    "Por la arteria pulmonar"
+   ]
+  },
+  {
+   "id": "e097",
+   "c": "ciencias",
+   "q": "¿Cuál es la unidad de energía en el Sistema Internacional?",
+   "n": 1,
+   "a": [
+    "El julio (J)",
+    "El vatio (W)",
+    "El newton (N)",
+    "El pascal (Pa)"
+   ]
+  },
+  {
+   "id": "e098",
+   "c": "ciencias",
+   "q": "¿A cuántos julios equivale 1 kWh?",
+   "n": 3,
+   "a": [
+    "3,6 · 10⁶ J",
+    "1.000 J",
+    "3.600 J",
+    "3,6 · 10³ J"
+   ]
+  },
+  {
+   "id": "e099",
+   "c": "ciencias",
+   "q": "¿Qué es la convección?",
+   "n": 2,
+   "a": [
+    "Transmisión de calor por el movimiento de un fluido (líquido o gas)",
+    "Transmisión de calor por contacto en un sólido",
+    "Transmisión de calor por ondas, sin medio",
+    "Cambio de líquido a gas"
+   ]
+  },
+  {
+   "id": "e100",
+   "c": "ciencias",
+   "q": "¿De qué depende la energía cinética de un cuerpo?",
+   "n": 2,
+   "a": [
+    "De su masa y de su velocidad",
+    "De su altura",
+    "De su temperatura",
+    "De su volumen"
+   ]
+  },
+  {
+   "id": "e101",
+   "c": "ciencias",
+   "q": "¿Qué energía cinética tiene un cuerpo de 2 kg a 3 m/s? (Ec = ½·m·v²)",
+   "n": 3,
+   "a": [
+    "9 J",
+    "6 J",
+    "18 J",
+    "3 J"
+   ]
+  },
+  {
+   "id": "e102",
+   "c": "ciencias",
+   "q": "¿Qué energía potencial tiene un cuerpo de 10 kg a 5 m de altura? (g = 9,8 m/s²)",
+   "n": 3,
+   "a": [
+    "490 J",
+    "50 J",
+    "98 J",
+    "4,9 J"
+   ]
+  },
+  {
+   "id": "e103",
+   "c": "ciencias",
+   "q": "¿Qué es una reacción exotérmica?",
+   "n": 2,
+   "a": [
+    "La que desprende energía (calor)",
+    "La que absorbe energía",
+    "La que no cambia la energía",
+    "La que solo ocurre con luz"
+   ]
+  },
+  {
+   "id": "e104",
+   "c": "ciencias",
+   "q": "¿Qué hace un alternador?",
+   "n": 2,
+   "a": [
+    "Transforma energía mecánica en eléctrica",
+    "Transforma energía eléctrica en mecánica",
+    "Transforma energía química en eléctrica",
+    "Almacena energía eléctrica"
+   ]
+  },
+  {
+   "id": "e105",
+   "c": "ciencias",
+   "q": "La masa molar del agua es 18 g/mol. ¿Cuántas moléculas hay en 180 g? (Nₐ = 6,022·10²³)",
+   "n": 3,
+   "a": [
+    "6,022 · 10²⁴",
+    "6,022 · 10²³",
+    "1,08 · 10²⁶",
+    "10"
+   ]
+  },
+  {
+   "id": "e106",
+   "c": "ciencias",
+   "q": "El agua de mar tiene una densidad de 1,025 g/cm³. ¿Qué volumen ocupan 3 kg?",
+   "n": 3,
+   "a": [
+    "Unos 2,93 L",
+    "3,075 L",
+    "3 L",
+    "0,34 L"
+   ]
+  },
+  {
+   "id": "e107",
+   "c": "ciencias",
+   "q": "¿Qué diferencia hay entre evaporación y ebullición?",
+   "n": 2,
+   "a": [
+    "La evaporación ocurre en la superficie a cualquier temperatura; la ebullición, en todo el líquido a una temperatura fija",
+    "Son lo mismo",
+    "La ebullición ocurre a cualquier temperatura",
+    "La evaporación solo ocurre a 100 °C"
+   ]
+  },
+  {
+   "id": "e108",
+   "c": "ciencias",
+   "q": "¿Por qué el vertido de agua caliente a un río perjudica a los peces?",
+   "n": 2,
+   "a": [
+    "El agua caliente tiene menos oxígeno disuelto",
+    "El agua caliente tiene más sal",
+    "El agua caliente es más densa",
+    "Los peces no ven en agua caliente"
+   ]
+  },
+  {
+   "id": "e109",
+   "c": "ciencias",
+   "q": "¿En qué orgánulo se hace la fotosíntesis?",
+   "n": 1,
+   "a": [
+    "En el cloroplasto",
+    "En la mitocondria",
+    "En el núcleo",
+    "En el ribosoma"
+   ]
+  },
+  {
+   "id": "e110",
+   "c": "ciencias",
+   "q": "¿En qué orgánulo se obtiene energía mediante la respiración celular?",
+   "n": 2,
+   "a": [
+    "En la mitocondria",
+    "En el cloroplasto",
+    "En la vacuola",
+    "En la pared celular"
+   ]
+  },
+  {
+   "id": "e111",
+   "c": "ciencias",
+   "q": "Un aparato de 23 Ω se conecta a 230 V. ¿Qué intensidad circula? (V = I · R)",
+   "n": 2,
+   "a": [
+    "10 A",
+    "5.290 A",
+    "0,1 A",
+    "253 A"
+   ]
+  },
+  {
+   "id": "e112",
+   "c": "ciencias",
+   "q": "Un aparato funciona a 230 V con 2 A. ¿Qué potencia tiene? (P = V · I)",
+   "n": 2,
+   "a": [
+    "460 W",
+    "115 W",
+    "232 W",
+    "4,6 W"
+   ]
+  },
+  {
+   "id": "e113",
+   "c": "ciencias",
+   "q": "¿Cuál de estas fuentes de energía es renovable?",
+   "n": 1,
+   "a": [
+    "La eólica",
+    "El carbón",
+    "El gas natural",
+    "El petróleo"
+   ]
+  },
+  {
+   "id": "e114",
+   "c": "ciencias",
+   "q": "En una cadena alimentaria, ¿quiénes son los productores?",
+   "n": 1,
+   "a": [
+    "Las plantas y algas",
+    "Los herbívoros",
+    "Los carnívoros",
+    "Los descomponedores"
+   ]
+  },
+  {
+   "id": "e115",
+   "c": "ciencias",
+   "q": "¿Qué estado de la materia no tiene ni forma ni volumen propios?",
+   "n": 1,
+   "a": [
+    "Gaseoso",
+    "Líquido",
+    "Sólido",
+    "Ninguno"
+   ]
+  },
+  {
+   "id": "e116",
+   "c": "ciencias",
+   "q": "¿Cuál de estas es una mezcla heterogénea?",
+   "n": 2,
+   "a": [
+    "Agua con aceite",
+    "Agua con sal disuelta",
+    "El aire",
+    "Agua con azúcar disuelto"
+   ]
+  },
+  {
+   "id": "e117",
+   "c": "ciencias",
+   "q": "¿Qué indica el número atómico de un elemento?",
+   "n": 2,
+   "a": [
+    "El número de protones",
+    "El número de neutrones",
+    "La masa del átomo",
+    "El número de moléculas"
+   ]
+  },
+  {
+   "id": "e118",
+   "c": "ciencias",
+   "q": "¿Qué nutrientes son la principal fuente de energía rápida?",
+   "n": 2,
+   "a": [
+    "Los hidratos de carbono",
+    "Las proteínas",
+    "Las vitaminas",
+    "Los minerales"
+   ]
+  },
+  {
+   "id": "e119",
+   "c": "ciencias",
+   "q": "¿Cuál es la función principal de las proteínas?",
+   "n": 2,
+   "a": [
+    "Formar y reparar tejidos",
+    "Dar energía inmediata",
+    "Regular la temperatura",
+    "Transportar oxígeno solas"
+   ]
+  },
+  {
+   "id": "e120",
+   "c": "ciencias",
+   "q": "¿Por qué se mueven las placas tectónicas?",
+   "n": 2,
+   "a": [
+    "Por las corrientes de convección del manto",
+    "Por el viento",
+    "Por las mareas",
+    "Por la rotación de la Luna"
+   ]
+  },
+  {
+   "id": "e121",
+   "c": "ciencias",
+   "q": "Las arterias siempre llevan sangre rica en oxígeno.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "e122",
+   "c": "ciencias",
+   "q": "El agua hierve a 100 °C a nivel del mar.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "e123",
+   "c": "ciencias",
+   "q": "La evaporación solo ocurre cuando el agua llega a 100 °C.",
+   "n": 3,
+   "vf": false
+  },
+  {
+   "id": "e124",
+   "c": "lengua",
+   "q": "Una noticia sobre un hallazgo en Atapuerca es un texto…",
+   "n": 1,
+   "a": [
+    "Informativo (periodístico)",
+    "Argumentativo",
+    "Literario",
+    "Instructivo"
+   ]
+  },
+  {
+   "id": "e125",
+   "c": "lengua",
+   "q": "¿Cuál de estos es un género periodístico de opinión?",
+   "n": 2,
+   "a": [
+    "El editorial",
+    "La noticia",
+    "El reportaje",
+    "La entrevista"
+   ]
+  },
+  {
+   "id": "e126",
+   "c": "lengua",
+   "q": "¿Qué estructura tiene una noticia?",
+   "n": 2,
+   "a": [
+    "Titular, entradilla y cuerpo (pirámide invertida)",
+    "Introducción, nudo y desenlace",
+    "Tesis, argumentos y conclusión",
+    "Saludo, cuerpo y despedida"
+   ]
+  },
+  {
+   "id": "e127",
+   "c": "lengua",
+   "q": "En una noticia, ¿para qué se usan normalmente las comillas?",
+   "n": 2,
+   "a": [
+    "Para citar las palabras exactas de alguien",
+    "Para indicar el título del periódico",
+    "Para marcar las faltas",
+    "Para separar párrafos"
+   ]
+  },
+  {
+   "id": "e128",
+   "c": "lengua",
+   "q": "¿Qué función del lenguaje predomina en una noticia?",
+   "n": 2,
+   "a": [
+    "Referencial o representativa",
+    "Poética",
+    "Apelativa",
+    "Fática"
+   ]
+  },
+  {
+   "id": "e129",
+   "c": "lengua",
+   "q": "¿Qué es una sigla?",
+   "n": 3,
+   "a": [
+    "Palabra formada por las iniciales de otras palabras, como ONU",
+    "Palabra formada por dos palabras, como sacacorchos",
+    "Palabra con prefijo, como deshacer",
+    "Palabra tomada de otra lengua"
+   ]
+  },
+  {
+   "id": "e130",
+   "c": "lengua",
+   "q": "\"Paleolítico\" (del griego palaio, antiguo, y lithos, piedra) es una palabra…",
+   "n": 3,
+   "a": [
+    "Compuesta",
+    "Derivada",
+    "Simple",
+    "Sigla"
+   ]
+  },
+  {
+   "id": "e131",
+   "c": "lengua",
+   "q": "\"Deshacer\" es una palabra…",
+   "n": 2,
+   "a": [
+    "Derivada, con prefijo",
+    "Compuesta",
+    "Simple",
+    "Sigla"
+   ]
+  },
+  {
+   "id": "e132",
+   "c": "lengua",
+   "q": "En \"la especie humana\", ¿qué categoría es \"humana\"?",
+   "n": 2,
+   "a": [
+    "Adjetivo",
+    "Sustantivo",
+    "Adverbio",
+    "Determinante"
+   ]
+  },
+  {
+   "id": "e133",
+   "c": "lengua",
+   "q": "En \"la antigüedad de los restos\", ¿qué categoría es \"antigüedad\"?",
+   "n": 2,
+   "a": [
+    "Sustantivo",
+    "Adjetivo",
+    "Adverbio",
+    "Verbo"
+   ]
+  },
+  {
+   "id": "e134",
+   "c": "lengua",
+   "q": "En \"esos restos\", ¿qué es \"esos\"?",
+   "n": 2,
+   "a": [
+    "Determinante demostrativo",
+    "Pronombre personal",
+    "Artículo",
+    "Adverbio"
+   ]
+  },
+  {
+   "id": "e135",
+   "c": "lengua",
+   "q": "En \"ahora sabemos más\", ¿qué es \"ahora\"?",
+   "n": 1,
+   "a": [
+    "Adverbio de tiempo",
+    "Adjetivo",
+    "Sustantivo",
+    "Preposición"
+   ]
+  },
+  {
+   "id": "e136",
+   "c": "lengua",
+   "q": "En \"muchas especies\", ¿qué es \"muchas\"?",
+   "n": 2,
+   "a": [
+    "Determinante indefinido",
+    "Adjetivo calificativo",
+    "Pronombre personal",
+    "Adverbio de cantidad"
+   ]
+  },
+  {
+   "id": "e137",
+   "c": "lengua",
+   "q": "¿Cuál es el pretérito perfecto simple de \"encontrar\" (ellos)?",
+   "n": 2,
+   "a": [
+    "Encontraron",
+    "Han encontrado",
+    "Encontraban",
+    "Encontrarán"
+   ]
+  },
+  {
+   "id": "e138",
+   "c": "lengua",
+   "q": "\"Hayan descubierto\" es…",
+   "n": 3,
+   "a": [
+    "Pretérito perfecto de subjuntivo",
+    "Presente de subjuntivo",
+    "Pretérito perfecto compuesto de indicativo",
+    "Pretérito pluscuamperfecto"
+   ]
+  },
+  {
+   "id": "e139",
+   "c": "lengua",
+   "q": "¿Cuál es el presente de subjuntivo de \"tener\" (él)?",
+   "n": 2,
+   "a": [
+    "Tenga",
+    "Tiene",
+    "Tuviera",
+    "Tendrá"
+   ]
+  },
+  {
+   "id": "e140",
+   "c": "lengua",
+   "q": "¿Cuál de estas es una perífrasis de obligación?",
+   "n": 2,
+   "a": [
+    "Tengo que estudiar",
+    "Voy a estudiar",
+    "Estoy estudiando",
+    "Acabo de estudiar"
+   ]
+  },
+  {
+   "id": "e141",
+   "c": "lengua",
+   "q": "\"Acabo de llegar\" es una perífrasis que indica…",
+   "n": 3,
+   "a": [
+    "Una acción que ha terminado hace muy poco",
+    "Obligación",
+    "Una acción futura",
+    "Una acción que se repite"
+   ]
+  },
+  {
+   "id": "e142",
+   "c": "lengua",
+   "q": "En \"Los investigadores encontraron un cráneo\", ¿cuál es el sujeto?",
+   "n": 2,
+   "a": [
+    "Los investigadores",
+    "Un cráneo",
+    "Encontraron",
+    "No tiene sujeto"
+   ]
+  },
+  {
+   "id": "e143",
+   "c": "lengua",
+   "q": "En \"Los investigadores encontraron un cráneo\", ¿qué función tiene \"un cráneo\"?",
+   "n": 2,
+   "a": [
+    "Complemento directo",
+    "Sujeto",
+    "Complemento indirecto",
+    "Atributo"
+   ]
+  },
+  {
+   "id": "e144",
+   "c": "lengua",
+   "q": "En \"Le di el libro a María\", ¿qué función tiene \"a María\"?",
+   "n": 3,
+   "a": [
+    "Complemento indirecto",
+    "Complemento directo",
+    "Sujeto",
+    "Complemento circunstancial"
+   ]
+  },
+  {
+   "id": "e145",
+   "c": "lengua",
+   "q": "\"María es muy simpática\" tiene un predicado…",
+   "n": 3,
+   "a": [
+    "Nominal (con atributo)",
+    "Verbal",
+    "Sin verbo",
+    "Impersonal"
+   ]
+  },
+  {
+   "id": "e146",
+   "c": "lengua",
+   "q": "En \"Juan corre por el parque\", ¿qué es \"por el parque\"?",
+   "n": 2,
+   "a": [
+    "Complemento circunstancial de lugar",
+    "Complemento directo",
+    "Sujeto",
+    "Atributo"
+   ]
+  },
+  {
+   "id": "e147",
+   "c": "lengua",
+   "q": "¿Cuál de estas oraciones es impersonal?",
+   "n": 3,
+   "a": [
+    "Llueve mucho en Galicia",
+    "Juan come pan",
+    "Los niños juegan",
+    "Mi madre trabaja"
+   ]
+  },
+  {
+   "id": "e148",
+   "c": "lengua",
+   "q": "¿Qué palabra está bien escrita?",
+   "n": 1,
+   "a": [
+    "Árbol",
+    "Arbol",
+    "Cancíon",
+    "Examén"
+   ]
+  },
+  {
+   "id": "e149",
+   "c": "lengua",
+   "q": "¿Cuál de estas palabras es esdrújula?",
+   "n": 2,
+   "a": [
+    "Música",
+    "Canción",
+    "Mesa",
+    "Reloj"
+   ]
+  },
+  {
+   "id": "e150",
+   "c": "lengua",
+   "q": "¿Qué frase está bien escrita?",
+   "n": 2,
+   "a": [
+    "He hecho los deberes",
+    "He echo los deberes",
+    "E hecho los deberes",
+    "He hechó los deberes"
+   ]
+  },
+  {
+   "id": "e151",
+   "c": "lengua",
+   "q": "¿Qué frase está bien escrita?",
+   "n": 2,
+   "a": [
+    "Vamos a ver la película",
+    "Vamos haber la película",
+    "Vamos a haber la película",
+    "Bamos a ver la película"
+   ]
+  },
+  {
+   "id": "e152",
+   "c": "lengua",
+   "q": "¿Cuál es un sinónimo de \"rápido\"?",
+   "n": 1,
+   "a": [
+    "Veloz",
+    "Lento",
+    "Pesado",
+    "Tranquilo"
+   ]
+  },
+  {
+   "id": "e153",
+   "c": "lengua",
+   "q": "¿Cuál es un antónimo de \"escaso\"?",
+   "n": 1,
+   "a": [
+    "Abundante",
+    "Poco",
+    "Raro",
+    "Insuficiente"
+   ]
+  },
+  {
+   "id": "e154",
+   "c": "lengua",
+   "q": "¿Qué saludo es adecuado en un correo formal de reclamación?",
+   "n": 2,
+   "a": [
+    "Estimados señores:",
+    "¡Hola, chicos!",
+    "Querido amigo:",
+    "¿Qué tal?"
+   ]
+  },
+  {
+   "id": "e155",
+   "c": "lengua",
+   "q": "En un correo de reclamación por una reserva mal hecha, ¿qué no puede faltar?",
+   "n": 2,
+   "a": [
+    "Los datos de la reserva, el problema y lo que pides (reembolso o cambio)",
+    "Solo tu nombre",
+    "Una queja sin datos",
+    "Un chiste para suavizar"
+   ]
+  },
+  {
+   "id": "e156",
+   "c": "lengua",
+   "q": "¿Quién escribió \"Don Quijote de la Mancha\"?",
+   "n": 1,
+   "a": [
+    "Miguel de Cervantes",
+    "Lope de Vega",
+    "Federico García Lorca",
+    "Antonio Machado"
+   ]
+  },
+  {
+   "id": "e157",
+   "c": "lengua",
+   "q": "¿Quién escribió \"La casa de Bernarda Alba\"?",
+   "n": 2,
+   "a": [
+    "Federico García Lorca",
+    "Miguel de Unamuno",
+    "Gustavo Adolfo Bécquer",
+    "Benito Pérez Galdós"
+   ]
+  },
+  {
+   "id": "e158",
+   "c": "lengua",
+   "q": "¿Quién escribió \"Campos de Castilla\"?",
+   "n": 2,
+   "a": [
+    "Antonio Machado",
+    "Federico García Lorca",
+    "Rosalía de Castro",
+    "Juan Ramón Jiménez"
+   ]
+  },
+  {
+   "id": "e159",
+   "c": "lengua",
+   "q": "¿Quién escribió \"Cien años de soledad\"?",
+   "n": 2,
+   "a": [
+    "Gabriel García Márquez",
+    "Pablo Neruda",
+    "Mario Vargas Llosa",
+    "Julio Cortázar"
+   ]
+  },
+  {
+   "id": "e160",
+   "c": "lengua",
+   "q": "¿Quién escribió el \"Cantar de mio Cid\"?",
+   "n": 2,
+   "a": [
+    "Es anónimo",
+    "Miguel de Cervantes",
+    "Gonzalo de Berceo",
+    "Jorge Manrique"
+   ]
+  },
+  {
+   "id": "e161",
+   "c": "lengua",
+   "q": "¿Quién escribió las \"Rimas\"?",
+   "n": 2,
+   "a": [
+    "Gustavo Adolfo Bécquer",
+    "Antonio Machado",
+    "José Zorrilla",
+    "Garcilaso de la Vega"
+   ]
+  },
+  {
+   "id": "e162",
+   "c": "lengua",
+   "q": "¿Quién escribió \"La Celestina\"?",
+   "n": 3,
+   "a": [
+    "Fernando de Rojas",
+    "Lope de Vega",
+    "Francisco de Quevedo",
+    "Calderón de la Barca"
+   ]
+  },
+  {
+   "id": "e163",
+   "c": "lengua",
+   "q": "¿Quién escribió los \"Episodios nacionales\", novelas históricas?",
+   "n": 3,
+   "a": [
+    "Benito Pérez Galdós",
+    "Leopoldo Alas \"Clarín\"",
+    "Pío Baroja",
+    "Camilo José Cela"
+   ]
+  },
+  {
+   "id": "e164",
+   "c": "lengua",
+   "q": "¿Quién escribió \"Veinte poemas de amor y una canción desesperada\"?",
+   "n": 2,
+   "a": [
+    "Pablo Neruda",
+    "Gabriel García Márquez",
+    "Rubén Darío",
+    "Octavio Paz"
+   ]
+  },
+  {
+   "id": "e165",
+   "c": "lengua",
+   "q": "¿A qué generación pertenece Federico García Lorca?",
+   "n": 3,
+   "a": [
+    "Generación del 27",
+    "Generación del 98",
+    "Romanticismo",
+    "Siglo de Oro"
+   ]
+  },
+  {
+   "id": "e166",
+   "c": "lengua",
+   "q": "¿A qué generación pertenece Antonio Machado?",
+   "n": 3,
+   "a": [
+    "Generación del 98",
+    "Generación del 27",
+    "Barroco",
+    "Realismo"
+   ]
+  },
+  {
+   "id": "e167",
+   "c": "lengua",
+   "q": "\"El Lazarillo de Tormes\" es una novela…",
+   "n": 3,
+   "a": [
+    "Picaresca",
+    "Pastoril",
+    "De caballerías",
+    "Histórica"
+   ]
+  },
+  {
+   "id": "e168",
+   "c": "lengua",
+   "q": "\"Tus ojos son como dos luceros\" es un ejemplo de…",
+   "n": 2,
+   "a": [
+    "Comparación o símil",
+    "Metáfora",
+    "Hipérbole",
+    "Personificación"
+   ]
+  },
+  {
+   "id": "e169",
+   "c": "lengua",
+   "q": "\"El viento susurraba entre los árboles\" es un ejemplo de…",
+   "n": 2,
+   "a": [
+    "Personificación",
+    "Comparación",
+    "Hipérbole",
+    "Anáfora"
+   ]
+  },
+  {
+   "id": "e170",
+   "c": "lengua",
+   "q": "En un correo formal se evita el lenguaje coloquial.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "e171",
+   "c": "lengua",
+   "q": "\"Hayan descubierto\" es presente de subjuntivo.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "e172",
+   "c": "ingles",
+   "q": "She ___ to work every day.",
+   "n": 1,
+   "a": [
+    "goes",
+    "is going",
+    "go",
+    "going"
+   ]
+  },
+  {
+   "id": "e173",
+   "c": "ingles",
+   "q": "Look! It ___ now.",
+   "n": 1,
+   "a": [
+    "is raining",
+    "rains",
+    "rain",
+    "raining"
+   ]
+  },
+  {
+   "id": "e174",
+   "c": "ingles",
+   "q": "Negative of \"They could swim\":",
+   "n": 2,
+   "a": [
+    "They couldn't swim.",
+    "They didn't could swim.",
+    "They could not to swim.",
+    "They don't could swim."
+   ]
+  },
+  {
+   "id": "e175",
+   "c": "ingles",
+   "q": "Question of \"He had a car\":",
+   "n": 2,
+   "a": [
+    "Did he have a car?",
+    "Had he a car?",
+    "Does he had a car?",
+    "Did he had a car?"
+   ]
+  },
+  {
+   "id": "e176",
+   "c": "ingles",
+   "q": "Past simple of \"go\":",
+   "n": 1,
+   "a": [
+    "went",
+    "goed",
+    "gone",
+    "going"
+   ]
+  },
+  {
+   "id": "e177",
+   "c": "ingles",
+   "q": "Negative of \"She was reading\":",
+   "n": 2,
+   "a": [
+    "She wasn't reading.",
+    "She didn't reading.",
+    "She weren't reading.",
+    "She not was reading."
+   ]
+  },
+  {
+   "id": "e178",
+   "c": "ingles",
+   "q": "Question of \"They were sleeping\":",
+   "n": 2,
+   "a": [
+    "Were they sleeping?",
+    "Did they sleeping?",
+    "Was they sleeping?",
+    "Do they were sleeping?"
+   ]
+  },
+  {
+   "id": "e179",
+   "c": "ingles",
+   "q": "I don't want ___ to eat, thanks.",
+   "n": 2,
+   "a": [
+    "anything",
+    "something",
+    "nothing",
+    "everything"
+   ]
+  },
+  {
+   "id": "e180",
+   "c": "ingles",
+   "q": "___ is perfect. Everyone makes mistakes.",
+   "n": 2,
+   "a": [
+    "Nobody",
+    "Anybody",
+    "Somebody",
+    "Everybody"
+   ]
+  },
+  {
+   "id": "e181",
+   "c": "ingles",
+   "q": "I can't find my keys ___.",
+   "n": 2,
+   "a": [
+    "anywhere",
+    "nowhere",
+    "somewhere",
+    "everywhere"
+   ]
+  },
+  {
+   "id": "e182",
+   "c": "ingles",
+   "q": "There's ___ at the door. Can you open it?",
+   "n": 2,
+   "a": [
+    "somebody",
+    "anybody",
+    "nobody",
+    "everywhere"
+   ]
+  },
+  {
+   "id": "e183",
+   "c": "ingles",
+   "q": "Comparative of \"pretty\":",
+   "n": 2,
+   "a": [
+    "prettier",
+    "more pretty",
+    "prettyer",
+    "the prettiest"
+   ]
+  },
+  {
+   "id": "e184",
+   "c": "ingles",
+   "q": "Superlative of \"beautiful\":",
+   "n": 2,
+   "a": [
+    "the most beautiful",
+    "the beautifulest",
+    "more beautiful",
+    "the more beautiful"
+   ]
+  },
+  {
+   "id": "e185",
+   "c": "ingles",
+   "q": "My brother is ___ me.",
+   "n": 1,
+   "a": [
+    "taller than",
+    "more tall than",
+    "tallest than",
+    "as taller"
+   ]
+  },
+  {
+   "id": "e186",
+   "c": "ingles",
+   "q": "Superlative of \"good\":",
+   "n": 2,
+   "a": [
+    "the best",
+    "the goodest",
+    "better",
+    "the most good"
+   ]
+  },
+  {
+   "id": "e187",
+   "c": "ingles",
+   "q": "Comparative of \"bad\":",
+   "n": 2,
+   "a": [
+    "worse",
+    "badder",
+    "worst",
+    "more bad"
+   ]
+  },
+  {
+   "id": "e188",
+   "c": "ingles",
+   "q": "Superlative of \"silly\":",
+   "n": 2,
+   "a": [
+    "the silliest",
+    "the most silly",
+    "sillier",
+    "the sillyest"
+   ]
+  },
+  {
+   "id": "e189",
+   "c": "ingles",
+   "q": "\"How often do you go to the gym?\" — \"___ a week.\"",
+   "n": 1,
+   "a": [
+    "Twice",
+    "Two",
+    "Second",
+    "Double"
+   ]
+  },
+  {
+   "id": "e190",
+   "c": "ingles",
+   "q": "Which sentence is correct?",
+   "n": 2,
+   "a": [
+    "She is always late.",
+    "She always is late.",
+    "Always is she late.",
+    "She late is always."
+   ]
+  },
+  {
+   "id": "e191",
+   "c": "ingles",
+   "q": "Which sentence is correct?",
+   "n": 2,
+   "a": [
+    "He usually plays football on Saturdays.",
+    "He plays usually football on Saturdays.",
+    "Usually he football plays on Saturdays.",
+    "He plays football usually Saturdays on."
+   ]
+  },
+  {
+   "id": "e192",
+   "c": "ingles",
+   "q": "\"Do you play handball?\" — \"Yes, ___.\"",
+   "n": 1,
+   "a": [
+    "I do",
+    "I play",
+    "I does",
+    "I am"
+   ]
+  },
+  {
+   "id": "e193",
+   "c": "ingles",
+   "q": "\"Does she watch the news?\" — \"No, ___.\"",
+   "n": 1,
+   "a": [
+    "she doesn't",
+    "she don't",
+    "she isn't",
+    "she not"
+   ]
+  },
+  {
+   "id": "e194",
+   "c": "ingles",
+   "q": "Which is a polite way to ask for permission?",
+   "n": 2,
+   "a": [
+    "Could I open the window, please?",
+    "Open the window!",
+    "Can open I the window?",
+    "I could open the window?"
+   ]
+  },
+  {
+   "id": "e195",
+   "c": "ingles",
+   "q": "The best answer to \"Thank you very much!\" is…",
+   "n": 1,
+   "a": [
+    "You're welcome.",
+    "Thank you too.",
+    "Yes, please.",
+    "Excuse me."
+   ]
+  },
+  {
+   "id": "e196",
+   "c": "ingles",
+   "q": "\"Sorry, could you ___ that, please? I didn't understand.\"",
+   "n": 2,
+   "a": [
+    "repeat",
+    "repeating",
+    "repeated",
+    "to repeat"
+   ]
+  },
+  {
+   "id": "e197",
+   "c": "ingles",
+   "q": "\"___ does the shop open?\" — \"At 9 o'clock.\"",
+   "n": 2,
+   "a": [
+    "When",
+    "Where",
+    "Why",
+    "Who"
+   ]
+  },
+  {
+   "id": "e198",
+   "c": "ingles",
+   "q": "\"I ___ a new phone. Mine is broken.\"",
+   "n": 2,
+   "a": [
+    "need",
+    "needs",
+    "am needing",
+    "needing"
+   ]
+  },
+  {
+   "id": "e199",
+   "c": "ingles",
+   "q": "\"Second-hand\" clothes are…",
+   "n": 2,
+   "a": [
+    "clothes that somebody used before",
+    "very expensive clothes",
+    "new clothes",
+    "clothes for children"
+   ]
+  },
+  {
+   "id": "e200",
+   "c": "ingles",
+   "q": "What does \"waste\" mean?",
+   "n": 2,
+   "a": [
+    "things that are thrown away",
+    "money you save",
+    "clean water",
+    "a type of shop"
+   ]
+  },
+  {
+   "id": "e201",
+   "c": "ingles",
+   "q": "An electric car is charged at a…",
+   "n": 2,
+   "a": [
+    "charging point",
+    "petrol station",
+    "car wash",
+    "bus stop"
+   ]
+  },
+  {
+   "id": "e202",
+   "c": "ingles",
+   "q": "I ___ chocolate very much.",
+   "n": 2,
+   "a": [
+    "like",
+    "am liking",
+    "likes",
+    "liking"
+   ]
+  },
+  {
+   "id": "e203",
+   "c": "ingles",
+   "q": "There ___ two apples on the table.",
+   "n": 1,
+   "a": [
+    "are",
+    "is",
+    "be",
+    "am"
+   ]
+  },
+  {
+   "id": "e204",
+   "c": "ingles",
+   "q": "This is ___ book. (the book of Maria)",
+   "n": 2,
+   "a": [
+    "Maria's",
+    "Marias",
+    "Maria",
+    "of Maria"
+   ]
+  },
+  {
+   "id": "e205",
+   "c": "ingles",
+   "q": "Past simple of \"buy\":",
+   "n": 2,
+   "a": [
+    "bought",
+    "buyed",
+    "brought",
+    "buy"
+   ]
+  },
+  {
+   "id": "e206",
+   "c": "ingles",
+   "q": "I ___ TV when the phone rang.",
+   "n": 3,
+   "a": [
+    "was watching",
+    "watched",
+    "am watching",
+    "watch"
+   ]
+  },
+  {
+   "id": "e207",
+   "c": "ingles",
+   "q": "I was born ___ 1990.",
+   "n": 2,
+   "a": [
+    "in",
+    "on",
+    "at",
+    "to"
+   ]
+  },
+  {
+   "id": "e208",
+   "c": "ingles",
+   "q": "My birthday is ___ 29th October.",
+   "n": 2,
+   "a": [
+    "on",
+    "in",
+    "at",
+    "to"
+   ]
+  },
+  {
+   "id": "e209",
+   "c": "ingles",
+   "q": "She ___ speak three languages.",
+   "n": 1,
+   "a": [
+    "can",
+    "cans",
+    "can to",
+    "is can"
+   ]
+  },
+  {
+   "id": "e210",
+   "c": "ingles",
+   "q": "\"Went\" is the past simple of \"go\".",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "e211",
+   "c": "ingles",
+   "q": "We use the present continuous for habits, like \"I am going to work every day\".",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "e212",
+   "c": "social",
+   "q": "¿A qué época pertenecen las pinturas de la cueva de Altamira?",
+   "n": 1,
+   "a": [
+    "Prehistoria",
+    "Edad Antigua",
+    "Edad Media",
+    "Edad Moderna"
+   ]
+  },
+  {
+   "id": "e213",
+   "c": "social",
+   "q": "¿A qué época pertenecen los dólmenes?",
+   "n": 2,
+   "a": [
+    "Prehistoria",
+    "Edad Antigua",
+    "Edad Media",
+    "Edad Contemporánea"
+   ]
+  },
+  {
+   "id": "e214",
+   "c": "social",
+   "q": "¿A qué época pertenece Hispania?",
+   "n": 2,
+   "a": [
+    "Edad Antigua",
+    "Prehistoria",
+    "Edad Media",
+    "Edad Moderna"
+   ]
+  },
+  {
+   "id": "e215",
+   "c": "social",
+   "q": "¿A qué época pertenece la Escuela de Traductores de Toledo?",
+   "n": 3,
+   "a": [
+    "Edad Media",
+    "Edad Antigua",
+    "Edad Moderna",
+    "Edad Contemporánea"
+   ]
+  },
+  {
+   "id": "e216",
+   "c": "social",
+   "q": "¿A qué época pertenece la batalla de las Navas de Tolosa (1212)?",
+   "n": 3,
+   "a": [
+    "Edad Media",
+    "Edad Antigua",
+    "Edad Moderna",
+    "Edad Contemporánea"
+   ]
+  },
+  {
+   "id": "e217",
+   "c": "social",
+   "q": "¿A qué época pertenece el reinado de Felipe II?",
+   "n": 2,
+   "a": [
+    "Edad Moderna",
+    "Edad Media",
+    "Edad Contemporánea",
+    "Edad Antigua"
+   ]
+  },
+  {
+   "id": "e218",
+   "c": "social",
+   "q": "¿A qué época pertenece el reinado de Carlos III?",
+   "n": 3,
+   "a": [
+    "Edad Moderna",
+    "Edad Media",
+    "Edad Contemporánea",
+    "Edad Antigua"
+   ]
+  },
+  {
+   "id": "e219",
+   "c": "social",
+   "q": "¿A qué época pertenece el movimiento sufragista?",
+   "n": 2,
+   "a": [
+    "Edad Contemporánea",
+    "Edad Moderna",
+    "Edad Media",
+    "Edad Antigua"
+   ]
+  },
+  {
+   "id": "e220",
+   "c": "social",
+   "q": "¿Qué hecho marca el inicio de la Edad Media?",
+   "n": 2,
+   "a": [
+    "La caída del Imperio romano de Occidente (476)",
+    "El descubrimiento de América (1492)",
+    "La Revolución francesa (1789)",
+    "La fundación de Roma"
+   ]
+  },
+  {
+   "id": "e221",
+   "c": "social",
+   "q": "¿Qué hecho se toma como inicio de la Edad Moderna?",
+   "n": 2,
+   "a": [
+    "El descubrimiento de América (1492)",
+    "La caída de Roma (476)",
+    "La Revolución francesa (1789)",
+    "La Constitución de 1978"
+   ]
+  },
+  {
+   "id": "e222",
+   "c": "social",
+   "q": "¿Qué hecho marca el inicio de la Edad Contemporánea?",
+   "n": 2,
+   "a": [
+    "La Revolución francesa (1789)",
+    "El descubrimiento de América (1492)",
+    "La caída de Roma (476)",
+    "La Guerra Civil española"
+   ]
+  },
+  {
+   "id": "e223",
+   "c": "social",
+   "q": "¿Qué supuso la Revolución neolítica?",
+   "n": 2,
+   "a": [
+    "El paso a la agricultura, la ganadería y la vida sedentaria",
+    "La invención de la imprenta",
+    "El uso de la máquina de vapor",
+    "La llegada de los romanos"
+   ]
+  },
+  {
+   "id": "e224",
+   "c": "social",
+   "q": "¿Cuál fue una consecuencia de la Revolución industrial?",
+   "n": 2,
+   "a": [
+    "Crecimiento de las ciudades y aparición del proletariado",
+    "Vuelta a la vida nómada",
+    "Desaparición de la burguesía",
+    "Fin del comercio"
+   ]
+  },
+  {
+   "id": "e225",
+   "c": "social",
+   "q": "¿Qué reinos unió el matrimonio de los Reyes Católicos?",
+   "n": 2,
+   "a": [
+    "Castilla y Aragón",
+    "Castilla y Portugal",
+    "Aragón y Navarra",
+    "León y Granada"
+   ]
+  },
+  {
+   "id": "e226",
+   "c": "social",
+   "q": "¿Qué reino musulmán conquistaron los Reyes Católicos en 1492?",
+   "n": 2,
+   "a": [
+    "Granada",
+    "Córdoba",
+    "Toledo",
+    "Sevilla"
+   ]
+  },
+  {
+   "id": "e227",
+   "c": "social",
+   "q": "¿Qué reino peninsular no consiguieron incorporar los Reyes Católicos?",
+   "n": 3,
+   "a": [
+    "Portugal",
+    "Navarra",
+    "Granada",
+    "Aragón"
+   ]
+  },
+  {
+   "id": "e228",
+   "c": "social",
+   "q": "¿Quién heredó los reinos de los Reyes Católicos a través de su madre, Juana?",
+   "n": 3,
+   "a": [
+    "Carlos I",
+    "Felipe II",
+    "Felipe V",
+    "Fernando VII"
+   ]
+  },
+  {
+   "id": "e229",
+   "c": "social",
+   "q": "¿Quién decretó el Bloqueo Continental contra Inglaterra?",
+   "n": 2,
+   "a": [
+    "Napoleón Bonaparte",
+    "Felipe II",
+    "Carlos III",
+    "Isabel II"
+   ]
+  },
+  {
+   "id": "e230",
+   "c": "social",
+   "q": "¿Cuándo se proclamó la Segunda República española?",
+   "n": 2,
+   "a": [
+    "En 1931, antes de la Guerra Civil",
+    "En 1939, después de la Guerra Civil",
+    "En 1975",
+    "En 1873"
+   ]
+  },
+  {
+   "id": "e231",
+   "c": "social",
+   "q": "¿En qué año se aprobó la Constitución española vigente?",
+   "n": 1,
+   "a": [
+    "1978",
+    "1975",
+    "1982",
+    "1986"
+   ]
+  },
+  {
+   "id": "e232",
+   "c": "social",
+   "q": "¿Qué estableció la Constitución de 1978?",
+   "n": 2,
+   "a": [
+    "Un Estado democrático con separación de poderes y comunidades autónomas",
+    "Una república federal",
+    "Una monarquía absoluta",
+    "Una dictadura militar"
+   ]
+  },
+  {
+   "id": "e233",
+   "c": "social",
+   "q": "¿Quién elige al alcalde de un municipio en España?",
+   "n": 2,
+   "a": [
+    "Los concejales del ayuntamiento",
+    "Directamente el presidente del Gobierno",
+    "El rey",
+    "El gobernador civil"
+   ]
+  },
+  {
+   "id": "e234",
+   "c": "social",
+   "q": "¿Quién elige al presidente del Gobierno de España?",
+   "n": 2,
+   "a": [
+    "El Congreso de los Diputados (investidura)",
+    "El Senado",
+    "El rey sin votación",
+    "Los ciudadanos en una votación aparte"
+   ]
+  },
+  {
+   "id": "e235",
+   "c": "social",
+   "q": "¿Quién elige al presidente de la Junta de Castilla y León?",
+   "n": 2,
+   "a": [
+    "Las Cortes de Castilla y León",
+    "El Congreso de los Diputados",
+    "Los alcaldes",
+    "El Senado"
+   ]
+  },
+  {
+   "id": "e236",
+   "c": "social",
+   "q": "¿Cuáles son instituciones de Castilla y León?",
+   "n": 2,
+   "a": [
+    "Las Cortes, la Junta y el presidente de Castilla y León",
+    "El Congreso y el Senado",
+    "La Comisión Europea",
+    "El Tribunal Supremo"
+   ]
+  },
+  {
+   "id": "e237",
+   "c": "social",
+   "q": "¿Qué forman las Cortes Generales?",
+   "n": 2,
+   "a": [
+    "El Congreso de los Diputados y el Senado",
+    "El Gobierno y los ministros",
+    "Los jueces y tribunales",
+    "Las comunidades autónomas"
+   ]
+  },
+  {
+   "id": "e238",
+   "c": "social",
+   "q": "¿Quién tiene el poder ejecutivo en España?",
+   "n": 2,
+   "a": [
+    "El Gobierno",
+    "Las Cortes Generales",
+    "Los jueces",
+    "El rey"
+   ]
+  },
+  {
+   "id": "e239",
+   "c": "social",
+   "q": "¿Cuáles son instituciones de la Unión Europea?",
+   "n": 2,
+   "a": [
+    "El Parlamento Europeo y la Comisión Europea",
+    "El Congreso y el Senado",
+    "La ONU y la OTAN",
+    "Las Cortes de Castilla y León"
+   ]
+  },
+  {
+   "id": "e240",
+   "c": "social",
+   "q": "¿Cuál de estas es una organización supranacional?",
+   "n": 2,
+   "a": [
+    "La Unión Europea",
+    "La Junta de Castilla y León",
+    "Un ayuntamiento",
+    "Una diputación provincial"
+   ]
+  },
+  {
+   "id": "e241",
+   "c": "social",
+   "q": "¿Qué tratado cambió el nombre de CEE por Unión Europea?",
+   "n": 3,
+   "a": [
+    "El Tratado de Maastricht (1992)",
+    "El Tratado de Roma (1957)",
+    "El Tratado de Lisboa (2007)",
+    "El Acuerdo de Schengen"
+   ]
+  },
+  {
+   "id": "e242",
+   "c": "social",
+   "q": "¿En qué año entró España en la CEE?",
+   "n": 2,
+   "a": [
+    "1986",
+    "1978",
+    "1992",
+    "2002"
+   ]
+  },
+  {
+   "id": "e243",
+   "c": "social",
+   "q": "¿Cuál de estos grupos son todos países de la Unión Europea?",
+   "n": 2,
+   "a": [
+    "Portugal, Francia e Italia",
+    "Suiza, Noruega y Francia",
+    "Reino Unido, Irlanda y España",
+    "Turquía, Grecia y Chipre"
+   ]
+  },
+  {
+   "id": "e244",
+   "c": "social",
+   "q": "¿Cuál es el río más largo de la península ibérica?",
+   "n": 2,
+   "a": [
+    "El Tajo",
+    "El Ebro",
+    "El Duero",
+    "El Guadalquivir"
+   ]
+  },
+  {
+   "id": "e245",
+   "c": "social",
+   "q": "¿Cuál es el río más largo que discurre entero por España?",
+   "n": 3,
+   "a": [
+    "El Ebro",
+    "El Tajo",
+    "El Duero",
+    "El Guadiana"
+   ]
+  },
+  {
+   "id": "e246",
+   "c": "social",
+   "q": "¿Cuál es el río más caudaloso de la península ibérica?",
+   "n": 3,
+   "a": [
+    "El Duero",
+    "El Tajo",
+    "El Guadiana",
+    "El Júcar"
+   ]
+  },
+  {
+   "id": "e247",
+   "c": "social",
+   "q": "¿Cuál es la montaña más alta de España?",
+   "n": 2,
+   "a": [
+    "El Teide",
+    "El Mulhacén",
+    "El Aneto",
+    "El Almanzor"
+   ]
+  },
+  {
+   "id": "e248",
+   "c": "social",
+   "q": "¿Cuál es la montaña más alta de la península ibérica?",
+   "n": 3,
+   "a": [
+    "El Mulhacén",
+    "El Teide",
+    "El Aneto",
+    "El Moncayo"
+   ]
+  },
+  {
+   "id": "e249",
+   "c": "social",
+   "q": "¿A qué vertiente pertenece el río Ebro?",
+   "n": 2,
+   "a": [
+    "Mediterránea",
+    "Atlántica",
+    "Cantábrica",
+    "Ninguna"
+   ]
+  },
+  {
+   "id": "e250",
+   "c": "social",
+   "q": "¿A qué vertiente pertenece el río Duero?",
+   "n": 2,
+   "a": [
+    "Atlántica",
+    "Mediterránea",
+    "Cantábrica",
+    "Ninguna"
+   ]
+  },
+  {
+   "id": "e251",
+   "c": "social",
+   "q": "¿A qué vertiente pertenece el río Nalón?",
+   "n": 3,
+   "a": [
+    "Cantábrica",
+    "Atlántica",
+    "Mediterránea",
+    "Ninguna"
+   ]
+  },
+  {
+   "id": "e252",
+   "c": "social",
+   "q": "¿A qué vertiente pertenece el río Júcar?",
+   "n": 3,
+   "a": [
+    "Mediterránea",
+    "Atlántica",
+    "Cantábrica",
+    "Ninguna"
+   ]
+  },
+  {
+   "id": "e253",
+   "c": "social",
+   "q": "¿Cómo se organiza territorialmente el Estado español?",
+   "n": 2,
+   "a": [
+    "Municipios, provincias y comunidades autónomas",
+    "Solo en comunidades autónomas",
+    "Regiones y cantones",
+    "Estados federados"
+   ]
+  },
+  {
+   "id": "e254",
+   "c": "social",
+   "q": "¿Cuál de estas comunidades autónomas tiene una sola provincia?",
+   "n": 2,
+   "a": [
+    "La Rioja",
+    "Castilla y León",
+    "Andalucía",
+    "Galicia"
+   ]
+  },
+  {
+   "id": "e255",
+   "c": "social",
+   "q": "¿Qué comunidad autónoma tiene más provincias?",
+   "n": 2,
+   "a": [
+    "Castilla y León (9)",
+    "Andalucía (8)",
+    "Castilla-La Mancha (5)",
+    "Cataluña (4)"
+   ]
+  },
+  {
+   "id": "e256",
+   "c": "social",
+   "q": "¿Qué institución gobierna la provincia?",
+   "n": 2,
+   "a": [
+    "La Diputación provincial",
+    "El ayuntamiento",
+    "Las Cortes autonómicas",
+    "El Senado"
+   ]
+  },
+  {
+   "id": "e257",
+   "c": "social",
+   "q": "¿Qué clima predomina en Castilla y León?",
+   "n": 2,
+   "a": [
+    "Mediterráneo continentalizado (de interior)",
+    "Oceánico",
+    "Subtropical",
+    "Desértico"
+   ]
+  },
+  {
+   "id": "e258",
+   "c": "social",
+   "q": "¿Qué rasgos tiene el arte románico?",
+   "n": 2,
+   "a": [
+    "Muros gruesos, arcos de medio punto y pocas ventanas",
+    "Arcos apuntados y grandes vidrieras",
+    "Cúpulas y perspectiva",
+    "Pincelada suelta y luz"
+   ]
+  },
+  {
+   "id": "e259",
+   "c": "social",
+   "q": "¿Qué rasgos tiene el arte gótico?",
+   "n": 2,
+   "a": [
+    "Arcos apuntados, bóvedas de crucería y vidrieras",
+    "Muros gruesos y pocas ventanas",
+    "Arcos de herradura",
+    "Hormigón y acero"
+   ]
+  },
+  {
+   "id": "e260",
+   "c": "social",
+   "q": "¿A qué arte pertenece el mihrab de la Mezquita de Córdoba?",
+   "n": 2,
+   "a": [
+    "Arte islámico (califal)",
+    "Arte gótico",
+    "Arte romano",
+    "Arte barroco"
+   ]
+  },
+  {
+   "id": "e261",
+   "c": "social",
+   "q": "¿Qué caracteriza al impresionismo?",
+   "n": 2,
+   "a": [
+    "Pincelada suelta y estudio de la luz y el color",
+    "Figuras rígidas y simbólicas",
+    "Arcos apuntados",
+    "Formas geométricas puras"
+   ]
+  },
+  {
+   "id": "e262",
+   "c": "social",
+   "q": "La estatua de Augusto de Prima Porta pertenece al arte…",
+   "n": 2,
+   "a": [
+    "Romano",
+    "Egipcio",
+    "Gótico",
+    "Renacentista"
+   ]
+  },
+  {
+   "id": "e263",
+   "c": "social",
+   "q": "¿Qué caracteriza al Renacimiento?",
+   "n": 2,
+   "a": [
+    "Proporción, perspectiva y figura humana realista",
+    "Arcos apuntados y vidrieras",
+    "Pinceladas sueltas",
+    "Muros gruesos y pocas ventanas"
+   ]
+  },
+  {
+   "id": "e264",
+   "c": "social",
+   "q": "¿Cuál es un derecho fundamental individual?",
+   "n": 2,
+   "a": [
+    "La libertad de expresión",
+    "Pagar impuestos",
+    "El servicio militar",
+    "Votar a los 16 años"
+   ]
+  },
+  {
+   "id": "e265",
+   "c": "social",
+   "q": "¿Qué es un riesgo natural?",
+   "n": 2,
+   "a": [
+    "Un fenómeno de la naturaleza que puede causar daños, como una inundación",
+    "Una ley ambiental",
+    "Un tipo de clima",
+    "Un espacio protegido"
+   ]
+  },
+  {
+   "id": "e266",
+   "c": "social",
+   "q": "¿Cuál es una consecuencia del cambio climático?",
+   "n": 2,
+   "a": [
+    "Más sequías y pérdida de biodiversidad",
+    "Inviernos más largos en todo el mundo",
+    "Más agua dulce disponible",
+    "Menos olas de calor"
+   ]
+  },
+  {
+   "id": "e267",
+   "c": "social",
+   "q": "La Segunda República se proclamó después de la Guerra Civil.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "e268",
+   "c": "social",
+   "q": "Isabel II reinó en España en el siglo XIX.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "e269",
+   "c": "social",
+   "q": "El Reino Unido salió de la Unión Europea con el Brexit.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "e270",
+   "c": "social",
+   "q": "Felipe II fue el heredero directo de los Reyes Católicos.",
+   "n": 3,
+   "vf": false
+  }
+ ]
+}

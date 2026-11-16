@@ -6,6 +6,10 @@ const path = require("path");
 const crypto = require("crypto");
 
 const BANK = require("./data/preguntas.json");
+const ESO = require("./data/eso.json"); // Prueba libre Graduado ESO (Castilla y León)
+const BANKS = { hosteleria: BANK, eso: ESO };
+const bankOf = (curso) => BANKS[curso] || BANK;
+const TIMES = [10, 20, 30, 45, 60, 90, 120, 180, 300]; // segundos permitidos por pregunta
 // Traducciones de las preguntas: { idioma: { id: [pregunta, resp1, resp2, ...] } }
 const LANGS = ["es", "pt", "en"];
 const TR = {};
@@ -71,7 +75,7 @@ function newPin() {
 function toGameQuestion(p) {
   const img = p.img || null;
   const cat = p.cat || BANK.categorias[p.c] || "";
-  const base = { c: p.c || null, cat, n: p.n || null, img };
+  const base = { c: p.c || null, cat, n: p.n || null, img, t: p.t || 20 };
   // Textos en cada idioma (las preguntas propias solo tienen el suyo)
   const texts = { es: [p.q, ...(p.a || [])] };
   if (p.id) for (const l of LANGS.slice(1)) if (TR[l][p.id]) texts[l] = TR[l][p.id];
@@ -112,10 +116,10 @@ const playerList = (game) => [...game.players.values()].map((p) => ({ id: p.id, 
 
 const qPayload = (q) => ({ c: q.c, cat: q.cat, n: q.n, tr: q.tr, q: q.q, img: q.img, a: q.a, vf: q.vf });
 const okTr = (q) => Object.fromEntries(Object.entries(q.tr).map(([l, t]) => [l, t.a[q.ok]]));
-function points(game, p, correct, ms) {
+function points(secs, p, correct, ms) {
   if (!correct) { p.streak = 0; return 0; }
   p.streak++;
-  return Math.round(1000 * (1 - ms / (game.time * 1000) / 2)) + Math.min(p.streak - 1, 5) * 100; // rapidez + racha
+  return Math.round(1000 * (1 - ms / (secs * 1000) / 2)) + Math.min(p.streak - 1, 5) * 100; // rapidez + racha
 }
 
 function publicQuestion(game) {
@@ -124,9 +128,9 @@ function publicQuestion(game) {
     idx: game.idx,
     total: game.questions.length,
     ...qPayload(q),
-    time: game.time,
+    time: q.t,
     intro: Math.max(0, game.qStart - Date.now()), // cuenta atrás 3-2-1 antes de poder responder
-    left: Math.min(game.time * 1000, Math.max(0, game.time * 1000 - (Date.now() - game.qStart))),
+    left: Math.min(q.t * 1000, Math.max(0, q.t * 1000 - (Date.now() - game.qStart))),
   };
 }
 
@@ -147,7 +151,7 @@ function startQuestion(game) {
   const pq = publicQuestion(game);
   toHost(game, "question", { ...pq, answered: 0, players: game.players.size });
   toAllPlayers(game, "question", { ...pq, answered: false });
-  game.timer = setTimeout(() => reveal(game), INTRO_MS + game.time * 1000 + 500);
+  game.timer = setTimeout(() => reveal(game), INTRO_MS + game.questions[game.idx].t * 1000 + 500);
 }
 
 function reveal(game) {
@@ -163,7 +167,7 @@ function reveal(game) {
     let pts = 0;
     if (ans) {
       counts[ans.choice]++;
-      pts = points(game, p, ans.choice === q.ok, ans.ms);
+      pts = points(q.t, p, ans.choice === q.ok, ans.ms);
     } else p.streak = 0;
     p.score += pts;
     p.last = { answered: !!ans, correct: !!ans && ans.choice === q.ok, pts };
@@ -201,9 +205,9 @@ const sendRace = (game) => toHost(game, "race", { list: raceData(game), total: g
 function soloQuestionData(game, p) {
   const q = p.deck[p.i];
   return {
-    mode: "solo", idx: p.i, total: p.deck.length, ...qPayload(q), time: game.time,
+    mode: "solo", idx: p.i, total: p.deck.length, ...qPayload(q), time: q.t,
     intro: Math.max(0, p.qStart - Date.now()),
-    left: Math.min(game.time * 1000, Math.max(0, game.time * 1000 - (Date.now() - p.qStart))),
+    left: Math.min(q.t * 1000, Math.max(0, q.t * 1000 - (Date.now() - p.qStart))),
     answered: false,
   };
 }
@@ -213,7 +217,7 @@ function soloAsk(game, p, intro) {
   p.waiting = false;
   p.qStart = Date.now() + intro;
   toPlayer(p, "question", soloQuestionData(game, p));
-  p.timer = setTimeout(() => soloAnswer(game, p, null), intro + game.time * 1000 + 500);
+  p.timer = setTimeout(() => soloAnswer(game, p, null), intro + p.deck[p.i].t * 1000 + 500);
 }
 
 function soloAnswer(game, p, choice) {
@@ -222,8 +226,8 @@ function soloAnswer(game, p, choice) {
   const q = p.deck[p.i];
   const answered = choice !== null;
   const correct = answered && choice === q.ok;
-  const ms = Math.max(0, Math.min(game.time * 1000, Date.now() - p.qStart));
-  const pts = answered ? points(game, p, correct, ms) : ((p.streak = 0), 0);
+  const ms = Math.max(0, Math.min(q.t * 1000, Date.now() - p.qStart));
+  const pts = answered ? points(q.t, p, correct, ms) : ((p.streak = 0), 0);
   p.score += pts;
   if (correct) p.correct++;
   p.i++;
@@ -302,7 +306,7 @@ function closeGame(game) {
 
 // Lo que ve alguien que se (re)conecta
 function hostSnapshot(game, res) {
-  send(res, "hello", { pin: game.pin, total: game.n, time: game.time, state: game.state, mode: game.mode });
+  send(res, "hello", { pin: game.pin, total: game.n, time: game.time, state: game.state, mode: game.mode, curso: game.curso });
   send(res, "players", playerList(game));
   if (game.state === "running") send(res, "race", { list: raceData(game), total: game.n });
   if (game.state === "question") send(res, "question", { ...publicQuestion(game), answered: game.answers.size, players: game.players.size });
@@ -342,7 +346,9 @@ function json(res, code, data) {
 const api = {
   // El presentador crea la partida
   "POST /api/host/create": async (body) => {
-    const cats = Array.isArray(body.cats) ? body.cats.filter((c) => BANK.categorias[c]) : [];
+    const curso = BANKS[body.curso] ? body.curso : "hosteleria";
+    const bank = bankOf(curso);
+    const cats = Array.isArray(body.cats) ? body.cats.filter((c) => bank.categorias[c]) : [];
     // Quizzes propios (creados por el usuario, guardados en su móvil u ordenador)
     const custom = (Array.isArray(body.custom) ? body.custom.slice(0, 10) : []).flatMap((quiz) => {
       const title = String(quiz?.title || "Mi quiz").trim().slice(0, 40) || "Mi quiz";
@@ -350,16 +356,21 @@ const api = {
     });
     if (!cats.length && !custom.length) return [400, { error: "Elige al menos un tema o uno de tus quizzes." }];
     const n = Math.min(Math.max(parseInt(body.n) || 10, 1), 100);
-    const time = [10, 20, 30, 60].includes(+body.time) ? +body.time : 20;
+    // "auto": cada materia con su tiempo (Matemáticas más largo); si no, el mismo para todas
+    const auto = body.time === "auto";
+    const time = auto ? "auto" : TIMES.includes(+body.time) ? +body.time : 20;
+    const secsFor = (p) => (auto ? bank.tiempos?.[p.c] || 60 : time);
     // Niveles elegidos (vacío = todos). Las preguntas propias sin nivel entran siempre.
     const niveles = (Array.isArray(body.niveles) ? body.niveles : []).map(Number).filter((n) => NIVELES[n]);
     const okLevel = (p) => !niveles.length || !p.n || niveles.includes(p.n);
-    const pool = BANK.preguntas.filter((p) => cats.includes(p.c)).concat(custom).filter(okLevel);
+    const pool = bank.preguntas.filter((p) => cats.includes(p.c)).concat(custom).filter(okLevel)
+      .map((p) => ({ ...p, cat: p.cat || bank.categorias[p.c], t: secsFor(p) }));
     if (!pool.length) return [400, { error: "No hay preguntas con esos temas y niveles. Elige otro nivel." }];
     const mode = body.mode === "clasico" ? "clasico" : "solo";
     const game = {
       pin: newPin(),
       hostKey: token(12),
+      curso,
       mode,
       n: Math.min(n, pool.length),
       pool: shuffle(pool),  // modo individual: se reparte entre los jugadores
@@ -376,7 +387,7 @@ const api = {
       hostGoneTimer: null,
     };
     games.set(game.pin, game);
-    return [200, { pin: game.pin, hostKey: game.hostKey, total: game.n, time, mode }];
+    return [200, { pin: game.pin, hostKey: game.hostKey, total: game.n, time, mode, curso }];
   },
 
   // Botones del presentador
@@ -452,7 +463,7 @@ const api = {
     const c = parseInt(body.choice);
     if (!(c >= 0 && c < q.a.length)) return [400, { error: "Respuesta no válida." }];
     if (Date.now() < game.qStart - 300) return [409, { error: "Se acabó el tiempo." }];
-    game.answers.set(p.id, { choice: c, ms: Math.max(0, Math.min(game.time * 1000, Date.now() - game.qStart)) });
+    game.answers.set(p.id, { choice: c, ms: Math.max(0, Math.min(q.t * 1000, Date.now() - game.qStart)) });
     toHost(game, "answered", { answered: game.answers.size, players: game.players.size });
     const online = [...game.players.values()].filter((x) => x.streams.size > 0);
     if (online.length && online.every((x) => game.answers.has(x.id))) setTimeout(() => reveal(game), 400);
@@ -635,12 +646,16 @@ const server = http.createServer(async (req, res) => {
     if (req.method === "GET" && url.pathname === "/health") return json(res, 200, { ok: true, partidas: games.size });
     if (req.method === "GET" && url.pathname === "/events") return openStream(req, res, url);
     if (req.method === "GET" && url.pathname === "/api/categorias") {
-      return json(res, 200, Object.entries(BANK.categorias).map(([id, nombre]) => ({
-        id, nombre, total: BANK.preguntas.filter((p) => p.c === id).length,
-        porNivel: [1, 2, 3].map((n) => BANK.preguntas.filter((p) => p.c === id && p.n === n).length),
+      const bank = bankOf(url.searchParams.get("curso"));
+      return json(res, 200, Object.entries(bank.categorias).map(([id, nombre]) => ({
+        id, nombre, total: bank.preguntas.filter((p) => p.c === id).length, tiempo: bank.tiempos?.[id] || null,
+        porNivel: [1, 2, 3].map((n) => bank.preguntas.filter((p) => p.c === id && p.n === n).length),
       })));
     }
-    if (req.method === "GET" && url.pathname === "/api/preguntas") return json(res, 200, { ...BANK, i18n: TR });
+    if (req.method === "GET" && url.pathname === "/api/preguntas") {
+      const curso = url.searchParams.get("curso");
+      return json(res, 200, curso === "eso" ? { ...ESO, i18n: {} } : { ...BANK, i18n: TR });
+    }
     if (req.method === "GET" && url.pathname === "/api/imagenes") return json(res, 200, IMAGES);
     if (req.method === "GET" && url.pathname === "/api/ia/estado") return json(res, 200, { activa: aiReady() });
     if (req.method === "POST" && url.pathname === "/api/ia") {
