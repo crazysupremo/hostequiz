@@ -81,7 +81,12 @@ async function setup(err = "") {
     <div class="row" style="align-items:stretch">
       <div class="card" style="flex:1;min-width:220px">
         <label class="label" for="n">${opts.mode === "solo" ? t("perPlayer", { n: "" }).trim() : t("nQuestions")}</label>
-        <select id="n">${[5, 10, 15, 20, 30, 40].map((n) => `<option value="${n}" ${n === opts.n ? "selected" : ""}>${n}</option>`).join("")}<option value="100" ${opts.n === 100 ? "selected" : ""}>${t("allQ")}</option></select>
+        <div class="numpick">
+          <button type="button" class="langbtn" data-step="-5" aria-label="-5">−</button>
+          <input id="n" type="number" inputmode="numeric" min="1" max="100" value="${opts.n}">
+          <button type="button" class="langbtn" data-step="5" aria-label="+5">+</button>
+        </div>
+        <div class="chips">${[10, 20, 30, 50].map((n) => `<button type="button" class="chip" data-n="${n}" aria-pressed="${opts.n === n}">${n}</button>`).join("")}</div>
       </div>
       <div class="card" style="flex:1;min-width:220px">
         <label class="label" for="t">${t("timePerQ")}</label>
@@ -94,7 +99,17 @@ async function setup(err = "") {
     ${newsLink()}`);
   app.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => { opts.mode = b.dataset.mode; setup(err); }));
 
-  document.getElementById("n").addEventListener("change", (e) => (opts.n = +e.target.value));
+  // Número de preguntas: se puede escribir cualquier número del 1 al 100
+  const nInput = document.getElementById("n");
+  const setN = (v) => {
+    opts.n = Math.min(100, Math.max(1, Math.round(+v) || 1));
+    nInput.value = opts.n;
+    app.querySelectorAll("[data-n]").forEach((c) => c.setAttribute("aria-pressed", +c.dataset.n === opts.n));
+  };
+  nInput.addEventListener("input", () => { if (nInput.value !== "") opts.n = Math.min(100, Math.max(1, +nInput.value || 1)); app.querySelectorAll("[data-n]").forEach((c) => c.setAttribute("aria-pressed", +c.dataset.n === +nInput.value)); });
+  nInput.addEventListener("change", () => setN(nInput.value));
+  app.querySelectorAll("[data-step]").forEach((b) => b.addEventListener("click", () => setN(opts.n + +b.dataset.step)));
+  app.querySelectorAll("[data-n]").forEach((b) => b.addEventListener("click", () => setN(+b.dataset.n)));
   document.getElementById("t").addEventListener("change", (e) => (opts.t = +e.target.value));
   const drawLv = () => {
     document.getElementById("lv").innerHTML =

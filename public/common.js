@@ -367,8 +367,9 @@ function setRing(id, msLeft, totalMs) {
 }
 
 // ============ NOVEDADES (aviso pequeño en el pie) ============
-const APP_VERSION = "3";
+const APP_VERSION = "3.1";
 const CHANGELOG = [
+  { v: "3.1", date: "16/11/2026", es: ["Ahora puedes escribir el número de preguntas que quieras (de 1 a 100), por ejemplo 30 por alumno."], pt: ["Agora podes escrever o número de perguntas que quiseres (de 1 a 100), por exemplo 30 por aluno."], en: ["You can now type any number of questions (1 to 100), for example 30 per student."] },
   { v: "3", date: "16/11/2026", es: [
       "Nuevo modo: cada alumno recibe preguntas diferentes en su móvil, a su ritmo.",
       "Casi 470 preguntas nuevas y más difíciles: vinos, coctelería, atención al cliente, alérgenos y más.",

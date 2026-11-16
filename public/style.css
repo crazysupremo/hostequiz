@@ -186,6 +186,12 @@ button.ans:active { transform: translateY(4px) scale(.98); box-shadow: 0 1px 0 r
 .board li:first-child::before, .board li:first-child .gain, .board li:first-child .mv { color: #2a1407; }
 .board li:first-child .fill { display: none; }
 
+/* Número de preguntas */
+.numpick { display: flex; gap: 8px; align-items: center; }
+.numpick input { text-align: center; font-family: "Bricolage Grotesque", sans-serif; font-weight: 800; font-size: 26px; padding: 10px; }
+.numpick .langbtn { width: 52px; height: 52px; justify-content: center; font-size: 24px; flex: none; }
+.numpick input::-webkit-inner-spin-button { opacity: .4; }
+
 /* Elegir modo */
 .modepick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .modeopt { display: flex; gap: 12px; align-items: flex-start; text-align: start; background: var(--bg); border: 1.5px solid var(--line); color: var(--crema); border-radius: 16px; padding: 14px; transition: border-color .15s, background .15s; }
