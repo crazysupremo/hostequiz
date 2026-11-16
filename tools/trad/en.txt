@@ -1,0 +1,178 @@
+p001 What goes in a café cortado? || 1 shot of coffee and a splash of milk | 1 shot of coffee and lots of milk | Coffee and condensed milk | Coffee and hot water
+p002 Which service is used for café con leche (white coffee)? || Large service | Small service | Small glass | Balloon glass
+p003 Which service is used for café solo (espresso)? || Small service | Large service | Tall glass (tubo) | Short glass
+p004 How is an iced coffee (café con hielo) served? || Small cup plus a glass with ice on the side | Large cup with the ice inside | Tall glass with ice and milk | Balloon glass without ice
+p005 In a café bombón, what goes in first? || The condensed milk | The coffee | The cream | The sugar
+p006 What is a café bombón served in? || A glass | A large cup | A balloon glass | A jug
+p007 What goes in a carajillo? || Coffee, liqueur, sugar and roasted coffee beans | Coffee, whisky and cream | Coffee and condensed milk | Coffee, milk and cinnamon
+p008 How many roasted coffee beans go in a carajillo? || 4 or 5 | 1 | 10 or 12 | None
+p009 In a carajillo, what do you do with the liqueur before adding the coffee? || Heat it and flambé it | Cool it with ice | Mix it with milk | Whip it with cream
+p010 What is a carajillo served in? || Small glass | Large cup | Beer mug | Cocktail glass
+p011 Which liqueurs go in a quemadillo? || Licor 43 and rum | Whisky and brandy | Tía María and vodka | Anise and gin
+p012 What is sprinkled on top of a quemadillo? || Ground cinnamon | Pepper | Salt | Icing sugar
+p013 What goes in a cappuccino? || Coffee, milk foam and cocoa | Coffee, cream and whisky | Coffee and hot water | Coffee and condensed milk
+p014 What goes in an Irish coffee? || Sugar, whisky, coffee and lightly whipped cream | Sugar, rum and coffee | Coffee, milk and cinnamon | Coffee and vanilla ice cream
+p015 What is an Irish coffee served in? || Irish coffee glass | Small cup | Tall glass (tubo) | Shot glass
+p016 What makes a Scottish coffee different from an Irish coffee? || It has vanilla ice cream instead of cream | It has rum instead of whisky | It has no coffee | It has condensed milk
+p017 What is a Scottish coffee served in? || Short glass | Cocktail glass | Large cup | Champagne glass
+p018 Which liqueur goes in a Jamaican coffee? || Tía María | Whisky | Licor 43 | Anise
+p019 What goes in a mokasino? || Condensed milk, coffee and lightly whipped cream | Coffee, whisky and ice cream | Coffee and cinnamon | Coffee, rum and sugar
+p020 What is a mokasino served in? || Mokasino glass | Short glass | Small cup | Shot glass
+p021 What is an americano? || 1 shot of coffee topped up with water, in a large service | Coffee with condensed milk | Coffee with whisky | Coffee with ice and cream
+p022 Which of these coffees has the MOST milk? || Café con leche | Cortado | Solo (espresso) | Carajillo
+p023 Which part of the coffee machine makes the milk foam? || The steam wand | The grinder | The portafilter | The drip tray
+p024 What do you do with the steam wand after every use? || Purge it and wipe it with a damp cloth | Leave it until closing time | Put it in cold water | Nothing
+p025 How should the milk be before you foam it? || Cold | Hot | Boiling | Frozen
+p026 Roughly what temperature do you heat milk to for foam? || About 60–65 °C, without boiling | Until it boils (100 °C) | 30 °C | It doesn't matter
+p027 What is "una carga" (a shot) of coffee? || The dose of ground coffee for one coffee | A large cup | A sugar sachet | A glass of milk
+p028 A cortado has more milk than a café con leche. ||
+p029 For better foam, the milk has to boil. ||
+p030 A café bombón contains chocolate. ||
+p031 A carajillo contains alcohol. ||
+p032 How is a herbal tea (infusión) served? || Hot water and a tea bag, in a large service with a teapot | In a tall glass with ice | In a small cup with milk | In a balloon glass
+p033 What goes in tea with lemon? || Hot water, a tea bag and lemon | Hot milk and cinnamon | Cold tea and sugar | Coffee and lemon
+p034 With tea with milk, how is the milk served? || In a small jug on the side | Already mixed in the cup | In a shot glass | It has no milk
+p035 What goes in an "American tea" (té americano)? || Tea bag, hot milk, an orange slice and cinnamon | Iced tea with lemon | Tea with whisky | Tea with cold water
+p036 What goes in a Cola Cao (hot chocolate)? || Hot milk and a sachet of Cola Cao | Water and coffee | Cold milk and coffee | Hot water and a tea bag
+p037 What is a Cola Cao served in? || Large service or a glass | Wine glass | Shot glass | Cocktail glass
+p038 Which of these drinks is a herbal tea? || Camomile | Cortado | Mosto (grape juice) | Vermouth
+p039 Herbal teas are served with a teapot. ||
+p040 The "American tea" has orange and cinnamon. ||
+p041 How many ice cubes go in a soft drink? || 2 to 3 | None | Only 1 | More than 6
+p042 Apart from ice, what goes in a soft drink? || A slice of lemon or orange | An olive | Cinnamon | Cream
+p043 Do bottled juices and milkshakes get ice? || No | Yes, 3 or 4 | Yes, just one | Yes, with lemon
+p044 What goes in a vermouth? || 1 or 2 ice cubes, an orange slice and an olive | Cream and cinnamon | Salt and lemon | Nothing
+p045 What goes in a mosto (grape juice)? || 2 or 3 ice cubes, an orange slice and an olive | Cream | Cinnamon | Milk
+p046 How many ice cubes go in a liqueur? || 1 or 2 | 5 or 6 | Never any | 10
+p047 What is beer served in? || A glass (copa) or a mug | A shot glass | A cup | A cocktail glass
+p048 How many ice cubes go in a mixed drink (combinado)? || 3 or 4 | Only 1 | None | 10
+p049 What goes in a mixed drink (combinado)? || Lemon or orange peel | An olive | Cinnamon | Cream
+p050 What temperature is red wine usually served at? || 16–18 °C | 2–4 °C | 30 °C | 0 °C
+p051 What temperature is white wine usually served at? || 8–10 °C | 20–22 °C | 30 °C | -5 °C
+p052 What is a "caña"? || A small glass of draught beer | A coffee with liqueur | A white wine | An orange juice
+p053 What is a "clara"? || Beer with lemonade or lemon soda | White coffee | Whipped egg white | Wine with water
+p054 What is a "tinto de verano"? || Red wine with lemonade | Hot red wine | Dark beer | Iced coffee
+p055 Beer is served with ice. ||
+p056 Red wine is served colder than white wine. ||
+p057 Mixed drinks get more ice than liqueurs. ||
+p058 Which glass is a shot (chupito) served in? || Shot glass | Tall glass (tubo) | Balloon glass | Jug
+p059 What is served in a soft-drink glass? || Coca-Cola, lemon soda or juice | Red wine | Cava | Liqueur
+p060 What is served in a short glass? || Cola Cao, milk, mosto or pineapple juice | Cava | Draught beer | Cocktails
+p061 What is served in a champagne coupe? || Cava | Beer | Coffee | Water
+p062 What does a champagne flute look like? || Tall and narrow | Short and wide | V-shaped | No stem
+p063 What does a cocktail glass look like? || V-shaped (triangle) | Tall and narrow | No stem | With a handle
+p064 Which glass is round and big? || Balloon glass | Cocktail glass | Champagne flute | Liqueur glass
+p065 What are mixed drinks served in? || A mixed-drink glass or balloon glass | A cup | A shot glass | A champagne flute
+p066 What can a liqueur be served in? || Short glass, liqueur glass or tall glass | Large cup | Beer mug | Teapot
+p067 What is vermouth served in? || Wine glass or short glass | Shot glass | Jug | Cup
+p068 What is a bottled juice served in? || Tall glass, balloon glass or short glass | Small cup | Cocktail glass | Shot glass
+p069 What is mosto served in? || Wine glass, short glass or tall glass | Cup | Shot glass | Beer mug
+p070 The "tubo" glass is tall and narrow. ||
+p071 Wine is served in a "tubo" glass. ||
+p072 What is the FIRST step when setting up the dining room? || Line up the tables according to the bookings | Lay the plates | Put out the glasses | Put out the napkins
+p073 What comes right after lining up the tables? || Laying the tablecloths | Putting out the chairs | Putting out the glasses | Setting up the side stations
+p074 In what order are the table linens laid? || Silence cloth, tablecloth, top cloth | Top cloth, tablecloth, silence cloth | Tablecloth, silence cloth, top cloth | Only the top cloth
+p075 What goes on right after the plates? || The cutlery | The chairs | The napkins | The tablecloths
+p076 What goes on right after the glasses? || The napkins | The tablecloths | The plates | The tables
+p077 What is the LAST step of the set-up? || Wine cellar, cold rooms and wine fridges | Putting out the glasses | Lining up the tables | Laying the plates
+p078 Which side does the dinner knife go? || Right | Left | Above the plate | On the plate
+p079 Which side does the dinner fork go? || Left | Right | Above the plate | In the plate
+p080 Which side does the soup spoon go? || Right | Left | Above the plate | Next to the bread
+p081 Which side does the fish knife go? || Right | Left | Above the plate | It isn't laid
+p082 Which side does the fish fork go? || Left | Right | Above the plate | In the plate
+p083 Dessert cutlery: which one goes on the left? || Dessert fork | Dessert spoon | Dessert knife | None
+p084 In the set menu (menú del día) set-up, where does the bread plate go? || On the left | On the right | On the plate | On the side station
+p085 In the set menu set-up, where does the napkin go? || In the centre, between the cutlery | In the glass | Under the tablecloth | On the chair
+p086 What is mise en place? || Getting everything ready before service starts | The dessert of the day | A kind of coffee | The customer's bill
+p087 What is the silence cloth (muletón)? || The thick cloth under the tablecloth | A kind of glass | A small napkin | A fish knife
+p088 What is a side station (aparador)? || The waiter's support unit in the dining room | A kind of knife | An oven | A glass
+p089 The chairs are set before the plates. ||
+p090 The knife and spoon go to the right of the plate. ||
+p091 From which side are drinks served? || From the customer's right | From the customer's left | From behind | From the front
+p092 From which side are plates cleared? || From the customer's right | From the customer's left | From behind | It doesn't matter
+p093 In silver service (from a platter), which side do you serve from? || The customer's left | The customer's right | From behind | From the front
+p094 Before opening a bottle of wine, what do you do? || Show the label to the customer | Shake it well | Warm it up | Pour for everyone straight away
+p095 Who tastes the wine first? || The person who ordered it | The waiter | The cook | The youngest at the table
+p096 What is the "comanda"? || The order slip for the table | The bill | The menu | A kind of dish
+p097 When do you bring the bill to the table? || When the customer asks for it | With the first course | Before they sit down | Never
+p098 How do you hold a wine glass? || By the stem or the base | By the rim | With your fingers inside | From the top
+p099 Before serving dessert, what do you clear from the table? || Used plates and cutlery, bread and salt shakers | The water glasses | The tablecloth | The chairs
+p100 Which hand do you carry the tray with? || The left, so you serve with the right | Always the right | Both, over your head | Resting on your shoulder
+p101 You can serve the main course while the customer is still eating the starter. ||
+p102 Yogurt cake: how many eggs? || 3 | 1 | 6 | 10
+p103 Yogurt cake: what do you measure the ingredients with? || The yogurt pot | A large cup | A bucket | A soup spoon
+p104 Yogurt cake: how many pots of flour? || 3 | 1 | 2 | 6
+p105 Yogurt cake: how many pots of sugar? || 2 | 3 | 5 | Half
+p106 Yogurt cake: which oil does it use? || Sunflower oil | Sesame oil | Coconut oil | No oil
+p107 Yogurt cake: oven temperature and time? || 160° for 30 minutes | 250° for 5 minutes | 100° for 2 hours | 200° for 1 hour
+p108 What do you do with the oven before putting the cake in? || Preheat it | Turn it off | Leave it open | Fill it with water
+p109 Macaroni carbonara (5–6 people): how much pasta? || 500 g | 100 g | 2 kg | 50 g
+p110 Carbonara: which part of the egg is used? || The yolk | Only the white | The shell | The whole boiled egg
+p111 Carbonara: what can you use instead of bacon? || Mushrooms | Chocolate | Strawberries | Tuna
+p112 Set menu: what is ALWAYS among the starters? || A vegetable dish | A dessert | A fish | A coffee
+p113 Which of these is a starter (primer plato)? || Mixed paella | Roast chicken with potatoes | Grilled veal steak | House ice cream
+p114 Which of these is a main course (segundo plato)? || Hake in green sauce | House salad | Green beans | Macaroni bolognese
+p115 What desserts are on the set menu? || Seasonal fruit and house ice cream | Carajillo and quemadillo | Paella | Bread with tomato
+p116 Macaroni bolognese is a main course. ||
+p117 What temperature should the fridge be? || Between 0 and 5 °C | 15 °C | 25 °C | -30 °C
+p118 What temperature should the freezer be? || -18 °C or lower | 0 °C | 5 °C | 10 °C
+p119 How many allergens must be declared by law in the EU? || 14 | 3 | 7 | 50
+p120 A customer asks if a dish has gluten. What do you do? || Check the allergen chart or ask the kitchen | Say it has nothing | Make it up | Say you don't know and walk away
+p121 In the cold room, which product is used first? || The one that came in first | The newest | The biggest | The closest one
+p122 When must you wash your hands? || Before touching food and after the toilet, rubbish or money | Only at the end of the day | Never if you wear gloves | Once a week
+p123 What is cross-contamination? || Passing bacteria from raw food to cooked food | Mixing two wines | A type of service | Running across the kitchen
+p124 Where are cleaning products kept? || Away from food | Next to the food | In the cold room | Behind the bar
+p125 You can refreeze raw food that has already been thawed. ||
+p126 What is "la barra"? || The counter where drinks are served | A dessert | A glass | The kitchen
+p127 What is the "office"? || The support area between kitchen and dining room | The boss's office | A kind of coffee | The staff toilet
+p128 What does "emplatar" mean? || Placing food on the plate before serving | Washing the plates | Breaking a plate | Asking for the bill
+p129 Who is the maître? || The head of the dining room | The cook | The dishwasher | The customer
+p130 Who is the sommelier (sumiller)? || The wine expert | The head chef | The one who makes desserts | The doorman
+p131 Who runs the kitchen? || The head chef | The maître | The sommelier | The waiter
+p132 In the kitchen, what does "¡marcha la mesa 5!" mean? || Start preparing table 5's next course | Throw out table 5's customers | Charge table 5 | Clean table 5
+p133 What is a booking (reserva)? || A table kept for a customer at a set time | A kind of cutlery | Leftover food | The storeroom
+p134 What is this glass called? || Tall glass (tubo) | Short glass | Shot glass | Jug
+p135 What is this glass called? || Short glass | Tall glass (tubo) | Liqueur glass | Soft-drink glass
+p136 What is this glass called? || Shot glass | Short glass | Liqueur glass | Tall glass (tubo)
+p137 Which glass is this? || Wine glass | Balloon glass | Champagne flute | Liqueur glass
+p138 Which glass is this? || Balloon glass | Wine glass | Cocktail glass | Champagne coupe
+p139 Which glass is this? || Champagne flute | Wine glass | Tall glass (tubo) | Liqueur glass
+p140 Which glass is this? || Champagne coupe | Cocktail glass | Balloon glass | Wine glass
+p141 Which glass is this? || Cocktail glass | Champagne coupe | Wine glass | Liqueur glass
+p142 Which glass is this? || Liqueur glass | Wine glass | Shot glass | Balloon glass
+p143 Which glass is this? || Irish coffee glass | Wine glass | Tall glass (tubo) | Champagne flute
+p144 What is usually served in this? || Beer | Wine | Coffee | Liqueur
+p145 What is served in this glass? || Cava or champagne | Beer | Irish coffee | Pineapple juice
+p146 Which service is this? || Small service (espresso, cortado) | Large service | Glass | Irish coffee glass
+p147 Which service is this? || Large service (white coffee, herbal teas) | Small service | Short glass | Balloon glass
+p148 Which coffee is this? || Café solo (espresso) | Cortado | Café con leche | Bombón
+p149 Which coffee is this? || Cortado | Café solo (espresso) | Leche manchada | Café con leche
+p150 Which coffee is this? || Café con leche | Cortado | Leche manchada | Café solo (espresso)
+p151 What is this? || Leche manchada (lots of milk, a little coffee) | Café con leche | Cortado | Cappuccino
+p152 Which coffee is this? || Bombón | Carajillo | Cortado | Irish coffee
+p153 Which coffee is this? || Cappuccino | Café con leche | Bombón | Cortado
+p154 Which coffee is this? || Irish coffee | Cappuccino | Scottish coffee | Mokasino
+p155 Which coffee is this? || Scottish coffee | Irish coffee | Bombón | Carajillo
+p156 Which coffee is this? (look at the beans) || Carajillo | Café solo (espresso) | Bombón | Cortado
+p157 What was ordered here? || Iced coffee (café con hielo) | Café con leche | Cortado | Scottish coffee
+p158 In a bombón, what is the light layer at the bottom? || Condensed milk | Cream | Milk foam | Ice cream
+p159 In an Irish coffee, what is the white layer on top? || Lightly whipped cream | Milk foam | Condensed milk | Vanilla ice cream
+p160 In a Scottish coffee, what is the scoop on top? || Vanilla ice cream | Cream | Condensed milk | Milk foam
+p161 What is on top of a cappuccino? || Milk foam with cocoa | Cream with cinnamon | Condensed milk | Ice cream
+p162 Which drink is served like this: 2–3 ice cubes and a lemon slice? || A soft drink | A wine | A beer | A liqueur
+p163 Which drink is this: ice, orange and an olive? || Vermouth | Beer | Mixed drink | Soft drink
+p164 Which drink is this: balloon glass, 3–4 ice cubes and lemon peel? || A mixed drink | A red wine | A vermouth | A juice
+p165 What is WRONG with this beer? || It shouldn't have ice | It needs lemon | It should be in a cup | Nothing is wrong
+p166 Is this beer served correctly? || Yes, in a mug and without ice | No, it needs ice | No, it goes in a wine glass | No, it needs an olive
+p167 What is this? || A caña (small beer) | A white wine | A juice | A vermouth
+p168 Which wine is this? || Red wine | White wine | Vermouth | Mosto
+p169 What temperature is this wine served at? || 8–10 °C | 16–18 °C | 25 °C | Hot
+p170 What is served here? || Cava | Beer | Red wine | Coffee
+p171 What is marked in orange? || The bread plate | The glass | The dessert plate | The ashtray
+p172 What is marked in orange? || The glass | The bread plate | The salt shaker | The cup
+p173 What is marked in orange? || The napkin | The tablecloth | The bread plate | The top cloth
+p174 Which piece of cutlery is marked in orange? || The fork | The knife | The spoon | The fish knife
+p175 Which piece of cutlery is marked in orange? || The knife | The fork | The spoon | The dessert fork
+p176 In this set-menu place setting, where is the fork? || To the left of the plate | To the right of the plate | On the plate | Next to the glass
+p177 Table linens: what is layer 1, the bottom one? || The silence cloth | The top cloth | The tablecloth | The napkin
+p178 Table linens: what is layer 3, the top one? || The top cloth | The silence cloth | The tablecloth | The trivet

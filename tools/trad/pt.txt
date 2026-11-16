@@ -1,0 +1,178 @@
+p001 O que leva um café cortado? || 1 dose de café e um pouquinho de leite | 1 dose de café e muito leite | Café e leite condensado | Café e água quente
+p002 Em que serviço se serve o café com leite? || Serviço grande | Serviço pequeno | Copinho de vidro | Copo balão
+p003 Em que serviço se serve o café simples (solo)? || Serviço pequeno | Serviço grande | Copo alto (tubo) | Copo baixo
+p004 Como se serve um café com gelo? || Xícara pequena e um copo com gelo à parte | Xícara grande com o gelo dentro | Copo alto com gelo e leite | Copo balão sem gelo
+p005 No café bombón, o que se põe primeiro? || O leite condensado | O café | O chantilly | O açúcar
+p006 Em que se serve o café bombón? || Copo de vidro | Xícara grande | Copo balão | Jarra
+p007 O que leva o carajillo? || Café, licor, açúcar e grãos de café torrado | Café, uísque e chantilly | Café e leite condensado | Café, leite e canela
+p008 Quantos grãos de café torrado se põem no carajillo? || 4 ou 5 | 1 | 10 ou 12 | Nenhum
+p009 No carajillo, o que se faz com o licor antes de pôr o café? || Aquece-se e flambeia-se | Arrefece-se com gelo | Mistura-se com leite | Bate-se com chantilly
+p010 Em que se serve o carajillo? || Copinho de vidro | Xícara grande | Caneca de cerveja | Taça de coquetel
+p011 Que licores leva o quemadillo? || Licor 43 e rum | Uísque e brandy | Tía María e vodka | Anis e gin
+p012 O que se polvilha por cima do quemadillo? || Canela em pó | Pimenta | Sal | Açúcar de confeiteiro
+p013 O que leva o cappuccino? || Café, espuma de leite e cacau | Café, chantilly e uísque | Café e água quente | Café e leite condensado
+p014 O que leva o café irlandês? || Açúcar, uísque, café e creme meio batido | Açúcar, rum e café | Café, leite e canela | Café e sorvete de baunilha
+p015 Em que se serve o café irlandês? || Taça de irlandês | Xícara pequena | Copo alto (tubo) | Copo de shot
+p016 O que diferencia o café escocês do irlandês? || Leva sorvete de baunilha em vez de creme | Leva rum em vez de uísque | Não leva café | Leva leite condensado
+p017 Em que se serve o café escocês? || Copo baixo | Taça de coquetel | Xícara grande | Taça de champanhe
+p018 Que licor leva o café jamaicano? || Tía María | Uísque | Licor 43 | Anis
+p019 O que leva o mokasino? || Leite condensado, café e creme meio batido | Café, uísque e sorvete | Café e canela | Café, rum e açúcar
+p020 Em que se serve o mokasino? || Taça de mokasino | Copo baixo | Xícara pequena | Copo de shot
+p021 O que é um café americano? || 1 dose de café alongada com água, em serviço grande | Café com leite condensado | Café com uísque | Café com gelo e chantilly
+p022 Qual destes cafés leva MAIS leite? || Café com leite | Cortado | Café simples (solo) | Carajillo
+p023 Com que parte da máquina se faz a espuma de leite? || Com o vaporizador | Com o moinho | Com o porta-filtro | Com a bandeja
+p024 O que se faz com o vaporizador depois de cada uso? || Purgá-lo e limpá-lo com um pano húmido | Deixá-lo assim até ao fecho | Pô-lo em água fria | Nada
+p025 Como deve estar o leite antes de fazer espuma? || Frio | Quente | A ferver | Congelado
+p026 Mais ou menos a que temperatura se aquece o leite para a espuma? || Uns 60–65 °C, sem ferver | Até ferver (100 °C) | 30 °C | Tanto faz
+p027 O que é «uma carga» (dose) de café? || A dose de café moído para um café | Uma xícara grande | Um pacote de açúcar | Um copo de leite
+p028 O cortado leva mais leite que o café com leite. ||
+p029 Para a espuma ficar melhor, o leite tem de ferver. ||
+p030 O café bombón leva chocolate. ||
+p031 O carajillo leva álcool. ||
+p032 Como se serve uma infusão (chá de ervas)? || Água quente e saquinho, em serviço grande com bule | Em copo alto com gelo | Em xícara pequena com leite | Em copo balão
+p033 O que leva o chá com limão? || Água quente, saquinho de chá e limão | Leite quente e canela | Chá frio e açúcar | Café e limão
+p034 No chá com leite, como se serve o leite? || Numa jarrinha à parte | Já misturado na xícara | Num copo de shot | Não leva leite
+p035 O que leva o chá americano? || Saquinho de chá, leite quente, rodela de laranja e canela | Chá com gelo e limão | Chá com uísque | Chá com água fria
+p036 O que leva um Cola Cao (chocolate)? || Leite quente e um pacote de Cola Cao | Água e café | Leite frio e café | Água quente e saquinho de chá
+p037 Em que se serve o Cola Cao? || Serviço grande ou copo de vidro | Taça de vinho | Copo de shot | Taça de coquetel
+p038 Qual destas bebidas é uma infusão? || Camomila | Cortado | Mosto | Vermute
+p039 As infusões servem-se com bule. ||
+p040 O chá americano leva laranja e canela. ||
+p041 Quantos cubos de gelo leva um refrigerante? || De 2 a 3 | Nenhum | Só 1 | Mais de 6
+p042 Além do gelo, o que se põe num refrigerante? || Rodela de limão ou de laranja | Azeitona | Canela | Chantilly
+p043 Os sumos e batidos engarrafados levam gelo? || Não | Sim, 3 ou 4 | Sim, só um | Sim, com limão
+p044 O que leva um vermute? || 1 ou 2 gelos, rodela de laranja e azeitona | Chantilly e canela | Sal e limão | Nada
+p045 O que leva o mosto (sumo de uva)? || 2 ou 3 gelos, rodela de laranja e azeitona | Chantilly | Canela | Leite
+p046 Quantos gelos leva um licor? || 1 ou 2 | 5 ou 6 | Nenhum, nunca | 10
+p047 Em que se serve a cerveja? || Em taça ou caneca | Em copo de shot | Em xícara | Em taça de coquetel
+p048 Quantos gelos leva um drinque (combinado)? || 3 ou 4 | Só 1 | Nenhum | 10
+p049 O que se põe num drinque (combinado)? || Casca de limão ou de laranja | Azeitona | Canela | Chantilly
+p050 A que temperatura se serve normalmente o vinho tinto? || 16–18 °C | 2–4 °C | 30 °C | 0 °C
+p051 A que temperatura se serve normalmente o vinho branco? || 8–10 °C | 20–22 °C | 30 °C | -5 °C
+p052 O que é uma «caña»? || Um copo pequeno de cerveja de pressão | Um café com licor | Um vinho branco | Um sumo de laranja
+p053 O que é uma «clara»? || Cerveja com gasosa ou limão | Café com leite | Clara de ovo batida | Vinho com água
+p054 O que é um «tinto de verano»? || Vinho tinto com gasosa | Vinho tinto quente | Cerveja preta | Café com gelo
+p055 A cerveja serve-se com gelo. ||
+p056 O vinho tinto serve-se mais frio que o branco. ||
+p057 Os drinques (combinados) levam mais gelo que os licores. ||
+p058 Em que copo se serve um shot (chupito)? || Copo de shot | Copo alto (tubo) | Copo balão | Jarra
+p059 O que se serve no copo de refrigerante? || Coca-Cola, Cas de limão ou sumo | Vinho tinto | Cava | Licor
+p060 O que se serve em copo baixo? || Cola Cao, leite, mosto ou sumo de ananás | Cava | Cerveja de pressão | Coquetéis
+p061 O que se serve na taça de champanhe baixa (plana)? || Cava | Cerveja | Café | Água
+p062 Como é a taça de champanhe (flute)? || Alta e estreita | Baixa e larga | Em forma de V | Sem pé
+p063 Como é a taça de coquetel? || Em forma de V (triângulo) | Alta e estreita | Sem pé | Com asa
+p064 Que taça é redonda e grande? || Copo balão | Taça de coquetel | Taça de champanhe | Taça de licor
+p065 Em que se servem os drinques (combinados)? || Copo ou taça de combinado | Xícara | Copo de shot | Taça de champanhe
+p066 Em que se pode servir um licor? || Copo baixo, taça de licor ou copo alto | Xícara grande | Caneca de cerveja | Bule
+p067 Em que se serve o vermute? || Taça de vinho ou copo baixo | Copo de shot | Jarra | Xícara
+p068 Em que se serve um sumo engarrafado? || Copo alto, copo balão ou copo baixo | Xícara pequena | Taça de coquetel | Copo de shot
+p069 Em que se serve o mosto? || Taça de vinho, copo baixo ou copo alto | Xícara | Copo de shot | Caneca de cerveja
+p070 O copo de tubo é alto e estreito. ||
+p071 O vinho serve-se em copo de tubo. ||
+p072 O que é a PRIMEIRA coisa na ordem da montagem? || Alinhar as mesas segundo as reservas | Pôr os pratos | Pôr as taças | Pôr o guardanapo
+p073 O que vem logo depois de alinhar as mesas? || Pôr as toalhas | Pôr as cadeiras | Pôr as taças | Montar os aparadores
+p074 Em que ordem se põem as toalhas? || Molton, toalha e cobre-mesa | Cobre-mesa, toalha e molton | Toalha, molton e cobre-mesa | Só o cobre-mesa
+p075 O que se põe logo depois dos pratos? || Os talheres | As cadeiras | O guardanapo | As toalhas
+p076 O que se põe logo depois das taças? || O guardanapo | As toalhas | Os pratos | As mesas
+p077 Qual é a ÚLTIMA coisa da ordem da montagem? || Adega, câmaras e garrafeiras | Pôr as taças | Alinhar as mesas | Pôr os pratos
+p078 De que lado vai a faca de carne? || Direita | Esquerda | Por cima do prato | Em cima do prato
+p079 De que lado vai o garfo de carne? || Esquerda | Direita | Por cima do prato | Dentro do prato
+p080 De que lado vai a colher de sopa? || Direita | Esquerda | Por cima do prato | Ao lado do pão
+p081 De que lado vai a faca de peixe? || Direita | Esquerda | Por cima do prato | Não se põe
+p082 De que lado vai o garfo de peixe? || Esquerda | Direita | Por cima do prato | Dentro do prato
+p083 Talheres de sobremesa: qual vai à esquerda? || Garfo de sobremesa | Colher de sobremesa | Faca de sobremesa | Nenhum
+p084 Na montagem do menu do dia, onde vai o prato do pão? || À esquerda | À direita | Em cima do prato | No aparador
+p085 Na montagem do menu do dia, onde vai o guardanapo? || No centro, entre os talheres | Dentro da taça | Debaixo da toalha | Na cadeira
+p086 O que é a mise en place? || Preparar tudo antes de começar o serviço | A sobremesa do dia | Um tipo de café | A conta do cliente
+p087 O que é o molton (muletón)? || O tecido grosso que vai debaixo da toalha | Um tipo de taça | Um guardanapo pequeno | Um talher de peixe
+p088 O que é um aparador? || O móvel de apoio do empregado na sala | Um tipo de faca | Um forno | Uma taça
+p089 As cadeiras põem-se antes dos pratos. ||
+p090 A faca e a colher vão à direita do prato. ||
+p091 Por que lado se servem as bebidas? || Pela direita do cliente | Pela esquerda do cliente | Por trás | Pela frente
+p092 Por que lado se retiram os pratos? || Pela direita do cliente | Pela esquerda do cliente | Por trás | Tanto faz
+p093 No serviço à inglesa (a partir de uma travessa), por que lado se serve? || Pela esquerda do cliente | Pela direita do cliente | Por trás | Pela frente
+p094 Antes de abrir uma garrafa de vinho, o que se faz? || Mostra-se o rótulo ao cliente | Agita-se bem | Aquece-se | Serve-se logo a todos
+p095 Quem prova o vinho primeiro? || A pessoa que o pediu | O empregado | O cozinheiro | O mais novo da mesa
+p096 O que é a comanda? || A nota com o pedido da mesa | A conta | O menu | Um tipo de prato
+p097 Quando se leva a conta à mesa? || Quando o cliente a pede | Com o primeiro prato | Antes de se sentarem | Nunca
+p098 Como se pega numa taça? || Pela haste ou pela base | Pela borda | Com os dedos por dentro | Por cima
+p099 Antes de servir a sobremesa, o que se retira da mesa? || Pratos e talheres usados, pão e saleiros | Os copos de água | A toalha | As cadeiras
+p100 Com que mão se leva a bandeja? || Com a esquerda, para servir com a direita | Sempre com a direita | Com as duas por cima da cabeça | Apoiada no ombro
+p101 Pode-se servir o segundo prato enquanto o cliente ainda come o primeiro. ||
+p102 Bolo de iogurte: quantos ovos leva? || 3 | 1 | 6 | 10
+p103 Bolo de iogurte: com que se medem os ingredientes? || Com o copo do iogurte | Com uma xícara grande | Com um balde | Com uma colher de sopa
+p104 Bolo de iogurte: quantos copos de farinha? || 3 | 1 | 2 | 6
+p105 Bolo de iogurte: quantos copos de açúcar? || 2 | 3 | 5 | Meio
+p106 Bolo de iogurte: que óleo leva? || Óleo de girassol | Óleo de sésamo | Óleo de coco | Não leva óleo
+p107 Bolo de iogurte: temperatura e tempo de forno? || 160° durante 30 minutos | 250° durante 5 minutos | 100° durante 2 horas | 200° durante 1 hora
+p108 O que se faz ao forno antes de pôr o bolo? || Pré-aquecê-lo | Desligá-lo | Deixá-lo aberto | Enchê-lo de água
+p109 Macarrão à carbonara (5–6 pessoas): quanta massa? || 500 g | 100 g | 2 kg | 50 g
+p110 Carbonara: que parte do ovo se usa? || A gema | Só a clara | A casca | O ovo cozido inteiro
+p111 Carbonara: o que se pode usar em vez de bacon? || Cogumelos (champignons) | Chocolate | Morangos | Atum
+p112 Menu do dia: o que há SEMPRE nos primeiros pratos? || Um prato de legumes | Uma sobremesa | Um peixe | Um café
+p113 Qual destes é um primeiro prato? || Paella mista | Frango assado com batatas | Bife de vitela grelhado | Gelado da casa
+p114 Qual destes é um segundo prato? || Pescada em molho verde | Salada da casa | Feijão-verde | Macarrão à bolonhesa
+p115 Que sobremesas há no menu do dia? || Fruta da época e gelado da casa | Carajillo e quemadillo | Paella | Pão com tomate
+p116 O macarrão à bolonhesa é um segundo prato. ||
+p117 A que temperatura deve estar o frigorífico? || Entre 0 e 5 °C | 15 °C | 25 °C | -30 °C
+p118 A que temperatura deve estar o congelador? || -18 °C ou menos | 0 °C | 5 °C | 10 °C
+p119 Quantos alergénios é obrigatório informar na UE? || 14 | 3 | 7 | 50
+p120 Um cliente pergunta se um prato tem glúten. O que fazes? || Vejo a carta de alergénios ou pergunto na cozinha | Digo que não tem nada | Invento | Digo que não sei e vou-me embora
+p121 Na câmara, que produto se usa primeiro? || O que entrou antes | O mais novo | O maior | O que está mais perto
+p122 Quando é preciso lavar as mãos? || Antes de tocar em alimentos e depois da casa de banho, do lixo ou do dinheiro | Só no fim do dia | Nunca, se usas luvas | Uma vez por semana
+p123 O que é a contaminação cruzada? || Passar bactérias de um alimento cru para um cozinhado | Misturar dois vinhos | Um tipo de serviço | Atravessar a cozinha a correr
+p124 Onde se guardam os produtos de limpeza? || Separados dos alimentos | Junto à comida | Na câmara | No balcão
+p125 Pode-se voltar a congelar um alimento cru que já foi descongelado. ||
+p126 O que é a «barra»? || O balcão onde se servem as bebidas | Uma sobremesa | Uma taça | A cozinha
+p127 O que é o office? || A zona de apoio entre a cozinha e a sala | O escritório do chefe | Um tipo de café | A casa de banho do pessoal
+p128 O que significa empratar? || Pôr a comida no prato antes de servir | Lavar os pratos | Partir um prato | Pedir a conta
+p129 Quem é o maître? || O chefe de sala | O cozinheiro | O lava-loiça | O cliente
+p130 Quem é o escanção (sumiller)? || O especialista em vinhos | O chefe de cozinha | O que faz as sobremesas | O porteiro
+p131 Quem dirige a cozinha? || O chefe de cozinha | O maître | O escanção | O empregado de mesa
+p132 Na cozinha, o que significa «marcha a mesa 5!»? || Começar a preparar o próximo prato da mesa 5 | Expulsar os clientes da mesa 5 | Cobrar a mesa 5 | Limpar a mesa 5
+p133 O que é uma reserva? || Uma mesa guardada para um cliente a uma hora | Um tipo de talher | A comida que sobra | O armazém
+p134 Como se chama este copo? || Copo alto (tubo) | Copo baixo | Copo de shot | Jarra
+p135 Como se chama este copo? || Copo baixo | Copo alto (tubo) | Taça de licor | Copo de refrigerante
+p136 Como se chama este copo? || Copo de shot | Copo baixo | Taça de licor | Copo alto (tubo)
+p137 Que taça é esta? || Taça de vinho | Copo balão | Taça de champanhe | Taça de licor
+p138 Que taça é esta? || Copo balão | Taça de vinho | Taça de coquetel | Taça de champanhe baixa
+p139 Que taça é esta? || Taça de champanhe (flute) | Taça de vinho | Copo alto (tubo) | Taça de licor
+p140 Que taça é esta? || Taça de champanhe baixa | Taça de coquetel | Copo balão | Taça de vinho
+p141 Que taça é esta? || Taça de coquetel | Taça de champanhe baixa | Taça de vinho | Taça de licor
+p142 Que taça é esta? || Taça de licor | Taça de vinho | Copo de shot | Copo balão
+p143 Que taça é esta? || Taça de irlandês | Taça de vinho | Copo alto (tubo) | Taça de champanhe
+p144 O que se serve normalmente nisto? || Cerveja | Vinho | Café | Licor
+p145 O que se serve nesta taça? || Cava ou champanhe | Cerveja | Café irlandês | Sumo de ananás
+p146 Que serviço é este? || Serviço pequeno (café simples, cortado) | Serviço grande | Copo de vidro | Taça de irlandês
+p147 Que serviço é este? || Serviço grande (café com leite, infusões) | Serviço pequeno | Copo baixo | Copo balão
+p148 Que café é este? || Café simples (solo) | Cortado | Café com leite | Bombón
+p149 Que café é este? || Cortado | Café simples (solo) | Leche manchada | Café com leite
+p150 Que café é este? || Café com leite | Cortado | Leche manchada | Café simples (solo)
+p151 O que é isto? || Leche manchada (muito leite, pouco café) | Café com leite | Cortado | Cappuccino
+p152 Que café é este? || Bombón | Carajillo | Cortado | Café irlandês
+p153 Que café é este? || Cappuccino | Café com leite | Bombón | Cortado
+p154 Que café é este? || Café irlandês | Cappuccino | Café escocês | Mokasino
+p155 Que café é este? || Café escocês | Café irlandês | Bombón | Carajillo
+p156 Que café é este? (repara nos grãos) || Carajillo | Café simples (solo) | Bombón | Cortado
+p157 O que se pediu aqui? || Café com gelo | Café com leite | Cortado | Café escocês
+p158 No bombón, o que é a camada clara de baixo? || Leite condensado | Chantilly | Espuma de leite | Gelado
+p159 No café irlandês, o que é a camada branca de cima? || Creme meio batido | Espuma de leite | Leite condensado | Sorvete de baunilha
+p160 No café escocês, o que é a bola de cima? || Sorvete de baunilha | Chantilly | Leite condensado | Espuma de leite
+p161 O que tem o cappuccino por cima? || Espuma de leite com cacau | Chantilly com canela | Leite condensado | Gelado
+p162 Que bebida se serve assim: 2–3 gelos e rodela de limão? || Um refrigerante | Um vinho | Uma cerveja | Um licor
+p163 Que bebida é esta: gelo, laranja e azeitona? || Vermute | Cerveja | Drinque (combinado) | Refrigerante
+p164 Que bebida é esta: copo balão, 3–4 gelos e casca de limão? || Um drinque (combinado) | Um vinho tinto | Um vermute | Um sumo
+p165 O que está ERRADO nesta cerveja? || Não deve levar gelo | Falta-lhe limão | Devia ir numa xícara | Não tem nada errado
+p166 Esta cerveja está bem servida? || Sim, em caneca e sem gelo | Não, falta-lhe gelo | Não, vai em taça de vinho | Não, falta-lhe azeitona
+p167 O que é isto? || Uma caña (cerveja pequena) | Um vinho branco | Um sumo | Um vermute
+p168 Que vinho é este? || Vinho tinto | Vinho branco | Vermute | Mosto
+p169 A que temperatura se serve este vinho? || 8–10 °C | 16–18 °C | 25 °C | Quente
+p170 O que se serve aqui? || Cava | Cerveja | Vinho tinto | Café
+p171 O que está marcado a laranja? || O prato do pão | A taça | O prato de sobremesa | O cinzeiro
+p172 O que está marcado a laranja? || A taça | O prato do pão | O saleiro | A xícara
+p173 O que está marcado a laranja? || O guardanapo | A toalha | O prato do pão | O cobre-mesa
+p174 Que talher está marcado a laranja? || O garfo | A faca | A colher | A faca de peixe
+p175 Que talher está marcado a laranja? || A faca | O garfo | A colher | O garfo de sobremesa
+p176 Nesta montagem do menu do dia, onde está o garfo? || À esquerda do prato | À direita do prato | Em cima do prato | Junto à taça
+p177 Toalhas: o que é a camada 1, a de baixo? || O molton | O cobre-mesa | A toalha | O guardanapo
+p178 Toalhas: o que é a camada 3, a de cima? || O cobre-mesa | O molton | A toalha | O descanso de travessas

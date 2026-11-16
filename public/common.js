@@ -1,4 +1,355 @@
-// Utilidades compartidas
+// HosteQuiz — utilidades compartidas: idiomas, sonido, confeti, red
+
+// ============ IDIOMAS ============
+const LANG_NAMES = { es: "Español", pt: "Português", en: "English", ar: "الدارجة" };
+
+const I18N = {
+  es: {
+    tagline: "El quiz de la barra, la sala y la cocina.",
+    lead: "Cafés, bebidas, copas, montaje de mesas y servicio. Una pantalla hace las preguntas y todos responden desde el móvil.",
+    createGame: "Crear una partida", practice: "Practicar solo", createAI: "Crear quiz con IA",
+    joinTitle: "Entrar en una partida", pinLabel: "PIN del juego", nameLabel: "Tu nombre", namePh: "Ej.: Renato", enter: "Entrar",
+    foot: "HosteQuiz · hostelería en 4 idiomas", connecting: "Conectando…",
+    inGame: "Ya estás dentro", findName: "Busca tu nombre en la pantalla. El juego empieza enseguida.",
+    getReady: "¡Prepárate!", question: "Pregunta", of: "de", sent: "Respuesta enviada", waitTime: "Espera a que se acabe el tiempo.", guess: "¿Habrás acertado?",
+    noAnswer: "Sin respuesta", correct: "¡Correcto!", wrong: "Incorrecto", rightWas: "La correcta era:", rightIs: "La correcta es:",
+    streak: "Racha de {n} aciertos", points: "puntos", pts: "pts", youAre: "Vas {r}º de {t}",
+    lookScreen: "Mira la clasificación en la pantalla",
+    won: "¡Has ganado!", podiumYou: "¡Estás en el podio!", wellPlayed: "¡Bien jugado!", gameOver: "Fin de la partida", place: "Puesto {r}º de {t}", backHome: "Volver al inicio",
+    kicked: "El presentador te ha sacado de la partida.", gone: "Ya no estás en esta partida. Vuelve a entrar con el PIN.", closed: "La partida ha terminado.",
+    newGame: "Nueva partida", topics: "Temas", allNone: "Todos / ninguno", myQuizzes: "Mis quizzes", createOther: "Crear otro",
+    wantOwn: "¿Quieres tus propias preguntas?", wantOwnLink: "Crea un quiz con ayuda de la IA",
+    level: "Nivel", all: "Todos", lv1: "Fácil", lv2: "Medio", lv3: "Difícil",
+    nQuestions: "Número de preguntas", allQ: "Todas", timePerQ: "Tiempo por pregunta", seconds: "{n} segundos",
+    available: "{n} preguntas disponibles en lo que has elegido.", chooseOne: "Elige al menos un tema o un quiz tuyo.",
+    createBtn: "Crear partida", endGame: "Terminar partida", sure: "¿Seguro? Pulsa otra vez",
+    joinAt: "Entra en", withPin: "con el PIN", qCount: "{n} preguntas", scanQR: "o escanea el código con la cámara",
+    langHint: "Cada jugador puede elegir su idioma en el móvil.",
+    players: "Jugadores", player1: "jugador", playersN: "jugadores", waitingFirst: "Esperando al primer jugador…", start: "Empezar", kick: "Sacar a {n}",
+    answers: "respuestas", answered: "respondieron", showNow: "Ver respuesta ya", leaderboard: "Clasificación", nextQ: "Siguiente pregunta", seePodium: "Ver el podio",
+    nobody: "Nadie ha jugado.", congrats: "¡Enhorabuena!", sound: "Sonido",
+    practiceTitle: "Practicar solo", practiceLead: "Responde a tu ritmo. Después de cada pregunta ves la respuesta correcta.",
+    whatReview: "¿Qué quieres repasar?", createMine: "Crear mi quiz con IA", noLevelQ: "No hay preguntas con ese nivel",
+    hits: "aciertos", next: "Siguiente", seeResult: "Ver resultado", result: "Resultado", xOfY: "{a} de {b}",
+    master: "¡Lo dominas!", good: "Muy bien, sigue así.", review: "Repasa los fallos y vuelve a intentarlo.",
+    redo: "Repasar mis {n} fallos", otherTopics: "Elegir otros temas", loadFail: "No se han podido cargar las preguntas.", reload: "Recarga la página.",
+    createTitle: "Crea tu propio quiz", createLead: "Escribe tus preguntas o pide ideas a la IA. Después puedes jugarlo con tus compañeros o practicarlo solo.",
+    newQuiz: "Nuevo quiz", noneYet: "Todavía no has creado ninguno. Se guardan en este móvil u ordenador.", qShort: "preguntas",
+    play: "Jugar", practiceBtn: "Practicar", edit: "Editar", del: "Borrar", sureShort: "¿Seguro?", deleted: "Quiz borrado",
+    quizName: "Nombre del quiz", quizNamePh: "Ej.: Cafés del bar", askAI: "Pedir ideas a la IA", aboutWhat: "¿Sobre qué quieres preguntas?",
+    temaPh: "Ej.: cafés con alcohol: carajillo, irlandés, jamaicano…", withTricks: "Con trampas", generate: "Generar preguntas", thinking: "Pensando…",
+    aiLang: "Las preguntas se crean en tu idioma.", aiMayErr: "La IA puede equivocarse: revisa las respuestas antes de guardar.",
+    freeTitle: "Gratis con tu IA favorita", freeAlt: "¿Prefieres hacerlo gratis con tu propia IA?", step1: "Copia el pedido:", copyAsk: "Copiar pedido",
+    step2: "Pégalo en una IA gratis y envíalo:", step3: "Copia toda la respuesta y pégala aquí:", respPh: 'Pega aquí la respuesta (empieza por {"preguntas": …)', addQs: "Añadir preguntas",
+    addManual: "+ Añadir pregunta a mano", saveQuiz: "Guardar quiz", qN: "Pregunta {n}", remove: "Quitar", writeQ: "Escribe la pregunta",
+    correctLbl: "Correcta", answerPh: "Respuesta", answerOpt: "Respuesta (opcional)", noImg: "Sin imagen",
+    errTemaFirst: "Primero escribe de qué tema quieres las preguntas.", copied: "Pedido copiado. Ahora pégalo en la IA.", selectCopy: "Selecciona el texto y cópialo.",
+    errNotUnderstood: 'No entiendo esa respuesta. Copia TODO lo que escribió la IA (debe empezar por {"preguntas").', errNoValid: "La respuesta no tiene preguntas válidas. Pide a la IA que lo intente otra vez.",
+    added: "{n} preguntas añadidas. Revísalas.", errName: "Ponle un nombre al quiz.", errQText: "Falta el texto de la pregunta {n}.",
+    errQCorrect: "En la pregunta {n}, la respuesta marcada como correcta está vacía.", errQWrong: "La pregunta {n} necesita al menos una respuesta incorrecta.",
+    errQDup: "La pregunta {n} tiene respuestas repetidas.", errAddOne: "Añade al menos una pregunta.", saved: "Quiz guardado", backList: "Mis quizzes",
+    ideas: ["Cafés con alcohol", "Servicio del vino", "Cócteles clásicos", "Tipos de cerveza", "Atención al cliente", "Alérgenos", "Tapas españolas", "Cubiertos y su uso"],
+    cats: { cafes: "Cafés", tes: "Tés, infusiones y cacao", bebidas: "Bebidas y su servicio", cristaleria: "Vasos y copas", montaje: "Montaje y mise en place", servicio: "Servicio en sala", cocina: "Cocina y menú del día", higiene: "Higiene y seguridad", vocabulario: "Vocabulario de hostelería" },
+    errors: {},
+  },
+  pt: {
+    tagline: "O quiz do balcão, da sala e da cozinha.",
+    lead: "Cafés, bebidas, copos, montagem de mesas e serviço. Um ecrã faz as perguntas e todos respondem pelo telemóvel.",
+    createGame: "Criar uma partida", practice: "Praticar sozinho", createAI: "Criar quiz com IA",
+    joinTitle: "Entrar numa partida", pinLabel: "PIN do jogo", nameLabel: "O teu nome", namePh: "Ex.: Renato", enter: "Entrar",
+    foot: "HosteQuiz · hotelaria em 4 idiomas", connecting: "A ligar…",
+    inGame: "Já estás dentro", findName: "Procura o teu nome no ecrã. O jogo começa já.",
+    getReady: "Prepara-te!", question: "Pergunta", of: "de", sent: "Resposta enviada", waitTime: "Espera que o tempo acabe.", guess: "Será que acertaste?",
+    noAnswer: "Sem resposta", correct: "Certo!", wrong: "Errado", rightWas: "A certa era:", rightIs: "A certa é:",
+    streak: "Sequência de {n} acertos", points: "pontos", pts: "pts", youAre: "Estás em {r}º de {t}",
+    lookScreen: "Vê a classificação no ecrã",
+    won: "Ganhaste!", podiumYou: "Estás no pódio!", wellPlayed: "Bem jogado!", gameOver: "Fim da partida", place: "Lugar {r}º de {t}", backHome: "Voltar ao início",
+    kicked: "O apresentador tirou-te da partida.", gone: "Já não estás nesta partida. Volta a entrar com o PIN.", closed: "A partida terminou.",
+    newGame: "Nova partida", topics: "Temas", allNone: "Todos / nenhum", myQuizzes: "Os meus quizzes", createOther: "Criar outro",
+    wantOwn: "Queres as tuas próprias perguntas?", wantOwnLink: "Cria um quiz com a ajuda da IA",
+    level: "Nível", all: "Todos", lv1: "Fácil", lv2: "Médio", lv3: "Difícil",
+    nQuestions: "Número de perguntas", allQ: "Todas", timePerQ: "Tempo por pergunta", seconds: "{n} segundos",
+    available: "{n} perguntas disponíveis no que escolheste.", chooseOne: "Escolhe pelo menos um tema ou um quiz teu.",
+    createBtn: "Criar partida", endGame: "Terminar partida", sure: "Tens a certeza? Carrega outra vez",
+    joinAt: "Entra em", withPin: "com o PIN", qCount: "{n} perguntas", scanQR: "ou lê o código com a câmara",
+    langHint: "Cada jogador pode escolher o idioma no telemóvel.",
+    players: "Jogadores", player1: "jogador", playersN: "jogadores", waitingFirst: "À espera do primeiro jogador…", start: "Começar", kick: "Tirar {n}",
+    answers: "respostas", answered: "responderam", showNow: "Ver resposta já", leaderboard: "Classificação", nextQ: "Próxima pergunta", seePodium: "Ver o pódio",
+    nobody: "Ninguém jogou.", congrats: "Parabéns!", sound: "Som",
+    practiceTitle: "Praticar sozinho", practiceLead: "Responde ao teu ritmo. Depois de cada pergunta vês a resposta certa.",
+    whatReview: "O que queres rever?", createMine: "Criar o meu quiz com IA", noLevelQ: "Não há perguntas com esse nível",
+    hits: "acertos", next: "Seguinte", seeResult: "Ver resultado", result: "Resultado", xOfY: "{a} de {b}",
+    master: "Dominas isto!", good: "Muito bem, continua assim.", review: "Revê os erros e tenta outra vez.",
+    redo: "Rever os meus {n} erros", otherTopics: "Escolher outros temas", loadFail: "Não foi possível carregar as perguntas.", reload: "Recarrega a página.",
+    createTitle: "Cria o teu próprio quiz", createLead: "Escreve as tuas perguntas ou pede ideias à IA. Depois podes jogá-lo com os colegas ou praticar sozinho.",
+    newQuiz: "Novo quiz", noneYet: "Ainda não criaste nenhum. Ficam guardados neste telemóvel ou computador.", qShort: "perguntas",
+    play: "Jogar", practiceBtn: "Praticar", edit: "Editar", del: "Apagar", sureShort: "Certeza?", deleted: "Quiz apagado",
+    quizName: "Nome do quiz", quizNamePh: "Ex.: Cafés do bar", askAI: "Pedir ideias à IA", aboutWhat: "Sobre o que queres perguntas?",
+    temaPh: "Ex.: cafés com álcool: carajillo, irlandês, jamaicano…", withTricks: "Com rasteiras", generate: "Gerar perguntas", thinking: "A pensar…",
+    aiLang: "As perguntas são criadas no teu idioma.", aiMayErr: "A IA pode enganar-se: revê as respostas antes de guardar.",
+    freeTitle: "Grátis com a tua IA favorita", freeAlt: "Preferes fazer grátis com a tua própria IA?", step1: "Copia o pedido:", copyAsk: "Copiar pedido",
+    step2: "Cola numa IA grátis e envia:", step3: "Copia a resposta toda e cola aqui:", respPh: 'Cola aqui a resposta (começa por {"preguntas": …)', addQs: "Adicionar perguntas",
+    addManual: "+ Adicionar pergunta à mão", saveQuiz: "Guardar quiz", qN: "Pergunta {n}", remove: "Tirar", writeQ: "Escreve a pergunta",
+    correctLbl: "Certa", answerPh: "Resposta", answerOpt: "Resposta (opcional)", noImg: "Sem imagem",
+    errTemaFirst: "Primeiro escreve o tema das perguntas.", copied: "Pedido copiado. Agora cola na IA.", selectCopy: "Seleciona o texto e copia.",
+    errNotUnderstood: 'Não percebo essa resposta. Copia TUDO o que a IA escreveu (deve começar por {"preguntas").', errNoValid: "A resposta não tem perguntas válidas. Pede à IA para tentar outra vez.",
+    added: "{n} perguntas adicionadas. Revê-as.", errName: "Dá um nome ao quiz.", errQText: "Falta o texto da pergunta {n}.",
+    errQCorrect: "Na pergunta {n}, a resposta marcada como certa está vazia.", errQWrong: "A pergunta {n} precisa de pelo menos uma resposta errada.",
+    errQDup: "A pergunta {n} tem respostas repetidas.", errAddOne: "Adiciona pelo menos uma pergunta.", saved: "Quiz guardado", backList: "Os meus quizzes",
+    ideas: ["Cafés com álcool", "Serviço do vinho", "Cocktails clássicos", "Tipos de cerveja", "Atendimento ao cliente", "Alergénios", "Tapas espanholas", "Talheres e o seu uso"],
+    cats: { cafes: "Cafés", tes: "Chás, infusões e cacau", bebidas: "Bebidas e o seu serviço", cristaleria: "Copos e taças", montaje: "Montagem e mise en place", servicio: "Serviço de sala", cocina: "Cozinha e menu do dia", higiene: "Higiene e segurança", vocabulario: "Vocabulário de hotelaria" },
+    errors: {
+      "Elige al menos un tema o uno de tus quizzes.": "Escolhe pelo menos um tema ou um quiz teu.",
+      "No hay preguntas con esos temas y niveles. Elige otro nivel.": "Não há perguntas com esses temas e níveis. Escolhe outro nível.",
+      "La partida ya no existe.": "A partida já não existe.", "No hay ninguna partida con ese PIN.": "Não há nenhuma partida com esse PIN.",
+      "Escribe tu nombre.": "Escreve o teu nome.", "Esta partida ya ha terminado.": "Esta partida já terminou.",
+      "Ese nombre ya está en uso. Prueba otro.": "Esse nome já está a ser usado. Experimenta outro.", "La partida está llena.": "A partida está cheia.",
+      "No estás en esta partida.": "Não estás nesta partida.", "Se acabó el tiempo.": "Acabou o tempo.",
+      "Escribe de qué tema quieres las preguntas.": "Escreve o tema das perguntas.",
+      "Has pedido muchas preguntas seguidas. Espera un rato y vuelve a probar.": "Pediste muitas perguntas seguidas. Espera um pouco e tenta outra vez.",
+      "La IA gratuita ha llegado a su límite por ahora. Prueba dentro de unos minutos.": "A IA grátis chegou ao limite por agora. Tenta daqui a uns minutos.",
+      "La IA no ha respondido bien. Prueba otra vez o escribe el tema de otra forma.": "A IA não respondeu bem. Tenta outra vez ou escreve o tema de outra forma.",
+      net: "Não foi possível ligar. Tenta outra vez.",
+    },
+  },
+  en: {
+    tagline: "The quiz for the bar, the floor and the kitchen.",
+    lead: "Coffees, drinks, glassware, table setting and service. One screen asks the questions and everyone answers on their phone.",
+    createGame: "Host a game", practice: "Practise alone", createAI: "Create a quiz with AI",
+    joinTitle: "Join a game", pinLabel: "Game PIN", nameLabel: "Your name", namePh: "e.g. Renato", enter: "Join",
+    foot: "HosteQuiz · hospitality in 4 languages", connecting: "Connecting…",
+    inGame: "You're in", findName: "Look for your name on the screen. The game starts soon.",
+    getReady: "Get ready!", question: "Question", of: "of", sent: "Answer sent", waitTime: "Wait for the time to run out.", guess: "Did you get it right?",
+    noAnswer: "No answer", correct: "Correct!", wrong: "Wrong", rightWas: "The right answer was:", rightIs: "The right answer is:",
+    streak: "{n} in a row", points: "points", pts: "pts", youAre: "You're {r} of {t}",
+    lookScreen: "Look at the leaderboard on the screen",
+    won: "You won!", podiumYou: "You're on the podium!", wellPlayed: "Well played!", gameOver: "Game over", place: "Place {r} of {t}", backHome: "Back to start",
+    kicked: "The host removed you from the game.", gone: "You're no longer in this game. Join again with the PIN.", closed: "The game has ended.",
+    newGame: "New game", topics: "Topics", allNone: "All / none", myQuizzes: "My quizzes", createOther: "Create another",
+    wantOwn: "Want your own questions?", wantOwnLink: "Create a quiz with help from AI",
+    level: "Level", all: "All", lv1: "Easy", lv2: "Medium", lv3: "Hard",
+    nQuestions: "Number of questions", allQ: "All", timePerQ: "Time per question", seconds: "{n} seconds",
+    available: "{n} questions available in your selection.", chooseOne: "Choose at least one topic or one of your quizzes.",
+    createBtn: "Create game", endGame: "End game", sure: "Sure? Tap again",
+    joinAt: "Go to", withPin: "and enter the PIN", qCount: "{n} questions", scanQR: "or scan the code with your camera",
+    langHint: "Each player can choose their language on their phone.",
+    players: "Players", player1: "player", playersN: "players", waitingFirst: "Waiting for the first player…", start: "Start", kick: "Remove {n}",
+    answers: "answers", answered: "answered", showNow: "Show answer now", leaderboard: "Leaderboard", nextQ: "Next question", seePodium: "See the podium",
+    nobody: "Nobody played.", congrats: "Congratulations!", sound: "Sound",
+    practiceTitle: "Practise alone", practiceLead: "Answer at your own pace. After each question you see the right answer.",
+    whatReview: "What do you want to revise?", createMine: "Create my quiz with AI", noLevelQ: "No questions at that level",
+    hits: "correct", next: "Next", seeResult: "See result", result: "Result", xOfY: "{a} of {b}",
+    master: "You've mastered it!", good: "Well done, keep going.", review: "Go over your mistakes and try again.",
+    redo: "Revise my {n} mistakes", otherTopics: "Choose other topics", loadFail: "The questions couldn't be loaded.", reload: "Reload the page.",
+    createTitle: "Create your own quiz", createLead: "Write your questions or ask the AI for ideas. Then play it with your team or practise alone.",
+    newQuiz: "New quiz", noneYet: "You haven't created any yet. They're saved on this phone or computer.", qShort: "questions",
+    play: "Play", practiceBtn: "Practise", edit: "Edit", del: "Delete", sureShort: "Sure?", deleted: "Quiz deleted",
+    quizName: "Quiz name", quizNamePh: "e.g. Bar coffees", askAI: "Ask the AI for ideas", aboutWhat: "What do you want questions about?",
+    temaPh: "e.g. coffees with alcohol: carajillo, Irish, Jamaican…", withTricks: "With trick questions", generate: "Generate questions", thinking: "Thinking…",
+    aiLang: "Questions are created in your language.", aiMayErr: "AI can make mistakes: check the answers before saving.",
+    freeTitle: "Free with your favourite AI", freeAlt: "Prefer to do it free with your own AI?", step1: "Copy the request:", copyAsk: "Copy request",
+    step2: "Paste it into a free AI and send it:", step3: "Copy the whole reply and paste it here:", respPh: 'Paste the reply here (it starts with {"preguntas": …)', addQs: "Add questions",
+    addManual: "+ Add a question by hand", saveQuiz: "Save quiz", qN: "Question {n}", remove: "Remove", writeQ: "Write the question",
+    correctLbl: "Correct", answerPh: "Answer", answerOpt: "Answer (optional)", noImg: "No image",
+    errTemaFirst: "First write what topic you want questions about.", copied: "Request copied. Now paste it into the AI.", selectCopy: "Select the text and copy it.",
+    errNotUnderstood: 'I can\'t read that reply. Copy EVERYTHING the AI wrote (it should start with {"preguntas").', errNoValid: "The reply has no valid questions. Ask the AI to try again.",
+    added: "{n} questions added. Check them.", errName: "Give the quiz a name.", errQText: "Question {n} has no text.",
+    errQCorrect: "In question {n}, the answer marked as correct is empty.", errQWrong: "Question {n} needs at least one wrong answer.",
+    errQDup: "Question {n} has repeated answers.", errAddOne: "Add at least one question.", saved: "Quiz saved", backList: "My quizzes",
+    ideas: ["Coffees with alcohol", "Wine service", "Classic cocktails", "Types of beer", "Customer service", "Allergens", "Spanish tapas", "Cutlery and its use"],
+    cats: { cafes: "Coffees", tes: "Teas, infusions and cocoa", bebidas: "Drinks and how to serve them", cristaleria: "Glassware", montaje: "Table setting and mise en place", servicio: "Floor service", cocina: "Kitchen and set menu", higiene: "Hygiene and safety", vocabulario: "Hospitality vocabulary" },
+    errors: {
+      "Elige al menos un tema o uno de tus quizzes.": "Choose at least one topic or one of your quizzes.",
+      "No hay preguntas con esos temas y niveles. Elige otro nivel.": "No questions with those topics and levels. Choose another level.",
+      "La partida ya no existe.": "This game no longer exists.", "No hay ninguna partida con ese PIN.": "There's no game with that PIN.",
+      "Escribe tu nombre.": "Write your name.", "Esta partida ya ha terminado.": "This game has already ended.",
+      "Ese nombre ya está en uso. Prueba otro.": "That name is taken. Try another one.", "La partida está llena.": "The game is full.",
+      "No estás en esta partida.": "You're not in this game.", "Se acabó el tiempo.": "Time's up.",
+      "Escribe de qué tema quieres las preguntas.": "Write what topic you want questions about.",
+      "Has pedido muchas preguntas seguidas. Espera un rato y vuelve a probar.": "You've asked for a lot of questions in a row. Wait a while and try again.",
+      "La IA gratuita ha llegado a su límite por ahora. Prueba dentro de unos minutos.": "The free AI has reached its limit for now. Try again in a few minutes.",
+      "La IA no ha respondido bien. Prueba otra vez o escribe el tema de otra forma.": "The AI didn't answer properly. Try again or describe the topic differently.",
+      net: "Couldn't connect. Try again.",
+    },
+  },
+  ar: {
+    tagline: "الكويز ديال الكونطوار، الصالة و الكوزينة.",
+    lead: "القهاوي، المشروبات، الكيسان، تحضير الطوابل و السيرفيس. شاشة وحدة كتسوّل و كلشي كيجاوب من التيليفون.",
+    createGame: "دير لعبة جديدة", practice: "تمرّن بوحدك", createAI: "دير كويز بالذكاء الاصطناعي",
+    joinTitle: "دخل للعبة", pinLabel: "الرقم ديال اللعبة (PIN)", nameLabel: "سميتك", namePh: "مثلاً: يوسف", enter: "دخل",
+    foot: "HosteQuiz · الفندقة ب 4 ديال اللغات", connecting: "كنتّاصلو…",
+    inGame: "راك دخلتي", findName: "قلّب على سميتك فالشاشة. اللعبة غادي تبدا دابا.",
+    getReady: "وجّد راسك!", question: "سؤال", of: "من", sent: "الجواب تصيفط", waitTime: "تسنّى حتى يسالي الوقت.", guess: "واش جبتيها؟",
+    noAnswer: "ما جاوبتيش", correct: "صحيح!", wrong: "غلط", rightWas: "الجواب الصحيح كان:", rightIs: "الجواب الصحيح هو:",
+    streak: "{n} ديال الأجوبة صحاح متابعين", points: "نقطة", pts: "ن", youAre: "نتا فالرتبة {r} من {t}",
+    lookScreen: "شوف الترتيب فالشاشة",
+    won: "ربحتي!", podiumYou: "راك فالپوديوم!", wellPlayed: "لعبتي مزيان!", gameOver: "سالات اللعبة", place: "الرتبة {r} من {t}", backHome: "رجع للبداية",
+    kicked: "اللي كيسيّر اللعبة خرّجك.", gone: "ما بقيتيش فهاد اللعبة. عاود دخل بالرقم.", closed: "اللعبة سالات.",
+    newGame: "لعبة جديدة", topics: "المواضيع", allNone: "كلشي / والو", myQuizzes: "الكويزات ديالي", createOther: "دير واحد آخر",
+    wantOwn: "بغيتي الأسئلة ديالك؟", wantOwnLink: "دير كويز بمساعدة الذكاء الاصطناعي",
+    level: "المستوى", all: "كلشي", lv1: "ساهل", lv2: "متوسط", lv3: "صعيب",
+    nQuestions: "عدد الأسئلة", allQ: "كاملين", timePerQ: "الوقت لكل سؤال", seconds: "{n} ثانية",
+    available: "{n} سؤال موجود فاللي ختاريتي.", chooseOne: "ختار على الأقل موضوع ولا كويز ديالك.",
+    createBtn: "دير اللعبة", endGame: "سالي اللعبة", sure: "متأكد؟ ورّك مرة خرى",
+    joinAt: "دخل ل", withPin: "بهاد الرقم", qCount: "{n} سؤال", scanQR: "ولا سكاني الكود بالكاميرا",
+    langHint: "كل لاعب يقدر يختار اللغة ديالو فالتيليفون.",
+    players: "اللاعبين", player1: "لاعب", playersN: "لاعبين", waitingFirst: "كنتسنّاو اللاعب اللول…", start: "بدا", kick: "خرّج {n}",
+    answers: "أجوبة", answered: "جاوبو", showNow: "بيّن الجواب دابا", leaderboard: "الترتيب", nextQ: "السؤال الجاي", seePodium: "شوف الپوديوم",
+    nobody: "حتى واحد ما لعب.", congrats: "مبروك!", sound: "الصوت",
+    practiceTitle: "تمرّن بوحدك", practiceLead: "جاوب على راحتك. من بعد كل سؤال غادي تشوف الجواب الصحيح.",
+    whatReview: "شنو بغيتي تراجع؟", createMine: "دير الكويز ديالي بالذكاء الاصطناعي", noLevelQ: "ما كاينينش أسئلة فهاد المستوى",
+    hits: "صحاح", next: "اللي من بعد", seeResult: "شوف النتيجة", result: "النتيجة", xOfY: "{a} من {b}",
+    master: "نتا معلّم!", good: "مزيان بزاف، كمّل هكا.", review: "راجع الغلطات و عاود جرّب.",
+    redo: "راجع {n} ديال الغلطات ديالي", otherTopics: "ختار مواضيع خرين", loadFail: "ما قدرناش نجيبو الأسئلة.", reload: "عاود شارجي الصفحة.",
+    createTitle: "دير الكويز ديالك", createLead: "كتب الأسئلة ديالك ولا طلب أفكار من الذكاء الاصطناعي. من بعد تقدر تلعبو مع صحابك ولا تتمرّن بوحدك.",
+    newQuiz: "كويز جديد", noneYet: "مازال ما درتي حتى واحد. كيتحفظو فهاد التيليفون ولا الحاسوب.", qShort: "أسئلة",
+    play: "لعب", practiceBtn: "تمرّن", edit: "بدّل", del: "مسح", sureShort: "متأكد؟", deleted: "الكويز تمسح",
+    quizName: "سمية الكويز", quizNamePh: "مثلاً: قهاوي البار", askAI: "طلب أفكار من الذكاء الاصطناعي", aboutWhat: "على شنو بغيتي الأسئلة؟",
+    temaPh: "مثلاً: القهاوي بالكحول: كاراخييو، إيرلاندية…", withTricks: "مع أسئلة فيها الحيلة", generate: "صاوب الأسئلة", thinking: "كيفكّر…",
+    aiLang: "الأسئلة كتتصاوب باللغة ديالك.", aiMayErr: "الذكاء الاصطناعي يقدر يغلط: راجع الأجوبة قبل ما تحفظ.",
+    freeTitle: "فابور مع الذكاء الاصطناعي اللي كتبغي", freeAlt: "بغيتي ديرها فابور بالذكاء الاصطناعي ديالك؟", step1: "كوپي الطلب:", copyAsk: "كوپي الطلب",
+    step2: "لصقو فذكاء اصطناعي فابور و صيفطو:", step3: "كوپي الجواب كامل و لصقو هنا:", respPh: 'لصق الجواب هنا (كيبدا ب {"preguntas": …)', addQs: "زيد الأسئلة",
+    addManual: "+ زيد سؤال بيدك", saveQuiz: "حفظ الكويز", qN: "السؤال {n}", remove: "حيّد", writeQ: "كتب السؤال",
+    correctLbl: "صحيح", answerPh: "جواب", answerOpt: "جواب (اختياري)", noImg: "بلا تصويرة",
+    errTemaFirst: "كتب اللول الموضوع ديال الأسئلة.", copied: "الطلب تكوپا. دابا لصقو فالذكاء الاصطناعي.", selectCopy: "حدّد النص و كوپيه.",
+    errNotUnderstood: 'ما فهمتش هاد الجواب. كوپي كلشي اللي كتب الذكاء الاصطناعي (خاصو يبدا ب {"preguntas").', errNoValid: "الجواب ما فيهش أسئلة صالحة. طلب من الذكاء الاصطناعي يعاود.",
+    added: "تزادو {n} ديال الأسئلة. راجعهم.", errName: "عطي سمية للكويز.", errQText: "السؤال {n} ما فيهش النص.",
+    errQCorrect: "فالسؤال {n}، الجواب الصحيح خاوي.", errQWrong: "السؤال {n} خاصو على الأقل جواب غالط واحد.",
+    errQDup: "السؤال {n} فيه أجوبة معاودين.", errAddOne: "زيد على الأقل سؤال واحد.", saved: "الكويز تحفظ", backList: "الكويزات ديالي",
+    ideas: ["القهاوي بالكحول", "سيرفيس النبيذ", "الكوكتيلات الكلاسيكية", "أنواع البيرة", "الاستقبال ديال الكليان", "الحساسية فالماكلة", "التاپاس الصبليونية", "الأدوات و الاستعمال ديالها"],
+    cats: { cafes: "القهاوي", tes: "أتاي، الإنفوزيون و الكاكاو", bebidas: "المشروبات و السيرفيس ديالها", cristaleria: "الكيسان", montaje: "تحضير الطوابل (mise en place)", servicio: "السيرفيس فالصالة", cocina: "الكوزينة و منيو النهار", higiene: "النظافة و السلامة", vocabulario: "الكلمات ديال الفندقة" },
+    errors: {
+      "Elige al menos un tema o uno de tus quizzes.": "ختار على الأقل موضوع ولا كويز ديالك.",
+      "No hay preguntas con esos temas y niveles. Elige otro nivel.": "ما كاينينش أسئلة فهاد المواضيع و المستويات. ختار مستوى آخر.",
+      "La partida ya no existe.": "هاد اللعبة ما بقاتش.", "No hay ninguna partida con ese PIN.": "ما كايناش لعبة بهاد الرقم.",
+      "Escribe tu nombre.": "كتب سميتك.", "Esta partida ya ha terminado.": "هاد اللعبة سالات.",
+      "Ese nombre ya está en uso. Prueba otro.": "هاد السمية مستعملة. جرّب وحدة خرى.", "La partida está llena.": "اللعبة عامرة.",
+      "No estás en esta partida.": "نتا ماشي فهاد اللعبة.", "Se acabó el tiempo.": "سالا الوقت.",
+      "Escribe de qué tema quieres las preguntas.": "كتب الموضوع ديال الأسئلة.",
+      "Has pedido muchas preguntas seguidas. Espera un rato y vuelve a probar.": "طلبتي بزاف ديال الأسئلة. تسنّى شوية و عاود.",
+      "La IA gratuita ha llegado a su límite por ahora. Prueba dentro de unos minutos.": "الذكاء الاصطناعي الفابور وصل للحد ديالو. عاود من بعد شي دقايق.",
+      "La IA no ha respondido bien. Prueba otra vez o escribe el tema de otra forma.": "الذكاء الاصطناعي ما جاوبش مزيان. عاود ولا كتب الموضوع بطريقة خرى.",
+      net: "ما قدرناش نتّاصلو. عاود جرّب.",
+    },
+  },
+};
+I18N.es.errors.net = "No se ha podido conectar. Inténtalo otra vez.";
+
+function detectLang() {
+  try { const s = localStorage.getItem("hq-lang"); if (s && I18N[s]) return s; } catch (e) {}
+  for (const l of navigator.languages || [navigator.language || "es"]) {
+    const k = String(l).slice(0, 2).toLowerCase();
+    if (I18N[k]) return k;
+  }
+  return "es";
+}
+let LANG = detectLang();
+let onLangChange = null; // cada página pone aquí su función de redibujar
+
+function t(key, vars) {
+  let s = I18N[LANG][key] ?? I18N.es[key] ?? key;
+  if (vars && typeof s === "string") for (const [k, v] of Object.entries(vars)) s = s.replaceAll(`{${k}}`, v);
+  return s;
+}
+const catName = (id, fallback) => I18N[LANG].cats[id] || I18N.es.cats[id] || fallback || "";
+const lvName = (n) => (n ? t("lv" + n) : "");
+// Pregunta en el idioma de quien mira (si no hay traducción, en español)
+const loc = (d) => (d && d.tr && (d.tr[LANG] || d.tr.es)) || d;
+
+function applyLang() {
+  document.documentElement.lang = LANG;
+  document.documentElement.dir = LANG === "ar" ? "rtl" : "ltr";
+}
+function setLang(l) {
+  if (!I18N[l] || l === LANG) return;
+  LANG = l;
+  try { localStorage.setItem("hq-lang", l); } catch (e) {}
+  applyLang();
+  if (onLangChange) onLangChange();
+}
+applyLang();
+
+// Botón de idioma (se pone en la cabecera de cada pantalla)
+const GLOBE = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>';
+function langBtn() {
+  return `<div class="langwrap"><button class="langbtn" type="button" aria-haspopup="true" aria-expanded="false" onclick="toggleLangMenu(this)">${GLOBE}<span>${LANG.toUpperCase()}</span></button>
+    <div class="langmenu" hidden>${Object.entries(LANG_NAMES).map(([k, n]) => `<button type="button" class="${k === LANG ? "on" : ""}" lang="${k}" onclick="setLang('${k}')">${n}</button>`).join("")}</div></div>`;
+}
+function toggleLangMenu(btn) {
+  const m = btn.nextElementSibling;
+  m.hidden = !m.hidden;
+  btn.setAttribute("aria-expanded", !m.hidden);
+  if (!m.hidden) setTimeout(() => document.addEventListener("click", function close(e) {
+    if (!btn.parentElement.contains(e.target)) { m.hidden = true; btn.setAttribute("aria-expanded", "false"); }
+    document.removeEventListener("click", close);
+  }), 0);
+}
+
+// ============ SONIDO (Web Audio, sin archivos) ============
+const Sound = {
+  ctx: null,
+  on: (() => { try { return localStorage.getItem("hq-sound") !== "off"; } catch (e) { return true; } })(),
+  unlock() { if (!this.ctx) { try { this.ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) {} } if (this.ctx?.state === "suspended") this.ctx.resume(); },
+  toggle() { this.on = !this.on; try { localStorage.setItem("hq-sound", this.on ? "on" : "off"); } catch (e) {} if (this.on) this.unlock(); return this.on; },
+  tone(freq, dur = 0.12, type = "sine", vol = 0.18, when = 0) {
+    if (!this.on || !this.ctx) return;
+    const c = this.ctx, o = c.createOscillator(), g = c.createGain(), t0 = c.currentTime + when;
+    o.type = type; o.frequency.setValueAtTime(freq, t0);
+    g.gain.setValueAtTime(0, t0); g.gain.linearRampToValueAtTime(vol, t0 + 0.01); g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    o.connect(g).connect(c.destination); o.start(t0); o.stop(t0 + dur + 0.02);
+  },
+  tick() { this.tone(880, 0.05, "square", 0.06); },
+  tap() { this.tone(520, 0.06, "triangle", 0.12); },
+  join() { this.tone(660, 0.08, "triangle"); this.tone(990, 0.12, "triangle", 0.15, 0.08); },
+  go() { [523, 659, 784].forEach((f, i) => this.tone(f, 0.14, "triangle", 0.16, i * 0.09)); },
+  good() { [659, 880, 1175].forEach((f, i) => this.tone(f, 0.18, "sine", 0.2, i * 0.08)); },
+  bad() { this.tone(220, 0.25, "sawtooth", 0.08); this.tone(165, 0.3, "sawtooth", 0.08, 0.12); },
+  fanfare() { [523, 659, 784, 1047, 784, 1047].forEach((f, i) => this.tone(f, 0.22, "triangle", 0.18, i * 0.13)); },
+};
+["pointerdown", "keydown"].forEach((ev) => document.addEventListener(ev, () => Sound.unlock(), { once: true, passive: true }));
+const SPK_ON = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+const SPK_OFF = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16.5 9.5l5 5M21.5 9.5l-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+function soundBtn() { return `<button class="langbtn" type="button" aria-label="${t("sound")}" onclick="this.innerHTML = Sound.toggle() ? SPK_ON : SPK_OFF">${Sound.on ? SPK_ON : SPK_OFF}</button>`; }
+
+const buzz = (p) => { try { navigator.vibrate?.(p); } catch (e) {} };
+
+// ============ CONFETI ============
+function confetti(power = 1) {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const cv = document.createElement("canvas");
+  cv.className = "confetti";
+  document.body.appendChild(cv);
+  const ctx = cv.getContext("2d");
+  const W = (cv.width = innerWidth * devicePixelRatio), H = (cv.height = innerHeight * devicePixelRatio);
+  const cols = ["#e39b45", "#f4e7d4", "#d8463c", "#2f6fdb", "#dca021", "#2a9d5c"];
+  const ps = Array.from({ length: Math.round(140 * power) }, () => ({
+    x: W / 2 + (Math.random() - 0.5) * W * 0.3, y: H * 0.35, vx: (Math.random() - 0.5) * 26 * devicePixelRatio,
+    vy: (-Math.random() * 22 - 8) * devicePixelRatio, r: (4 + Math.random() * 6) * devicePixelRatio, c: cols[(Math.random() * cols.length) | 0],
+    a: Math.random() * 6, va: (Math.random() - 0.5) * 0.4,
+  }));
+  let f = 0;
+  (function loop() {
+    ctx.clearRect(0, 0, W, H);
+    for (const p of ps) {
+      p.vy += 0.6 * devicePixelRatio; p.vx *= 0.99; p.x += p.vx; p.y += p.vy; p.a += p.va;
+      ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.c; ctx.fillRect(-p.r, -p.r / 2, p.r * 2, p.r); ctx.restore();
+    }
+    if (++f < 180) requestAnimationFrame(loop); else cv.remove();
+  })();
+}
+
+// Cuenta hacia arriba un número (puntos)
+function countUp(el, to, ms = 900) {
+  if (!el) return;
+  const t0 = performance.now();
+  (function step(now) {
+    const k = Math.min(1, (now - t0) / ms);
+    el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
+    if (k < 1) requestAnimationFrame(step);
+  })(t0);
+}
+
+// ============ FORMAS, RED, ALMACÉN ============
 const SHAPES = [
   '<svg class="sh" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4 37 34H3Z" fill="currentColor"/></svg>',
   '<svg class="sh" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 2 38 20 20 38 2 20Z" fill="currentColor"/></svg>',
@@ -10,24 +361,22 @@ const colorIdx = (i, vf) => (vf ? [1, 0][i] : i);
 
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
+const errText = (msg) => I18N[LANG].errors[msg] || msg;
 async function api(path, body) {
-  const r = await fetch(path, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body || {}),
-  });
+  let r;
+  try {
+    r = await fetch(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body || {}) });
+  } catch (e) { throw new Error(t("errors").net || I18N[LANG].errors.net); }
   let data = {};
   try { data = await r.json(); } catch (e) {}
-  if (!r.ok) throw new Error(data.error || "No se ha podido conectar. Inténtalo otra vez.");
+  if (!r.ok) throw new Error(errText(data.error) || I18N[LANG].errors.net);
   return data;
 }
 
 // Conexión en tiempo real; se reconecta sola si el móvil se bloquea
 function stream(params, handlers) {
   const es = new EventSource("/events?" + new URLSearchParams(params));
-  for (const [ev, fn] of Object.entries(handlers)) {
-    es.addEventListener(ev, (e) => fn(JSON.parse(e.data || "{}")));
-  }
+  for (const [ev, fn] of Object.entries(handlers)) es.addEventListener(ev, (e) => fn(JSON.parse(e.data || "{}")));
   return es;
 }
 
@@ -37,8 +386,27 @@ const store = {
   del(k, s = localStorage) { try { s.removeItem(k); } catch (e) {} },
 };
 
-const CUP = '<svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12h18v7a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8z" fill="#e39b45"/><path d="M23 14h2.5a3.5 3.5 0 0 1 0 7H23" fill="none" stroke="#e39b45" stroke-width="2.4"/><path d="M11 3c-1.5 2 1.5 3 0 6M16 3c-1.5 2 1.5 3 0 6" fill="none" stroke="#f4e7d4" stroke-width="2" stroke-linecap="round"/></svg>';
-const LOGO = `<a class="logo" href="/">${CUP}<span>Hoste<b>Quiz</b></span></a>`;
+const CUP = '<svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12h18v7a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8z" fill="#e39b45"/><path d="M23 14h2.5a3.5 3.5 0 0 1 0 7H23" fill="none" stroke="#e39b45" stroke-width="2.4"/><path class="steam" d="M11 3c-1.5 2 1.5 3 0 6M16 3c-1.5 2 1.5 3 0 6" fill="none" stroke="#f4e7d4" stroke-width="2" stroke-linecap="round"/></svg>';
+const LOGO = `<a class="logo" href="/" dir="ltr">${CUP}<span>Hoste<b>Quiz</b></span></a>`;
+// Cabecera estándar: logo + (extra) + idioma
+const topbar = (extra = "") => `<div class="top">${LOGO}<div class="row tools">${extra}${langBtn()}</div></div>`;
 
 // Imagen de la pregunta (si tiene)
 const pic = (d, size = "") => (d.img ? `<div class="qimg ${size}"><img src="${esc(d.img)}" alt=""></div>` : "");
+
+// Etiqueta de nivel
+const lvTag = (n) => (n ? `<span class="lvl lvl-${n}">${esc(lvName(n))}</span>` : "");
+
+// Anillo de tiempo (SVG)
+function ring(id, total, size = 92) {
+  const r = 40, c = 2 * Math.PI * r;
+  return `<div class="ring" style="width:${size}px;height:${size}px"><svg viewBox="0 0 92 92"><circle cx="46" cy="46" r="${r}" class="ring-bg"/><circle cx="46" cy="46" r="${r}" class="ring-fg" id="${id}-arc" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="0"/></svg><span id="${id}">${total}</span></div>`;
+}
+function setRing(id, msLeft, totalMs) {
+  const arc = document.getElementById(id + "-arc"), num = document.getElementById(id);
+  if (!arc || !num) return;
+  const c = 2 * Math.PI * 40;
+  arc.style.strokeDashoffset = (c * (1 - msLeft / totalMs)).toFixed(1);
+  num.textContent = Math.ceil(msLeft / 1000);
+  arc.classList.toggle("low", msLeft <= 5000);
+}

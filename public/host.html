@@ -7,7 +7,7 @@
 <title>HosteQuiz · Presentador</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Cairo:wght@400;700;800&display=swap">
 <link rel="stylesheet" href="/style.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
 </head>
@@ -19,25 +19,34 @@ const app = document.getElementById("app");
 let game = store.get("hq-host", sessionStorage); // { pin, key }
 let es = null, tick = null, players = [];
 let cats = [];
+let current = null; // { fn, d }
+let qState = {};
 const chosen = new Set();
 const mine = store.get("hq-quizzes") || []; // quizzes creados en este aparato
 const chosenMine = new Set();
 const chosenLv = new Set(); // vacío = todos los niveles
-const LV = { 1: "Fácil", 2: "Medio", 3: "Difícil" };
+const opts = { n: null, t: 20 };
 const startQuiz = new URLSearchParams(location.search).get("quiz");
+onLangChange = () => current && current.fn(current.d, true);
 
-const act = (action, extra) => api("/api/host/action", { pin: game.pin, key: game.key, action, ...extra }).catch((e) => alert(e.message));
-const header = (right = "") => `<div class="top">${LOGO}${right}</div>`;
-const endBtn = `<button class="btn ghost small" id="end">Terminar partida</button>`;
+const act = (action, extra) => api("/api/host/action", { pin: game.pin, key: game.key, action, ...extra }).catch((e) => console.warn(e.message));
+const header = (withEnd = true) => topbar(`${soundBtn()}${withEnd ? `<button class="btn ghost small" id="end">${t("endGame")}</button>` : ""}`);
 function wireEnd() {
   const b = document.getElementById("end");
   if (!b) return;
   b.addEventListener("click", () => {
-    if (b.dataset.sure) { act("end"); finish(); }
-    else { b.dataset.sure = "1"; b.textContent = "¿Seguro? Pulsa otra vez"; setTimeout(() => { b.textContent = "Terminar partida"; delete b.dataset.sure; }, 3000); }
+    if (b.dataset.sure) { act("end"); finish(); setup(); }
+    else { b.dataset.sure = "1"; b.textContent = t("sure"); setTimeout(() => { b.textContent = t("endGame"); delete b.dataset.sure; }, 3000); }
   });
 }
-function render(html) { clearInterval(tick); app.innerHTML = html; wireEnd(); }
+function render(html) {
+  clearInterval(tick);
+  document.querySelector(".intro")?.remove();
+  app.innerHTML = `<div class="screen">${html}</div>`;
+  wireEnd();
+}
+function show(fn, d) { current = { fn, d }; fn(d, false); }
+const qLabel = (d) => `${t("question")} <bdi>${d.idx + 1}</bdi> ${t("of")} <bdi>${d.total}</bdi>${d.c || d.cat ? " · " + esc(catName(d.c, d.cat)) : ""}${d.n ? " · " + lvTag(d.n) : ""}`;
 
 // ---------- 1. Configurar ----------
 async function setup(err = "") {
@@ -46,39 +55,40 @@ async function setup(err = "") {
     if (startQuiz && mine.some((q) => q.id === startQuiz)) chosenMine.add(startQuiz);
     else cats.forEach((c) => chosen.add(c.id));
   }
+  current = { fn: (d) => setup(d.err), d: { err } };
+  if (opts.n === null) opts.n = chosenMine.size ? 100 : 10;
   render(`
-    ${header()}
-    <h1>Nueva partida</h1>
+    ${header(false)}
+    <h1>${t("newGame")}</h1>
     <div class="card">
-      <div class="row" style="justify-content:space-between"><h3>Temas</h3><button class="btn ghost small" id="all">Todos / ninguno</button></div>
-      <div class="chips">${cats.map((c) => `<button class="chip" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}">${esc(c.nombre)} <span class="n">${c.total}</span></button>`).join("")}</div>
+      <div class="row" style="justify-content:space-between"><h3>${t("topics")}</h3><button class="btn ghost small" id="all">${t("allNone")}</button></div>
+      <div class="chips">${cats.map((c) => `<button class="chip" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}">${esc(catName(c.id, c.nombre))} <span class="n">${c.total}</span></button>`).join("")}</div>
     </div>
     ${mine.length ? `<div class="card">
-      <div class="row" style="justify-content:space-between"><h3>Mis quizzes</h3><a class="btn ghost small" href="/crear.html">Crear otro</a></div>
-      <div class="chips">${mine.map((q) => `<button class="chip" data-m="${q.id}" aria-pressed="${chosenMine.has(q.id)}">${esc(q.title)} <span class="n">${q.preguntas.length}</span></button>`).join("")}</div>
-    </div>` : `<p class="muted small">¿Quieres tus propias preguntas? <a href="/crear.html" style="color:var(--caramel)">Crea un quiz con ayuda de la IA</a>.</p>`}
-    <div class="card">
-      <h3>Nivel</h3>
-      <div class="chips" id="lv"></div>
-    </div>
-    <p class="muted small" id="avail"></p>
+      <div class="row" style="justify-content:space-between"><h3>${t("myQuizzes")}</h3><a class="btn ghost small" href="/crear.html">${t("createOther")}</a></div>
+      <div class="chips">${mine.map((q) => `<button class="chip" data-m="${q.id}" aria-pressed="${chosenMine.has(q.id)}">★ ${esc(q.title)} <span class="n">${q.preguntas.length}</span></button>`).join("")}</div>
+    </div>` : `<p class="muted small">${t("wantOwn")} <a href="/crear.html" style="color:var(--caramel)">${t("wantOwnLink")}</a>.</p>`}
+    <div class="card"><h3>${t("level")}</h3><div class="chips" id="lv"></div></div>
     <div class="row" style="align-items:stretch">
       <div class="card" style="flex:1;min-width:220px">
-        <label class="label" for="n">Número de preguntas</label>
-        <select id="n">${[5, 10, 15, 20, 30, 40].map((n) => `<option value="${n}" ${n === 10 && !chosenMine.size ? "selected" : ""}>${n}</option>`).join("")}<option value="100" ${chosenMine.size ? "selected" : ""}>Todas</option></select>
+        <label class="label" for="n">${t("nQuestions")}</label>
+        <select id="n">${[5, 10, 15, 20, 30, 40].map((n) => `<option value="${n}" ${n === opts.n ? "selected" : ""}>${n}</option>`).join("")}<option value="100" ${opts.n === 100 ? "selected" : ""}>${t("allQ")}</option></select>
       </div>
       <div class="card" style="flex:1;min-width:220px">
-        <label class="label" for="t">Tiempo por pregunta</label>
-        <select id="t"><option value="10">10 segundos</option><option value="20" selected>20 segundos</option><option value="30">30 segundos</option><option value="60">60 segundos</option></select>
+        <label class="label" for="t">${t("timePerQ")}</label>
+        <select id="t">${[10, 20, 30, 60].map((n) => `<option value="${n}" ${n === opts.t ? "selected" : ""}>${t("seconds", { n })}</option>`).join("")}</select>
       </div>
     </div>
-    <p class="error">${esc(err)}</p>
-    <div class="row end"><button class="btn" id="go">Crear partida</button></div>`);
+    <p class="muted small" id="avail"></p>
+    <p class="error">${esc(err ? t(err) : "")}</p>
+    <div class="row end"><button class="btn big" id="go">${t("createBtn")}</button></div>`);
 
+  document.getElementById("n").addEventListener("change", (e) => (opts.n = +e.target.value));
+  document.getElementById("t").addEventListener("change", (e) => (opts.t = +e.target.value));
   const drawLv = () => {
     document.getElementById("lv").innerHTML =
-      `<button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">Todos</button>` +
-      [1, 2, 3].map((n) => `<button class="chip" data-lv="${n}" aria-pressed="${chosenLv.has(n)}">${LV[n]}</button>`).join("");
+      `<button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">${t("all")}</button>` +
+      [1, 2, 3].map((n) => `<button class="chip" data-lv="${n}" aria-pressed="${chosenLv.has(n)}"><span class="lvl lvl-${n}">●</span> ${t("lv" + n)}</button>`).join("");
     app.querySelectorAll("[data-lv]").forEach((b) => b.addEventListener("click", () => {
       const n = +b.dataset.lv;
       if (!n) chosenLv.clear(); else chosenLv.has(n) ? chosenLv.delete(n) : chosenLv.add(n);
@@ -88,9 +98,9 @@ async function setup(err = "") {
   };
   const lvOk = (n) => !chosenLv.size || !n || chosenLv.has(n);
   const upd = () => {
-    const total = cats.filter((c) => chosen.has(c.id)).reduce((s, c) => s + (chosenLv.size ? [1, 2, 3].filter((n) => chosenLv.has(n)).reduce((t, n) => t + c.porNivel[n - 1], 0) : c.total), 0)
+    const total = cats.filter((c) => chosen.has(c.id)).reduce((s, c) => s + (chosenLv.size ? [1, 2, 3].filter((n) => chosenLv.has(n)).reduce((x, n) => x + c.porNivel[n - 1], 0) : c.total), 0)
       + mine.filter((q) => chosenMine.has(q.id)).reduce((s, q) => s + q.preguntas.filter((p) => lvOk(p.n)).length, 0);
-    document.getElementById("avail").textContent = total ? `${total} preguntas disponibles en lo que has elegido.` : "Elige al menos un tema o un quiz tuyo.";
+    document.getElementById("avail").textContent = total ? t("available", { n: total }) : t("chooseOne");
     document.getElementById("go").disabled = !total;
   };
   drawLv();
@@ -113,9 +123,10 @@ async function setup(err = "") {
     upd();
   });
   document.getElementById("go").addEventListener("click", async (e) => {
-    e.target.disabled = true;
+    e.currentTarget.disabled = true;
+    Sound.unlock();
     try {
-      const r = await api("/api/host/create", { cats: [...chosen], custom: mine.filter((q) => chosenMine.has(q.id)), niveles: [...chosenLv], n: +document.getElementById("n").value, time: +document.getElementById("t").value });
+      const r = await api("/api/host/create", { cats: [...chosen], custom: mine.filter((q) => chosenMine.has(q.id)), niveles: [...chosenLv], n: opts.n, time: opts.t });
       game = { pin: r.pin, key: r.hostKey };
       store.set("hq-host", game, sessionStorage);
       connect();
@@ -127,19 +138,27 @@ async function setup(err = "") {
 // ---------- 2. Conexión ----------
 function connect() {
   if (es) es.close();
-  render(`${header()}<div class="full"><h2>Conectando…</h2></div>`);
+  render(`${header()}<div class="full"><h2 class="waitdots">${t("connecting")}</h2></div>`);
   es = stream({ pin: game.pin, role: "host", key: game.key }, {
-    hello: (d) => { game.total = d.total; if (d.state === "lobby") lobby(); },
-    players: (list) => { players = list; if (document.getElementById("plist")) drawPlayers(); },
-    question: showQuestion,
-    answered: (d) => { const el = document.getElementById("ansc"); if (el) el.textContent = `${d.answered} / ${d.players} respuestas`; },
-    reveal: showReveal,
-    board: showBoard,
-    podium: showPodium,
-    closed: () => { finish(); setup("La partida se cerró."); },
+    hello: (d) => { game.total = d.total; if (d.state === "lobby") show(lobby, {}); },
+    players: (list) => {
+      if (list.length > players.length && current?.fn === lobby) Sound.join();
+      players = list;
+      if (document.getElementById("plist")) drawPlayers();
+    },
+    question: (d) => show(showQuestion, d),
+    answered: (d) => {
+      const el = document.getElementById("ansc");
+      if (el) { el.textContent = `${d.answered} / ${d.players} ${t("answers")}`; el.animate?.([{ transform: "scale(1.15)" }, { transform: "none" }], 250); }
+      if (current?.d) current.d.answered = d.answered;
+    },
+    reveal: (d) => show(showReveal, d),
+    board: (d) => show(showBoard, d),
+    podium: (d) => show(showPodium, d),
+    closed: () => { finish(); setup("closed"); },
   });
 }
-function finish() { if (es) es.close(); es = null; store.del("hq-host", sessionStorage); game = null; }
+function finish() { if (es) es.close(); es = null; store.del("hq-host", sessionStorage); game = null; players = []; }
 
 // ---------- 3. Sala de espera ----------
 function lobby() {
@@ -147,96 +166,126 @@ function lobby() {
   let qr = "";
   try { const q = qrcode(0, "M"); q.addData(url); q.make(); qr = q.createSvgTag({ margin: 0, scalable: true }); } catch (e) {}
   render(`
-    ${header(endBtn)}
+    ${header()}
     <div class="card lobby">
       <div class="stack">
-        <p class="label">Entra en <b style="color:var(--crema);letter-spacing:0;text-transform:none;font-size:18px">${esc(location.host)}</b> con el PIN</p>
-        <div class="pinbox" style="text-align:left"><div class="pin">${game.pin.replace(/(\d{3})(\d{3})/, "$1 $2")}</div></div>
-        <p class="muted">${game.total} preguntas · o escanea el código con la cámara del móvil</p>
+        <p class="label">${t("joinAt")} <b style="color:var(--crema);letter-spacing:0;text-transform:none;font-size:18px" dir="ltr">${esc(location.host)}</b> ${t("withPin")}</p>
+        <div class="pinbox"><div class="pin">${game.pin.replace(/(\d{3})(\d{3})/, "$1 $2")}</div></div>
+        <p class="muted">${t("qCount", { n: game.total })} · ${t("scanQR")}</p>
+        <p class="muted small">${GLOBE} ${t("langHint")}</p>
       </div>
       ${qr ? `<div class="qr">${qr}</div>` : ""}
     </div>
-    <div class="row" style="justify-content:space-between"><h2 id="pcount">Jugadores</h2><button class="btn" id="start" disabled>Empezar</button></div>
+    <div class="row" style="justify-content:space-between"><h2 id="pcount">${t("players")}</h2><button class="btn big" id="start" disabled>${t("start")}</button></div>
     <div class="players" id="plist"></div>`);
-  document.getElementById("start").addEventListener("click", () => act("start"));
+  document.getElementById("start").addEventListener("click", () => { Sound.unlock(); act("start"); });
   drawPlayers();
 }
 function drawPlayers() {
   const el = document.getElementById("plist");
-  document.getElementById("pcount").textContent = `${players.length} ${players.length === 1 ? "jugador" : "jugadores"}`;
+  document.getElementById("pcount").textContent = `${players.length} ${players.length === 1 ? t("player1") : t("playersN")}`;
   document.getElementById("start").disabled = !players.length;
   el.innerHTML = players.length
-    ? players.map((p) => `<span class="player ${p.online ? "" : "off"}">${esc(p.name)}<button title="Sacar a ${esc(p.name)}" aria-label="Sacar a ${esc(p.name)}" data-k="${p.id}">✕</button></span>`).join("")
-    : `<p class="muted">Esperando al primer jugador…</p>`;
+    ? players.map((p) => `<span class="player ${p.online ? "" : "off"}">${esc(p.name)}<button title="${esc(t("kick", { n: p.name }))}" aria-label="${esc(t("kick", { n: p.name }))}" data-k="${p.id}">✕</button></span>`).join("")
+    : `<p class="muted waitdots">${t("waitingFirst")}</p>`;
   el.querySelectorAll("[data-k]").forEach((b) => b.addEventListener("click", () => act("kick", { id: b.dataset.k })));
 }
 
 // ---------- 4. Pregunta ----------
-function tiles(d, counts, ok) {
-  return `<div class="answers">${d.a.map((t, i) => {
+function tiles(d, L, counts, ok) {
+  return `<div class="answers">${L.a.map((txt, i) => {
     const ci = colorIdx(i, d.vf);
     const cls = ok === undefined ? "" : i === ok ? "right" : "dim";
-    return `<div class="ans a${ci} ${cls}">${SHAPES[ci]}<span class="tx">${esc(t)}</span>${counts ? `<span class="cnt">${counts[i]}</span>` : ""}${ok === i ? '<span class="tick">✓</span>' : ""}</div>`;
+    return `<div class="ans a${ci} ${cls}">${SHAPES[ci]}<span class="tx">${esc(txt)}</span>${counts ? `<span class="cnt">${counts[i]}</span>` : ""}${ok === i ? '<span class="tick">✓</span>' : ""}</div>`;
   }).join("")}</div>`;
 }
-function showQuestion(d) {
-  const end = Date.now() + d.left;
+function showQuestion(d, redraw) {
+  const key = game.pin + ":" + d.idx;
+  if (qState.key !== key) qState = { key, introEnd: Date.now() + (d.intro || 0), end: Date.now() + (d.intro || 0) + d.left };
+  const L = loc(d);
+  const total = d.time * 1000;
   render(`
-    ${header(endBtn)}
+    ${header()}
     <div class="qhead">
-      <span class="pill">Pregunta ${d.idx + 1} de ${d.total} · ${esc(d.cat)}${d.nivel ? ` · <span class="lvl lvl-${esc(d.nivel)}">${esc(d.nivel)}</span>` : ""}</span>
-      <span class="pill" id="ansc">${d.answered || 0} / ${d.players} respuestas</span>
+      <span class="pill">${qLabel(d)}</span>
+      <span class="pill" id="ansc">${d.answered || 0} / ${d.players} ${t("answers")}</span>
     </div>
-    <div class="row" style="justify-content:center;gap:24px;flex-wrap:nowrap">
-      <div class="timer" id="tm">${Math.ceil(d.left / 1000)}</div>
-      <p class="question" style="flex:1">${esc(d.q)}</p>
+    <div class="qrow">
+      ${ring("tm", d.time)}
+      <p class="question" style="flex:1">${esc(L.q)}</p>
     </div>
     ${pic(d)}
-    ${tiles(d)}
-    <div class="row end"><button class="btn ghost" id="skip">Ver respuesta ya</button></div>`);
+    ${tiles(d, L)}
+    <div class="row end"><button class="btn ghost" id="skip">${t("showNow")}</button></div>`);
   document.getElementById("skip").addEventListener("click", () => act("skip"));
-  tick = setInterval(() => {
-    const s = Math.max(0, Math.ceil((end - Date.now()) / 1000));
-    const el = document.getElementById("tm");
-    if (el) el.textContent = s;
-    if (!s) clearInterval(tick);
-  }, 200);
+
+  let introOn = Date.now() < qState.introEnd;
+  if (introOn) document.body.insertAdjacentHTML("beforeend", `<div class="intro"><div class="inner"><p class="label">${qLabel(d)}</p><div class="num" id="introNum"></div><p class="iq">${esc(L.q)}</p></div></div>`);
+  let lastN = null, lastS = null;
+  const upd = () => {
+    const now = Date.now();
+    if (introOn) {
+      const n = Math.ceil((qState.introEnd - now) / 1000);
+      if (n > 0 && n !== lastN) { lastN = n; const el = document.getElementById("introNum"); if (el) { el.textContent = n; el.style.animation = "none"; void el.offsetWidth; el.style.animation = ""; } if (!redraw) Sound.tick(); }
+      if (now >= qState.introEnd) { introOn = false; document.querySelector(".intro")?.remove(); if (!redraw) Sound.go(); }
+    }
+    const ms = Math.max(0, Math.min(total, qState.end - now));
+    setRing("tm", ms, total);
+    const s = Math.ceil(ms / 1000);
+    if (!introOn && s !== lastS) { if (s <= 5 && s > 0 && lastS !== null) Sound.tick(); lastS = s; }
+    if (!ms && !introOn) clearInterval(tick);
+  };
+  upd();
+  tick = setInterval(upd, 100);
 }
 
 // ---------- 5. Respuesta correcta ----------
-function showReveal(d) {
+function showReveal(d, redraw) {
+  const L = loc(d);
+  const max = Math.max(1, ...d.counts);
   render(`
-    ${header(endBtn)}
-    <div class="qhead"><span class="pill">Pregunta ${d.idx + 1} de ${d.total} · ${esc(d.cat)}</span><span class="pill">${d.answeredCount} / ${d.players} respondieron</span></div>
-    <p class="question">${esc(d.q)}</p>
-    ${pic(d)}
-    ${tiles(d, d.counts, d.ok)}
-    <div class="row end"><button class="btn" id="next">Clasificación</button></div>`);
+    ${header()}
+    <div class="qhead"><span class="pill">${qLabel(d)}</span><span class="pill">${d.answeredCount} / ${d.players} ${t("answered")}</span></div>
+    <p class="question">${esc(L.q)}</p>
+    <div class="bars">${d.counts.map((c, i) => {
+      const ci = colorIdx(i, d.vf);
+      return `<div class="bar ${i === d.ok ? "" : "dim"}"><b>${c}</b><i style="height:${Math.max(4, (c / max) * 120)}px;background:var(--c${ci})"></i><span style="color:var(--c${ci})">${SHAPES[ci]}</span></div>`;
+    }).join("")}</div>
+    ${tiles(d, L, d.counts, d.ok)}
+    <div class="row end"><button class="btn big" id="next">${t("leaderboard")}</button></div>`);
   document.getElementById("next").addEventListener("click", () => act("next"));
+  if (!redraw) Sound.good();
 }
 
 // ---------- 6. Clasificación ----------
-function showBoard(d) {
+function showBoard(d, redraw) {
   const last = d.idx + 1 >= d.total;
+  const max = Math.max(1, ...d.top.map((r) => r.score));
   render(`
-    ${header(endBtn)}
-    <h1 style="text-align:center">Clasificación</h1>
-    <ol class="board" style="max-width:640px;width:100%;margin:0 auto">${d.top.map((r) => `<li><span class="nm">${esc(r.name)}</span><span>${r.score}</span></li>`).join("") || "<p class='muted'>Nadie ha jugado.</p>"}</ol>
-    <div class="row end"><button class="btn" id="next">${last ? "Ver el podio" : "Siguiente pregunta"}</button></div>`);
+    ${header()}
+    <h1 style="text-align:center">${t("leaderboard")}</h1>
+    <ol class="board" style="max-width:680px;width:100%;margin:0 auto">${d.top.map((r) => {
+      const mv = r.prev - r.rank;
+      return `<li><span class="fill" style="width:${(r.score / max) * 100}%"></span><span class="mv ${mv > 0 ? "up" : mv < 0 ? "down" : ""}">${mv > 0 ? "▲" + mv : mv < 0 ? "▼" + -mv : ""}</span><span class="nm">${esc(r.name)}</span>${r.gained ? `<span class="gain">+${r.gained}</span>` : ""}<span class="sc" data-v="${r.score}">${redraw ? r.score : 0}</span></li>`;
+    }).join("") || `<p class='muted'>${t("nobody")}</p>`}</ol>
+    <div class="row end"><button class="btn big" id="next">${last ? t("seePodium") : t("nextQ")}</button></div>`);
   document.getElementById("next").addEventListener("click", () => act("next"));
+  if (!redraw) app.querySelectorAll(".sc").forEach((el) => countUp(el, +el.dataset.v, 1100));
 }
 
 // ---------- 7. Podio ----------
-function showPodium(d) {
+const CROWN = '<svg class="crown" viewBox="0 0 40 30"><path d="M3 26 6 8l9 9 5-13 5 13 9-9 3 18z" fill="currentColor"/></svg>';
+function showPodium(d, redraw) {
   const [a, b, c] = d.top;
-  const step = (r, n) => r ? `<div class="step p${n}"><div class="nm">${esc(r.name)}</div><div class="pts">${r.score} pts</div><div class="blk">${n}</div></div>` : `<div></div>`;
+  const step = (r, n) => r ? `<div class="step p${n}">${n === 1 ? CROWN : ""}<div class="nm">${esc(r.name)}</div><div class="pts">${r.score} ${t("pts")}</div><div class="blk">${n}</div></div>` : `<div></div>`;
   render(`
-    ${header()}
-    <h1 style="text-align:center">¡Enhorabuena!</h1>
+    ${header(false)}
+    <h1 style="text-align:center">${t("congrats")}</h1>
     <div class="podium">${step(b, 2)}${step(a, 1)}${step(c, 3)}</div>
-    ${d.top.length > 3 ? `<ol class="board" start="4" style="max-width:640px;width:100%;margin:0 auto;counter-reset:pos 3">${d.top.slice(3).map((r) => `<li><span class="nm">${esc(r.name)}</span><span>${r.score}</span></li>`).join("")}</ol>` : ""}
-    <div class="row" style="justify-content:center"><button class="btn" id="new">Nueva partida</button></div>`);
+    ${d.top.length > 3 ? `<ol class="board" style="max-width:640px;width:100%;margin:0 auto;counter-reset:pos 3">${d.top.slice(3).map((r) => `<li><span class="nm">${esc(r.name)}</span><span>${r.score}</span></li>`).join("")}</ol>` : ""}
+    <div class="row" style="justify-content:center"><button class="btn big" id="new">${t("newGame")}</button></div>`);
   document.getElementById("new").addEventListener("click", () => { act("end"); finish(); setup(); });
+  if (!redraw) { setTimeout(() => { Sound.fanfare(); confetti(1.6); }, 1800); }
 }
 
 if (game) connect(); else setup();

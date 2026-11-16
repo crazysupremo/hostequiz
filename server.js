@@ -6,9 +6,15 @@ const path = require("path");
 const crypto = require("crypto");
 
 const BANK = require("./data/preguntas.json");
+// Traducciones de las preguntas: { idioma: { id: [pregunta, resp1, resp2, ...] } }
+const LANGS = ["es", "pt", "en", "ar"];
+const TR = {};
+for (const l of LANGS.slice(1)) { try { TR[l] = require(`./data/i18n/${l}.json`); } catch (e) { TR[l] = {}; } }
+const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"], ar: ["صحيح", "غلط"] };
 const PORT = process.env.PORT || 3000;
 const PUBLIC = path.join(__dirname, "public");
 const MAX_PLAYERS = 100;
+const INTRO_MS = 3000; // 3-2-1 antes de cada pregunta
 
 // Ilustraciones disponibles (public/img)
 const IMAGES = fs.readdirSync(path.join(PUBLIC, "img")).filter((f) => f.endsWith(".svg")).map((f) => "/img/" + f).sort();
@@ -65,10 +71,19 @@ function newPin() {
 function toGameQuestion(p) {
   const img = p.img || null;
   const cat = p.cat || BANK.categorias[p.c] || "";
-  const nivel = NIVELES[p.n] || "";
-  if (typeof p.vf === "boolean") return { cat, nivel, q: p.q, img, a: ["Verdadero", "Falso"], ok: p.vf ? 0 : 1, vf: true };
+  const base = { c: p.c || null, cat, n: p.n || null, img };
+  // Textos en cada idioma (las preguntas propias solo tienen el suyo)
+  const texts = { es: [p.q, ...(p.a || [])] };
+  if (p.id) for (const l of LANGS.slice(1)) if (TR[l][p.id]) texts[l] = TR[l][p.id];
+  if (typeof p.vf === "boolean") {
+    const tr = {};
+    for (const [l, t] of Object.entries(texts)) tr[l] = { q: t[0], a: VF_TXT[l] };
+    return { ...base, q: p.q, a: VF_TXT.es, tr, ok: p.vf ? 0 : 1, vf: true };
+  }
   const order = shuffle(p.a.map((_, i) => i));
-  return { cat, nivel, q: p.q, img, a: order.map((i) => p.a[i]), ok: order.indexOf(0), vf: false };
+  const tr = {};
+  for (const [l, t] of Object.entries(texts)) tr[l] = { q: t[0], a: order.map((i) => t[i + 1] ?? p.a[i]) };
+  return { ...base, q: p.q, a: order.map((i) => p.a[i]), tr, ok: order.indexOf(0), vf: false };
 }
 
 // Limpia una pregunta que viene de fuera (quiz propio o IA). Formato: { q, a: [correcta, ...incorrectas], img? }
@@ -100,14 +115,17 @@ function publicQuestion(game) {
   return {
     idx: game.idx,
     total: game.questions.length,
+    c: q.c,
     cat: q.cat,
-    nivel: q.nivel,
+    n: q.n,
+    tr: q.tr,
     q: q.q,
     img: q.img,
     a: q.a,
     vf: q.vf,
     time: game.time,
-    left: Math.max(0, game.time * 1000 - (Date.now() - game.qStart)),
+    intro: Math.max(0, game.qStart - Date.now()), // cuenta atrás 3-2-1 antes de poder responder
+    left: Math.min(game.time * 1000, Math.max(0, game.time * 1000 - (Date.now() - game.qStart))),
   };
 }
 
@@ -124,17 +142,18 @@ function startQuestion(game) {
   clearTimeout(game.timer);
   game.state = "question";
   game.answers = new Map();
-  game.qStart = Date.now();
+  game.qStart = Date.now() + INTRO_MS;
   const pq = publicQuestion(game);
   toHost(game, "question", { ...pq, answered: 0, players: game.players.size });
   toAllPlayers(game, "question", { ...pq, answered: false });
-  game.timer = setTimeout(() => reveal(game), game.time * 1000 + 500);
+  game.timer = setTimeout(() => reveal(game), INTRO_MS + game.time * 1000 + 500);
 }
 
 function reveal(game) {
   if (game.state !== "question") return;
   clearTimeout(game.timer);
   game.state = "reveal";
+  game.prevRank = Object.fromEntries(ranking(game).map((r) => [r.id, r.rank])); // para las flechas ↑↓
   const q = game.questions[game.idx];
   const counts = q.a.map(() => 0);
 
@@ -158,13 +177,18 @@ function reveal(game) {
   toHost(game, "reveal", game.lastReveal);
   for (const r of rank) {
     const p = game.players.get(r.id);
-    p.lastResult = { ...p.last, score: p.score, rank: r.rank, streak: p.streak, okText: q.a[q.ok], total: rank.length };
+    p.lastResult = { ...p.last, score: p.score, rank: r.rank, streak: p.streak, okText: q.a[q.ok], okTr: Object.fromEntries(Object.entries(q.tr).map(([l, t]) => [l, t.a[q.ok]])), total: rank.length };
     toPlayer(p, "result", p.lastResult);
   }
 }
 
 function boardData(game) {
-  return { top: ranking(game).slice(0, 5), idx: game.idx, total: game.questions.length };
+  const top = ranking(game).slice(0, 5).map((r) => ({
+    ...r,
+    prev: game.prevRank?.[r.id] || r.rank,
+    gained: game.players.get(r.id)?.last?.pts || 0,
+  }));
+  return { top, idx: game.idx, total: game.questions.length };
 }
 
 function showBoard(game) {
@@ -325,7 +349,8 @@ const api = {
     const q = game.questions[game.idx];
     const c = parseInt(body.choice);
     if (!(c >= 0 && c < q.a.length)) return [400, { error: "Respuesta no válida." }];
-    game.answers.set(p.id, { choice: c, ms: Math.min(game.time * 1000, Date.now() - game.qStart) });
+    if (Date.now() < game.qStart - 300) return [409, { error: "Se acabó el tiempo." }];
+    game.answers.set(p.id, { choice: c, ms: Math.max(0, Math.min(game.time * 1000, Date.now() - game.qStart)) });
     toHost(game, "answered", { answered: game.answers.size, players: game.players.size });
     const online = [...game.players.values()].filter((x) => x.streams.size > 0);
     if (online.length && online.every((x) => game.answers.has(x.id))) setTimeout(() => reveal(game), 400);
@@ -340,6 +365,7 @@ async function generateWithAI(body, ip) {
   if (tema.length < 3) return [400, { error: "Escribe de qué tema quieres las preguntas." }];
   const n = Math.min(Math.max(parseInt(body.n) || 5, 1), 15);
   const nivel = ["fácil", "medio", "difícil"].includes(body.nivel) ? body.nivel : "fácil";
+  const idioma = { es: "español de España", pt: "português", en: "English", ar: "árabe marroquí (dariya) con letras árabes" }[body.lang] || "español de España";
 
   // Límite de uso por persona
   const now = Date.now();
@@ -350,7 +376,8 @@ async function generateWithAI(body, ip) {
 
   const system = [
     "Eres profesor de un curso de hostelería en España (cafetería, bar, sala y cocina).",
-    "Escribes preguntas de quiz tipo test en español de España, claras y cortas, para alumnos que están aprendiendo.",
+    `Escribes preguntas de quiz tipo test en ${idioma}, claras y cortas, para alumnos que están aprendiendo.`,
+    "Cuando uses nombres de productos españoles (cortado, carajillo, caña…), mantenlos en español.",
     "Cada pregunta tiene 4 respuestas: SOLO una es correcta y las otras 3 son incorrectas pero creíbles.",
     "La pregunta tiene como máximo 110 caracteres y cada respuesta como máximo 60.",
     "Usa datos correctos y habituales en la hostelería española. Si un dato depende del local, no lo preguntes.",
@@ -511,7 +538,7 @@ const server = http.createServer(async (req, res) => {
         porNivel: [1, 2, 3].map((n) => BANK.preguntas.filter((p) => p.c === id && p.n === n).length),
       })));
     }
-    if (req.method === "GET" && url.pathname === "/api/preguntas") return json(res, 200, BANK);
+    if (req.method === "GET" && url.pathname === "/api/preguntas") return json(res, 200, { ...BANK, i18n: TR });
     if (req.method === "GET" && url.pathname === "/api/imagenes") return json(res, 200, IMAGES);
     if (req.method === "GET" && url.pathname === "/api/ia/estado") return json(res, 200, { activa: aiReady() });
     if (req.method === "POST" && url.pathname === "/api/ia") {

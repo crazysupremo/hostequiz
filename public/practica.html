@@ -7,29 +7,42 @@
 <title>HosteQuiz · Practicar</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Cairo:wght@400;700;800&display=swap">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<div class="wrap"><div class="col narrow" id="app" style="max-width:720px"></div></div>
+<div class="wrap"><div class="col" id="app" style="max-width:760px"></div></div>
 <script src="/common.js"></script>
 <script>
 const app = document.getElementById("app");
-let BANK = null, deck = [], pos = 0, hits = 0, misses = [];
+const DATA_URL = window.HQ_DATA_URL || "/api/preguntas";
+const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"], ar: ["صحيح", "غلط"] };
+let BANK = null, deck = [], pos = 0, hits = 0, misses = [], answeredNow = null, streak = 0;
+let view = "pick";
 const chosen = new Set();
 const chosenLv = new Set(); // vacío = todos
-const LV = { 1: "Fácil", 2: "Medio", 3: "Difícil" };
 const lvOk = (p) => !chosenLv.size || !p.n || chosenLv.has(p.n);
+onLangChange = () => ({ pick, ask, done })[view]?.(true);
 
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+// La pregunta guarda el orden de las respuestas; el texto se saca en el idioma actual
 function prep(p) {
-  if (typeof p.vf === "boolean") return { ...p, opts: ["Verdadero", "Falso"], ok: p.vf ? 0 : 1, isVf: true };
+  if (typeof p.vf === "boolean") return { p, vf: true, order: [0, 1], ok: p.vf ? 0 : 1 };
   const order = shuffle(p.a.map((_, i) => i));
-  return { ...p, opts: order.map((i) => p.a[i]), ok: order.indexOf(0), isVf: false };
+  return { p, vf: false, order, ok: order.indexOf(0) };
 }
+function textOf(item) {
+  const p = item.p;
+  const tr = p.id && BANK.i18n?.[LANG]?.[p.id];
+  const q = tr ? tr[0] : p.q;
+  if (item.vf) return { q, a: VF_TXT[LANG] };
+  const src = tr ? tr.slice(1) : p.a;
+  return { q, a: item.order.map((i) => src[i] ?? p.a[i]) };
+}
+const catOf = (id) => (id.startsWith("mi-") ? BANK.categorias[id] : catName(id, BANK.categorias[id]));
 
 async function start() {
-  BANK = await (await fetch("/api/preguntas")).json();
+  BANK = await (await fetch(DATA_URL)).json();
   // Mis quizzes (creados en este aparato) se añaden como temas extra
   for (const q of store.get("hq-quizzes") || []) {
     BANK.categorias["mi-" + q.id] = "★ " + q.title;
@@ -45,20 +58,21 @@ async function start() {
 }
 
 function pick() {
+  view = "pick";
   const count = (id) => BANK.preguntas.filter((p) => p.c === id && lvOk(p)).length;
-  app.innerHTML = `
-    <div class="top">${LOGO}</div>
-    <h1>Practicar solo</h1>
-    <p class="muted">Responde a tu ritmo. Después de cada pregunta ves la respuesta correcta.</p>
+  app.innerHTML = `<div class="screen">
+    ${topbar()}
+    <h1>${t("practiceTitle")}</h1>
+    <p class="muted">${t("practiceLead")}</p>
     <div class="card">
-      <h3>¿Qué quieres repasar?</h3>
-      <div class="chips">${Object.entries(BANK.categorias).map(([id, n]) => `<button class="chip" data-c="${id}" aria-pressed="${chosen.has(id)}">${esc(n)} <span class="n">${count(id)}</span></button>`).join("")}</div>
+      <h3>${t("whatReview")}</h3>
+      <div class="chips">${Object.keys(BANK.categorias).map((id) => `<button class="chip" data-c="${id}" aria-pressed="${chosen.has(id)}">${esc(catOf(id))} <span class="n">${count(id)}</span></button>`).join("")}</div>
     </div>
     <div class="card">
-      <h3>Nivel</h3>
-      <div class="chips"><button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">Todos</button>${[1, 2, 3].map((n) => `<button class="chip" data-lv="${n}" aria-pressed="${chosenLv.has(n)}">${LV[n]}</button>`).join("")}</div>
+      <h3>${t("level")}</h3>
+      <div class="chips"><button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">${t("all")}</button>${[1, 2, 3].map((n) => `<button class="chip" data-lv="${n}" aria-pressed="${chosenLv.has(n)}"><span class="lvl lvl-${n}">●</span> ${t("lv" + n)}</button>`).join("")}</div>
     </div>
-    <div class="row" style="justify-content:space-between"><a class="btn ghost" href="/crear.html">Crear mi quiz con IA</a><button class="btn" id="go" ${chosen.size ? "" : "disabled"}>Empezar</button></div>`;
+    <div class="row" style="justify-content:space-between"><a class="btn ghost" href="/crear.html">${t("createMine")}</a><button class="btn big" id="go" ${chosen.size ? "" : "disabled"}>${t("start")}</button></div></div>`;
   app.querySelectorAll("[data-c]").forEach((b) => b.addEventListener("click", () => {
     chosen.has(b.dataset.c) ? chosen.delete(b.dataset.c) : chosen.add(b.dataset.c);
     b.setAttribute("aria-pressed", chosen.has(b.dataset.c));
@@ -71,71 +85,86 @@ function pick() {
     pick();
   }));
   document.getElementById("go").addEventListener("click", () => {
+    Sound.unlock();
     const list = BANK.preguntas.filter((p) => chosen.has(p.c) && lvOk(p));
-    if (!list.length) { document.getElementById("go").textContent = "No hay preguntas con ese nivel"; return; }
+    if (!list.length) { document.getElementById("go").textContent = t("noLevelQ"); return; }
     run(shuffle(list));
   });
 }
 
 function run(list) {
-  deck = list.map(prep); pos = 0; hits = 0; misses = [];
+  deck = list.map(prep); pos = 0; hits = 0; misses = []; streak = 0;
   ask();
 }
 
-function ask() {
+function ask(redraw) {
+  view = "ask";
   if (pos >= deck.length) return done();
-  const q = deck[pos];
-  app.innerHTML = `
-    <div class="top">${LOGO}<span class="pill" id="prog">${pos + 1} / ${deck.length} · ${hits} aciertos</span></div>
-    <div class="timebar"><i style="transform:scaleX(${pos / deck.length})"></i></div>
-    <p class="label" style="text-align:center">${esc(BANK.categorias[q.c])}${q.n ? ` · <span class="lvl lvl-${LV[q.n]}">${LV[q.n]}</span>` : ""}</p>
-    <p class="question" style="font-size:clamp(22px,5vw,36px)">${esc(q.q)}</p>
-    ${pic(q)}
-    <div class="answers">${q.opts.map((t, i) => { const ci = colorIdx(i, q.isVf); return `<button class="ans a${ci}" data-i="${i}">${SHAPES[ci]}<span class="tx">${esc(t)}</span></button>`; }).join("")}</div>
-    <div id="fb" class="stack"></div>`;
+  const item = deck[pos];
+  const L = textOf(item);
+  app.innerHTML = `<div class="screen">
+    ${topbar(soundBtn())}
+    <div class="qhead"><span class="pill" id="prog"></span><span class="pill">${esc(catOf(item.p.c))}${item.p.n ? " · " + lvTag(item.p.n) : ""}</span></div>
+    <div class="timebar"><i style="transform:scaleX(${(pos + (answeredNow !== null ? 1 : 0)) / deck.length})"></i></div>
+    <p class="question" style="font-size:clamp(22px,5vw,36px)">${esc(L.q)}</p>
+    ${pic(item.p)}
+    <div class="answers">${L.a.map((txt, i) => { const ci = colorIdx(i, item.vf); return `<button class="ans a${ci}" data-i="${i}">${SHAPES[ci]}<span class="tx">${esc(txt)}</span></button>`; }).join("")}</div>
+    <div id="fb" class="stack"></div></div>`;
+  setProg();
   app.querySelectorAll("[data-i]").forEach((b) => b.addEventListener("click", () => answer(+b.dataset.i)));
+  if (redraw && answeredNow !== null) answer(answeredNow, true);
 }
 
-function answer(i) {
-  const q = deck[pos];
-  const right = i === q.ok;
-  if (right) hits++; else misses.push(q);
-  document.getElementById("prog").textContent = `${pos + 1} / ${deck.length} · ${hits} aciertos`;
+function answer(i, redraw) {
+  const item = deck[pos];
+  const right = i === item.ok;
+  if (!redraw) {
+    answeredNow = i;
+    if (right) { hits++; streak++; } else { misses.push(item.p); streak = 0; }
+    if (right) { Sound.good(); buzz([30, 30, 60]); if (streak >= 3) confetti(0.4); } else { Sound.bad(); buzz(150); }
+  }
+  const L = textOf(item);
+  setProg();
   app.querySelectorAll("[data-i]").forEach((b) => {
     const k = +b.dataset.i;
     b.disabled = true;
-    b.classList.add(k === q.ok ? "right" : "dim");
-    if (k === q.ok) b.insertAdjacentHTML("beforeend", '<span class="tick">✓</span>');
+    b.classList.add(k === item.ok ? "right" : "dim");
+    if (k === item.ok) b.insertAdjacentHTML("beforeend", '<span class="tick">✓</span>');
   });
   document.getElementById("fb").innerHTML = `
     <div class="result ${right ? "ok" : "bad"}" style="padding:16px">
-      <div class="big" style="font-size:30px">${right ? "¡Correcto!" : "Incorrecto"}</div>
-      ${right ? "" : `<p>La correcta es: <b>${esc(q.opts[q.ok])}</b></p>`}
+      <div class="big" style="font-size:30px">${right ? t("correct") : t("wrong")}</div>
+      ${right ? (streak > 1 ? `<p>🔥 ${t("streak", { n: streak })}</p>` : "") : `<p>${t("rightIs")} <b>${esc(L.a[item.ok])}</b></p>`}
     </div>
-    <div class="row end"><button class="btn" id="nx">${pos + 1 < deck.length ? "Siguiente" : "Ver resultado"}</button></div>`;
+    <div class="row end"><button class="btn big" id="nx">${pos + 1 < deck.length ? t("next") : t("seeResult")}</button></div>`;
   const nx = document.getElementById("nx");
-  nx.focus();
-  nx.addEventListener("click", () => { pos++; ask(); });
+  if (!redraw) nx.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  nx.addEventListener("click", () => { pos++; answeredNow = null; ask(); });
 }
 
-function done() {
+const setProg = () => { document.getElementById("prog").innerHTML = `<bdi dir="ltr">${pos + 1} / ${deck.length}</bdi> · ${hits} ${t("hits")}`; };
+
+function done(redraw) {
+  view = "done";
   const pct = Math.round((hits / deck.length) * 100);
-  app.innerHTML = `
-    <div class="top">${LOGO}</div>
+  app.innerHTML = `<div class="screen">
+    ${topbar()}
     <div class="full">
-      <p class="label">Resultado</p>
-      <h1>${hits} de ${deck.length}</h1>
-      <p class="muted">${pct >= 90 ? "¡Lo dominas!" : pct >= 60 ? "Muy bien, sigue así." : "Repasa los fallos y vuelve a intentarlo."}</p>
+      <p class="label">${t("result")}</p>
+      <div class="bigscore" style="font-size:clamp(60px,16vw,110px)" dir="ltr"><span id="pc">${redraw ? pct : 0}</span>%</div>
+      <h2>${t("xOfY", { a: hits, b: deck.length })}</h2>
+      <p class="muted">${pct >= 90 ? t("master") : pct >= 60 ? t("good") : t("review")}</p>
       <div class="row" style="justify-content:center">
-        ${misses.length ? `<button class="btn" id="redo">Repasar mis ${misses.length} fallos</button>` : ""}
-        <button class="btn ghost" id="back">Elegir otros temas</button>
+        ${misses.length ? `<button class="btn" id="redo">${t("redo", { n: misses.length })}</button>` : ""}
+        <button class="btn ghost" id="back">${t("otherTopics")}</button>
       </div>
-    </div>`;
-  document.getElementById("redo")?.addEventListener("click", () => run(shuffle(misses.map(({ opts, ok, isVf, ...orig }) => orig))));
+    </div></div>`;
+  if (!redraw) { countUp(document.getElementById("pc"), pct, 1000); if (pct >= 60) { Sound.fanfare(); confetti(pct >= 90 ? 1.3 : 0.7); } }
+  document.getElementById("redo")?.addEventListener("click", () => run(shuffle(misses)));
   document.getElementById("back").addEventListener("click", pick);
 }
 
-start().catch(() => { app.innerHTML = `<div class="top">${LOGO}</div><h2>No se han podido cargar las preguntas.</h2><p class="muted">Recarga la página.</p>`; });
+start().catch(() => { app.innerHTML = `${topbar()}<h2>${t("loadFail")}</h2><p class="muted">${t("reload")}</p>`; });
 </script>
 </body>
 </html>
