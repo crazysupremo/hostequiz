@@ -316,7 +316,7 @@ function hostSnapshot(game, res) {
 }
 
 function playerSnapshot(game, p, res) {
-  send(res, "hello", { name: p.name, score: p.score, state: game.state });
+  send(res, "hello", { name: p.name, score: p.score, state: game.state, curso: game.curso });
   if (game.state === "lobby") send(res, "lobby", { name: p.name });
   if (game.state === "running") {
     if (p.done) send(res, "finished", finishedData(game, p));
@@ -643,6 +643,7 @@ function serveStatic(res, pathname) {
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   try {
+    if (req.method === "GET" && (url.pathname === "/eso" || url.pathname === "/eso/")) { res.writeHead(302, { Location: "/?curso=eso" }); return res.end(); }
     if (req.method === "GET" && url.pathname === "/health") return json(res, 200, { ok: true, partidas: games.size });
     if (req.method === "GET" && url.pathname === "/events") return openStream(req, res, url);
     if (req.method === "GET" && url.pathname === "/api/categorias") {

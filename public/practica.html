@@ -19,6 +19,9 @@ const DATA_URL = window.HQ_DATA_URL || withCurso("/api/preguntas");
 const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"] };
 let BANK = null, deck = [], pos = 0, hits = 0, misses = [], answeredNow = null, streak = 0;
 let view = "pick";
+const ESO = CURSO === "eso";
+let clock = null, qEnd = 0; // reloj de examen (solo ESO)
+const exitBtn = () => (ESO ? `<a class="backlink" href="/?curso=eso">← ${t("subjects")}</a>` : "");
 const chosen = new Set();
 const chosenLv = new Set(); // vacío = todos
 const lvOk = (p) => !chosenLv.size || !p.n || chosenLv.has(p.n);
@@ -44,6 +47,13 @@ const catOf = (id) => (id.startsWith("mi-") ? BANK.categorias[id] : catName(id, 
 async function start() {
   BANK = await (await fetch(DATA_URL)).json();
   // Mis quizzes (creados en este aparato) se añaden como temas extra
+  if (ESO) {
+    // En ESO se entra directamente desde la tarjeta de la materia
+    const m = new URLSearchParams(location.search).get("materia");
+    if (!m || (m !== "todas" && !BANK.categorias[m])) { location.replace("/?curso=eso"); return; }
+    Object.keys(BANK.categorias).filter((c) => m === "todas" || c === m).forEach((c) => chosen.add(c));
+    return run(shuffle(BANK.preguntas.filter((p) => chosen.has(p.c))).slice(0, m === "todas" ? 30 : 100));
+  }
   for (const q of store.get("hq-quizzes") || []) {
     BANK.categorias["mi-" + q.id] = "★ " + q.title;
     BANK.preguntas.push(...q.preguntas.map((p) => ({ ...p, c: "mi-" + q.id })));
@@ -103,8 +113,8 @@ function ask(redraw) {
   const item = deck[pos];
   const L = textOf(item);
   app.innerHTML = `<div class="screen">
-    ${topbar(soundBtn())}
-    <div class="qhead"><span class="pill" id="prog"></span><span class="pill">${esc(catOf(item.p.c))}${item.p.n ? " · " + lvTag(item.p.n) : ""}</span></div>
+    ${topbar(exitBtn() + soundBtn())}
+    <div class="qhead"><span class="pill" id="prog"></span><span class="pill">${esc(catOf(item.p.c))}${item.p.n ? " · " + lvTag(item.p.n) : ""}</span>${ESO ? `<span class="pill" id="clk" dir="ltr"></span>` : ""}</div>
     <div class="timebar"><i style="transform:scaleX(${(pos + (answeredNow !== null ? 1 : 0)) / deck.length})"></i></div>
     <p class="question" style="font-size:clamp(22px,5vw,36px)">${esc(L.q)}</p>
     ${pic(item.p)}
@@ -112,12 +122,24 @@ function ask(redraw) {
     <div id="fb" class="stack"></div></div>`;
   setProg();
   app.querySelectorAll("[data-i]").forEach((b) => b.addEventListener("click", () => answer(+b.dataset.i)));
-  if (redraw && answeredNow !== null) answer(answeredNow, true);
+  if (redraw && answeredNow !== null) return answer(answeredNow, true);
+  if (ESO) {
+    // Cada pregunta tiene el tiempo de su materia (Matemáticas 3 min)
+    if (!redraw || !qEnd) qEnd = Date.now() + (BANK.tiempos?.[item.p.c] || 60) * 1000;
+    clearInterval(clock);
+    const draw = () => {
+      const left = (qEnd - Date.now()) / 1000, el = document.getElementById("clk");
+      if (el) { el.textContent = "⏱ " + fmtClock(left); el.style.color = left <= 10 ? "var(--bad)" : ""; }
+      if (left <= 0) { clearInterval(clock); answer(-1); }
+    };
+    draw(); clock = setInterval(draw, 250);
+  }
 }
 
 function answer(i, redraw) {
   const item = deck[pos];
   const right = i === item.ok;
+  clearInterval(clock); qEnd = 0;
   if (!redraw) {
     answeredNow = i;
     if (right) { hits++; streak++; } else { misses.push(item.p); streak = 0; }
@@ -133,7 +155,7 @@ function answer(i, redraw) {
   });
   document.getElementById("fb").innerHTML = `
     <div class="result ${right ? "ok" : "bad"}" style="padding:16px">
-      <div class="big" style="font-size:30px">${right ? t("correct") : t("wrong")}</div>
+      <div class="big" style="font-size:30px">${right ? t("correct") : i < 0 ? t("timeUp") : t("wrong")}</div>
       ${right ? (streak > 1 ? `<p>🔥 ${t("streak", { n: streak })}</p>` : "") : `<p>${t("rightIs")} <b>${esc(L.a[item.ok])}</b></p>`}
     </div>
     <div class="row end"><button class="btn big" id="nx">${pos + 1 < deck.length ? t("next") : t("seeResult")}</button></div>`;
@@ -148,7 +170,7 @@ function done(redraw) {
   view = "done";
   const pct = Math.round((hits / deck.length) * 100);
   app.innerHTML = `<div class="screen">
-    ${topbar()}
+    ${topbar(exitBtn())}
     <div class="full">
       <p class="label">${t("result")}</p>
       <div class="bigscore" style="font-size:clamp(60px,16vw,110px)" dir="ltr"><span id="pc">${redraw ? pct : 0}</span>%</div>
@@ -161,7 +183,7 @@ function done(redraw) {
     </div></div>`;
   if (!redraw) { countUp(document.getElementById("pc"), pct, 1000); if (pct >= 60) { Sound.fanfare(); confetti(pct >= 90 ? 1.3 : 0.7); } }
   document.getElementById("redo")?.addEventListener("click", () => run(shuffle(misses)));
-  document.getElementById("back").addEventListener("click", pick);
+  document.getElementById("back").addEventListener("click", () => (ESO ? location.assign("/?curso=eso") : pick()));
 }
 
 start().catch(() => { app.innerHTML = `${topbar()}<h2>${t("loadFail")}</h2><p class="muted">${t("reload")}</p>`; });

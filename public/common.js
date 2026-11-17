@@ -6,6 +6,11 @@ const LANG_NAMES = { es: "Español", pt: "Português", en: "English" };
 const I18N = {
   es: {
     courseHost: "Hostelería", courseHostDesc: "Cafés, bebidas, sala y cocina", courseEso: "Graduado en ESO", courseEsoDesc: "Prueba libre para mayores de 18 · Castilla y León",
+    esoLabel: "Prueba libre · Castilla y León", esoH1: "Prepara el Graduado en ESO", esoIntro: "Elige una materia y practica con el tiempo del examen.",
+    esoPractice: "Practicar una materia", esoAll: "Examen mezclado", esoAllDesc: "30 preguntas al azar de todas las materias", nQ: "{n} preguntas", perQ: "{t} por pregunta",
+    esoClass: "¿Estás en clase?", esoClassDesc: "Escribe el PIN que ves en la pantalla del profesor.", esoTeacher: "¿Eres profesor?", esoTeacherDesc: "Crea una partida y tus alumnos entran con el móvil.", esoCreate: "Crear partida para la clase",
+    goEso: "Graduado en ESO", goEsoDesc: "Matemáticas, lengua, inglés, ciencias y sociales para la prueba libre", goHost: "Hostelería",
+    timeUp: "⏰ ¡Se acabó el tiempo!", leave: "Salir", subjects: "Materias", subjectsHint: "Cada materia tiene su tiempo por pregunta.", timeBySubject: "Según la materia (recomendado)",
     esoTagline: "Prepara el Graduado en ESO.", esoLead: "Matemáticas, ciencias, lengua, inglés y sociales, con preguntas basadas en las pruebas libres de Castilla y León. Cada uno a su ritmo.",
     timeAuto: "Automático según la materia", autoHint: "Matemáticas {m} · Ciencias {c} · Lengua y Sociales {l} · Inglés {i} por pregunta", minutes: "{n} min",
     esoNote: "Preguntas tipo test basadas en las pruebas libres de Castilla y León (2025-2026). La prueba real tiene preguntas abiertas.",
@@ -355,8 +360,10 @@ const store = {
 
 const CUP = '<svg class="cup" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 12h18v7a8 8 0 0 1-8 8h-2a8 8 0 0 1-8-8z" fill="#e39b45"/><path d="M23 14h2.5a3.5 3.5 0 0 1 0 7H23" fill="none" stroke="#e39b45" stroke-width="2.4"/><path class="steam" d="M11 3c-1.5 2 1.5 3 0 6M16 3c-1.5 2 1.5 3 0 6" fill="none" stroke="#f4e7d4" stroke-width="2" stroke-linecap="round"/></svg>';
 const LOGO = `<a class="logo" href="/" dir="ltr">${CUP}<span>Hoste<b>Quiz</b></span></a>`;
-// Cabecera estándar: logo + (extra) + idioma
-const topbar = (extra = "") => `<div class="top">${LOGO}<div class="row tools">${extra}${langBtn()}</div></div>`;
+const CAP = '<svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path d="M12 4 1.5 9 12 14l10.5-5z" fill="currentColor"/><path d="M6 11.5v4.2c0 1.5 2.7 3.3 6 3.3s6-1.8 6-3.3v-4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M21 9v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+const LOGO_ESO = `<a class="logo" href="/?curso=eso" dir="ltr">${CAP}<span>Prepara<b>ESO</b></span></a>`;
+// Cabecera estándar: logo + (extra) + idioma (en ESO todo va en español, como el examen)
+const topbar = (extra = "") => `<div class="top">${CURSO === "eso" ? LOGO_ESO : LOGO}<div class="row tools">${extra}${CURSO === "eso" ? "" : langBtn()}</div></div>`;
 
 // Imagen de la pregunta (si tiene)
 const pic = (d, size = "") => (d.img ? `<div class="qimg ${size}"><img src="${esc(d.img)}" alt=""></div>` : "");
@@ -379,8 +386,9 @@ function setRing(id, msLeft, totalMs) {
 }
 
 // ============ NOVEDADES (aviso pequeño en el pie) ============
-const APP_VERSION = "4";
+const APP_VERSION = "4.1";
 const CHANGELOG = [
+  { v: "4.1", date: "17/11/2026", es: ["ESO más claro: página propia (Prepara ESO), tarjetas grandes por materia y todo en español.", "Práctica del ESO con reloj: cada pregunta tiene el tiempo de su materia."], pt: ["ESO mais claro: página própria (Prepara ESO), cartões grandes por matéria e tudo em espanhol.", "Prática do ESO com relógio: cada pergunta tem o tempo da sua matéria."], en: ["Clearer ESO: its own page (Prepara ESO), big subject cards and everything in Spanish.", "ESO practice with a clock: each question gets its subject's time."] },
   { v: "4", date: "16/11/2026", es: ["Nueva sección: Graduado en ESO (Castilla y León) con 270 preguntas de matemáticas, ciencias, lengua, inglés y sociales.", "Cada materia tiene su tiempo por pregunta: Matemáticas 3 minutos."], pt: ["Nova secção: Graduado em ESO (Castilla y León) com 270 perguntas de matemática, ciências, língua, inglês e sociais.", "Cada matéria tem o seu tempo por pergunta: Matemática 3 minutos."], en: ["New section: ESO diploma (Castilla y León) with 270 questions in maths, science, Spanish, English and social studies.", "Each subject has its own time per question: Maths gets 3 minutes."] },
   { v: "3.1", date: "16/11/2026", es: ["Ahora puedes escribir el número de preguntas que quieras (de 1 a 100), por ejemplo 30 por alumno."], pt: ["Agora podes escrever o número de perguntas que quiseres (de 1 a 100), por exemplo 30 por aluno."], en: ["You can now type any number of questions (1 to 100), for example 30 per student."] },
   { v: "3", date: "16/11/2026", es: [
@@ -418,13 +426,26 @@ function openNews() {
 
 // ============ CURSO: Hostelería o Graduado en ESO ============
 const COURSES = ["hosteleria", "eso"];
-let CURSO = (() => {
-  const u = new URLSearchParams(location.search).get("curso");
-  if (COURSES.includes(u)) return u;
-  try { const s = localStorage.getItem("hq-curso"); if (COURSES.includes(s)) return s; } catch (e) {}
-  return "hosteleria";
-})();
-function setCurso(c) { if (!COURSES.includes(c)) return; CURSO = c; try { localStorage.setItem("hq-curso", c); } catch (e) {} }
+// El curso va siempre en el enlace (?curso=eso), así cada parte tiene su propia dirección
+let CURSO = COURSES.includes(new URLSearchParams(location.search).get("curso")) ? new URLSearchParams(location.search).get("curso") : "hosteleria";
+function applyCurso() {
+  const eso = CURSO === "eso";
+  document.documentElement.classList.toggle("eso", eso);
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", eso ? "#0e1422" : "#1b120d");
+  LANG = eso ? "es" : detectLang();
+  applyLang();
+  document.title = eso ? document.title.replace("HosteQuiz", "Prepara ESO") : document.title.replace("Prepara ESO", "HosteQuiz");
+}
+function setCurso(c) { if (COURSES.includes(c)) { CURSO = c; applyCurso(); } }
+applyCurso();
+// Materias del ESO: símbolo y color de cada una
+const SUBJ = {
+  matematicas: { s: "x²", c: "var(--c0)" },
+  ciencias: { s: "H₂O", c: "var(--c3)" },
+  lengua: { s: "Ñ", c: "var(--c2)" },
+  ingles: { s: "EN", c: "var(--c1)" },
+  social: { s: "🌍", c: "#8a5cd6" },
+};
 const withCurso = (path) => `${path}?curso=${CURSO}`;
 // Tiempo legible: 45 s, 1:30, 3 min
 function fmtTime(sec) {

@@ -31,7 +31,7 @@ const startQuiz = new URLSearchParams(location.search).get("quiz");
 onLangChange = () => current && current.fn(current.d, true);
 
 const act = (action, extra) => api("/api/host/action", { pin: game.pin, key: game.key, action, ...extra }).catch((e) => console.warn(e.message));
-const header = (withEnd = true) => topbar(`${soundBtn()}${withEnd ? `<button class="btn ghost small" id="end">${t("endGame")}</button>` : ""}`);
+const header = (withEnd = true, back = false) => topbar(`${back && ESO ? `<a class="backlink" href="/?curso=eso">← ${t("subjects")}</a>` : ""}${soundBtn()}${withEnd ? `<button class="btn ghost small" id="end">${t("endGame")}</button>` : ""}`);
 function wireEnd() {
   const b = document.getElementById("end");
   if (!b) return;
@@ -65,11 +65,12 @@ async function setup(err = "") {
   current = { fn: (d) => setup(d.err), d: { err } };
   if (opts.n === null) opts.n = chosenMine.size ? 100 : 10;
   render(`
-    ${header(false)}
-    <h1>${t("newGame")} <span class="coursetag">${t(ESO ? "courseEso" : "courseHost")}</span></h1>
+    ${header(false, true)}
+    <h1>${t("newGame")}</h1>
     <div class="card">
-      <div class="row" style="justify-content:space-between"><h3>${t("topics")}</h3><button class="btn ghost small" id="all">${t("allNone")}</button></div>
-      <div class="chips">${cats.map((c) => `<button class="chip" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}">${esc(catName(c.id, c.nombre))} <span class="n">${c.total}</span></button>`).join("")}</div>
+      <div class="row" style="justify-content:space-between"><h3>${ESO ? t("subjects") : t("topics")}</h3><button class="btn ghost small" id="all">${t("allNone")}</button></div>
+      ${ESO ? `<p class="muted small" style="margin:-4px 0 10px">${t("subjectsHint")}</p><div class="subjects">${cats.map((c) => `<button type="button" class="subj" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}"><span class="badge" style="background:${SUBJ[c.id]?.c}">${SUBJ[c.id]?.s}</span><span><b>${esc(catName(c.id, c.nombre))}</b><small>${t("nQ", { n: c.total })}</small><span class="clock">⏱ ${t("perQ", { t: fmtTime(c.tiempo || 60) })}</span></span></button>`).join("")}</div>`
+      : `<div class="chips">${cats.map((c) => `<button class="chip" data-c="${c.id}" aria-pressed="${chosen.has(c.id)}">${esc(catName(c.id, c.nombre))} <span class="n">${c.total}</span></button>`).join("")}</div>`}
     </div>
     ${ESO ? "" : mine.length ? `<div class="card">
       <div class="row" style="justify-content:space-between"><h3>${t("myQuizzes")}</h3><a class="btn ghost small" href="/crear.html">${t("createOther")}</a></div>
@@ -95,8 +96,7 @@ async function setup(err = "") {
       </div>
       <div class="card" style="flex:1;min-width:220px">
         <label class="label" for="t">${t("timePerQ")}</label>
-        <select id="t">${ESO ? `<option value="auto" ${opts.t === "auto" ? "selected" : ""}>${t("timeAuto")}</option>` : ""}${(ESO ? [60, 120, 180, 300] : [10, 20, 30, 60]).map((n) => `<option value="${n}" ${n === opts.t ? "selected" : ""}>${fmtTime(n)}</option>`).join("")}</select>
-        ${ESO && opts.t === "auto" ? `<p class="muted small" style="margin:8px 0 0">${autoHint()}</p>` : ""}
+        <select id="t">${ESO ? `<option value="auto" ${opts.t === "auto" ? "selected" : ""}>${t("timeBySubject")}</option>` : ""}${(ESO ? [60, 120, 180, 300] : [10, 20, 30, 60]).map((n) => `<option value="${n}" ${n === opts.t ? "selected" : ""}>${fmtTime(n)}</option>`).join("")}</select>
       </div>
     </div>
     <p class="muted small" id="avail"></p>
@@ -116,7 +116,7 @@ async function setup(err = "") {
   nInput.addEventListener("change", () => setN(nInput.value));
   app.querySelectorAll("[data-step]").forEach((b) => b.addEventListener("click", () => setN(opts.n + +b.dataset.step)));
   app.querySelectorAll("[data-n]").forEach((b) => b.addEventListener("click", () => setN(+b.dataset.n)));
-  document.getElementById("t").addEventListener("change", (e) => { opts.t = e.target.value === "auto" ? "auto" : +e.target.value; if (ESO) setup(err); });
+  document.getElementById("t").addEventListener("change", (e) => { opts.t = e.target.value === "auto" ? "auto" : +e.target.value; });
   const drawLv = () => {
     document.getElementById("lv").innerHTML =
       `<button class="chip" data-lv="0" aria-pressed="${!chosenLv.size}">${t("all")}</button>` +

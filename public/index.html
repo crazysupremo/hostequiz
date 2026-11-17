@@ -33,44 +33,87 @@ const ICON_CAP = '<svg viewBox="0 0 24 24"><path d="M12 4 1.5 9 12 14l10.5-5z" f
 const ICON_SPARK = '<svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2z" fill="currentColor"/></svg>';
 
 // ---------- pantalla de inicio ----------
-function home(err = "", pinPrefill = "") {
-  closeStream();
-  current = { fn: (d) => home(d.err, d.pin), d: { err, pin: pinPrefill } };
-  const pin = pinPrefill || params.get("pin") || "";
+// Formulario para entrar con PIN (igual en las dos secciones)
+function joinForm(err, pin, keep, title = t("joinTitle"), desc = "") {
   const name = store.get("hq-name") || "";
-  const keep = { pin: document.getElementById("pin")?.value, nm: document.getElementById("nm")?.value };
-  app.innerHTML = `<div class="screen">
-    ${topbar()}
-    <div class="courses" role="group">
-      <button type="button" class="course" data-curso="hosteleria" aria-pressed="${CURSO === "hosteleria"}"><span class="ico" style="background:var(--caramel);color:#2a1407">${ICON_CUP2}</span><span><b>${t("courseHost")}</b><small>${t("courseHostDesc")}</small></span></button>
-      <button type="button" class="course" data-curso="eso" aria-pressed="${CURSO === "eso"}"><span class="ico" style="background:var(--c1);color:#fff">${ICON_CAP}</span><span><b>${t("courseEso")}</b><small>${t("courseEsoDesc")}</small></span></button>
-    </div>
-    <div class="home-hero">
-      <div class="stack" style="gap:18px">
-        <div class="shapes">${SHAPES.map((s, i) => `<span style="color:var(--c${i})">${s}</span>`).join("")}</div>
-        <h1>${CURSO === "eso" ? t("esoTagline") : t("tagline")}</h1>
-        <p class="lead">${CURSO === "eso" ? t("esoLead") : t("lead")}</p>
-        <div class="modes">
-          <a class="mode" href="${withCurso("/host.html")}"><span class="ico" style="background:var(--c1)">${ICON_GAME}</span>${t("createGame")}</a>
-          <a class="mode" href="${withCurso("/practica.html")}"><span class="ico" style="background:var(--c3)">${ICON_BOOK}</span>${t("practice")}</a>
-          ${CURSO === "eso" ? "" : `<a class="mode" href="/crear.html"><span class="ico" style="background:var(--c2);color:#2a1a00">${ICON_SPARK}</span>${t("createAI")}</a>`}
-        </div>
-        ${CURSO === "eso" ? `<p class="muted small">${t("esoNote")}</p>` : ""}
-      </div>
-      <form class="card" id="join" autocomplete="off">
-        <h3>${t("joinTitle")}</h3>
+  return `<form class="card" id="join" autocomplete="off">
+        <h3>${title}</h3>${desc ? `<p class="muted small" style="margin:-4px 0 6px">${desc}</p>` : ""}
         <label class="label" for="pin">${t("pinLabel")}</label>
         <input class="pin" id="pin" inputmode="numeric" maxlength="6" placeholder="000000" value="${esc(keep.pin ?? pin)}">
         <label class="label" for="nm">${t("nameLabel")}</label>
         <input id="nm" maxlength="16" placeholder="${esc(t("namePh"))}" value="${esc(keep.nm ?? name)}" autocomplete="nickname">
         <p class="error" id="err">${esc(err ? t(err) : "")}</p>
         <button class="btn big" type="submit">${t("enter")}</button>
-      </form>
+      </form>`;
+}
+
+let ESO_CATS = null;
+async function homeEso(err = "", pinPrefill = "") {
+  closeStream();
+  current = { fn: (d) => homeEso(d.err, d.pin), d: { err, pin: pinPrefill } };
+  const pin = pinPrefill || params.get("pin") || "";
+  const keep = { pin: document.getElementById("pin")?.value, nm: document.getElementById("nm")?.value };
+  if (!ESO_CATS) { try { ESO_CATS = await (await fetch("/api/categorias?curso=eso")).json(); } catch (e) { ESO_CATS = []; } }
+  const total = ESO_CATS.reduce((s, c) => s + c.total, 0);
+  const card = (c) => `<a class="subj" href="/practica.html?curso=eso&materia=${c.id}">
+      <span class="badge" style="background:${SUBJ[c.id]?.c || "var(--c1)"}">${SUBJ[c.id]?.s || "?"}</span>
+      <span><b>${esc(catName(c.id, c.nombre))}</b><small>${t("nQ", { n: c.total })}</small><span class="clock">⏱ ${t("perQ", { t: fmtTime(c.tiempo || 60) })}</span></span></a>`;
+  const join = joinForm(err, pin, keep, t("esoClass"), t("esoClassDesc"));
+  app.innerHTML = `<div class="screen">
+    ${topbar(`<a class="backlink" href="/">☕ ${t("goHost")}</a>`)}
+    ${pin ? join : ""}
+    <div class="eso-head">
+      <p class="label">${t("esoLabel")}</p>
+      <h1>${t("esoH1")}</h1>
+      <p class="lead">${t("esoIntro")}</p>
     </div>
+    <h2 class="sec-title">${t("esoPractice")}</h2>
+    <div class="subjects">
+      ${ESO_CATS.map(card).join("")}
+      <a class="subj all" href="/practica.html?curso=eso&materia=todas"><span class="badge">∑</span><span><b>${t("esoAll")}</b><small>${t("esoAllDesc")}</small><span class="clock">⏱ ${t("timeBySubject").split(" (")[0]}</span></span></a>
+    </div>
+    <div class="eso-row">
+      ${pin ? "" : join}
+      <div class="card">
+        <h3>${t("esoTeacher")}</h3>
+        <p class="muted">${t("esoTeacherDesc")}</p>
+        <a class="btn" href="/host.html?curso=eso">${t("esoCreate")}</a>
+      </div>
+    </div>
+    <p class="muted small">${t("esoNote")}</p>
+    ${newsLink()}</div>`;
+  wireJoin(pin, keep);
+}
+
+function home(err = "", pinPrefill = "") {
+  if (CURSO === "eso") return homeEso(err, pinPrefill);
+  closeStream();
+  current = { fn: (d) => home(d.err, d.pin), d: { err, pin: pinPrefill } };
+  const pin = pinPrefill || params.get("pin") || "";
+  const keep = { pin: document.getElementById("pin")?.value, nm: document.getElementById("nm")?.value };
+  app.innerHTML = `<div class="screen">
+    ${topbar()}
+    <div class="home-hero">
+      <div class="stack" style="gap:18px">
+        <div class="shapes">${SHAPES.map((s, i) => `<span style="color:var(--c${i})">${s}</span>`).join("")}</div>
+        <h1>${t("tagline")}</h1>
+        <p class="lead">${t("lead")}</p>
+        <div class="modes">
+          <a class="mode" href="/host.html"><span class="ico" style="background:var(--c1)">${ICON_GAME}</span>${t("createGame")}</a>
+          <a class="mode" href="/practica.html"><span class="ico" style="background:var(--c3)">${ICON_BOOK}</span>${t("practice")}</a>
+          <a class="mode" href="/crear.html"><span class="ico" style="background:var(--c2);color:#2a1a00">${ICON_SPARK}</span>${t("createAI")}</a>
+        </div>
+      </div>
+      ${joinForm(err, pin, keep)}
+    </div>
+    <a class="gocard" href="/?curso=eso"><span class="badge">${ICON_CAP}</span><span><b>${t("goEso")}</b><small>${t("goEsoDesc")}</small></span><span class="arrow">›</span></a>
     <p class="foot">${t("foot")}</p>${newsLink()}</div>`;
-  app.querySelectorAll("[data-curso]").forEach((b) => b.addEventListener("click", () => { setCurso(b.dataset.curso); home(err, pinPrefill); }));
+  wireJoin(pin, keep);
+}
+
+function wireJoin(pin, keep) {
   const f = document.getElementById("join");
-  if (!keep.pin) (pin ? document.getElementById("nm") : document.getElementById("pin")).focus();
+  if (!keep.pin && (pin || CURSO !== "eso")) (pin ? document.getElementById("nm") : document.getElementById("pin")).focus();
   f.addEventListener("submit", async (e) => {
     e.preventDefault();
     Sound.unlock();
@@ -100,7 +143,7 @@ function connect() {
   closeStream();
   screen(`<div class="full"><h2 class="waitdots">${t("connecting")}</h2></div>`);
   es = stream({ pin: me.pin, role: "player", id: me.id }, {
-    hello: (d) => { lastScore = d.score || 0; },
+    hello: (d) => { lastScore = d.score || 0; if (d.curso && d.curso !== CURSO) setCurso(d.curso); },
     lobby: () => show(showLobby, {}),
     question: (d) => show(showQuestion, d),
     result: (d) => show(showResult, d),
@@ -134,7 +177,7 @@ function showLobby() {
       <p class="label">${t("inGame")}</p>
       <h1>${esc(me.name)}</h1>
       <p class="muted">${t("findName")}</p>
-      <p class="muted small" style="margin-top:12px">${t("langHint")}</p>
+      ${CURSO === "eso" ? "" : `<p class="muted small" style="margin-top:12px">${t("langHint")}</p>`}
     </div>`);
 }
 function showWait() { screen(`<div class="full"><h2>${t("lookScreen")}</h2><div class="bigscore">${lastScore}</div><p class="muted">${t("points")}</p></div>`); }
