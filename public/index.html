@@ -55,7 +55,7 @@ async function homeEso(err = "", pinPrefill = "") {
   const keep = { pin: document.getElementById("pin")?.value, nm: document.getElementById("nm")?.value };
   if (!ESO_CATS) { try { ESO_CATS = await (await fetch("/api/categorias?curso=eso")).json(); } catch (e) { ESO_CATS = []; } }
   const total = ESO_CATS.reduce((s, c) => s + c.total, 0);
-  const card = (c) => `<a class="subj" href="/practica.html?curso=eso&materia=${c.id}">
+  const card = (c) => `<a class="subj" href="/estudiar.html?curso=eso&materia=${c.id}">
       <span class="badge" style="background:${SUBJ[c.id]?.c || "var(--c1)"}">${SUBJ[c.id]?.s || "?"}</span>
       <span><b>${esc(catName(c.id, c.nombre))}</b><small>${t("nQ", { n: c.total })}</small><span class="clock">⏱ ${t("perQ", { t: fmtTime(c.tiempo || 60) })}</span></span></a>`;
   const join = joinForm(err, pin, keep, t("esoClass"), t("esoClassDesc"));
@@ -70,7 +70,7 @@ async function homeEso(err = "", pinPrefill = "") {
     <h2 class="sec-title">${t("esoPractice")}</h2>
     <div class="subjects">
       ${ESO_CATS.map(card).join("")}
-      <a class="subj all" href="/practica.html?curso=eso&materia=todas"><span class="badge">∑</span><span><b>${t("esoAll")}</b><small>${t("esoAllDesc")}</small><span class="clock">⏱ ${t("timeBySubject").split(" (")[0]}</span></span></a>
+      <a class="subj all" href="/estudiar.html?curso=eso&materia=todas"><span class="badge">∑</span><span><b>${t("esoAll")}</b><small>${t("esoAllDesc")}</small><span class="clock">⏱ ${t("timeBySubject").split(" (")[0]}</span></span></a>
     </div>
     <div class="eso-row">
       ${pin ? "" : join}

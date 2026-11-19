@@ -1,907 +1,1285 @@
 {
  "curso": "eso",
  "categorias": {
+  "lengua": "Lengua castellana",
   "matematicas": "Matemáticas",
-  "ciencias": "Ciencias y Tecnología",
-  "lengua": "Lengua castellana y literatura",
-  "ingles": "Inglés",
-  "social": "Ámbito social"
+  "digital": "Competencia digital"
+ },
+ "dominios": {
+  "CE": "Comprensión escrita",
+  "CO": "Comprensión oral",
+  "EO": "Expresión oral",
+  "EE": "Expresión escrita",
+  "NC": "Números y cálculo",
+  "FM": "Formas y medidas",
+  "GE": "Gráficos y estadística",
+  "IAD": "Información y alfabetización digital",
+  "CC": "Comunicación y colaboración",
+  "CCD": "Creación de contenidos",
+  "SEG": "Seguridad",
+  "PRO": "Resolución de problemas"
+ },
+ "competencias": {
+  "EO.3.1": "Expresar ideas de forma ordenada y clara",
+  "EO.3.2": "Mensajes orales: ideas principales y secundarias",
+  "EO.3.3": "Hablar con claridad según el contexto",
+  "EO.3.4": "Resumir oralmente un texto",
+  "EO.3.5": "Interactuar oralmente de forma adecuada",
+  "CO.3.1": "Comprender mensajes orales y su intención",
+  "CO.3.2": "Interpretar los medios de comunicación",
+  "CO.3.3": "Interpretar instrucciones y opiniones orales",
+  "CO.3.4": "Escuchar de forma crítica",
+  "EE.3.1": "Ortografía y gramática",
+  "EE.3.2": "Resumir información de varias fuentes",
+  "EE.3.3": "Escribir según la situación (correo, CV, solicitud)",
+  "EE.3.4": "Tipos de texto y estructura",
+  "EE.3.5": "Escribir en papel o en digital",
+  "CE.3.1": "Tema principal y secundarios",
+  "CE.3.2": "Publicidad, opinión y noticias",
+  "CE.3.3": "Comprender e interpretar textos",
+  "CE.3.4": "Sacar conclusiones de textos de actualidad",
+  "CE.3.5": "Hechos, opiniones y argumentos",
+  "NC.3.1": "Números y operaciones en la vida diaria",
+  "NC.3.2": "Enteros, fracciones, decimales y calculadora",
+  "NC.3.3": "Ecuaciones de primer grado",
+  "NC.3.4": "Proporcionalidad (regla de tres)",
+  "NC.3.5": "Porcentajes",
+  "FM.3.1": "Problemas geométricos",
+  "FM.3.2": "Longitud, masa, tiempo, superficie y volumen",
+  "FM.3.3": "Magnitudes, instrumentos y unidades",
+  "GE.3.1": "Tablas y medidas estadísticas",
+  "GE.3.2": "Gráficos estadísticos",
+  "GE.3.3": "Probabilidad",
+  "IAD.3.1": "Buscar información en internet",
+  "IAD.3.2": "Comparar herramientas y dispositivos",
+  "IAD.3.3": "Organizar y publicar información",
+  "CC.3.1": "Compartir información y archivos",
+  "CC.3.2": "Trámites y participación digital",
+  "CC.3.3": "Compartir información laboral o personal",
+  "CC.3.4": "Videoconferencias y netiqueta",
+  "CCD.3.1": "Crear contenido digital",
+  "CCD.3.2": "Editar y adaptar contenidos",
+  "CCD.3.3": "Derechos de autor y licencias",
+  "SEG.3.1": "Comprobar la fiabilidad de la información",
+  "SEG.3.2": "Ciberdelitos y cómo prevenirlos",
+  "SEG.3.3": "Contraseñas y acceso seguro",
+  "SEG.3.4": "Salud y uso de dispositivos",
+  "SEG.3.5": "Uso responsable y reciclaje",
+  "PRO.3.1": "Resolver problemas técnicos",
+  "PRO.3.2": "Obsolescencia programada",
+  "PRO.3.3": "Elegir soluciones tecnológicas",
+  "PRO.3.4": "Publicidad y elección de productos"
  },
  "tiempos": {
+  "lengua": 120,
   "matematicas": 180,
-  "ciencias": 90,
-  "lengua": 60,
-  "ingles": 45,
-  "social": 60
+  "digital": 60
  },
  "niveles": {
   "1": "Fácil",
   "2": "Medio",
   "3": "Difícil"
  },
- "nota": "Preguntas basadas en las pruebas libres de Graduado en ESO para mayores de 18 años de la Junta de Castilla y León (2025-2026). La PRIMERA respuesta es la correcta.",
+ "nota": "Preguntas tipo test según los contenidos de la prueba de acceso a ciclos de Grado Medio de Castilla y León (competencias básicas nivel 3, BOCYL 3-3-2026). La PRIMERA respuesta es la correcta.",
  "preguntas": [
   {
-   "id": "e001",
+   "id": "g001",
    "c": "matematicas",
-   "q": "Dados A(x) = 4x² − 5x + 1 y B(x) = −3x² + 2x + 5, ¿cuánto es A(x) + B(x)?",
-   "n": 2,
-   "a": [
-    "x² − 3x + 6",
-    "7x² − 7x − 4",
-    "x² − 7x + 6",
-    "x² − 3x − 4"
-   ]
-  },
-  {
-   "id": "e002",
-   "c": "matematicas",
-   "q": "Dados A(x) = 4x² − 5x + 1 y B(x) = −3x² + 2x + 5, ¿cuánto es A(x) − B(x)?",
-   "n": 2,
-   "a": [
-    "7x² − 7x − 4",
-    "x² − 3x + 6",
-    "7x² − 3x − 4",
-    "7x² − 7x + 6"
-   ]
-  },
-  {
-   "id": "e003",
-   "c": "matematicas",
-   "q": "Si el volumen total es V(x) = x² − 3x + 6, ¿cuánto vale V(4)?",
-   "n": 2,
-   "a": [
-    "10",
-    "34",
-    "6",
-    "16"
-   ]
-  },
-  {
-   "id": "e004",
-   "c": "matematicas",
-   "q": "¿Cuánto es (4x² − 5x + 1) · (x + 3)?",
-   "n": 3,
-   "a": [
-    "4x³ + 7x² − 14x + 3",
-    "4x³ − 5x² + x + 3",
-    "4x³ + 7x² + 14x + 3",
-    "4x² + 7x − 14"
-   ]
-  },
-  {
-   "id": "e005",
-   "c": "matematicas",
-   "q": "¿Cuánto es (x + 3) · (x − 2)?",
-   "n": 2,
-   "a": [
-    "x² + x − 6",
-    "x² − x − 6",
-    "x² + 5x − 6",
-    "x² + x + 6"
-   ]
-  },
-  {
-   "id": "e006",
-   "c": "matematicas",
-   "q": "¿Cuánto es 2x · (3x − 4)?",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Un café cuesta 1,40 € y una tostada 2,10 €. ¿Cuánto pagas por 2 cafés y 1 tostada?",
    "n": 1,
+   "e": "2 cafés: 2 × 1,40 = 2,80 €. Más la tostada: 2,80 + 2,10 = 4,90 €. Ojo: el error típico es sumar solo un café (3,50 €).",
    "a": [
-    "6x² − 8x",
-    "5x² − 8x",
-    "6x² − 4",
-    "6x − 8x"
+    "4,90 €",
+    "3,50 €",
+    "5,60 €",
+    "4,20 €"
    ]
   },
   {
-   "id": "e007",
+   "id": "g002",
    "c": "matematicas",
-   "q": "Si P(x) = x³ − 2x + 1, ¿cuánto vale P(−2)?",
-   "n": 2,
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Pagas una cuenta de 13,65 € con un billete de 20 €. ¿Cuánto te devuelven?",
+   "n": 1,
+   "e": "Se resta: 20,00 − 13,65 = 6,35 €. Truco: de 13,65 a 14 son 0,35 y de 14 a 20 son 6 → 6,35 €.",
    "a": [
-    "−3",
-    "5",
-    "−11",
+    "6,35 €",
+    "7,35 €",
+    "6,45 €",
+    "7,65 €"
+   ]
+  },
+  {
+   "id": "g003",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "¿Qué número es mayor?",
+   "n": 1,
+   "e": "Compara las décimas: 0,7 tiene 7 décimas; 0,65 y 0,609 tienen 6; 0,069 tiene 0. Ayuda escribirlos con las mismas cifras: 0,700 > 0,650 > 0,609 > 0,069.",
+   "a": [
+    "0,7",
+    "0,65",
+    "0,069",
+    "0,609"
+   ]
+  },
+  {
+   "id": "g004",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Ordena de menor a mayor: −3, 2, −7, 0",
+   "n": 1,
+   "e": "En los negativos, cuanto más lejos del 0, más pequeño: −7 < −3. Después va el 0 y luego los positivos.",
+   "a": [
+    "−7, −3, 0, 2",
+    "−3, −7, 0, 2",
+    "0, −3, −7, 2",
+    "−7, 0, −3, 2"
+   ]
+  },
+  {
+   "id": "g005",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Por la mañana hay −4 °C y por la tarde 9 °C. ¿Cuántos grados ha subido la temperatura?",
+   "n": 1,
+   "e": "De −4 a 0 sube 4 grados y de 0 a 9 sube 9: 4 + 9 = 13 °C. Es 9 − (−4) = 9 + 4 = 13.",
+   "a": [
+    "13 °C",
+    "5 °C",
+    "−13 °C",
+    "9 °C"
+   ]
+  },
+  {
+   "id": "g006",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Una cámara frigorífica está a −18 °C y, por una avería, sube 5 °C. ¿A qué temperatura está ahora?",
+   "n": 2,
+   "e": "Subir es sumar: −18 + 5 = −13 °C. Sigue bajo cero porque 18 es mayor que 5.",
+   "a": [
+    "−13 °C",
+    "−23 °C",
+    "13 °C",
+    "−5 °C"
+   ]
+  },
+  {
+   "id": "g007",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Un trabajador cobra 9,50 € por hora. ¿Cuánto gana en una semana de 38 horas?",
+   "n": 2,
+   "e": "9,50 × 38 = 361 €. Truco: 10 × 38 = 380 y le quitas 0,50 × 38 = 19 → 380 − 19 = 361 €.",
+   "a": [
+    "361 €",
+    "342 €",
+    "380 €",
+    "351 €"
+   ]
+  },
+  {
+   "id": "g008",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Un restaurante compra 24 botellas de aceite a 4,85 € cada una. ¿Cuánto paga?",
+   "n": 3,
+   "e": "4,85 × 24 = 116,40 €. Truco: 5 × 24 = 120 y le restas 0,15 × 24 = 3,60 → 116,40 €.",
+   "a": [
+    "116,40 €",
+    "106,40 €",
+    "118,40 €",
+    "96,40 €"
+   ]
+  },
+  {
+   "id": "g009",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Cuatro amigos pagan una cena de 86 € a partes iguales. ¿Cuánto paga cada uno?",
+   "n": 2,
+   "e": "86 : 4 = 21,50 €. Comprueba: 21,50 × 4 = 86 €.",
+   "a": [
+    "21,50 €",
+    "22 €",
+    "21 €",
+    "20,50 €"
+   ]
+  },
+  {
+   "id": "g010",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Cuatro camareros se reparten a partes iguales 57,60 € de propinas. ¿Cuánto le toca a cada uno?",
+   "n": 3,
+   "e": "57,60 : 4 = 14,40 €. Si te sale 19,20 €, has dividido entre 3 en vez de entre 4.",
+   "a": [
+    "14,40 €",
+    "19,20 €",
+    "14 €",
+    "15,40 €"
+   ]
+  },
+  {
+   "id": "g011",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Escribe con cifras: «dos millones treinta mil cinco».",
+   "n": 2,
+   "e": "Separa por grupos: dos millones (2.), treinta mil (030.), cinco (005) → 2.030.005.",
+   "a": [
+    "2.030.005",
+    "2.300.005",
+    "2.030.500",
+    "230.005"
+   ]
+  },
+  {
+   "id": "g012",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "¿Cuál es el mínimo común múltiplo de 4 y 6?",
+   "n": 2,
+   "e": "Múltiplos de 4: 4, 8, 12… Múltiplos de 6: 6, 12… El primero que coincide es 12. (24 también es común, pero no el mínimo.)",
+   "a": [
+    "12",
+    "24",
+    "2",
+    "10"
+   ]
+  },
+  {
+   "id": "g013",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Un autobús sale cada 15 minutos y otro cada 20. Si salen juntos a las 9:00, ¿cuándo vuelven a coincidir?",
+   "n": 2,
+   "e": "Es el m.c.m. de 15 y 20 = 60 minutos. 9:00 + 60 min = 10:00.",
+   "a": [
+    "A las 10:00",
+    "A las 9:35",
+    "A las 9:20",
+    "A las 11:00"
+   ]
+  },
+  {
+   "id": "g014",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "¿Cuál es el máximo común divisor de 24 y 36?",
+   "n": 2,
+   "e": "Divisores de 24: 1, 2, 3, 4, 6, 8, 12, 24. De 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. El mayor común es 12.",
+   "a": [
+    "12",
+    "6",
+    "72",
+    "4"
+   ]
+  },
+  {
+   "id": "g015",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.1",
+   "q": "Tienes 24 croquetas y 36 empanadillas. Quieres hacer bandejas iguales, el mayor número posible, sin que sobre nada. ¿Cuántas bandejas haces?",
+   "n": 3,
+   "e": "«Repartir en grupos iguales lo más grandes/numerosos posible» = m.c.d. El m.c.d. de 24 y 36 es 12 bandejas (2 croquetas y 3 empanadillas en cada una).",
+   "a": [
+    "12",
+    "6",
+    "4",
+    "60"
+   ]
+  },
+  {
+   "id": "g016",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto son los 3/4 de 200 €?",
+   "n": 1,
+   "e": "Divide entre el denominador y multiplica por el numerador: 200 : 4 = 50; 50 × 3 = 150 €.",
+   "a": [
+    "150 €",
+    "75 €",
+    "50 €",
+    "600 €"
+   ]
+  },
+  {
+   "id": "g017",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "De una tarta de 12 porciones se han vendido 3/4. ¿Cuántas porciones quedan?",
+   "n": 2,
+   "e": "Vendidas: 12 : 4 × 3 = 9. Quedan 12 − 9 = 3. ¡Cuidado! La pregunta es lo que queda, no lo vendido.",
+   "a": [
+    "3",
+    "9",
+    "4",
+    "8"
+   ]
+  },
+  {
+   "id": "g018",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Qué fracción equivale a 0,25?",
+   "n": 2,
+   "e": "0,25 = 25/100. Simplificando entre 25: 1/4. Comprueba: 1 : 4 = 0,25.",
+   "a": [
+    "1/4",
+    "2/5",
+    "1/25",
+    "25/10"
+   ]
+  },
+  {
+   "id": "g019",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es 1/2 + 1/3?",
+   "n": 2,
+   "e": "Hay que poner el mismo denominador: 1/2 = 3/6 y 1/3 = 2/6. 3/6 + 2/6 = 5/6. Error típico: sumar arriba y abajo (2/5).",
+   "a": [
+    "5/6",
+    "2/5",
+    "1/6",
+    "2/6"
+   ]
+  },
+  {
+   "id": "g020",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuál de estas fracciones es la mayor?",
+   "n": 2,
+   "e": "Pásalas a decimal: 3/4 = 0,75; 2/3 ≈ 0,67; 5/8 = 0,625; 7/12 ≈ 0,58. La mayor es 3/4.",
+   "a": [
+    "3/4",
+    "2/3",
+    "5/8",
+    "7/12"
+   ]
+  },
+  {
+   "id": "g021",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es 0,5 × 0,4?",
+   "n": 1,
+   "e": "5 × 4 = 20 y hay dos cifras decimales en total → 0,20 = 0,2. (0,9 sería sumar.)",
+   "a": [
+    "0,2",
+    "2",
+    "0,02",
+    "0,9"
+   ]
+  },
+  {
+   "id": "g022",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es 7,2 : 0,8?",
+   "n": 2,
+   "e": "Quita los decimales multiplicando los dos por 10: 72 : 8 = 9.",
+   "a": [
+    "9",
+    "0,9",
+    "90",
+    "6,4"
+   ]
+  },
+  {
+   "id": "g023",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "Redondea 3,476 a las centésimas.",
+   "n": 2,
+   "e": "Te quedas con dos decimales (3,47) y miras la siguiente cifra: 6 es 5 o más, así que sube: 3,48.",
+   "a": [
+    "3,48",
+    "3,47",
+    "3,5",
+    "3,4"
+   ]
+  },
+  {
+   "id": "g024",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es 15 − 4 · 3?",
+   "n": 1,
+   "e": "Primero se multiplica: 4 · 3 = 12. Después se resta: 15 − 12 = 3. Si haces primero la resta, te sale 33, que está mal.",
+   "a": [
+    "3",
+    "33",
+    "45",
+    "1"
+   ]
+  },
+  {
+   "id": "g025",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es (8 − 2) · 3 + 4 : 2?",
+   "n": 2,
+   "e": "Orden: paréntesis → multiplicaciones y divisiones → sumas. (6) · 3 = 18; 4 : 2 = 2; 18 + 2 = 20.",
+   "a": [
+    "20",
+    "11",
+    "24",
     "13"
    ]
   },
   {
-   "id": "e008",
+   "id": "g026",
    "c": "matematicas",
-   "q": "¿Qué grado tiene el polinomio 5x⁴ − 3x² + 7?",
-   "n": 1,
-   "a": [
-    "4",
-    "2",
-    "5",
-    "7"
-   ]
-  },
-  {
-   "id": "e009",
-   "c": "matematicas",
-   "q": "¿Cuál es el desarrollo de (x + 5)²?",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es −6 · (−4) − 10?",
    "n": 2,
+   "e": "Menos por menos es más: −6 · (−4) = +24. Después 24 − 10 = 14.",
    "a": [
-    "x² + 10x + 25",
-    "x² + 25",
-    "x² + 5x + 25",
-    "x² + 10x + 10"
+    "14",
+    "−34",
+    "34",
+    "−14"
    ]
   },
   {
-   "id": "e010",
+   "id": "g027",
    "c": "matematicas",
-   "q": "¿Cuál es el desarrollo de (x − 3)(x + 3)?",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es 2⁵?",
    "n": 2,
+   "e": "2⁵ = 2 · 2 · 2 · 2 · 2 = 32. No es 2 × 5 = 10.",
    "a": [
-    "x² − 9",
-    "x² + 9",
-    "x² − 6x − 9",
-    "x² − 3"
+    "32",
+    "10",
+    "25",
+    "64"
    ]
   },
   {
-   "id": "e011",
+   "id": "g028",
    "c": "matematicas",
-   "q": "¿Cuál es el desarrollo de (2x − 1)²?",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "¿Cuánto es √81 + 3²?",
+   "n": 2,
+   "e": "√81 = 9 (porque 9 · 9 = 81) y 3² = 9. 9 + 9 = 18.",
+   "a": [
+    "18",
+    "12",
+    "90",
+    "15"
+   ]
+  },
+  {
+   "id": "g029",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "Con la calculadora quieres saber el 21 % de 80 €. ¿Qué tecleas?",
+   "n": 2,
+   "e": "El 21 % es 21/100 = 0,21. Por eso 80 × 0,21 = 16,80 €. Revisa siempre si el resultado tiene sentido.",
+   "a": [
+    "80 × 0,21",
+    "80 + 21",
+    "80 : 21",
+    "80 × 21"
+   ]
+  },
+  {
+   "id": "g030",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "En la calculadora haces 45 : 0 y sale «Error». ¿Por qué?",
+   "n": 2,
+   "e": "Dividir entre cero no tiene sentido en matemáticas, y la calculadora te avisa con un error.",
+   "a": [
+    "Porque no se puede dividir entre 0",
+    "Porque se ha quedado sin pilas",
+    "Porque 45 es muy grande",
+    "Porque hay que pulsar dos veces"
+   ]
+  },
+  {
+   "id": "g031",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.2",
+   "q": "Calculas con la calculadora el precio de 3 menús de 12,50 € y te sale 375 €. ¿Qué ha pasado?",
    "n": 3,
+   "e": "Revisar el resultado: 3 menús de unos 12 € no pueden costar 375 €. Se olvidó la coma decimal.",
    "a": [
-    "4x² − 4x + 1",
-    "4x² + 1",
-    "4x² − 2x + 1",
-    "2x² − 4x + 1"
+    "Has olvidado la coma: 3 × 12,50 = 37,50 €",
+    "Es el precio correcto",
+    "Has sumado en vez de multiplicar",
+    "Los menús cuestan 125 €"
    ]
   },
   {
-   "id": "e012",
+   "id": "g032",
    "c": "matematicas",
-   "q": "Resuelve: 3x + 7 = 22",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Resuelve: x + 8 = 15",
    "n": 1,
+   "e": "El 8 está sumando, pasa al otro lado restando: x = 15 − 8 = 7. Comprueba: 7 + 8 = 15.",
    "a": [
-    "x = 5",
-    "x = 29/3",
-    "x = 15",
-    "x = 3"
-   ]
-  },
-  {
-   "id": "e013",
-   "c": "matematicas",
-   "q": "Resuelve: 2(x − 4) = x + 6",
-   "n": 2,
-   "a": [
-    "x = 14",
-    "x = 2",
-    "x = 10",
-    "x = −2"
-   ]
-  },
-  {
-   "id": "e014",
-   "c": "matematicas",
-   "q": "Resuelve: x/3 + 2 = 6",
-   "n": 2,
-   "a": [
-    "x = 12",
-    "x = 24",
-    "x = 4/3",
-    "x = 2"
-   ]
-  },
-  {
-   "id": "e015",
-   "c": "matematicas",
-   "q": "Resuelve: (x + 1)/2 − (x − 2)/3 = 2",
-   "n": 3,
-   "a": [
-    "x = 5",
     "x = 7",
-    "x = 1",
+    "x = 23",
+    "x = 8",
+    "x = −7"
+   ]
+  },
+  {
+   "id": "g033",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Resuelve: 4x = 36",
+   "n": 1,
+   "e": "El 4 está multiplicando, pasa dividiendo: x = 36 : 4 = 9.",
+   "a": [
+    "x = 9",
+    "x = 32",
+    "x = 40",
+    "x = 144"
+   ]
+  },
+  {
+   "id": "g034",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Resuelve: 3x − 5 = 16",
+   "n": 2,
+   "e": "Pasa el 5 sumando: 3x = 21. Luego divide: x = 21 : 3 = 7. Comprueba: 3 · 7 − 5 = 16.",
+   "a": [
+    "x = 7",
+    "x = 11/3",
+    "x = 3",
+    "x = 21"
+   ]
+  },
+  {
+   "id": "g035",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Resuelve: 5x + 2 = 3x + 10",
+   "n": 2,
+   "e": "Las x a un lado y los números al otro: 5x − 3x = 10 − 2 → 2x = 8 → x = 4.",
+   "a": [
+    "x = 4",
+    "x = 6",
+    "x = 2",
+    "x = 1,5"
+   ]
+  },
+  {
+   "id": "g036",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Resuelve: 2(x + 3) = 14",
+   "n": 2,
+   "e": "Quita el paréntesis: 2x + 6 = 14 → 2x = 8 → x = 4. (También: x + 3 = 7 → x = 4.)",
+   "a": [
+    "x = 4",
+    "x = 5,5",
+    "x = 8",
     "x = 11"
    ]
   },
   {
-   "id": "e016",
+   "id": "g037",
    "c": "matematicas",
-   "q": "Resuelve: x² − 5x + 6 = 0",
-   "n": 2,
-   "a": [
-    "x = 2 y x = 3",
-    "x = −2 y x = −3",
-    "x = 1 y x = 6",
-    "x = −1 y x = 6"
-   ]
-  },
-  {
-   "id": "e017",
-   "c": "matematicas",
-   "q": "Resuelve: x² − 16 = 0",
-   "n": 2,
-   "a": [
-    "x = 4 y x = −4",
-    "Solo x = 4",
-    "x = 8 y x = −8",
-    "x = 16"
-   ]
-  },
-  {
-   "id": "e018",
-   "c": "matematicas",
-   "q": "Resuelve: x² + 2x − 15 = 0",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Resuelve: x/4 + 3 = 5",
    "n": 3,
+   "e": "Pasa el 3: x/4 = 2. El 4 está dividiendo, pasa multiplicando: x = 2 · 4 = 8.",
    "a": [
-    "x = 3 y x = −5",
-    "x = −3 y x = 5",
-    "x = 5 y x = 3",
-    "x = 15 y x = −1"
+    "x = 8",
+    "x = 32",
+    "x = 2",
+    "x = 1/2"
    ]
   },
   {
-   "id": "e019",
+   "id": "g038",
    "c": "matematicas",
-   "q": "Resuelve: 2x² − 8x = 0",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Resuelve: (x − 1)/3 = (x + 3)/5",
    "n": 3,
+   "e": "Multiplica en cruz: 5(x − 1) = 3(x + 3) → 5x − 5 = 3x + 9 → 2x = 14 → x = 7.",
    "a": [
-    "x = 0 y x = 4",
+    "x = 7",
     "x = 4",
-    "x = 0 y x = −4",
-    "x = 2 y x = −2"
+    "x = 2",
+    "x = −7"
    ]
   },
   {
-   "id": "e020",
+   "id": "g039",
    "c": "matematicas",
-   "q": "Resuelve el sistema: x + y = 10 ; x − y = 4",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Un número más su doble es 45. ¿Qué número es?",
    "n": 2,
+   "e": "Número = x; su doble = 2x. x + 2x = 45 → 3x = 45 → x = 15. Comprueba: 15 + 30 = 45.",
    "a": [
-    "x = 7, y = 3",
-    "x = 6, y = 4",
-    "x = 3, y = 7",
-    "x = 8, y = 2"
+    "15",
+    "22,5",
+    "30",
+    "9"
    ]
   },
   {
-   "id": "e021",
+   "id": "g040",
    "c": "matematicas",
-   "q": "Resuelve el sistema: 2x + y = 11 ; x − y = 1",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Un menú cuesta 4 € más que un bocadillo. Dos bocadillos y un menú cuestan 25 €. ¿Cuánto cuesta el bocadillo?",
    "n": 3,
+   "e": "Bocadillo = x; menú = x + 4. 2x + (x + 4) = 25 → 3x = 21 → x = 7 €. El menú cuesta 11 € (no confundas).",
    "a": [
-    "x = 4, y = 3",
-    "x = 5, y = 1",
-    "x = 3, y = 5",
-    "x = 6, y = −1"
+    "7 €",
+    "11 €",
+    "8,50 €",
+    "10,50 €"
    ]
   },
   {
-   "id": "e022",
+   "id": "g041",
    "c": "matematicas",
-   "q": "En un circuito, las intensidades cumplen x + y = 9 y 2x = y. ¿Cuánto valen?",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "La edad de Laura es el triple que la de su hijo y dentro de 10 años será el doble. ¿Cuántos años tiene el hijo ahora?",
    "n": 3,
+   "e": "Hijo = x; Laura = 3x. Dentro de 10 años: 3x + 10 = 2(x + 10) → 3x + 10 = 2x + 20 → x = 10. Laura tiene 30.",
    "a": [
-    "x = 3 A, y = 6 A",
-    "x = 6 A, y = 3 A",
-    "x = 4,5 A, y = 4,5 A",
-    "x = 2 A, y = 7 A"
-   ]
-  },
-  {
-   "id": "e023",
-   "c": "matematicas",
-   "q": "Un burro lleva un barril y un caballo un fardo. Juntos pesan 80 kg y el barril pesa 20 kg más que el fardo. ¿Cuánto pesa cada uno?",
-   "n": 3,
-   "a": [
-    "Barril 50 kg, fardo 30 kg",
-    "Barril 60 kg, fardo 20 kg",
-    "Barril 40 kg, fardo 40 kg",
-    "Barril 55 kg, fardo 25 kg"
-   ]
-  },
-  {
-   "id": "e024",
-   "c": "matematicas",
-   "q": "Una madre tiene el triple de edad que su hijo y entre los dos suman 48 años. ¿Qué edades tienen?",
-   "n": 3,
-   "a": [
-    "Hijo 12, madre 36",
-    "Hijo 16, madre 32",
-    "Hijo 12, madre 48",
-    "Hijo 10, madre 30"
-   ]
-  },
-  {
-   "id": "e025",
-   "c": "matematicas",
-   "q": "3 camisetas y 2 pantalones cuestan 85 €. Cada camiseta vale 15 €. ¿Cuánto vale cada pantalón?",
-   "n": 3,
-   "a": [
-    "20 €",
-    "25 €",
-    "17,50 €",
-    "40 €"
-   ]
-  },
-  {
-   "id": "e026",
-   "c": "matematicas",
-   "q": "Alicia acierta 14 de 20 flechas y Rubén 18 de 26. ¿Quién tiene mejor puntería?",
-   "n": 2,
-   "a": [
-    "Alicia (70 % frente a unos 69,2 %)",
-    "Rubén (69,2 % frente a 70 %)",
-    "Los dos igual",
-    "Rubén, porque acierta más flechas"
-   ]
-  },
-  {
-   "id": "e027",
-   "c": "matematicas",
-   "q": "¿Cuánto es el 25 % de 80?",
-   "n": 1,
-   "a": [
+    "10",
     "20",
-    "25",
-    "32",
-    "60"
+    "15",
+    "5"
    ]
   },
   {
-   "id": "e028",
+   "id": "g042",
    "c": "matematicas",
-   "q": "Una chaqueta cuesta 60 € y tiene un 15 % de descuento. ¿Cuánto pagas?",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Un taxi cobra 3 € al subir y 1,20 € por kilómetro. Si pagas 15 €, ¿cuántos kilómetros has recorrido?",
    "n": 2,
+   "e": "3 + 1,20x = 15 → 1,20x = 12 → x = 12 : 1,20 = 10 km.",
    "a": [
-    "51 €",
-    "45 €",
+    "10 km",
+    "12,5 km",
+    "15 km",
+    "8 km"
+   ]
+  },
+  {
+   "id": "g043",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "Si y = 2x + 3, ¿cuánto vale y cuando x = 5?",
+   "n": 2,
+   "e": "Sustituye x por 5: y = 2 · 5 + 3 = 10 + 3 = 13.",
+   "a": [
+    "13",
+    "10",
+    "16",
+    "25"
+   ]
+  },
+  {
+   "id": "g044",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.3",
+   "q": "¿Qué expresión significa «el doble de un número menos 3»?",
+   "n": 2,
+   "e": "«El doble de un número» es 2x y «menos 3» se le resta después: 2x − 3. 2(x − 3) sería «el doble de (un número menos 3)».",
+   "a": [
+    "2x − 3",
+    "2(x − 3)",
+    "x² − 3",
+    "3 − 2x"
+   ]
+  },
+  {
+   "id": "g045",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "Si 2 kg de tomates cuestan 3 €, ¿cuánto cuestan 6 kg?",
+   "n": 1,
+   "e": "Es proporción directa: 6 kg es el triple de 2 kg, así que cuesta el triple: 3 × 3 = 9 €.",
+   "a": [
     "9 €",
-    "54 €"
-   ]
-  },
-  {
-   "id": "e029",
-   "c": "matematicas",
-   "q": "Un producto cuesta 100 € sin IVA. Con un IVA del 21 %, ¿cuánto cuesta?",
-   "n": 2,
-   "a": [
-    "121 €",
-    "79 €",
-    "102,10 €",
-    "112 €"
-   ]
-  },
-  {
-   "id": "e030",
-   "c": "matematicas",
-   "q": "Un precio sube de 200 € a 250 €. ¿Qué porcentaje ha subido?",
-   "n": 3,
-   "a": [
-    "25 %",
-    "50 %",
-    "20 %",
-    "125 %"
-   ]
-  },
-  {
-   "id": "e031",
-   "c": "matematicas",
-   "q": "Tras subir un 10 % y después bajar un 10 %, un precio de 100 € queda en…",
-   "n": 3,
-   "a": [
-    "99 €",
-    "100 €",
-    "101 €",
-    "90 €"
-   ]
-  },
-  {
-   "id": "e032",
-   "c": "matematicas",
-   "q": "3 kg de manzanas cuestan 4,50 €. ¿Cuánto cuestan 5 kg?",
-   "n": 2,
-   "a": [
-    "7,50 €",
     "6 €",
-    "9 €",
-    "7 €"
+    "12 €",
+    "4,50 €"
    ]
   },
   {
-   "id": "e033",
+   "id": "g046",
    "c": "matematicas",
-   "q": "4 obreros tardan 6 días en hacer una obra. ¿Cuánto tardarán 8 obreros al mismo ritmo?",
-   "n": 3,
-   "a": [
-    "3 días",
-    "12 días",
-    "6 días",
-    "2 días"
-   ]
-  },
-  {
-   "id": "e034",
-   "c": "matematicas",
-   "q": "Un capital de 1.000 € al 3 % de interés simple anual durante 2 años genera…",
-   "n": 3,
-   "a": [
-    "60 € de intereses",
-    "30 € de intereses",
-    "600 € de intereses",
-    "1.060 € de intereses"
-   ]
-  },
-  {
-   "id": "e035",
-   "c": "matematicas",
-   "q": "En un mapa a escala 1:50.000, dos pueblos están a 4 cm. ¿Qué distancia real hay?",
-   "n": 3,
-   "a": [
-    "2 km",
-    "20 km",
-    "200 m",
-    "0,2 km"
-   ]
-  },
-  {
-   "id": "e036",
-   "c": "matematicas",
-   "q": "Un estanque circular tiene 10 m de diámetro. ¿Cuál es su área? (π ≈ 3,14)",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "Una receta para 4 personas lleva 300 g de arroz. ¿Cuánto arroz necesitas para 10 personas?",
    "n": 2,
+   "e": "Por persona: 300 : 4 = 75 g. Para 10: 75 × 10 = 750 g. (Reducción a la unidad.)",
    "a": [
-    "78,5 m²",
-    "314 m²",
-    "31,4 m²",
-    "15,7 m²"
+    "750 g",
+    "1.200 g",
+    "600 g",
+    "700 g"
    ]
   },
   {
-   "id": "e037",
+   "id": "g047",
    "c": "matematicas",
-   "q": "¿Cuál es la longitud de una circunferencia de 10 m de diámetro? (π ≈ 3,14)",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "Un bizcocho para 6 raciones lleva 180 g de azúcar. ¿Cuánto azúcar hace falta para 8 raciones?",
    "n": 2,
+   "e": "Por ración: 180 : 6 = 30 g. Para 8: 30 × 8 = 240 g.",
    "a": [
-    "31,4 m",
-    "78,5 m",
-    "15,7 m",
-    "62,8 m"
+    "240 g",
+    "210 g",
+    "270 g",
+    "160 g"
    ]
   },
   {
-   "id": "e038",
+   "id": "g048",
    "c": "matematicas",
-   "q": "Un camino rectangular mide 12 m de largo y 3 m de ancho. ¿Cuál es su área?",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "5 camareros montan el comedor en 2 horas. ¿Cuánto tardarían 4 camareros al mismo ritmo?",
+   "n": 3,
+   "e": "Es proporción INVERSA: menos camareros, más tiempo. 5 × 2 = 10 horas de trabajo; 10 : 4 = 2,5 h = 2 h 30 min.",
+   "a": [
+    "2 h 30 min",
+    "1 h 36 min",
+    "2 h 15 min",
+    "3 h"
+   ]
+  },
+  {
+   "id": "g049",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "Un depósito de agua da para 20 días a 6 personas. ¿Para cuántos días daría a 8 personas?",
+   "n": 3,
+   "e": "Inversa: más personas, menos días. 6 × 20 = 120; 120 : 8 = 15 días.",
+   "a": [
+    "15 días",
+    "26 días",
+    "24 días",
+    "12 días"
+   ]
+  },
+  {
+   "id": "g050",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "Un coche recorre 240 km en 3 horas. A la misma velocidad, ¿cuántos km recorre en 5 horas?",
+   "n": 2,
+   "e": "En 1 hora: 240 : 3 = 80 km. En 5 horas: 80 × 5 = 400 km.",
+   "a": [
+    "400 km",
+    "480 km",
+    "360 km",
+    "300 km"
+   ]
+  },
+  {
+   "id": "g051",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "¿Qué magnitudes son inversamente proporcionales?",
+   "n": 2,
+   "e": "Son inversas cuando una sube y la otra baja en la misma proporción: el doble de trabajadores, la mitad de tiempo.",
+   "a": [
+    "El número de trabajadores y el tiempo que tardan en hacer una obra",
+    "El número de cafés y el precio total",
+    "Los kilos de fruta y lo que pagas",
+    "Las horas trabajadas y el sueldo"
+   ]
+  },
+  {
+   "id": "g052",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "¿Qué magnitudes son directamente proporcionales?",
+   "n": 2,
+   "e": "Directas: si una se duplica, la otra también. El doble de litros, el doble de precio. La edad y la altura no siguen una proporción.",
+   "a": [
+    "Los litros de gasolina y lo que pagas",
+    "La velocidad y el tiempo de un viaje",
+    "El número de grifos y el tiempo en llenar un depósito",
+    "La edad y la altura de una persona"
+   ]
+  },
+  {
+   "id": "g053",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "En un mapa a escala 1:100.000, dos pueblos están a 7 cm. ¿Qué distancia real hay?",
+   "n": 3,
+   "e": "1 cm del mapa son 100.000 cm reales = 1 km. Así que 7 cm = 7 km.",
+   "a": [
+    "7 km",
+    "70 km",
+    "700 m",
+    "0,7 km"
+   ]
+  },
+  {
+   "id": "g054",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "En un plano a escala 1:50, una mesa mide 4 cm. ¿Cuánto mide en realidad?",
+   "n": 2,
+   "e": "4 × 50 = 200 cm reales = 2 m.",
+   "a": [
+    "2 m",
+    "20 cm",
+    "50 cm",
+    "200 m"
+   ]
+  },
+  {
+   "id": "g055",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.4",
+   "q": "Una bebida lleva 2 partes de zumo por cada 3 de agua. Si usas 6 litros de agua, ¿cuánto zumo pones?",
+   "n": 2,
+   "e": "6 litros de agua son 2 veces 3. Entonces el zumo también es el doble de 2: 4 litros.",
+   "a": [
+    "4 L",
+    "9 L",
+    "3 L",
+    "5 L"
+   ]
+  },
+  {
+   "id": "g056",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "¿Cuánto es el 10 % de 45 €?",
    "n": 1,
+   "e": "El 10 % es dividir entre 10: 45 : 10 = 4,50 €.",
    "a": [
-    "36 m²",
-    "30 m²",
-    "15 m²",
-    "18 m²"
+    "4,50 €",
+    "45 €",
+    "0,45 €",
+    "10 €"
    ]
   },
   {
-   "id": "e039",
+   "id": "g057",
    "c": "matematicas",
-   "q": "Un césped triangular tiene 9 m de base y 6 m de altura. ¿Cuál es su área?",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "¿Cuánto es el 50 % de 36?",
+   "n": 1,
+   "e": "El 50 % es la mitad: 36 : 2 = 18.",
+   "a": [
+    "18",
+    "50",
+    "72",
+    "3,6"
+   ]
+  },
+  {
+   "id": "g058",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Una factura es de 80 € sin IVA. Con un 10 % de IVA, ¿cuánto se paga?",
    "n": 2,
+   "e": "IVA = 10 % de 80 = 8 €. Total = 80 + 8 = 88 €. (O directamente 80 × 1,10.)",
    "a": [
-    "27 m²",
-    "54 m²",
-    "15 m²",
-    "13,5 m²"
+    "88 €",
+    "90 €",
+    "8 €",
+    "80,10 €"
    ]
   },
   {
-   "id": "e040",
+   "id": "g059",
    "c": "matematicas",
-   "q": "Una plaza tiene un estanque circular (10 m de diámetro), un camino de 12 × 3 m y un césped triangular (base 9 m, altura 6 m). Área total aproximada:",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Unas zapatillas cuestan 70 € y tienen un 20 % de descuento. ¿Cuánto pagas?",
+   "n": 2,
+   "e": "Descuento: 20 % de 70 = 14 €. Pagas 70 − 14 = 56 €. (14 € es lo que te ahorras, no lo que pagas.)",
+   "a": [
+    "56 €",
+    "50 €",
+    "14 €",
+    "66 €"
+   ]
+  },
+  {
+   "id": "g060",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "En un grupo de 25 alumnos aprueban 20. ¿Qué porcentaje aprueba?",
+   "n": 2,
+   "e": "20/25 = 0,8 → 0,8 × 100 = 80 %.",
+   "a": [
+    "80 %",
+    "20 %",
+    "75 %",
+    "85 %"
+   ]
+  },
+  {
+   "id": "g061",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Un cliente deja 3 € de propina en una cuenta de 60 €. ¿Qué porcentaje es?",
+   "n": 2,
+   "e": "3 : 60 = 0,05 → 5 %. Comprueba: el 5 % de 60 es 3.",
+   "a": [
+    "5 %",
+    "3 %",
+    "20 %",
+    "6 %"
+   ]
+  },
+  {
+   "id": "g062",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "El sueldo de Ana era de 1.200 € y sube un 3 %. ¿Cuál es su nuevo sueldo?",
    "n": 3,
+   "e": "3 % de 1.200 = 36 €. Nuevo sueldo: 1.200 + 36 = 1.236 €. (1.203 € sería sumar 3 € y no el 3 %.)",
    "a": [
-    "141,5 m²",
-    "168,5 m²",
-    "105,5 m²",
-    "114,5 m²"
+    "1.236 €",
+    "1.203 €",
+    "1.260 €",
+    "1.360 €"
    ]
   },
   {
-   "id": "e041",
+   "id": "g063",
    "c": "matematicas",
-   "q": "¿Cuál es el perímetro de un rectángulo de 12 m por 3 m?",
-   "n": 2,
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Un producto costaba 50 € y ahora cuesta 60 €. ¿Qué porcentaje ha subido?",
+   "n": 3,
+   "e": "Ha subido 10 €. Se compara con el precio INICIAL: 10 : 50 = 0,2 → 20 %.",
    "a": [
-    "30 m",
+    "20 %",
+    "10 %",
+    "16,7 %",
+    "60 %"
+   ]
+  },
+  {
+   "id": "g064",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Después de un descuento del 25 % pagas 45 €. ¿Cuál era el precio original?",
+   "n": 3,
+   "e": "Si descuentan el 25 %, pagas el 75 %. 45 : 0,75 = 60 €. Error típico: sumar el 25 % de 45 (56,25 €).",
+   "a": [
+    "60 €",
+    "56,25 €",
+    "70 €",
+    "33,75 €"
+   ]
+  },
+  {
+   "id": "g065",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "El 30 % de los 200 clientes de un hotel son extranjeros. ¿Cuántos son?",
+   "n": 2,
+   "e": "200 × 0,30 = 60 clientes. Truco: 10 % = 20 → 30 % = 60.",
+   "a": [
+    "60",
+    "30",
+    "140",
+    "70"
+   ]
+  },
+  {
+   "id": "g066",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "¿Qué es lo mismo que el 75 %?",
+   "n": 2,
+   "e": "75 % = 75/100 = 0,75 = 3/4.",
+   "a": [
+    "3/4",
+    "7/5",
+    "0,075",
+    "1/75"
+   ]
+  },
+  {
+   "id": "g067",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "En una factura, 45 € son el 30 % del total. ¿Cuánto es el total?",
+   "n": 3,
+   "e": "Si 30 % son 45 €, el 10 % son 15 €. El 100 % son 15 × 10 = 150 €.",
+   "a": [
+    "150 €",
+    "135 €",
+    "58,50 €",
+    "75 €"
+   ]
+  },
+  {
+   "id": "g068",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Los ingredientes de un plato cuestan 3,20 € y el restaurante quiere ganar un 150 % sobre ese coste. ¿A qué precio lo vende (sin IVA)?",
+   "n": 3,
+   "e": "Ganancia: 150 % de 3,20 = 4,80 €. Precio = coste + ganancia = 3,20 + 4,80 = 8 €.",
+   "a": [
+    "8 €",
+    "4,80 €",
+    "6,40 €",
+    "7,50 €"
+   ]
+  },
+  {
+   "id": "g069",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Con la oferta «3×2» compras 3 botellas de 6 € y pagas solo 2. ¿Qué descuento tienes sobre el total?",
+   "n": 3,
+   "e": "Valen 18 € y pagas 12 €: te ahorras 6 €. 6 : 18 ≈ 0,33 → un 33 %.",
+   "a": [
+    "Un 33 % aproximadamente",
+    "Un 50 %",
+    "Un 66 %",
+    "Un 20 %"
+   ]
+  },
+  {
+   "id": "g070",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "El 50 % de una cantidad es lo mismo que su mitad.",
+   "n": 2,
+   "e": "Verdadero: 50 % = 50/100 = 1/2.",
+   "vf": true
+  },
+  {
+   "id": "g071",
+   "c": "matematicas",
+   "d": "NC",
+   "k": "NC.3.5",
+   "q": "Subir un precio un 10 % y después bajarlo un 10 % lo deja igual que al principio.",
+   "n": 3,
+   "e": "Falso: 100 € +10 % = 110 €; 110 € −10 % = 99 €. La bajada se calcula sobre 110, no sobre 100.",
+   "vf": false
+  },
+  {
+   "id": "g072",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cuál es el perímetro de un cuadrado de 6 m de lado?",
+   "n": 1,
+   "e": "El perímetro es la suma de los lados: 4 × 6 = 24 m. (36 m² sería el área.)",
+   "a": [
+    "24 m",
     "36 m",
-    "15 m",
-    "24 m"
+    "12 m",
+    "18 m"
    ]
   },
   {
-   "id": "e042",
+   "id": "g073",
    "c": "matematicas",
-   "q": "Un triángulo rectángulo tiene catetos de 6 cm y 8 cm. ¿Cuánto mide la hipotenusa?",
-   "n": 2,
-   "a": [
-    "10 cm",
-    "14 cm",
-    "7 cm",
-    "48 cm"
-   ]
-  },
-  {
-   "id": "e043",
-   "c": "matematicas",
-   "q": "La hipotenusa de un triángulo rectángulo mide 13 cm y un cateto 5 cm. ¿Cuánto mide el otro cateto?",
-   "n": 3,
-   "a": [
-    "12 cm",
-    "8 cm",
-    "18 cm",
-    "9 cm"
-   ]
-  },
-  {
-   "id": "e044",
-   "c": "matematicas",
-   "q": "¿Cuál es el volumen de un cubo de 3 cm de arista?",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cuál es el área de un rectángulo de 8 m por 5 m?",
    "n": 1,
+   "e": "Área del rectángulo = base × altura = 8 × 5 = 40 m². (26 m sería el perímetro.)",
    "a": [
-    "27 cm³",
-    "9 cm³",
-    "18 cm³",
-    "54 cm³"
+    "40 m²",
+    "26 m²",
+    "13 m²",
+    "80 m²"
    ]
   },
   {
-   "id": "e045",
+   "id": "g074",
    "c": "matematicas",
-   "q": "¿Cuál es el volumen de un cilindro de radio 2 cm y altura 5 cm? (π ≈ 3,14)",
-   "n": 3,
-   "a": [
-    "62,8 cm³",
-    "31,4 cm³",
-    "125,6 cm³",
-    "20 cm³"
-   ]
-  },
-  {
-   "id": "e046",
-   "c": "matematicas",
-   "q": "¿Cuántos litros caben en 1 m³?",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "Una terraza rectangular mide 12 m por 6 m. ¿Cuántas baldosas de 1 m² hacen falta para cubrirla?",
    "n": 2,
+   "e": "Área = 12 × 6 = 72 m². Cada baldosa cubre 1 m²: 72 baldosas.",
    "a": [
-    "1.000 L",
-    "100 L",
-    "10 L",
-    "10.000 L"
+    "72",
+    "36",
+    "18",
+    "144"
    ]
   },
   {
-   "id": "e047",
+   "id": "g075",
    "c": "matematicas",
-   "q": "¿Cuántos metros son 2,5 km?",
-   "n": 1,
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cuál es el área de un triángulo de 10 cm de base y 6 cm de altura?",
+   "n": 2,
+   "e": "Área = (base × altura) : 2 = (10 × 6) : 2 = 30 cm². Si te sale 60, olvidaste dividir entre 2.",
    "a": [
-    "2.500 m",
-    "250 m",
-    "25.000 m",
+    "30 cm²",
+    "60 cm²",
+    "16 cm²",
+    "15 cm²"
+   ]
+  },
+  {
+   "id": "g076",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "Una mesa redonda tiene 1 m de radio. ¿Cuál es su área? (π ≈ 3,14)",
+   "n": 2,
+   "e": "Área del círculo = π · r² = 3,14 · 1² = 3,14 m². (6,28 m sería la longitud del borde.)",
+   "a": [
+    "3,14 m²",
+    "6,28 m²",
+    "1 m²",
+    "12,56 m²"
+   ]
+  },
+  {
+   "id": "g077",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cuánto mide el borde de una mesa redonda de 1,2 m de diámetro? (π ≈ 3,14)",
+   "n": 2,
+   "e": "Longitud de la circunferencia = π · diámetro = 3,14 × 1,2 ≈ 3,77 m.",
+   "a": [
+    "3,77 m",
+    "1,88 m",
+    "7,54 m",
+    "4,52 m"
+   ]
+  },
+  {
+   "id": "g078",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "Una mesa cuadrada mide 90 cm de lado. El mantel debe caer 20 cm por cada lado. ¿Cuánto mide de lado el mantel?",
+   "n": 3,
+   "e": "Cae 20 cm por un lado y 20 cm por el otro: 90 + 20 + 20 = 130 cm. Error típico: sumar solo 20 (110 cm).",
+   "a": [
+    "130 cm",
+    "110 cm",
+    "120 cm",
+    "180 cm"
+   ]
+  },
+  {
+   "id": "g079",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "Un triángulo rectángulo tiene catetos de 3 m y 4 m. ¿Cuánto mide la hipotenusa?",
+   "n": 2,
+   "e": "Pitágoras: h² = 3² + 4² = 9 + 16 = 25 → h = √25 = 5 m.",
+   "a": [
+    "5 m",
+    "7 m",
+    "12 m",
     "25 m"
    ]
   },
   {
-   "id": "e048",
+   "id": "g080",
    "c": "matematicas",
-   "q": "¿Cuántos minutos son 3 h 15 min?",
-   "n": 2,
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "Una escalera de 5 m está apoyada en una pared y su pie está a 3 m de la pared. ¿A qué altura llega?",
+   "n": 3,
+   "e": "La escalera es la hipotenusa: altura² = 5² − 3² = 25 − 9 = 16 → altura = 4 m.",
    "a": [
-    "195 min",
-    "315 min",
-    "180 min",
-    "165 min"
+    "4 m",
+    "2 m",
+    "8 m",
+    "5,8 m"
    ]
   },
   {
-   "id": "e049",
+   "id": "g081",
    "c": "matematicas",
-   "q": "¿Cuántos m/s son 90 km/h?",
-   "n": 2,
-   "a": [
-    "25 m/s",
-    "90 m/s",
-    "324 m/s",
-    "2,5 m/s"
-   ]
-  },
-  {
-   "id": "e050",
-   "c": "matematicas",
-   "q": "Ventas de pan en una semana (kg): 50, 45, 52, 50, 48, 51, 50. ¿Cuál es la media?",
-   "n": 2,
-   "a": [
-    "Unos 49,4 kg",
-    "50 kg",
-    "48 kg",
-    "52 kg"
-   ]
-  },
-  {
-   "id": "e051",
-   "c": "matematicas",
-   "q": "Ventas de pan (kg): 50, 45, 52, 50, 48, 51, 50. ¿Cuál es la moda?",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cuánto suman los ángulos de un triángulo?",
    "n": 1,
-   "a": [
-    "50 kg",
-    "49,4 kg",
-    "52 kg",
-    "45 kg"
-   ]
-  },
-  {
-   "id": "e052",
-   "c": "matematicas",
-   "q": "Ventas de pan (kg): 50, 45, 52, 50, 48, 51, 50. ¿Cuál es la mediana?",
-   "n": 2,
-   "a": [
-    "50 kg",
-    "49,4 kg",
-    "48 kg",
-    "51 kg"
-   ]
-  },
-  {
-   "id": "e053",
-   "c": "matematicas",
-   "q": "Datos: 50, 45, 52, 50, 48, 51, 50. ¿Cuál es el rango (recorrido)?",
-   "n": 2,
-   "a": [
-    "7",
-    "5",
-    "50",
-    "97"
-   ]
-  },
-  {
-   "id": "e054",
-   "c": "matematicas",
-   "q": "Al tirar un dado, ¿qué probabilidad hay de sacar un 6?",
-   "n": 1,
-   "a": [
-    "1/6",
-    "1/2",
-    "1/3",
-    "6"
-   ]
-  },
-  {
-   "id": "e055",
-   "c": "matematicas",
-   "q": "En una bolsa hay 3 bolas rojas y 5 azules. ¿Qué probabilidad hay de sacar una roja?",
-   "n": 2,
-   "a": [
-    "3/8",
-    "3/5",
-    "5/8",
-    "1/3"
-   ]
-  },
-  {
-   "id": "e056",
-   "c": "matematicas",
-   "q": "Al tirar un dado, ¿qué probabilidad hay de sacar un número par?",
-   "n": 2,
-   "a": [
-    "1/2",
-    "1/3",
-    "1/6",
-    "2/3"
-   ]
-  },
-  {
-   "id": "e057",
-   "c": "matematicas",
-   "q": "Al lanzar dos monedas, ¿qué probabilidad hay de sacar dos caras?",
-   "n": 3,
-   "a": [
-    "1/4",
-    "1/2",
-    "1/3",
-    "2/4"
-   ]
-  },
-  {
-   "id": "e058",
-   "c": "matematicas",
-   "q": "¿Cuánto es 2/3 + 1/4?",
-   "n": 2,
-   "a": [
-    "11/12",
-    "3/7",
-    "2/12",
-    "3/12"
-   ]
-  },
-  {
-   "id": "e059",
-   "c": "matematicas",
-   "q": "¿Cuánto es 3/5 de 40?",
-   "n": 2,
-   "a": [
-    "24",
-    "15",
-    "8",
-    "30"
-   ]
-  },
-  {
-   "id": "e060",
-   "c": "matematicas",
-   "q": "¿Cuánto es (3/4) : (1/2)?",
-   "n": 2,
-   "a": [
-    "3/2",
-    "3/8",
-    "2/3",
-    "4/6"
-   ]
-  },
-  {
-   "id": "e061",
-   "c": "matematicas",
-   "q": "¿Cuánto es 2³ · 2⁴?",
-   "n": 2,
-   "a": [
-    "2⁷",
-    "2¹²",
-    "4⁷",
-    "2¹"
-   ]
-  },
-  {
-   "id": "e062",
-   "c": "matematicas",
-   "q": "¿Cuánto es √144?",
-   "n": 1,
-   "a": [
-    "12",
-    "14",
-    "72",
-    "16"
-   ]
-  },
-  {
-   "id": "e063",
-   "c": "matematicas",
-   "q": "¿Cómo se escribe 45.000.000 en notación científica?",
-   "n": 2,
-   "a": [
-    "4,5 · 10⁷",
-    "4,5 · 10⁶",
-    "45 · 10⁷",
-    "4,5 · 10⁸"
-   ]
-  },
-  {
-   "id": "e064",
-   "c": "matematicas",
-   "q": "¿Cómo se escribe 0,0003 en notación científica?",
-   "n": 3,
-   "a": [
-    "3 · 10⁻⁴",
-    "3 · 10⁴",
-    "3 · 10⁻³",
-    "0,3 · 10⁻²"
-   ]
-  },
-  {
-   "id": "e065",
-   "c": "matematicas",
-   "q": "¿Cuánto es (−3)²?",
-   "n": 2,
-   "a": [
-    "9",
-    "−9",
-    "6",
-    "−6"
-   ]
-  },
-  {
-   "id": "e066",
-   "c": "matematicas",
-   "q": "¿Cuánto es −3²? (sin paréntesis)",
-   "n": 3,
-   "a": [
-    "−9",
-    "9",
-    "−6",
-    "6"
-   ]
-  },
-  {
-   "id": "e067",
-   "c": "matematicas",
-   "q": "¿Cuánto es 5 + 3 · 4?",
-   "n": 2,
-   "a": [
-    "17",
-    "32",
-    "23",
-    "60"
-   ]
-  },
-  {
-   "id": "e068",
-   "c": "matematicas",
-   "q": "¿Cuánto es 20 − 8 : 2 + 3?",
-   "n": 3,
-   "a": [
-    "19",
-    "9",
-    "7,5",
-    "13"
-   ]
-  },
-  {
-   "id": "e069",
-   "c": "matematicas",
-   "q": "¿Cuál es la pendiente de la recta y = 3x − 2?",
-   "n": 2,
-   "a": [
-    "3",
-    "−2",
-    "2/3",
-    "−3"
-   ]
-  },
-  {
-   "id": "e070",
-   "c": "matematicas",
-   "q": "¿Dónde corta la recta y = 2x + 5 al eje Y?",
-   "n": 2,
-   "a": [
-    "En (0, 5)",
-    "En (5, 0)",
-    "En (0, 2)",
-    "En (2, 5)"
-   ]
-  },
-  {
-   "id": "e071",
-   "c": "matematicas",
-   "q": "¿Qué recta pasa por los puntos (0, 1) y (2, 5)?",
-   "n": 3,
-   "a": [
-    "y = 2x + 1",
-    "y = x + 1",
-    "y = 2x + 5",
-    "y = 4x + 1"
-   ]
-  },
-  {
-   "id": "e072",
-   "c": "matematicas",
-   "q": "¿Cuál es el mínimo común múltiplo de 12 y 18?",
-   "n": 2,
-   "a": [
-    "36",
-    "6",
-    "216",
-    "72"
-   ]
-  },
-  {
-   "id": "e073",
-   "c": "matematicas",
-   "q": "¿Cuál es el máximo común divisor de 12 y 18?",
-   "n": 2,
-   "a": [
-    "6",
-    "36",
-    "3",
-    "2"
-   ]
-  },
-  {
-   "id": "e074",
-   "c": "matematicas",
-   "q": "¿Cuánto suman los ángulos interiores de un triángulo?",
-   "n": 1,
+   "e": "En cualquier triángulo los tres ángulos suman 180°. En un cuadrilátero suman 360°.",
    "a": [
     "180°",
     "360°",
@@ -910,2291 +1288,3779 @@
    ]
   },
   {
-   "id": "e075",
+   "id": "g082",
    "c": "matematicas",
-   "q": "¿Cuánto suman los ángulos interiores de un cuadrilátero?",
-   "n": 2,
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cuántos lados tiene un hexágono?",
+   "n": 1,
+   "e": "«Hexa» significa seis. Pentágono = 5, heptágono = 7, octógono = 8.",
    "a": [
-    "360°",
+    "6",
+    "5",
+    "8",
+    "7"
+   ]
+  },
+  {
+   "id": "g083",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cómo se llama el triángulo que tiene los tres lados iguales?",
+   "n": 2,
+   "e": "Equilátero: 3 lados iguales. Isósceles: 2 iguales. Escaleno: ninguno igual.",
+   "a": [
+    "Equilátero",
+    "Isósceles",
+    "Escaleno",
+    "Rectángulo"
+   ]
+  },
+  {
+   "id": "g084",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Qué figura tiene 4 lados iguales y 4 ángulos rectos?",
+   "n": 2,
+   "e": "El rombo también tiene 4 lados iguales, pero sus ángulos no son rectos. El cuadrado cumple las dos cosas.",
+   "a": [
+    "El cuadrado",
+    "El rombo",
+    "El trapecio",
+    "El romboide"
+   ]
+  },
+  {
+   "id": "g085",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "¿Cuánto mide un ángulo recto?",
+   "n": 1,
+   "e": "Un ángulo recto es como la esquina de una hoja: 90°. 180° es un ángulo llano (una línea recta).",
+   "a": [
+    "90°",
     "180°",
-    "540°",
-    "270°"
+    "45°",
+    "360°"
    ]
   },
   {
-   "id": "e076",
+   "id": "g086",
    "c": "matematicas",
-   "q": "Un coche gasta 6 L cada 100 km. ¿Cuántos litros gasta en 350 km?",
-   "n": 3,
+   "d": "FM",
+   "k": "FM.3.1",
+   "q": "Una pizza se corta en 8 trozos iguales. ¿Cuántos grados mide el ángulo de cada trozo?",
+   "n": 2,
+   "e": "El círculo completo tiene 360°. 360 : 8 = 45°.",
    "a": [
-    "21 L",
-    "18 L",
-    "35 L",
-    "6 L"
+    "45°",
+    "8°",
+    "30°",
+    "60°"
    ]
   },
   {
-   "id": "e077",
+   "id": "g087",
    "c": "matematicas",
-   "q": "(a + b)² es igual a a² + b².",
-   "n": 2,
-   "vf": false
-  },
-  {
-   "id": "e078",
-   "c": "matematicas",
-   "q": "Una ecuación de segundo grado puede no tener soluciones reales.",
-   "n": 3,
-   "vf": true
-  },
-  {
-   "id": "e079",
-   "c": "ciencias",
-   "q": "¿Qué son los pliegues?",
-   "n": 2,
-   "a": [
-    "Deformaciones de rocas que se doblan sin romperse (comportamiento plástico)",
-    "Roturas de rocas con desplazamiento de bloques",
-    "Roturas de rocas sin desplazamiento",
-    "El punto de la superficie sobre el foco de un terremoto"
-   ]
-  },
-  {
-   "id": "e080",
-   "c": "ciencias",
-   "q": "¿Qué es una falla?",
-   "n": 2,
-   "a": [
-    "Una rotura de las rocas con desplazamiento de los bloques",
-    "Una rotura sin desplazamiento",
-    "Un pliegue muy grande",
-    "El origen de un terremoto bajo tierra"
-   ]
-  },
-  {
-   "id": "e081",
-   "c": "ciencias",
-   "q": "¿Qué es una diaclasa?",
-   "n": 2,
-   "a": [
-    "Una rotura de las rocas sin desplazamiento de los bloques",
-    "Una rotura con desplazamiento",
-    "Una roca doblada",
-    "Una grieta del suelo causada por la sequía"
-   ]
-  },
-  {
-   "id": "e082",
-   "c": "ciencias",
-   "q": "¿Qué es el epicentro de un terremoto?",
-   "n": 2,
-   "a": [
-    "El punto de la superficie situado justo encima del hipocentro",
-    "El punto del interior donde se origina",
-    "La zona donde más tiempo dura",
-    "La placa que se mueve"
-   ]
-  },
-  {
-   "id": "e083",
-   "c": "ciencias",
-   "q": "¿Qué es el hipocentro?",
-   "n": 2,
-   "a": [
-    "El punto del interior de la Tierra donde se origina el terremoto",
-    "El punto de la superficie encima del foco",
-    "La onda más fuerte",
-    "El volcán más cercano"
-   ]
-  },
-  {
-   "id": "e084",
-   "c": "ciencias",
-   "q": "Un tsunami se origina a 300 km de la costa y tarda 0,4 h en llegar. ¿Cuál es su velocidad?",
-   "n": 2,
-   "a": [
-    "750 km/h",
-    "120 km/h",
-    "75 km/h",
-    "1.200 km/h"
-   ]
-  },
-  {
-   "id": "e085",
-   "c": "ciencias",
-   "q": "¿Cuántos m/s son 750 km/h?",
-   "n": 3,
-   "a": [
-    "Unos 208 m/s",
-    "2.700 m/s",
-    "75 m/s",
-    "12,5 m/s"
-   ]
-  },
-  {
-   "id": "e086",
-   "c": "ciencias",
-   "q": "Si ese tsunami empieza a las 10:00 y tarda 0,4 h, ¿a qué hora llega a la costa?",
-   "n": 3,
-   "a": [
-    "A las 10:24",
-    "A las 10:40",
-    "A las 10:04",
-    "A las 11:00"
-   ]
-  },
-  {
-   "id": "e087",
-   "c": "ciencias",
-   "q": "¿Qué enfermedad está relacionada con un consumo excesivo de azúcar?",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos centímetros son 2,5 m?",
    "n": 1,
+   "e": "1 m = 100 cm. 2,5 × 100 = 250 cm.",
    "a": [
-    "Diabetes tipo 2",
-    "Anemia",
-    "Gripe",
-    "Asma"
+    "250 cm",
+    "25 cm",
+    "2.500 cm",
+    "0,25 cm"
    ]
   },
   {
-   "id": "e088",
-   "c": "ciencias",
-   "q": "¿Por qué se dice que el azúcar aporta \"calorías vacías\"?",
-   "n": 2,
-   "a": [
-    "Aporta energía pero casi ningún otro nutriente",
-    "No aporta energía",
-    "Solo aporta proteínas",
-    "Se elimina sin digerir"
-   ]
-  },
-  {
-   "id": "e089",
-   "c": "ciencias",
-   "q": "Un refresco tiene 10,6 g de azúcar por cada 100 mL. ¿Cuál es su concentración en g/L?",
-   "n": 3,
-   "a": [
-    "106 g/L",
-    "10,6 g/L",
-    "1,06 g/L",
-    "1.060 g/L"
-   ]
-  },
-  {
-   "id": "e090",
-   "c": "ciencias",
-   "q": "Ese refresco (10,6 g de azúcar/100 mL), en una lata de 330 mL, ¿cuánto azúcar tiene?",
-   "n": 3,
-   "a": [
-    "Unos 35 g",
-    "10,6 g",
-    "3,5 g",
-    "106 g"
-   ]
-  },
-  {
-   "id": "e091",
-   "c": "ciencias",
-   "q": "El refresco tiene 42 kcal por 100 mL. ¿Cuántas kcal tiene una lata de 330 mL?",
-   "n": 3,
-   "a": [
-    "Unas 139 kcal",
-    "42 kcal",
-    "420 kcal",
-    "13,9 kcal"
-   ]
-  },
-  {
-   "id": "e092",
-   "c": "ciencias",
-   "q": "¿Qué cavidad del corazón envía la sangre a todo el cuerpo por la arteria aorta?",
-   "n": 2,
-   "a": [
-    "El ventrículo izquierdo",
-    "El ventrículo derecho",
-    "La aurícula derecha",
-    "La aurícula izquierda"
-   ]
-  },
-  {
-   "id": "e093",
-   "c": "ciencias",
-   "q": "¿Qué sangre lleva la arteria pulmonar?",
-   "n": 3,
-   "a": [
-    "Sangre pobre en oxígeno, del corazón a los pulmones",
-    "Sangre rica en oxígeno, de los pulmones al corazón",
-    "Sangre rica en oxígeno, al cuerpo",
-    "Sangre del cuerpo al corazón"
-   ]
-  },
-  {
-   "id": "e094",
-   "c": "ciencias",
-   "q": "¿Qué llevan las venas pulmonares?",
-   "n": 3,
-   "a": [
-    "Sangre rica en oxígeno, de los pulmones a la aurícula izquierda",
-    "Sangre pobre en oxígeno, a los pulmones",
-    "Sangre del cuerpo a la aurícula derecha",
-    "Linfa"
-   ]
-  },
-  {
-   "id": "e095",
-   "c": "ciencias",
-   "q": "¿Para qué sirven las válvulas del corazón?",
-   "n": 2,
-   "a": [
-    "Para que la sangre no retroceda",
-    "Para producir glóbulos rojos",
-    "Para filtrar la sangre",
-    "Para oxigenar la sangre"
-   ]
-  },
-  {
-   "id": "e096",
-   "c": "ciencias",
-   "q": "¿Por qué vasos llega al corazón la sangre que vuelve del cuerpo?",
-   "n": 2,
-   "a": [
-    "Por las venas cavas",
-    "Por la aorta",
-    "Por las venas pulmonares",
-    "Por la arteria pulmonar"
-   ]
-  },
-  {
-   "id": "e097",
-   "c": "ciencias",
-   "q": "¿Cuál es la unidad de energía en el Sistema Internacional?",
+   "id": "g088",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos gramos son 1,2 kg?",
    "n": 1,
+   "e": "1 kg = 1.000 g. 1,2 × 1.000 = 1.200 g.",
    "a": [
-    "El julio (J)",
-    "El vatio (W)",
-    "El newton (N)",
-    "El pascal (Pa)"
+    "1.200 g",
+    "120 g",
+    "12 g",
+    "12.000 g"
    ]
   },
   {
-   "id": "e098",
-   "c": "ciencias",
-   "q": "¿A cuántos julios equivale 1 kWh?",
-   "n": 3,
+   "id": "g089",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos mililitros tiene una botella de vino de 0,75 L?",
+   "n": 1,
+   "e": "1 L = 1.000 mL. 0,75 × 1.000 = 750 mL.",
    "a": [
-    "3,6 · 10⁶ J",
-    "1.000 J",
-    "3.600 J",
-    "3,6 · 10³ J"
+    "750 mL",
+    "75 mL",
+    "7,5 mL",
+    "7.500 mL"
    ]
   },
   {
-   "id": "e099",
-   "c": "ciencias",
-   "q": "¿Qué es la convección?",
+   "id": "g090",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos vasos de 250 mL se llenan con una jarra de 2 L?",
    "n": 2,
+   "e": "Primero, misma unidad: 2 L = 2.000 mL. 2.000 : 250 = 8 vasos.",
    "a": [
-    "Transmisión de calor por el movimiento de un fluido (líquido o gas)",
-    "Transmisión de calor por contacto en un sólido",
-    "Transmisión de calor por ondas, sin medio",
-    "Cambio de líquido a gas"
-   ]
-  },
-  {
-   "id": "e100",
-   "c": "ciencias",
-   "q": "¿De qué depende la energía cinética de un cuerpo?",
-   "n": 2,
-   "a": [
-    "De su masa y de su velocidad",
-    "De su altura",
-    "De su temperatura",
-    "De su volumen"
-   ]
-  },
-  {
-   "id": "e101",
-   "c": "ciencias",
-   "q": "¿Qué energía cinética tiene un cuerpo de 2 kg a 3 m/s? (Ec = ½·m·v²)",
-   "n": 3,
-   "a": [
-    "9 J",
-    "6 J",
-    "18 J",
-    "3 J"
-   ]
-  },
-  {
-   "id": "e102",
-   "c": "ciencias",
-   "q": "¿Qué energía potencial tiene un cuerpo de 10 kg a 5 m de altura? (g = 9,8 m/s²)",
-   "n": 3,
-   "a": [
-    "490 J",
-    "50 J",
-    "98 J",
-    "4,9 J"
-   ]
-  },
-  {
-   "id": "e103",
-   "c": "ciencias",
-   "q": "¿Qué es una reacción exotérmica?",
-   "n": 2,
-   "a": [
-    "La que desprende energía (calor)",
-    "La que absorbe energía",
-    "La que no cambia la energía",
-    "La que solo ocurre con luz"
-   ]
-  },
-  {
-   "id": "e104",
-   "c": "ciencias",
-   "q": "¿Qué hace un alternador?",
-   "n": 2,
-   "a": [
-    "Transforma energía mecánica en eléctrica",
-    "Transforma energía eléctrica en mecánica",
-    "Transforma energía química en eléctrica",
-    "Almacena energía eléctrica"
-   ]
-  },
-  {
-   "id": "e105",
-   "c": "ciencias",
-   "q": "La masa molar del agua es 18 g/mol. ¿Cuántas moléculas hay en 180 g? (Nₐ = 6,022·10²³)",
-   "n": 3,
-   "a": [
-    "6,022 · 10²⁴",
-    "6,022 · 10²³",
-    "1,08 · 10²⁶",
+    "8",
+    "4",
+    "6",
     "10"
    ]
   },
   {
-   "id": "e106",
-   "c": "ciencias",
-   "q": "El agua de mar tiene una densidad de 1,025 g/cm³. ¿Qué volumen ocupan 3 kg?",
+   "id": "g091",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "Una botella de licor de 70 cL, ¿cuántas copas de 35 mL da?",
+   "n": 2,
+   "e": "70 cL = 700 mL. 700 : 35 = 20 copas. Si te sale 2, no pasaste los cL a mL.",
+   "a": [
+    "20",
+    "2",
+    "10",
+    "25"
+   ]
+  },
+  {
+   "id": "g092",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos kilos son 3.500 g?",
+   "n": 2,
+   "e": "De gramos a kilos se divide entre 1.000: 3.500 : 1.000 = 3,5 kg.",
+   "a": [
+    "3,5 kg",
+    "35 kg",
+    "0,35 kg",
+    "350 kg"
+   ]
+  },
+  {
+   "id": "g093",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos minutos son 2,5 horas?",
+   "n": 2,
+   "e": "1 h = 60 min. 2,5 × 60 = 150 min (2 horas = 120 min + media hora = 30 min).",
+   "a": [
+    "150 min",
+    "250 min",
+    "125 min",
+    "210 min"
+   ]
+  },
+  {
+   "id": "g094",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "Un turno empieza a las 7:45 y termina a las 15:15. ¿Cuánto dura?",
+   "n": 2,
+   "e": "De 7:45 a 8:00 son 15 min; de 8:00 a 15:00 son 7 h; de 15:00 a 15:15, 15 min. Total: 7 h 30 min.",
+   "a": [
+    "7 h 30 min",
+    "8 h 30 min",
+    "7 h 15 min",
+    "8 h"
+   ]
+  },
+  {
+   "id": "g095",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "Un asado necesita 25 minutos por cada kilo. ¿Cuánto tarda una pieza de 2,4 kg?",
    "n": 3,
+   "e": "25 × 2,4 = 60 minutos = 1 hora.",
    "a": [
-    "Unos 2,93 L",
-    "3,075 L",
-    "3 L",
-    "0,34 L"
+    "1 h",
+    "50 min",
+    "1 h 25 min",
+    "1 h 10 min"
    ]
   },
   {
-   "id": "e107",
-   "c": "ciencias",
-   "q": "¿Qué diferencia hay entre evaporación y ebullición?",
+   "id": "g096",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "Un ciclista va a 20 km/h. ¿Cuánto tarda en recorrer 50 km?",
    "n": 2,
+   "e": "Tiempo = distancia : velocidad = 50 : 20 = 2,5 h. Y 0,5 h son 30 min, no 50 min.",
    "a": [
-    "La evaporación ocurre en la superficie a cualquier temperatura; la ebullición, en todo el líquido a una temperatura fija",
-    "Son lo mismo",
-    "La ebullición ocurre a cualquier temperatura",
-    "La evaporación solo ocurre a 100 °C"
+    "2 h 30 min",
+    "2 h 50 min",
+    "2 h",
+    "3 h"
    ]
   },
   {
-   "id": "e108",
-   "c": "ciencias",
-   "q": "¿Por qué el vertido de agua caliente a un río perjudica a los peces?",
+   "id": "g097",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos litros son 1 dm³?",
    "n": 2,
+   "e": "Es una equivalencia clave: 1 dm³ = 1 litro. Y 1 m³ = 1.000 litros.",
    "a": [
-    "El agua caliente tiene menos oxígeno disuelto",
-    "El agua caliente tiene más sal",
-    "El agua caliente es más densa",
-    "Los peces no ven en agua caliente"
+    "1 L",
+    "10 L",
+    "0,1 L",
+    "1.000 L"
    ]
   },
   {
-   "id": "e109",
-   "c": "ciencias",
-   "q": "¿En qué orgánulo se hace la fotosíntesis?",
-   "n": 1,
+   "id": "g098",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos cm² son 1 m²?",
+   "n": 3,
+   "e": "1 m² es un cuadrado de 100 cm × 100 cm = 10.000 cm². En superficie se multiplica por 100 en cada salto de unidad.",
    "a": [
-    "En el cloroplasto",
-    "En la mitocondria",
-    "En el núcleo",
-    "En el ribosoma"
+    "10.000 cm²",
+    "100 cm²",
+    "1.000 cm²",
+    "1.000.000 cm²"
    ]
   },
   {
-   "id": "e110",
-   "c": "ciencias",
-   "q": "¿En qué orgánulo se obtiene energía mediante la respiración celular?",
+   "id": "g099",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuántos m² son 3 hectáreas?",
+   "n": 3,
+   "e": "1 hectárea = 10.000 m² (un cuadrado de 100 m × 100 m). 3 × 10.000 = 30.000 m².",
+   "a": [
+    "30.000 m²",
+    "300 m²",
+    "3.000 m²",
+    "300.000 m²"
+   ]
+  },
+  {
+   "id": "g100",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "¿Cuál es el volumen de una caja de 20 cm × 10 cm × 5 cm?",
    "n": 2,
+   "e": "Volumen = largo × ancho × alto = 20 × 10 × 5 = 1.000 cm³ (= 1 litro). 35 sería sumar.",
    "a": [
-    "En la mitocondria",
-    "En el cloroplasto",
-    "En la vacuola",
-    "En la pared celular"
+    "1.000 cm³",
+    "35 cm³",
+    "200 cm³",
+    "500 cm³"
    ]
   },
   {
-   "id": "e111",
-   "c": "ciencias",
-   "q": "Un aparato de 23 Ω se conecta a 230 V. ¿Qué intensidad circula? (V = I · R)",
+   "id": "g101",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "Un depósito con forma de cubo mide 2 m de arista. ¿Cuántos litros caben?",
+   "n": 3,
+   "e": "V = 2 × 2 × 2 = 8 m³. Como 1 m³ = 1.000 L, caben 8.000 L.",
+   "a": [
+    "8.000 L",
+    "800 L",
+    "6.000 L",
+    "8 L"
+   ]
+  },
+  {
+   "id": "g102",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "Una olla cilíndrica tiene 20 cm de radio y 30 cm de altura. ¿Cuántos litros caben, aproximadamente? (π ≈ 3,14)",
+   "n": 3,
+   "e": "V = π · r² · h = 3,14 × 400 × 30 = 37.680 cm³. Como 1.000 cm³ = 1 L → unos 37,7 L.",
+   "a": [
+    "37,7 L",
+    "18,8 L",
+    "3,77 L",
+    "377 L"
+   ]
+  },
+  {
+   "id": "g103",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.2",
+   "q": "1 litro de agua ocupa lo mismo que 1 dm³.",
    "n": 2,
-   "a": [
-    "10 A",
-    "5.290 A",
-    "0,1 A",
-    "253 A"
-   ]
-  },
-  {
-   "id": "e112",
-   "c": "ciencias",
-   "q": "Un aparato funciona a 230 V con 2 A. ¿Qué potencia tiene? (P = V · I)",
-   "n": 2,
-   "a": [
-    "460 W",
-    "115 W",
-    "232 W",
-    "4,6 W"
-   ]
-  },
-  {
-   "id": "e113",
-   "c": "ciencias",
-   "q": "¿Cuál de estas fuentes de energía es renovable?",
-   "n": 1,
-   "a": [
-    "La eólica",
-    "El carbón",
-    "El gas natural",
-    "El petróleo"
-   ]
-  },
-  {
-   "id": "e114",
-   "c": "ciencias",
-   "q": "En una cadena alimentaria, ¿quiénes son los productores?",
-   "n": 1,
-   "a": [
-    "Las plantas y algas",
-    "Los herbívoros",
-    "Los carnívoros",
-    "Los descomponedores"
-   ]
-  },
-  {
-   "id": "e115",
-   "c": "ciencias",
-   "q": "¿Qué estado de la materia no tiene ni forma ni volumen propios?",
-   "n": 1,
-   "a": [
-    "Gaseoso",
-    "Líquido",
-    "Sólido",
-    "Ninguno"
-   ]
-  },
-  {
-   "id": "e116",
-   "c": "ciencias",
-   "q": "¿Cuál de estas es una mezcla heterogénea?",
-   "n": 2,
-   "a": [
-    "Agua con aceite",
-    "Agua con sal disuelta",
-    "El aire",
-    "Agua con azúcar disuelto"
-   ]
-  },
-  {
-   "id": "e117",
-   "c": "ciencias",
-   "q": "¿Qué indica el número atómico de un elemento?",
-   "n": 2,
-   "a": [
-    "El número de protones",
-    "El número de neutrones",
-    "La masa del átomo",
-    "El número de moléculas"
-   ]
-  },
-  {
-   "id": "e118",
-   "c": "ciencias",
-   "q": "¿Qué nutrientes son la principal fuente de energía rápida?",
-   "n": 2,
-   "a": [
-    "Los hidratos de carbono",
-    "Las proteínas",
-    "Las vitaminas",
-    "Los minerales"
-   ]
-  },
-  {
-   "id": "e119",
-   "c": "ciencias",
-   "q": "¿Cuál es la función principal de las proteínas?",
-   "n": 2,
-   "a": [
-    "Formar y reparar tejidos",
-    "Dar energía inmediata",
-    "Regular la temperatura",
-    "Transportar oxígeno solas"
-   ]
-  },
-  {
-   "id": "e120",
-   "c": "ciencias",
-   "q": "¿Por qué se mueven las placas tectónicas?",
-   "n": 2,
-   "a": [
-    "Por las corrientes de convección del manto",
-    "Por el viento",
-    "Por las mareas",
-    "Por la rotación de la Luna"
-   ]
-  },
-  {
-   "id": "e121",
-   "c": "ciencias",
-   "q": "Las arterias siempre llevan sangre rica en oxígeno.",
-   "n": 2,
-   "vf": false
-  },
-  {
-   "id": "e122",
-   "c": "ciencias",
-   "q": "El agua hierve a 100 °C a nivel del mar.",
-   "n": 2,
+   "e": "Verdadero: 1 L = 1 dm³ = 1.000 cm³.",
    "vf": true
   },
   {
-   "id": "e123",
-   "c": "ciencias",
-   "q": "La evaporación solo ocurre cuando el agua llega a 100 °C.",
+   "id": "g104",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.3",
+   "q": "¿Qué unidad es la más adecuada para medir la distancia entre dos ciudades?",
+   "n": 1,
+   "e": "Para distancias grandes se usa el kilómetro. El m² mide superficie y el litro, capacidad.",
+   "a": [
+    "El kilómetro",
+    "El centímetro",
+    "El metro cuadrado",
+    "El litro"
+   ]
+  },
+  {
+   "id": "g105",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.3",
+   "q": "¿Qué instrumento usarías para medir la temperatura de una cámara frigorífica?",
+   "n": 1,
+   "e": "El termómetro mide temperatura. La báscula mide masa, la probeta volumen y el metro longitud.",
+   "a": [
+    "Un termómetro",
+    "Una báscula",
+    "Una probeta",
+    "Un metro"
+   ]
+  },
+  {
+   "id": "g106",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.3",
+   "q": "Para pesar 250 g de harina usas…",
+   "n": 1,
+   "e": "El peso (masa) se mide con báscula o balanza, en gramos o kilos.",
+   "a": [
+    "Una báscula o balanza",
+    "Un termómetro",
+    "Una cinta métrica",
+    "Un cronómetro"
+   ]
+  },
+  {
+   "id": "g107",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.3",
+   "q": "¿Qué unidad usarías para medir la capacidad de una botella de agua?",
+   "n": 2,
+   "e": "La capacidad (lo que cabe dentro) se mide en litros, cL o mL.",
+   "a": [
+    "El litro o el centilitro",
+    "El kilómetro",
+    "El kilogramo",
+    "El grado"
+   ]
+  },
+  {
+   "id": "g108",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.3",
+   "q": "¿Con qué medirías el tiempo que tarda en hacerse un huevo cocido?",
+   "n": 2,
+   "e": "El tiempo se mide con reloj o cronómetro, en minutos y segundos.",
+   "a": [
+    "Con un cronómetro o un reloj",
+    "Con un termómetro",
+    "Con una regla",
+    "Con una báscula"
+   ]
+  },
+  {
+   "id": "g109",
+   "c": "matematicas",
+   "d": "FM",
+   "k": "FM.3.3",
+   "q": "¿Qué unidad es la adecuada para medir la superficie de un piso?",
+   "n": 2,
+   "e": "La superficie se mide en unidades «cuadradas»: m². Por eso un piso «tiene 80 m²».",
+   "a": [
+    "El metro cuadrado (m²)",
+    "El metro (m)",
+    "El litro (L)",
+    "El kilogramo (kg)"
+   ]
+  },
+  {
+   "id": "g110",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuántos se vendieron en total?",
+   "n": 1,
+   "e": "40 + 35 + 45 + 50 + 80 = 250 cafés.",
+   "a": [
+    "250",
+    "200",
+    "240",
+    "260"
+   ]
+  },
+  {
+   "id": "g111",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la media diaria?",
+   "n": 2,
+   "e": "Media = suma : número de datos = 250 : 5 = 50 cafés.",
+   "a": [
+    "50",
+    "45",
+    "48",
+    "55"
+   ]
+  },
+  {
+   "id": "g112",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la mediana?",
+   "n": 2,
+   "e": "Se ordenan: 35, 40, 45, 50, 80. La mediana es el valor del centro: 45.",
+   "a": [
+    "45",
+    "50",
+    "40",
+    "35"
+   ]
+  },
+  {
+   "id": "g113",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "Notas: 5, 7, 7, 8, 6, 7, 9. ¿Cuál es la moda?",
+   "n": 2,
+   "e": "La moda es el valor que más se repite: el 7 aparece 3 veces.",
+   "a": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ]
+  },
+  {
+   "id": "g114",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "Notas: 4, 6, 8, 10. ¿Cuál es la media?",
+   "n": 2,
+   "e": "(4 + 6 + 8 + 10) : 4 = 28 : 4 = 7. Si pones 28, has olvidado dividir.",
+   "a": [
+    "7",
+    "6",
+    "8",
+    "28"
+   ]
+  },
+  {
+   "id": "g115",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "La media de 4 exámenes es 6. En los tres primeros sacaste 5, 6 y 8. ¿Qué sacaste en el cuarto?",
    "n": 3,
+   "e": "Si la media de 4 es 6, la suma es 4 × 6 = 24. Ya tienes 5 + 6 + 8 = 19. Falta 24 − 19 = 5.",
+   "a": [
+    "5",
+    "6",
+    "7",
+    "4"
+   ]
+  },
+  {
+   "id": "g116",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "Temperaturas de la semana: 12, 15, 9, 20 y 14 °C. ¿Cuál es el rango (recorrido)?",
+   "n": 2,
+   "e": "Rango = mayor − menor = 20 − 9 = 11.",
+   "a": [
+    "11",
+    "14",
+    "20",
+    "9"
+   ]
+  },
+  {
+   "id": "g117",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "En una tabla: 3 clientes de 20 años, 5 de 30 y 2 de 40. ¿Cuál es la edad media?",
+   "n": 3,
+   "e": "Multiplica cada edad por cuántos hay: 3·20 + 5·30 + 2·40 = 60 + 150 + 80 = 290. Hay 10 clientes: 290 : 10 = 29 años.",
+   "a": [
+    "29 años",
+    "30 años",
+    "31 años",
+    "33 años"
+   ]
+  },
+  {
+   "id": "g118",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "En una encuesta a 40 clientes, 10 prefieren té. ¿Cuál es la frecuencia relativa del té?",
+   "n": 2,
+   "e": "Frecuencia relativa = veces : total = 10 : 40 = 0,25 (el 25 %). 10 es la frecuencia absoluta.",
+   "a": [
+    "0,25",
+    "10",
+    "0,4",
+    "4"
+   ]
+  },
+  {
+   "id": "g119",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "¿Qué es la frecuencia absoluta de un dato?",
+   "n": 2,
+   "e": "Es el recuento: cuántas veces aparece. «El que más se repite» es la moda.",
+   "a": [
+    "El número de veces que se repite",
+    "El dato que más se repite",
+    "La suma de todos los datos",
+    "El dato central"
+   ]
+  },
+  {
+   "id": "g120",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "¿Qué es la moda?",
+   "n": 2,
+   "e": "Moda = el más repetido. Central = mediana. Suma : n = media. Mayor − menor = rango.",
+   "a": [
+    "El valor que más se repite",
+    "El valor central",
+    "La suma dividida entre el número de datos",
+    "La diferencia entre el mayor y el menor"
+   ]
+  },
+  {
+   "id": "g121",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "¿Qué es el rango o recorrido?",
+   "n": 2,
+   "e": "El rango mide lo separados que están los datos: mayor − menor.",
+   "a": [
+    "La diferencia entre el valor mayor y el menor",
+    "El valor que más se repite",
+    "El valor del medio",
+    "El número de datos"
+   ]
+  },
+  {
+   "id": "g122",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.1",
+   "q": "La media y la moda de un conjunto de datos siempre coinciden.",
+   "n": 2,
+   "e": "Falso: en 2, 2, 8 la moda es 2 y la media es 4. Solo coinciden a veces.",
    "vf": false
   },
   {
-   "id": "e124",
-   "c": "lengua",
-   "q": "Una noticia sobre un hallazgo en Atapuerca es un texto…",
+   "id": "g123",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.2",
+   "q": "Un gráfico de barras muestra las reservas: lunes 20, martes 30 y miércoles 25. ¿Cuántas reservas más hubo el martes que el lunes?",
    "n": 1,
+   "e": "Se lee la altura de cada barra y se resta: 30 − 20 = 10 reservas más.",
    "a": [
-    "Informativo (periodístico)",
+    "10",
+    "5",
+    "50",
+    "30"
+   ]
+  },
+  {
+   "id": "g124",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.2",
+   "q": "¿Qué gráfico es más adecuado para ver cómo cambia la temperatura a lo largo de un mes?",
+   "n": 2,
+   "e": "Para ver la evolución en el tiempo, lo mejor es una línea: se ve si sube o baja.",
+   "a": [
+    "Un gráfico de líneas",
+    "Un gráfico de sectores",
+    "Un pictograma",
+    "Una tabla sin gráfico"
+   ]
+  },
+  {
+   "id": "g125",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.2",
+   "q": "¿Qué gráfico es más adecuado para mostrar qué parte del total es cada tipo de gasto?",
+   "n": 2,
+   "e": "El gráfico de sectores («de quesitos») muestra partes de un total.",
+   "a": [
+    "Un gráfico de sectores (circular)",
+    "Un gráfico de líneas",
+    "Un diagrama de dispersión",
+    "Un histograma de edades"
+   ]
+  },
+  {
+   "id": "g126",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.2",
+   "q": "En un gráfico de sectores, una parte ocupa un cuarto del círculo. ¿Qué porcentaje representa?",
+   "n": 2,
+   "e": "Un cuarto = 1/4 = 25 % del total.",
+   "a": [
+    "25 %",
+    "4 %",
+    "40 %",
+    "90 %"
+   ]
+  },
+  {
+   "id": "g127",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.2",
+   "q": "En un gráfico de sectores, ¿cuántos grados ocupa una parte que es el 30 % del total?",
+   "n": 3,
+   "e": "El círculo son 360°. El 30 % de 360 = 0,30 × 360 = 108°.",
+   "a": [
+    "108°",
+    "30°",
+    "90°",
+    "120°"
+   ]
+  },
+  {
+   "id": "g128",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.2",
+   "q": "Un anuncio muestra un gráfico de barras cuyo eje vertical empieza en 95 en vez de en 0. ¿Qué efecto tiene?",
+   "n": 3,
+   "e": "Si el eje no empieza en 0, una diferencia pequeña parece enorme. Mira siempre los ejes antes de creerte un gráfico.",
+   "a": [
+    "Exagera las diferencias entre las barras",
+    "Hace que todas las barras parezcan iguales",
+    "No cambia nada",
+    "Hace el gráfico más exacto"
+   ]
+  },
+  {
+   "id": "g129",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "Al lanzar una moneda, ¿qué probabilidad hay de que salga cara?",
+   "n": 1,
+   "e": "Casos favorables / casos posibles = 1 cara / 2 caras de la moneda = 1/2.",
+   "a": [
+    "1/2",
+    "1/4",
+    "1",
+    "2"
+   ]
+  },
+  {
+   "id": "g130",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "Al tirar un dado, ¿qué probabilidad hay de sacar un 3?",
+   "n": 1,
+   "e": "Solo hay un 3 entre 6 caras: 1/6.",
+   "a": [
+    "1/6",
+    "1/3",
+    "3/6",
+    "1/2"
+   ]
+  },
+  {
+   "id": "g131",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "Al tirar un dado, ¿qué probabilidad hay de sacar más de 4?",
+   "n": 2,
+   "e": "«Más de 4» son el 5 y el 6: 2 casos de 6 → 2/6 = 1/3. ¡El 4 no cuenta!",
+   "a": [
+    "1/3",
+    "1/2",
+    "2/3",
+    "1/6"
+   ]
+  },
+  {
+   "id": "g132",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "En una caja hay 4 bombones negros y 6 blancos. Si coges uno sin mirar, ¿qué probabilidad hay de que sea negro?",
+   "n": 2,
+   "e": "Favorables: 4. Posibles: 4 + 6 = 10. 4/10 = 2/5. Error típico: dividir entre los blancos (4/6).",
+   "a": [
+    "2/5",
+    "4/6",
+    "3/5",
+    "1/4"
+   ]
+  },
+  {
+   "id": "g133",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "En un sorteo de 200 papeletas compras 5. ¿Qué probabilidad tienes de ganar?",
+   "n": 2,
+   "e": "5/200 = 0,025 → 2,5 %.",
+   "a": [
+    "2,5 %",
+    "5 %",
+    "0,5 %",
+    "25 %"
+   ]
+  },
+  {
+   "id": "g134",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "¿Qué suceso es imposible al tirar un dado normal?",
+   "n": 2,
+   "e": "Un dado normal solo tiene del 1 al 6: sacar un 7 tiene probabilidad 0.",
+   "a": [
+    "Sacar un 7",
+    "Sacar un 6",
+    "Sacar un número par",
+    "Sacar menos de 3"
+   ]
+  },
+  {
+   "id": "g135",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "¿Qué suceso es seguro al tirar un dado normal?",
+   "n": 2,
+   "e": "Todas las caras (1 a 6) son menores que 7: pasa siempre, probabilidad 1.",
+   "a": [
+    "Sacar un número menor que 7",
+    "Sacar un 6",
+    "Sacar un número par",
+    "Sacar un 1"
+   ]
+  },
+  {
+   "id": "g136",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "Una baraja española tiene 40 cartas, 10 de cada palo. ¿Qué probabilidad hay de sacar una carta de oros?",
+   "n": 3,
+   "e": "10 oros de 40 cartas: 10/40 = 1/4.",
+   "a": [
+    "1/4",
+    "1/10",
+    "1/40",
+    "1/2"
+   ]
+  },
+  {
+   "id": "g137",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "Al lanzar dos monedas, ¿qué probabilidad hay de sacar al menos una cara?",
+   "n": 3,
+   "e": "Posibles: CC, CX, XC, XX (4). Con al menos una cara: 3. Probabilidad 3/4.",
+   "a": [
+    "3/4",
+    "1/2",
+    "1/4",
+    "2/3"
+   ]
+  },
+  {
+   "id": "g138",
+   "c": "matematicas",
+   "d": "GE",
+   "k": "GE.3.3",
+   "q": "La probabilidad de que llueva mañana es 0,3. ¿Qué probabilidad hay de que no llueva?",
+   "n": 3,
+   "e": "Suceso contrario: 1 − 0,3 = 0,7. Una probabilidad nunca pasa de 1.",
+   "a": [
+    "0,7",
+    "0,3",
+    "0,03",
+    "1,3"
+   ]
+  },
+  {
+   "id": "g139",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.1",
+   "q": "«Se busca camarero/a con experiencia para terraza de verano. Jornada completa, de junio a septiembre. Imprescindible inglés básico. Enviar currículum a empleo@barlaplaza.es antes del 31 de mayo.» ¿Qué tipo de texto es?",
+   "n": 1,
+   "e": "Ofrece un puesto de trabajo y explica los requisitos y cómo presentarse: eso es un anuncio de empleo. No cuenta un hecho (noticia) ni da la opinión de nadie.",
+   "a": [
+    "Un anuncio de empleo",
+    "Una noticia",
+    "Una receta",
+    "Un artículo de opinión"
+   ]
+  },
+  {
+   "id": "g140",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.1",
+   "q": "«El Ayuntamiento abrirá el próximo lunes un nuevo comedor social en el barrio de Las Delicias. Tendrá 60 plazas y dará comidas de lunes a sábado.» ¿Cuál es la idea principal?",
+   "n": 2,
+   "e": "La idea principal es lo más importante del texto: la apertura del comedor. Las 60 plazas y los días son detalles (ideas secundarias).",
+   "a": [
+    "Se abre un nuevo comedor social en Las Delicias",
+    "El Ayuntamiento cierra un comedor",
+    "Los comedores sociales no abren los sábados",
+    "El barrio tiene 60 vecinos"
+   ]
+  },
+  {
+   "id": "g141",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.1",
+   "q": "«Cada verano se repite la escena: terrazas llenas y camareros agotados. Creo que ya es hora de que se respeten los descansos del personal de hostelería.» ¿Cuál es el tema?",
+   "n": 2,
+   "e": "El tema resume en pocas palabras de qué trata el texto. Todo gira alrededor del cansancio y los descansos de los camareros.",
+   "a": [
+    "Los descansos del personal de hostelería",
+    "Las terrazas de invierno",
+    "El precio de las bebidas",
+    "Cómo poner una mesa"
+   ]
+  },
+  {
+   "id": "g142",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.1",
+   "q": "¿Qué es el tema de un texto?",
+   "n": 2,
+   "e": "El tema es la idea central dicha en pocas palabras. A veces coincide con el título o la primera frase, pero no siempre.",
+   "a": [
+    "La idea principal resumida en pocas palabras",
+    "La primera frase",
+    "Siempre el título",
+    "La última palabra"
+   ]
+  },
+  {
+   "id": "g143",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.1",
+   "q": "En un texto, ¿qué son las ideas secundarias?",
+   "n": 2,
+   "e": "Las ideas secundarias amplían o explican la principal: datos, ejemplos, causas… Si las quitas, el texto sigue teniendo sentido.",
+   "a": [
+    "Detalles, ejemplos o datos que completan la idea principal",
+    "Las ideas que no tienen relación con el texto",
+    "Las frases más cortas",
+    "El título y la firma"
+   ]
+  },
+  {
+   "id": "g144",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "«¡Nuevo yogur Natur+! Con el doble de proteínas*. Porque tú te mereces lo mejor.» ¿Cuál es el propósito del texto?",
+   "n": 1,
+   "e": "Es publicidad: su intención es persuadir para que compres. Lo ves en los signos de exclamación y en el «tú te mereces lo mejor».",
+   "a": [
+    "Convencer de que compres el producto",
+    "Informar de una noticia",
+    "Enseñar a hacer yogur",
+    "Contar una historia"
+   ]
+  },
+  {
+   "id": "g145",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "«¡Nuevo yogur Natur+! Con el doble de proteínas*. (*Comparado con nuestro yogur natural clásico)». ¿Qué aclara el asterisco?",
+   "n": 3,
+   "e": "La letra pequeña del asterisco limita lo que promete el anuncio: el «doble» es respecto a su propio yogur, no a todos. Hay que leerla siempre.",
+   "a": [
+    "Que solo tiene el doble que su propio yogur clásico, no que otros yogures",
+    "Que el yogur es gratis",
+    "Que es una oferta limitada",
+    "Que tiene el doble de azúcar"
+   ]
+  },
+  {
+   "id": "g146",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "En un anuncio, la frase «Porque tú te mereces lo mejor» intenta…",
+   "n": 2,
+   "e": "No da ningún dato: busca que te sientas especial. Es un recurso emocional muy típico de la publicidad.",
+   "a": [
+    "Tocar las emociones del consumidor",
+    "Dar un dato científico",
+    "Citar a un experto",
+    "Informar del precio"
+   ]
+  },
+  {
+   "id": "g147",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "«Cada verano se repite la escena: terrazas llenas y camareros agotados. Creo que ya es hora de que se respeten los descansos del personal.» ¿Qué tipo de texto es?",
+   "n": 2,
+   "e": "«Creo que…» muestra que el autor da su opinión y la defiende. Una noticia no opina: solo cuenta hechos.",
+   "a": [
+    "De opinión (argumentativo)",
+    "Una noticia objetiva",
+    "Instructivo",
+    "Un poema"
+   ]
+  },
+  {
+   "id": "g148",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "¿Qué rasgo es propio de una noticia?",
+   "n": 2,
+   "e": "La noticia informa de hechos actuales sin dar opinión. Defender una opinión es propio del artículo de opinión o del editorial.",
+   "a": [
+    "Cuenta hechos recientes de forma objetiva",
+    "Defiende la opinión del autor",
+    "Tiene rima",
+    "Da órdenes al lector"
+   ]
+  },
+  {
+   "id": "g149",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "¿Qué texto tiene como intención principal convencer?",
+   "n": 2,
+   "e": "La publicidad quiere persuadir. Un horario, un diccionario o un prospecto solo informan.",
+   "a": [
+    "Un anuncio publicitario",
+    "Un horario de trenes",
+    "Un diccionario",
+    "El prospecto de un medicamento"
+   ]
+  },
+  {
+   "id": "g150",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "¿En qué parte del periódico aparece la opinión del propio periódico?",
+   "n": 2,
+   "e": "El editorial es el texto sin firma en el que el periódico da su opinión. La noticia debe ser objetiva.",
+   "a": [
+    "En el editorial",
+    "En la noticia",
+    "En la sección de deportes",
+    "En la cartelera"
+   ]
+  },
+  {
+   "id": "g151",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "¿Qué es el titular de una noticia?",
+   "n": 2,
+   "e": "El titular va arriba, en letra grande, y resume lo más importante para que el lector decida si sigue leyendo.",
+   "a": [
+    "La frase que resume y presenta la noticia",
+    "La firma del periodista",
+    "El último párrafo",
+    "La foto"
+   ]
+  },
+  {
+   "id": "g152",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "En una noticia, ¿a qué pregunta responde «el próximo lunes»?",
+   "n": 2,
+   "e": "Una noticia responde a qué, quién, cuándo, dónde, cómo y por qué. «El próximo lunes» es un momento: responde a ¿cuándo?",
+   "a": [
+    "¿Cuándo?",
+    "¿Dónde?",
+    "¿Quién?",
+    "¿Por qué?"
+   ]
+  },
+  {
+   "id": "g153",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.2",
+   "q": "Una noticia debe responder a qué, quién, cuándo, dónde, cómo y por qué.",
+   "n": 2,
+   "e": "Son las «6 W» del periodismo. Una buena noticia contesta a esas preguntas, sobre todo en el primer párrafo (la entradilla).",
+   "vf": true
+  },
+  {
+   "id": "g154",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«Se busca camarero/a para terraza de verano. Jornada completa. Imprescindible inglés básico.» ¿Qué requisito es imprescindible?",
+   "n": 1,
+   "e": "El texto lo dice con la palabra «imprescindible»: inglés básico. Lo demás no aparece en el anuncio.",
+   "a": [
+    "Inglés básico",
+    "Tener coche",
+    "Tener título universitario",
+    "Trabajar todo el año"
+   ]
+  },
+  {
+   "id": "g155",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«Se busca camarero/a para terraza de verano. Jornada completa, de junio a septiembre.» ¿Cuánto dura el trabajo?",
+   "n": 2,
+   "e": "El dato está en el texto: «de junio a septiembre». Busca siempre la respuesta en el texto, no en lo que imaginas.",
+   "a": [
+    "De junio a septiembre",
+    "Todo el año",
+    "Solo agosto",
+    "No lo dice"
+   ]
+  },
+  {
+   "id": "g156",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«Se busca camarero/a. Enviar currículum a empleo@barlaplaza.es antes del 31 de mayo.» ¿Cómo hay que presentar la candidatura?",
+   "n": 2,
+   "e": "El anuncio da un correo electrónico y una fecha límite. Las otras opciones no aparecen en el texto.",
+   "a": [
+    "Enviando el currículum por correo electrónico antes del 31 de mayo",
+    "Yendo al bar en septiembre",
+    "Llamando por teléfono en junio",
+    "No hace falta hacer nada"
+   ]
+  },
+  {
+   "id": "g157",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«El comedor social dará comidas de lunes a sábado.» ¿Cuántos días a la semana dará comidas?",
+   "n": 2,
+   "e": "De lunes a sábado: lunes, martes, miércoles, jueves, viernes y sábado = 6 días. El domingo queda fuera.",
+   "a": [
+    "Seis",
+    "Cinco",
+    "Siete",
+    "Uno"
+   ]
+  },
+  {
+   "id": "g158",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«1. Llene el depósito con agua fría. 2. Coloque la cápsula. 3. Pulse el botón y espere a la luz verde.» ¿Qué hay que hacer justo después de colocar la cápsula?",
+   "n": 1,
+   "e": "Los números marcan el orden: después del paso 2 (cápsula) viene el 3 (pulsar el botón).",
+   "a": [
+    "Pulsar el botón",
+    "Llenar el depósito",
+    "Abrir la tapa",
+    "Apagar la máquina"
+   ]
+  },
+  {
+   "id": "g159",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«Pulse el botón y espere a la luz verde. Nunca abra la tapa mientras sale el café.» ¿Qué está prohibido?",
+   "n": 2,
+   "e": "La palabra «nunca» señala la prohibición: abrir la tapa mientras sale el café.",
+   "a": [
+    "Abrir la tapa mientras sale el café",
+    "Usar agua fría",
+    "Poner una cápsula",
+    "Esperar a la luz verde"
+   ]
+  },
+  {
+   "id": "g160",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«Aviso: por obras, la cocina estará cerrada del 3 al 9 de abril. El bar seguirá abierto y servirá bocadillos y raciones frías.» ¿Se puede comer algo el 5 de abril?",
+   "n": 2,
+   "e": "El 5 de abril está dentro del cierre, pero solo cierra la cocina. El bar sigue abierto con bocadillos y raciones frías.",
+   "a": [
+    "Sí, bocadillos y raciones frías",
+    "No, todo está cerrado",
+    "Sí, el menú del día completo",
+    "Solo bebidas calientes"
+   ]
+  },
+  {
+   "id": "g161",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "«Aviso: por obras, la cocina estará cerrada del 3 al 9 de abril.» ¿Cuál es la causa del cierre?",
+   "n": 2,
+   "e": "«Por obras» indica la causa. La preposición «por» muchas veces introduce el motivo.",
+   "a": [
+    "Unas obras",
+    "Las vacaciones",
+    "Una inspección",
+    "Falta de personal"
+   ]
+  },
+  {
+   "id": "g162",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "¿Qué es un resumen?",
+   "n": 2,
+   "e": "Resumir es quedarse con lo esencial y contarlo con tus palabras, sin opinar y sin copiar frases enteras.",
+   "a": [
+    "Un texto breve con las ideas principales, escrito con tus palabras",
+    "Una copia de las frases más largas",
+    "Tu opinión sobre el texto",
+    "Una lista de palabras difíciles"
+   ]
+  },
+  {
+   "id": "g163",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "¿Qué significa «imprescindible»?",
+   "n": 2,
+   "e": "«Prescindir» es pasar sin algo. «Imprescindible» es lo contrario: no puedes pasar sin ello.",
+   "a": [
+    "Que es necesario y no se puede prescindir de ello",
+    "Que es opcional",
+    "Que está prohibido",
+    "Que es barato"
+   ]
+  },
+  {
+   "id": "g164",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "¿Qué significa «jornada parcial»?",
+   "n": 2,
+   "e": "«Parcial» viene de «parte»: trabajas una parte de la jornada completa, por ejemplo 20 horas en vez de 40.",
+   "a": [
+    "Trabajar menos horas que en la jornada completa",
+    "Trabajar solo de noche",
+    "Trabajar sin contrato",
+    "Trabajar solo los festivos"
+   ]
+  },
+  {
+   "id": "g165",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "¿Cuál es un sinónimo de «comenzar»?",
+   "n": 1,
+   "e": "Los sinónimos significan lo mismo. «Comenzar» y «empezar» son iguales; «terminar» es su contrario (antónimo).",
+   "a": [
+    "Empezar",
+    "Terminar",
+    "Seguir",
+    "Parar"
+   ]
+  },
+  {
+   "id": "g166",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "¿Cuál es un antónimo de «amable»?",
+   "n": 1,
+   "e": "Un antónimo significa lo contrario. Lo contrario de amable es antipático; las otras opciones son parecidas a amable.",
+   "a": [
+    "Antipático",
+    "Simpático",
+    "Agradable",
+    "Educado"
+   ]
+  },
+  {
+   "id": "g167",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "¿Cuál es un sinónimo de «efímero»?",
+   "n": 3,
+   "e": "«Efímero» es algo que dura poco, como una moda pasajera. «Eterno» sería justo lo contrario.",
+   "a": [
+    "Pasajero",
+    "Eterno",
+    "Grande",
+    "Fuerte"
+   ]
+  },
+  {
+   "id": "g168",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.3",
+   "q": "En «me senté en un banco del parque» y «el banco me dio un préstamo», «banco» es una palabra…",
+   "n": 3,
+   "e": "Una misma palabra con varios significados es polisémica. El contexto te dice cuál es en cada frase.",
+   "a": [
+    "Polisémica (tiene varios significados)",
+    "Sinónima",
+    "Antónima",
+    "Extranjera"
+   ]
+  },
+  {
+   "id": "g169",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.4",
+   "q": "«El precio del aceite de oliva ha subido un 40 % este año por la sequía.» ¿Qué conclusión puedes sacar para un restaurante?",
+   "n": 2,
+   "e": "Sacar conclusiones es relacionar el texto con la vida real: si sube el aceite, sube el coste de cocinar.",
+   "a": [
+    "Que cocinar le costará más y quizá tenga que subir precios o ahorrar aceite",
+    "Que el aceite será gratis",
+    "Que la sequía no afecta a la hostelería",
+    "Que debe cerrar la cocina"
+   ]
+  },
+  {
+   "id": "g170",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.4",
+   "q": "«El Gobierno amplía el permiso por nacimiento a 20 semanas.» ¿A quién afecta directamente esta noticia?",
+   "n": 2,
+   "e": "Un permiso por nacimiento es para madres y padres trabajadores. Piensa siempre a quién afecta una noticia.",
+   "a": [
+    "A los trabajadores que van a tener un hijo",
+    "Solo a los jubilados",
+    "A los turistas",
+    "A nadie"
+   ]
+  },
+  {
+   "id": "g171",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.4",
+   "q": "«La DGT recuerda que usar el móvil al volante cuesta 6 puntos y 200 €.» ¿Qué conclusión es correcta?",
+   "n": 3,
+   "e": "El texto une el hecho (usar el móvil) con dos consecuencias: perder 6 puntos y pagar 200 €.",
+   "a": [
+    "Usar el móvil mientras conduces te puede quitar puntos y dinero",
+    "El móvil solo está prohibido en autopista",
+    "La DGT regala puntos",
+    "La multa es solo una advertencia"
+   ]
+  },
+  {
+   "id": "g172",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.4",
+   "q": "«Las reservas en los hoteles de la costa están al 95 % para agosto.» ¿Qué se puede deducir?",
+   "n": 2,
+   "e": "Un 95 % de ocupación significa que casi todo está lleno: queda solo un 5 % libre.",
+   "a": [
+    "Que casi no quedan habitaciones libres en agosto",
+    "Que los hoteles están vacíos",
+    "Que agosto es temporada baja",
+    "Que los hoteles cierran en agosto"
+   ]
+  },
+  {
+   "id": "g173",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "¿Cuál de estas frases es un hecho y no una opinión?",
+   "n": 3,
+   "e": "Un hecho se puede comprobar (el horario). «La mejor», «muy simpático» o «demasiado caro» dependen de quién lo dice: son opiniones.",
+   "a": [
+    "El restaurante abre a las 13:00",
+    "La comida de ese restaurante es la mejor",
+    "El camarero es muy simpático",
+    "Ese local es demasiado caro"
+   ]
+  },
+  {
+   "id": "g174",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "¿Cuál de estas frases es una opinión?",
+   "n": 3,
+   "e": "«Creo que…» indica opinión personal. Las otras frases son datos que se pueden comprobar.",
+   "a": [
+    "Creo que la tortilla está mejor con cebolla",
+    "La tortilla lleva huevo",
+    "El bar cierra los lunes",
+    "El menú cuesta 13 €"
+   ]
+  },
+  {
+   "id": "g175",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "«Hay que respetar los descansos del personal. Un trabajador cansado atiende peor y se equivoca más.» ¿Cuál es la tesis del autor?",
+   "n": 2,
+   "e": "La tesis es la idea que defiende el autor. Lo demás del texto sirve para apoyarla (argumentos).",
+   "a": [
+    "Hay que respetar los descansos del personal de hostelería",
+    "Las terrazas deben cerrar en verano",
+    "Los camareros trabajan poco",
+    "Los clientes deben pagar más"
+   ]
+  },
+  {
+   "id": "g176",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "«Hay que respetar los descansos del personal. Un trabajador cansado atiende peor y se equivoca más.» ¿Qué argumento usa el autor?",
+   "n": 2,
+   "e": "El argumento es la razón que da para defender su tesis: el cansancio empeora el servicio.",
+   "a": [
+    "Que un trabajador cansado atiende peor y se equivoca más",
+    "Que las terrazas son bonitas",
+    "Que en invierno hay menos clientes",
+    "Que los camareros ganan mucho"
+   ]
+  },
+  {
+   "id": "g177",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "«Cuidar a la plantilla no es un gasto, es una inversión.» ¿Qué quiere decir el autor?",
+   "n": 3,
+   "e": "Una inversión es un gasto que luego da beneficios. El autor dice que cuidar a los trabajadores compensa.",
+   "a": [
+    "Que cuidar a los trabajadores trae beneficios a la empresa",
+    "Que hay que gastar menos",
+    "Que los trabajadores deben invertir dinero",
+    "Que la empresa pierde dinero"
+   ]
+  },
+  {
+   "id": "g178",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "¿Qué indica el conector «sin embargo»?",
+   "n": 2,
+   "e": "«Sin embargo» une dos ideas que se oponen: «Es caro; sin embargo, está lleno».",
+   "a": [
+    "Oposición o contraste",
+    "Causa",
+    "Orden en el tiempo",
+    "Un ejemplo"
+   ]
+  },
+  {
+   "id": "g179",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "¿Qué conector expresa una consecuencia?",
+   "n": 2,
+   "e": "«Por lo tanto» introduce lo que resulta de lo anterior: «Llueve; por lo tanto, cerramos la terraza».",
+   "a": [
+    "Por lo tanto",
+    "Sin embargo",
+    "Además",
+    "Aunque"
+   ]
+  },
+  {
+   "id": "g180",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "¿Qué conector sirve para añadir información?",
+   "n": 2,
+   "e": "«Además» suma una idea más. «Pero» y «sin embargo» oponen; «por tanto» da una consecuencia.",
+   "a": [
+    "Además",
+    "Pero",
+    "Por tanto",
+    "Sin embargo"
+   ]
+  },
+  {
+   "id": "g181",
+   "c": "lengua",
+   "d": "CE",
+   "k": "CE.3.5",
+   "q": "La expresión «es decir» se usa para…",
+   "n": 2,
+   "e": "«Es decir» repite la idea con otras palabras para que se entienda mejor.",
+   "a": [
+    "Explicar o aclarar lo anterior",
+    "Expresar oposición",
+    "Indicar una causa",
+    "Terminar el texto"
+   ]
+  },
+  {
+   "id": "g182",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.1",
+   "q": "¿Qué es la intención comunicativa?",
+   "n": 2,
+   "e": "Es el «para qué» del mensaje: informar, pedir, convencer, quejarse, dar las gracias…",
+   "a": [
+    "Lo que el emisor quiere conseguir con su mensaje",
+    "El canal que usa",
+    "El idioma",
+    "El volumen de voz"
+   ]
+  },
+  {
+   "id": "g183",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.1",
+   "q": "Un cliente dice: «¿Me podría traer la cuenta cuando pueda?». ¿Qué intención tiene?",
+   "n": 2,
+   "e": "Aunque es una pregunta, lo que quiere es que le traigas la cuenta. El «cuando pueda» lo hace más educado.",
+   "a": [
+    "Pedir la cuenta de forma educada",
+    "Quejarse del servicio",
+    "Preguntar el precio de un plato",
+    "Despedirse"
+   ]
+  },
+  {
+   "id": "g184",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.1",
+   "q": "Un cliente llama y dice: «Quiero una mesa para cuatro». ¿Quién es el emisor?",
+   "n": 2,
+   "e": "El emisor es quien envía el mensaje: el cliente. El camarero es el receptor y el teléfono es el canal.",
+   "a": [
+    "El cliente",
+    "El camarero",
+    "El teléfono",
+    "La mesa"
+   ]
+  },
+  {
+   "id": "g185",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.1",
+   "q": "¿Qué es el canal en la comunicación?",
+   "n": 2,
+   "e": "El canal es el camino del mensaje. Quien habla es el emisor y el idioma es el código.",
+   "a": [
+    "El medio por el que viaja el mensaje: el aire, el papel, el teléfono…",
+    "La persona que habla",
+    "El idioma",
+    "El tema"
+   ]
+  },
+  {
+   "id": "g186",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.2",
+   "q": "Escuchas en la radio: «Mañana, aviso amarillo por calor en Valladolid, con hasta 39 grados». ¿Qué es lo más importante?",
+   "n": 2,
+   "e": "Las ideas principales son el aviso, el calor y el lugar. Así interpretas la información de los medios.",
+   "a": [
+    "Mañana hará mucho calor en Valladolid y hay aviso amarillo",
+    "Hoy llueve en Valladolid",
+    "El aviso es por nieve",
+    "La radio cambia de horario"
+   ]
+  },
+  {
+   "id": "g187",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.2",
+   "q": "En un telediario, ¿qué diferencia hay entre una noticia y la opinión de un tertuliano?",
+   "n": 2,
+   "e": "En los medios hay que distinguir lo que se informa (hechos) de lo que se opina.",
+   "a": [
+    "La noticia cuenta hechos y el tertuliano da su opinión personal",
+    "No hay ninguna diferencia",
+    "El tertuliano solo da datos oficiales",
+    "La noticia siempre es inventada"
+   ]
+  },
+  {
+   "id": "g188",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.3",
+   "q": "Tu jefe te dice: «Antes de abrir, monta las mesas de la terraza y luego repón las neveras». ¿Qué haces primero?",
+   "n": 2,
+   "e": "«Antes de abrir… y luego…» marca el orden: primero las mesas, después las neveras.",
+   "a": [
+    "Montar las mesas de la terraza",
+    "Reponer las neveras",
+    "Abrir el local",
+    "Nada, son sugerencias"
+   ]
+  },
+  {
+   "id": "g189",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.3",
+   "q": "Un cliente dice en tono irónico: «¡Qué rápido traéis la comida!» después de esperar una hora. ¿Qué quiere decir?",
+   "n": 2,
+   "e": "La ironía dice lo contrario de lo que se piensa. El contexto (esperar una hora) te da la pista.",
+   "a": [
+    "Que la comida ha tardado mucho",
+    "Que la comida ha llegado muy rápido",
+    "Que quiere más comida",
+    "Que está muy contento"
+   ]
+  },
+  {
+   "id": "g190",
+   "c": "lengua",
+   "d": "CO",
+   "k": "CO.3.4",
+   "q": "En un discurso, un político dice: «Todo el mundo sabe que nuestra propuesta es la mejor». ¿Qué debes pensar de forma crítica?",
+   "n": 3,
+   "e": "«Todo el mundo sabe» no es una prueba. Escuchar con espíritu crítico es pedir datos y razones.",
+   "a": [
+    "Que no da datos ni pruebas: es una afirmación sin demostrar",
+    "Que es un hecho comprobado",
+    "Que es una noticia objetiva",
+    "Que lo dice la ley"
+   ]
+  },
+  {
+   "id": "g191",
+   "c": "lengua",
+   "d": "EO",
+   "k": "EO.3.1",
+   "q": "Para hablar bien en público conviene…",
+   "n": 2,
+   "e": "Hablar de forma ordenada y clara se prepara: guion de ideas, ritmo tranquilo y contacto visual.",
+   "a": [
+    "Ordenar las ideas, hablar despacio y mirar al público",
+    "Leer muy rápido sin levantar la vista",
+    "Usar palabras que nadie entiende",
+    "Hablar sin preparar nada"
+   ]
+  },
+  {
+   "id": "g192",
+   "c": "lengua",
+   "d": "EO",
+   "k": "EO.3.1",
+   "q": "Para explicar a un compañero nuevo cómo se cierra la caja, ¿qué es mejor?",
+   "n": 2,
+   "e": "Una explicación oral clara sigue un orden: primero, después, por último.",
+   "a": [
+    "Explicar los pasos en orden, con frases claras",
+    "Decirlo todo muy deprisa y sin orden",
+    "Usar solo gestos",
+    "Contarle otras cosas a la vez"
+   ]
+  },
+  {
+   "id": "g193",
+   "c": "lengua",
+   "d": "EO",
+   "k": "EO.3.2",
+   "q": "Al contar en una entrevista tu experiencia laboral, ¿qué debes destacar?",
+   "n": 2,
+   "e": "Hay que distinguir lo principal de lo secundario y dar primero lo que interesa al entrevistador.",
+   "a": [
+    "Lo más importante: dónde trabajaste, qué hacías y qué aprendiste",
+    "Todos los detalles de cada día",
+    "Lo que piensas de tus antiguos jefes",
+    "Solo tus aficiones"
+   ]
+  },
+  {
+   "id": "g194",
+   "c": "lengua",
+   "d": "EO",
+   "k": "EO.3.3",
+   "q": "En una entrevista de trabajo, ¿qué registro es adecuado?",
+   "n": 2,
+   "e": "El registro se adapta a la situación. En una entrevista se usa un lenguaje formal y educado.",
+   "a": [
+    "Formal",
+    "Vulgar",
+    "Coloquial con tacos",
+    "Jerga juvenil"
+   ]
+  },
+  {
+   "id": "g195",
+   "c": "lengua",
+   "d": "EO",
+   "k": "EO.3.3",
+   "q": "Atiendes a un cliente extranjero que habla poco español. ¿Qué haces?",
+   "n": 2,
+   "e": "Para evitar problemas de comunicación te adaptas al oyente: despacio, sencillo y con apoyos.",
+   "a": [
+    "Hablar despacio, con frases sencillas y apoyarte en gestos o en la carta",
+    "Hablar más alto y más rápido",
+    "No atenderle",
+    "Usar palabras muy difíciles"
+   ]
+  },
+  {
+   "id": "g196",
+   "c": "lengua",
+   "d": "EO",
+   "k": "EO.3.4",
+   "q": "Te piden que resumas en voz alta una noticia. ¿Qué haces?",
+   "n": 2,
+   "e": "Un resumen oral recoge lo esencial (qué, quién, cuándo, dónde) con tus palabras.",
+   "a": [
+    "Cuentas la idea principal y los datos clave con tus palabras",
+    "La lees entera muy deprisa",
+    "Das solo tu opinión",
+    "Cuentas solo el final"
+   ]
+  },
+  {
+   "id": "g197",
+   "c": "lengua",
+   "d": "EO",
+   "k": "EO.3.5",
+   "q": "En una reunión de trabajo no estás de acuerdo con una propuesta. ¿Qué es lo adecuado?",
+   "n": 2,
+   "e": "Interactuar de forma adecuada es respetar los turnos y argumentar con educación.",
+   "a": [
+    "Esperar tu turno y explicar tu opinión con respeto y razones",
+    "Interrumpir gritando",
+    "Callarte y quejarte después",
+    "Salir de la reunión"
+   ]
+  },
+  {
+   "id": "g198",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«Vamos ___ qué pasa.»",
+   "n": 2,
+   "e": "«A ver» viene de «ver» (mirar): vamos a ver. «Haber» es un verbo (hay, había…). «Aver» no existe.",
+   "a": [
+    "a ver",
+    "haber",
+    "aver",
+    "a haber"
+   ]
+  },
+  {
+   "id": "g199",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«Tiene que ___ más sillas en la terraza.»",
+   "n": 2,
+   "e": "Aquí es el verbo «haber» (que haya sillas). Truco: si puedes decir «tiene que existir», es «haber».",
+   "a": [
+    "haber",
+    "a ver",
+    "aver",
+    "haver"
+   ]
+  },
+  {
+   "id": "g200",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«Ya he ___ la reserva.»",
+   "n": 2,
+   "e": "«Hecho» (con h) es del verbo «hacer». «Echo» (sin h) es del verbo «echar»: «echo sal».",
+   "a": [
+    "hecho",
+    "echo",
+    "hechó",
+    "ehco"
+   ]
+  },
+  {
+   "id": "g201",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«No vengo ___ estoy enfermo.»",
+   "n": 2,
+   "e": "«Porque» (junto, sin tilde) da una causa o razón. «Por qué» (separado y con tilde) es para preguntar.",
+   "a": [
+    "porque",
+    "por qué",
+    "porqué",
+    "por que"
+   ]
+  },
+  {
+   "id": "g202",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«¿___ no has venido?»",
+   "n": 2,
+   "e": "Es una pregunta: se escribe «por qué», separado y con tilde.",
+   "a": [
+    "Por qué",
+    "Porque",
+    "Porqué",
+    "Por que"
+   ]
+  },
+  {
+   "id": "g203",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué palabra lleva tilde?",
+   "n": 2,
+   "e": "«Camión» es aguda (fuerza en «-mión») y acaba en n: lleva tilde. «Examen» y «joven» son llanas acabadas en n: no llevan.",
+   "a": [
+    "Camión",
+    "Examen",
+    "Joven",
+    "Mesa"
+   ]
+  },
+  {
+   "id": "g204",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué palabra está bien escrita?",
+   "n": 2,
+   "e": "«Exámenes» es esdrújula (fuerza en «-xá-»): las esdrújulas siempre llevan tilde. En singular, «examen» no lleva.",
+   "a": [
+    "Exámenes",
+    "Examenes",
+    "Exámen",
+    "Exàmenes"
+   ]
+  },
+  {
+   "id": "g205",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué palabra está bien escrita?",
+   "n": 2,
+   "e": "Las terminaciones del pretérito imperfecto «-aba» se escriben siempre con b: trabajaba, cantaba, estaba.",
+   "a": [
+    "Trabajaba",
+    "Trabajava",
+    "Travajaba",
+    "Trabagaba"
+   ]
+  },
+  {
+   "id": "g206",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué palabra está bien escrita?",
+   "n": 2,
+   "e": "Para mantener el sonido de «llegar» delante de e se escribe «gu»: llegué. Además lleva tilde por ser aguda acabada en vocal.",
+   "a": [
+    "Llegué",
+    "Llege",
+    "Llegé",
+    "Yegué"
+   ]
+  },
+  {
+   "id": "g207",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«___ móvil está en la mesa.»",
+   "n": 2,
+   "e": "«Tu» sin tilde acompaña a un nombre (tu móvil). «Tú» con tilde es el pronombre: «tú vienes».",
+   "a": [
+    "Tu",
+    "Tú",
+    "Tuu",
+    "Tù"
+   ]
+  },
+  {
+   "id": "g208",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«¿Me lo das a ___?»",
+   "n": 2,
+   "e": "Después de preposición (a mí, para mí) va con tilde. «Mi» sin tilde acompaña a un nombre: mi casa.",
+   "a": [
+    "mí",
+    "mi",
+    "mì",
+    "mii"
+   ]
+  },
+  {
+   "id": "g209",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué frase está bien puntuada?",
+   "n": 2,
+   "e": "Cuando llamas a alguien por su nombre (vocativo), se separa con coma.",
+   "a": [
+    "Juan, ven aquí.",
+    "Juan ven, aquí.",
+    "Juan ven aquí.",
+    "Juan; ven aquí."
+   ]
+  },
+  {
+   "id": "g210",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Cuándo se escribe mayúscula?",
+   "n": 2,
+   "e": "En español los días y los meses van en minúscula. La mayúscula es para nombres propios y al empezar.",
+   "a": [
+    "En los nombres propios, al empezar un texto y después de punto",
+    "En los días de la semana",
+    "En los meses del año",
+    "En todas las palabras importantes de una frase"
+   ]
+  },
+  {
+   "id": "g211",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Cómo se escribe correctamente la fecha?",
+   "n": 2,
+   "e": "Los meses van en minúscula y la preposición «de» también.",
+   "a": [
+    "3 de marzo de 2026",
+    "3 de Marzo de 2026",
+    "3 De marzo De 2026",
+    "Tres De Marzo 2026"
+   ]
+  },
+  {
+   "id": "g212",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«Los clientes ___ contentos con el servicio.»",
+   "n": 2,
+   "e": "El sujeto «los clientes» es plural (ellos): el verbo va en plural, «están».",
+   "a": [
+    "están",
+    "está",
+    "estamos",
+    "estás"
+   ]
+  },
+  {
+   "id": "g213",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué frase es correcta?",
+   "n": 2,
+   "e": "«Haber» con el sentido de «existir» va siempre en singular: hubo, había, habrá.",
+   "a": [
+    "Hubo muchos clientes.",
+    "Hubieron muchos clientes.",
+    "Habieron muchos clientes.",
+    "Hubo muchas clientes."
+   ]
+  },
+  {
+   "id": "g214",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué frase es correcta?",
+   "n": 3,
+   "e": "Después de «si» no se usa el condicional («habría», «sabría»). Se usa el subjuntivo: si lo hubiera sabido / si lo supiera.",
+   "a": [
+    "Si lo hubiera sabido, habría venido.",
+    "Si lo habría sabido, habría venido.",
+    "Si lo sabría, vendría.",
+    "Si lo habría sabido, vendría ayer."
+   ]
+  },
+  {
+   "id": "g215",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Qué frase es correcta?",
+   "n": 3,
+   "e": "Se dice «alegrarse de algo» y «estar seguro de algo», por eso llevan «de que». En cambio, «pienso de que» sobra el «de» (pienso algo).",
+   "a": [
+    "Me alegro de que vengas.",
+    "Me alegro que vengas.",
+    "Pienso de que vienes.",
+    "Estoy seguro que vienes."
+   ]
+  },
+  {
+   "id": "g216",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿Cuál es el plural de «el menú»?",
+   "n": 2,
+   "e": "Las palabras acabadas en -ú forman el plural normalmente con -s: menús, champús.",
+   "a": [
+    "Los menús",
+    "Los menúes",
+    "Los menuses",
+    "Los menú"
+   ]
+  },
+  {
+   "id": "g217",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "En «El camarero sirve el café», ¿cuál es el sujeto?",
+   "n": 2,
+   "e": "El sujeto es quien hace la acción y concuerda con el verbo: ¿quién sirve? El camarero.",
+   "a": [
+    "El camarero",
+    "El café",
+    "Sirve",
+    "Sirve el café"
+   ]
+  },
+  {
+   "id": "g218",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "En «Los clientes pidieron dos raciones», ¿qué es «pidieron»?",
+   "n": 2,
+   "e": "Indica una acción y tiene tiempo y persona (ellos pidieron): es un verbo.",
+   "a": [
+    "Un verbo",
+    "Un sustantivo",
+    "Un adjetivo",
+    "Un adverbio"
+   ]
+  },
+  {
+   "id": "g219",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "En «una mesa redonda», ¿qué es «redonda»?",
+   "n": 2,
+   "e": "«Redonda» dice cómo es la mesa: es un adjetivo que acompaña al sustantivo «mesa».",
+   "a": [
+    "Un adjetivo",
+    "Un verbo",
+    "Un sustantivo",
+    "Una preposición"
+   ]
+  },
+  {
+   "id": "g220",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "¿En qué tiempo está «comeremos»?",
+   "n": 2,
+   "e": "La terminación «-remos» indica algo que pasará: futuro (nosotros comeremos).",
+   "a": [
+    "Futuro",
+    "Pasado",
+    "Presente",
+    "Imperativo"
+   ]
+  },
+  {
+   "id": "g221",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "«Por qué» se escribe separado y con tilde cuando pregunta.",
+   "n": 2,
+   "e": "Sí: «¿Por qué llegas tarde?». Para responder se usa «porque», junto y sin tilde.",
+   "vf": true
+  },
+  {
+   "id": "g222",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.1",
+   "q": "Los meses del año se escriben con mayúscula en español.",
+   "n": 2,
+   "e": "Falso: en español van en minúscula (marzo, abril). En inglés sí van con mayúscula, y de ahí viene la confusión.",
+   "vf": false
+  },
+  {
+   "id": "g223",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.2",
+   "q": "Tienes que hacer un trabajo usando tres webs distintas. ¿Qué es lo correcto?",
+   "n": 2,
+   "e": "Resumir información de varias fuentes es seleccionar lo importante de cada una y redactarlo tú.",
+   "a": [
+    "Leer las tres, quedarte con las ideas principales y explicarlas con tus palabras",
+    "Copiar y pegar la primera web",
+    "Copiar un párrafo de cada una sin leer",
+    "Usar solo la más corta"
+   ]
+  },
+  {
+   "id": "g224",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.2",
+   "q": "Dos artículos opinan distinto sobre las terrazas en invierno. Al resumirlos, ¿qué haces?",
+   "n": 3,
+   "e": "Un buen resumen refleja los principales argumentos de cada fuente, aunque no estés de acuerdo.",
+   "a": [
+    "Recoges los argumentos principales de los dos puntos de vista",
+    "Copias solo el que te gusta",
+    "Inventas un tercer punto de vista",
+    "Pones solo los títulos"
+   ]
+  },
+  {
+   "id": "g225",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "¿Cómo empiezas un correo formal a una empresa?",
+   "n": 2,
+   "e": "En un escrito formal el saludo es respetuoso: «Estimados señores:», «Estimada señora García:». Fíjate en los dos puntos.",
+   "a": [
+    "Estimados señores:",
+    "¡Hola, guapos!",
+    "¿Qué pasa, gente?",
+    "¡Buenas, chicos!"
+   ]
+  },
+  {
+   "id": "g226",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "¿Cómo terminas un correo formal?",
+   "n": 2,
+   "e": "La despedida formal más usada es «Atentamente» o «Un cordial saludo», seguida de tu nombre.",
+   "a": [
+    "«Atentamente», y tu nombre",
+    "«Besos»",
+    "«Chao»",
+    "«Un abrazo fuerte»"
+   ]
+  },
+  {
+   "id": "g227",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "¿Qué es una instancia o solicitud?",
+   "n": 2,
+   "e": "Se usa para pedir algo oficialmente (una beca, un certificado…) e incluye tus datos, la exposición y la solicitud.",
+   "a": [
+    "Un escrito para pedir algo a una administración",
+    "Una carta de amor",
+    "Un anuncio publicitario",
+    "Un tipo de noticia"
+   ]
+  },
+  {
+   "id": "g228",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "¿Qué no debe faltar en un currículum?",
+   "n": 2,
+   "e": "El currículum resume quién eres profesionalmente: contacto, estudios, experiencia, idiomas y habilidades.",
+   "a": [
+    "Datos personales, formación y experiencia laboral",
+    "Tu película favorita",
+    "Tu número de cuenta bancaria",
+    "La opinión de tus amigos"
+   ]
+  },
+  {
+   "id": "g229",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "¿Qué es una carta de presentación?",
+   "n": 2,
+   "e": "Sirve para presentarte y convencer a la empresa de que eres adecuado para el puesto.",
+   "a": [
+    "Un escrito que acompaña al currículum y explica por qué quieres el puesto",
+    "El resumen de una noticia",
+    "Un tipo de menú",
+    "Una reclamación"
+   ]
+  },
+  {
+   "id": "g230",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "Si un restaurante te cobra algo que no has pedido y quieres reclamar oficialmente, pides…",
+   "n": 2,
+   "e": "Todos los establecimientos deben tener hojas de reclamaciones. Es el escrito oficial para quejarse.",
+   "a": [
+    "La hoja de reclamaciones",
+    "El libro de recetas",
+    "La carta de vinos",
+    "Un currículum"
+   ]
+  },
+  {
+   "id": "g231",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "Vas a llegar tarde al trabajo y avisas a tu jefe por WhatsApp. ¿Qué es lo adecuado?",
+   "n": 2,
+   "e": "Se adapta el texto a la situación: breve porque es WhatsApp, pero claro y educado porque es tu jefe.",
+   "a": [
+    "Un mensaje breve, educado y claro con el motivo y la hora de llegada",
+    "Solo un emoji",
+    "Un mensaje todo en mayúsculas",
+    "No avisar"
+   ]
+  },
+  {
+   "id": "g232",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.3",
+   "q": "En un correo formal está bien tutear al destinatario y usar emojis.",
+   "n": 2,
+   "e": "Falso: en un escrito formal se trata de usted y no se usan emojis ni expresiones coloquiales.",
+   "vf": false
+  },
+  {
+   "id": "g233",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.4",
+   "q": "¿Qué orden es correcto en un texto argumentativo?",
+   "n": 3,
+   "e": "Primero presentas lo que defiendes, luego das razones y al final concluyes.",
+   "a": [
+    "Introducción con la tesis, argumentos y conclusión",
+    "Conclusión, tesis y saludo",
+    "Solo argumentos, sin orden",
+    "Título, receta y firma"
+   ]
+  },
+  {
+   "id": "g234",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.4",
+   "q": "¿Qué tipo de texto es una receta de cocina?",
+   "n": 2,
+   "e": "Da pasos ordenados para hacer algo: es instructivo, como las instrucciones de un aparato.",
+   "a": [
+    "Instructivo",
+    "Narrativo",
+    "Poético",
+    "Argumentativo"
+   ]
+  },
+  {
+   "id": "g235",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.4",
+   "q": "¿Qué tipo de texto cuenta lo que les pasa a unos personajes en un tiempo y un lugar?",
+   "n": 2,
+   "e": "Narrar es contar hechos con personajes, tiempo y lugar, como un cuento o una noticia.",
+   "a": [
+    "Narrativo",
+    "Instructivo",
+    "Expositivo",
+    "Argumentativo"
+   ]
+  },
+  {
+   "id": "g236",
+   "c": "lengua",
+   "d": "EE",
+   "k": "EE.3.4",
+   "q": "¿Qué tipo de texto explica cómo es algo o alguien?",
+   "n": 2,
+   "e": "Describir es decir cómo es: forma, color, tamaño, carácter…",
+   "a": [
+    "Descriptivo",
+    "Narrativo",
     "Argumentativo",
-    "Literario",
     "Instructivo"
    ]
   },
   {
-   "id": "e125",
+   "id": "g237",
    "c": "lengua",
-   "q": "¿Cuál de estos es un género periodístico de opinión?",
+   "d": "EE",
+   "k": "EE.3.4",
+   "q": "¿Para qué sirven los párrafos en un texto?",
    "n": 2,
+   "e": "Cada párrafo desarrolla una idea. Así el texto queda claro y ordenado.",
    "a": [
-    "El editorial",
-    "La noticia",
-    "El reportaje",
-    "La entrevista"
+    "Para separar las ideas y que el texto se entienda mejor",
+    "Para que el texto ocupe más",
+    "Para decorar",
+    "No sirven para nada"
    ]
   },
   {
-   "id": "e126",
+   "id": "g238",
    "c": "lengua",
-   "q": "¿Qué estructura tiene una noticia?",
+   "d": "EE",
+   "k": "EE.3.5",
+   "q": "¿Qué es el asunto de un correo electrónico?",
    "n": 2,
+   "e": "El asunto permite saber de qué va el correo antes de abrirlo: «Solicitud de puesto de camarero».",
    "a": [
-    "Titular, entradilla y cuerpo (pirámide invertida)",
-    "Introducción, nudo y desenlace",
-    "Tesis, argumentos y conclusión",
-    "Saludo, cuerpo y despedida"
+    "Una frase corta que indica de qué trata el correo",
+    "La firma",
+    "La dirección del destinatario",
+    "Un archivo adjunto"
    ]
   },
   {
-   "id": "e127",
+   "id": "g239",
    "c": "lengua",
-   "q": "En una noticia, ¿para qué se usan normalmente las comillas?",
+   "d": "EE",
+   "k": "EE.3.5",
+   "q": "¿Qué indica escribir todo en MAYÚSCULAS en un mensaje?",
    "n": 2,
+   "e": "En internet las mayúsculas se leen como gritos. Es una convención de la comunicación digital.",
    "a": [
-    "Para citar las palabras exactas de alguien",
-    "Para indicar el título del periódico",
-    "Para marcar las faltas",
-    "Para separar párrafos"
+    "Que estás gritando",
+    "Que eres muy educado",
+    "Que es un mensaje formal",
+    "Nada"
    ]
   },
   {
-   "id": "e128",
+   "id": "g240",
    "c": "lengua",
-   "q": "¿Qué función del lenguaje predomina en una noticia?",
+   "d": "EE",
+   "k": "EE.3.5",
+   "q": "Quieres enviar tu currículum por correo electrónico. ¿Qué es lo adecuado?",
    "n": 2,
+   "e": "Cada soporte tiene sus normas: en un correo, asunto, saludo, mensaje, despedida y adjunto.",
    "a": [
-    "Referencial o representativa",
-    "Poética",
-    "Apelativa",
-    "Fática"
+    "Poner un asunto claro, un mensaje breve y adjuntar el currículum en PDF",
+    "Enviarlo sin asunto ni texto",
+    "Pegar una foto del currículum en el asunto",
+    "Mandarlo por un audio"
    ]
   },
   {
-   "id": "e129",
-   "c": "lengua",
-   "q": "¿Qué es una sigla?",
-   "n": 3,
-   "a": [
-    "Palabra formada por las iniciales de otras palabras, como ONU",
-    "Palabra formada por dos palabras, como sacacorchos",
-    "Palabra con prefijo, como deshacer",
-    "Palabra tomada de otra lengua"
-   ]
-  },
-  {
-   "id": "e130",
-   "c": "lengua",
-   "q": "\"Paleolítico\" (del griego palaio, antiguo, y lithos, piedra) es una palabra…",
-   "n": 3,
-   "a": [
-    "Compuesta",
-    "Derivada",
-    "Simple",
-    "Sigla"
-   ]
-  },
-  {
-   "id": "e131",
-   "c": "lengua",
-   "q": "\"Deshacer\" es una palabra…",
-   "n": 2,
-   "a": [
-    "Derivada, con prefijo",
-    "Compuesta",
-    "Simple",
-    "Sigla"
-   ]
-  },
-  {
-   "id": "e132",
-   "c": "lengua",
-   "q": "En \"la especie humana\", ¿qué categoría es \"humana\"?",
-   "n": 2,
-   "a": [
-    "Adjetivo",
-    "Sustantivo",
-    "Adverbio",
-    "Determinante"
-   ]
-  },
-  {
-   "id": "e133",
-   "c": "lengua",
-   "q": "En \"la antigüedad de los restos\", ¿qué categoría es \"antigüedad\"?",
-   "n": 2,
-   "a": [
-    "Sustantivo",
-    "Adjetivo",
-    "Adverbio",
-    "Verbo"
-   ]
-  },
-  {
-   "id": "e134",
-   "c": "lengua",
-   "q": "En \"esos restos\", ¿qué es \"esos\"?",
-   "n": 2,
-   "a": [
-    "Determinante demostrativo",
-    "Pronombre personal",
-    "Artículo",
-    "Adverbio"
-   ]
-  },
-  {
-   "id": "e135",
-   "c": "lengua",
-   "q": "En \"ahora sabemos más\", ¿qué es \"ahora\"?",
+   "id": "g241",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.1",
+   "q": "¿Para qué sirve un navegador web, como Chrome, Firefox o Safari?",
    "n": 1,
+   "e": "El navegador es el programa que abre las páginas web. Dentro de él usas un buscador, como Google.",
    "a": [
-    "Adverbio de tiempo",
-    "Adjetivo",
-    "Sustantivo",
-    "Preposición"
+    "Para visitar páginas de internet",
+    "Para escribir a mano",
+    "Para imprimir sin ordenador",
+    "Para cargar el móvil"
    ]
   },
   {
-   "id": "e136",
-   "c": "lengua",
-   "q": "En \"muchas especies\", ¿qué es \"muchas\"?",
-   "n": 2,
-   "a": [
-    "Determinante indefinido",
-    "Adjetivo calificativo",
-    "Pronombre personal",
-    "Adverbio de cantidad"
-   ]
-  },
-  {
-   "id": "e137",
-   "c": "lengua",
-   "q": "¿Cuál es el pretérito perfecto simple de \"encontrar\" (ellos)?",
-   "n": 2,
-   "a": [
-    "Encontraron",
-    "Han encontrado",
-    "Encontraban",
-    "Encontrarán"
-   ]
-  },
-  {
-   "id": "e138",
-   "c": "lengua",
-   "q": "\"Hayan descubierto\" es…",
-   "n": 3,
-   "a": [
-    "Pretérito perfecto de subjuntivo",
-    "Presente de subjuntivo",
-    "Pretérito perfecto compuesto de indicativo",
-    "Pretérito pluscuamperfecto"
-   ]
-  },
-  {
-   "id": "e139",
-   "c": "lengua",
-   "q": "¿Cuál es el presente de subjuntivo de \"tener\" (él)?",
-   "n": 2,
-   "a": [
-    "Tenga",
-    "Tiene",
-    "Tuviera",
-    "Tendrá"
-   ]
-  },
-  {
-   "id": "e140",
-   "c": "lengua",
-   "q": "¿Cuál de estas es una perífrasis de obligación?",
-   "n": 2,
-   "a": [
-    "Tengo que estudiar",
-    "Voy a estudiar",
-    "Estoy estudiando",
-    "Acabo de estudiar"
-   ]
-  },
-  {
-   "id": "e141",
-   "c": "lengua",
-   "q": "\"Acabo de llegar\" es una perífrasis que indica…",
-   "n": 3,
-   "a": [
-    "Una acción que ha terminado hace muy poco",
-    "Obligación",
-    "Una acción futura",
-    "Una acción que se repite"
-   ]
-  },
-  {
-   "id": "e142",
-   "c": "lengua",
-   "q": "En \"Los investigadores encontraron un cráneo\", ¿cuál es el sujeto?",
-   "n": 2,
-   "a": [
-    "Los investigadores",
-    "Un cráneo",
-    "Encontraron",
-    "No tiene sujeto"
-   ]
-  },
-  {
-   "id": "e143",
-   "c": "lengua",
-   "q": "En \"Los investigadores encontraron un cráneo\", ¿qué función tiene \"un cráneo\"?",
-   "n": 2,
-   "a": [
-    "Complemento directo",
-    "Sujeto",
-    "Complemento indirecto",
-    "Atributo"
-   ]
-  },
-  {
-   "id": "e144",
-   "c": "lengua",
-   "q": "En \"Le di el libro a María\", ¿qué función tiene \"a María\"?",
-   "n": 3,
-   "a": [
-    "Complemento indirecto",
-    "Complemento directo",
-    "Sujeto",
-    "Complemento circunstancial"
-   ]
-  },
-  {
-   "id": "e145",
-   "c": "lengua",
-   "q": "\"María es muy simpática\" tiene un predicado…",
-   "n": 3,
-   "a": [
-    "Nominal (con atributo)",
-    "Verbal",
-    "Sin verbo",
-    "Impersonal"
-   ]
-  },
-  {
-   "id": "e146",
-   "c": "lengua",
-   "q": "En \"Juan corre por el parque\", ¿qué es \"por el parque\"?",
-   "n": 2,
-   "a": [
-    "Complemento circunstancial de lugar",
-    "Complemento directo",
-    "Sujeto",
-    "Atributo"
-   ]
-  },
-  {
-   "id": "e147",
-   "c": "lengua",
-   "q": "¿Cuál de estas oraciones es impersonal?",
-   "n": 3,
-   "a": [
-    "Llueve mucho en Galicia",
-    "Juan come pan",
-    "Los niños juegan",
-    "Mi madre trabaja"
-   ]
-  },
-  {
-   "id": "e148",
-   "c": "lengua",
-   "q": "¿Qué palabra está bien escrita?",
+   "id": "g242",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.1",
+   "q": "¿Qué es un buscador?",
    "n": 1,
+   "e": "El buscador encuentra páginas a partir de palabras clave. No confundir con el navegador, que es el programa.",
    "a": [
-    "Árbol",
-    "Arbol",
-    "Cancíon",
-    "Examén"
+    "Una web para encontrar información en internet, como Google",
+    "Un antivirus",
+    "Un tipo de cable",
+    "Un programa de fotos"
    ]
   },
   {
-   "id": "e149",
-   "c": "lengua",
-   "q": "¿Cuál de estas palabras es esdrújula?",
+   "id": "g243",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.1",
+   "q": "Para buscar en Google la frase exacta «prueba de acceso a grado medio», la escribes…",
    "n": 2,
+   "e": "Las comillas hacen que Google busque esas palabras juntas y en ese orden. Las mayúsculas no cambian nada.",
    "a": [
-    "Música",
-    "Canción",
-    "Mesa",
-    "Reloj"
+    "Entre comillas",
+    "En mayúsculas",
+    "Con faltas",
+    "Al revés"
    ]
   },
   {
-   "id": "e150",
-   "c": "lengua",
-   "q": "¿Qué frase está bien escrita?",
+   "id": "g244",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.1",
+   "q": "¿Qué es una URL?",
    "n": 2,
+   "e": "La URL es lo que aparece en la barra del navegador, por ejemplo https://www.educa.jcyl.es.",
    "a": [
-    "He hecho los deberes",
-    "He echo los deberes",
-    "E hecho los deberes",
-    "He hechó los deberes"
+    "La dirección de una página web",
+    "Un virus",
+    "Una contraseña",
+    "Un archivo de música"
    ]
   },
   {
-   "id": "e151",
-   "c": "lengua",
-   "q": "¿Qué frase está bien escrita?",
+   "id": "g245",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.1",
+   "q": "Buscas información para un trabajo y salen muchos resultados. ¿Cuál eliges primero?",
    "n": 2,
+   "e": "Elegir bien los resultados es mirar la fuente, la fecha y si es publicidad («Patrocinado»).",
    "a": [
-    "Vamos a ver la película",
-    "Vamos haber la película",
-    "Vamos a haber la película",
-    "Bamos a ver la película"
+    "Los de fuentes reconocidas y actualizadas, mirando quién lo publica y la fecha",
+    "Siempre el primero, aunque sea un anuncio",
+    "El que tenga más colores",
+    "Uno cualquiera al azar"
    ]
   },
   {
-   "id": "e152",
-   "c": "lengua",
-   "q": "¿Cuál es un sinónimo de \"rápido\"?",
+   "id": "g246",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.1",
+   "q": "¿Qué es un «marcador» o «favorito» del navegador?",
+   "n": 3,
+   "e": "Guardas la página con la estrella y la vuelves a abrir con un clic, sin buscarla otra vez.",
+   "a": [
+    "Un acceso guardado a una página web",
+    "Una web que te sigue",
+    "Un virus",
+    "Un tipo de contraseña"
+   ]
+  },
+  {
+   "id": "g247",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.2",
+   "q": "Quieres comparar dos móviles antes de comprar uno. ¿Qué es lo más sensato?",
+   "n": 2,
+   "e": "Para decidir bien se comparan datos (precio, batería, memoria) y opiniones de varias fuentes.",
+   "a": [
+    "Buscar sus características y opiniones en varias webs y compararlas",
+    "Comprar el primero que salga en un anuncio",
+    "Elegir siempre el más caro",
+    "Fiarte solo de un influencer"
+   ]
+  },
+  {
+   "id": "g248",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.2",
+   "q": "Necesitas escribir y enviar documentos desde casa, sin juegos ni programas pesados. ¿Qué te conviene más?",
+   "n": 2,
+   "e": "Se elige el dispositivo según lo que necesitas. Para tareas básicas no hace falta lo más potente.",
+   "a": [
+    "Un portátil sencillo o una tablet con teclado",
+    "Un ordenador gaming muy caro",
+    "Una videoconsola",
+    "Un reloj inteligente"
+   ]
+  },
+  {
+   "id": "g249",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.2",
+   "q": "Quieres hacer la cuenta de gastos de un bar cada mes. ¿Qué herramienta es la adecuada?",
+   "n": 2,
+   "e": "La hoja de cálculo hace sumas y medias automáticamente. Es la herramienta pensada para números.",
+   "a": [
+    "Una hoja de cálculo",
+    "Un programa de dibujo",
+    "Un reproductor de vídeo",
+    "Una red social"
+   ]
+  },
+  {
+   "id": "g250",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.3",
+   "q": "¿Qué es un archivo PDF?",
+   "n": 2,
+   "e": "El PDF mantiene el formato. Por eso se usa para currículums, facturas y documentos oficiales.",
+   "a": [
+    "Un documento que se ve igual en cualquier dispositivo",
+    "Un vídeo",
+    "Una canción",
+    "Un programa de dibujo"
+   ]
+  },
+  {
+   "id": "g251",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.3",
+   "q": "¿Qué extensión tiene normalmente una foto?",
+   "n": 2,
+   "e": ".jpg (o .png) son imágenes; .mp3 es audio; .docx es Word; .exe es un programa.",
+   "a": [
+    ".jpg",
+    ".mp3",
+    ".docx",
+    ".exe"
+   ]
+  },
+  {
+   "id": "g252",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.3",
+   "q": "¿Qué extensión tiene un documento de Word?",
+   "n": 2,
+   "e": ".docx es el formato de Word. .mp4 es vídeo y .zip, archivo comprimido.",
+   "a": [
+    ".docx",
+    ".jpg",
+    ".mp4",
+    ".zip"
+   ]
+  },
+  {
+   "id": "g253",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.3",
+   "q": "¿Qué es un archivo .zip?",
+   "n": 2,
+   "e": "El .zip junta y reduce archivos para enviarlos más fácilmente. Hay que «descomprimirlo» para abrirlos.",
+   "a": [
+    "Un archivo comprimido que puede contener varios archivos",
+    "Una foto",
+    "Un vídeo",
+    "Una página web"
+   ]
+  },
+  {
+   "id": "g254",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.3",
+   "q": "¿Para qué sirven las carpetas en un ordenador?",
+   "n": 2,
+   "e": "Clasificar la información en carpetas con nombres claros te ayuda a encontrar las cosas.",
+   "a": [
+    "Para organizar y clasificar los archivos",
+    "Para que el ordenador vaya más rápido",
+    "Para conectarse a internet",
+    "Para borrar virus"
+   ]
+  },
+  {
+   "id": "g255",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.3",
+   "q": "¿Qué es «la nube» (Google Drive, OneDrive, iCloud…)?",
+   "n": 2,
+   "e": "Tus archivos se guardan en servidores de internet; los abres desde el móvil o el ordenador con tu cuenta.",
+   "a": [
+    "Un servicio para guardar archivos en internet y abrirlos desde cualquier dispositivo",
+    "Un antivirus",
+    "Una red wifi",
+    "Un tipo de pantalla"
+   ]
+  },
+  {
+   "id": "g256",
+   "c": "digital",
+   "d": "IAD",
+   "k": "IAD.3.3",
+   "q": "¿Qué nombre de archivo es más útil para tu currículum?",
+   "n": 2,
+   "e": "Un nombre claro dice qué es y de quién. Así quien lo recibe lo encuentra y lo clasifica fácilmente.",
+   "a": [
+    "CV_Ana_Garcia_2026.pdf",
+    "documento1.pdf",
+    "asdfgh.pdf",
+    "nuevo nuevo final.pdf"
+   ]
+  },
+  {
+   "id": "g257",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.1",
+   "q": "¿Qué necesitas para enviar un correo electrónico a alguien?",
    "n": 1,
+   "e": "Una dirección de correo tiene esta forma: nombre@dominio.com.",
    "a": [
-    "Veloz",
-    "Lento",
-    "Pesado",
-    "Tranquilo"
+    "Su dirección de correo electrónico",
+    "Su dirección postal",
+    "Su DNI",
+    "Su número de cuenta"
    ]
   },
   {
-   "id": "e153",
-   "c": "lengua",
-   "q": "¿Cuál es un antónimo de \"escaso\"?",
-   "n": 1,
-   "a": [
-    "Abundante",
-    "Poco",
-    "Raro",
-    "Insuficiente"
-   ]
-  },
-  {
-   "id": "e154",
-   "c": "lengua",
-   "q": "¿Qué saludo es adecuado en un correo formal de reclamación?",
+   "id": "g258",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.1",
+   "q": "¿Qué significa «CC» al enviar un correo?",
    "n": 2,
+   "e": "CC envía una copia visible: todos ven quién la ha recibido.",
    "a": [
-    "Estimados señores:",
-    "¡Hola, chicos!",
-    "Querido amigo:",
-    "¿Qué tal?"
+    "Con copia: otra persona también lo recibe",
+    "Correo cancelado",
+    "Correo confidencial",
+    "Copia de cierre"
    ]
   },
   {
-   "id": "e155",
-   "c": "lengua",
-   "q": "En un correo de reclamación por una reserva mal hecha, ¿qué no puede faltar?",
+   "id": "g259",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.1",
+   "q": "¿Para qué sirve «CCO» (copia oculta)?",
    "n": 2,
+   "e": "Con CCO proteges la privacidad: nadie ve las direcciones de los demás.",
    "a": [
-    "Los datos de la reserva, el problema y lo que pides (reembolso o cambio)",
-    "Solo tu nombre",
-    "Una queja sin datos",
-    "Un chiste para suavizar"
+    "Para enviar a varias personas sin que vean las direcciones de los demás",
+    "Para borrar el correo",
+    "Para cifrar el correo",
+    "Para enviarlo más tarde"
    ]
   },
   {
-   "id": "e156",
-   "c": "lengua",
-   "q": "¿Quién escribió \"Don Quijote de la Mancha\"?",
-   "n": 1,
-   "a": [
-    "Miguel de Cervantes",
-    "Lope de Vega",
-    "Federico García Lorca",
-    "Antonio Machado"
-   ]
-  },
-  {
-   "id": "e157",
-   "c": "lengua",
-   "q": "¿Quién escribió \"La casa de Bernarda Alba\"?",
+   "id": "g260",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.1",
+   "q": "¿Qué es un archivo adjunto?",
    "n": 2,
+   "e": "Es el «clip» 📎 del correo: currículum, fotos, documentos…",
    "a": [
-    "Federico García Lorca",
-    "Miguel de Unamuno",
-    "Gustavo Adolfo Bécquer",
-    "Benito Pérez Galdós"
+    "Un archivo que se envía junto con un correo o mensaje",
+    "La firma del correo",
+    "El asunto",
+    "El remitente"
    ]
   },
   {
-   "id": "e158",
-   "c": "lengua",
-   "q": "¿Quién escribió \"Campos de Castilla\"?",
+   "id": "g261",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.1",
+   "q": "Quieres enviar un archivo muy grande que no cabe en un correo. ¿Qué haces?",
    "n": 2,
+   "e": "El correo tiene límite de tamaño. La nube te deja compartir un enlace al archivo.",
    "a": [
-    "Antonio Machado",
-    "Federico García Lorca",
-    "Rosalía de Castro",
-    "Juan Ramón Jiménez"
+    "Lo subes a la nube y compartes el enlace",
+    "Lo envías en 50 correos",
+    "Lo imprimes",
+    "Lo grabas en un disquete"
    ]
   },
   {
-   "id": "e159",
-   "c": "lengua",
-   "q": "¿Quién escribió \"Cien años de soledad\"?",
+   "id": "g262",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.2",
+   "q": "¿Qué son el certificado digital y Cl@ve?",
    "n": 2,
+   "e": "Con ellos demuestras quién eres en internet para pedir citas, ayudas o certificados.",
    "a": [
-    "Gabriel García Márquez",
-    "Pablo Neruda",
-    "Mario Vargas Llosa",
-    "Julio Cortázar"
+    "Formas de identificarte en internet para hacer trámites con la administración",
+    "Antivirus",
+    "Redes sociales",
+    "Tipos de wifi"
    ]
   },
   {
-   "id": "e160",
-   "c": "lengua",
-   "q": "¿Quién escribió el \"Cantar de mio Cid\"?",
+   "id": "g263",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.2",
+   "q": "¿Dónde se pide cita previa con la administración (SEPE, Seguridad Social…)?",
    "n": 2,
+   "e": "Los trámites se hacen en las webs oficiales (sede electrónica). Los enlaces por SMS pueden ser estafas.",
    "a": [
-    "Es anónimo",
-    "Miguel de Cervantes",
-    "Gonzalo de Berceo",
-    "Jorge Manrique"
+    "En su sede electrónica o web oficial",
+    "En una red social cualquiera",
+    "En un foro",
+    "En un enlace de un SMS desconocido"
    ]
   },
   {
-   "id": "e161",
-   "c": "lengua",
-   "q": "¿Quién escribió las \"Rimas\"?",
+   "id": "g264",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.2",
+   "q": "¿Qué indica una dirección que termina en «.gob.es» o «.jcyl.es»?",
    "n": 2,
+   "e": "«.gob.es» es del Gobierno de España y «.jcyl.es» de la Junta de Castilla y León.",
    "a": [
-    "Gustavo Adolfo Bécquer",
-    "Antonio Machado",
-    "José Zorrilla",
-    "Garcilaso de la Vega"
+    "Que es una web de una administración pública",
+    "Que es una tienda",
+    "Que es una red social",
+    "Que es un blog personal"
    ]
   },
   {
-   "id": "e162",
-   "c": "lengua",
-   "q": "¿Quién escribió \"La Celestina\"?",
+   "id": "g265",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.2",
+   "q": "¿Para qué sirve la app o la web de tu centro de salud?",
+   "n": 2,
+   "e": "La administración ofrece servicios digitales que te ahorran desplazamientos y colas.",
+   "a": [
+    "Para pedir cita médica y ver tus datos de salud sin ir en persona",
+    "Para ver películas",
+    "Para jugar",
+    "Para comprar ropa"
+   ]
+  },
+  {
+   "id": "g266",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.3",
+   "q": "En un grupo de WhatsApp del trabajo, lo adecuado es…",
+   "n": 2,
+   "e": "Al compartir información laboral se respeta el tema del grupo, los horarios y la privacidad.",
+   "a": [
+    "Escribir sobre temas de trabajo y con respeto",
+    "Enviar cadenas y bromas a todas horas",
+    "Compartir datos personales de compañeros",
+    "Escribir de madrugada sin motivo"
+   ]
+  },
+  {
+   "id": "g267",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.3",
+   "q": "Tu jefe te pide que reenvíes a todo el equipo el horario de la semana. ¿Qué haces?",
+   "n": 2,
+   "e": "Actúas de intermediario: haces llegar la información a quien la necesita por el canal adecuado.",
+   "a": [
+    "Lo reenvías por el canal del equipo, comprobando que llega a todos",
+    "Se lo cuentas solo a un compañero",
+    "Lo publicas en tus redes sociales",
+    "No lo envías"
+   ]
+  },
+  {
+   "id": "g268",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.3",
+   "q": "Un compañero te pide el teléfono de otro compañero. ¿Qué es lo correcto?",
+   "n": 2,
+   "e": "Los datos personales son de cada persona: hay que pedir permiso antes de compartirlos.",
+   "a": [
+    "Preguntar antes al dueño del teléfono si puedes darlo",
+    "Darlo sin preguntar",
+    "Publicarlo en el grupo",
+    "Inventar un número"
+   ]
+  },
+  {
+   "id": "g269",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.4",
+   "q": "¿Qué herramienta sirve para hacer una videollamada con varias personas?",
+   "n": 2,
+   "e": "Son plataformas de comunicación en tiempo real con vídeo, chat y pantalla compartida.",
+   "a": [
+    "Google Meet, Zoom o Teams",
+    "Excel",
+    "Paint",
+    "La calculadora"
+   ]
+  },
+  {
+   "id": "g270",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.4",
+   "q": "En una videoconferencia de clase, ¿qué es correcto?",
+   "n": 2,
+   "e": "Silenciar el micro evita ruidos. Para hablar, pide la palabra (levantar la mano o usar el chat).",
+   "a": [
+    "Silenciar el micrófono cuando no hablas",
+    "Hablar todos a la vez",
+    "Dejar la música puesta",
+    "Comer con el micrófono abierto"
+   ]
+  },
+  {
+   "id": "g271",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.4",
+   "q": "¿Qué permite un documento compartido en la nube, como Google Docs?",
+   "n": 2,
+   "e": "Es una forma de colaborar: cada uno escribe su parte y todos ven los cambios al momento.",
+   "a": [
+    "Que varias personas lo editen a la vez",
+    "Que nadie lo pueda leer",
+    "Que se imprima solo",
+    "Que se borre al abrirlo"
+   ]
+  },
+  {
+   "id": "g272",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.4",
+   "q": "¿Qué es la «netiqueta»?",
+   "n": 2,
+   "e": "Ejemplos: saludar, no escribir en mayúsculas, respetar turnos y no compartir datos ajenos.",
+   "a": [
+    "Las normas de buena educación en internet",
+    "Una etiqueta de ropa",
+    "Un virus",
+    "Una red wifi"
+   ]
+  },
+  {
+   "id": "g273",
+   "c": "digital",
+   "d": "CC",
+   "k": "CC.3.4",
+   "q": "En una videollamada quieres enseñar un documento a los demás. ¿Qué usas?",
+   "n": 2,
+   "e": "«Compartir pantalla» deja que todos vean lo que tienes abierto en tu ordenador.",
+   "a": [
+    "La opción de compartir pantalla",
+    "El botón de colgar",
+    "El micrófono",
+    "El fondo de pantalla"
+   ]
+  },
+  {
+   "id": "g274",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.1",
+   "q": "¿Qué programa es más adecuado para hacer una presentación con diapositivas?",
+   "n": 2,
+   "e": "Las presentaciones combinan textos, imágenes y vídeos en diapositivas para exponer un tema.",
+   "a": [
+    "PowerPoint o Google Presentaciones",
+    "Excel",
+    "El Bloc de notas",
+    "La calculadora"
+   ]
+  },
+  {
+   "id": "g275",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.1",
+   "q": "¿Qué programa es más adecuado para hacer una tabla con cálculos (gastos, notas…)?",
+   "n": 2,
+   "e": "La hoja de cálculo trabaja con celdas y fórmulas que calculan solas.",
+   "a": [
+    "Una hoja de cálculo: Excel, Calc o Google Sheets",
+    "Paint",
+    "Un navegador",
+    "Un reproductor de música"
+   ]
+  },
+  {
+   "id": "g276",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.1",
+   "q": "En una hoja de cálculo, ¿qué hace la fórmula =SUMA(A1:A5)?",
+   "n": 2,
+   "e": "Los dos puntos (:) indican un rango: de A1 hasta A5, ambas incluidas.",
+   "a": [
+    "Suma los valores de las celdas A1 a A5",
+    "Multiplica A1 por A5",
+    "Borra las celdas",
+    "Cuenta las letras"
+   ]
+  },
+  {
+   "id": "g277",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.1",
+   "q": "En una hoja de cálculo, ¿qué fórmula calcula la media de B2 a B10?",
    "n": 3,
+   "e": "En la versión en español, la media es PROMEDIO. SUMA solo suma.",
    "a": [
-    "Fernando de Rojas",
-    "Lope de Vega",
-    "Francisco de Quevedo",
-    "Calderón de la Barca"
+    "=PROMEDIO(B2:B10)",
+    "=SUMA(B2:B10)",
+    "=MEDIA(B2+B10)",
+    "=B2/B10"
    ]
   },
   {
-   "id": "e163",
-   "c": "lengua",
-   "q": "¿Quién escribió los \"Episodios nacionales\", novelas históricas?",
-   "n": 3,
-   "a": [
-    "Benito Pérez Galdós",
-    "Leopoldo Alas \"Clarín\"",
-    "Pío Baroja",
-    "Camilo José Cela"
-   ]
-  },
-  {
-   "id": "e164",
-   "c": "lengua",
-   "q": "¿Quién escribió \"Veinte poemas de amor y una canción desesperada\"?",
+   "id": "g278",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.1",
+   "q": "En una hoja de cálculo, ¿cómo se llama la casilla donde se cruzan una fila y una columna?",
    "n": 2,
+   "e": "Cada celda tiene un nombre: la columna (letra) y la fila (número), como B3.",
    "a": [
-    "Pablo Neruda",
-    "Gabriel García Márquez",
-    "Rubén Darío",
-    "Octavio Paz"
+    "Celda",
+    "Diapositiva",
+    "Párrafo",
+    "Pestaña"
    ]
   },
   {
-   "id": "e165",
-   "c": "lengua",
-   "q": "¿A qué generación pertenece Federico García Lorca?",
-   "n": 3,
-   "a": [
-    "Generación del 27",
-    "Generación del 98",
-    "Romanticismo",
-    "Siglo de Oro"
-   ]
-  },
-  {
-   "id": "e166",
-   "c": "lengua",
-   "q": "¿A qué generación pertenece Antonio Machado?",
-   "n": 3,
-   "a": [
-    "Generación del 98",
-    "Generación del 27",
-    "Barroco",
-    "Realismo"
-   ]
-  },
-  {
-   "id": "e167",
-   "c": "lengua",
-   "q": "\"El Lazarillo de Tormes\" es una novela…",
-   "n": 3,
-   "a": [
-    "Picaresca",
-    "Pastoril",
-    "De caballerías",
-    "Histórica"
-   ]
-  },
-  {
-   "id": "e168",
-   "c": "lengua",
-   "q": "\"Tus ojos son como dos luceros\" es un ejemplo de…",
+   "id": "g279",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.1",
+   "q": "Para hacer un cartel del menú del día, ¿qué herramienta es adecuada?",
    "n": 2,
+   "e": "Para crear contenido visual se usan programas de diseño con plantillas, textos e imágenes.",
    "a": [
-    "Comparación o símil",
-    "Metáfora",
-    "Hipérbole",
-    "Personificación"
+    "Un programa de diseño sencillo, como Canva",
+    "Una hoja de cálculo",
+    "Un antivirus",
+    "El correo electrónico"
    ]
   },
   {
-   "id": "e169",
-   "c": "lengua",
-   "q": "\"El viento susurraba entre los árboles\" es un ejemplo de…",
+   "id": "g280",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.1",
+   "q": "¿Qué formato es de audio?",
    "n": 2,
+   "e": ".mp3 es sonido; .jpg imagen; .pdf documento; .xlsx hoja de cálculo.",
    "a": [
-    "Personificación",
-    "Comparación",
-    "Hipérbole",
-    "Anáfora"
+    ".mp3",
+    ".jpg",
+    ".pdf",
+    ".xlsx"
    ]
   },
   {
-   "id": "e170",
-   "c": "lengua",
-   "q": "En un correo formal se evita el lenguaje coloquial.",
+   "id": "g281",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.2",
+   "q": "¿Qué es editar un vídeo?",
    "n": 2,
-   "vf": true
+   "e": "Editar es transformar un contenido que ya existe para contar mejor tu idea.",
+   "a": [
+    "Cortar, unir y añadir efectos o textos a lo grabado",
+    "Grabarlo",
+    "Verlo",
+    "Borrarlo"
+   ]
   },
   {
-   "id": "e171",
-   "c": "lengua",
-   "q": "\"Hayan descubierto\" es presente de subjuntivo.",
+   "id": "g282",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.2",
+   "q": "Tienes una foto del plato del día y quieres usarla en Instagram. ¿Qué es reelaborarla?",
    "n": 2,
+   "e": "Adaptar un contenido es modificarlo un poco (recorte, filtros, texto) para que transmita tu mensaje.",
+   "a": [
+    "Recortarla, mejorar la luz y añadir un texto con el precio",
+    "Publicarla tal cual sin mirar",
+    "Hacer otra foto distinta",
+    "Borrarla"
+   ]
+  },
+  {
+   "id": "g283",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.2",
+   "q": "Has hecho una presentación y quieres usarla para otro curso. ¿Qué es lo más práctico?",
+   "n": 2,
+   "e": "Reutilizar tu propio material y adaptarlo ahorra tiempo.",
+   "a": [
+    "Hacer una copia y adaptar los textos y las imágenes",
+    "Empezar de cero siempre",
+    "Enviar la misma sin cambiar nada",
+    "Imprimirla y escribir a mano"
+   ]
+  },
+  {
+   "id": "g284",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.3",
+   "q": "¿Qué es una licencia Creative Commons?",
+   "n": 2,
+   "e": "El autor decide qué se puede hacer con su obra: usarla, modificarla, venderla… con condiciones.",
+   "a": [
+    "Un permiso para usar una obra con ciertas condiciones, como citar al autor",
+    "Un carné",
+    "Un antivirus",
+    "Un tipo de archivo"
+   ]
+  },
+  {
+   "id": "g285",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.3",
+   "q": "Usas una foto de internet con licencia «CC BY». ¿Qué debes hacer?",
+   "n": 2,
+   "e": "«BY» significa «reconocimiento»: puedes usarla si dices quién es el autor.",
+   "a": [
+    "Citar al autor",
+    "Nada, ya es tuya",
+    "Venderla como propia",
+    "Quitarle la firma"
+   ]
+  },
+  {
+   "id": "g286",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.3",
+   "q": "¿Qué significa que una obra es de dominio público?",
+   "n": 2,
+   "e": "Pasa, por ejemplo, cuando han pasado muchos años desde la muerte del autor.",
+   "a": [
+    "Que se puede usar libremente porque ya no tiene derechos de autor",
+    "Que es de un ayuntamiento",
+    "Que es gratis solo un día",
+    "Que no se puede usar"
+   ]
+  },
+  {
+   "id": "g287",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.3",
+   "q": "¿Qué es el plagio?",
+   "n": 2,
+   "e": "Copiar sin decir de dónde viene es plagio. Citar la fuente lo evita.",
+   "a": [
+    "Presentar como propio el trabajo de otra persona",
+    "Citar las fuentes",
+    "Resumir con tus palabras",
+    "Compartir un enlace"
+   ]
+  },
+  {
+   "id": "g288",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.3",
+   "q": "¿Qué significa el símbolo ©?",
+   "n": 2,
+   "e": "© indica que la obra está protegida: necesitas permiso para usarla.",
+   "a": [
+    "Que la obra tiene derechos de autor (copyright)",
+    "Que es gratis",
+    "Que es de dominio público",
+    "Que tiene un virus"
+   ]
+  },
+  {
+   "id": "g289",
+   "c": "digital",
+   "d": "CCD",
+   "k": "CCD.3.3",
+   "q": "Puedes usar cualquier imagen de Google en tu trabajo sin citar al autor.",
+   "n": 2,
+   "e": "Falso: que esté en Google no significa que sea libre. Mira la licencia y cita siempre al autor.",
    "vf": false
   },
   {
-   "id": "e172",
-   "c": "ingles",
-   "q": "She ___ to work every day.",
-   "n": 1,
-   "a": [
-    "goes",
-    "is going",
-    "go",
-    "going"
-   ]
-  },
-  {
-   "id": "e173",
-   "c": "ingles",
-   "q": "Look! It ___ now.",
-   "n": 1,
-   "a": [
-    "is raining",
-    "rains",
-    "rain",
-    "raining"
-   ]
-  },
-  {
-   "id": "e174",
-   "c": "ingles",
-   "q": "Negative of \"They could swim\":",
+   "id": "g290",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.1",
+   "q": "¿Qué fuente es más fiable para saber las fechas de la prueba de acceso?",
    "n": 2,
+   "e": "La información oficial está en la web de la administración. Lo demás puede estar equivocado o anticuado.",
    "a": [
-    "They couldn't swim.",
-    "They didn't could swim.",
-    "They could not to swim.",
-    "They don't could swim."
+    "La web oficial de la Junta (educa.jcyl.es)",
+    "Un comentario anónimo en un foro",
+    "Un vídeo sin fuentes",
+    "Una cadena de WhatsApp"
    ]
   },
   {
-   "id": "e175",
-   "c": "ingles",
-   "q": "Question of \"He had a car\":",
+   "id": "g291",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.1",
+   "q": "¿Qué es un bulo (fake news)?",
    "n": 2,
+   "e": "Los bulos buscan engañar o asustar. Suelen tener titulares exagerados y no citan fuentes.",
    "a": [
-    "Did he have a car?",
-    "Had he a car?",
-    "Does he had a car?",
-    "Did he had a car?"
+    "Una noticia falsa que se difunde como si fuera verdad",
+    "Una noticia de ayer",
+    "Un anuncio",
+    "Una noticia de deportes"
    ]
   },
   {
-   "id": "e176",
-   "c": "ingles",
-   "q": "Past simple of \"go\":",
-   "n": 1,
-   "a": [
-    "went",
-    "goed",
-    "gone",
-    "going"
-   ]
-  },
-  {
-   "id": "e177",
-   "c": "ingles",
-   "q": "Negative of \"She was reading\":",
+   "id": "g292",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.1",
+   "q": "¿Cómo compruebas si una noticia es falsa?",
    "n": 2,
+   "e": "Contrastar es comparar con otras fuentes fiables. Los «me gusta» no prueban nada.",
    "a": [
-    "She wasn't reading.",
-    "She didn't reading.",
-    "She weren't reading.",
-    "She not was reading."
+    "Buscándola en medios fiables y comprobando la fuente y la fecha",
+    "Mirando cuántos «me gusta» tiene",
+    "Fiándote si te la manda un amigo",
+    "Si tiene foto, es verdad"
    ]
   },
   {
-   "id": "e178",
-   "c": "ingles",
-   "q": "Question of \"They were sleeping\":",
+   "id": "g293",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.1",
+   "q": "Si una web tiene candado (https), todo lo que dice es verdad.",
    "n": 2,
-   "a": [
-    "Were they sleeping?",
-    "Did they sleeping?",
-    "Was they sleeping?",
-    "Do they were sleeping?"
-   ]
-  },
-  {
-   "id": "e179",
-   "c": "ingles",
-   "q": "I don't want ___ to eat, thanks.",
-   "n": 2,
-   "a": [
-    "anything",
-    "something",
-    "nothing",
-    "everything"
-   ]
-  },
-  {
-   "id": "e180",
-   "c": "ingles",
-   "q": "___ is perfect. Everyone makes mistakes.",
-   "n": 2,
-   "a": [
-    "Nobody",
-    "Anybody",
-    "Somebody",
-    "Everybody"
-   ]
-  },
-  {
-   "id": "e181",
-   "c": "ingles",
-   "q": "I can't find my keys ___.",
-   "n": 2,
-   "a": [
-    "anywhere",
-    "nowhere",
-    "somewhere",
-    "everywhere"
-   ]
-  },
-  {
-   "id": "e182",
-   "c": "ingles",
-   "q": "There's ___ at the door. Can you open it?",
-   "n": 2,
-   "a": [
-    "somebody",
-    "anybody",
-    "nobody",
-    "everywhere"
-   ]
-  },
-  {
-   "id": "e183",
-   "c": "ingles",
-   "q": "Comparative of \"pretty\":",
-   "n": 2,
-   "a": [
-    "prettier",
-    "more pretty",
-    "prettyer",
-    "the prettiest"
-   ]
-  },
-  {
-   "id": "e184",
-   "c": "ingles",
-   "q": "Superlative of \"beautiful\":",
-   "n": 2,
-   "a": [
-    "the most beautiful",
-    "the beautifulest",
-    "more beautiful",
-    "the more beautiful"
-   ]
-  },
-  {
-   "id": "e185",
-   "c": "ingles",
-   "q": "My brother is ___ me.",
-   "n": 1,
-   "a": [
-    "taller than",
-    "more tall than",
-    "tallest than",
-    "as taller"
-   ]
-  },
-  {
-   "id": "e186",
-   "c": "ingles",
-   "q": "Superlative of \"good\":",
-   "n": 2,
-   "a": [
-    "the best",
-    "the goodest",
-    "better",
-    "the most good"
-   ]
-  },
-  {
-   "id": "e187",
-   "c": "ingles",
-   "q": "Comparative of \"bad\":",
-   "n": 2,
-   "a": [
-    "worse",
-    "badder",
-    "worst",
-    "more bad"
-   ]
-  },
-  {
-   "id": "e188",
-   "c": "ingles",
-   "q": "Superlative of \"silly\":",
-   "n": 2,
-   "a": [
-    "the silliest",
-    "the most silly",
-    "sillier",
-    "the sillyest"
-   ]
-  },
-  {
-   "id": "e189",
-   "c": "ingles",
-   "q": "\"How often do you go to the gym?\" — \"___ a week.\"",
-   "n": 1,
-   "a": [
-    "Twice",
-    "Two",
-    "Second",
-    "Double"
-   ]
-  },
-  {
-   "id": "e190",
-   "c": "ingles",
-   "q": "Which sentence is correct?",
-   "n": 2,
-   "a": [
-    "She is always late.",
-    "She always is late.",
-    "Always is she late.",
-    "She late is always."
-   ]
-  },
-  {
-   "id": "e191",
-   "c": "ingles",
-   "q": "Which sentence is correct?",
-   "n": 2,
-   "a": [
-    "He usually plays football on Saturdays.",
-    "He plays usually football on Saturdays.",
-    "Usually he football plays on Saturdays.",
-    "He plays football usually Saturdays on."
-   ]
-  },
-  {
-   "id": "e192",
-   "c": "ingles",
-   "q": "\"Do you play handball?\" — \"Yes, ___.\"",
-   "n": 1,
-   "a": [
-    "I do",
-    "I play",
-    "I does",
-    "I am"
-   ]
-  },
-  {
-   "id": "e193",
-   "c": "ingles",
-   "q": "\"Does she watch the news?\" — \"No, ___.\"",
-   "n": 1,
-   "a": [
-    "she doesn't",
-    "she don't",
-    "she isn't",
-    "she not"
-   ]
-  },
-  {
-   "id": "e194",
-   "c": "ingles",
-   "q": "Which is a polite way to ask for permission?",
-   "n": 2,
-   "a": [
-    "Could I open the window, please?",
-    "Open the window!",
-    "Can open I the window?",
-    "I could open the window?"
-   ]
-  },
-  {
-   "id": "e195",
-   "c": "ingles",
-   "q": "The best answer to \"Thank you very much!\" is…",
-   "n": 1,
-   "a": [
-    "You're welcome.",
-    "Thank you too.",
-    "Yes, please.",
-    "Excuse me."
-   ]
-  },
-  {
-   "id": "e196",
-   "c": "ingles",
-   "q": "\"Sorry, could you ___ that, please? I didn't understand.\"",
-   "n": 2,
-   "a": [
-    "repeat",
-    "repeating",
-    "repeated",
-    "to repeat"
-   ]
-  },
-  {
-   "id": "e197",
-   "c": "ingles",
-   "q": "\"___ does the shop open?\" — \"At 9 o'clock.\"",
-   "n": 2,
-   "a": [
-    "When",
-    "Where",
-    "Why",
-    "Who"
-   ]
-  },
-  {
-   "id": "e198",
-   "c": "ingles",
-   "q": "\"I ___ a new phone. Mine is broken.\"",
-   "n": 2,
-   "a": [
-    "need",
-    "needs",
-    "am needing",
-    "needing"
-   ]
-  },
-  {
-   "id": "e199",
-   "c": "ingles",
-   "q": "\"Second-hand\" clothes are…",
-   "n": 2,
-   "a": [
-    "clothes that somebody used before",
-    "very expensive clothes",
-    "new clothes",
-    "clothes for children"
-   ]
-  },
-  {
-   "id": "e200",
-   "c": "ingles",
-   "q": "What does \"waste\" mean?",
-   "n": 2,
-   "a": [
-    "things that are thrown away",
-    "money you save",
-    "clean water",
-    "a type of shop"
-   ]
-  },
-  {
-   "id": "e201",
-   "c": "ingles",
-   "q": "An electric car is charged at a…",
-   "n": 2,
-   "a": [
-    "charging point",
-    "petrol station",
-    "car wash",
-    "bus stop"
-   ]
-  },
-  {
-   "id": "e202",
-   "c": "ingles",
-   "q": "I ___ chocolate very much.",
-   "n": 2,
-   "a": [
-    "like",
-    "am liking",
-    "likes",
-    "liking"
-   ]
-  },
-  {
-   "id": "e203",
-   "c": "ingles",
-   "q": "There ___ two apples on the table.",
-   "n": 1,
-   "a": [
-    "are",
-    "is",
-    "be",
-    "am"
-   ]
-  },
-  {
-   "id": "e204",
-   "c": "ingles",
-   "q": "This is ___ book. (the book of Maria)",
-   "n": 2,
-   "a": [
-    "Maria's",
-    "Marias",
-    "Maria",
-    "of Maria"
-   ]
-  },
-  {
-   "id": "e205",
-   "c": "ingles",
-   "q": "Past simple of \"buy\":",
-   "n": 2,
-   "a": [
-    "bought",
-    "buyed",
-    "brought",
-    "buy"
-   ]
-  },
-  {
-   "id": "e206",
-   "c": "ingles",
-   "q": "I ___ TV when the phone rang.",
-   "n": 3,
-   "a": [
-    "was watching",
-    "watched",
-    "am watching",
-    "watch"
-   ]
-  },
-  {
-   "id": "e207",
-   "c": "ingles",
-   "q": "I was born ___ 1990.",
-   "n": 2,
-   "a": [
-    "in",
-    "on",
-    "at",
-    "to"
-   ]
-  },
-  {
-   "id": "e208",
-   "c": "ingles",
-   "q": "My birthday is ___ 29th October.",
-   "n": 2,
-   "a": [
-    "on",
-    "in",
-    "at",
-    "to"
-   ]
-  },
-  {
-   "id": "e209",
-   "c": "ingles",
-   "q": "She ___ speak three languages.",
-   "n": 1,
-   "a": [
-    "can",
-    "cans",
-    "can to",
-    "is can"
-   ]
-  },
-  {
-   "id": "e210",
-   "c": "ingles",
-   "q": "\"Went\" is the past simple of \"go\".",
-   "n": 2,
-   "vf": true
-  },
-  {
-   "id": "e211",
-   "c": "ingles",
-   "q": "We use the present continuous for habits, like \"I am going to work every day\".",
-   "n": 2,
+   "e": "Falso: el candado solo indica que la conexión va cifrada. Una web falsa también puede tenerlo.",
    "vf": false
   },
   {
-   "id": "e212",
-   "c": "social",
-   "q": "¿A qué época pertenecen las pinturas de la cueva de Altamira?",
+   "id": "g294",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "¿Qué es el phishing?",
+   "n": 2,
+   "e": "Llega por correo, SMS o WhatsApp, con prisas y enlaces falsos. Tu banco nunca te pide la contraseña.",
+   "a": [
+    "Un engaño para robarte contraseñas o datos haciéndose pasar por un banco o una empresa",
+    "Un tipo de pesca",
+    "Un antivirus",
+    "Una red social"
+   ]
+  },
+  {
+   "id": "g295",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "Te llega un SMS: «Su paquete está retenido, pague 1,99 € en este enlace». ¿Qué haces?",
+   "n": 2,
+   "e": "Es una estafa muy común (smishing). Si esperas un paquete, entra tú en la web oficial de la empresa.",
+   "a": [
+    "No pulsas el enlace y lo borras",
+    "Pagas enseguida",
+    "Lo reenvías a tus amigos",
+    "Das los datos de tu tarjeta"
+   ]
+  },
+  {
+   "id": "g296",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "¿Qué es el malware?",
+   "n": 2,
+   "e": "«Malware» viene de «malicious software»: virus, troyanos, ransomware…",
+   "a": [
+    "Programas dañinos, como los virus",
+    "Un programa de música",
+    "Una red social",
+    "Un buscador"
+   ]
+  },
+  {
+   "id": "g297",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "¿Qué es el ransomware?",
+   "n": 3,
+   "e": "«Ransom» es rescate. La mejor defensa es tener copias de seguridad y no abrir adjuntos sospechosos.",
+   "a": [
+    "Un programa que bloquea tus archivos y pide un rescate",
+    "Un juego",
+    "Una copia de seguridad",
+    "Un navegador"
+   ]
+  },
+  {
+   "id": "g298",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "¿Qué es el ciberacoso?",
+   "n": 2,
+   "e": "Es un delito cuando hay amenazas, acoso continuado o difusión de imágenes sin permiso.",
+   "a": [
+    "Molestar, amenazar o humillar a alguien por internet",
+    "Un tipo de wifi",
+    "Una aplicación de mensajería",
+    "Una copia de seguridad"
+   ]
+  },
+  {
+   "id": "g299",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "Si alguien te acosa por internet, lo correcto es…",
+   "n": 2,
+   "e": "Las capturas sirven como prueba. Puedes denunciar en la Policía o en la propia red social.",
+   "a": [
+    "Guardar las pruebas, bloquearle y denunciarlo",
+    "Responder con insultos",
+    "Borrarlo todo y callarte",
+    "Pagar lo que te pida"
+   ]
+  },
+  {
+   "id": "g300",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "Un desconocido te pide por chat una foto de tu DNI para «darte un premio». ¿Qué haces?",
+   "n": 2,
+   "e": "Con tu DNI pueden suplantar tu identidad (pedir préstamos, abrir cuentas). Nadie da premios así.",
+   "a": [
+    "No se la envías: puede ser una estafa",
+    "Se la envías rápido",
+    "Le das también tu contraseña",
+    "Le mandas tu dirección"
+   ]
+  },
+  {
+   "id": "g301",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.2",
+   "q": "¿Qué datos no debes publicar en redes sociales?",
+   "n": 2,
+   "e": "Los datos personales sensibles pueden usarse para robos o estafas.",
+   "a": [
+    "Tu dirección, tu DNI o tus datos bancarios",
+    "Tu comida favorita",
+    "La foto de un paisaje",
+    "Tu opinión sobre una película"
+   ]
+  },
+  {
+   "id": "g302",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "¿Cuál es la contraseña más segura?",
    "n": 1,
+   "e": "Una contraseña segura es larga y mezcla mayúsculas, minúsculas, números y símbolos. Las fechas y «123456» se adivinan enseguida.",
    "a": [
-    "Prehistoria",
-    "Edad Antigua",
-    "Edad Media",
-    "Edad Moderna"
+    "Ca$a-Verde_27!",
+    "123456",
+    "password",
+    "01011990"
    ]
   },
   {
-   "id": "e213",
-   "c": "social",
-   "q": "¿A qué época pertenecen los dólmenes?",
+   "id": "g303",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "¿Qué es la verificación en dos pasos?",
    "n": 2,
+   "e": "Aunque alguien robe tu contraseña, no puede entrar sin el código que llega a tu móvil.",
    "a": [
-    "Prehistoria",
-    "Edad Antigua",
-    "Edad Media",
-    "Edad Contemporánea"
+    "Pedir un segundo código además de la contraseña para entrar",
+    "Usar dos contraseñas iguales",
+    "Tener dos móviles",
+    "Escribir la contraseña dos veces"
    ]
   },
   {
-   "id": "e214",
-   "c": "social",
-   "q": "¿A qué época pertenece Hispania?",
+   "id": "g304",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "¿Qué indican el candado y «https» en la barra del navegador?",
    "n": 2,
+   "e": "La «s» de https es de «seguro»: los datos viajan cifrados. Comprueba también que la dirección es la correcta.",
    "a": [
-    "Edad Antigua",
-    "Prehistoria",
-    "Edad Media",
-    "Edad Moderna"
+    "Que la conexión con la web va cifrada",
+    "Que todo lo que dice la web es verdad",
+    "Que es gratis",
+    "Que no tiene publicidad"
    ]
   },
   {
-   "id": "e215",
-   "c": "social",
-   "q": "¿A qué época pertenece la Escuela de Traductores de Toledo?",
-   "n": 3,
-   "a": [
-    "Edad Media",
-    "Edad Antigua",
-    "Edad Moderna",
-    "Edad Contemporánea"
-   ]
-  },
-  {
-   "id": "e216",
-   "c": "social",
-   "q": "¿A qué época pertenece la batalla de las Navas de Tolosa (1212)?",
-   "n": 3,
-   "a": [
-    "Edad Media",
-    "Edad Antigua",
-    "Edad Moderna",
-    "Edad Contemporánea"
-   ]
-  },
-  {
-   "id": "e217",
-   "c": "social",
-   "q": "¿A qué época pertenece el reinado de Felipe II?",
+   "id": "g305",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "Conectado a la wifi pública de una cafetería, ¿qué no deberías hacer?",
    "n": 2,
+   "e": "En una wifi abierta otras personas podrían ver tus datos. Para el banco, usa tus datos móviles.",
    "a": [
-    "Edad Moderna",
-    "Edad Media",
-    "Edad Contemporánea",
-    "Edad Antigua"
+    "Entrar en tu banca online",
+    "Leer las noticias",
+    "Mirar el tiempo",
+    "Buscar una dirección"
    ]
   },
   {
-   "id": "e218",
-   "c": "social",
-   "q": "¿A qué época pertenece el reinado de Carlos III?",
-   "n": 3,
-   "a": [
-    "Edad Moderna",
-    "Edad Media",
-    "Edad Contemporánea",
-    "Edad Antigua"
-   ]
-  },
-  {
-   "id": "e219",
-   "c": "social",
-   "q": "¿A qué época pertenece el movimiento sufragista?",
+   "id": "g306",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "¿Por qué hay que actualizar el sistema y las aplicaciones?",
    "n": 2,
+   "e": "Muchos virus aprovechan fallos antiguos. Actualizar los cierra.",
    "a": [
-    "Edad Contemporánea",
-    "Edad Moderna",
-    "Edad Media",
-    "Edad Antigua"
+    "Porque las actualizaciones corrigen fallos de seguridad",
+    "Para que el móvil pese menos",
+    "Para gastar datos",
+    "No sirve para nada"
    ]
   },
   {
-   "id": "e220",
-   "c": "social",
-   "q": "¿Qué hecho marca el inicio de la Edad Media?",
+   "id": "g307",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "¿Para qué sirve un antivirus?",
    "n": 2,
+   "e": "Vigila los archivos y avisa si encuentra algo peligroso.",
    "a": [
-    "La caída del Imperio romano de Occidente (476)",
-    "El descubrimiento de América (1492)",
-    "La Revolución francesa (1789)",
-    "La fundación de Roma"
+    "Para detectar y eliminar programas maliciosos",
+    "Para tener más wifi",
+    "Para hacer fotos",
+    "Para escribir"
    ]
   },
   {
-   "id": "e221",
-   "c": "social",
-   "q": "¿Qué hecho se toma como inicio de la Edad Moderna?",
+   "id": "g308",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "¿Qué son las cookies de una web?",
    "n": 2,
+   "e": "Recuerdan tus preferencias y lo que visitas. Puedes aceptarlas o rechazarlas en el aviso.",
    "a": [
-    "El descubrimiento de América (1492)",
-    "La caída de Roma (476)",
-    "La Revolución francesa (1789)",
-    "La Constitución de 1978"
+    "Pequeños archivos que guardan información de tu navegación",
+    "Galletas gratis",
+    "Siempre virus",
+    "Las contraseñas del banco"
    ]
   },
   {
-   "id": "e222",
-   "c": "social",
-   "q": "¿Qué hecho marca el inicio de la Edad Contemporánea?",
+   "id": "g309",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "No debes compartir tu contraseña con nadie, ni siquiera con amigos.",
    "n": 2,
-   "a": [
-    "La Revolución francesa (1789)",
-    "El descubrimiento de América (1492)",
-    "La caída de Roma (476)",
-    "La Guerra Civil española"
-   ]
-  },
-  {
-   "id": "e223",
-   "c": "social",
-   "q": "¿Qué supuso la Revolución neolítica?",
-   "n": 2,
-   "a": [
-    "El paso a la agricultura, la ganadería y la vida sedentaria",
-    "La invención de la imprenta",
-    "El uso de la máquina de vapor",
-    "La llegada de los romanos"
-   ]
-  },
-  {
-   "id": "e224",
-   "c": "social",
-   "q": "¿Cuál fue una consecuencia de la Revolución industrial?",
-   "n": 2,
-   "a": [
-    "Crecimiento de las ciudades y aparición del proletariado",
-    "Vuelta a la vida nómada",
-    "Desaparición de la burguesía",
-    "Fin del comercio"
-   ]
-  },
-  {
-   "id": "e225",
-   "c": "social",
-   "q": "¿Qué reinos unió el matrimonio de los Reyes Católicos?",
-   "n": 2,
-   "a": [
-    "Castilla y Aragón",
-    "Castilla y Portugal",
-    "Aragón y Navarra",
-    "León y Granada"
-   ]
-  },
-  {
-   "id": "e226",
-   "c": "social",
-   "q": "¿Qué reino musulmán conquistaron los Reyes Católicos en 1492?",
-   "n": 2,
-   "a": [
-    "Granada",
-    "Córdoba",
-    "Toledo",
-    "Sevilla"
-   ]
-  },
-  {
-   "id": "e227",
-   "c": "social",
-   "q": "¿Qué reino peninsular no consiguieron incorporar los Reyes Católicos?",
-   "n": 3,
-   "a": [
-    "Portugal",
-    "Navarra",
-    "Granada",
-    "Aragón"
-   ]
-  },
-  {
-   "id": "e228",
-   "c": "social",
-   "q": "¿Quién heredó los reinos de los Reyes Católicos a través de su madre, Juana?",
-   "n": 3,
-   "a": [
-    "Carlos I",
-    "Felipe II",
-    "Felipe V",
-    "Fernando VII"
-   ]
-  },
-  {
-   "id": "e229",
-   "c": "social",
-   "q": "¿Quién decretó el Bloqueo Continental contra Inglaterra?",
-   "n": 2,
-   "a": [
-    "Napoleón Bonaparte",
-    "Felipe II",
-    "Carlos III",
-    "Isabel II"
-   ]
-  },
-  {
-   "id": "e230",
-   "c": "social",
-   "q": "¿Cuándo se proclamó la Segunda República española?",
-   "n": 2,
-   "a": [
-    "En 1931, antes de la Guerra Civil",
-    "En 1939, después de la Guerra Civil",
-    "En 1975",
-    "En 1873"
-   ]
-  },
-  {
-   "id": "e231",
-   "c": "social",
-   "q": "¿En qué año se aprobó la Constitución española vigente?",
-   "n": 1,
-   "a": [
-    "1978",
-    "1975",
-    "1982",
-    "1986"
-   ]
-  },
-  {
-   "id": "e232",
-   "c": "social",
-   "q": "¿Qué estableció la Constitución de 1978?",
-   "n": 2,
-   "a": [
-    "Un Estado democrático con separación de poderes y comunidades autónomas",
-    "Una república federal",
-    "Una monarquía absoluta",
-    "Una dictadura militar"
-   ]
-  },
-  {
-   "id": "e233",
-   "c": "social",
-   "q": "¿Quién elige al alcalde de un municipio en España?",
-   "n": 2,
-   "a": [
-    "Los concejales del ayuntamiento",
-    "Directamente el presidente del Gobierno",
-    "El rey",
-    "El gobernador civil"
-   ]
-  },
-  {
-   "id": "e234",
-   "c": "social",
-   "q": "¿Quién elige al presidente del Gobierno de España?",
-   "n": 2,
-   "a": [
-    "El Congreso de los Diputados (investidura)",
-    "El Senado",
-    "El rey sin votación",
-    "Los ciudadanos en una votación aparte"
-   ]
-  },
-  {
-   "id": "e235",
-   "c": "social",
-   "q": "¿Quién elige al presidente de la Junta de Castilla y León?",
-   "n": 2,
-   "a": [
-    "Las Cortes de Castilla y León",
-    "El Congreso de los Diputados",
-    "Los alcaldes",
-    "El Senado"
-   ]
-  },
-  {
-   "id": "e236",
-   "c": "social",
-   "q": "¿Cuáles son instituciones de Castilla y León?",
-   "n": 2,
-   "a": [
-    "Las Cortes, la Junta y el presidente de Castilla y León",
-    "El Congreso y el Senado",
-    "La Comisión Europea",
-    "El Tribunal Supremo"
-   ]
-  },
-  {
-   "id": "e237",
-   "c": "social",
-   "q": "¿Qué forman las Cortes Generales?",
-   "n": 2,
-   "a": [
-    "El Congreso de los Diputados y el Senado",
-    "El Gobierno y los ministros",
-    "Los jueces y tribunales",
-    "Las comunidades autónomas"
-   ]
-  },
-  {
-   "id": "e238",
-   "c": "social",
-   "q": "¿Quién tiene el poder ejecutivo en España?",
-   "n": 2,
-   "a": [
-    "El Gobierno",
-    "Las Cortes Generales",
-    "Los jueces",
-    "El rey"
-   ]
-  },
-  {
-   "id": "e239",
-   "c": "social",
-   "q": "¿Cuáles son instituciones de la Unión Europea?",
-   "n": 2,
-   "a": [
-    "El Parlamento Europeo y la Comisión Europea",
-    "El Congreso y el Senado",
-    "La ONU y la OTAN",
-    "Las Cortes de Castilla y León"
-   ]
-  },
-  {
-   "id": "e240",
-   "c": "social",
-   "q": "¿Cuál de estas es una organización supranacional?",
-   "n": 2,
-   "a": [
-    "La Unión Europea",
-    "La Junta de Castilla y León",
-    "Un ayuntamiento",
-    "Una diputación provincial"
-   ]
-  },
-  {
-   "id": "e241",
-   "c": "social",
-   "q": "¿Qué tratado cambió el nombre de CEE por Unión Europea?",
-   "n": 3,
-   "a": [
-    "El Tratado de Maastricht (1992)",
-    "El Tratado de Roma (1957)",
-    "El Tratado de Lisboa (2007)",
-    "El Acuerdo de Schengen"
-   ]
-  },
-  {
-   "id": "e242",
-   "c": "social",
-   "q": "¿En qué año entró España en la CEE?",
-   "n": 2,
-   "a": [
-    "1986",
-    "1978",
-    "1992",
-    "2002"
-   ]
-  },
-  {
-   "id": "e243",
-   "c": "social",
-   "q": "¿Cuál de estos grupos son todos países de la Unión Europea?",
-   "n": 2,
-   "a": [
-    "Portugal, Francia e Italia",
-    "Suiza, Noruega y Francia",
-    "Reino Unido, Irlanda y España",
-    "Turquía, Grecia y Chipre"
-   ]
-  },
-  {
-   "id": "e244",
-   "c": "social",
-   "q": "¿Cuál es el río más largo de la península ibérica?",
-   "n": 2,
-   "a": [
-    "El Tajo",
-    "El Ebro",
-    "El Duero",
-    "El Guadalquivir"
-   ]
-  },
-  {
-   "id": "e245",
-   "c": "social",
-   "q": "¿Cuál es el río más largo que discurre entero por España?",
-   "n": 3,
-   "a": [
-    "El Ebro",
-    "El Tajo",
-    "El Duero",
-    "El Guadiana"
-   ]
-  },
-  {
-   "id": "e246",
-   "c": "social",
-   "q": "¿Cuál es el río más caudaloso de la península ibérica?",
-   "n": 3,
-   "a": [
-    "El Duero",
-    "El Tajo",
-    "El Guadiana",
-    "El Júcar"
-   ]
-  },
-  {
-   "id": "e247",
-   "c": "social",
-   "q": "¿Cuál es la montaña más alta de España?",
-   "n": 2,
-   "a": [
-    "El Teide",
-    "El Mulhacén",
-    "El Aneto",
-    "El Almanzor"
-   ]
-  },
-  {
-   "id": "e248",
-   "c": "social",
-   "q": "¿Cuál es la montaña más alta de la península ibérica?",
-   "n": 3,
-   "a": [
-    "El Mulhacén",
-    "El Teide",
-    "El Aneto",
-    "El Moncayo"
-   ]
-  },
-  {
-   "id": "e249",
-   "c": "social",
-   "q": "¿A qué vertiente pertenece el río Ebro?",
-   "n": 2,
-   "a": [
-    "Mediterránea",
-    "Atlántica",
-    "Cantábrica",
-    "Ninguna"
-   ]
-  },
-  {
-   "id": "e250",
-   "c": "social",
-   "q": "¿A qué vertiente pertenece el río Duero?",
-   "n": 2,
-   "a": [
-    "Atlántica",
-    "Mediterránea",
-    "Cantábrica",
-    "Ninguna"
-   ]
-  },
-  {
-   "id": "e251",
-   "c": "social",
-   "q": "¿A qué vertiente pertenece el río Nalón?",
-   "n": 3,
-   "a": [
-    "Cantábrica",
-    "Atlántica",
-    "Mediterránea",
-    "Ninguna"
-   ]
-  },
-  {
-   "id": "e252",
-   "c": "social",
-   "q": "¿A qué vertiente pertenece el río Júcar?",
-   "n": 3,
-   "a": [
-    "Mediterránea",
-    "Atlántica",
-    "Cantábrica",
-    "Ninguna"
-   ]
-  },
-  {
-   "id": "e253",
-   "c": "social",
-   "q": "¿Cómo se organiza territorialmente el Estado español?",
-   "n": 2,
-   "a": [
-    "Municipios, provincias y comunidades autónomas",
-    "Solo en comunidades autónomas",
-    "Regiones y cantones",
-    "Estados federados"
-   ]
-  },
-  {
-   "id": "e254",
-   "c": "social",
-   "q": "¿Cuál de estas comunidades autónomas tiene una sola provincia?",
-   "n": 2,
-   "a": [
-    "La Rioja",
-    "Castilla y León",
-    "Andalucía",
-    "Galicia"
-   ]
-  },
-  {
-   "id": "e255",
-   "c": "social",
-   "q": "¿Qué comunidad autónoma tiene más provincias?",
-   "n": 2,
-   "a": [
-    "Castilla y León (9)",
-    "Andalucía (8)",
-    "Castilla-La Mancha (5)",
-    "Cataluña (4)"
-   ]
-  },
-  {
-   "id": "e256",
-   "c": "social",
-   "q": "¿Qué institución gobierna la provincia?",
-   "n": 2,
-   "a": [
-    "La Diputación provincial",
-    "El ayuntamiento",
-    "Las Cortes autonómicas",
-    "El Senado"
-   ]
-  },
-  {
-   "id": "e257",
-   "c": "social",
-   "q": "¿Qué clima predomina en Castilla y León?",
-   "n": 2,
-   "a": [
-    "Mediterráneo continentalizado (de interior)",
-    "Oceánico",
-    "Subtropical",
-    "Desértico"
-   ]
-  },
-  {
-   "id": "e258",
-   "c": "social",
-   "q": "¿Qué rasgos tiene el arte románico?",
-   "n": 2,
-   "a": [
-    "Muros gruesos, arcos de medio punto y pocas ventanas",
-    "Arcos apuntados y grandes vidrieras",
-    "Cúpulas y perspectiva",
-    "Pincelada suelta y luz"
-   ]
-  },
-  {
-   "id": "e259",
-   "c": "social",
-   "q": "¿Qué rasgos tiene el arte gótico?",
-   "n": 2,
-   "a": [
-    "Arcos apuntados, bóvedas de crucería y vidrieras",
-    "Muros gruesos y pocas ventanas",
-    "Arcos de herradura",
-    "Hormigón y acero"
-   ]
-  },
-  {
-   "id": "e260",
-   "c": "social",
-   "q": "¿A qué arte pertenece el mihrab de la Mezquita de Córdoba?",
-   "n": 2,
-   "a": [
-    "Arte islámico (califal)",
-    "Arte gótico",
-    "Arte romano",
-    "Arte barroco"
-   ]
-  },
-  {
-   "id": "e261",
-   "c": "social",
-   "q": "¿Qué caracteriza al impresionismo?",
-   "n": 2,
-   "a": [
-    "Pincelada suelta y estudio de la luz y el color",
-    "Figuras rígidas y simbólicas",
-    "Arcos apuntados",
-    "Formas geométricas puras"
-   ]
-  },
-  {
-   "id": "e262",
-   "c": "social",
-   "q": "La estatua de Augusto de Prima Porta pertenece al arte…",
-   "n": 2,
-   "a": [
-    "Romano",
-    "Egipcio",
-    "Gótico",
-    "Renacentista"
-   ]
-  },
-  {
-   "id": "e263",
-   "c": "social",
-   "q": "¿Qué caracteriza al Renacimiento?",
-   "n": 2,
-   "a": [
-    "Proporción, perspectiva y figura humana realista",
-    "Arcos apuntados y vidrieras",
-    "Pinceladas sueltas",
-    "Muros gruesos y pocas ventanas"
-   ]
-  },
-  {
-   "id": "e264",
-   "c": "social",
-   "q": "¿Cuál es un derecho fundamental individual?",
-   "n": 2,
-   "a": [
-    "La libertad de expresión",
-    "Pagar impuestos",
-    "El servicio militar",
-    "Votar a los 16 años"
-   ]
-  },
-  {
-   "id": "e265",
-   "c": "social",
-   "q": "¿Qué es un riesgo natural?",
-   "n": 2,
-   "a": [
-    "Un fenómeno de la naturaleza que puede causar daños, como una inundación",
-    "Una ley ambiental",
-    "Un tipo de clima",
-    "Un espacio protegido"
-   ]
-  },
-  {
-   "id": "e266",
-   "c": "social",
-   "q": "¿Cuál es una consecuencia del cambio climático?",
-   "n": 2,
-   "a": [
-    "Más sequías y pérdida de biodiversidad",
-    "Inviernos más largos en todo el mundo",
-    "Más agua dulce disponible",
-    "Menos olas de calor"
-   ]
-  },
-  {
-   "id": "e267",
-   "c": "social",
-   "q": "La Segunda República se proclamó después de la Guerra Civil.",
-   "n": 2,
-   "vf": false
-  },
-  {
-   "id": "e268",
-   "c": "social",
-   "q": "Isabel II reinó en España en el siglo XIX.",
-   "n": 2,
+   "e": "Verdadero: la contraseña es personal. Si alguien la conoce, puede hacerse pasar por ti.",
    "vf": true
   },
   {
-   "id": "e269",
-   "c": "social",
-   "q": "El Reino Unido salió de la Unión Europea con el Brexit.",
+   "id": "g310",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.3",
+   "q": "Una contraseña larga con letras, números y símbolos es más segura.",
    "n": 2,
+   "e": "Verdadero: cuanto más larga y variada, más difícil de adivinar.",
    "vf": true
   },
   {
-   "id": "e270",
-   "c": "social",
-   "q": "Felipe II fue el heredero directo de los Reyes Católicos.",
+   "id": "g311",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.4",
+   "q": "Para cuidar tu salud si usas el ordenador muchas horas…",
+   "n": 2,
+   "e": "La regla 20-20-20: cada 20 minutos, mira 20 segundos a algo lejano. Y espalda recta.",
+   "a": [
+    "Haz pausas, siéntate bien y pon la pantalla a la altura de los ojos",
+    "Ponte muy cerca de la pantalla",
+    "Úsalo a oscuras",
+    "Evita parpadear"
+   ]
+  },
+  {
+   "id": "g312",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.4",
+   "q": "¿Qué es recomendable antes de dormir?",
+   "n": 2,
+   "e": "La luz azul de las pantallas retrasa el sueño. Mejor desconectar un rato antes.",
+   "a": [
+    "Dejar el móvil un rato antes, porque la luz de la pantalla dificulta el sueño",
+    "Usar el móvil en la cama hasta dormirte",
+    "Subir el brillo al máximo",
+    "Jugar a videojuegos hasta tarde"
+   ]
+  },
+  {
+   "id": "g313",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.4",
+   "q": "Usas los auriculares muchas horas al día. ¿Qué conviene?",
+   "n": 2,
+   "e": "El volumen alto y continuo puede dañar el oído para siempre.",
+   "a": [
+    "Bajar el volumen y hacer descansos",
+    "Ponerlos al máximo",
+    "Dormir con ellos puestos",
+    "Usarlos siempre a todo volumen en el metro"
+   ]
+  },
+  {
+   "id": "g314",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.5",
+   "q": "¿Qué haces con un móvil viejo que ya no usas?",
+   "n": 2,
+   "e": "Los aparatos tienen materiales contaminantes y reciclables. Antes, restablece el móvil para borrar tus datos.",
+   "a": [
+    "Borras tus datos y lo llevas a un punto limpio o a reciclar",
+    "Lo tiras a la basura normal",
+    "Lo quemas",
+    "Lo dejas en la calle"
+   ]
+  },
+  {
+   "id": "g315",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.5",
+   "q": "¿Qué es una copia de seguridad?",
+   "n": 2,
+   "e": "Si se rompe o te roban el móvil, recuperas tus fotos y documentos desde la copia.",
+   "a": [
+    "Una copia de tus archivos en otro sitio por si se pierden",
+    "Un antivirus",
+    "Una contraseña",
+    "Un virus"
+   ]
+  },
+  {
+   "id": "g316",
+   "c": "digital",
+   "d": "SEG",
+   "k": "SEG.3.5",
+   "q": "Para que la batería del portátil dure más, ¿qué es una buena práctica?",
+   "n": 2,
+   "e": "Optimizar el dispositivo alarga su vida útil y ahorra energía.",
+   "a": [
+    "Bajar el brillo y cerrar los programas que no usas",
+    "Dejarlo siempre al sol",
+    "Abrir muchos programas a la vez",
+    "Tapar la ventilación"
+   ]
+  },
+  {
+   "id": "g317",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "El ordenador va muy lento. ¿Qué es lo primero razonable?",
+   "n": 2,
+   "e": "Muchas veces el problema es que hay demasiadas cosas abiertas. Reiniciar lo soluciona a menudo.",
+   "a": [
+    "Cerrar los programas que no usas y reiniciar",
+    "Tirar el ordenador",
+    "Darle golpes",
+    "Instalar muchos programas a la vez"
+   ]
+  },
+  {
+   "id": "g318",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "No tienes internet en casa. ¿Qué compruebas primero?",
+   "n": 2,
+   "e": "Resolver problemas técnicos es ir paso a paso, empezando por lo más sencillo.",
+   "a": [
+    "Que el router está encendido y con las luces normales, y lo reinicias",
+    "Cambias de ordenador",
+    "Compras un móvil nuevo",
+    "Borras tus archivos"
+   ]
+  },
+  {
+   "id": "g319",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "La impresora no imprime. ¿Qué revisas?",
+   "n": 2,
+   "e": "Revisa lo básico de ese aparato antes de buscar soluciones complicadas.",
+   "a": [
+    "Que está encendida, conectada y tiene papel y tinta",
+    "Que el monitor está limpio",
+    "Que el ratón funciona",
+    "El volumen"
+   ]
+  },
+  {
+   "id": "g320",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "¿Qué es el hardware?",
+   "n": 2,
+   "e": "Hardware es lo que puedes tocar: pantalla, teclado, disco… Software son los programas.",
+   "a": [
+    "Las partes físicas del ordenador",
+    "Los programas",
+    "Internet",
+    "Las contraseñas"
+   ]
+  },
+  {
+   "id": "g321",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "¿Qué es el software?",
+   "n": 2,
+   "e": "El software son las instrucciones que hacen funcionar el aparato: Windows, Word, WhatsApp…",
+   "a": [
+    "Los programas y aplicaciones",
+    "La pantalla",
+    "El teclado",
+    "Los cables"
+   ]
+  },
+  {
+   "id": "g322",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "¿Qué es un periférico?",
+   "n": 2,
+   "e": "Los periféricos pueden ser de entrada (ratón, teclado) o de salida (impresora, altavoces).",
+   "a": [
+    "Un aparato que se conecta al ordenador, como el ratón o la impresora",
+    "Un programa",
+    "Un virus",
+    "Una web"
+   ]
+  },
+  {
+   "id": "g323",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "¿Qué componente guarda los archivos aunque apagues el ordenador?",
+   "n": 2,
+   "e": "La RAM se borra al apagar; el disco duro o SSD guarda tus archivos.",
+   "a": [
+    "El disco duro o SSD",
+    "La memoria RAM",
+    "El monitor",
+    "El ratón"
+   ]
+  },
+  {
+   "id": "g324",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "¿Qué atajo de teclado copia lo seleccionado en Windows?",
+   "n": 2,
+   "e": "C de «copiar». Luego Ctrl + V pega y Ctrl + Z deshace.",
+   "a": [
+    "Ctrl + C",
+    "Ctrl + V",
+    "Ctrl + Z",
+    "Ctrl + P"
+   ]
+  },
+  {
+   "id": "g325",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "¿Qué atajo de teclado pega lo copiado?",
+   "n": 2,
+   "e": "Ctrl + V pega. Ctrl + X corta y Ctrl + A selecciona todo.",
+   "a": [
+    "Ctrl + V",
+    "Ctrl + C",
+    "Ctrl + X",
+    "Ctrl + A"
+   ]
+  },
+  {
+   "id": "g326",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.1",
+   "q": "¿Qué atajo de teclado deshace la última acción?",
+   "n": 2,
+   "e": "Ctrl + Z deshace y Ctrl + Y rehace. Ctrl + P imprime.",
+   "a": [
+    "Ctrl + Z",
+    "Ctrl + Y",
+    "Ctrl + P",
+    "Ctrl + A"
+   ]
+  },
+  {
+   "id": "g327",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.2",
+   "q": "¿Qué es la obsolescencia programada?",
+   "n": 2,
+   "e": "Obliga a comprar antes de tiempo y genera más residuos.",
+   "a": [
+    "Diseñar un producto para que deje de funcionar o se quede anticuado en poco tiempo",
+    "Una actualización gratuita",
+    "Un tipo de garantía",
+    "Una oferta"
+   ]
+  },
+  {
+   "id": "g328",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.2",
+   "q": "¿Qué es una ventaja de reparar un aparato en vez de comprar otro?",
+   "n": 2,
+   "e": "Reparar alarga la vida útil y reduce la basura electrónica.",
+   "a": [
+    "Ahorras dinero y generas menos residuos",
+    "Siempre es más caro",
+    "Contamina más",
+    "No tiene ninguna ventaja"
+   ]
+  },
+  {
+   "id": "g329",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.2",
+   "q": "¿Qué es un inconveniente de cambiar de móvil cada año?",
    "n": 3,
-   "vf": false
+   "e": "Renovar sin necesidad es lo que busca la obsolescencia programada. Hay que valorarlo de forma crítica.",
+   "a": [
+    "Gastas más dinero y generas más residuos electrónicos",
+    "El móvil nuevo no funciona",
+    "Pierdes el número de teléfono",
+    "Es obligatorio por ley"
+   ]
+  },
+  {
+   "id": "g330",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.3",
+   "q": "¿De dónde es más seguro descargar una aplicación para el móvil?",
+   "n": 2,
+   "e": "Las tiendas oficiales revisan las apps. Fuera de ellas es más fácil que lleven virus.",
+   "a": [
+    "De la tienda oficial (Play Store o App Store)",
+    "De un enlace que te llega por SMS",
+    "De una web desconocida",
+    "De un archivo que te pasa un desconocido"
+   ]
+  },
+  {
+   "id": "g331",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.3",
+   "q": "Un restaurante pequeño quiere recibir reservas por internet. ¿Qué solución es adecuada?",
+   "n": 2,
+   "e": "Se elige la solución tecnológica que resuelve la necesidad: reservas → herramienta de reservas.",
+   "a": [
+    "Una aplicación o web de reservas online",
+    "Apuntarlas en una servilleta",
+    "Instalar un antivirus",
+    "Colgar una hoja impresa en la pared"
+   ]
+  },
+  {
+   "id": "g332",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.3",
+   "q": "El móvil se queda sin espacio. ¿Qué solución es razonable?",
+   "n": 3,
+   "e": "Antes de gastar, prueba soluciones sencillas: liberar espacio.",
+   "a": [
+    "Pasar fotos a la nube o al ordenador y borrar apps que no usas",
+    "Comprar otro móvil enseguida",
+    "Borrar el sistema operativo",
+    "Apagarlo para siempre"
+   ]
+  },
+  {
+   "id": "g333",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.3",
+   "q": "Tienes que enviar a una empresa varias fotos de documentos. ¿Qué es lo más práctico?",
+   "n": 2,
+   "e": "Un único PDF legible es más profesional y fácil de abrir.",
+   "a": [
+    "Escanearlas con una app y juntarlas en un solo PDF",
+    "Enviar 15 fotos movidas",
+    "Dictarlas por un audio",
+    "Llevarlas en persona sin avisar"
+   ]
+  },
+  {
+   "id": "g334",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.4",
+   "q": "Un anuncio dice: «El móvil más potente del mundo». ¿Qué haces antes de comprarlo?",
+   "n": 2,
+   "e": "La publicidad exagera. Compara datos reales y opiniones que no sean del propio fabricante.",
+   "a": [
+    "Comparas características y opiniones independientes",
+    "Te lo crees sin más",
+    "Compras dos",
+    "Pides un préstamo"
+   ]
+  },
+  {
+   "id": "g335",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.4",
+   "q": "Un portátil está anunciado «desde 299 €*». ¿Qué debes revisar?",
+   "n": 2,
+   "e": "«Desde» indica el modelo más barato. El asterisco suele esconder condiciones.",
+   "a": [
+    "La letra pequeña: qué modelo tiene ese precio y qué incluye",
+    "Nada, cuesta 299 € seguro",
+    "Solo el color",
+    "El nombre de la tienda"
+   ]
+  },
+  {
+   "id": "g336",
+   "c": "digital",
+   "d": "PRO",
+   "k": "PRO.3.4",
+   "q": "Necesitas un móvil para WhatsApp, llamadas y fotos normales. ¿Cuál eliges?",
+   "n": 2,
+   "e": "Se elige según tus necesidades, no según la publicidad.",
+   "a": [
+    "Uno de gama media que cubra esas necesidades",
+    "El más caro del mercado",
+    "El que lleve el famoso del anuncio",
+    "Uno sin cámara"
+   ]
   }
  ]
 }

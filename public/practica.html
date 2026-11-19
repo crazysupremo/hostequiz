@@ -21,7 +21,7 @@ let BANK = null, deck = [], pos = 0, hits = 0, misses = [], answeredNow = null, 
 let view = "pick";
 const ESO = CURSO === "eso";
 let clock = null, qEnd = 0; // reloj de examen (solo ESO)
-const exitBtn = () => (ESO ? `<a class="backlink" href="/?curso=eso">← ${t("subjects")}</a>` : "");
+const exitBtn = () => (ESO ? `<a class="backlink" href="/?curso=eso">← Volver</a>` : "");
 const chosen = new Set();
 const chosenLv = new Set(); // vacío = todos
 const lvOk = (p) => !chosenLv.size || !p.n || chosenLv.has(p.n);
@@ -45,6 +45,8 @@ function textOf(item) {
 const catOf = (id) => (id.startsWith("mi-") ? BANK.categorias[id] : catName(id, BANK.categorias[id]));
 
 async function start() {
+  // La prueba de acceso tiene su propia página de práctica (modo estudio y evaluación)
+  if (ESO) return location.replace("/estudiar.html?curso=eso&materia=" + (new URLSearchParams(location.search).get("materia") || "todas"));
   BANK = await (await fetch(DATA_URL)).json();
   // Mis quizzes (creados en este aparato) se añaden como temas extra
   if (ESO) {
@@ -114,7 +116,7 @@ function ask(redraw) {
   const L = textOf(item);
   app.innerHTML = `<div class="screen">
     ${topbar(exitBtn() + soundBtn())}
-    <div class="qhead"><span class="pill" id="prog"></span><span class="pill">${esc(catOf(item.p.c))}${item.p.n ? " · " + lvTag(item.p.n) : ""}</span>${ESO ? `<span class="pill" id="clk" dir="ltr"></span>` : ""}</div>
+    <div class="qhead"><span class="pill" id="prog"></span><span class="pill">${esc(catOf(item.p.c))}${item.p.d && BANK.dominios ? " · " + esc(BANK.dominios[item.p.d]) : ""}${item.p.n ? " · " + lvTag(item.p.n) : ""}</span>${ESO ? `<span class="pill" id="clk" dir="ltr"></span>` : ""}</div>
     <div class="timebar"><i style="transform:scaleX(${(pos + (answeredNow !== null ? 1 : 0)) / deck.length})"></i></div>
     <p class="question" style="font-size:clamp(22px,5vw,36px)">${esc(L.q)}</p>
     ${pic(item.p)}

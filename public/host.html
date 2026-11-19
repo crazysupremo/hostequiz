@@ -31,7 +31,7 @@ const startQuiz = new URLSearchParams(location.search).get("quiz");
 onLangChange = () => current && current.fn(current.d, true);
 
 const act = (action, extra) => api("/api/host/action", { pin: game.pin, key: game.key, action, ...extra }).catch((e) => console.warn(e.message));
-const header = (withEnd = true, back = false) => topbar(`${back && ESO ? `<a class="backlink" href="/?curso=eso">← ${t("subjects")}</a>` : ""}${soundBtn()}${withEnd ? `<button class="btn ghost small" id="end">${t("endGame")}</button>` : ""}`);
+const header = (withEnd = true, back = false) => topbar(`${back && ESO ? `<a class="backlink" href="/?curso=eso">← Volver</a>` : ""}${soundBtn()}${withEnd ? `<button class="btn ghost small" id="end">${t("endGame")}</button>` : ""}`);
 function wireEnd() {
   const b = document.getElementById("end");
   if (!b) return;

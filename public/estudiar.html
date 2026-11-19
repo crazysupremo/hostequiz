@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1422">
+<title>Prepara Acceso · Practicar</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap"><div class="col" id="app" style="max-width:780px"></div></div>
+<script>
+// Esta página es solo de la prueba de acceso (todo en español)
+if (!/[?&]curso=eso/.test(location.search)) history.replaceState(null, "", location.pathname + (location.search ? location.search + "&" : "?") + "curso=eso");
+</script>
+<script src="/common.js"></script>
+<script>
+// Práctica de la prueba de acceso a Grado Medio
+//  · Modo estudio: sin tiempo; tras cada pregunta se explica por qué está bien o mal.
+//  · Modo evaluación: con el tiempo de cada parte, sin ayudas; nota de 0 a 10 al final.
+const app = document.getElementById("app");
+const qs = new URLSearchParams(location.search);
+const MATERIA = qs.get("materia") || "todas";
+const ICON_BOOK = '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z M4 5v16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 7h7M8 11h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+const ICON_CLOCK = '<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><circle cx="12" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 9v4l3 2M9 2h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+
+let BANK = null;
+const cfg = { mode: "estudio", n: 20, comps: new Set() };
+let deck = [], pos = 0, log = [], clock = null, qEnd = 0, locked = false;
+
+const shuffle = (a) => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const subjOf = (c) => SUBJ[c] || { s: "∑", c: "var(--c1)" };
+const compName = (k) => BANK.competencias?.[k] || k;
+const compsOf = (c) => [...new Set(BANK.preguntas.filter((p) => c === "todas" || p.c === c).map((p) => p.k))];
+const fmtNota = (x) => x.toFixed(2).replace(".", ",");
+function prep(p) {
+  if (typeof p.vf === "boolean") return { p, vf: true, a: ["Verdadero", "Falso"], ok: p.vf ? 0 : 1 };
+  const order = shuffle(p.a.map((_, i) => i));
+  return { p, vf: false, a: order.map((i) => p.a[i]), ok: order.indexOf(0) };
+}
+const exit = `<a class="backlink" href="/?curso=eso">← Volver</a>`;
+
+async function start() {
+  BANK = await (await fetch("/api/preguntas?curso=eso")).json();
+  if (MATERIA !== "todas" && !BANK.categorias[MATERIA]) return location.replace("/?curso=eso");
+  compsOf(MATERIA).forEach((k) => cfg.comps.add(k));
+  setup();
+}
+
+// ---------- 1. Configurar ----------
+function setup() {
+  stopClock();
+  const all = MATERIA === "todas";
+  const title = all ? t("esoAll") : catName(MATERIA, BANK.categorias[MATERIA]);
+  const pool = BANK.preguntas.filter((p) => (all || p.c === MATERIA));
+  const count = (k) => pool.filter((p) => p.k === k).length;
+  const avail = pool.filter((p) => cfg.comps.has(p.k)).length;
+  const secs = all ? null : BANK.tiempos[MATERIA];
+  // competencias agrupadas por bloque del temario
+  const doms = [];
+  for (const k of compsOf(MATERIA)) { const d = k.split(".")[0]; let g = doms.find((x) => x.d === d); if (!g) doms.push(g = { d, ks: [] }); g.ks.push(k); }
+  app.innerHTML = `<div class="screen">
+    ${topbar(exit)}
+    <div class="row" style="gap:14px;align-items:center">
+      <span class="subj-badge" style="background:${subjOf(MATERIA).c}">${subjOf(MATERIA).s}</span>
+      <div><p class="label" style="margin:0">Prueba de acceso a Grado Medio</p><h1 style="margin:0">${esc(title)}</h1></div>
+    </div>
+    <div class="card">
+      <h3>¿Cómo quieres practicar?</h3>
+      <div class="modepick">
+        <button type="button" class="modeopt" data-mode="estudio" aria-pressed="${cfg.mode === "estudio"}">${ICON_BOOK}<span><b>Modo estudio</b><small>Sin tiempo. Después de cada pregunta ves por qué está bien o en qué te has equivocado.</small></span></button>
+        <button type="button" class="modeopt" data-mode="evaluacion" aria-pressed="${cfg.mode === "evaluacion"}">${ICON_CLOCK}<span><b>Modo evaluación</b><small>Como en el examen: ${secs ? fmtTime(secs) + " por pregunta" : "con el tiempo de cada parte"} y sin ayudas. Al final, tu nota de 0 a 10.</small></span></button>
+      </div>
+    </div>
+    ${all ? "" : `<div class="card">
+      <div class="row" style="justify-content:space-between"><h3>¿Qué competencias?</h3><button class="btn ghost small" id="allc">${cfg.comps.size === compsOf(MATERIA).length ? "Quitar todas" : "Todas"}</button></div>
+      <p class="muted small" style="margin:-4px 0 4px">Son las del temario oficial (BOCYL, 3 de marzo de 2026). Toca para elegir.</p>
+      ${doms.map((g) => `<div class="compgroup"><p class="label">${esc(BANK.dominios[g.d] || g.d)}</p>
+        <div class="chips">${g.ks.map((k) => `<button type="button" class="chip comp" data-k="${k}" aria-pressed="${cfg.comps.has(k)}"><span class="code">${k}</span> ${esc(compName(k))} <span class="n">${count(k)}</span></button>`).join("")}</div></div>`).join("")}
+    </div>`}
+    <div class="card">
+      <h3>¿Cuántas preguntas?</h3>
+      <div class="chips">${[10, 20, 30, 0].map((n) => `<button type="button" class="chip" data-n="${n}" aria-pressed="${cfg.n === n}">${n || `Todas (${avail})`}</button>`).join("")}</div>
+    </div>
+    <div class="row end"><button class="btn big" id="go" ${avail ? "" : "disabled"}>${avail ? "Empezar" : "Elige al menos una competencia"}</button></div>
+    ${newsLink()}</div>`;
+  app.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => { cfg.mode = b.dataset.mode; setup(); }));
+  app.querySelectorAll("[data-n]").forEach((b) => b.addEventListener("click", () => { cfg.n = +b.dataset.n; setup(); }));
+  app.querySelectorAll("[data-k]").forEach((b) => b.addEventListener("click", () => { const k = b.dataset.k; cfg.comps.has(k) ? cfg.comps.delete(k) : cfg.comps.add(k); setup(); }));
+  document.getElementById("allc")?.addEventListener("click", () => { const full = cfg.comps.size === compsOf(MATERIA).length; cfg.comps.clear(); if (!full) compsOf(MATERIA).forEach((k) => cfg.comps.add(k)); setup(); });
+  document.getElementById("go").addEventListener("click", () => {
+    Sound.unlock();
+    const list = pool.filter((p) => cfg.comps.has(p.k));
+    let chosen;
+    if (all) {
+      // Simulacro: el mismo número de preguntas de cada parte, como el examen
+      const n = cfg.n || list.length, parts = Object.keys(BANK.categorias);
+      chosen = parts.flatMap((c, i) => shuffle(list.filter((p) => p.c === c)).slice(0, Math.floor(n / parts.length) + (i < n % parts.length ? 1 : 0)));
+      if (!cfg.n) chosen = list;
+    } else chosen = shuffle(list).slice(0, cfg.n || list.length);
+    run(cfg.mode === "evaluacion" && all ? chosen.sort((a, b) => Object.keys(BANK.categorias).indexOf(a.c) - Object.keys(BANK.categorias).indexOf(b.c)) : shuffle(chosen));
+  });
+}
+
+function run(list) { deck = list.map(prep); pos = 0; log = []; ask(); }
+function stopClock() { clearInterval(clock); clock = null; }
+const EVAL = () => cfg.mode === "evaluacion";
+
+// ---------- 2. Pregunta ----------
+function ask() {
+  stopClock(); locked = false;
+  if (pos >= deck.length) return results();
+  const it = deck[pos];
+  const hits = log.filter((x) => x.right).length;
+  app.innerHTML = `<div class="screen">
+    ${topbar(exit + soundBtn())}
+    <div class="qhead">
+      <span class="pill"><bdi dir="ltr">${pos + 1} / ${deck.length}</bdi>${EVAL() ? "" : ` · ${hits} ✓`}</span>
+      ${EVAL() ? `<span class="pill" id="clk" dir="ltr"></span>` : `<span class="pill modetag">📖 Estudio</span>`}
+    </div>
+    <div class="timebar"><i style="transform:scaleX(${pos / deck.length})"></i></div>
+    <p class="comptag"><span class="code">${it.p.k}</span> ${esc(compName(it.p.k))} · ${esc(catName(it.p.c, BANK.categorias[it.p.c]))} · ${lvTag(it.p.n)}</p>
+    <p class="question" style="font-size:clamp(20px,4.6vw,32px)">${esc(it.p.q)}</p>
+    <div class="answers">${it.a.map((txt, i) => { const ci = colorIdx(i, it.vf); return `<button class="ans a${ci}" data-i="${i}">${SHAPES[ci]}<span class="tx">${esc(txt)}</span></button>`; }).join("")}</div>
+    <div id="fb" class="stack"></div></div>`;
+  app.querySelectorAll("[data-i]").forEach((b) => b.addEventListener("click", () => answer(+b.dataset.i)));
+  if (EVAL()) {
+    const secs = BANK.tiempos[it.p.c] || 60;
+    qEnd = Date.now() + secs * 1000;
+    const draw = () => {
+      const left = (qEnd - Date.now()) / 1000, el = document.getElementById("clk");
+      if (el) { el.textContent = "⏱ " + (left >= 60 ? `${Math.floor(Math.ceil(left) / 60)}:${String(Math.ceil(left) % 60).padStart(2, "0")}` : fmtClock(left)); el.classList.toggle("low", left <= 15); }
+      if (left <= 0) answer(-1);
+    };
+    draw(); clock = setInterval(draw, 250);
+  }
+}
+
+function answer(i) {
+  if (locked) return;
+  locked = true; stopClock();
+  const it = deck[pos];
+  const right = i === it.ok;
+  log.push({ it, choice: i, right });
+  const btns = app.querySelectorAll("[data-i]");
+  btns.forEach((b) => (b.disabled = true));
+  if (EVAL()) {
+    // En evaluación no se dice si está bien: se guarda y se pasa a la siguiente
+    btns.forEach((b) => +b.dataset.i !== i && b.classList.add("dim"));
+    document.getElementById("fb").innerHTML = `<p class="muted center">${i < 0 ? "⏰ Se acabó el tiempo" : "Respuesta guardada"}</p>`;
+    setTimeout(() => { pos++; ask(); }, i < 0 ? 900 : 450);
+    return;
+  }
+  // Modo estudio: corrección y explicación
+  btns.forEach((b) => {
+    const k = +b.dataset.i;
+    if (k === it.ok) { b.classList.add("right"); b.insertAdjacentHTML("beforeend", '<span class="tick">✓</span>'); }
+    else if (k === i) b.classList.add("chosen-wrong");
+    else b.classList.add("dim");
+  });
+  if (right) { Sound.good(); buzz([30, 30, 60]); const streak = countStreak(); if (streak >= 3) confetti(0.4); }
+  else { Sound.bad(); buzz(150); }
+  document.getElementById("fb").innerHTML = `
+    <div class="explain ${right ? "ok" : "bad"}">
+      <p class="verdict">${right ? "✓ ¡Correcto!" : "✗ No es correcta"}</p>
+      ${right ? "" : `<p class="pair"><span>Has elegido</span><b>${esc(it.a[i])}</b></p><p class="pair"><span>La correcta es</span><b>${esc(it.a[it.ok])}</b></p>`}
+      <p class="why-t">${right ? "Por qué es correcta" : "Dónde está el error"}</p>
+      <p class="why">${esc(it.p.e || "")}</p>
+    </div>
+    <div class="row end"><button class="btn big" id="nx">${pos + 1 < deck.length ? "Siguiente" : "Ver resultado"}</button></div>`;
+  const nx = document.getElementById("nx");
+  nx.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  nx.addEventListener("click", () => { pos++; ask(); });
+}
+function countStreak() { let n = 0; for (let i = log.length - 1; i >= 0 && log[i].right; i--) n++; return n; }
+
+// ---------- 3. Resultado ----------
+function results() {
+  stopClock();
+  const total = log.length, hits = log.filter((x) => x.right).length;
+  const nota = total ? (hits / total) * 10 : 0;
+  const pass = nota >= 5;
+  // Resultado por competencia, las más flojas primero
+  const by = {};
+  for (const x of log) { const k = x.it.p.k; (by[k] ||= { k, ok: 0, n: 0 }); by[k].n++; if (x.right) by[k].ok++; }
+  const rows = Object.values(by).sort((a, b) => a.ok / a.n - b.ok / b.n || b.n - a.n);
+  const fails = log.filter((x) => !x.right);
+  app.innerHTML = `<div class="screen">
+    ${topbar(exit)}
+    <div class="full" style="flex:none;padding-bottom:0">
+      <p class="label">${EVAL() ? "Tu nota" : "Has acertado"}</p>
+      <div class="bigscore" style="font-size:clamp(64px,17vw,120px)" dir="ltr">${EVAL() ? `<span id="nt">${fmtNota(nota)}</span>` : `<span id="pc">0</span>%`}</div>
+      ${EVAL() ? `<span class="verdict-pill ${pass ? "ok" : "bad"}">${pass ? "APTO · superas el 5" : "NO APTO · necesitas un 5"}</span>` : ""}
+      <h2 style="margin:0">${hits} de ${total} bien</h2>
+    </div>
+    <div class="card">
+      <h3>Por competencias</h3>
+      <p class="muted small" style="margin:-4px 0 8px">Las de arriba son las que más tienes que repasar.</p>
+      <div class="comprows">${rows.map((r) => { const p = Math.round((r.ok / r.n) * 100); return `<div class="comprow">
+        <div class="row" style="justify-content:space-between;gap:8px"><span><span class="code">${r.k}</span> ${esc(compName(r.k))}</span><b dir="ltr">${r.ok}/${r.n}</b></div>
+        <div class="compbar"><i style="width:${p}%;background:${p >= 70 ? "var(--ok)" : p >= 50 ? "var(--c2)" : "var(--bad)"}"></i></div></div>`; }).join("")}</div>
+    </div>
+    ${fails.length ? `<div class="card">
+      <h3>Revisa tus fallos (${fails.length})</h3>
+      ${fails.map((x) => `<details class="failq"><summary>${esc(x.it.p.q)}</summary>
+        <p class="pair"><span>Tu respuesta</span><b>${x.choice < 0 ? "Sin responder (tiempo agotado)" : esc(x.it.a[x.choice])}</b></p>
+        <p class="pair ok"><span>La correcta</span><b>${esc(x.it.a[x.it.ok])}</b></p>
+        <p class="why">${esc(x.it.p.e || "")}</p></details>`).join("")}
+    </div>` : `<p class="center">🎉 ¡Sin fallos!</p>`}
+    <div class="row" style="justify-content:center;flex-wrap:wrap">
+      ${fails.length ? `<button class="btn" id="redo">Repasar mis ${fails.length} fallos en modo estudio</button>` : ""}
+      <button class="btn ghost" id="again">Practicar otra vez</button>
+    </div>
+    ${newsLink()}</div>`;
+  if (EVAL()) { if (pass) { Sound.fanfare(); confetti(nota >= 9 ? 1.3 : 0.7); } }
+  else { countUp(document.getElementById("pc"), Math.round((hits / Math.max(total, 1)) * 100), 1000); if (hits / total >= 0.6) { Sound.fanfare(); confetti(0.7); } }
+  document.getElementById("redo")?.addEventListener("click", () => { cfg.mode = "estudio"; run(shuffle(fails.map((x) => x.it.p))); });
+  document.getElementById("again").addEventListener("click", setup);
+}
+
+start().catch(() => { app.innerHTML = `${topbar(exit)}<h2>No se han podido cargar las preguntas.</h2><p class="muted">Recarga la página.</p>`; });
+</script>
+</body>
+</html>

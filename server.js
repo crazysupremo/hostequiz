@@ -6,7 +6,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 const BANK = require("./data/preguntas.json");
-const ESO = require("./data/eso.json"); // Prueba libre Graduado ESO (Castilla y León)
+const ESO = require("./data/eso.json"); // Prueba de acceso a Grado Medio (Castilla y León, BOCYL 3-3-2026)
 const BANKS = { hosteleria: BANK, eso: ESO };
 const bankOf = (curso) => BANKS[curso] || BANK;
 const TIMES = [10, 20, 30, 45, 60, 90, 120, 180, 300]; // segundos permitidos por pregunta
@@ -643,7 +643,7 @@ function serveStatic(res, pathname) {
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
   try {
-    if (req.method === "GET" && (url.pathname === "/eso" || url.pathname === "/eso/")) { res.writeHead(302, { Location: "/?curso=eso" }); return res.end(); }
+    if (req.method === "GET" && ["/eso", "/eso/", "/acceso", "/acceso/"].includes(url.pathname)) { res.writeHead(302, { Location: "/?curso=eso" }); return res.end(); }
     if (req.method === "GET" && url.pathname === "/health") return json(res, 200, { ok: true, partidas: games.size });
     if (req.method === "GET" && url.pathname === "/events") return openStream(req, res, url);
     if (req.method === "GET" && url.pathname === "/api/categorias") {
