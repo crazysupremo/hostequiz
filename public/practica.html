@@ -7,7 +7,7 @@
 <title>HosteQuiz · Practicar</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Cairo:wght@400;700;800&display=swap">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
 <script>
 const app = document.getElementById("app");
 const DATA_URL = window.HQ_DATA_URL || withCurso("/api/preguntas");
-const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"] };
+const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"], ar: ["صحيح", "خطأ"] };
 let BANK = null, deck = [], pos = 0, hits = 0, misses = [], answeredNow = null, streak = 0;
 let view = "pick";
 const ESO = CURSO === "eso";

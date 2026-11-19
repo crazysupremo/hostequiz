@@ -19,6 +19,12 @@
   color-scheme: dark;
 }
 
+:root[lang="ar"] {
+  --display: "Cairo", "Bricolage Grotesque", "Segoe UI", Tahoma, sans-serif;
+  --body: "Cairo", "Atkinson Hyperlegible", "Segoe UI", Tahoma, sans-serif;
+}
+.langmenu button[lang="ar"] { font-family: "Cairo", Tahoma, sans-serif; }
+
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html, body { height: 100%; margin: 0; }

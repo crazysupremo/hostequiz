@@ -11,10 +11,10 @@ const BANKS = { hosteleria: BANK, eso: ESO };
 const bankOf = (curso) => BANKS[curso] || BANK;
 const TIMES = [10, 20, 30, 45, 60, 90, 120, 180, 300]; // segundos permitidos por pregunta
 // Traducciones de las preguntas: { idioma: { id: [pregunta, resp1, resp2, ...] } }
-const LANGS = ["es", "pt", "en"];
+const LANGS = ["es", "pt", "en", "ar"];
 const TR = {};
 for (const l of LANGS.slice(1)) { try { TR[l] = require(`./data/i18n/${l}.json`); } catch (e) { TR[l] = {}; } }
-const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"] };
+const VF_TXT = { es: ["Verdadero", "Falso"], pt: ["Verdadeiro", "Falso"], en: ["True", "False"], ar: ["صحيح", "خطأ"] };
 const PORT = process.env.PORT || 3000;
 const PUBLIC = path.join(__dirname, "public");
 const MAX_PLAYERS = 100;
@@ -478,7 +478,7 @@ async function generateWithAI(body, ip) {
   if (tema.length < 3) return [400, { error: "Escribe de qué tema quieres las preguntas." }];
   const n = Math.min(Math.max(parseInt(body.n) || 5, 1), 15);
   const nivel = ["fácil", "medio", "difícil"].includes(body.nivel) ? body.nivel : "fácil";
-  const idioma = { es: "español de España", pt: "português", en: "English" }[body.lang] || "español de España";
+  const idioma = { es: "español de España", pt: "português", en: "English", ar: "árabe estándar (العربية الفصحى)" }[body.lang] || "español de España";
 
   // Límite de uso por persona
   const now = Date.now();

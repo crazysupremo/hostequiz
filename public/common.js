@@ -1,7 +1,7 @@
 // HosteQuiz — utilidades compartidas: idiomas, sonido, confeti, red
 
 // ============ IDIOMAS ============
-const LANG_NAMES = { es: "Español", pt: "Português", en: "English" };
+const LANG_NAMES = { es: "Español", pt: "Português", en: "English", ar: "العربية" };
 
 const I18N = {
   es: {
@@ -23,7 +23,7 @@ const I18N = {
     lead: "Cafés, bebidas, copas, montaje de mesas y servicio. Una pantalla hace las preguntas y todos responden desde el móvil.",
     createGame: "Crear una partida", practice: "Practicar solo", createAI: "Crear quiz con IA",
     joinTitle: "Entrar en una partida", pinLabel: "PIN del juego", nameLabel: "Tu nombre", namePh: "Ej.: Renato", enter: "Entrar",
-    foot: "HosteQuiz · hostelería en 3 idiomas", connecting: "Conectando…",
+    foot: "HosteQuiz · hostelería en 4 idiomas", connecting: "Conectando…",
     inGame: "Ya estás dentro", findName: "Busca tu nombre en la pantalla. El juego empieza enseguida.",
     getReady: "¡Prepárate!", question: "Pregunta", of: "de", sent: "Respuesta enviada", waitTime: "Espera a que se acabe el tiempo.", guess: "¿Habrás acertado?",
     noAnswer: "Sin respuesta", correct: "¡Correcto!", wrong: "Incorrecto", rightWas: "La correcta era:", rightIs: "La correcta es:",
@@ -80,7 +80,7 @@ const I18N = {
     lead: "Cafés, bebidas, copos, montagem de mesas e serviço. Um ecrã faz as perguntas e todos respondem pelo telemóvel.",
     createGame: "Criar uma partida", practice: "Praticar sozinho", createAI: "Criar quiz com IA",
     joinTitle: "Entrar numa partida", pinLabel: "PIN do jogo", nameLabel: "O teu nome", namePh: "Ex.: Renato", enter: "Entrar",
-    foot: "HosteQuiz · hotelaria em 3 idiomas", connecting: "A ligar…",
+    foot: "HosteQuiz · hotelaria em 4 idiomas", connecting: "A ligar…",
     inGame: "Já estás dentro", findName: "Procura o teu nome no ecrã. O jogo começa já.",
     getReady: "Prepara-te!", question: "Pergunta", of: "de", sent: "Resposta enviada", waitTime: "Espera que o tempo acabe.", guess: "Será que acertaste?",
     noAnswer: "Sem resposta", correct: "Certo!", wrong: "Errado", rightWas: "A certa era:", rightIs: "A certa é:",
@@ -149,7 +149,7 @@ const I18N = {
     lead: "Coffees, drinks, glassware, table setting and service. One screen asks the questions and everyone answers on their phone.",
     createGame: "Host a game", practice: "Practise alone", createAI: "Create a quiz with AI",
     joinTitle: "Join a game", pinLabel: "Game PIN", nameLabel: "Your name", namePh: "e.g. Renato", enter: "Join",
-    foot: "HosteQuiz · hospitality in 3 languages", connecting: "Connecting…",
+    foot: "HosteQuiz · hospitality in 4 languages", connecting: "Connecting…",
     inGame: "You're in", findName: "Look for your name on the screen. The game starts soon.",
     getReady: "Get ready!", question: "Question", of: "of", sent: "Answer sent", waitTime: "Wait for the time to run out.", guess: "Did you get it right?",
     noAnswer: "No answer", correct: "Correct!", wrong: "Wrong", rightWas: "The right answer was:", rightIs: "The right answer is:",
@@ -206,6 +206,63 @@ const I18N = {
   },
 };
 I18N.es.errors.net = "No se ha podido conectar. Inténtalo otra vez.";
+// العربية الفصحى (المغرب والجزائر). قسم امتحان الولوج يبقى بالإسبانية.
+I18N.ar = {
+  courseHost: "الضيافة", courseHostDesc: "القهوة والمشروبات والقاعة والمطبخ",
+  goEso: "امتحان الولوج إلى التكوين المهني (Grado Medio)", goEsoDesc: "اللغة الإسبانية والرياضيات والكفاءة الرقمية، كما في امتحان قشتالة وليون (بالإسبانية)", goHost: "الضيافة",
+  nQ: "{n} سؤال", perQ: "{t} لكل سؤال", minutes: "{n} د", timeUp: "⏰ انتهى الوقت!", leave: "خروج",
+  modeTitle: "طريقة اللعب", modeSolo: "لكل تلميذ أسئلة مختلفة", modeSoloDesc: "كل واحد يجيب على هاتفه بالسرعة التي تناسبه. لا أحد يحصل على نفس سؤال زميله.",
+  modeSame: "السؤال نفسه للجميع", modeSameDesc: "تظهر الأسئلة على هذه الشاشة، كما في كاهوت.",
+  perPlayer: "{n} سؤال لكل تلميذ", race: "السباق المباشر", finishBtn: "إنهاء وعرض المنصة", finished: "انتهى",
+  doneTitle: "لقد انتهيت!", waitOthers: "انتظر حتى ينتهي الآخرون.", hitsOf: "{a} إجابات صحيحة من {b}", nextComing: "السؤال التالي…",
+  news: "الجديد", version: "الإصدار", newsTitle: "ما الجديد",
+  tagline: "مسابقة البار والقاعة والمطبخ.",
+  lead: "القهوة والمشروبات والكؤوس وتجهيز الطاولات والخدمة. شاشة تطرح الأسئلة والجميع يجيب من الهاتف.",
+  createGame: "إنشاء لعبة", practice: "التدرّب وحدي", createAI: "إنشاء مسابقة بالذكاء الاصطناعي",
+  joinTitle: "الدخول إلى لعبة", pinLabel: "رمز اللعبة (PIN)", nameLabel: "اسمك", namePh: "مثال: أمين", enter: "دخول",
+  foot: "HosteQuiz · الضيافة بعدة لغات",
+  connecting: "جارٍ الاتصال…", inGame: "أنت في اللعبة", findName: "ابحث عن اسمك على الشاشة. ستبدأ اللعبة قريباً.", getReady: "استعد!",
+  question: "السؤال", of: "من", sent: "تم إرسال الإجابة", waitTime: "انتظر حتى ينتهي الوقت.", guess: "هل أصبت؟",
+  noAnswer: "بدون إجابة", correct: "صحيح!", wrong: "خطأ", rightWas: "الإجابة الصحيحة كانت:", rightIs: "الإجابة الصحيحة هي:",
+  streak: "{n} إجابات صحيحة متتالية", points: "نقطة", pts: "ن", youAre: "أنت في المرتبة {r} من {t}", lookScreen: "انظر إلى الترتيب على الشاشة",
+  won: "لقد فزت!", podiumYou: "أنت على المنصة!", wellPlayed: "أحسنت اللعب!", gameOver: "نهاية اللعبة", place: "المرتبة {r} من {t}", backHome: "العودة إلى البداية",
+  kicked: "أخرجك المقدّم من اللعبة.", gone: "لم تعد في هذه اللعبة. ادخل مرة أخرى بالرمز.", closed: "انتهت اللعبة.",
+  newGame: "لعبة جديدة", topics: "المواضيع", allNone: "الكل / لا شيء", myQuizzes: "مسابقاتي", createOther: "إنشاء أخرى",
+  wantOwn: "هل تريد أسئلتك الخاصة؟", wantOwnLink: "أنشئ مسابقة بمساعدة الذكاء الاصطناعي",
+  level: "المستوى", all: "الكل", lv1: "سهل", lv2: "متوسط", lv3: "صعب",
+  nQuestions: "عدد الأسئلة", allQ: "الكل", timePerQ: "الوقت لكل سؤال", seconds: "{n} ثانية",
+  available: "{n} سؤالاً متاحاً فيما اخترت.", chooseOne: "اختر موضوعاً واحداً على الأقل أو إحدى مسابقاتك.", createBtn: "إنشاء اللعبة",
+  endGame: "إنهاء اللعبة", sure: "متأكد؟ اضغط مرة أخرى", joinAt: "ادخل إلى", withPin: "بالرمز", qCount: "{n} سؤال",
+  scanQR: "أو امسح الرمز بالكاميرا", langHint: "يمكن لكل لاعب اختيار لغته على الهاتف.",
+  players: "اللاعبون", player1: "لاعب", playersN: "لاعبين", waitingFirst: "في انتظار أول لاعب…", start: "ابدأ", kick: "إخراج {n}",
+  answers: "إجابات", answered: "أجابوا", showNow: "اعرض الإجابة الآن", leaderboard: "الترتيب", nextQ: "السؤال التالي", seePodium: "عرض المنصة",
+  nobody: "لم يلعب أحد.", congrats: "تهانينا!", sound: "الصوت",
+  practiceTitle: "التدرّب وحدي", practiceLead: "أجب بالسرعة التي تناسبك. بعد كل سؤال ترى الإجابة الصحيحة.", whatReview: "ماذا تريد أن تراجع؟",
+  createMine: "إنشاء مسابقتي بالذكاء الاصطناعي", noLevelQ: "لا توجد أسئلة بهذا المستوى", hits: "صحيحة", next: "التالي", seeResult: "عرض النتيجة",
+  result: "النتيجة", xOfY: "{a} من {b}", master: "أنت متمكّن!", good: "جيد جداً، استمر.", review: "راجع أخطاءك وحاول مرة أخرى.",
+  redo: "مراجعة أخطائي الـ{n}", otherTopics: "اختيار مواضيع أخرى", loadFail: "تعذّر تحميل الأسئلة.", reload: "أعد تحميل الصفحة.",
+  createTitle: "أنشئ مسابقتك الخاصة", createLead: "اكتب أسئلتك أو اطلب أفكاراً من الذكاء الاصطناعي. بعدها يمكنك لعبها مع زملائك أو التدرّب عليها وحدك.",
+  newQuiz: "مسابقة جديدة", noneYet: "لم تنشئ أي مسابقة بعد. تُحفظ على هذا الهاتف أو الحاسوب.", qShort: "أسئلة",
+  play: "العب", practiceBtn: "تدرّب", edit: "تعديل", del: "حذف", sureShort: "متأكد؟", deleted: "تم حذف المسابقة",
+  quizName: "اسم المسابقة", quizNamePh: "مثال: قهوة المقهى", askAI: "اطلب أفكاراً من الذكاء الاصطناعي", aboutWhat: "عن ماذا تريد الأسئلة؟",
+  temaPh: "مثال: القهوة بالكحول: كاراخيو، إيرلندية، جامايكية…", withTricks: "مع أسئلة خادعة", generate: "إنشاء الأسئلة", thinking: "جارٍ التفكير…",
+  aiLang: "تُنشأ الأسئلة بلغتك.", aiMayErr: "قد يخطئ الذكاء الاصطناعي: راجع الإجابات قبل الحفظ.",
+  freeTitle: "مجاناً بذكائك الاصطناعي المفضّل", freeAlt: "هل تفضّل فعل ذلك مجاناً بذكائك الاصطناعي الخاص؟",
+  step1: "انسخ الطلب:", copyAsk: "نسخ الطلب", step2: "الصقه في ذكاء اصطناعي مجاني وأرسله:", step3: "انسخ الإجابة كلها والصقها هنا:",
+  respPh: 'الصق الإجابة هنا (تبدأ بـ {"preguntas": …)', addQs: "إضافة الأسئلة", addManual: "+ إضافة سؤال يدوياً", saveQuiz: "حفظ المسابقة",
+  qN: "السؤال {n}", remove: "إزالة", writeQ: "اكتب السؤال", correctLbl: "صحيحة", answerPh: "إجابة", answerOpt: "إجابة (اختيارية)", noImg: "بدون صورة",
+  errTemaFirst: "اكتب أولاً موضوع الأسئلة.", copied: "تم نسخ الطلب. الآن الصقه في الذكاء الاصطناعي.", selectCopy: "حدّد النص وانسخه.",
+  errNotUnderstood: 'لم أفهم هذه الإجابة. انسخ كل ما كتبه الذكاء الاصطناعي (يجب أن يبدأ بـ {"preguntas").',
+  errNoValid: "الإجابة لا تحتوي على أسئلة صالحة. اطلب من الذكاء الاصطناعي أن يحاول مرة أخرى.", added: "تمت إضافة {n} سؤال. راجعها.",
+  errName: "ضع اسماً للمسابقة.", errQText: "ينقص نص السؤال {n}.", errQCorrect: "في السؤال {n}، الإجابة المحددة كصحيحة فارغة.",
+  errQWrong: "السؤال {n} يحتاج إلى إجابة خاطئة واحدة على الأقل.", errQDup: "السؤال {n} فيه إجابات مكررة.", errAddOne: "أضف سؤالاً واحداً على الأقل.",
+  saved: "تم حفظ المسابقة", backList: "مسابقاتي",
+  ideas: ["القهوة بالكحول", "تقديم النبيذ", "الكوكتيلات الكلاسيكية", "أنواع البيرة", "خدمة الزبائن", "مسبّبات الحساسية", "التاباس الإسبانية", "أدوات المائدة واستعمالها"],
+  cats: { cafes: "القهوة", tes: "الشاي والمشروبات العشبية والكاكاو", bebidas: "المشروبات وتقديمها", vinos: "النبيذ والقبو", cocteleria: "الكوكتيلات والمشروبات المقطّرة",
+    cliente: "خدمة الزبائن", cristaleria: "الأكواب والكؤوس", montaje: "تجهيز الطاولات والتحضير المسبق", servicio: "الخدمة في القاعة",
+    cocina: "المطبخ وقائمة اليوم", higiene: "النظافة والسلامة", vocabulario: "مفردات الضيافة" },
+  errors: { net: "تعذّر الاتصال. حاول مرة أخرى." },
+};
 
 function detectLang() {
   try { const s = localStorage.getItem("hq-lang"); if (s && I18N[s]) return s; } catch (e) {}
@@ -230,7 +287,7 @@ const loc = (d) => (d && d.tr && (d.tr[LANG] || d.tr.es)) || d;
 
 function applyLang() {
   document.documentElement.lang = LANG;
-  document.documentElement.dir = "ltr";
+  document.documentElement.dir = LANG === "ar" ? "rtl" : "ltr";
 }
 function setLang(l) {
   if (!I18N[l] || l === LANG) return;
@@ -386,8 +443,9 @@ function setRing(id, msLeft, totalMs) {
 }
 
 // ============ NOVEDADES (aviso pequeño en el pie) ============
-const APP_VERSION = "5";
+const APP_VERSION = "5.1";
 const CHANGELOG = [
+  { v: "5.1", date: "19/11/2026", es: ["Nuevo idioma: árabe (para Marruecos y Argelia), con todas las preguntas de hostelería traducidas.", "Las preguntas de la prueba de acceso ya no hablan de hostelería: usan ejemplos de la vida diaria."], pt: ["Novo idioma: árabe (para Marrocos e Argélia), com todas as perguntas de hotelaria traduzidas.", "As perguntas da prova de acesso já não falam de hotelaria: usam exemplos do dia a dia."], en: ["New language: Arabic (for Morocco and Algeria), with every hospitality question translated.", "The access-test questions no longer talk about hospitality: they use everyday examples."], ar: ["لغة جديدة: العربية (للمغرب والجزائر)، مع ترجمة كل أسئلة الضيافة.", "أسئلة امتحان الولوج لم تعد تتحدث عن الضيافة: تستعمل أمثلة من الحياة اليومية."] },
   { v: "5", date: "19/11/2026", es: ["Prueba de acceso a Grado Medio: 336 preguntas, cada una unida a su competencia oficial (BOCYL 3/3/2026).", "Modo estudio (sin tiempo, con explicación de cada respuesta) y modo evaluación (con tiempo y nota de 0 a 10).", "Las 3 partes del examen: Lengua (2 min por pregunta), Matemáticas (3 min) y Competencia digital (1 min)."], pt: ["Prova de acesso ao Grau Médio: perguntas novas segundo os conteúdos oficiais de Castilla y León (BOCYL 3/3/2026).", "As 3 partes do exame: Língua (2 min por pergunta), Matemática (3 min) e Competência digital (1 min)."], en: ["Grado Medio access test: new questions based on the official Castilla y León contents (BOCYL 3/3/2026).", "The 3 exam parts: Spanish (2 min per question), Maths (3 min) and Digital skills (1 min)."] },
   { v: "4.1", date: "17/11/2026", es: ["ESO más claro: página propia (Prepara ESO), tarjetas grandes por materia y todo en español.", "Práctica del ESO con reloj: cada pregunta tiene el tiempo de su materia."], pt: ["ESO mais claro: página própria (Prepara ESO), cartões grandes por matéria e tudo em espanhol.", "Prática do ESO com relógio: cada pergunta tem o tempo da sua matéria."], en: ["Clearer ESO: its own page (Prepara ESO), big subject cards and everything in Spanish.", "ESO practice with a clock: each question gets its subject's time."] },
   { v: "4", date: "16/11/2026", es: ["Nueva sección: Graduado en ESO (Castilla y León) con 270 preguntas de matemáticas, ciencias, lengua, inglés y sociales.", "Cada materia tiene su tiempo por pregunta: Matemáticas 3 minutos."], pt: ["Nova secção: Graduado em ESO (Castilla y León) com 270 perguntas de matemática, ciências, língua, inglês e sociais.", "Cada matéria tem o seu tempo por pergunta: Matemática 3 minutos."], en: ["New section: ESO diploma (Castilla y León) with 270 questions in maths, science, Spanish, English and social studies.", "Each subject has its own time per question: Maths gets 3 minutes."] },

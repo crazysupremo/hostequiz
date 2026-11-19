@@ -87,9 +87,9 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.1",
-   "q": "Un café cuesta 1,40 € y una tostada 2,10 €. ¿Cuánto pagas por 2 cafés y 1 tostada?",
+   "q": "Un cuaderno cuesta 1,40 € y un bolígrafo 2,10 €. ¿Cuánto pagas por 2 cuadernos y 1 bolígrafo?",
    "n": 1,
-   "e": "2 cafés: 2 × 1,40 = 2,80 €. Más la tostada: 2,80 + 2,10 = 4,90 €. Ojo: el error típico es sumar solo un café (3,50 €).",
+   "e": "2 cuadernos: 2 × 1,40 = 2,80 €. Más el bolígrafo: 2,80 + 2,10 = 4,90 €. Ojo: el error típico es sumar solo un cuaderno (3,50 €).",
    "a": [
     "4,90 €",
     "3,50 €",
@@ -162,7 +162,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.1",
-   "q": "Una cámara frigorífica está a −18 °C y, por una avería, sube 5 °C. ¿A qué temperatura está ahora?",
+   "q": "El congelador de casa está a −18 °C y, por una avería, sube 5 °C. ¿A qué temperatura está ahora?",
    "n": 2,
    "e": "Subir es sumar: −18 + 5 = −13 °C. Sigue bajo cero porque 18 es mayor que 5.",
    "a": [
@@ -192,7 +192,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.1",
-   "q": "Un restaurante compra 24 botellas de aceite a 4,85 € cada una. ¿Cuánto paga?",
+   "q": "Una oficina compra 24 paquetes de folios a 4,85 € cada uno. ¿Cuánto paga?",
    "n": 3,
    "e": "4,85 × 24 = 116,40 €. Truco: 5 × 24 = 120 y le restas 0,15 × 24 = 3,60 → 116,40 €.",
    "a": [
@@ -207,7 +207,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.1",
-   "q": "Cuatro amigos pagan una cena de 86 € a partes iguales. ¿Cuánto paga cada uno?",
+   "q": "Cuatro amigos pagan un regalo de 86 € a partes iguales. ¿Cuánto paga cada uno?",
    "n": 2,
    "e": "86 : 4 = 21,50 €. Comprueba: 21,50 × 4 = 86 €.",
    "a": [
@@ -222,7 +222,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.1",
-   "q": "Cuatro camareros se reparten a partes iguales 57,60 € de propinas. ¿Cuánto le toca a cada uno?",
+   "q": "Cuatro compañeros de trabajo se reparten a partes iguales un premio de 57,60 €. ¿Cuánto le toca a cada uno?",
    "n": 3,
    "e": "57,60 : 4 = 14,40 €. Si te sale 19,20 €, has dividido entre 3 en vez de entre 4.",
    "a": [
@@ -297,9 +297,9 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.1",
-   "q": "Tienes 24 croquetas y 36 empanadillas. Quieres hacer bandejas iguales, el mayor número posible, sin que sobre nada. ¿Cuántas bandejas haces?",
+   "q": "Tienes 24 lápices y 36 gomas. Quieres hacer lotes iguales, el mayor número posible, sin que sobre nada. ¿Cuántos lotes haces?",
    "n": 3,
-   "e": "«Repartir en grupos iguales lo más grandes/numerosos posible» = m.c.d. El m.c.d. de 24 y 36 es 12 bandejas (2 croquetas y 3 empanadillas en cada una).",
+   "e": "«Repartir en grupos iguales, el mayor número posible» = m.c.d. El m.c.d. de 24 y 36 es 12 lotes (2 lápices y 3 gomas en cada uno).",
    "a": [
     "12",
     "6",
@@ -327,9 +327,9 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.2",
-   "q": "De una tarta de 12 porciones se han vendido 3/4. ¿Cuántas porciones quedan?",
+   "q": "De un paquete de 12 rollos de papel se han usado 3/4. ¿Cuántos rollos quedan?",
    "n": 2,
-   "e": "Vendidas: 12 : 4 × 3 = 9. Quedan 12 − 9 = 3. ¡Cuidado! La pregunta es lo que queda, no lo vendido.",
+   "e": "Usados: 12 : 4 × 3 = 9. Quedan 12 − 9 = 3. ¡Cuidado! La pregunta es lo que queda, no lo usado.",
    "a": [
     "3",
     "9",
@@ -537,14 +537,14 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.2",
-   "q": "Calculas con la calculadora el precio de 3 menús de 12,50 € y te sale 375 €. ¿Qué ha pasado?",
+   "q": "Calculas con la calculadora el precio de 3 entradas de cine de 12,50 € y te sale 375 €. ¿Qué ha pasado?",
    "n": 3,
-   "e": "Revisar el resultado: 3 menús de unos 12 € no pueden costar 375 €. Se olvidó la coma decimal.",
+   "e": "Revisa el resultado: 3 entradas de unos 12 € no pueden costar 375 €. Se olvidó la coma decimal.",
    "a": [
     "Has olvidado la coma: 3 × 12,50 = 37,50 €",
     "Es el precio correcto",
     "Has sumado en vez de multiplicar",
-    "Los menús cuestan 125 €"
+    "Las entradas cuestan 125 €"
    ]
   },
   {
@@ -672,9 +672,9 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.3",
-   "q": "Un menú cuesta 4 € más que un bocadillo. Dos bocadillos y un menú cuestan 25 €. ¿Cuánto cuesta el bocadillo?",
+   "q": "Una camiseta cuesta 4 € más que una gorra. Dos gorras y una camiseta cuestan 25 €. ¿Cuánto cuesta la gorra?",
    "n": 3,
-   "e": "Bocadillo = x; menú = x + 4. 2x + (x + 4) = 25 → 3x = 21 → x = 7 €. El menú cuesta 11 € (no confundas).",
+   "e": "Gorra = x; camiseta = x + 4. 2x + (x + 4) = 25 → 3x = 21 → x = 7 €. La camiseta cuesta 11 € (no confundas).",
    "a": [
     "7 €",
     "11 €",
@@ -762,14 +762,14 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.4",
-   "q": "Una receta para 4 personas lleva 300 g de arroz. ¿Cuánto arroz necesitas para 10 personas?",
+   "q": "Para pintar 4 m² de pared se necesitan 300 mL de pintura. ¿Cuánta pintura necesitas para 10 m²?",
    "n": 2,
-   "e": "Por persona: 300 : 4 = 75 g. Para 10: 75 × 10 = 750 g. (Reducción a la unidad.)",
+   "e": "Por m²: 300 : 4 = 75 mL. Para 10 m²: 75 × 10 = 750 mL. (Reducción a la unidad.)",
    "a": [
-    "750 g",
-    "1.200 g",
-    "600 g",
-    "700 g"
+    "750 mL",
+    "1.200 mL",
+    "600 mL",
+    "700 mL"
    ]
   },
   {
@@ -777,14 +777,14 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.4",
-   "q": "Un bizcocho para 6 raciones lleva 180 g de azúcar. ¿Cuánto azúcar hace falta para 8 raciones?",
+   "q": "Para regar 6 macetas se necesitan 180 cL de agua. ¿Cuánta agua hace falta para 8 macetas?",
    "n": 2,
-   "e": "Por ración: 180 : 6 = 30 g. Para 8: 30 × 8 = 240 g.",
+   "e": "Por maceta: 180 : 6 = 30 cL. Para 8: 30 × 8 = 240 cL.",
    "a": [
-    "240 g",
-    "210 g",
-    "270 g",
-    "160 g"
+    "240 cL",
+    "210 cL",
+    "270 cL",
+    "160 cL"
    ]
   },
   {
@@ -792,9 +792,9 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.4",
-   "q": "5 camareros montan el comedor en 2 horas. ¿Cuánto tardarían 4 camareros al mismo ritmo?",
+   "q": "5 operarios descargan un camión en 2 horas. ¿Cuánto tardarían 4 operarios al mismo ritmo?",
    "n": 3,
-   "e": "Es proporción INVERSA: menos camareros, más tiempo. 5 × 2 = 10 horas de trabajo; 10 : 4 = 2,5 h = 2 h 30 min.",
+   "e": "Es proporción INVERSA: menos operarios, más tiempo. 5 × 2 = 10 horas de trabajo; 10 : 4 = 2,5 h = 2 h 30 min.",
    "a": [
     "2 h 30 min",
     "1 h 36 min",
@@ -882,7 +882,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.4",
-   "q": "En un plano a escala 1:50, una mesa mide 4 cm. ¿Cuánto mide en realidad?",
+   "q": "En un plano a escala 1:50, un sofá mide 4 cm. ¿Cuánto mide en realidad?",
    "n": 2,
    "e": "4 × 50 = 200 cm reales = 2 m.",
    "a": [
@@ -897,9 +897,9 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.4",
-   "q": "Una bebida lleva 2 partes de zumo por cada 3 de agua. Si usas 6 litros de agua, ¿cuánto zumo pones?",
+   "q": "Una mezcla lleva 2 partes de pintura blanca por cada 3 de azul. Si usas 6 litros de azul, ¿cuánta blanca pones?",
    "n": 2,
-   "e": "6 litros de agua son 2 veces 3. Entonces el zumo también es el doble de 2: 4 litros.",
+   "e": "6 litros de azul son 2 veces 3. Entonces la blanca también es el doble de 2: 4 litros.",
    "a": [
     "4 L",
     "9 L",
@@ -987,7 +987,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.5",
-   "q": "Un cliente deja 3 € de propina en una cuenta de 60 €. ¿Qué porcentaje es?",
+   "q": "En una compra de 60 € te descuentan 3 €. ¿Qué porcentaje de descuento es?",
    "n": 2,
    "e": "3 : 60 = 0,05 → 5 %. Comprueba: el 5 % de 60 es 3.",
    "a": [
@@ -1047,9 +1047,9 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.5",
-   "q": "El 30 % de los 200 clientes de un hotel son extranjeros. ¿Cuántos son?",
+   "q": "El 30 % de los 200 trabajadores de una fábrica viven en otro pueblo. ¿Cuántos son?",
    "n": 2,
-   "e": "200 × 0,30 = 60 clientes. Truco: 10 % = 20 → 30 % = 60.",
+   "e": "200 × 0,30 = 60 personas. Truco: 10 % = 20 → 30 % = 60.",
    "a": [
     "60",
     "30",
@@ -1092,7 +1092,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.5",
-   "q": "Los ingredientes de un plato cuestan 3,20 € y el restaurante quiere ganar un 150 % sobre ese coste. ¿A qué precio lo vende (sin IVA)?",
+   "q": "Fabricar una mochila cuesta 3,20 € y la empresa quiere ganar un 150 % sobre ese coste. ¿A qué precio la vende (sin IVA)?",
    "n": 3,
    "e": "Ganancia: 150 % de 3,20 = 4,80 €. Precio = coste + ganancia = 3,20 + 4,80 = 8 €.",
    "a": [
@@ -1107,7 +1107,7 @@
    "c": "matematicas",
    "d": "NC",
    "k": "NC.3.5",
-   "q": "Con la oferta «3×2» compras 3 botellas de 6 € y pagas solo 2. ¿Qué descuento tienes sobre el total?",
+   "q": "Con la oferta «3×2» compras 3 botes de champú de 6 € y pagas solo 2. ¿Qué descuento tienes sobre el total?",
    "n": 3,
    "e": "Valen 18 € y pagas 12 €: te ahorras 6 €. 6 : 18 ≈ 0,33 → un 33 %.",
    "a": [
@@ -1172,7 +1172,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.1",
-   "q": "Una terraza rectangular mide 12 m por 6 m. ¿Cuántas baldosas de 1 m² hacen falta para cubrirla?",
+   "q": "Un patio rectangular mide 12 m por 6 m. ¿Cuántas baldosas de 1 m² hacen falta para cubrirlo?",
    "n": 2,
    "e": "Área = 12 × 6 = 72 m². Cada baldosa cubre 1 m²: 72 baldosas.",
    "a": [
@@ -1202,7 +1202,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.1",
-   "q": "Una mesa redonda tiene 1 m de radio. ¿Cuál es su área? (π ≈ 3,14)",
+   "q": "Una alfombra redonda tiene 1 m de radio. ¿Cuál es su área? (π ≈ 3,14)",
    "n": 2,
    "e": "Área del círculo = π · r² = 3,14 · 1² = 3,14 m². (6,28 m sería la longitud del borde.)",
    "a": [
@@ -1217,7 +1217,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.1",
-   "q": "¿Cuánto mide el borde de una mesa redonda de 1,2 m de diámetro? (π ≈ 3,14)",
+   "q": "¿Cuánto mide el borde de una piscina hinchable redonda de 1,2 m de diámetro? (π ≈ 3,14)",
    "n": 2,
    "e": "Longitud de la circunferencia = π · diámetro = 3,14 × 1,2 ≈ 3,77 m.",
    "a": [
@@ -1232,9 +1232,9 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.1",
-   "q": "Una mesa cuadrada mide 90 cm de lado. El mantel debe caer 20 cm por cada lado. ¿Cuánto mide de lado el mantel?",
+   "q": "Un cuadro cuadrado mide 90 cm de lado. El marco añade 20 cm por cada lado. ¿Cuánto mide de lado con el marco?",
    "n": 3,
-   "e": "Cae 20 cm por un lado y 20 cm por el otro: 90 + 20 + 20 = 130 cm. Error típico: sumar solo 20 (110 cm).",
+   "e": "El marco añade 20 cm por un lado y 20 cm por el otro: 90 + 20 + 20 = 130 cm. Error típico: sumar solo 20 (110 cm).",
    "a": [
     "130 cm",
     "110 cm",
@@ -1397,7 +1397,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.2",
-   "q": "¿Cuántos mililitros tiene una botella de vino de 0,75 L?",
+   "q": "¿Cuántos mililitros tiene una botella de 0,75 L?",
    "n": 1,
    "e": "1 L = 1.000 mL. 0,75 × 1.000 = 750 mL.",
    "a": [
@@ -1427,9 +1427,9 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.2",
-   "q": "Una botella de licor de 70 cL, ¿cuántas copas de 35 mL da?",
+   "q": "Un bote de jarabe de 70 cL, ¿cuántas dosis de 35 mL da?",
    "n": 2,
-   "e": "70 cL = 700 mL. 700 : 35 = 20 copas. Si te sale 2, no pasaste los cL a mL.",
+   "e": "70 cL = 700 mL. 700 : 35 = 20 dosis. Si te sale 2, no pasaste los cL a mL.",
    "a": [
     "20",
     "2",
@@ -1487,7 +1487,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.2",
-   "q": "Un asado necesita 25 minutos por cada kilo. ¿Cuánto tarda una pieza de 2,4 kg?",
+   "q": "Una impresora 3D tarda 25 minutos por cada centímetro de altura. ¿Cuánto tarda en hacer una pieza de 2,4 cm?",
    "n": 3,
    "e": "25 × 2,4 = 60 minutos = 1 hora.",
    "a": [
@@ -1592,7 +1592,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.2",
-   "q": "Una olla cilíndrica tiene 20 cm de radio y 30 cm de altura. ¿Cuántos litros caben, aproximadamente? (π ≈ 3,14)",
+   "q": "Un bidón cilíndrico tiene 20 cm de radio y 30 cm de altura. ¿Cuántos litros caben, aproximadamente? (π ≈ 3,14)",
    "n": 3,
    "e": "V = π · r² · h = 3,14 × 400 × 30 = 37.680 cm³. Como 1.000 cm³ = 1 L → unos 37,7 L.",
    "a": [
@@ -1632,7 +1632,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.3",
-   "q": "¿Qué instrumento usarías para medir la temperatura de una cámara frigorífica?",
+   "q": "¿Qué instrumento usarías para medir la temperatura de la nevera de casa?",
    "n": 1,
    "e": "El termómetro mide temperatura. La báscula mide masa, la probeta volumen y el metro longitud.",
    "a": [
@@ -1647,7 +1647,7 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.3",
-   "q": "Para pesar 250 g de harina usas…",
+   "q": "Para pesar una maleta antes de un viaje usas…",
    "n": 1,
    "e": "El peso (masa) se mide con báscula o balanza, en gramos o kilos.",
    "a": [
@@ -1677,11 +1677,11 @@
    "c": "matematicas",
    "d": "FM",
    "k": "FM.3.3",
-   "q": "¿Con qué medirías el tiempo que tarda en hacerse un huevo cocido?",
+   "q": "¿Con qué medirías el tiempo que tardas en correr 100 metros?",
    "n": 2,
    "e": "El tiempo se mide con reloj o cronómetro, en minutos y segundos.",
    "a": [
-    "Con un cronómetro o un reloj",
+    "Con un cronómetro",
     "Con un termómetro",
     "Con una regla",
     "Con una báscula"
@@ -1707,9 +1707,9 @@
    "c": "matematicas",
    "d": "GE",
    "k": "GE.3.1",
-   "q": "Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuántos se vendieron en total?",
+   "q": "Libros vendidos en una librería de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuántos se vendieron en total?",
    "n": 1,
-   "e": "40 + 35 + 45 + 50 + 80 = 250 cafés.",
+   "e": "40 + 35 + 45 + 50 + 80 = 250 libros.",
    "a": [
     "250",
     "200",
@@ -1722,9 +1722,9 @@
    "c": "matematicas",
    "d": "GE",
    "k": "GE.3.1",
-   "q": "Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la media diaria?",
+   "q": "Libros vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la media diaria?",
    "n": 2,
-   "e": "Media = suma : número de datos = 250 : 5 = 50 cafés.",
+   "e": "Media = suma : número de datos = 250 : 5 = 50 libros.",
    "a": [
     "50",
     "45",
@@ -1737,7 +1737,7 @@
    "c": "matematicas",
    "d": "GE",
    "k": "GE.3.1",
-   "q": "Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la mediana?",
+   "q": "Libros vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la mediana?",
    "n": 2,
    "e": "Se ordenan: 35, 40, 45, 50, 80. La mediana es el valor del centro: 45.",
    "a": [
@@ -1812,9 +1812,9 @@
    "c": "matematicas",
    "d": "GE",
    "k": "GE.3.1",
-   "q": "En una tabla: 3 clientes de 20 años, 5 de 30 y 2 de 40. ¿Cuál es la edad media?",
+   "q": "En una tabla: 3 alumnos de 20 años, 5 de 30 y 2 de 40. ¿Cuál es la edad media?",
    "n": 3,
-   "e": "Multiplica cada edad por cuántos hay: 3·20 + 5·30 + 2·40 = 60 + 150 + 80 = 290. Hay 10 clientes: 290 : 10 = 29 años.",
+   "e": "Multiplica cada edad por cuántos hay: 3·20 + 5·30 + 2·40 = 60 + 150 + 80 = 290. Hay 10 alumnos: 290 : 10 = 29 años.",
    "a": [
     "29 años",
     "30 años",
@@ -1827,7 +1827,7 @@
    "c": "matematicas",
    "d": "GE",
    "k": "GE.3.1",
-   "q": "En una encuesta a 40 clientes, 10 prefieren té. ¿Cuál es la frecuencia relativa del té?",
+   "q": "En una encuesta a 40 personas, 10 prefieren el baloncesto. ¿Cuál es la frecuencia relativa del baloncesto?",
    "n": 2,
    "e": "Frecuencia relativa = veces : total = 10 : 40 = 0,25 (el 25 %). 10 es la frecuencia absoluta.",
    "a": [
@@ -1897,9 +1897,9 @@
    "c": "matematicas",
    "d": "GE",
    "k": "GE.3.2",
-   "q": "Un gráfico de barras muestra las reservas: lunes 20, martes 30 y miércoles 25. ¿Cuántas reservas más hubo el martes que el lunes?",
+   "q": "Un gráfico de barras muestra las visitas a la biblioteca: lunes 20, martes 30 y miércoles 25. ¿Cuántas visitas más hubo el martes que el lunes?",
    "n": 1,
-   "e": "Se lee la altura de cada barra y se resta: 30 − 20 = 10 reservas más.",
+   "e": "Se lee la altura de cada barra y se resta: 30 − 20 = 10 visitas más.",
    "a": [
     "10",
     "5",
@@ -2032,9 +2032,9 @@
    "c": "matematicas",
    "d": "GE",
    "k": "GE.3.3",
-   "q": "En una caja hay 4 bombones negros y 6 blancos. Si coges uno sin mirar, ¿qué probabilidad hay de que sea negro?",
+   "q": "En una bolsa hay 4 bolas negras y 6 blancas. Si sacas una sin mirar, ¿qué probabilidad hay de que sea negra?",
    "n": 2,
-   "e": "Favorables: 4. Posibles: 4 + 6 = 10. 4/10 = 2/5. Error típico: dividir entre los blancos (4/6).",
+   "e": "Favorables: 4. Posibles: 4 + 6 = 10. 4/10 = 2/5. Error típico: dividir entre las blancas (4/6).",
    "a": [
     "2/5",
     "4/6",
@@ -2137,7 +2137,7 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.1",
-   "q": "«Se busca camarero/a con experiencia para terraza de verano. Jornada completa, de junio a septiembre. Imprescindible inglés básico. Enviar currículum a empleo@barlaplaza.es antes del 31 de mayo.» ¿Qué tipo de texto es?",
+   "q": "«Se busca dependiente/a con experiencia para tienda de ropa. Jornada completa, de junio a septiembre. Imprescindible inglés básico. Enviar currículum a empleo@modasplaza.es antes del 31 de mayo.» ¿Qué tipo de texto es?",
    "n": 1,
    "e": "Ofrece un puesto de trabajo y explica los requisitos y cómo presentarse: eso es un anuncio de empleo. No cuenta un hecho (noticia) ni da la opinión de nadie.",
    "a": [
@@ -2152,13 +2152,13 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.1",
-   "q": "«El Ayuntamiento abrirá el próximo lunes un nuevo comedor social en el barrio de Las Delicias. Tendrá 60 plazas y dará comidas de lunes a sábado.» ¿Cuál es la idea principal?",
+   "q": "«El Ayuntamiento abrirá el próximo lunes una nueva biblioteca en el barrio de Las Delicias. Tendrá 60 puestos de estudio y abrirá de lunes a sábado.» ¿Cuál es la idea principal?",
    "n": 2,
-   "e": "La idea principal es lo más importante del texto: la apertura del comedor. Las 60 plazas y los días son detalles (ideas secundarias).",
+   "e": "La idea principal es lo más importante del texto: la apertura de la biblioteca. Los 60 puestos y los días son detalles (ideas secundarias).",
    "a": [
-    "Se abre un nuevo comedor social en Las Delicias",
-    "El Ayuntamiento cierra un comedor",
-    "Los comedores sociales no abren los sábados",
+    "Se abre una nueva biblioteca en Las Delicias",
+    "El Ayuntamiento cierra una biblioteca",
+    "Las bibliotecas no abren los sábados",
     "El barrio tiene 60 vecinos"
    ]
   },
@@ -2167,14 +2167,14 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.1",
-   "q": "«Cada verano se repite la escena: terrazas llenas y camareros agotados. Creo que ya es hora de que se respeten los descansos del personal de hostelería.» ¿Cuál es el tema?",
+   "q": "«Cada verano se repite la escena: calor extremo y repartidores agotados. Creo que ya es hora de que se respeten los descansos de los repartidores.» ¿Cuál es el tema?",
    "n": 2,
-   "e": "El tema resume en pocas palabras de qué trata el texto. Todo gira alrededor del cansancio y los descansos de los camareros.",
+   "e": "El tema resume en pocas palabras de qué trata el texto. Todo gira alrededor del cansancio y los descansos de los repartidores.",
    "a": [
-    "Los descansos del personal de hostelería",
-    "Las terrazas de invierno",
-    "El precio de las bebidas",
-    "Cómo poner una mesa"
+    "Los descansos de los repartidores",
+    "Las vacaciones de invierno",
+    "El precio de la gasolina",
+    "Cómo montar una bicicleta"
    ]
   },
   {
@@ -2257,7 +2257,7 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.2",
-   "q": "«Cada verano se repite la escena: terrazas llenas y camareros agotados. Creo que ya es hora de que se respeten los descansos del personal.» ¿Qué tipo de texto es?",
+   "q": "«Cada verano se repite la escena: calor extremo y repartidores agotados. Creo que ya es hora de que se respeten sus descansos.» ¿Qué tipo de texto es?",
    "n": 2,
    "e": "«Creo que…» muestra que el autor da su opinión y la defiende. Una noticia no opina: solo cuenta hechos.",
    "a": [
@@ -2357,7 +2357,7 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«Se busca camarero/a para terraza de verano. Jornada completa. Imprescindible inglés básico.» ¿Qué requisito es imprescindible?",
+   "q": "«Se busca dependiente/a para tienda de ropa. Jornada completa. Imprescindible inglés básico.» ¿Qué requisito es imprescindible?",
    "n": 1,
    "e": "El texto lo dice con la palabra «imprescindible»: inglés básico. Lo demás no aparece en el anuncio.",
    "a": [
@@ -2372,7 +2372,7 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«Se busca camarero/a para terraza de verano. Jornada completa, de junio a septiembre.» ¿Cuánto dura el trabajo?",
+   "q": "«Se busca dependiente/a para tienda de ropa. Jornada completa, de junio a septiembre.» ¿Cuánto dura el trabajo?",
    "n": 2,
    "e": "El dato está en el texto: «de junio a septiembre». Busca siempre la respuesta en el texto, no en lo que imaginas.",
    "a": [
@@ -2387,12 +2387,12 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«Se busca camarero/a. Enviar currículum a empleo@barlaplaza.es antes del 31 de mayo.» ¿Cómo hay que presentar la candidatura?",
+   "q": "«Se busca dependiente/a. Enviar currículum a empleo@modasplaza.es antes del 31 de mayo.» ¿Cómo hay que presentar la candidatura?",
    "n": 2,
    "e": "El anuncio da un correo electrónico y una fecha límite. Las otras opciones no aparecen en el texto.",
    "a": [
     "Enviando el currículum por correo electrónico antes del 31 de mayo",
-    "Yendo al bar en septiembre",
+    "Yendo a la tienda en septiembre",
     "Llamando por teléfono en junio",
     "No hace falta hacer nada"
    ]
@@ -2402,7 +2402,7 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«El comedor social dará comidas de lunes a sábado.» ¿Cuántos días a la semana dará comidas?",
+   "q": "«La nueva biblioteca abrirá de lunes a sábado.» ¿Cuántos días a la semana abrirá?",
    "n": 2,
    "e": "De lunes a sábado: lunes, martes, miércoles, jueves, viernes y sábado = 6 días. El domingo queda fuera.",
    "a": [
@@ -2417,14 +2417,14 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«1. Llene el depósito con agua fría. 2. Coloque la cápsula. 3. Pulse el botón y espere a la luz verde.» ¿Qué hay que hacer justo después de colocar la cápsula?",
+   "q": "«Microondas. 1. Coloque el plato dentro. 2. Cierre la puerta. 3. Elija el tiempo y pulse Inicio.» ¿Qué hay que hacer justo después de cerrar la puerta?",
    "n": 1,
-   "e": "Los números marcan el orden: después del paso 2 (cápsula) viene el 3 (pulsar el botón).",
+   "e": "Los números marcan el orden: después del paso 2 (cerrar la puerta) viene el 3 (elegir el tiempo y pulsar Inicio).",
    "a": [
-    "Pulsar el botón",
-    "Llenar el depósito",
-    "Abrir la tapa",
-    "Apagar la máquina"
+    "Elegir el tiempo y pulsar Inicio",
+    "Colocar el plato",
+    "Abrir la puerta",
+    "Desenchufarlo"
    ]
   },
   {
@@ -2432,14 +2432,14 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«Pulse el botón y espere a la luz verde. Nunca abra la tapa mientras sale el café.» ¿Qué está prohibido?",
+   "q": "«Elija el tiempo y pulse Inicio. Nunca ponga objetos metálicos dentro.» ¿Qué está prohibido?",
    "n": 2,
-   "e": "La palabra «nunca» señala la prohibición: abrir la tapa mientras sale el café.",
+   "e": "La palabra «nunca» señala la prohibición: meter objetos metálicos en el microondas.",
    "a": [
-    "Abrir la tapa mientras sale el café",
-    "Usar agua fría",
-    "Poner una cápsula",
-    "Esperar a la luz verde"
+    "Poner objetos metálicos dentro",
+    "Cerrar la puerta",
+    "Elegir el tiempo",
+    "Pulsar Inicio"
    ]
   },
   {
@@ -2447,14 +2447,14 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«Aviso: por obras, la cocina estará cerrada del 3 al 9 de abril. El bar seguirá abierto y servirá bocadillos y raciones frías.» ¿Se puede comer algo el 5 de abril?",
+   "q": "«Aviso: por obras, la piscina municipal estará cerrada del 3 al 9 de abril. El gimnasio seguirá abierto en su horario.» ¿Se puede hacer deporte el 5 de abril?",
    "n": 2,
-   "e": "El 5 de abril está dentro del cierre, pero solo cierra la cocina. El bar sigue abierto con bocadillos y raciones frías.",
+   "e": "El 5 de abril está dentro del cierre, pero solo cierra la piscina. El gimnasio sigue abierto.",
    "a": [
-    "Sí, bocadillos y raciones frías",
+    "Sí, en el gimnasio",
     "No, todo está cerrado",
-    "Sí, el menú del día completo",
-    "Solo bebidas calientes"
+    "Sí, en la piscina",
+    "Solo en la piscina por la tarde"
    ]
   },
   {
@@ -2462,7 +2462,7 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.3",
-   "q": "«Aviso: por obras, la cocina estará cerrada del 3 al 9 de abril.» ¿Cuál es la causa del cierre?",
+   "q": "«Aviso: por obras, la piscina municipal estará cerrada del 3 al 9 de abril.» ¿Cuál es la causa del cierre?",
    "n": 2,
    "e": "«Por obras» indica la causa. La preposición «por» muchas veces introduce el motivo.",
    "a": [
@@ -2582,14 +2582,14 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.4",
-   "q": "«El precio del aceite de oliva ha subido un 40 % este año por la sequía.» ¿Qué conclusión puedes sacar para un restaurante?",
+   "q": "«El precio de la gasolina ha subido un 20 % este año.» ¿Qué conclusión puedes sacar para una empresa de transporte?",
    "n": 2,
-   "e": "Sacar conclusiones es relacionar el texto con la vida real: si sube el aceite, sube el coste de cocinar.",
+   "e": "Sacar conclusiones es relacionar el texto con la vida real: si sube la gasolina, sube el coste de transportar.",
    "a": [
-    "Que cocinar le costará más y quizá tenga que subir precios o ahorrar aceite",
-    "Que el aceite será gratis",
-    "Que la sequía no afecta a la hostelería",
-    "Que debe cerrar la cocina"
+    "Que sus gastos subirán y quizá tenga que subir precios o ahorrar combustible",
+    "Que la gasolina será gratis",
+    "Que el precio no afecta al transporte",
+    "Que debe vender sus camiones"
    ]
   },
   {
@@ -2627,14 +2627,14 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.4",
-   "q": "«Las reservas en los hoteles de la costa están al 95 % para agosto.» ¿Qué se puede deducir?",
+   "q": "«Las plazas de los campamentos de verano están ocupadas al 95 %.» ¿Qué se puede deducir?",
    "n": 2,
-   "e": "Un 95 % de ocupación significa que casi todo está lleno: queda solo un 5 % libre.",
+   "e": "Un 95 % ocupado significa que casi todo está lleno: queda solo un 5 % libre.",
    "a": [
-    "Que casi no quedan habitaciones libres en agosto",
-    "Que los hoteles están vacíos",
-    "Que agosto es temporada baja",
-    "Que los hoteles cierran en agosto"
+    "Que casi no quedan plazas libres",
+    "Que los campamentos están vacíos",
+    "Que nadie quiere ir",
+    "Que los campamentos cierran"
    ]
   },
   {
@@ -2644,12 +2644,12 @@
    "k": "CE.3.5",
    "q": "¿Cuál de estas frases es un hecho y no una opinión?",
    "n": 3,
-   "e": "Un hecho se puede comprobar (el horario). «La mejor», «muy simpático» o «demasiado caro» dependen de quién lo dice: son opiniones.",
+   "e": "Un hecho se puede comprobar (el horario). «La mejor», «muy simpático» o «demasiado feo» dependen de quién lo dice: son opiniones.",
    "a": [
-    "El restaurante abre a las 13:00",
-    "La comida de ese restaurante es la mejor",
-    "El camarero es muy simpático",
-    "Ese local es demasiado caro"
+    "La biblioteca abre a las 9:00",
+    "Esa biblioteca es la mejor de la ciudad",
+    "El bibliotecario es muy simpático",
+    "Ese edificio es demasiado feo"
    ]
   },
   {
@@ -2661,10 +2661,10 @@
    "n": 3,
    "e": "«Creo que…» indica opinión personal. Las otras frases son datos que se pueden comprobar.",
    "a": [
-    "Creo que la tortilla está mejor con cebolla",
-    "La tortilla lleva huevo",
-    "El bar cierra los lunes",
-    "El menú cuesta 13 €"
+    "Creo que el verano es la mejor estación",
+    "El verano empieza en junio",
+    "El autobús pasa cada 20 minutos",
+    "La entrada cuesta 13 €"
    ]
   },
   {
@@ -2672,13 +2672,13 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.5",
-   "q": "«Hay que respetar los descansos del personal. Un trabajador cansado atiende peor y se equivoca más.» ¿Cuál es la tesis del autor?",
+   "q": "«Hay que respetar los descansos de los repartidores. Un trabajador cansado conduce peor y tiene más accidentes.» ¿Cuál es la tesis del autor?",
    "n": 2,
    "e": "La tesis es la idea que defiende el autor. Lo demás del texto sirve para apoyarla (argumentos).",
    "a": [
-    "Hay que respetar los descansos del personal de hostelería",
-    "Las terrazas deben cerrar en verano",
-    "Los camareros trabajan poco",
+    "Hay que respetar los descansos de los repartidores",
+    "Los repartos deben parar en verano",
+    "Los repartidores trabajan poco",
     "Los clientes deben pagar más"
    ]
   },
@@ -2687,14 +2687,14 @@
    "c": "lengua",
    "d": "CE",
    "k": "CE.3.5",
-   "q": "«Hay que respetar los descansos del personal. Un trabajador cansado atiende peor y se equivoca más.» ¿Qué argumento usa el autor?",
+   "q": "«Hay que respetar los descansos de los repartidores. Un trabajador cansado conduce peor y tiene más accidentes.» ¿Qué argumento usa el autor?",
    "n": 2,
-   "e": "El argumento es la razón que da para defender su tesis: el cansancio empeora el servicio.",
+   "e": "El argumento es la razón que da para defender su tesis: el cansancio aumenta el riesgo.",
    "a": [
-    "Que un trabajador cansado atiende peor y se equivoca más",
-    "Que las terrazas son bonitas",
-    "Que en invierno hay menos clientes",
-    "Que los camareros ganan mucho"
+    "Que un trabajador cansado conduce peor y tiene más accidentes",
+    "Que las bicicletas son bonitas",
+    "Que en invierno hay menos pedidos",
+    "Que los repartidores ganan mucho"
    ]
   },
   {
@@ -2734,7 +2734,7 @@
    "k": "CE.3.5",
    "q": "¿Qué conector expresa una consecuencia?",
    "n": 2,
-   "e": "«Por lo tanto» introduce lo que resulta de lo anterior: «Llueve; por lo tanto, cerramos la terraza».",
+   "e": "«Por lo tanto» introduce lo que resulta de lo anterior: «Llueve; por lo tanto, se suspende el partido».",
    "a": [
     "Por lo tanto",
     "Sin embargo",
@@ -2792,13 +2792,13 @@
    "c": "lengua",
    "d": "CO",
    "k": "CO.3.1",
-   "q": "Un cliente dice: «¿Me podría traer la cuenta cuando pueda?». ¿Qué intención tiene?",
+   "q": "Una compañera te dice: «¿Me podrías pasar la grapadora cuando puedas?». ¿Qué intención tiene?",
    "n": 2,
-   "e": "Aunque es una pregunta, lo que quiere es que le traigas la cuenta. El «cuando pueda» lo hace más educado.",
+   "e": "Aunque es una pregunta, lo que quiere es que le pases la grapadora. El «cuando puedas» lo hace más educado.",
    "a": [
-    "Pedir la cuenta de forma educada",
-    "Quejarse del servicio",
-    "Preguntar el precio de un plato",
+    "Pedirte la grapadora de forma educada",
+    "Quejarse de ti",
+    "Preguntar el precio de la grapadora",
     "Despedirse"
    ]
   },
@@ -2807,14 +2807,14 @@
    "c": "lengua",
    "d": "CO",
    "k": "CO.3.1",
-   "q": "Un cliente llama y dice: «Quiero una mesa para cuatro». ¿Quién es el emisor?",
+   "q": "Una paciente llama al centro de salud y dice: «Quiero pedir cita». ¿Quién es el emisor?",
    "n": 2,
-   "e": "El emisor es quien envía el mensaje: el cliente. El camarero es el receptor y el teléfono es el canal.",
+   "e": "El emisor es quien envía el mensaje: la paciente. El recepcionista es el receptor y el teléfono es el canal.",
    "a": [
-    "El cliente",
-    "El camarero",
+    "La paciente",
+    "El recepcionista",
     "El teléfono",
-    "La mesa"
+    "La cita"
    ]
   },
   {
@@ -2867,13 +2867,13 @@
    "c": "lengua",
    "d": "CO",
    "k": "CO.3.3",
-   "q": "Tu jefe te dice: «Antes de abrir, monta las mesas de la terraza y luego repón las neveras». ¿Qué haces primero?",
+   "q": "Tu jefe te dice: «Antes de abrir la tienda, coloca los precios y luego repón las estanterías». ¿Qué haces primero?",
    "n": 2,
-   "e": "«Antes de abrir… y luego…» marca el orden: primero las mesas, después las neveras.",
+   "e": "«Antes de abrir… y luego…» marca el orden: primero los precios, después las estanterías.",
    "a": [
-    "Montar las mesas de la terraza",
-    "Reponer las neveras",
-    "Abrir el local",
+    "Colocar los precios",
+    "Reponer las estanterías",
+    "Abrir la tienda",
     "Nada, son sugerencias"
    ]
   },
@@ -2882,14 +2882,14 @@
    "c": "lengua",
    "d": "CO",
    "k": "CO.3.3",
-   "q": "Un cliente dice en tono irónico: «¡Qué rápido traéis la comida!» después de esperar una hora. ¿Qué quiere decir?",
+   "q": "Después de esperar una hora en la cola del médico, alguien dice en tono irónico: «¡Qué rápido atienden aquí!». ¿Qué quiere decir?",
    "n": 2,
    "e": "La ironía dice lo contrario de lo que se piensa. El contexto (esperar una hora) te da la pista.",
    "a": [
-    "Que la comida ha tardado mucho",
-    "Que la comida ha llegado muy rápido",
-    "Que quiere más comida",
-    "Que está muy contento"
+    "Que han tardado mucho",
+    "Que han atendido muy rápido",
+    "Que está muy contento",
+    "Que quiere volver mañana"
    ]
   },
   {
@@ -2972,13 +2972,13 @@
    "c": "lengua",
    "d": "EO",
    "k": "EO.3.3",
-   "q": "Atiendes a un cliente extranjero que habla poco español. ¿Qué haces?",
+   "q": "En tu trabajo atiendes a una persona extranjera que habla poco español. ¿Qué haces?",
    "n": 2,
    "e": "Para evitar problemas de comunicación te adaptas al oyente: despacio, sencillo y con apoyos.",
    "a": [
-    "Hablar despacio, con frases sencillas y apoyarte en gestos o en la carta",
+    "Hablar despacio, con frases sencillas y apoyarte en gestos o en un papel",
     "Hablar más alto y más rápido",
-    "No atenderle",
+    "No atenderla",
     "Usar palabras muy difíciles"
    ]
   },
@@ -3032,7 +3032,7 @@
    "c": "lengua",
    "d": "EE",
    "k": "EE.3.1",
-   "q": "«Tiene que ___ más sillas en la terraza.»",
+   "q": "«Tiene que ___ más sillas en el aula.»",
    "n": 2,
    "e": "Aquí es el verbo «haber» (que haya sillas). Truco: si puedes decir «tiene que existir», es «haber».",
    "a": [
@@ -3227,9 +3227,9 @@
    "c": "lengua",
    "d": "EE",
    "k": "EE.3.1",
-   "q": "«Los clientes ___ contentos con el servicio.»",
+   "q": "«Los alumnos ___ contentos con el curso.»",
    "n": 2,
-   "e": "El sujeto «los clientes» es plural (ellos): el verbo va en plural, «están».",
+   "e": "El sujeto «los alumnos» es plural (ellos): el verbo va en plural, «están».",
    "a": [
     "están",
     "está",
@@ -3246,10 +3246,10 @@
    "n": 2,
    "e": "«Haber» con el sentido de «existir» va siempre en singular: hubo, había, habrá.",
    "a": [
-    "Hubo muchos clientes.",
-    "Hubieron muchos clientes.",
-    "Habieron muchos clientes.",
-    "Hubo muchas clientes."
+    "Hubo muchos alumnos.",
+    "Hubieron muchos alumnos.",
+    "Habieron muchos alumnos.",
+    "Hubo muchas alumnos."
    ]
   },
   {
@@ -3302,14 +3302,14 @@
    "c": "lengua",
    "d": "EE",
    "k": "EE.3.1",
-   "q": "En «El camarero sirve el café», ¿cuál es el sujeto?",
+   "q": "En «El conductor arranca el autobús», ¿cuál es el sujeto?",
    "n": 2,
-   "e": "El sujeto es quien hace la acción y concuerda con el verbo: ¿quién sirve? El camarero.",
+   "e": "El sujeto es quien hace la acción y concuerda con el verbo: ¿quién arranca? El conductor.",
    "a": [
-    "El camarero",
-    "El café",
-    "Sirve",
-    "Sirve el café"
+    "El conductor",
+    "El autobús",
+    "Arranca",
+    "Arranca el autobús"
    ]
   },
   {
@@ -3317,7 +3317,7 @@
    "c": "lengua",
    "d": "EE",
    "k": "EE.3.1",
-   "q": "En «Los clientes pidieron dos raciones», ¿qué es «pidieron»?",
+   "q": "En «Los vecinos pidieron dos contenedores», ¿qué es «pidieron»?",
    "n": 2,
    "e": "Indica una acción y tiene tiempo y persona (ellos pidieron): es un verbo.",
    "a": [
@@ -3397,7 +3397,7 @@
    "c": "lengua",
    "d": "EE",
    "k": "EE.3.2",
-   "q": "Dos artículos opinan distinto sobre las terrazas en invierno. Al resumirlos, ¿qué haces?",
+   "q": "Dos artículos opinan distinto sobre el uso del móvil en clase. Al resumirlos, ¿qué haces?",
    "n": 3,
    "e": "Un buen resumen refleja los principales argumentos de cada fuente, aunque no estés de acuerdo.",
    "a": [
@@ -3487,13 +3487,13 @@
    "c": "lengua",
    "d": "EE",
    "k": "EE.3.3",
-   "q": "Si un restaurante te cobra algo que no has pedido y quieres reclamar oficialmente, pides…",
+   "q": "Si una tienda te cobra algo que no has comprado y quieres reclamar oficialmente, pides…",
    "n": 2,
    "e": "Todos los establecimientos deben tener hojas de reclamaciones. Es el escrito oficial para quejarse.",
    "a": [
     "La hoja de reclamaciones",
-    "El libro de recetas",
-    "La carta de vinos",
+    "El catálogo",
+    "El ticket regalo",
     "Un currículum"
    ]
   },
@@ -3542,9 +3542,9 @@
    "c": "lengua",
    "d": "EE",
    "k": "EE.3.4",
-   "q": "¿Qué tipo de texto es una receta de cocina?",
+   "q": "¿Qué tipo de texto son las instrucciones para montar un mueble?",
    "n": 2,
-   "e": "Da pasos ordenados para hacer algo: es instructivo, como las instrucciones de un aparato.",
+   "e": "Da pasos ordenados para hacer algo: es instructivo, como el manual de un aparato.",
    "a": [
     "Instructivo",
     "Narrativo",
@@ -3767,7 +3767,7 @@
    "c": "digital",
    "d": "IAD",
    "k": "IAD.3.2",
-   "q": "Quieres hacer la cuenta de gastos de un bar cada mes. ¿Qué herramienta es la adecuada?",
+   "q": "Quieres hacer la cuenta de gastos de tu casa cada mes. ¿Qué herramienta es la adecuada?",
    "n": 2,
    "e": "La hoja de cálculo hace sumas y medias automáticamente. Es la herramienta pensada para números.",
    "a": [
@@ -4217,7 +4217,7 @@
    "c": "digital",
    "d": "CCD",
    "k": "CCD.3.1",
-   "q": "Para hacer un cartel del menú del día, ¿qué herramienta es adecuada?",
+   "q": "Para hacer un cartel de la fiesta del barrio, ¿qué herramienta es adecuada?",
    "n": 2,
    "e": "Para crear contenido visual se usan programas de diseño con plantillas, textos e imágenes.",
    "a": [
@@ -4262,7 +4262,7 @@
    "c": "digital",
    "d": "CCD",
    "k": "CCD.3.2",
-   "q": "Tienes una foto del plato del día y quieres usarla en Instagram. ¿Qué es reelaborarla?",
+   "q": "Tienes una foto de una bici que quieres vender por internet. ¿Qué es reelaborarla?",
    "n": 2,
    "e": "Adaptar un contenido es modificarlo un poco (recorte, filtros, texto) para que transmita tu mensaje.",
    "a": [
@@ -4977,12 +4977,12 @@
    "c": "digital",
    "d": "PRO",
    "k": "PRO.3.3",
-   "q": "Un restaurante pequeño quiere recibir reservas por internet. ¿Qué solución es adecuada?",
+   "q": "Una peluquería pequeña quiere recibir citas por internet. ¿Qué solución es adecuada?",
    "n": 2,
-   "e": "Se elige la solución tecnológica que resuelve la necesidad: reservas → herramienta de reservas.",
+   "e": "Se elige la solución tecnológica que resuelve la necesidad: citas → herramienta de citas.",
    "a": [
-    "Una aplicación o web de reservas online",
-    "Apuntarlas en una servilleta",
+    "Una aplicación o web de citas online",
+    "Apuntarlas en un papel suelto",
     "Instalar un antivirus",
     "Colgar una hoja impresa en la pared"
    ]

@@ -9,7 +9,7 @@
 #IAD.3.2
 2|Quieres comparar dos móviles antes de comprar uno. ¿Qué es lo más sensato? || Buscar sus características y opiniones en varias webs y compararlas | Comprar el primero que salga en un anuncio | Elegir siempre el más caro | Fiarte solo de un influencer >> Para decidir bien se comparan datos (precio, batería, memoria) y opiniones de varias fuentes.
 2|Necesitas escribir y enviar documentos desde casa, sin juegos ni programas pesados. ¿Qué te conviene más? || Un portátil sencillo o una tablet con teclado | Un ordenador gaming muy caro | Una videoconsola | Un reloj inteligente >> Se elige el dispositivo según lo que necesitas. Para tareas básicas no hace falta lo más potente.
-2|Quieres hacer la cuenta de gastos de un bar cada mes. ¿Qué herramienta es la adecuada? || Una hoja de cálculo | Un programa de dibujo | Un reproductor de vídeo | Una red social >> La hoja de cálculo hace sumas y medias automáticamente. Es la herramienta pensada para números.
+2|Quieres hacer la cuenta de gastos de tu casa cada mes. ¿Qué herramienta es la adecuada? || Una hoja de cálculo | Un programa de dibujo | Un reproductor de vídeo | Una red social >> La hoja de cálculo hace sumas y medias automáticamente. Es la herramienta pensada para números.
 #IAD.3.3
 2|¿Qué es un archivo PDF? || Un documento que se ve igual en cualquier dispositivo | Un vídeo | Una canción | Un programa de dibujo >> El PDF mantiene el formato. Por eso se usa para currículums, facturas y documentos oficiales.
 2|¿Qué extensión tiene normalmente una foto? || .jpg | .mp3 | .docx | .exe >> .jpg (o .png) son imágenes; .mp3 es audio; .docx es Word; .exe es un programa.
@@ -45,11 +45,11 @@
 2|En una hoja de cálculo, ¿qué hace la fórmula =SUMA(A1:A5)? || Suma los valores de las celdas A1 a A5 | Multiplica A1 por A5 | Borra las celdas | Cuenta las letras >> Los dos puntos (:) indican un rango: de A1 hasta A5, ambas incluidas.
 3|En una hoja de cálculo, ¿qué fórmula calcula la media de B2 a B10? || =PROMEDIO(B2:B10) | =SUMA(B2:B10) | =MEDIA(B2+B10) | =B2/B10 >> En la versión en español, la media es PROMEDIO. SUMA solo suma.
 2|En una hoja de cálculo, ¿cómo se llama la casilla donde se cruzan una fila y una columna? || Celda | Diapositiva | Párrafo | Pestaña >> Cada celda tiene un nombre: la columna (letra) y la fila (número), como B3.
-2|Para hacer un cartel del menú del día, ¿qué herramienta es adecuada? || Un programa de diseño sencillo, como Canva | Una hoja de cálculo | Un antivirus | El correo electrónico >> Para crear contenido visual se usan programas de diseño con plantillas, textos e imágenes.
+2|Para hacer un cartel de la fiesta del barrio, ¿qué herramienta es adecuada? || Un programa de diseño sencillo, como Canva | Una hoja de cálculo | Un antivirus | El correo electrónico >> Para crear contenido visual se usan programas de diseño con plantillas, textos e imágenes.
 2|¿Qué formato es de audio? || .mp3 | .jpg | .pdf | .xlsx >> .mp3 es sonido; .jpg imagen; .pdf documento; .xlsx hoja de cálculo.
 #CCD.3.2
 2|¿Qué es editar un vídeo? || Cortar, unir y añadir efectos o textos a lo grabado | Grabarlo | Verlo | Borrarlo >> Editar es transformar un contenido que ya existe para contar mejor tu idea.
-2|Tienes una foto del plato del día y quieres usarla en Instagram. ¿Qué es reelaborarla? || Recortarla, mejorar la luz y añadir un texto con el precio | Publicarla tal cual sin mirar | Hacer otra foto distinta | Borrarla >> Adaptar un contenido es modificarlo un poco (recorte, filtros, texto) para que transmita tu mensaje.
+2|Tienes una foto de una bici que quieres vender por internet. ¿Qué es reelaborarla? || Recortarla, mejorar la luz y añadir un texto con el precio | Publicarla tal cual sin mirar | Hacer otra foto distinta | Borrarla >> Adaptar un contenido es modificarlo un poco (recorte, filtros, texto) para que transmita tu mensaje.
 2|Has hecho una presentación y quieres usarla para otro curso. ¿Qué es lo más práctico? || Hacer una copia y adaptar los textos y las imágenes | Empezar de cero siempre | Enviar la misma sin cambiar nada | Imprimirla y escribir a mano >> Reutilizar tu propio material y adaptarlo ahorra tiempo.
 #CCD.3.3
 2|¿Qué es una licencia Creative Commons? || Un permiso para usar una obra con ciertas condiciones, como citar al autor | Un carné | Un antivirus | Un tipo de archivo >> El autor decide qué se puede hacer con su obra: usarla, modificarla, venderla… con condiciones.
@@ -107,7 +107,7 @@
 3|¿Qué es un inconveniente de cambiar de móvil cada año? || Gastas más dinero y generas más residuos electrónicos | El móvil nuevo no funciona | Pierdes el número de teléfono | Es obligatorio por ley >> Renovar sin necesidad es lo que busca la obsolescencia programada. Hay que valorarlo de forma crítica.
 #PRO.3.3
 2|¿De dónde es más seguro descargar una aplicación para el móvil? || De la tienda oficial (Play Store o App Store) | De un enlace que te llega por SMS | De una web desconocida | De un archivo que te pasa un desconocido >> Las tiendas oficiales revisan las apps. Fuera de ellas es más fácil que lleven virus.
-2|Un restaurante pequeño quiere recibir reservas por internet. ¿Qué solución es adecuada? || Una aplicación o web de reservas online | Apuntarlas en una servilleta | Instalar un antivirus | Colgar una hoja impresa en la pared >> Se elige la solución tecnológica que resuelve la necesidad: reservas → herramienta de reservas.
+2|Una peluquería pequeña quiere recibir citas por internet. ¿Qué solución es adecuada? || Una aplicación o web de citas online | Apuntarlas en un papel suelto | Instalar un antivirus | Colgar una hoja impresa en la pared >> Se elige la solución tecnológica que resuelve la necesidad: citas → herramienta de citas.
 3|El móvil se queda sin espacio. ¿Qué solución es razonable? || Pasar fotos a la nube o al ordenador y borrar apps que no usas | Comprar otro móvil enseguida | Borrar el sistema operativo | Apagarlo para siempre >> Antes de gastar, prueba soluciones sencillas: liberar espacio.
 2|Tienes que enviar a una empresa varias fotos de documentos. ¿Qué es lo más práctico? || Escanearlas con una app y juntarlas en un solo PDF | Enviar 15 fotos movidas | Dictarlas por un audio | Llevarlas en persona sin avisar >> Un único PDF legible es más profesional y fácil de abrir.
 #PRO.3.4

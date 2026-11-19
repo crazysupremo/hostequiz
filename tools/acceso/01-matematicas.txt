@@ -1,23 +1,23 @@
 @matematicas
 #NC.3.1
-1|Un café cuesta 1,40 € y una tostada 2,10 €. ¿Cuánto pagas por 2 cafés y 1 tostada? || 4,90 € | 3,50 € | 5,60 € | 4,20 € >> 2 cafés: 2 × 1,40 = 2,80 €. Más la tostada: 2,80 + 2,10 = 4,90 €. Ojo: el error típico es sumar solo un café (3,50 €).
+1|Un cuaderno cuesta 1,40 € y un bolígrafo 2,10 €. ¿Cuánto pagas por 2 cuadernos y 1 bolígrafo? || 4,90 € | 3,50 € | 5,60 € | 4,20 € >> 2 cuadernos: 2 × 1,40 = 2,80 €. Más el bolígrafo: 2,80 + 2,10 = 4,90 €. Ojo: el error típico es sumar solo un cuaderno (3,50 €).
 1|Pagas una cuenta de 13,65 € con un billete de 20 €. ¿Cuánto te devuelven? || 6,35 € | 7,35 € | 6,45 € | 7,65 € >> Se resta: 20,00 − 13,65 = 6,35 €. Truco: de 13,65 a 14 son 0,35 y de 14 a 20 son 6 → 6,35 €.
 1|¿Qué número es mayor? || 0,7 | 0,65 | 0,069 | 0,609 >> Compara las décimas: 0,7 tiene 7 décimas; 0,65 y 0,609 tienen 6; 0,069 tiene 0. Ayuda escribirlos con las mismas cifras: 0,700 > 0,650 > 0,609 > 0,069.
 1|Ordena de menor a mayor: −3, 2, −7, 0 || −7, −3, 0, 2 | −3, −7, 0, 2 | 0, −3, −7, 2 | −7, 0, −3, 2 >> En los negativos, cuanto más lejos del 0, más pequeño: −7 < −3. Después va el 0 y luego los positivos.
 1|Por la mañana hay −4 °C y por la tarde 9 °C. ¿Cuántos grados ha subido la temperatura? || 13 °C | 5 °C | −13 °C | 9 °C >> De −4 a 0 sube 4 grados y de 0 a 9 sube 9: 4 + 9 = 13 °C. Es 9 − (−4) = 9 + 4 = 13.
-2|Una cámara frigorífica está a −18 °C y, por una avería, sube 5 °C. ¿A qué temperatura está ahora? || −13 °C | −23 °C | 13 °C | −5 °C >> Subir es sumar: −18 + 5 = −13 °C. Sigue bajo cero porque 18 es mayor que 5.
+2|El congelador de casa está a −18 °C y, por una avería, sube 5 °C. ¿A qué temperatura está ahora? || −13 °C | −23 °C | 13 °C | −5 °C >> Subir es sumar: −18 + 5 = −13 °C. Sigue bajo cero porque 18 es mayor que 5.
 2|Un trabajador cobra 9,50 € por hora. ¿Cuánto gana en una semana de 38 horas? || 361 € | 342 € | 380 € | 351 € >> 9,50 × 38 = 361 €. Truco: 10 × 38 = 380 y le quitas 0,50 × 38 = 19 → 380 − 19 = 361 €.
-3|Un restaurante compra 24 botellas de aceite a 4,85 € cada una. ¿Cuánto paga? || 116,40 € | 106,40 € | 118,40 € | 96,40 € >> 4,85 × 24 = 116,40 €. Truco: 5 × 24 = 120 y le restas 0,15 × 24 = 3,60 → 116,40 €.
-2|Cuatro amigos pagan una cena de 86 € a partes iguales. ¿Cuánto paga cada uno? || 21,50 € | 22 € | 21 € | 20,50 € >> 86 : 4 = 21,50 €. Comprueba: 21,50 × 4 = 86 €.
-3|Cuatro camareros se reparten a partes iguales 57,60 € de propinas. ¿Cuánto le toca a cada uno? || 14,40 € | 19,20 € | 14 € | 15,40 € >> 57,60 : 4 = 14,40 €. Si te sale 19,20 €, has dividido entre 3 en vez de entre 4.
+3|Una oficina compra 24 paquetes de folios a 4,85 € cada uno. ¿Cuánto paga? || 116,40 € | 106,40 € | 118,40 € | 96,40 € >> 4,85 × 24 = 116,40 €. Truco: 5 × 24 = 120 y le restas 0,15 × 24 = 3,60 → 116,40 €.
+2|Cuatro amigos pagan un regalo de 86 € a partes iguales. ¿Cuánto paga cada uno? || 21,50 € | 22 € | 21 € | 20,50 € >> 86 : 4 = 21,50 €. Comprueba: 21,50 × 4 = 86 €.
+3|Cuatro compañeros de trabajo se reparten a partes iguales un premio de 57,60 €. ¿Cuánto le toca a cada uno? || 14,40 € | 19,20 € | 14 € | 15,40 € >> 57,60 : 4 = 14,40 €. Si te sale 19,20 €, has dividido entre 3 en vez de entre 4.
 2|Escribe con cifras: «dos millones treinta mil cinco». || 2.030.005 | 2.300.005 | 2.030.500 | 230.005 >> Separa por grupos: dos millones (2.), treinta mil (030.), cinco (005) → 2.030.005.
 2|¿Cuál es el mínimo común múltiplo de 4 y 6? || 12 | 24 | 2 | 10 >> Múltiplos de 4: 4, 8, 12… Múltiplos de 6: 6, 12… El primero que coincide es 12. (24 también es común, pero no el mínimo.)
 2|Un autobús sale cada 15 minutos y otro cada 20. Si salen juntos a las 9:00, ¿cuándo vuelven a coincidir? || A las 10:00 | A las 9:35 | A las 9:20 | A las 11:00 >> Es el m.c.m. de 15 y 20 = 60 minutos. 9:00 + 60 min = 10:00.
 2|¿Cuál es el máximo común divisor de 24 y 36? || 12 | 6 | 72 | 4 >> Divisores de 24: 1, 2, 3, 4, 6, 8, 12, 24. De 36: 1, 2, 3, 4, 6, 9, 12, 18, 36. El mayor común es 12.
-3|Tienes 24 croquetas y 36 empanadillas. Quieres hacer bandejas iguales, el mayor número posible, sin que sobre nada. ¿Cuántas bandejas haces? || 12 | 6 | 4 | 60 >> «Repartir en grupos iguales lo más grandes/numerosos posible» = m.c.d. El m.c.d. de 24 y 36 es 12 bandejas (2 croquetas y 3 empanadillas en cada una).
+3|Tienes 24 lápices y 36 gomas. Quieres hacer lotes iguales, el mayor número posible, sin que sobre nada. ¿Cuántos lotes haces? || 12 | 6 | 4 | 60 >> «Repartir en grupos iguales, el mayor número posible» = m.c.d. El m.c.d. de 24 y 36 es 12 lotes (2 lápices y 3 gomas en cada uno).
 #NC.3.2
 1|¿Cuánto son los 3/4 de 200 €? || 150 € | 75 € | 50 € | 600 € >> Divide entre el denominador y multiplica por el numerador: 200 : 4 = 50; 50 × 3 = 150 €.
-2|De una tarta de 12 porciones se han vendido 3/4. ¿Cuántas porciones quedan? || 3 | 9 | 4 | 8 >> Vendidas: 12 : 4 × 3 = 9. Quedan 12 − 9 = 3. ¡Cuidado! La pregunta es lo que queda, no lo vendido.
+2|De un paquete de 12 rollos de papel se han usado 3/4. ¿Cuántos rollos quedan? || 3 | 9 | 4 | 8 >> Usados: 12 : 4 × 3 = 9. Quedan 12 − 9 = 3. ¡Cuidado! La pregunta es lo que queda, no lo usado.
 2|¿Qué fracción equivale a 0,25? || 1/4 | 2/5 | 1/25 | 25/10 >> 0,25 = 25/100. Simplificando entre 25: 1/4. Comprueba: 1 : 4 = 0,25.
 2|¿Cuánto es 1/2 + 1/3? || 5/6 | 2/5 | 1/6 | 2/6 >> Hay que poner el mismo denominador: 1/2 = 3/6 y 1/3 = 2/6. 3/6 + 2/6 = 5/6. Error típico: sumar arriba y abajo (2/5).
 2|¿Cuál de estas fracciones es la mayor? || 3/4 | 2/3 | 5/8 | 7/12 >> Pásalas a decimal: 3/4 = 0,75; 2/3 ≈ 0,67; 5/8 = 0,625; 7/12 ≈ 0,58. La mayor es 3/4.
@@ -31,7 +31,7 @@
 2|¿Cuánto es √81 + 3²? || 18 | 12 | 90 | 15 >> √81 = 9 (porque 9 · 9 = 81) y 3² = 9. 9 + 9 = 18.
 2|Con la calculadora quieres saber el 21 % de 80 €. ¿Qué tecleas? || 80 × 0,21 | 80 + 21 | 80 : 21 | 80 × 21 >> El 21 % es 21/100 = 0,21. Por eso 80 × 0,21 = 16,80 €. Revisa siempre si el resultado tiene sentido.
 2|En la calculadora haces 45 : 0 y sale «Error». ¿Por qué? || Porque no se puede dividir entre 0 | Porque se ha quedado sin pilas | Porque 45 es muy grande | Porque hay que pulsar dos veces >> Dividir entre cero no tiene sentido en matemáticas, y la calculadora te avisa con un error.
-3|Calculas con la calculadora el precio de 3 menús de 12,50 € y te sale 375 €. ¿Qué ha pasado? || Has olvidado la coma: 3 × 12,50 = 37,50 € | Es el precio correcto | Has sumado en vez de multiplicar | Los menús cuestan 125 € >> Revisar el resultado: 3 menús de unos 12 € no pueden costar 375 €. Se olvidó la coma decimal.
+3|Calculas con la calculadora el precio de 3 entradas de cine de 12,50 € y te sale 375 €. ¿Qué ha pasado? || Has olvidado la coma: 3 × 12,50 = 37,50 € | Es el precio correcto | Has sumado en vez de multiplicar | Las entradas cuestan 125 € >> Revisa el resultado: 3 entradas de unos 12 € no pueden costar 375 €. Se olvidó la coma decimal.
 #NC.3.3
 1|Resuelve: x + 8 = 15 || x = 7 | x = 23 | x = 8 | x = −7 >> El 8 está sumando, pasa al otro lado restando: x = 15 − 8 = 7. Comprueba: 7 + 8 = 15.
 1|Resuelve: 4x = 36 || x = 9 | x = 32 | x = 40 | x = 144 >> El 4 está multiplicando, pasa dividiendo: x = 36 : 4 = 9.
@@ -41,48 +41,48 @@
 3|Resuelve: x/4 + 3 = 5 || x = 8 | x = 32 | x = 2 | x = 1/2 >> Pasa el 3: x/4 = 2. El 4 está dividiendo, pasa multiplicando: x = 2 · 4 = 8.
 3|Resuelve: (x − 1)/3 = (x + 3)/5 || x = 7 | x = 4 | x = 2 | x = −7 >> Multiplica en cruz: 5(x − 1) = 3(x + 3) → 5x − 5 = 3x + 9 → 2x = 14 → x = 7.
 2|Un número más su doble es 45. ¿Qué número es? || 15 | 22,5 | 30 | 9 >> Número = x; su doble = 2x. x + 2x = 45 → 3x = 45 → x = 15. Comprueba: 15 + 30 = 45.
-3|Un menú cuesta 4 € más que un bocadillo. Dos bocadillos y un menú cuestan 25 €. ¿Cuánto cuesta el bocadillo? || 7 € | 11 € | 8,50 € | 10,50 € >> Bocadillo = x; menú = x + 4. 2x + (x + 4) = 25 → 3x = 21 → x = 7 €. El menú cuesta 11 € (no confundas).
+3|Una camiseta cuesta 4 € más que una gorra. Dos gorras y una camiseta cuestan 25 €. ¿Cuánto cuesta la gorra? || 7 € | 11 € | 8,50 € | 10,50 € >> Gorra = x; camiseta = x + 4. 2x + (x + 4) = 25 → 3x = 21 → x = 7 €. La camiseta cuesta 11 € (no confundas).
 3|La edad de Laura es el triple que la de su hijo y dentro de 10 años será el doble. ¿Cuántos años tiene el hijo ahora? || 10 | 20 | 15 | 5 >> Hijo = x; Laura = 3x. Dentro de 10 años: 3x + 10 = 2(x + 10) → 3x + 10 = 2x + 20 → x = 10. Laura tiene 30.
 2|Un taxi cobra 3 € al subir y 1,20 € por kilómetro. Si pagas 15 €, ¿cuántos kilómetros has recorrido? || 10 km | 12,5 km | 15 km | 8 km >> 3 + 1,20x = 15 → 1,20x = 12 → x = 12 : 1,20 = 10 km.
 2|Si y = 2x + 3, ¿cuánto vale y cuando x = 5? || 13 | 10 | 16 | 25 >> Sustituye x por 5: y = 2 · 5 + 3 = 10 + 3 = 13.
 2|¿Qué expresión significa «el doble de un número menos 3»? || 2x − 3 | 2(x − 3) | x² − 3 | 3 − 2x >> «El doble de un número» es 2x y «menos 3» se le resta después: 2x − 3. 2(x − 3) sería «el doble de (un número menos 3)».
 #NC.3.4
 1|Si 2 kg de tomates cuestan 3 €, ¿cuánto cuestan 6 kg? || 9 € | 6 € | 12 € | 4,50 € >> Es proporción directa: 6 kg es el triple de 2 kg, así que cuesta el triple: 3 × 3 = 9 €.
-2|Una receta para 4 personas lleva 300 g de arroz. ¿Cuánto arroz necesitas para 10 personas? || 750 g | 1.200 g | 600 g | 700 g >> Por persona: 300 : 4 = 75 g. Para 10: 75 × 10 = 750 g. (Reducción a la unidad.)
-2|Un bizcocho para 6 raciones lleva 180 g de azúcar. ¿Cuánto azúcar hace falta para 8 raciones? || 240 g | 210 g | 270 g | 160 g >> Por ración: 180 : 6 = 30 g. Para 8: 30 × 8 = 240 g.
-3|5 camareros montan el comedor en 2 horas. ¿Cuánto tardarían 4 camareros al mismo ritmo? || 2 h 30 min | 1 h 36 min | 2 h 15 min | 3 h >> Es proporción INVERSA: menos camareros, más tiempo. 5 × 2 = 10 horas de trabajo; 10 : 4 = 2,5 h = 2 h 30 min.
+2|Para pintar 4 m² de pared se necesitan 300 mL de pintura. ¿Cuánta pintura necesitas para 10 m²? || 750 mL | 1.200 mL | 600 mL | 700 mL >> Por m²: 300 : 4 = 75 mL. Para 10 m²: 75 × 10 = 750 mL. (Reducción a la unidad.)
+2|Para regar 6 macetas se necesitan 180 cL de agua. ¿Cuánta agua hace falta para 8 macetas? || 240 cL | 210 cL | 270 cL | 160 cL >> Por maceta: 180 : 6 = 30 cL. Para 8: 30 × 8 = 240 cL.
+3|5 operarios descargan un camión en 2 horas. ¿Cuánto tardarían 4 operarios al mismo ritmo? || 2 h 30 min | 1 h 36 min | 2 h 15 min | 3 h >> Es proporción INVERSA: menos operarios, más tiempo. 5 × 2 = 10 horas de trabajo; 10 : 4 = 2,5 h = 2 h 30 min.
 3|Un depósito de agua da para 20 días a 6 personas. ¿Para cuántos días daría a 8 personas? || 15 días | 26 días | 24 días | 12 días >> Inversa: más personas, menos días. 6 × 20 = 120; 120 : 8 = 15 días.
 2|Un coche recorre 240 km en 3 horas. A la misma velocidad, ¿cuántos km recorre en 5 horas? || 400 km | 480 km | 360 km | 300 km >> En 1 hora: 240 : 3 = 80 km. En 5 horas: 80 × 5 = 400 km.
 2|¿Qué magnitudes son inversamente proporcionales? || El número de trabajadores y el tiempo que tardan en hacer una obra | El número de cafés y el precio total | Los kilos de fruta y lo que pagas | Las horas trabajadas y el sueldo >> Son inversas cuando una sube y la otra baja en la misma proporción: el doble de trabajadores, la mitad de tiempo.
 2|¿Qué magnitudes son directamente proporcionales? || Los litros de gasolina y lo que pagas | La velocidad y el tiempo de un viaje | El número de grifos y el tiempo en llenar un depósito | La edad y la altura de una persona >> Directas: si una se duplica, la otra también. El doble de litros, el doble de precio. La edad y la altura no siguen una proporción.
 3|En un mapa a escala 1:100.000, dos pueblos están a 7 cm. ¿Qué distancia real hay? || 7 km | 70 km | 700 m | 0,7 km >> 1 cm del mapa son 100.000 cm reales = 1 km. Así que 7 cm = 7 km.
-2|En un plano a escala 1:50, una mesa mide 4 cm. ¿Cuánto mide en realidad? || 2 m | 20 cm | 50 cm | 200 m >> 4 × 50 = 200 cm reales = 2 m.
-2|Una bebida lleva 2 partes de zumo por cada 3 de agua. Si usas 6 litros de agua, ¿cuánto zumo pones? || 4 L | 9 L | 3 L | 5 L >> 6 litros de agua son 2 veces 3. Entonces el zumo también es el doble de 2: 4 litros.
+2|En un plano a escala 1:50, un sofá mide 4 cm. ¿Cuánto mide en realidad? || 2 m | 20 cm | 50 cm | 200 m >> 4 × 50 = 200 cm reales = 2 m.
+2|Una mezcla lleva 2 partes de pintura blanca por cada 3 de azul. Si usas 6 litros de azul, ¿cuánta blanca pones? || 4 L | 9 L | 3 L | 5 L >> 6 litros de azul son 2 veces 3. Entonces la blanca también es el doble de 2: 4 litros.
 #NC.3.5
 1|¿Cuánto es el 10 % de 45 €? || 4,50 € | 45 € | 0,45 € | 10 € >> El 10 % es dividir entre 10: 45 : 10 = 4,50 €.
 1|¿Cuánto es el 50 % de 36? || 18 | 50 | 72 | 3,6 >> El 50 % es la mitad: 36 : 2 = 18.
 2|Una factura es de 80 € sin IVA. Con un 10 % de IVA, ¿cuánto se paga? || 88 € | 90 € | 8 € | 80,10 € >> IVA = 10 % de 80 = 8 €. Total = 80 + 8 = 88 €. (O directamente 80 × 1,10.)
 2|Unas zapatillas cuestan 70 € y tienen un 20 % de descuento. ¿Cuánto pagas? || 56 € | 50 € | 14 € | 66 € >> Descuento: 20 % de 70 = 14 €. Pagas 70 − 14 = 56 €. (14 € es lo que te ahorras, no lo que pagas.)
 2|En un grupo de 25 alumnos aprueban 20. ¿Qué porcentaje aprueba? || 80 % | 20 % | 75 % | 85 % >> 20/25 = 0,8 → 0,8 × 100 = 80 %.
-2|Un cliente deja 3 € de propina en una cuenta de 60 €. ¿Qué porcentaje es? || 5 % | 3 % | 20 % | 6 % >> 3 : 60 = 0,05 → 5 %. Comprueba: el 5 % de 60 es 3.
+2|En una compra de 60 € te descuentan 3 €. ¿Qué porcentaje de descuento es? || 5 % | 3 % | 20 % | 6 % >> 3 : 60 = 0,05 → 5 %. Comprueba: el 5 % de 60 es 3.
 3|El sueldo de Ana era de 1.200 € y sube un 3 %. ¿Cuál es su nuevo sueldo? || 1.236 € | 1.203 € | 1.260 € | 1.360 € >> 3 % de 1.200 = 36 €. Nuevo sueldo: 1.200 + 36 = 1.236 €. (1.203 € sería sumar 3 € y no el 3 %.)
 3|Un producto costaba 50 € y ahora cuesta 60 €. ¿Qué porcentaje ha subido? || 20 % | 10 % | 16,7 % | 60 % >> Ha subido 10 €. Se compara con el precio INICIAL: 10 : 50 = 0,2 → 20 %.
 3|Después de un descuento del 25 % pagas 45 €. ¿Cuál era el precio original? || 60 € | 56,25 € | 70 € | 33,75 € >> Si descuentan el 25 %, pagas el 75 %. 45 : 0,75 = 60 €. Error típico: sumar el 25 % de 45 (56,25 €).
-2|El 30 % de los 200 clientes de un hotel son extranjeros. ¿Cuántos son? || 60 | 30 | 140 | 70 >> 200 × 0,30 = 60 clientes. Truco: 10 % = 20 → 30 % = 60.
+2|El 30 % de los 200 trabajadores de una fábrica viven en otro pueblo. ¿Cuántos son? || 60 | 30 | 140 | 70 >> 200 × 0,30 = 60 personas. Truco: 10 % = 20 → 30 % = 60.
 2|¿Qué es lo mismo que el 75 %? || 3/4 | 7/5 | 0,075 | 1/75 >> 75 % = 75/100 = 0,75 = 3/4.
 3|En una factura, 45 € son el 30 % del total. ¿Cuánto es el total? || 150 € | 135 € | 58,50 € | 75 € >> Si 30 % son 45 €, el 10 % son 15 €. El 100 % son 15 × 10 = 150 €.
-3|Los ingredientes de un plato cuestan 3,20 € y el restaurante quiere ganar un 150 % sobre ese coste. ¿A qué precio lo vende (sin IVA)? || 8 € | 4,80 € | 6,40 € | 7,50 € >> Ganancia: 150 % de 3,20 = 4,80 €. Precio = coste + ganancia = 3,20 + 4,80 = 8 €.
-3|Con la oferta «3×2» compras 3 botellas de 6 € y pagas solo 2. ¿Qué descuento tienes sobre el total? || Un 33 % aproximadamente | Un 50 % | Un 66 % | Un 20 % >> Valen 18 € y pagas 12 €: te ahorras 6 €. 6 : 18 ≈ 0,33 → un 33 %.
+3|Fabricar una mochila cuesta 3,20 € y la empresa quiere ganar un 150 % sobre ese coste. ¿A qué precio la vende (sin IVA)? || 8 € | 4,80 € | 6,40 € | 7,50 € >> Ganancia: 150 % de 3,20 = 4,80 €. Precio = coste + ganancia = 3,20 + 4,80 = 8 €.
+3|Con la oferta «3×2» compras 3 botes de champú de 6 € y pagas solo 2. ¿Qué descuento tienes sobre el total? || Un 33 % aproximadamente | Un 50 % | Un 66 % | Un 20 % >> Valen 18 € y pagas 12 €: te ahorras 6 €. 6 : 18 ≈ 0,33 → un 33 %.
 2|vf=1|El 50 % de una cantidad es lo mismo que su mitad. >> Verdadero: 50 % = 50/100 = 1/2.
 3|vf=0|Subir un precio un 10 % y después bajarlo un 10 % lo deja igual que al principio. >> Falso: 100 € +10 % = 110 €; 110 € −10 % = 99 €. La bajada se calcula sobre 110, no sobre 100.
 #FM.3.1
 1|¿Cuál es el perímetro de un cuadrado de 6 m de lado? || 24 m | 36 m | 12 m | 18 m >> El perímetro es la suma de los lados: 4 × 6 = 24 m. (36 m² sería el área.)
 1|¿Cuál es el área de un rectángulo de 8 m por 5 m? || 40 m² | 26 m² | 13 m² | 80 m² >> Área del rectángulo = base × altura = 8 × 5 = 40 m². (26 m sería el perímetro.)
-2|Una terraza rectangular mide 12 m por 6 m. ¿Cuántas baldosas de 1 m² hacen falta para cubrirla? || 72 | 36 | 18 | 144 >> Área = 12 × 6 = 72 m². Cada baldosa cubre 1 m²: 72 baldosas.
+2|Un patio rectangular mide 12 m por 6 m. ¿Cuántas baldosas de 1 m² hacen falta para cubrirlo? || 72 | 36 | 18 | 144 >> Área = 12 × 6 = 72 m². Cada baldosa cubre 1 m²: 72 baldosas.
 2|¿Cuál es el área de un triángulo de 10 cm de base y 6 cm de altura? || 30 cm² | 60 cm² | 16 cm² | 15 cm² >> Área = (base × altura) : 2 = (10 × 6) : 2 = 30 cm². Si te sale 60, olvidaste dividir entre 2.
-2|Una mesa redonda tiene 1 m de radio. ¿Cuál es su área? (π ≈ 3,14) || 3,14 m² | 6,28 m² | 1 m² | 12,56 m² >> Área del círculo = π · r² = 3,14 · 1² = 3,14 m². (6,28 m sería la longitud del borde.)
-2|¿Cuánto mide el borde de una mesa redonda de 1,2 m de diámetro? (π ≈ 3,14) || 3,77 m | 1,88 m | 7,54 m | 4,52 m >> Longitud de la circunferencia = π · diámetro = 3,14 × 1,2 ≈ 3,77 m.
-3|Una mesa cuadrada mide 90 cm de lado. El mantel debe caer 20 cm por cada lado. ¿Cuánto mide de lado el mantel? || 130 cm | 110 cm | 120 cm | 180 cm >> Cae 20 cm por un lado y 20 cm por el otro: 90 + 20 + 20 = 130 cm. Error típico: sumar solo 20 (110 cm).
+2|Una alfombra redonda tiene 1 m de radio. ¿Cuál es su área? (π ≈ 3,14) || 3,14 m² | 6,28 m² | 1 m² | 12,56 m² >> Área del círculo = π · r² = 3,14 · 1² = 3,14 m². (6,28 m sería la longitud del borde.)
+2|¿Cuánto mide el borde de una piscina hinchable redonda de 1,2 m de diámetro? (π ≈ 3,14) || 3,77 m | 1,88 m | 7,54 m | 4,52 m >> Longitud de la circunferencia = π · diámetro = 3,14 × 1,2 ≈ 3,77 m.
+3|Un cuadro cuadrado mide 90 cm de lado. El marco añade 20 cm por cada lado. ¿Cuánto mide de lado con el marco? || 130 cm | 110 cm | 120 cm | 180 cm >> El marco añade 20 cm por un lado y 20 cm por el otro: 90 + 20 + 20 = 130 cm. Error típico: sumar solo 20 (110 cm).
 2|Un triángulo rectángulo tiene catetos de 3 m y 4 m. ¿Cuánto mide la hipotenusa? || 5 m | 7 m | 12 m | 25 m >> Pitágoras: h² = 3² + 4² = 9 + 16 = 25 → h = √25 = 5 m.
 3|Una escalera de 5 m está apoyada en una pared y su pie está a 3 m de la pared. ¿A qué altura llega? || 4 m | 2 m | 8 m | 5,8 m >> La escalera es la hipotenusa: altura² = 5² − 3² = 25 − 9 = 16 → altura = 4 m.
 1|¿Cuánto suman los ángulos de un triángulo? || 180° | 360° | 90° | 270° >> En cualquier triángulo los tres ángulos suman 180°. En un cuadrilátero suman 360°.
@@ -94,44 +94,44 @@
 #FM.3.2
 1|¿Cuántos centímetros son 2,5 m? || 250 cm | 25 cm | 2.500 cm | 0,25 cm >> 1 m = 100 cm. 2,5 × 100 = 250 cm.
 1|¿Cuántos gramos son 1,2 kg? || 1.200 g | 120 g | 12 g | 12.000 g >> 1 kg = 1.000 g. 1,2 × 1.000 = 1.200 g.
-1|¿Cuántos mililitros tiene una botella de vino de 0,75 L? || 750 mL | 75 mL | 7,5 mL | 7.500 mL >> 1 L = 1.000 mL. 0,75 × 1.000 = 750 mL.
+1|¿Cuántos mililitros tiene una botella de 0,75 L? || 750 mL | 75 mL | 7,5 mL | 7.500 mL >> 1 L = 1.000 mL. 0,75 × 1.000 = 750 mL.
 2|¿Cuántos vasos de 250 mL se llenan con una jarra de 2 L? || 8 | 4 | 6 | 10 >> Primero, misma unidad: 2 L = 2.000 mL. 2.000 : 250 = 8 vasos.
-2|Una botella de licor de 70 cL, ¿cuántas copas de 35 mL da? || 20 | 2 | 10 | 25 >> 70 cL = 700 mL. 700 : 35 = 20 copas. Si te sale 2, no pasaste los cL a mL.
+2|Un bote de jarabe de 70 cL, ¿cuántas dosis de 35 mL da? || 20 | 2 | 10 | 25 >> 70 cL = 700 mL. 700 : 35 = 20 dosis. Si te sale 2, no pasaste los cL a mL.
 2|¿Cuántos kilos son 3.500 g? || 3,5 kg | 35 kg | 0,35 kg | 350 kg >> De gramos a kilos se divide entre 1.000: 3.500 : 1.000 = 3,5 kg.
 2|¿Cuántos minutos son 2,5 horas? || 150 min | 250 min | 125 min | 210 min >> 1 h = 60 min. 2,5 × 60 = 150 min (2 horas = 120 min + media hora = 30 min).
 2|Un turno empieza a las 7:45 y termina a las 15:15. ¿Cuánto dura? || 7 h 30 min | 8 h 30 min | 7 h 15 min | 8 h >> De 7:45 a 8:00 son 15 min; de 8:00 a 15:00 son 7 h; de 15:00 a 15:15, 15 min. Total: 7 h 30 min.
-3|Un asado necesita 25 minutos por cada kilo. ¿Cuánto tarda una pieza de 2,4 kg? || 1 h | 50 min | 1 h 25 min | 1 h 10 min >> 25 × 2,4 = 60 minutos = 1 hora.
+3|Una impresora 3D tarda 25 minutos por cada centímetro de altura. ¿Cuánto tarda en hacer una pieza de 2,4 cm? || 1 h | 50 min | 1 h 25 min | 1 h 10 min >> 25 × 2,4 = 60 minutos = 1 hora.
 2|Un ciclista va a 20 km/h. ¿Cuánto tarda en recorrer 50 km? || 2 h 30 min | 2 h 50 min | 2 h | 3 h >> Tiempo = distancia : velocidad = 50 : 20 = 2,5 h. Y 0,5 h son 30 min, no 50 min.
 2|¿Cuántos litros son 1 dm³? || 1 L | 10 L | 0,1 L | 1.000 L >> Es una equivalencia clave: 1 dm³ = 1 litro. Y 1 m³ = 1.000 litros.
 3|¿Cuántos cm² son 1 m²? || 10.000 cm² | 100 cm² | 1.000 cm² | 1.000.000 cm² >> 1 m² es un cuadrado de 100 cm × 100 cm = 10.000 cm². En superficie se multiplica por 100 en cada salto de unidad.
 3|¿Cuántos m² son 3 hectáreas? || 30.000 m² | 300 m² | 3.000 m² | 300.000 m² >> 1 hectárea = 10.000 m² (un cuadrado de 100 m × 100 m). 3 × 10.000 = 30.000 m².
 2|¿Cuál es el volumen de una caja de 20 cm × 10 cm × 5 cm? || 1.000 cm³ | 35 cm³ | 200 cm³ | 500 cm³ >> Volumen = largo × ancho × alto = 20 × 10 × 5 = 1.000 cm³ (= 1 litro). 35 sería sumar.
 3|Un depósito con forma de cubo mide 2 m de arista. ¿Cuántos litros caben? || 8.000 L | 800 L | 6.000 L | 8 L >> V = 2 × 2 × 2 = 8 m³. Como 1 m³ = 1.000 L, caben 8.000 L.
-3|Una olla cilíndrica tiene 20 cm de radio y 30 cm de altura. ¿Cuántos litros caben, aproximadamente? (π ≈ 3,14) || 37,7 L | 18,8 L | 3,77 L | 377 L >> V = π · r² · h = 3,14 × 400 × 30 = 37.680 cm³. Como 1.000 cm³ = 1 L → unos 37,7 L.
+3|Un bidón cilíndrico tiene 20 cm de radio y 30 cm de altura. ¿Cuántos litros caben, aproximadamente? (π ≈ 3,14) || 37,7 L | 18,8 L | 3,77 L | 377 L >> V = π · r² · h = 3,14 × 400 × 30 = 37.680 cm³. Como 1.000 cm³ = 1 L → unos 37,7 L.
 2|vf=1|1 litro de agua ocupa lo mismo que 1 dm³. >> Verdadero: 1 L = 1 dm³ = 1.000 cm³.
 #FM.3.3
 1|¿Qué unidad es la más adecuada para medir la distancia entre dos ciudades? || El kilómetro | El centímetro | El metro cuadrado | El litro >> Para distancias grandes se usa el kilómetro. El m² mide superficie y el litro, capacidad.
-1|¿Qué instrumento usarías para medir la temperatura de una cámara frigorífica? || Un termómetro | Una báscula | Una probeta | Un metro >> El termómetro mide temperatura. La báscula mide masa, la probeta volumen y el metro longitud.
-1|Para pesar 250 g de harina usas… || Una báscula o balanza | Un termómetro | Una cinta métrica | Un cronómetro >> El peso (masa) se mide con báscula o balanza, en gramos o kilos.
+1|¿Qué instrumento usarías para medir la temperatura de la nevera de casa? || Un termómetro | Una báscula | Una probeta | Un metro >> El termómetro mide temperatura. La báscula mide masa, la probeta volumen y el metro longitud.
+1|Para pesar una maleta antes de un viaje usas… || Una báscula o balanza | Un termómetro | Una cinta métrica | Un cronómetro >> El peso (masa) se mide con báscula o balanza, en gramos o kilos.
 2|¿Qué unidad usarías para medir la capacidad de una botella de agua? || El litro o el centilitro | El kilómetro | El kilogramo | El grado >> La capacidad (lo que cabe dentro) se mide en litros, cL o mL.
-2|¿Con qué medirías el tiempo que tarda en hacerse un huevo cocido? || Con un cronómetro o un reloj | Con un termómetro | Con una regla | Con una báscula >> El tiempo se mide con reloj o cronómetro, en minutos y segundos.
+2|¿Con qué medirías el tiempo que tardas en correr 100 metros? || Con un cronómetro | Con un termómetro | Con una regla | Con una báscula >> El tiempo se mide con reloj o cronómetro, en minutos y segundos.
 2|¿Qué unidad es la adecuada para medir la superficie de un piso? || El metro cuadrado (m²) | El metro (m) | El litro (L) | El kilogramo (kg) >> La superficie se mide en unidades «cuadradas»: m². Por eso un piso «tiene 80 m²».
 #GE.3.1
-1|Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuántos se vendieron en total? || 250 | 200 | 240 | 260 >> 40 + 35 + 45 + 50 + 80 = 250 cafés.
-2|Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la media diaria? || 50 | 45 | 48 | 55 >> Media = suma : número de datos = 250 : 5 = 50 cafés.
-2|Cafés vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la mediana? || 45 | 50 | 40 | 35 >> Se ordenan: 35, 40, 45, 50, 80. La mediana es el valor del centro: 45.
+1|Libros vendidos en una librería de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuántos se vendieron en total? || 250 | 200 | 240 | 260 >> 40 + 35 + 45 + 50 + 80 = 250 libros.
+2|Libros vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la media diaria? || 50 | 45 | 48 | 55 >> Media = suma : número de datos = 250 : 5 = 50 libros.
+2|Libros vendidos de lunes a viernes: 40, 35, 45, 50 y 80. ¿Cuál es la mediana? || 45 | 50 | 40 | 35 >> Se ordenan: 35, 40, 45, 50, 80. La mediana es el valor del centro: 45.
 2|Notas: 5, 7, 7, 8, 6, 7, 9. ¿Cuál es la moda? || 7 | 8 | 6 | 9 >> La moda es el valor que más se repite: el 7 aparece 3 veces.
 2|Notas: 4, 6, 8, 10. ¿Cuál es la media? || 7 | 6 | 8 | 28 >> (4 + 6 + 8 + 10) : 4 = 28 : 4 = 7. Si pones 28, has olvidado dividir.
 3|La media de 4 exámenes es 6. En los tres primeros sacaste 5, 6 y 8. ¿Qué sacaste en el cuarto? || 5 | 6 | 7 | 4 >> Si la media de 4 es 6, la suma es 4 × 6 = 24. Ya tienes 5 + 6 + 8 = 19. Falta 24 − 19 = 5.
 2|Temperaturas de la semana: 12, 15, 9, 20 y 14 °C. ¿Cuál es el rango (recorrido)? || 11 | 14 | 20 | 9 >> Rango = mayor − menor = 20 − 9 = 11.
-3|En una tabla: 3 clientes de 20 años, 5 de 30 y 2 de 40. ¿Cuál es la edad media? || 29 años | 30 años | 31 años | 33 años >> Multiplica cada edad por cuántos hay: 3·20 + 5·30 + 2·40 = 60 + 150 + 80 = 290. Hay 10 clientes: 290 : 10 = 29 años.
-2|En una encuesta a 40 clientes, 10 prefieren té. ¿Cuál es la frecuencia relativa del té? || 0,25 | 10 | 0,4 | 4 >> Frecuencia relativa = veces : total = 10 : 40 = 0,25 (el 25 %). 10 es la frecuencia absoluta.
+3|En una tabla: 3 alumnos de 20 años, 5 de 30 y 2 de 40. ¿Cuál es la edad media? || 29 años | 30 años | 31 años | 33 años >> Multiplica cada edad por cuántos hay: 3·20 + 5·30 + 2·40 = 60 + 150 + 80 = 290. Hay 10 alumnos: 290 : 10 = 29 años.
+2|En una encuesta a 40 personas, 10 prefieren el baloncesto. ¿Cuál es la frecuencia relativa del baloncesto? || 0,25 | 10 | 0,4 | 4 >> Frecuencia relativa = veces : total = 10 : 40 = 0,25 (el 25 %). 10 es la frecuencia absoluta.
 2|¿Qué es la frecuencia absoluta de un dato? || El número de veces que se repite | El dato que más se repite | La suma de todos los datos | El dato central >> Es el recuento: cuántas veces aparece. «El que más se repite» es la moda.
 2|¿Qué es la moda? || El valor que más se repite | El valor central | La suma dividida entre el número de datos | La diferencia entre el mayor y el menor >> Moda = el más repetido. Central = mediana. Suma : n = media. Mayor − menor = rango.
 2|¿Qué es el rango o recorrido? || La diferencia entre el valor mayor y el menor | El valor que más se repite | El valor del medio | El número de datos >> El rango mide lo separados que están los datos: mayor − menor.
 2|vf=0|La media y la moda de un conjunto de datos siempre coinciden. >> Falso: en 2, 2, 8 la moda es 2 y la media es 4. Solo coinciden a veces.
 #GE.3.2
-1|Un gráfico de barras muestra las reservas: lunes 20, martes 30 y miércoles 25. ¿Cuántas reservas más hubo el martes que el lunes? || 10 | 5 | 50 | 30 >> Se lee la altura de cada barra y se resta: 30 − 20 = 10 reservas más.
+1|Un gráfico de barras muestra las visitas a la biblioteca: lunes 20, martes 30 y miércoles 25. ¿Cuántas visitas más hubo el martes que el lunes? || 10 | 5 | 50 | 30 >> Se lee la altura de cada barra y se resta: 30 − 20 = 10 visitas más.
 2|¿Qué gráfico es más adecuado para ver cómo cambia la temperatura a lo largo de un mes? || Un gráfico de líneas | Un gráfico de sectores | Un pictograma | Una tabla sin gráfico >> Para ver la evolución en el tiempo, lo mejor es una línea: se ve si sube o baja.
 2|¿Qué gráfico es más adecuado para mostrar qué parte del total es cada tipo de gasto? || Un gráfico de sectores (circular) | Un gráfico de líneas | Un diagrama de dispersión | Un histograma de edades >> El gráfico de sectores («de quesitos») muestra partes de un total.
 2|En un gráfico de sectores, una parte ocupa un cuarto del círculo. ¿Qué porcentaje representa? || 25 % | 4 % | 40 % | 90 % >> Un cuarto = 1/4 = 25 % del total.
@@ -141,7 +141,7 @@
 1|Al lanzar una moneda, ¿qué probabilidad hay de que salga cara? || 1/2 | 1/4 | 1 | 2 >> Casos favorables / casos posibles = 1 cara / 2 caras de la moneda = 1/2.
 1|Al tirar un dado, ¿qué probabilidad hay de sacar un 3? || 1/6 | 1/3 | 3/6 | 1/2 >> Solo hay un 3 entre 6 caras: 1/6.
 2|Al tirar un dado, ¿qué probabilidad hay de sacar más de 4? || 1/3 | 1/2 | 2/3 | 1/6 >> «Más de 4» son el 5 y el 6: 2 casos de 6 → 2/6 = 1/3. ¡El 4 no cuenta!
-2|En una caja hay 4 bombones negros y 6 blancos. Si coges uno sin mirar, ¿qué probabilidad hay de que sea negro? || 2/5 | 4/6 | 3/5 | 1/4 >> Favorables: 4. Posibles: 4 + 6 = 10. 4/10 = 2/5. Error típico: dividir entre los blancos (4/6).
+2|En una bolsa hay 4 bolas negras y 6 blancas. Si sacas una sin mirar, ¿qué probabilidad hay de que sea negra? || 2/5 | 4/6 | 3/5 | 1/4 >> Favorables: 4. Posibles: 4 + 6 = 10. 4/10 = 2/5. Error típico: dividir entre las blancas (4/6).
 2|En un sorteo de 200 papeletas compras 5. ¿Qué probabilidad tienes de ganar? || 2,5 % | 5 % | 0,5 % | 25 % >> 5/200 = 0,025 → 2,5 %.
 2|¿Qué suceso es imposible al tirar un dado normal? || Sacar un 7 | Sacar un 6 | Sacar un número par | Sacar menos de 3 >> Un dado normal solo tiene del 1 al 6: sacar un 7 tiene probabilidad 0.
 2|¿Qué suceso es seguro al tirar un dado normal? || Sacar un número menor que 7 | Sacar un 6 | Sacar un número par | Sacar un 1 >> Todas las caras (1 a 6) son menores que 7: pasa siempre, probabilidad 1.
