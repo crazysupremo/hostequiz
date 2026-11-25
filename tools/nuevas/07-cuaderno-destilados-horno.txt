@@ -1,0 +1,146 @@
+@cocina
+2|Antes de hornear, ¿a qué temperatura se suele precalentar el horno? || A 200 °C | A 100 °C | A 300 °C | No hace falta precalentarlo
+Antes de ir ao forno, a que temperatura se costuma pré-aquecer o forno? || A 200 °C | A 100 °C | A 300 °C | Não é preciso pré-aquecer
+Before baking, what temperature is the oven usually preheated to? || 200 °C | 100 °C | 300 °C | No need to preheat
+ar|قبل الخَبز، إلى أي درجة حرارة يُسخَّن الفرن عادةً؟ || 200 °م | 100 °م | 300 °م | لا داعي لتسخينه مسبقاً
+
+2|¿A qué temperatura se hornea una pizza? || A más de 200 °C | A 120 °C | A 160 °C | A 80 °C
+A que temperatura se coze uma piza no forno? || A mais de 200 °C | A 120 °C | A 160 °C | A 80 °C
+At what temperature is a pizza baked? || Above 200 °C | 120 °C | 160 °C | 80 °C
+ar|في أي درجة حرارة تُخبز البيتزا؟ || أكثر من 200 °م | 120 °م | 160 °م | 80 °م
+
+2|¿Cómo se hornea el pollo? || A unos 170 °C y al final se sube a 200 °C para dorarlo | A 100 °C todo el tiempo | A 250 °C desde el principio | A 60 °C
+Como se assa o frango no forno? || A uns 170 °C e no fim sobe-se para 200 °C para alourar | A 100 °C o tempo todo | A 250 °C desde o início | A 60 °C
+How is chicken roasted in the oven? || At about 170 °C, then turned up to 200 °C at the end to brown it | At 100 °C the whole time | At 250 °C from the start | At 60 °C
+ar|كيف يُشوى الدجاج في الفرن؟ || على حوالي 170 °م ثم تُرفع إلى 200 °م في النهاية ليتحمّر | على 100 °م طوال الوقت | على 250 °م من البداية | على 60 °م
+
+2|¿A qué temperatura se hornea el pescado? || A unos 160 °C | A 250 °C | A 90 °C | A 300 °C
+A que temperatura se assa o peixe no forno? || A uns 160 °C | A 250 °C | A 90 °C | A 300 °C
+At what temperature is fish baked? || About 160 °C | 250 °C | 90 °C | 300 °C
+ar|في أي درجة حرارة يُشوى السمك في الفرن؟ || حوالي 160 °م | 250 °م | 90 °م | 300 °م
+
+2|vf=1|El pescado se hornea a menos temperatura que la pizza.
+O peixe vai ao forno a menos temperatura do que a piza.
+Fish is baked at a lower temperature than pizza.
+ar|السمك يُشوى في الفرن على حرارة أقل من البيتزا.
+
+@cocteleria
+1|¿De qué se hace el ron? || Del jugo de la caña de azúcar | De la cebada | Del enebro | De las patatas
+De que se faz o rum? || Do sumo da cana-de-açúcar | Da cevada | Do zimbro | Das batatas
+What is rum made from? || Sugar cane juice | Barley | Juniper | Potatoes
+ar|مِمَّ يُصنع الروم؟ || من عصير قصب السكر | من الشعير | من العرعر | من البطاطس
+
+2|Según su envejecimiento, ¿cómo puede ser el ron? || Blanco, rubio (dorado) o tostado (añejo) | Solo blanco | Rojo o rosado | Seco o dulce
+Conforme o envelhecimento, como pode ser o rum? || Branco, dourado ou escuro (envelhecido) | Só branco | Tinto ou rosé | Seco ou doce
+Depending on ageing, rum can be… || White, golden or dark (aged) | Only white | Red or rosé | Dry or sweet
+ar|حسب مدة تعتيقه، كيف يمكن أن يكون الروم؟ || أبيض أو ذهبي أو داكن (معتّق) | أبيض فقط | أحمر أو وردي | جاف أو حلو
+
+2|¿Cuál de estas es una marca de ron? || Brugal | Tanqueray | Absolut | Soberano
+Qual destas é uma marca de rum? || Brugal | Tanqueray | Absolut | Soberano
+Which of these is a rum brand? || Brugal | Tanqueray | Absolut | Soberano
+ar|أي من هذه علامة روم؟ || Brugal | Tanqueray | Absolut | Soberano
+
+2|¿Qué grupo son todas marcas de ron? || Bacardi, Havana Club y Pampero | Larios, Gordon's y Bombay | JB, Ballantine's y Cutty Sark | Smirnoff, Absolut y Eristoff
+Que grupo são todas marcas de rum? || Bacardi, Havana Club e Pampero | Larios, Gordon's e Bombay | JB, Ballantine's e Cutty Sark | Smirnoff, Absolut e Eristoff
+Which group are all rum brands? || Bacardi, Havana Club and Pampero | Larios, Gordon's and Bombay | JB, Ballantine's and Cutty Sark | Smirnoff, Absolut and Eristoff
+ar|أي مجموعة كلها علامات روم؟ || Bacardi، Havana Club، Pampero | Larios، Gordon's، Bombay | JB، Ballantine's، Cutty Sark | Smirnoff، Absolut، Eristoff
+
+2|Cacique es una marca de… || Ron | Ginebra | Vodka | Anís
+Cacique é uma marca de… || Rum | Gin | Vodka | Anis
+Cacique is a brand of… || Rum | Gin | Vodka | Anise
+ar|Cacique علامة… || روم | جين | فودكا | يانسون
+
+2|¿De qué cereales se destila el whisky? || Cebada, centeno o maíz | Caña de azúcar | Uva | Patata y remolacha
+De que cereais se destila o whisky? || Cevada, centeio ou milho | Cana-de-açúcar | Uva | Batata e beterraba
+Which grains is whisky distilled from? || Barley, rye or corn | Sugar cane | Grapes | Potato and beet
+ar|من أي حبوب يُقطَّر الويسكي؟ || الشعير أو الجاودار أو الذرة | قصب السكر | العنب | البطاطس والشمندر
+
+2|¿Qué grupo son todas marcas de whisky? || JB, Ballantine's y Johnnie Walker | Bacardi, Cacique y Brugal | Larios, Beefeater y Bombay | Soberano, Magno y Veterano
+Que grupo são todas marcas de whisky? || JB, Ballantine's e Johnnie Walker | Bacardi, Cacique e Brugal | Larios, Beefeater e Bombay | Soberano, Magno e Veterano
+Which group are all whisky brands? || JB, Ballantine's and Johnnie Walker | Bacardi, Cacique and Brugal | Larios, Beefeater and Bombay | Soberano, Magno and Veterano
+ar|أي مجموعة كلها علامات ويسكي؟ || JB، Ballantine's، Johnnie Walker | Bacardi، Cacique، Brugal | Larios، Beefeater، Bombay | Soberano، Magno، Veterano
+
+3|Jack Daniel's es un whisky… || Americano | Escocés | Irlandés | Japonés
+Jack Daniel's é um whisky… || Americano | Escocês | Irlandês | Japonês
+Jack Daniel's is a whiskey from… || The USA | Scotland | Ireland | Japan
+ar|Jack Daniel's ويسكي… || أمريكي | إسكتلندي | إيرلندي | ياباني
+
+2|Cutty Sark y Ballantine's son whiskies… || Escoceses | Americanos | Mexicanos | Rusos
+Cutty Sark e Ballantine's são whiskies… || Escoceses | Americanos | Mexicanos | Russos
+Cutty Sark and Ballantine's are whiskies from… || Scotland | The USA | Mexico | Russia
+ar|Cutty Sark، Ballantine's أنواع ويسكي… || إسكتلندية | أمريكية | مكسيكية | روسية
+
+2|vf=1|El whisky puede ser irlandés, escocés o americano, entre otros.
+O whisky pode ser irlandês, escocês ou americano, entre outros.
+Whisky can be Irish, Scotch or American, among others.
+ar|يمكن أن يكون الويسكي إيرلندياً أو إسكتلندياً أو أمريكياً، وغير ذلك.
+
+1|¿Con qué se aromatiza la ginebra? || Con bayas de enebro | Con anís | Con naranja | Con café
+Com que se aromatiza o gin? || Com bagas de zimbro | Com anis | Com laranja | Com café
+What is gin flavoured with? || Juniper berries | Anise | Orange | Coffee
+ar|بماذا يُعطَّر الجين؟ || بحبات العرعر | باليانسون | بالبرتقال | بالقهوة
+
+2|¿Qué grupo son todas marcas de ginebra? || Larios, Gordon's y Beefeater | JB, Jack Daniel's y Cutty Sark | Soberano, Felipe II y Carlos III | Bacardi, Pampero y Brugal
+Que grupo são todas marcas de gin? || Larios, Gordon's e Beefeater | JB, Jack Daniel's e Cutty Sark | Soberano, Felipe II e Carlos III | Bacardi, Pampero e Brugal
+Which group are all gin brands? || Larios, Gordon's and Beefeater | JB, Jack Daniel's and Cutty Sark | Soberano, Felipe II and Carlos III | Bacardi, Pampero and Brugal
+ar|أي مجموعة كلها علامات جين؟ || Larios، Gordon's، Beefeater | JB، Jack Daniel's، Cutty Sark | Soberano، Felipe II، Carlos III | Bacardi، Pampero، Brugal
+
+2|Tanqueray, Bombay y Seagram's son marcas de… || Ginebra | Whisky | Ron | Brandy
+Tanqueray, Bombay e Seagram's são marcas de… || Gin | Whisky | Rum | Brandy
+Tanqueray, Bombay and Seagram's are brands of… || Gin | Whisky | Rum | Brandy
+ar|Tanqueray، Bombay، Seagram's علامات… || جين | ويسكي | روم | براندي
+
+3|¿Cuál de estas ginebras es española? || Puerto de Indias | Bombay | Tanqueray | Seagram's
+Qual destes gins é espanhol? || Puerto de Indias | Bombay | Tanqueray | Seagram's
+Which of these gins is Spanish? || Puerto de Indias | Bombay | Tanqueray | Seagram's
+ar|أي من أنواع الجين هذه إسباني؟ || Puerto de Indias | Bombay | Tanqueray | Seagram's
+
+2|¿De qué se obtiene el vodka? || De cereales o patatas | De caña de azúcar | De uva | De bayas de enebro
+De que se obtém a vodka? || De cereais ou batatas | De cana-de-açúcar | De uva | De bagas de zimbro
+What is vodka made from? || Grains or potatoes | Sugar cane | Grapes | Juniper berries
+ar|مِمَّ تُصنع الفودكا؟ || من الحبوب أو البطاطس | من قصب السكر | من العنب | من حبات العرعر
+
+2|¿Qué grupo son todas marcas de vodka? || Smirnoff, Absolut y Eristoff | Larios, Bombay y Gordon's | Havana Club, Cacique y Bacardi | Magno, Veterano y Soberano
+Que grupo são todas marcas de vodka? || Smirnoff, Absolut e Eristoff | Larios, Bombay e Gordon's | Havana Club, Cacique e Bacardi | Magno, Veterano e Soberano
+Which group are all vodka brands? || Smirnoff, Absolut and Eristoff | Larios, Bombay and Gordon's | Havana Club, Cacique and Bacardi | Magno, Veterano and Soberano
+ar|أي مجموعة كلها علامات فودكا؟ || Smirnoff، Absolut، Eristoff | Larios، Bombay، Gordon's | Havana Club، Cacique، Bacardi | Magno، Veterano، Soberano
+
+2|vf=0|El vodka se aromatiza con enebro.
+A vodka é aromatizada com zimbro.
+Vodka is flavoured with juniper.
+ar|الفودكا تُعطَّر بالعرعر.
+
+2|¿Qué grupo son todas marcas de brandy (coñac) español? || Soberano, Felipe II, Veterano y Magno | Bacardi, Brugal y Pampero | Beefeater, Larios y Tanqueray | Absolut, Smirnoff y Eristoff
+Que grupo são todas marcas de brandy espanhol? || Soberano, Felipe II, Veterano e Magno | Bacardi, Brugal e Pampero | Beefeater, Larios e Tanqueray | Absolut, Smirnoff e Eristoff
+Which group are all Spanish brandy brands? || Soberano, Felipe II, Veterano and Magno | Bacardi, Brugal and Pampero | Beefeater, Larios and Tanqueray | Absolut, Smirnoff and Eristoff
+ar|أي مجموعة كلها علامات براندي إسباني؟ || Soberano، Felipe II، Veterano، Magno | Bacardi، Brugal، Pampero | Beefeater، Larios، Tanqueray | Absolut، Smirnoff، Eristoff
+
+2|Carlos III es una marca de… || Brandy | Ron | Ginebra | Vodka
+Carlos III é uma marca de… || Brandy | Rum | Gin | Vodka
+Carlos III is a brand of… || Brandy | Rum | Gin | Vodka
+ar|Carlos III علامة… || براندي | روم | جين | فودكا
+
+2|Anís del Mono y Castellana son marcas de… || Anís | Whisky | Ron | Brandy
+Anís del Mono e Castellana são marcas de… || Anis | Whisky | Rum | Brandy
+Anís del Mono and Castellana are brands of… || Anise liqueur | Whisky | Rum | Brandy
+ar|Anís del Mono، Castellana علامات… || يانسون | ويسكي | روم | براندي
+
+2|¿Cuáles de estos licores se suelen tomar solos? || Licor 43, Baileys, Jägermeister, Cointreau y orujo | Tónica y gaseosa | Zumo de naranja y mosto | Agua con gas y soda
+Quais destes licores se costumam beber simples? || Licor 43, Baileys, Jägermeister, Cointreau e aguardente | Água tónica e gasosa | Sumo de laranja e mosto | Água com gás e soda
+Which of these are usually drunk on their own? || Licor 43, Baileys, Jägermeister, Cointreau and orujo | Tonic and lemonade | Orange juice and grape juice | Sparkling water and soda
+ar|أي من هذه المشروبات الكحولية تُشرب عادةً وحدها؟ || Licor 43، Baileys، Jägermeister، Cointreau والأوروخو | التونيك والمشروب الغازي | عصير البرتقال والموستو | الماء الغازي والصودا
+
+3|¿Qué es el Baileys? || Una crema de whisky irlandés | Un licor de hierbas alemán | Un licor de naranja francés | Un aguardiente de uva
+O que é o Baileys? || Um creme de whisky irlandês | Um licor de ervas alemão | Um licor de laranja francês | Uma aguardente de uva
+What is Baileys? || An Irish whiskey cream liqueur | A German herbal liqueur | A French orange liqueur | A grape spirit
+ar|ما هو Baileys؟ || كريمة ويسكي إيرلندي | ليكور أعشاب ألماني | ليكور برتقال فرنسي | عرق من العنب
+
+3|¿Qué es el Jägermeister? || Un licor de hierbas alemán | Una crema de whisky | Un licor de naranja | Un ron cubano
+O que é o Jägermeister? || Um licor de ervas alemão | Um creme de whisky | Um licor de laranja | Um rum cubano
+What is Jägermeister? || A German herbal liqueur | A whiskey cream | An orange liqueur | A Cuban rum
+ar|ما هو Jägermeister؟ || ليكور أعشاب ألماني | كريمة ويسكي | ليكور برتقال | روم كوبي
+
+2|¿De qué sabor es el Cointreau? || Naranja | Café | Menta | Vainilla
+De que sabor é o Cointreau? || Laranja | Café | Menta | Baunilha
+What flavour is Cointreau? || Orange | Coffee | Mint | Vanilla
+ar|ما نكهة Cointreau؟ || البرتقال | القهوة | النعناع | الفانيليا

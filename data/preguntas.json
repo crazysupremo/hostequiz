@@ -5427,6 +5427,339 @@
     "La carta de postres",
     "El contrato de trabajo"
    ]
+  },
+  {
+   "id": "n296",
+   "c": "cocina",
+   "q": "Antes de hornear, ¿a qué temperatura se suele precalentar el horno?",
+   "n": 2,
+   "a": [
+    "A 200 °C",
+    "A 100 °C",
+    "A 300 °C",
+    "No hace falta precalentarlo"
+   ]
+  },
+  {
+   "id": "n297",
+   "c": "cocina",
+   "q": "¿A qué temperatura se hornea una pizza?",
+   "n": 2,
+   "a": [
+    "A más de 200 °C",
+    "A 120 °C",
+    "A 160 °C",
+    "A 80 °C"
+   ]
+  },
+  {
+   "id": "n298",
+   "c": "cocina",
+   "q": "¿Cómo se hornea el pollo?",
+   "n": 2,
+   "a": [
+    "A unos 170 °C y al final se sube a 200 °C para dorarlo",
+    "A 100 °C todo el tiempo",
+    "A 250 °C desde el principio",
+    "A 60 °C"
+   ]
+  },
+  {
+   "id": "n299",
+   "c": "cocina",
+   "q": "¿A qué temperatura se hornea el pescado?",
+   "n": 2,
+   "a": [
+    "A unos 160 °C",
+    "A 250 °C",
+    "A 90 °C",
+    "A 300 °C"
+   ]
+  },
+  {
+   "id": "n300",
+   "c": "cocina",
+   "q": "El pescado se hornea a menos temperatura que la pizza.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n301",
+   "c": "cocteleria",
+   "q": "¿De qué se hace el ron?",
+   "n": 1,
+   "a": [
+    "Del jugo de la caña de azúcar",
+    "De la cebada",
+    "Del enebro",
+    "De las patatas"
+   ]
+  },
+  {
+   "id": "n302",
+   "c": "cocteleria",
+   "q": "Según su envejecimiento, ¿cómo puede ser el ron?",
+   "n": 2,
+   "a": [
+    "Blanco, rubio (dorado) o tostado (añejo)",
+    "Solo blanco",
+    "Rojo o rosado",
+    "Seco o dulce"
+   ]
+  },
+  {
+   "id": "n303",
+   "c": "cocteleria",
+   "q": "¿Cuál de estas es una marca de ron?",
+   "n": 2,
+   "a": [
+    "Brugal",
+    "Tanqueray",
+    "Absolut",
+    "Soberano"
+   ]
+  },
+  {
+   "id": "n304",
+   "c": "cocteleria",
+   "q": "¿Qué grupo son todas marcas de ron?",
+   "n": 2,
+   "a": [
+    "Bacardi, Havana Club y Pampero",
+    "Larios, Gordon's y Bombay",
+    "JB, Ballantine's y Cutty Sark",
+    "Smirnoff, Absolut y Eristoff"
+   ]
+  },
+  {
+   "id": "n305",
+   "c": "cocteleria",
+   "q": "Cacique es una marca de…",
+   "n": 2,
+   "a": [
+    "Ron",
+    "Ginebra",
+    "Vodka",
+    "Anís"
+   ]
+  },
+  {
+   "id": "n306",
+   "c": "cocteleria",
+   "q": "¿De qué cereales se destila el whisky?",
+   "n": 2,
+   "a": [
+    "Cebada, centeno o maíz",
+    "Caña de azúcar",
+    "Uva",
+    "Patata y remolacha"
+   ]
+  },
+  {
+   "id": "n307",
+   "c": "cocteleria",
+   "q": "¿Qué grupo son todas marcas de whisky?",
+   "n": 2,
+   "a": [
+    "JB, Ballantine's y Johnnie Walker",
+    "Bacardi, Cacique y Brugal",
+    "Larios, Beefeater y Bombay",
+    "Soberano, Magno y Veterano"
+   ]
+  },
+  {
+   "id": "n308",
+   "c": "cocteleria",
+   "q": "Jack Daniel's es un whisky…",
+   "n": 3,
+   "a": [
+    "Americano",
+    "Escocés",
+    "Irlandés",
+    "Japonés"
+   ]
+  },
+  {
+   "id": "n309",
+   "c": "cocteleria",
+   "q": "Cutty Sark y Ballantine's son whiskies…",
+   "n": 2,
+   "a": [
+    "Escoceses",
+    "Americanos",
+    "Mexicanos",
+    "Rusos"
+   ]
+  },
+  {
+   "id": "n310",
+   "c": "cocteleria",
+   "q": "El whisky puede ser irlandés, escocés o americano, entre otros.",
+   "n": 2,
+   "vf": true
+  },
+  {
+   "id": "n311",
+   "c": "cocteleria",
+   "q": "¿Con qué se aromatiza la ginebra?",
+   "n": 1,
+   "a": [
+    "Con bayas de enebro",
+    "Con anís",
+    "Con naranja",
+    "Con café"
+   ]
+  },
+  {
+   "id": "n312",
+   "c": "cocteleria",
+   "q": "¿Qué grupo son todas marcas de ginebra?",
+   "n": 2,
+   "a": [
+    "Larios, Gordon's y Beefeater",
+    "JB, Jack Daniel's y Cutty Sark",
+    "Soberano, Felipe II y Carlos III",
+    "Bacardi, Pampero y Brugal"
+   ]
+  },
+  {
+   "id": "n313",
+   "c": "cocteleria",
+   "q": "Tanqueray, Bombay y Seagram's son marcas de…",
+   "n": 2,
+   "a": [
+    "Ginebra",
+    "Whisky",
+    "Ron",
+    "Brandy"
+   ]
+  },
+  {
+   "id": "n314",
+   "c": "cocteleria",
+   "q": "¿Cuál de estas ginebras es española?",
+   "n": 3,
+   "a": [
+    "Puerto de Indias",
+    "Bombay",
+    "Tanqueray",
+    "Seagram's"
+   ]
+  },
+  {
+   "id": "n315",
+   "c": "cocteleria",
+   "q": "¿De qué se obtiene el vodka?",
+   "n": 2,
+   "a": [
+    "De cereales o patatas",
+    "De caña de azúcar",
+    "De uva",
+    "De bayas de enebro"
+   ]
+  },
+  {
+   "id": "n316",
+   "c": "cocteleria",
+   "q": "¿Qué grupo son todas marcas de vodka?",
+   "n": 2,
+   "a": [
+    "Smirnoff, Absolut y Eristoff",
+    "Larios, Bombay y Gordon's",
+    "Havana Club, Cacique y Bacardi",
+    "Magno, Veterano y Soberano"
+   ]
+  },
+  {
+   "id": "n317",
+   "c": "cocteleria",
+   "q": "El vodka se aromatiza con enebro.",
+   "n": 2,
+   "vf": false
+  },
+  {
+   "id": "n318",
+   "c": "cocteleria",
+   "q": "¿Qué grupo son todas marcas de brandy (coñac) español?",
+   "n": 2,
+   "a": [
+    "Soberano, Felipe II, Veterano y Magno",
+    "Bacardi, Brugal y Pampero",
+    "Beefeater, Larios y Tanqueray",
+    "Absolut, Smirnoff y Eristoff"
+   ]
+  },
+  {
+   "id": "n319",
+   "c": "cocteleria",
+   "q": "Carlos III es una marca de…",
+   "n": 2,
+   "a": [
+    "Brandy",
+    "Ron",
+    "Ginebra",
+    "Vodka"
+   ]
+  },
+  {
+   "id": "n320",
+   "c": "cocteleria",
+   "q": "Anís del Mono y Castellana son marcas de…",
+   "n": 2,
+   "a": [
+    "Anís",
+    "Whisky",
+    "Ron",
+    "Brandy"
+   ]
+  },
+  {
+   "id": "n321",
+   "c": "cocteleria",
+   "q": "¿Cuáles de estos licores se suelen tomar solos?",
+   "n": 2,
+   "a": [
+    "Licor 43, Baileys, Jägermeister, Cointreau y orujo",
+    "Tónica y gaseosa",
+    "Zumo de naranja y mosto",
+    "Agua con gas y soda"
+   ]
+  },
+  {
+   "id": "n322",
+   "c": "cocteleria",
+   "q": "¿Qué es el Baileys?",
+   "n": 3,
+   "a": [
+    "Una crema de whisky irlandés",
+    "Un licor de hierbas alemán",
+    "Un licor de naranja francés",
+    "Un aguardiente de uva"
+   ]
+  },
+  {
+   "id": "n323",
+   "c": "cocteleria",
+   "q": "¿Qué es el Jägermeister?",
+   "n": 3,
+   "a": [
+    "Un licor de hierbas alemán",
+    "Una crema de whisky",
+    "Un licor de naranja",
+    "Un ron cubano"
+   ]
+  },
+  {
+   "id": "n324",
+   "c": "cocteleria",
+   "q": "¿De qué sabor es el Cointreau?",
+   "n": 2,
+   "a": [
+    "Naranja",
+    "Café",
+    "Menta",
+    "Vainilla"
+   ]
   }
  ],
  "niveles": {

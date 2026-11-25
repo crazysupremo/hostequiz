@@ -3073,5 +3073,196 @@
 "The guest's bill",
 "The dessert menu",
 "The employment contract"
+],
+"n296": [
+"Before baking, what temperature is the oven usually preheated to?",
+"200 °C",
+"100 °C",
+"300 °C",
+"No need to preheat"
+],
+"n297": [
+"At what temperature is a pizza baked?",
+"Above 200 °C",
+"120 °C",
+"160 °C",
+"80 °C"
+],
+"n298": [
+"How is chicken roasted in the oven?",
+"At about 170 °C, then turned up to 200 °C at the end to brown it",
+"At 100 °C the whole time",
+"At 250 °C from the start",
+"At 60 °C"
+],
+"n299": [
+"At what temperature is fish baked?",
+"About 160 °C",
+"250 °C",
+"90 °C",
+"300 °C"
+],
+"n300": [
+"Fish is baked at a lower temperature than pizza."
+],
+"n301": [
+"What is rum made from?",
+"Sugar cane juice",
+"Barley",
+"Juniper",
+"Potatoes"
+],
+"n302": [
+"Depending on ageing, rum can be…",
+"White, golden or dark (aged)",
+"Only white",
+"Red or rosé",
+"Dry or sweet"
+],
+"n303": [
+"Which of these is a rum brand?",
+"Brugal",
+"Tanqueray",
+"Absolut",
+"Soberano"
+],
+"n304": [
+"Which group are all rum brands?",
+"Bacardi, Havana Club and Pampero",
+"Larios, Gordon's and Bombay",
+"JB, Ballantine's and Cutty Sark",
+"Smirnoff, Absolut and Eristoff"
+],
+"n305": [
+"Cacique is a brand of…",
+"Rum",
+"Gin",
+"Vodka",
+"Anise"
+],
+"n306": [
+"Which grains is whisky distilled from?",
+"Barley, rye or corn",
+"Sugar cane",
+"Grapes",
+"Potato and beet"
+],
+"n307": [
+"Which group are all whisky brands?",
+"JB, Ballantine's and Johnnie Walker",
+"Bacardi, Cacique and Brugal",
+"Larios, Beefeater and Bombay",
+"Soberano, Magno and Veterano"
+],
+"n308": [
+"Jack Daniel's is a whiskey from…",
+"The USA",
+"Scotland",
+"Ireland",
+"Japan"
+],
+"n309": [
+"Cutty Sark and Ballantine's are whiskies from…",
+"Scotland",
+"The USA",
+"Mexico",
+"Russia"
+],
+"n310": [
+"Whisky can be Irish, Scotch or American, among others."
+],
+"n311": [
+"What is gin flavoured with?",
+"Juniper berries",
+"Anise",
+"Orange",
+"Coffee"
+],
+"n312": [
+"Which group are all gin brands?",
+"Larios, Gordon's and Beefeater",
+"JB, Jack Daniel's and Cutty Sark",
+"Soberano, Felipe II and Carlos III",
+"Bacardi, Pampero and Brugal"
+],
+"n313": [
+"Tanqueray, Bombay and Seagram's are brands of…",
+"Gin",
+"Whisky",
+"Rum",
+"Brandy"
+],
+"n314": [
+"Which of these gins is Spanish?",
+"Puerto de Indias",
+"Bombay",
+"Tanqueray",
+"Seagram's"
+],
+"n315": [
+"What is vodka made from?",
+"Grains or potatoes",
+"Sugar cane",
+"Grapes",
+"Juniper berries"
+],
+"n316": [
+"Which group are all vodka brands?",
+"Smirnoff, Absolut and Eristoff",
+"Larios, Bombay and Gordon's",
+"Havana Club, Cacique and Bacardi",
+"Magno, Veterano and Soberano"
+],
+"n317": [
+"Vodka is flavoured with juniper."
+],
+"n318": [
+"Which group are all Spanish brandy brands?",
+"Soberano, Felipe II, Veterano and Magno",
+"Bacardi, Brugal and Pampero",
+"Beefeater, Larios and Tanqueray",
+"Absolut, Smirnoff and Eristoff"
+],
+"n319": [
+"Carlos III is a brand of…",
+"Brandy",
+"Rum",
+"Gin",
+"Vodka"
+],
+"n320": [
+"Anís del Mono and Castellana are brands of…",
+"Anise liqueur",
+"Whisky",
+"Rum",
+"Brandy"
+],
+"n321": [
+"Which of these are usually drunk on their own?",
+"Licor 43, Baileys, Jägermeister, Cointreau and orujo",
+"Tonic and lemonade",
+"Orange juice and grape juice",
+"Sparkling water and soda"
+],
+"n322": [
+"What is Baileys?",
+"An Irish whiskey cream liqueur",
+"A German herbal liqueur",
+"A French orange liqueur",
+"A grape spirit"
+],
+"n323": [
+"What is Jägermeister?",
+"A German herbal liqueur",
+"A whiskey cream",
+"An orange liqueur",
+"A Cuban rum"
+],
+"n324": [
+"What flavour is Cointreau?",
+"Orange",
+"Coffee",
+"Mint",
+"Vanilla"
 ]
 }

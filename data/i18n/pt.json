@@ -3073,5 +3073,196 @@
 "A fatura do cliente",
 "A carta de sobremesas",
 "O contrato de trabalho"
+],
+"n296": [
+"Antes de ir ao forno, a que temperatura se costuma pré-aquecer o forno?",
+"A 200 °C",
+"A 100 °C",
+"A 300 °C",
+"Não é preciso pré-aquecer"
+],
+"n297": [
+"A que temperatura se coze uma piza no forno?",
+"A mais de 200 °C",
+"A 120 °C",
+"A 160 °C",
+"A 80 °C"
+],
+"n298": [
+"Como se assa o frango no forno?",
+"A uns 170 °C e no fim sobe-se para 200 °C para alourar",
+"A 100 °C o tempo todo",
+"A 250 °C desde o início",
+"A 60 °C"
+],
+"n299": [
+"A que temperatura se assa o peixe no forno?",
+"A uns 160 °C",
+"A 250 °C",
+"A 90 °C",
+"A 300 °C"
+],
+"n300": [
+"O peixe vai ao forno a menos temperatura do que a piza."
+],
+"n301": [
+"De que se faz o rum?",
+"Do sumo da cana-de-açúcar",
+"Da cevada",
+"Do zimbro",
+"Das batatas"
+],
+"n302": [
+"Conforme o envelhecimento, como pode ser o rum?",
+"Branco, dourado ou escuro (envelhecido)",
+"Só branco",
+"Tinto ou rosé",
+"Seco ou doce"
+],
+"n303": [
+"Qual destas é uma marca de rum?",
+"Brugal",
+"Tanqueray",
+"Absolut",
+"Soberano"
+],
+"n304": [
+"Que grupo são todas marcas de rum?",
+"Bacardi, Havana Club e Pampero",
+"Larios, Gordon's e Bombay",
+"JB, Ballantine's e Cutty Sark",
+"Smirnoff, Absolut e Eristoff"
+],
+"n305": [
+"Cacique é uma marca de…",
+"Rum",
+"Gin",
+"Vodka",
+"Anis"
+],
+"n306": [
+"De que cereais se destila o whisky?",
+"Cevada, centeio ou milho",
+"Cana-de-açúcar",
+"Uva",
+"Batata e beterraba"
+],
+"n307": [
+"Que grupo são todas marcas de whisky?",
+"JB, Ballantine's e Johnnie Walker",
+"Bacardi, Cacique e Brugal",
+"Larios, Beefeater e Bombay",
+"Soberano, Magno e Veterano"
+],
+"n308": [
+"Jack Daniel's é um whisky…",
+"Americano",
+"Escocês",
+"Irlandês",
+"Japonês"
+],
+"n309": [
+"Cutty Sark e Ballantine's são whiskies…",
+"Escoceses",
+"Americanos",
+"Mexicanos",
+"Russos"
+],
+"n310": [
+"O whisky pode ser irlandês, escocês ou americano, entre outros."
+],
+"n311": [
+"Com que se aromatiza o gin?",
+"Com bagas de zimbro",
+"Com anis",
+"Com laranja",
+"Com café"
+],
+"n312": [
+"Que grupo são todas marcas de gin?",
+"Larios, Gordon's e Beefeater",
+"JB, Jack Daniel's e Cutty Sark",
+"Soberano, Felipe II e Carlos III",
+"Bacardi, Pampero e Brugal"
+],
+"n313": [
+"Tanqueray, Bombay e Seagram's são marcas de…",
+"Gin",
+"Whisky",
+"Rum",
+"Brandy"
+],
+"n314": [
+"Qual destes gins é espanhol?",
+"Puerto de Indias",
+"Bombay",
+"Tanqueray",
+"Seagram's"
+],
+"n315": [
+"De que se obtém a vodka?",
+"De cereais ou batatas",
+"De cana-de-açúcar",
+"De uva",
+"De bagas de zimbro"
+],
+"n316": [
+"Que grupo são todas marcas de vodka?",
+"Smirnoff, Absolut e Eristoff",
+"Larios, Bombay e Gordon's",
+"Havana Club, Cacique e Bacardi",
+"Magno, Veterano e Soberano"
+],
+"n317": [
+"A vodka é aromatizada com zimbro."
+],
+"n318": [
+"Que grupo são todas marcas de brandy espanhol?",
+"Soberano, Felipe II, Veterano e Magno",
+"Bacardi, Brugal e Pampero",
+"Beefeater, Larios e Tanqueray",
+"Absolut, Smirnoff e Eristoff"
+],
+"n319": [
+"Carlos III é uma marca de…",
+"Brandy",
+"Rum",
+"Gin",
+"Vodka"
+],
+"n320": [
+"Anís del Mono e Castellana são marcas de…",
+"Anis",
+"Whisky",
+"Rum",
+"Brandy"
+],
+"n321": [
+"Quais destes licores se costumam beber simples?",
+"Licor 43, Baileys, Jägermeister, Cointreau e aguardente",
+"Água tónica e gasosa",
+"Sumo de laranja e mosto",
+"Água com gás e soda"
+],
+"n322": [
+"O que é o Baileys?",
+"Um creme de whisky irlandês",
+"Um licor de ervas alemão",
+"Um licor de laranja francês",
+"Uma aguardente de uva"
+],
+"n323": [
+"O que é o Jägermeister?",
+"Um licor de ervas alemão",
+"Um creme de whisky",
+"Um licor de laranja",
+"Um rum cubano"
+],
+"n324": [
+"De que sabor é o Cointreau?",
+"Laranja",
+"Café",
+"Menta",
+"Baunilha"
 ]
 }
